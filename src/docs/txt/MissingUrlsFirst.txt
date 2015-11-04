@@ -1,0 +1,734 @@
+
+
+file=[actor.html] 
+http://ruben.savanne.be/articles/concurrency-in-erlang-scala
+URL:http://ruben.savanne.be/articles/concurrency-in-erlang-scala
+could not get http://ruben.savanne.be/articles/concurrency-in-erlang-scala because peer not authenticated
+
+http://gpars.org/guide/guide/actors.html
+URL:http://gpars.org/guide/guide/actors.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:02:27 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 09 May 2014 06:25:46 GMT Unexpected error: ETag: "1e90321-5297-4f8f1aaf78e80" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 21143 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+
+file=[agent.html] 
+http://gpars.org/guide/guide/agents.html
+URL:http://gpars.org/guide/guide/agents.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:02:27 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 09 May 2014 06:25:46 GMT Unexpected error: ETag: "1e90321-5297-4f8f1aaf78e80" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 21143 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+
+file=[api_doc.html] 
+http://gpars.org/SNAPSHOT/javadoc/index.html
+URL:http://gpars.org/SNAPSHOT/javadoc/index.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:02:27 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 21 Nov 2014 18:54:40 GMT Unexpected error: ETag: "1e9a7ed-b69-50862fa237c00" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 2921 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://gpars.org/SNAPSHOT/groovydoc/index.html
+URL:http://gpars.org/SNAPSHOT/groovydoc/index.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:02:28 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 21 Nov 2014 18:31:34 GMT Unexpected error: ETag: "1e9c5f6-b61-50862a786cd80" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 2913 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://gpars.org/1.2.1/javadoc/index.html
+URL:http://gpars.org/1.2.1/javadoc/index.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:02:28 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 09 May 2014 07:04:53 GMT Unexpected error: ETag: "1e8a5d3-5eb-4f8f236dbef40" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 1515 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://gpars.org/1.2.1/groovydoc/index.html
+URL:http://gpars.org/1.2.1/groovydoc/index.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:02:28 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 09 May 2014 06:39:42 GMT Unexpected error: ETag: "1e8e11c-ab0-4f8f1dccbe780" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 2736 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://gpars.org/1.2.0/javadoc/index.html
+URL:http://gpars.org/1.2.0/javadoc/index.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:02:28 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Sat, 26 Apr 2014 04:42:00 GMT Unexpected error: ETag: "1e980eb-5e9-4f7eab3ee7600" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 1513 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://gpars.org/1.2.0/groovydoc/index.html
+URL:http://gpars.org/1.2.0/groovydoc/index.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:02:28 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Sat, 26 Apr 2014 04:17:26 GMT Unexpected error: ETag: "1e9a11c-ab0-4f7ea5c130180" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 2736 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://gpars.org/1.1.0/javadoc/index.html
+URL:http://gpars.org/1.1.0/javadoc/index.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:02:29 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Wed, 24 Jul 2013 18:54:24 GMT Unexpected error: ETag: "1e90441-598-4e24670267800" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 1432 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://gpars.org/1.1.0/groovydoc/index.html
+URL:http://gpars.org/1.1.0/groovydoc/index.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:02:29 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Wed, 24 Jul 2013 18:23:50 GMT Unexpected error: ETag: "1e9411a-5ad-4e24602d5d980" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 1453 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://gpars.org/1.0.0/javadoc/index.html
+URL:http://gpars.org/1.0.0/javadoc/index.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:02:29 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Tue, 28 May 2013 08:51:09 GMT Unexpected error: ETag: "1e947d3-598-4ddc35dce3940" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 1432 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://gpars.org/1.0.0/groovydoc/index.html
+URL:http://gpars.org/1.0.0/groovydoc/index.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:02:29 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Tue, 28 May 2013 08:11:19 GMT Unexpected error: ETag: "1e96564-554-4ddc2cf59b7c0" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 1364 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+
+file=[articles.html] 
+http://jaxenter.com/java-tech-journal/JTJ-2012-03
+URL:http://jaxenter.com/java-tech-journal/JTJ-2012-03
+could not get http://jaxenter.com/java-tech-journal/JTJ-2012-03 because Not Found
+
+http://www.heise-shop.de/heise-zeitschriften-verlag/zeitschriften/ix-developer-01-2012-programmieren-heute-sonderhefte_pid_755_17704675.html
+URL:http://www.heise-shop.de/heise-zeitschriften-verlag/zeitschriften/ix-developer-01-2012-programmieren-heute-sonderhefte_pid_755_17704675.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:09:00 GMT Unexpected error: Server: Apache Unexpected error: Set-Cookie: CACHED_FRONT_FORM_KEY=9gxMfGR8Zk3SgOd1; path=/ Unexpected error: X-Frame-Options: SAMEORIGIN Unexpected error: P3p: CP="CAO PSA OUR" Unexpected error: Vary: Accept-Encoding,User-Agent Unexpected error: Cache-Control: max-age=0 Unexpected error: Expires: Tue, 06 Oct 2015 23:09:00 GMT Unexpected error: Keep-Alive: timeout=2, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Transfer-Encoding: chunked Unexpected error: Content-Type: text/html; charset=UTF-8
+
+http://www.manning.com/koenig2
+URL:http://www.manning.com/koenig2
+ Unexpected error: Server: nginx/1.4.2 Unexpected error: Date: Tue, 06 Oct 2015 23:09:02 GMT Unexpected error: Content-Type: text/html;charset=utf-8 Unexpected error: Transfer-Encoding: chunked Unexpected error: Connection: keep-alive Unexpected error: Content-Language: en-US
+
+http://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-43529.html
+URL:http://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-43529.html
+ Unexpected error: Server: nginx Unexpected error: Date: Tue, 06 Oct 2015 23:09:04 GMT Unexpected error: Content-Type: text/html; charset=UTF-8 Unexpected error: Transfer-Encoding: chunked Unexpected error: Connection: keep-alive Unexpected error: Keep-Alive: timeout=5 Unexpected error: X-Pingback: https://jaxenter.com/xmlrpc.php Unexpected error: X-UPSTREAM: 10.4.143.4:80
+
+http://drdobbs.com/high-performance-computing/229402193
+URL:http://drdobbs.com/high-performance-computing/229402193
+ Unexpected error: Date: Tue, 06 Oct 2015 23:09:07 GMT Unexpected error: Server: Apache Unexpected error: Connection: close Unexpected error: Transfer-Encoding: chunked Unexpected error: Content-Type: text/html Unexpected error: Vary: Accept-Encoding
+
+http://www.dzone.com/links/r/concurrency_and_background_tasks_in_grails.html
+URL:http://www.dzone.com/links/r/concurrency_and_background_tasks_in_grails.html
+ Unexpected error: Content-Language: en Unexpected error: Content-Type: text/html;charset=UTF-8 Unexpected error: Date: Tue, 06 Oct 2015 23:10:42 GMT Unexpected error: Server: Apache Unexpected error: Set-Cookie: JSESSIONID=F986170200D966537810354654464275; Path=/; Secure; HttpOnly Unexpected error: Set-Cookie: TH_CSRF=5124836709034218232; path=/; HttpOnly Unexpected error: Vary: Accept-Encoding Unexpected error: X-Frame-Options: SAMEORIGIN Unexpected error: X-Frame-Options: SAMEORIGIN Unexpected error: Content-Length: 96535 Unexpected error: Connection: keep-alive
+
+http://www.jroller.com/vaclav/entry/dataflow_speculations
+URL:http://www.jroller.com/vaclav/entry/dataflow_speculations
+could not get http://www.jroller.com/vaclav/entry/dataflow_speculations because Not Found
+
+http://www.ibm.com/developerworks/java/library/j-gpars/index.html
+URL:http://www.ibm.com/developerworks/java/library/j-gpars/index.html
+ Unexpected error: Content-Type: text/html; charset=UTF-8 Unexpected error: Content-Language: en-US Unexpected error: Date: Tue, 06 Oct 2015 23:09:14 GMT Unexpected error: Transfer-Encoding:  chunked Unexpected error: Connection: keep-alive Unexpected error: Connection: Transfer-Encoding
+
+http://tech.puredanger.com/
+URL:http://tech.puredanger.com/
+ Unexpected error: Date: Tue, 06 Oct 2015 23:09:16 GMT Unexpected error: P3P: policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV" Unexpected error: X-Pingback: http://puredanger.com/tech/xmlrpc.php Unexpected error: Content-Type: text/html; charset=UTF-8 Unexpected error: Age: 2 Unexpected error: Transfer-Encoding: chunked Unexpected error: Connection: keep-alive Unexpected error: Server: ATS/5.0.1
+
+http://fbflex.wordpress.com/2010/06/11/writing-batch-import-scripts-with-grails-gsql-and-gpars/
+URL:http://fbflex.wordpress.com/2010/06/11/writing-batch-import-scripts-with-grails-gsql-and-gpars/
+ Unexpected error: Server: nginx Unexpected error: Date: Tue, 06 Oct 2015 23:09:19 GMT Unexpected error: Content-Type: text/html; charset=UTF-8 Unexpected error: Transfer-Encoding: chunked Unexpected error: Connection: keep-alive Unexpected error: Vary: Accept-Encoding Unexpected error: Vary: Cookie Unexpected error: X-hacker: If you're reading this, you should visit automattic.com/jobs and apply to join the fun, mention this header. Unexpected error: X-Pingback: https://fbflex.wordpress.com/xmlrpc.php Unexpected error: Link: <http://wp.me/pdQtT-dL>; rel=shortlink Unexpected error: Last-Modified: Tue, 06 Oct 2015 23:09:18 GMT Unexpected error: Cache-Control: max-age=300, must-revalidate Unexpected error: X-nananana: Batcache Unexpected error: X-ac: 1.fra _sat
+
+http://java.dzone.com/articles/flowing-data
+URL:http://java.dzone.com/articles/flowing-data
+could not get http://java.dzone.com/articles/flowing-data because Not Found
+
+http://wordpress.transentia.com.au/wordpress/2010/03/05/playing-with-gpars/
+URL:http://wordpress.transentia.com.au/wordpress/2010/03/05/playing-with-gpars/
+ Unexpected error: Date: Tue, 06 Oct 2015 23:09:00 GMT Unexpected error: Server: Apache Unexpected error: X-Pingback: http://wordpress.transentia.com.au/wordpress/xmlrpc.php Unexpected error: Link: <http://wordpress.transentia.com.au/wordpress/?p=834>; rel=shortlink Unexpected error: X-Powered-By: PleskLin Unexpected error: Keep-Alive: timeout=2, max=150 Unexpected error: Connection: Keep-Alive Unexpected error: Transfer-Encoding: chunked Unexpected error: Content-Type: text/html; charset=UTF-8
+
+http://java.dzone.com/articles/dont-be-afraid-try-gpars
+URL:http://java.dzone.com/articles/dont-be-afraid-try-gpars
+could not get http://java.dzone.com/articles/dont-be-afraid-try-gpars because Not Found
+
+http://hamletdarcy.blogspot.com/2010/02/testing-asynchronous-code-with-gpars.html
+URL:http://hamletdarcy.blogspot.com/2010/02/testing-asynchronous-code-with-gpars.html
+ Unexpected error: Content-Type: text/html; charset=UTF-8 Unexpected error: Expires: Tue, 06 Oct 2015 23:09:29 GMT Unexpected error: Date: Tue, 06 Oct 2015 23:09:29 GMT Unexpected error: Cache-Control: private, max-age=0 Unexpected error: Last-Modified: Sat, 03 Oct 2015 06:19:27 GMT Unexpected error: X-Content-Type-Options: nosniff Unexpected error: X-XSS-Protection: 1; mode=block Unexpected error: Server: GSE Unexpected error: Accept-Ranges: none Unexpected error: Vary: Accept-Encoding Unexpected error: Transfer-Encoding: chunked
+
+http://www.grailspodcast.com/blog/id/516could not get http://www.grailspodcast.com/blog/id/516 because www.grailspodcast.com
+
+http://it-republik.de/jaxenter/artikel/GPars-Parallelitaet-fuer-Java-mit-Groovy-Mitteln-2608.html
+URL:http://it-republik.de/jaxenter/artikel/GPars-Parallelitaet-fuer-Java-mit-Groovy-Mitteln-2608.html
+ Unexpected error: Server: nginx Unexpected error: Date: Tue, 06 Oct 2015 23:09:32 GMT Unexpected error: Content-Type: text/html; charset=UTF-8 Unexpected error: Transfer-Encoding: chunked Unexpected error: Connection: keep-alive Unexpected error: Keep-Alive: timeout=5 Unexpected error: X-Pingback: https://jaxenter.de/xmlrpc.php Unexpected error: X-UPSTREAM: 10.4.143.9:80
+
+http://www.concertant.com/blog/2009-10-08-07-15
+URL:http://www.concertant.com/blog/2009-10-08-07-15
+ Unexpected error: Date: Tue, 06 Oct 2015 23:09:32 GMT Unexpected error: Server: Apache/2.4.16 (Debian) Unexpected error: Content-Length: 103503 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://www.russel.org.uk/blog/2009-10-07-09-30could not get http://www.russel.org.uk/blog/2009-10-07-09-30 because http://www.russel.org.uk/blog/2009-10-07-09-30
+
+http://javaposse.com/index.php?post_id=501792
+URL:http://javaposse.com/index.php?post_id=501792
+ Unexpected error: Server: Apache/2.2.15 (CentOS) Unexpected error: Cache-Control: public, max-age=60, s-maxage=2592000 Unexpected error: Vary: Accept-Encoding Unexpected error: X-Libsyn-Host: web-engine5.libsyn.com Unexpected error: Content-Type: text/html; charset=UTF-8 Unexpected error: last-modified: Tue, 06 Oct 2015 22:44:20 GMT Unexpected error: Content-Length: 436412 Unexpected error: Accept-Ranges: bytes Unexpected error: Date: Tue, 06 Oct 2015 23:08:38 GMT Unexpected error: X-Varnish: 1197168304 1196818391 Unexpected error: Age: 1515 Unexpected error: Via: 1.1 varnish Unexpected error: Connection: close Unexpected error: X-Cache: HIT
+
+http://www.groovymag.com/main.issues.description/id=11/
+URL:http://www.groovymag.com/main.issues.description/id=11/
+ Unexpected error: Date: Tue, 06 Oct 2015 23:03:08 GMT Unexpected error: Server: Apache/2.2.15 Unexpected error: X-Powered-By: PHP/5.6.12 Unexpected error: Set-Cookie: PHPSESSID=ll0hiibco1mdp7drmmhm1a1mi5; path=/ Unexpected error: Expires: Thu, 19 Nov 1981 08:52:00 GMT Unexpected error: Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0 Unexpected error: Pragma: no-cache Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=15, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Transfer-Encoding: chunked Unexpected error: Content-Type: text/html; charset=UTF-8
+
+http://groovy.dzone.com/announcements/gparalelizer-08-released
+URL:http://groovy.dzone.com/announcements/gparalelizer-08-released
+could not get http://groovy.dzone.com/announcements/gparalelizer-08-released because Not Found
+
+http://www.ddj.com/go-parallel/blog/archives/2009/06/a_domainspecifi.html
+URL:http://www.ddj.com/go-parallel/blog/archives/2009/06/a_domainspecifi.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:09:40 GMT Unexpected error: Server: Apache Unexpected error: Connection: close Unexpected error: Transfer-Encoding: chunked Unexpected error: Content-Type: text/html Unexpected error: Vary: Accept-Encoding
+
+http://www.jroller.com/vaclav/entry/another_milestone_for_gparallelizer_the
+URL:http://www.jroller.com/vaclav/entry/another_milestone_for_gparallelizer_the
+could not get http://www.jroller.com/vaclav/entry/another_milestone_for_gparallelizer_the because Not Found
+
+http://www.javaworld.com/javaworld/jw-03-2009/jw-03-actor-concurrency2.html
+URL:http://www.javaworld.com/javaworld/jw-03-2009/jw-03-actor-concurrency2.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:09:45 GMT Unexpected error: Server: Apache Unexpected error: X-Gas_TTL: 900 Unexpected error: Cache-Control: max-age=900 Unexpected error: X-GasHost: gas3.usw Unexpected error: X-Cooking-With: Gasoline-Local Unexpected error: X-Gasoline-Age: 177 Unexpected error: Content-Length: 78324 Unexpected error: Last-Modified: Tue, 06 Oct 2015 23:06:48 GMT Unexpected error: Content-Type: text/html;charset=UTF-8 Unexpected error: Vary: Accept-Encoding Unexpected error: Cache-Control: no-transform Unexpected error: Keep-Alive: timeout=5, max=99 Unexpected error: Connection: Keep-Alive
+
+http://www.gr8conf.org/blog/2009/03/05/19could not get http://www.gr8conf.org/blog/2009/03/05/19 because http://gr8conf.org/blog/2009/03/05/19
+
+http://groovy.dzone.com/news/event-based-actors-groovy
+URL:http://groovy.dzone.com/news/event-based-actors-groovy
+could not get http://groovy.dzone.com/news/event-based-actors-groovy because Not Found
+
+http://www.jroller.com/vaclav/entry/event_based_actors_in_groovy
+URL:http://www.jroller.com/vaclav/entry/event_based_actors_in_groovy
+could not get http://www.jroller.com/vaclav/entry/event_based_actors_in_groovy because Not Found
+
+http://www.jroller.com/vaclav/entry/groovy_actors_in_gparallelizer_concurrency
+URL:http://www.jroller.com/vaclav/entry/groovy_actors_in_gparallelizer_concurrency
+could not get http://www.jroller.com/vaclav/entry/groovy_actors_in_gparallelizer_concurrency because Not Found
+
+http://www.jroller.com/vaclav/entry/gparallelizer_made_available
+URL:http://www.jroller.com/vaclav/entry/gparallelizer_made_available
+could not get http://www.jroller.com/vaclav/entry/gparallelizer_made_available because Not Found
+
+
+file=[asynchronous_functions.html] 
+http://gpars.org/guide/guide/dataParallelism.html#dataParallelism_asynchronousInvocation
+URL:http://gpars.org/guide/guide/dataParallelism.html#dataParallelism_asynchronousInvocation
+ Unexpected error: Date: Tue, 06 Oct 2015 23:03:24 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 09 May 2014 06:25:41 GMT Unexpected error: ETag: "1e902f5-19b31-4f8f1aaab4340" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 105265 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+
+file=[breaking_changes.html] 
+
+file=[code_style.html] 
+http://teamcity.jetbrains.com/viewType.html?buildTypeId=bt183&amp;tab=buildTypeStatusDiv
+URL:http://teamcity.jetbrains.com/viewType.html?buildTypeId=bt183&amp;tab=buildTypeStatusDiv
+could not get http://teamcity.jetbrains.com/viewType.html?buildTypeId=bt183&amp;tab=buildTypeStatusDiv because Unauthorized
+
+
+file=[community.html] 
+http://www.ohloh.net
+URL:http://www.ohloh.net
+could not get http://www.ohloh.net because hostname in certificate didn't match: <www.openhub.net> != <*.ohloh.net> OR <*.ohloh.net> OR <ohloh.net>
+
+https://www.ohloh.net/p/gparscould not get https://www.ohloh.net/p/gpars because java.security.cert.CertificateException: No subject alternative DNS name matching www.openhub.net found.
+
+http://gpars-user-mailing-list.19372.n3.nabble.com/
+URL:http://gpars-user-mailing-list.19372.n3.nabble.com/
+ Unexpected error: p3p: CP="IDC DSP TAIi PSAi PSDi OTPi OUR IND PHY ONL UNI NAV DEM PRE LOC" Unexpected error: Via: cache-yes Unexpected error: Content-Type: text/html;charset=UTF-8 Unexpected error: ETag: 13:19372~2:19372:19372~1:19372:19372 Unexpected error: Last-Modified: Tue, 06 Oct 2015 00:53:17 GMT Unexpected error: Cache-Control: max-age=0 Unexpected error: Content-Length: 71904 Unexpected error: Server: Jetty(7.6.0.v20120127)
+
+http://gpars-developer-list.729030.n3.nabble.com/
+URL:http://gpars-developer-list.729030.n3.nabble.com/
+ Unexpected error: p3p: CP="IDC DSP TAIi PSAi PSDi OTPi OUR IND PHY ONL UNI NAV DEM PRE LOC" Unexpected error: Via: cache-yes Unexpected error: Content-Type: text/html;charset=UTF-8 Unexpected error: ETag: 13:729030~2:729030:729030~1:729030:729030 Unexpected error: Last-Modified: Tue, 06 Oct 2015 00:53:17 GMT Unexpected error: Cache-Control: max-age=0 Unexpected error: Content-Length: 72376 Unexpected error: Server: Jetty(7.6.0.v20120127)
+
+http://xircles.codehaus.org/projects/gpars/listscould not get http://xircles.codehaus.org/projects/gpars/lists because Server returned HTTP response code: 401 for URL: http://xircles.codehaus.org/projects/gpars/lists
+
+http://n3.nabble.com/GPars-user-mailing-list-f19372.htmlcould not get http://n3.nabble.com/GPars-user-mailing-list-f19372.html because http://n3.nabble.com/GPars-user-mailing-list-f19372.html
+
+http://jira.codehaus.org/browse/GPARS
+URL:http://jira.codehaus.org/browse/GPARS
+could not get http://jira.codehaus.org/browse/GPARS because peer not authenticated
+
+https://github.com/GPars/GPars
+URL:https://github.com/GPars/GPars
+ Unexpected error: Server: GitHub.com Unexpected error: Date: Tue, 06 Oct 2015 23:10:05 GMT Unexpected error: Content-Type: text/html; charset=utf-8 Unexpected error: Transfer-Encoding: chunked Unexpected error: Status: 200 OK Unexpected error: Content-Security-Policy: default-src *; script-src assets-cdn.github.com collector-cdn.github.com; object-src assets-cdn.github.com; style-src 'self' 'unsafe-inline' 'unsafe-eval' assets-cdn.github.com; img-src 'self' data: assets-cdn.github.com identicons.github.com www.google-analytics.com checkout.paypal.com collector.githubapp.com *.githubusercontent.com *.gravatar.com *.wp.com; media-src 'none'; frame-src 'self' render.githubusercontent.com gist.github.com www.youtube.com player.vimeo.com checkout.paypal.com; font-src assets-cdn.github.com; connect-src 'self' live.github.com wss://live.github.com uploads.github.com status.github.com api.github.com www.google-analytics.com api.braintreegateway.com client-analytics.braintreegateway.com github-cloud.s3.amazonaws.com; base-uri 'self'; form-action 'self' github.com gist.github.com Unexpected error: Public-Key-Pins: max-age=300; pin-sha256="WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18="; pin-sha256="JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg="; includeSubDomains Unexpected error: Cache-Control: no-cache Unexpected error: Vary: X-Requested-With Unexpected error: X-UA-Compatible: IE=Edge,chrome=1 Unexpected error: Set-Cookie: logged_in=no; domain=.github.com; path=/; expires=Sat, 06 Oct 2035 23:10:05 -0000; secure; HttpOnly Unexpected error: Set-Cookie: _gh_sess=eyJzZXNzaW9uX2lkIjoiZDI1MjEzY2E5NTE0NTAwMDJhOGVmZGI4ODE0ZTE4NjkiLCJfY3NyZl90b2tlbiI6ImlZLzhVQkxSU0ZhNDZEV0pYNzlNR25iemZ3YmVZbnI1YTQ4Z1ZxbDhaMWs9In0%3D--43142cb4fe5805e11dbc0f3d290949f8bc4c22ce; path=/; secure; HttpOnly Unexpected error: X-Request-Id: 33ee94b4522e505cf897b28ac07e9d33 Unexpected error: X-Runtime: 0.048611 Unexpected error: X-GitHub-Request-Id: 5C875CD8:1A03:FB5EBA:561454CC Unexpected error: Strict-Transport-Security: max-age=31536000; includeSubdomains; preload Unexpected error: X-Content-Type-Options: nosniff Unexpected error: X-XSS-Protection: 1; mode=block Unexpected error: X-Frame-Options: deny Unexpected error: Vary: Accept-Encoding Unexpected error: X-Served-By: d0e230454cb69aa01d4f86fc3a57b17f
+
+
+file=[concepts_compared.html] 
+
+file=[concurrency_topics.html] 
+http://www.alphaworks.ibm.com/tech/msdk
+URL:http://www.alphaworks.ibm.com/tech/msdk
+ Unexpected error: X-Powered-By: Servlet/3.0 Unexpected error: Expires: Thu, 01 Jan 1970 00:00:00 GMT Unexpected error: Cache-Control: private, no-store, no-cache, must-revalidate Unexpected error: X-LConn-Auth: false Unexpected error: X-UA-Compatible: IE=9,8 Unexpected error: Last-Modified: Tue, 06 Oct 2015 23:10:06 GMT Unexpected error: Content-Type: text/html;charset=UTF-8 Unexpected error: Content-Language: en-US Unexpected error: Date: Tue, 06 Oct 2015 23:10:07 GMT Unexpected error: Transfer-Encoding:  chunked Unexpected error: Connection: keep-alive Unexpected error: Connection: Transfer-Encoding
+
+
+file=[csp.html] 
+http://en.wikipedia.org/wiki/Communicating_sequential_processes
+URL:http://en.wikipedia.org/wiki/Communicating_sequential_processes
+could not get http://en.wikipedia.org/wiki/Communicating_sequential_processes because peer not authenticated
+
+http://gpars.org/guide/guide/GroovyCSP.html
+URL:http://gpars.org/guide/guide/GroovyCSP.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:03:39 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 09 May 2014 06:25:46 GMT Unexpected error: ETag: "1e90321-5297-4f8f1aaf78e80" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 21143 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+
+file=[css3menu.html] 
+http://www.gpars.org/1.2.1/guide/guide/actors.html#actors_classicExamples.html
+URL:http://www.gpars.org/1.2.1/guide/guide/actors.html#actors_classicExamples.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:03:39 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 09 May 2014 06:19:29 GMT Unexpected error: ETag: "1e8a583-1eba7-4f8f1947efe40" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 125863 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+
+file=[dataflow.html] 
+http://www.jonasboner.com
+URL:http://www.jonasboner.com
+ Unexpected error: Server: GitHub.com Unexpected error: Date: Tue, 06 Oct 2015 23:10:10 GMT Unexpected error: Content-Type: text/html; charset=utf-8 Unexpected error: Content-Length: 6112 Unexpected error: Last-Modified: Fri, 11 Sep 2015 07:06:41 GMT Unexpected error: Access-Control-Allow-Origin: * Unexpected error: Expires: Tue, 06 Oct 2015 23:20:10 GMT Unexpected error: Cache-Control: max-age=600 Unexpected error: Accept-Ranges: bytes
+
+http://gpars.org/guide/guide/dataflow.html
+URL:http://gpars.org/guide/guide/dataflow.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:03:42 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 09 May 2014 06:25:46 GMT Unexpected error: ETag: "1e90321-5297-4f8f1aaf78e80" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 21143 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+https://github.com/jboner/scala-dataflow/
+URL:https://github.com/jboner/scala-dataflow/
+ Unexpected error: Server: GitHub.com Unexpected error: Date: Tue, 06 Oct 2015 23:10:12 GMT Unexpected error: Content-Type: text/html; charset=utf-8 Unexpected error: Transfer-Encoding: chunked Unexpected error: Status: 200 OK Unexpected error: Content-Security-Policy: default-src *; script-src assets-cdn.github.com collector-cdn.github.com; object-src assets-cdn.github.com; style-src 'self' 'unsafe-inline' 'unsafe-eval' assets-cdn.github.com; img-src 'self' data: assets-cdn.github.com identicons.github.com www.google-analytics.com checkout.paypal.com collector.githubapp.com *.githubusercontent.com *.gravatar.com *.wp.com; media-src 'none'; frame-src 'self' render.githubusercontent.com gist.github.com www.youtube.com player.vimeo.com checkout.paypal.com; font-src assets-cdn.github.com; connect-src 'self' live.github.com wss://live.github.com uploads.github.com status.github.com api.github.com www.google-analytics.com api.braintreegateway.com client-analytics.braintreegateway.com github-cloud.s3.amazonaws.com; base-uri 'self'; form-action 'self' github.com gist.github.com Unexpected error: Public-Key-Pins: max-age=300; pin-sha256="WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18="; pin-sha256="JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg="; includeSubDomains Unexpected error: Cache-Control: no-cache Unexpected error: Vary: X-PJAX Unexpected error: X-UA-Compatible: IE=Edge,chrome=1 Unexpected error: Set-Cookie: logged_in=no; domain=.github.com; path=/; expires=Sat, 06 Oct 2035 23:10:12 -0000; secure; HttpOnly Unexpected error: Set-Cookie: _gh_sess=eyJzZXNzaW9uX2lkIjoiMDQ1M2Y0Zjc2MDI0MmNhZmVkZDg5YzM0ODc0MDdmZWMiLCJzcHlfcmVwbyI6Impib25lci9zY2FsYS1kYXRhZmxvdyIsInNweV9yZXBvX2F0IjoxNDQ0MTczMDEyLCJfY3NyZl90b2tlbiI6ImdueWxldVVyb1hwN21HUnk4Rkw1UjF0T09HU0NvdVlBRGZkNmNHOTlJNGc9In0%3D--2eecf04aa068b97f3580dcc612735e6e62373a2e; path=/; secure; HttpOnly Unexpected error: X-Request-Id: 26559c7162c74e1289e1986f2b265df2 Unexpected error: X-Runtime: 0.039112 Unexpected error: X-GitHub-Request-Id: 5C875CD8:1A07:22DC1DA:561454D3 Unexpected error: Strict-Transport-Security: max-age=31536000; includeSubdomains; preload Unexpected error: X-Content-Type-Options: nosniff Unexpected error: X-XSS-Protection: 1; mode=block Unexpected error: X-Frame-Options: deny Unexpected error: Vary: Accept-Encoding Unexpected error: X-Served-By: 9835a984a05caa405eb61faaa1546741
+
+http://jonasboner.com/talks.html
+URL:http://jonasboner.com/talks.html
+ Unexpected error: Server: GitHub.com Unexpected error: Date: Tue, 06 Oct 2015 23:10:13 GMT Unexpected error: Content-Type: text/html; charset=utf-8 Unexpected error: Content-Length: 6112 Unexpected error: Last-Modified: Fri, 11 Sep 2015 07:06:41 GMT Unexpected error: Access-Control-Allow-Origin: * Unexpected error: Expires: Tue, 06 Oct 2015 23:20:13 GMT Unexpected error: Cache-Control: max-age=600 Unexpected error: Accept-Ranges: bytes
+
+http://github.com/larrytheliquid/dataflow/tree/master
+URL:http://github.com/larrytheliquid/dataflow/tree/master
+could not get http://github.com/larrytheliquid/dataflow/tree/master because Not Found
+
+
+file=[demos.html] 
+http://gpars.org/download/1.2.1/gpars-samples-1.2.1.zip
+URL:http://gpars.org/download/1.2.1/gpars-samples-1.2.1.zip
+ Unexpected error: Date: Tue, 06 Oct 2015 23:03:46 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 09 May 2014 05:16:05 GMT Unexpected error: ETag: "1e90375-44a-4f8f0b1c28f40" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 1098 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://bamboo.ci.codehaus.org/browse/GPARS-DEF/latest/artifactcould not get http://bamboo.ci.codehaus.org/browse/GPARS-DEF/latest/artifact because Server returned HTTP response code: 401 for URL: http://bamboo.ci.codehaus.org/browse/GPARS-DEF/latest/artifact
+
+http://gpars.org/download/1.2.1/gpars-mvn-java-demo-1.2.1.zip
+URL:http://gpars.org/download/1.2.1/gpars-mvn-java-demo-1.2.1.zip
+ Unexpected error: Date: Tue, 06 Oct 2015 23:03:47 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 09 May 2014 05:16:05 GMT Unexpected error: ETag: "1e90375-44a-4f8f0b1c28f40" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 1098 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://bamboo.ci.codehaus.org/browse/GPARS-DEF/latest/artifactcould not get http://bamboo.ci.codehaus.org/browse/GPARS-DEF/latest/artifact because Server returned HTTP response code: 401 for URL: http://bamboo.ci.codehaus.org/browse/GPARS-DEF/latest/artifact
+
+
+file=[developer_zone.html] 
+https://travis-ci.org/GPars/GPars
+URL:https://travis-ci.org/GPars/GPars
+ Unexpected error: Server: Cowboy Unexpected error: Connection: keep-alive Unexpected error: Content-Type: text/html Unexpected error: Strict-Transport-Security: max-age=31536000 Unexpected error: Cache-Control: public, must-revalidate, max-age=0 Unexpected error: Content-Location: / Unexpected error: Last-Modified: Tue, 06 Oct 2015 15:39:39 GMT Unexpected error: Expires: 0 Unexpected error: Vary: Accept,Accept-Encoding Unexpected error: Etag: 1ce450f42113f2d8d4fba3bff22c34cc Unexpected error: Date: Tue, 06 Oct 2015 23:10:17 GMT Unexpected error: X-Frame-Options: SAMEORIGIN Unexpected error: X-Xss-Protection: 1; mode=block Unexpected error: X-Content-Type-Options: nosniff Unexpected error: Content-Length: 3649 Unexpected error: Via: 1.1 vegur
+
+https://travis-ci.org/GPars/GPars.svg?branch=mastercould not get https://travis-ci.org/GPars/GPars.svg?branch=master because Server returned HTTP response code: 500 for URL: https://api.travis-ci.org/GPars/GPars.svg?branch=master
+
+https://snap-ci.com/GPars/GPars/branch/master
+URL:https://snap-ci.com/GPars/GPars/branch/master
+ Unexpected error: Cache-Control: max-age=0, must-revalidate Unexpected error: Content-Encoding:  Unexpected error: Content-Type: text/html Unexpected error: Date: Tue, 06 Oct 2015 23:10:22 GMT Unexpected error: ETag: "be276f85d3387723c7a3e03aff8b8d94" Unexpected error: Last-Modified: Wed, 05 Aug 2015 20:36:44 GMT Unexpected error: Server: nginx/1.9.5 Unexpected error: Via: 1.1 da12d67759e86c2692fb44b40cb48f23.cloudfront.net (CloudFront) Unexpected error: X-Amz-Cf-Id: px_VKpCswCzc7LutRwX9oIdOArHb4sDO4IKKRZ6vqCIaXQ1CWaoNOg== Unexpected error: x-amz-meta-content-md5: be276f85d3387723c7a3e03aff8b8d94 Unexpected error: X-Cache: RefreshHit from cloudfront Unexpected error: Content-Length: 17604 Unexpected error: Connection: keep-alive
+
+https://snap-ci.com/GPars/GPars/branch/master/build_image
+URL:https://snap-ci.com/GPars/GPars/branch/master/build_image
+ Unexpected error: Cache-Control: no-cache, no-store, must-revalidate Unexpected error: Cache-control: no-cache="set-cookie" Unexpected error: Content-Type: text/html; charset=utf-8 Unexpected error: Date: Tue, 06 Oct 2015 23:10:24 GMT Unexpected error: Server: nginx/1.9.5 Unexpected error: Set-Cookie: _session_id=e740dbf77cd17c255a42308cadf47398; path=/; expires=Wed, 21-Oct-2015 23:10:24 GMT; secure; HttpOnly Unexpected error: Set-Cookie: utm_parameters=; path=/; expires=Thu, 01-Jan-1970 00:00:00 GMT Unexpected error: Set-Cookie: AWSELB=2569850D0469DB490959909294C16AEE2FBF268FFA1B7AACB306795D17F2DD07572038B59C49B973FFBA27C9A69FF9A70481C9104CE07BE82F9DCD966253D5D564470F35E2;PATH=/;MAX-AGE=300 Unexpected error: X-Rack-Cache: miss Unexpected error: X-Request-Id: bf69e21df8e078605b2827192922259f Unexpected error: X-Runtime: 0.115034 Unexpected error: X-Snap-Version: 0.0.6.800-dfe86c1 Unexpected error: X-UA-Compatible: IE=Edge,chrome=1 Unexpected error: Content-Length: 96477 Unexpected error: Connection: keep-alive
+
+http://teamcity.jetbrains.com/project.html?projectId=GPars
+URL:http://teamcity.jetbrains.com/project.html?projectId=GPars
+could not get http://teamcity.jetbrains.com/project.html?projectId=GPars because Unauthorized
+
+http://bamboo.ci.codehaus.org/browse/GPARS-DEFcould not get http://bamboo.ci.codehaus.org/browse/GPARS-DEF because Server returned HTTP response code: 401 for URL: http://bamboo.ci.codehaus.org/browse/GPARS-DEF
+
+http://jira.codehaus.org/browse/GPARS
+URL:http://jira.codehaus.org/browse/GPARS
+could not get http://jira.codehaus.org/browse/GPARS because peer not authenticated
+
+https://dav.codehaus.org/snapshots.repository/gpars/could not get https://dav.codehaus.org/snapshots.repository/gpars/ because sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+
+https://dav.codehaus.org/repository/gpars/could not get https://dav.codehaus.org/repository/gpars/ because sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+
+http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/
+URL:http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/
+could not get http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/ because Forbidden
+
+https://dav.codehaus.org/snapshots.repository/gpars/could not get https://dav.codehaus.org/snapshots.repository/gpars/ because sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+
+http://www.anyclient.com/download.html
+URL:http://www.anyclient.com/download.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:10:32 GMT Unexpected error: Set-Cookie: locale=en;Path=/ Unexpected error: Set-Cookie: JSESSIONID=wfvh61ew3o7d1kwlxf9tcmpa4;Path=/;Secure;HttpOnly Unexpected error: Expires: Thu, 01 Jan 1970 00:00:00 GMT Unexpected error: Content-Language: en Unexpected error: Content-Type: text/html;charset=UTF-8 Unexpected error: Content-Length: 8229
+
+http://www.gpars.org/guide/
+URL:http://www.gpars.org/guide/
+ Unexpected error: Date: Tue, 06 Oct 2015 23:04:03 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 09 May 2014 06:27:20 GMT Unexpected error: ETag: "1e9035e-5247-4f8f1b091e200" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 21063 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://gpars.org/javadoc/index.htmlcould not get http://gpars.org/javadoc/index.html because http://gpars.org/javadoc/index.html
+
+http://gpars.org/groovydoc/index.html%20respectivelycould not get http://gpars.org/groovydoc/index.html%20respectively because http://gpars.org/groovydoc/index.html%20respectively
+
+http://docs.codehaus.org/pages/createblogpost.action?spaceKey=GPARS
+URL:http://docs.codehaus.org/pages/createblogpost.action?spaceKey=GPARS
+could not get http://docs.codehaus.org/pages/createblogpost.action?spaceKey=GPARS because peer not authenticated
+
+http://xircles.codehaus.org/projects/gparscould not get http://xircles.codehaus.org/projects/gpars because Server returned HTTP response code: 401 for URL: http://xircles.codehaus.org/projects/gpars
+
+
+file=[download.html] 
+http://gpars.org/download/1.2.1/
+URL:http://gpars.org/download/1.2.1/
+ Unexpected error: Date: Tue, 06 Oct 2015 23:04:05 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 09 May 2014 05:16:05 GMT Unexpected error: ETag: "1e90375-44a-4f8f0b1c28f40" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 1098 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://gpars.org/download/1.2.0/
+URL:http://gpars.org/download/1.2.0/
+ Unexpected error: Date: Tue, 06 Oct 2015 23:04:05 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Sat, 26 Apr 2014 03:26:22 GMT Unexpected error: ETag: "1e903b0-44a-4f7e9a5721380" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 1098 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://gpars.org/download/1.1.0/
+URL:http://gpars.org/download/1.1.0/
+ Unexpected error: Date: Tue, 06 Oct 2015 23:04:06 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Tue, 23 Jul 2013 17:56:34 GMT Unexpected error: ETag: "1e90380-44a-4e231837b1880" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 1098 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://gpars.org/download/1.0.0/
+URL:http://gpars.org/download/1.0.0/
+ Unexpected error: Date: Tue, 06 Oct 2015 23:04:06 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Tue, 11 Dec 2012 09:06:49 GMT Unexpected error: ETag: "1e9039e-43e-4d090007e7c40" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 1086 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://bamboo.ci.codehaus.org/browse/GPARS-DEF/latest/artifactcould not get http://bamboo.ci.codehaus.org/browse/GPARS-DEF/latest/artifact because Server returned HTTP response code: 401 for URL: http://bamboo.ci.codehaus.org/browse/GPARS-DEF/latest/artifact
+
+
+file=[events.html] 
+http://gr8conf.eu/Presentations/GPars-how-to-guide
+URL:http://gr8conf.eu/Presentations/GPars-how-to-guide
+could not get http://gr8conf.eu/Presentations/GPars-how-to-guide because Not Found
+
+http://gr8conf.eu/Presentations/---GPars-Workshop
+URL:http://gr8conf.eu/Presentations/---GPars-Workshop
+could not get http://gr8conf.eu/Presentations/---GPars-Workshop because Not Found
+
+http://greach.es/
+URL:http://greach.es/
+ Unexpected error: Date: Tue, 06 Oct 2015 22:45:23 GMT Unexpected error: Server: Apache/2.2.16 (Debian) Unexpected error: X-Powered-By: PHP/5.3.3-7+squeeze18 Unexpected error: X-Pingback: http://greachconf.com/xmlrpc.php Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=15, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Transfer-Encoding: chunked Unexpected error: Content-Type: text/html; charset=UTF-8
+
+http://greach.es/
+URL:http://greach.es/
+ Unexpected error: Date: Tue, 06 Oct 2015 22:45:26 GMT Unexpected error: Server: Apache/2.2.16 (Debian) Unexpected error: X-Powered-By: PHP/5.3.3-7+squeeze18 Unexpected error: X-Pingback: http://greachconf.com/xmlrpc.php Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=15, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Transfer-Encoding: chunked Unexpected error: Content-Type: text/html; charset=UTF-8
+
+http://skillsmatter.com/podcast/groovy-grails/gpars-vs-wild
+URL:http://skillsmatter.com/podcast/groovy-grails/gpars-vs-wild
+could not get http://skillsmatter.com/podcast/groovy-grails/gpars-vs-wild because Not Found
+
+http://topconf.com/Conference/Abstracts/unleash/tabid/131/language/en-US/Default.aspx
+URL:http://topconf.com/Conference/Abstracts/unleash/tabid/131/language/en-US/Default.aspx
+ Unexpected error: Server: nginx/1.7.9 Unexpected error: Date: Tue, 06 Oct 2015 23:10:48 GMT Unexpected error: Content-Type: text/html; charset=UTF-8 Unexpected error: Transfer-Encoding: chunked Unexpected error: Connection: keep-alive Unexpected error: X-Pingback: http://topconf.com/xmlrpc.php Unexpected error: Set-Cookie: mc_session_ids[default]=33f067f1bd34af9d4de0f301c25abf45ca1064d1; expires=Tue, 06-Oct-2015 23:15:48 GMT; path=/; httponly Unexpected error: Set-Cookie: mc_session_ids[multi][0]=464fd2cd162596e8e442243a269801e8e7596d7e; expires=Tue, 06-Oct-2015 23:15:48 GMT; path=/ Unexpected error: Set-Cookie: mc_session_ids[multi][1]=2c06d2481f36c846e38157b38682cd320aaf77b0; expires=Tue, 06-Oct-2015 23:15:48 GMT; path=/ Unexpected error: Set-Cookie: mc_session_ids[multi][2]=7b9e3e04c1977616e7d2c57e245bec3a2e01b401; expires=Tue, 06-Oct-2015 23:15:48 GMT; path=/ Unexpected error: Set-Cookie: mc_session_ids[multi][3]=aa077755b48f5d559e5c0483a8b641c2a4b33a85; expires=Tue, 06-Oct-2015 23:15:48 GMT; path=/ Unexpected error: Set-Cookie: mc_session_ids[multi][4]=09b7a1b9f8c29a1e3574911c7278b35bcdb21013; expires=Tue, 06-Oct-2015 23:15:48 GMT; path=/ Unexpected error: Host-Header: 192fc2e7e50945beb8231a492d6a8024 Unexpected error: X-Proxy-Cache: MISS
+
+http://jax.de/wjax2011/
+URL:http://jax.de/wjax2011/
+could not get http://jax.de/wjax2011/ because Not Found
+
+http://entwickler.com/konferenzen/ext_scripts/v2/php/sessions-popup.php?module=wjax2011&amp;id=18755
+URL:http://entwickler.com/konferenzen/ext_scripts/v2/php/sessions-popup.php?module=wjax2011&amp;id=18755
+ Unexpected error: Server: nginx Unexpected error: Date: Tue, 06 Oct 2015 23:10:55 GMT Unexpected error: Content-Type: text/html; charset=UTF-8 Unexpected error: Transfer-Encoding: chunked Unexpected error: Connection: keep-alive Unexpected error: Keep-Alive: timeout=5 Unexpected error: Vary: Cookie Unexpected error: X-Pingback: https://entwickler.de/xmlrpc.php Unexpected error: X-UPSTREAM: 10.4.143.9:80
+
+http://entwickler.com/konferenzen/ext_scripts/v2/php/sessions-popup.php?module=wjax2011&amp;id=18757
+URL:http://entwickler.com/konferenzen/ext_scripts/v2/php/sessions-popup.php?module=wjax2011&amp;id=18757
+ Unexpected error: Server: nginx Unexpected error: Date: Tue, 06 Oct 2015 23:10:59 GMT Unexpected error: Content-Type: text/html; charset=UTF-8 Unexpected error: Transfer-Encoding: chunked Unexpected error: Connection: keep-alive Unexpected error: Keep-Alive: timeout=5 Unexpected error: Vary: Cookie Unexpected error: X-Pingback: https://entwickler.de/xmlrpc.php Unexpected error: X-UPSTREAM: 10.4.143.9:80
+
+http://www.devoxx.com/display/DV11/Groovy+actors+and+concurrent+dataflow+with+GParscould not get http://www.devoxx.com/display/DV11/Groovy+actors+and+concurrent+dataflow+with+GPars because http://www.devoxx.com/display/DV11/Groovy+actors+and+concurrent+dataflow+with+GPars
+
+http://gotocon.com/prague-2011/
+URL:http://gotocon.com/prague-2011/
+ Unexpected error: Date: Tue, 06 Oct 2015 23:11:00 GMT Unexpected error: Server: Apache/2.4.7 (Ubuntu) Unexpected error: Content-Language: en Unexpected error: Expires: Tue, 06 Oct 2015 23:12:00 GMT Unexpected error: Vary: Accept-Encoding Unexpected error: Age: 0 Unexpected error: Content-Length: 20061 Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html;charset=UTF-8
+
+http://gotocon.com/prague-2011/presentation/Unleash%20your%20processor%28s%29
+URL:http://gotocon.com/prague-2011/presentation/Unleash%20your%20processor%28s%29
+ Unexpected error: Date: Tue, 06 Oct 2015 23:11:01 GMT Unexpected error: Server: Apache/2.4.7 (Ubuntu) Unexpected error: Set-Cookie: JSESSIONID=T4tPCLMjfl72Hg; Path=/; HttpOnly Unexpected error: Content-Language: en Unexpected error: Expires: Tue, 06 Oct 2015 23:12:01 GMT Unexpected error: Content-Type: text/html;charset=UTF-8 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Transfer-Encoding: chunked
+
+http://gotocon.com/prague-2011/presentation/Groovy%20actors%20and%20concurrent%20dataflow%20with%20GPars
+URL:http://gotocon.com/prague-2011/presentation/Groovy%20actors%20and%20concurrent%20dataflow%20with%20GPars
+ Unexpected error: Date: Tue, 06 Oct 2015 23:11:01 GMT Unexpected error: Server: Apache/2.4.7 (Ubuntu) Unexpected error: Content-Language: en Unexpected error: Expires: Tue, 06 Oct 2015 23:12:01 GMT Unexpected error: Vary: Accept-Encoding Unexpected error: Age: 0 Unexpected error: Content-Length: 16822 Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html;charset=UTF-8
+
+http://www.con-fess.com/web/guestcould not get http://www.con-fess.com/web/guest because 2014.con-fess.comweb
+
+http://2011.geecon.org/main/home
+URL:http://2011.geecon.org/main/home
+ Unexpected error: Date: Tue, 06 Oct 2015 23:11:04 GMT Unexpected error: Server: Apache/2.2.16 (Debian) Unexpected error: Content-Length: 1896 Unexpected error: Keep-Alive: timeout=15, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html;charset=UTF-8
+
+http://www.eu2011.gr8conf.org/
+URL:http://www.eu2011.gr8conf.org/
+ Unexpected error: Date: Tue, 06 Oct 2015 23:08:25 GMT Unexpected error: Server: Apache/2.4.7 (Ubuntu) Unexpected error: Last-Modified: Tue, 24 Jan 2012 10:23:17 GMT Unexpected error: ETag: "b1-4b74389191a1c" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 177 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://eu.gr8conf.org/eu2010/agenda/indexcould not get http://eu.gr8conf.org/eu2010/agenda/index because http://gr8conf.eu/eu2010/agenda/index
+
+http://2010.geecon.org/main/home
+URL:http://2010.geecon.org/main/home
+ Unexpected error: Date: Tue, 06 Oct 2015 23:11:05 GMT Unexpected error: Server: Apache/2.2.16 (Debian) Unexpected error: Content-Length: 1896 Unexpected error: Keep-Alive: timeout=15, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html;charset=UTF-8
+
+http://www.jfokus.se/jfokus/speakers.jsp#V%C3%A1clav%20Pech
+URL:http://www.jfokus.se/jfokus/speakers.jsp#V%C3%A1clav%20Pech
+ Unexpected error: Date: Tue, 06 Oct 2015 23:11:06 GMT Unexpected error: Server: Apache Unexpected error: Set-Cookie: JSESSIONID=2946D39B2D1096B65B63B7D5E3034DEE; Path=/jfokus/; HttpOnly Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Transfer-Encoding: chunked Unexpected error: Content-Type: text/html;charset=ISO-8859-1
+
+http://www.jfokus.se/jfokus/speakers.jsp#Vaclav%20Pech
+URL:http://www.jfokus.se/jfokus/speakers.jsp#Vaclav%20Pech
+ Unexpected error: Date: Tue, 06 Oct 2015 23:11:07 GMT Unexpected error: Server: Apache Unexpected error: Set-Cookie: JSESSIONID=31EB7F822B79FC893BFBD4F8CC9C765D; Path=/jfokus/; HttpOnly Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Transfer-Encoding: chunked Unexpected error: Content-Type: text/html;charset=ISO-8859-1
+
+http://www.jax.de
+URL:http://www.jax.de
+ Unexpected error: Server: nginx Unexpected error: Date: Tue, 06 Oct 2015 23:11:08 GMT Unexpected error: Content-Type: text/html; charset=utf-8 Unexpected error: Transfer-Encoding: chunked Unexpected error: Connection: keep-alive Unexpected error: Keep-Alive: timeout=5 Unexpected error: Set-Cookie: device=3; expires=Wed, 07-Oct-2015 01:11:08 GMT; path=/; domain=.jax.de; httponly Unexpected error: Set-Cookie: device_type=0; expires=Wed, 07-Oct-2015 01:11:08 GMT; path=/; domain=.jax.de; httponly Unexpected error: Expires: Sun, 19 Nov 1978 05:00:00 GMT Unexpected error: Last-Modified: Tue, 06 Oct 2015 23:11:08 GMT Unexpected error: Cache-Control: no-cache, must-revalidate, post-check=0, pre-check=0 Unexpected error: ETag: "1444173068" Unexpected error: Content-Language: de Unexpected error: X-Generator: Drupal 7 (http://drupal.org) Unexpected error: Link: <https://jax.de/wjax2015/>; rel="canonical",<https://jax.de/wjax2015/>; rel="shortlink" Unexpected error: X-UPSTREAM: 10.4.143.4:80
+
+http://www.devoxx.com/display/DV09/Quickie+Day+1could not get http://www.devoxx.com/display/DV09/Quickie+Day+1 because http://www.devoxx.com/display/DV09/Quickie+Day+1
+
+
+file=[forkjoin.html] 
+http://gpars.org/guide/guide/dataParallelism.html#dataParallelism_fork-join
+URL:http://gpars.org/guide/guide/dataParallelism.html#dataParallelism_fork-join
+ Unexpected error: Date: Tue, 06 Oct 2015 23:04:40 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 09 May 2014 06:25:41 GMT Unexpected error: ETag: "1e902f5-19b31-4f8f1aaab4340" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 105265 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+
+file=[gpars_history.html] 
+http://www.vaclavpech.eu/index.html
+URL:http://www.vaclavpech.eu/index.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:04:41 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Mon, 16 Sep 2013 06:24:03 GMT Unexpected error: ETag: "1e4c04e-1973-4e67a401ec6c0" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 6515 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://code.google.com/p/gparallelizer/
+URL:http://code.google.com/p/gparallelizer/
+ Unexpected error: Date: Tue, 06 Oct 2015 23:11:12 GMT Unexpected error: Pragma: no-cache Unexpected error: Expires: Fri, 01 Jan 1990 00:00:00 GMT Unexpected error: Cache-Control: no-cache, must-revalidate Unexpected error: Content-Type: text/html; charset=UTF-8 Unexpected error: X-Content-Type-Options: nosniff Unexpected error: Server: codesite Unexpected error: X-XSS-Protection: 1; mode=block Unexpected error: X-Frame-Options: SAMEORIGIN Unexpected error: Set-Cookie: PREF=ID=1111111111111111:TM=1444173072:LM=1444173072:V=1:S=6vD_6GCOeRlSqae_; expires=Thu, 31-Dec-2015 16:02:17 GMT; path=/; domain=.google.com Unexpected error: Accept-Ranges: none Unexpected error: Vary: Accept-Encoding Unexpected error: Transfer-Encoding: chunked
+
+http://jonasboner.com/
+URL:http://jonasboner.com/
+ Unexpected error: Server: GitHub.com Unexpected error: Date: Tue, 06 Oct 2015 23:11:12 GMT Unexpected error: Content-Type: text/html; charset=utf-8 Unexpected error: Content-Length: 6112 Unexpected error: Last-Modified: Fri, 11 Sep 2015 07:06:41 GMT Unexpected error: Access-Control-Allow-Origin: * Unexpected error: Expires: Tue, 06 Oct 2015 23:21:12 GMT Unexpected error: Cache-Control: max-age=600 Unexpected error: Accept-Ranges: bytes
+
+http://www.gpars.org/guide/index.html
+URL:http://www.gpars.org/guide/index.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:04:44 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 09 May 2014 06:27:20 GMT Unexpected error: ETag: "1e9035e-5247-4f8f1b091e200" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 21063 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://www.cs.kent.ac.uk/projects/ofa/jcsp/
+URL:http://www.cs.kent.ac.uk/projects/ofa/jcsp/
+ Unexpected error: Date: Tue, 06 Oct 2015 23:11:13 GMT Unexpected error: Server: Apache Unexpected error: Keep-Alive: timeout=15, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Transfer-Encoding: chunked Unexpected error: Content-Type: text/html
+
+
+file=[gpars_logo.html] 
+http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=blob_plain;f=artwork/gpars-logo.PNG;hb=HEADcould not get http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=blob_plain;f=artwork/gpars-logo.PNG;hb=HEAD because Server returned HTTP response code: 401 for URL: http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=blob_plain;f=artwork/gpars-logo.PNG;hb=HEAD
+
+http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=blob_plain;f=artwork/gpars-rgb.svg;hb=HEADcould not get http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=blob_plain;f=artwork/gpars-rgb.svg;hb=HEAD because Server returned HTTP response code: 401 for URL: http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=blob_plain;f=artwork/gpars-rgb.svg;hb=HEAD
+
+http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=blob_plain;f=artwork/GPars_logo.zip;hb=HEADcould not get http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=blob_plain;f=artwork/GPars_logo.zip;hb=HEAD because Server returned HTTP response code: 401 for URL: http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=blob_plain;f=artwork/GPars_logo.zip;hb=HEAD
+
+
+file=[gparspool.html] 
+http://gpars.org/guide/guide/dataParallelism.html
+URL:http://gpars.org/guide/guide/dataParallelism.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:04:46 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 09 May 2014 06:25:46 GMT Unexpected error: ETag: "1e90321-5297-4f8f1aaf78e80" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 21143 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+
+file=[grails_and_griffon_fast_track.html] 
+http://gpars.org/guide/index.html
+URL:http://gpars.org/guide/index.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:04:46 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 09 May 2014 06:27:20 GMT Unexpected error: ETag: "1e9035e-5247-4f8f1b091e200" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 21063 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+
+file=[groovy_fast_track.html] 
+http://www.gpars.org/guide/guide/dataParallelism.html#dataParallelism_parallelCollections
+URL:http://www.gpars.org/guide/guide/dataParallelism.html#dataParallelism_parallelCollections
+ Unexpected error: Date: Tue, 06 Oct 2015 23:04:46 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 09 May 2014 06:25:41 GMT Unexpected error: ETag: "1e902f5-19b31-4f8f1aaab4340" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 105265 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://www.gpars.org/guide/
+URL:http://www.gpars.org/guide/
+ Unexpected error: Date: Tue, 06 Oct 2015 23:04:47 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 09 May 2014 06:27:20 GMT Unexpected error: ETag: "1e9035e-5247-4f8f1b091e200" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 21063 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://www.gpars.org/guide/guide/actors.html
+URL:http://www.gpars.org/guide/guide/actors.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:04:47 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 09 May 2014 06:25:46 GMT Unexpected error: ETag: "1e90321-5297-4f8f1aaf78e80" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 21143 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://www.gpars.org/guide/
+URL:http://www.gpars.org/guide/
+ Unexpected error: Date: Tue, 06 Oct 2015 23:04:48 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 09 May 2014 06:27:20 GMT Unexpected error: ETag: "1e9035e-5247-4f8f1b091e200" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 21063 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://www.gpars.org/guide/
+URL:http://www.gpars.org/guide/
+ Unexpected error: Date: Tue, 06 Oct 2015 23:04:48 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 09 May 2014 06:27:20 GMT Unexpected error: ETag: "1e9035e-5247-4f8f1b091e200" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 21063 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=tree;f=src/test/groovy/groovyx/gpars/samples;h=6e25c7ecb409197aced73a76719795976ee461ec;hb=HEADcould not get http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=tree;f=src/test/groovy/groovyx/gpars/samples;h=6e25c7ecb409197aced73a76719795976ee461ec;hb=HEAD because Server returned HTTP response code: 401 for URL: http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=tree;f=src/test/groovy/groovyx/gpars/samples;h=6e25c7ecb409197aced73a76719795976ee461ec;hb=HEAD
+
+
+file=[hackergarten.html] 
+
+file=[index.html] 
+http://www.gpars.org/1.2.1/guide/guide/actors.html#actors_classicExamples.html
+URL:http://www.gpars.org/1.2.1/guide/guide/actors.html#actors_classicExamples.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:04:49 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 09 May 2014 06:19:29 GMT Unexpected error: ETag: "1e8a583-1eba7-4f8f1947efe40" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 125863 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://www.groovy-lang.org/
+URL:http://www.groovy-lang.org/
+ Unexpected error: Date: Tue, 06 Oct 2015 23:24:19 GMT Unexpected error: Server: Apache/2.4.7 (Ubuntu) Unexpected error: Accept-Ranges: bytes Unexpected error: Vary: Accept-Encoding Unexpected error: X-Mod-Pagespeed: 1.9.32.3-4448 Unexpected error: Cache-Control: max-age=0, no-cache, must-revalidate Unexpected error: Content-Length: 19750 Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://www.apache.org/licenses/LICENSE-2.0.html
+URL:http://www.apache.org/licenses/LICENSE-2.0.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:11:19 GMT Unexpected error: Server: Apache/2.4.7 (Ubuntu) Unexpected error: Last-Modified: Fri, 03 Jul 2015 01:58:09 GMT Unexpected error: ETag: "4eaf-519eee34ae1fe" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 20143 Unexpected error: Vary: Accept-Encoding Unexpected error: Cache-Control: max-age=3600 Unexpected error: Expires: Wed, 07 Oct 2015 00:11:19 GMT Unexpected error: Keep-Alive: timeout=30, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://www.apache.org/licenses/LICENSE-2.0.html
+URL:http://www.apache.org/licenses/LICENSE-2.0.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:11:19 GMT Unexpected error: Server: Apache/2.4.7 (Ubuntu) Unexpected error: Last-Modified: Fri, 03 Jul 2015 01:58:09 GMT Unexpected error: ETag: "4eaf-519eee34ae1fe" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 20143 Unexpected error: Vary: Accept-Encoding Unexpected error: Cache-Control: max-age=3600 Unexpected error: Expires: Wed, 07 Oct 2015 00:11:19 GMT Unexpected error: Keep-Alive: timeout=30, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+
+file=[integration.html] 
+http://gpars.org/download/1.2.0/gpars-mvn-java-demo-1.2.0.zip
+URL:http://gpars.org/download/1.2.0/gpars-mvn-java-demo-1.2.0.zip
+ Unexpected error: Date: Tue, 06 Oct 2015 23:04:51 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Sat, 26 Apr 2014 03:26:22 GMT Unexpected error: ETag: "1e903b0-44a-4f7e9a5721380" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 1098 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://bamboo.ci.codehaus.org/browse/GPARS-DEF/latest/artifactcould not get http://bamboo.ci.codehaus.org/browse/GPARS-DEF/latest/artifact because Server returned HTTP response code: 401 for URL: http://bamboo.ci.codehaus.org/browse/GPARS-DEF/latest/artifact
+
+
+file=[java_fast_track.html] 
+http://gpars.org/download/1.1.0/gpars-mvn-java-demo-1.1.0.zip
+URL:http://gpars.org/download/1.1.0/gpars-mvn-java-demo-1.1.0.zip
+ Unexpected error: Date: Tue, 06 Oct 2015 23:04:51 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Tue, 23 Jul 2013 17:56:34 GMT Unexpected error: ETag: "1e90380-44a-4e231837b1880" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 1098 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://gpars.org/download/1.1.0/gpars-mvn-java-demo-1.1.0.zip
+URL:http://gpars.org/download/1.1.0/gpars-mvn-java-demo-1.1.0.zip
+ Unexpected error: Date: Tue, 06 Oct 2015 23:04:52 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Tue, 23 Jul 2013 17:56:34 GMT Unexpected error: ETag: "1e90380-44a-4e231837b1880" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 1098 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://www.gpars.org/guide/guide/gettingStarted.html#gettingStarted_JavaAPI-usingGParsFromJava
+URL:http://www.gpars.org/guide/guide/gettingStarted.html#gettingStarted_JavaAPI-usingGParsFromJava
+ Unexpected error: Date: Tue, 06 Oct 2015 23:04:52 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 09 May 2014 06:25:44 GMT Unexpected error: ETag: "1e9031c-cc89-4f8f1aad90a00" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 52361 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://www.gpars.org/guide/
+URL:http://www.gpars.org/guide/
+ Unexpected error: Date: Tue, 06 Oct 2015 23:04:52 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Fri, 09 May 2014 06:27:20 GMT Unexpected error: ETag: "1e9035e-5247-4f8f1b091e200" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 21063 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=tree;f=src/test/groovy/groovyx/gpars/samples;h6e25c7ecb409197aced73a76719795976ee461ec;hb=HEADcould not get http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=tree;f=src/test/groovy/groovyx/gpars/samples;h6e25c7ecb409197aced73a76719795976ee461ec;hb=HEAD because Server returned HTTP response code: 401 for URL: http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=tree;f=src/test/groovy/groovyx/gpars/samples;h6e25c7ecb409197aced73a76719795976ee461ec;hb=HEAD
+
+
+file=[license.html] 
+http://www.vaclavpech.eu/
+URL:http://www.vaclavpech.eu/
+ Unexpected error: Date: Tue, 06 Oct 2015 23:04:53 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Mon, 16 Sep 2013 06:24:03 GMT Unexpected error: ETag: "1e4c04e-1973-4e67a401ec6c0" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 6515 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://www.apache.org/licenses/LICENSE-2.0
+URL:http://www.apache.org/licenses/LICENSE-2.0
+ Unexpected error: Date: Tue, 06 Oct 2015 23:11:22 GMT Unexpected error: Server: Apache/2.4.7 (Ubuntu) Unexpected error: Last-Modified: Fri, 03 Jul 2015 01:58:09 GMT Unexpected error: ETag: "4eaf-519eee34ae1fe" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 20143 Unexpected error: Vary: Accept-Encoding Unexpected error: Cache-Control: max-age=3600 Unexpected error: Expires: Wed, 07 Oct 2015 00:11:22 GMT Unexpected error: Keep-Alive: timeout=30, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+
+file=[logo_usage_policy.html] 
+http://www.python.org/psf/trademarks/#uses-that-never-require-approval
+URL:http://www.python.org/psf/trademarks/#uses-that-never-require-approval
+ Unexpected error: Server: nginx Unexpected error: Content-Type: text/html Unexpected error: X-Frame-Options: SAMEORIGIN Unexpected error: X-Clacks-Overhead: GNU Terry Pratchett Unexpected error: Content-Length: 45717 Unexpected error: Accept-Ranges: bytes Unexpected error: Date: Tue, 06 Oct 2015 23:11:24 GMT Unexpected error: Via: 1.1 varnish Unexpected error: Age: 0 Unexpected error: Connection: keep-alive Unexpected error: X-Served-By: cache-fra1237-FRA Unexpected error: X-Cache: MISS Unexpected error: X-Cache-Hits: 0 Unexpected error: Vary: Cookie Unexpected error: Public-Key-Pins: max-age=600; includeSubDomains; pin-sha256="WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18="; pin-sha256="5C8kvU039KouVrl52D0eZSGf4Onjo4Khs8tmyTlV3nU="; pin-sha256="5C8kvU039KouVrl52D0eZSGf4Onjo4Khs8tmyTlV3nU="; pin-sha256="lCppFqbkrlJ3EcVFAkeip0+44VaoJUymbnOaEUk7tEU="; pin-sha256="TUDnr0MEoJ3of7+YliBMBVFB4/gJsv5zO7IxD9+YoWI="; pin-sha256="x4QzPSC810K5/cMjb05Qm4k3Bw5zBn4lTdO/nEW/Td4="; Unexpected error: Strict-Transport-Security: max-age=63072000; includeSubDomains
+
+http://creativecommons.org/publicdomain/zero/1.0/
+URL:http://creativecommons.org/publicdomain/zero/1.0/
+ Unexpected error: Date: Tue, 06 Oct 2015 23:11:25 GMT Unexpected error: Content-Type: text/html; charset=UTF-8 Unexpected error: Transfer-Encoding: chunked Unexpected error: Connection: keep-alive Unexpected error: Set-Cookie: __cfduid=d380c3a363b4dc08e5a76e0abff7b605d1444173084; expires=Wed, 05-Oct-16 23:11:24 GMT; path=/; domain=.creativecommons.org; HttpOnly Unexpected error: Vary: Accept-Encoding Unexpected error: X-Varnish: 488429893 490966638 Unexpected error: Age: 97 Unexpected error: Via: 1.1 varnish-v4 Unexpected error: Server: cloudflare-nginx Unexpected error: CF-RAY: 23150b94ce4f049d-CDG
+
+
+file=[news.html] 
+http://docs.codehaus.org/display/GPARS/2014/09/06/Remoting+for+GPars
+URL:http://docs.codehaus.org/display/GPARS/2014/09/06/Remoting+for+GPars
+could not get http://docs.codehaus.org/display/GPARS/2014/09/06/Remoting+for+GPars because peer not authenticated
+
+http://gpars.org/SNAPSHOT/aguide/index.html#_remotingcould not get http://gpars.org/SNAPSHOT/aguide/index.html#_remoting because http://gpars.org/SNAPSHOT/aguide/index.html#_remoting
+
+http://docs.codehaus.org/display/GPARS/2013/07/25/Here+comes+GPars+1.1
+URL:http://docs.codehaus.org/display/GPARS/2013/07/25/Here+comes+GPars+1.1
+could not get http://docs.codehaus.org/display/GPARS/2013/07/25/Here+comes+GPars+1.1 because peer not authenticated
+
+http://docs.codehaus.org/display/GPARS/2013/07/17/Arriving+at+1.1.0
+URL:http://docs.codehaus.org/display/GPARS/2013/07/17/Arriving+at+1.1.0
+could not get http://docs.codehaus.org/display/GPARS/2013/07/17/Arriving+at+1.1.0 because peer not authenticated
+
+http://gpars.org/download/1.1.0-rc1/
+URL:http://gpars.org/download/1.1.0-rc1/
+ Unexpected error: Date: Tue, 06 Oct 2015 23:04:59 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Mon, 15 Jul 2013 18:22:37 GMT Unexpected error: ETag: "1e903a6-464-4e190f1e99540" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 1124 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://docs.codehaus.org/display/GPARS/2012/12/19/GPars+1.0+arrived
+URL:http://docs.codehaus.org/display/GPARS/2012/12/19/GPars+1.0+arrived
+could not get http://docs.codehaus.org/display/GPARS/2012/12/19/GPars+1.0+arrived because peer not authenticated
+
+http://www.gpars.org/1.0.0/guide
+URL:http://www.gpars.org/1.0.0/guide
+could not get http://www.gpars.org/1.0.0/guide because Forbidden
+
+http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=12030&amp;version=17007
+URL:http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=12030&amp;version=17007
+could not get http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=12030&amp;version=17007 because peer not authenticated
+
+http://docs.codehaus.org/display/GPARS/2012/12/11/The+first+release+candidate+of+1.0+is+available
+URL:http://docs.codehaus.org/display/GPARS/2012/12/11/The+first+release+candidate+of+1.0+is+available
+could not get http://docs.codehaus.org/display/GPARS/2012/12/11/The+first+release+candidate+of+1.0+is+available because peer not authenticated
+
+http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=12030&amp;version=17007
+URL:http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=12030&amp;version=17007
+could not get http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=12030&amp;version=17007 because peer not authenticated
+
+http://docs.codehaus.org/display/GPARS/2012/09/10/Beta+3+is+out
+URL:http://docs.codehaus.org/display/GPARS/2012/09/10/Beta+3+is+out
+could not get http://docs.codehaus.org/display/GPARS/2012/09/10/Beta+3+is+out because peer not authenticated
+
+http://gpars.org/download/1.0-beta-3/
+URL:http://gpars.org/download/1.0-beta-3/
+ Unexpected error: Date: Tue, 06 Oct 2015 23:05:03 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Sun, 09 Sep 2012 16:32:36 GMT Unexpected error: ETag: "1e90393-461-4c947637f7100" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 1121 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://docs.codehaus.org/display/GPARS/2011/12/30/GPars+1.0+beta-1+ready+for+a+test+ride
+URL:http://docs.codehaus.org/display/GPARS/2011/12/30/GPars+1.0+beta-1+ready+for+a+test+ride
+could not get http://docs.codehaus.org/display/GPARS/2011/12/30/GPars+1.0+beta-1+ready+for+a+test+ride because peer not authenticated
+
+http://docs.codehaus.org/display/GPARS/2011/09/01/Parallel+Game+of+Life
+URL:http://docs.codehaus.org/display/GPARS/2011/09/01/Parallel+Game+of+Life
+could not get http://docs.codehaus.org/display/GPARS/2011/09/01/Parallel+Game+of+Life because peer not authenticated
+
+http://www.jroller.com/vaclav/entry/parallel_game_of_life
+URL:http://www.jroller.com/vaclav/entry/parallel_game_of_life
+could not get http://www.jroller.com/vaclav/entry/parallel_game_of_life because Not Found
+
+http://docs.codehaus.org/display/GPARS/2011/06/02/GPars+turns+0.12+today
+URL:http://docs.codehaus.org/display/GPARS/2011/06/02/GPars+turns+0.12+today
+could not get http://docs.codehaus.org/display/GPARS/2011/06/02/GPars+turns+0.12+today because peer not authenticated
+
+http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=12030&amp;version=16994
+URL:http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=12030&amp;version=16994
+could not get http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=12030&amp;version=16994 because peer not authenticated
+
+http://gpars.org/0.12/guide/index.html
+URL:http://gpars.org/0.12/guide/index.html
+ Unexpected error: Date: Tue, 06 Oct 2015 23:05:07 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Thu, 02 Jun 2011 14:20:01 GMT Unexpected error: ETag: "1e9a50c-207-4a4bb55226640" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 519 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://gpars.org/0.12/guide/gpars-guide-0.12.pdf
+URL:http://gpars.org/0.12/guide/gpars-guide-0.12.pdf
+ Unexpected error: Date: Tue, 06 Oct 2015 23:05:07 GMT Unexpected error: Server: Apache/2.2.22 (Debian) Unexpected error: Last-Modified: Thu, 02 Jun 2011 14:20:01 GMT Unexpected error: ETag: "1e9a50c-207-4a4bb55226640" Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 519 Unexpected error: Vary: Accept-Encoding Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html
+
+http://docs.codehaus.org/display/GPARS/2011/04/26/JVM+Concurrency+and+Actors+with+GPars
+URL:http://docs.codehaus.org/display/GPARS/2011/04/26/JVM+Concurrency+and+Actors+with+GPars
+could not get http://docs.codehaus.org/display/GPARS/2011/04/26/JVM+Concurrency+and+Actors+with+GPars because peer not authenticated
+
+http://drdobbs.com/high-performance-computing/229402193
+URL:http://drdobbs.com/high-performance-computing/229402193
+ Unexpected error: Date: Tue, 06 Oct 2015 23:11:40 GMT Unexpected error: Server: Apache Unexpected error: Expires: Thu, 19 Nov 1981 08:52:00 GMT Unexpected error: Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0 Unexpected error: Pragma: no-cache Unexpected error: Connection: close Unexpected error: Transfer-Encoding: chunked Unexpected error: Content-Type: text/html Unexpected error: Vary: Accept-Encoding
+
+
+file=[presentations.html] 
+https://www.youtube.com/watch?v=unUJwAAtLcM&amp;feature=youtu.be
+URL:https://www.youtube.com/watch?v=unUJwAAtLcM&amp;feature=youtu.be
+ Unexpected error: Date: Tue, 06 Oct 2015 23:11:42 GMT Unexpected error: Server: gwiseguy/2.0 Unexpected error: Content-Type: text/html; charset=utf-8 Unexpected error: Cache-Control: no-cache Unexpected error: X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube Unexpected error: P3P: CP="This is not a P3P policy! See http://support.google.com/accounts/answer/151657?hl=fr for more info." Unexpected error: X-Content-Type-Options: nosniff Unexpected error: Expires: Tue, 27 Apr 1971 19:44:06 EST Unexpected error: X-Frame-Options: SAMEORIGIN Unexpected error: Set-Cookie: VISITOR_INFO1_LIVE=zBY1-uea8D4; path=/; domain=.youtube.com; expires=Mon, 06-Jun-2016 11:04:42 GMT; httponly Unexpected error: Set-Cookie: YSC=tvEcZfKegug; path=/; domain=.youtube.com; httponly Unexpected error: Set-Cookie: PREF=f1=50000000; path=/; domain=.youtube.com; expires=Mon, 06-Jun-2016 11:04:42 GMT Unexpected error: Alternate-Protocol: 443:quic,p=1 Unexpected error: Alt-Svc: quic=":443"; p="1"; ma=604800 Unexpected error: Accept-Ranges: none Unexpected error: Vary: Accept-Encoding Unexpected error: Transfer-Encoding: chunked
+
+http://www.slideshare.net/VaclavPech/g-pars-howto
+URL:http://www.slideshare.net/VaclavPech/g-pars-howto
+ Unexpected error: Server: nginx Unexpected error: Date: Tue, 06 Oct 2015 23:11:45 GMT Unexpected error: Content-Type: text/html; charset=utf-8 Unexpected error: Status: 200 OK Unexpected error: X-Runtime: 0.260270 Unexpected error: X-Request-Id: 0fc713c2cccc978575e3eee0abdb96fc Unexpected error: X-Frame-Options: SAMEORIGIN Unexpected error: X-Request-UUID: h4JMb6cVsz1ET+rB9i1gUA== Unexpected error: X-Bench-Route: profile/index Unexpected error: X-UA-Compatible: IE=Edge,chrome=1 Unexpected error: Cache-Control: max-age=0, private, must-revalidate Unexpected error: X-Content-Type-Options: nosniff Unexpected error: X-XSS-Protection: 1; mode=block Unexpected error: P3P: CP="OTI DSP COR CUR ADM DEV PSD IVD CONo OUR IND" Unexpected error: X-Varnish: 725782882 Unexpected error: Age: 0 Unexpected error: Via: 1.1 varnish-v4 Unexpected error: Accept-Ranges: bytes Unexpected error: Set-Cookie: _uv_id=1290424569; Path=/; Domain=.slideshare.net Unexpected error: Set-Cookie: SERVERID=r87|VhRVN|VhRVN; path=/ Unexpected error: X-FS-UUID: ef63cba0c9bb0a1410746ebc7c2b0000 Unexpected error: X-Page-Speed: 1 Unexpected error: X-Li-Fabric: prod-lva1 Unexpected error: Transfer-Encoding: chunked Unexpected error: Connection: keep-alive Unexpected error: X-Li-Pop: prod-tln1 Unexpected error: X-LI-UUID: 72PLoMm7ChQQdG68fCsAAA==
+
+http://gr8conf.eu/Presentations/GPars-how-to-guide
+URL:http://gr8conf.eu/Presentations/GPars-how-to-guide
+could not get http://gr8conf.eu/Presentations/GPars-how-to-guide because Not Found
+
+http://www.slideshare.net/VaclavPech/gpars-workshop-21832702
+URL:http://www.slideshare.net/VaclavPech/gpars-workshop-21832702
+ Unexpected error: Server: nginx Unexpected error: Date: Tue, 06 Oct 2015 23:11:48 GMT Unexpected error: Content-Type: text/html; charset=utf-8 Unexpected error: Status: 200 OK Unexpected error: Cache-Control: max-age=0, private, must-revalidate Unexpected error: X-Request-UUID: 9S5+GmvKDWbSxdmLXCdNGg== Unexpected error: X-Runtime: 0.216642 Unexpected error: X-UA-Compatible: IE=Edge,chrome=1 Unexpected error: X-XSS-Protection: 1; mode=block Unexpected error: X-Content-Type-Options: nosniff Unexpected error: X-Bench-Route: profile/index Unexpected error: X-Request-Id: 5caf55040b488e891a5326729b52ff46 Unexpected error: X-Frame-Options: SAMEORIGIN Unexpected error: P3P: CP="OTI DSP COR CUR ADM DEV PSD IVD CONo OUR IND" Unexpected error: X-Varnish: 23531513 Unexpected error: Age: 0 Unexpected error: Via: 1.1 varnish-v4 Unexpected error: Accept-Ranges: bytes Unexpected error: Set-Cookie: _uv_id=1508865681; Path=/; Domain=.slideshare.net Unexpected error: Set-Cookie: SERVERID=r88|VhRVN|VhRVN; path=/ Unexpected error: X-FS-UUID: f93c1543cabb0a14805957bc7c2b0000 Unexpected error: X-Page-Speed: 1 Unexpected error: X-Li-Fabric: prod-lva1 Unexpected error: Transfer-Encoding: chunked Unexpected error: Connection: keep-alive Unexpected error: X-Li-Pop: prod-tln1 Unexpected error: X-LI-UUID: +TwVQ8q7ChSAWVe8fCsAAA==
+
+http://www.youtube.com/watch?v=0St2X1DJhpA
+URL:http://www.youtube.com/watch?v=0St2X1DJhpA
+ Unexpected error: Date: Tue, 06 Oct 2015 23:11:48 GMT Unexpected error: Server: gwiseguy/2.0 Unexpected error: Expires: Tue, 27 Apr 1971 19:44:06 EST Unexpected error: X-Frame-Options: SAMEORIGIN Unexpected error: Content-Type: text/html; charset=utf-8 Unexpected error: X-XSS-Protection: 1; mode=block; report=https://www.google.com/appserve/security-bugs/log/youtube Unexpected error: X-Content-Type-Options: nosniff Unexpected error: P3P: CP="This is not a P3P policy! See http://support.google.com/accounts/answer/151657?hl=fr for more info." Unexpected error: Cache-Control: no-cache Unexpected error: Set-Cookie: GEUP=d2667d3b1cb6912f5dd443b65e1287c6aQEAAAA=; path=/; domain=.youtube.com; expires=Thu, 05-Oct-2017 23:11:48 GMT Unexpected error: Set-Cookie: PREF=f1=50000000; path=/; domain=.youtube.com; expires=Mon, 06-Jun-2016 11:04:48 GMT Unexpected error: Alternate-Protocol: 443:quic,p=1 Unexpected error: Alt-Svc: quic=":443"; p="1"; ma=604800 Unexpected error: Accept-Ranges: none Unexpected error: Vary: Accept-Encoding Unexpected error: Transfer-Encoding: chunked
+
+http://skillsmatter.com/podcast/home/gpars-vs-wild/te-6299
+URL:http://skillsmatter.com/podcast/home/gpars-vs-wild/te-6299
+ Unexpected error: Server: Cowboy Unexpected error: Connection: keep-alive Unexpected error: Date: Tue, 06 Oct 2015 23:11:50 GMT Unexpected error: Status: 200 OK Unexpected error: Strict-Transport-Security: max-age=31536000 Unexpected error: X-Frame-Options: SAMEORIGIN Unexpected error: X-Xss-Protection: 1; mode=block Unexpected error: X-Content-Type-Options: nosniff Unexpected error: X-Ua-Compatible: chrome=1 Unexpected error: Content-Type: text/html; charset=utf-8 Unexpected error: Content-Length: 20580 Unexpected error: Etag: "2c3f87eb02ee65c021641e7c308c4137" Unexpected error: Cache-Control: max-age=0, private, must-revalidate Unexpected error: Set-Cookie: _skillsmatter_session=Mjh1cFJCVW1lL0Mybnl4OVJKWHg1WDIxNksvL2JqVXNtbU44UmJZd3pobFU3NDdQSnR3Ykl6RVpad0hwejhvSFFhMk9YdTYxcEx1bk1vMGZ0MmUvMVVReVRYQk82RVNoaVppRzExU09JTDJWSEpJSzlLUXRFdVRnK05reklXM1c0UmV6NVZ6QklRNlpKQXA5azZ5cndDZGVpam9sVlFZMm5WeGgrendMK2kzVnY1ckZDZFFzQ2lpenJ0TkhBZ09PLS0xc2c5cnJZRmlicUhBRWh2aTRFM2V3PT0%3D--d9bf6f8f8800a78af1a755ddf862e057c20b5db3; path=/; secure; HttpOnly Unexpected error: X-Request-Id: 0d39c9e6-a910-47ae-8d7b-90451c10d410 Unexpected error: X-Runtime: 0.363328 Unexpected error: Vary: Accept-Encoding Unexpected error: Via: 1.1 vegur
+
+http://www.java-tv.com/2012/10/01/groovy-and-concurrency-with-gpars/
+URL:http://www.java-tv.com/2012/10/01/groovy-and-concurrency-with-gpars/
+ Unexpected error: Date: Tue, 06 Oct 2015 23:11:52 GMT Unexpected error: Server: Apache/2.2.29 (Unix) mod_ssl/2.2.29 OpenSSL/0.9.8e-fips-rhel5 mod_bwlimited/1.4 mod_qos/11.5 Unexpected error: Last-Modified: Tue, 06 Oct 2015 23:11:52 GMT Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Length: 19420 Unexpected error: X-Pingback: http://www.java-tv.com/xmlrpc.php Unexpected error: X-Powered-By: W3 Total Cache/0.9.4.1 Unexpected error: Vary: Accept-Encoding,Cookie Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Content-Type: text/html; charset=UTF-8
+
+http://www.parleys.com/#st=5&amp;id=2940&amp;sl=6
+URL:http://www.parleys.com/#st=5&amp;id=2940&amp;sl=6
+ Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Type: text/html Unexpected error: Date: Tue, 06 Oct 2015 23:12:55 GMT Unexpected error: ETag: "a27d4-beb-51e313393f51f" Unexpected error: Last-Modified: Wed, 26 Aug 2015 06:45:51 GMT Unexpected error: Server: Apache Unexpected error: Vary: Accept-Encoding,User-Agent Unexpected error: Content-Length: 3051 Unexpected error: Connection: keep-alive
+
+http://www.russel.org.uk/Presentations/LJCConf_2011_GPars_ParallelismTheRightWay.pdfcould not get http://www.russel.org.uk/Presentations/LJCConf_2011_GPars_ParallelismTheRightWay.pdf because http://www.russel.org.uk/Presentations/LJCConf_2011_GPars_ParallelismTheRightWay.pdf
+
+http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_UnleashYourProcessors.pdf
+URL:http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_UnleashYourProcessors.pdf
+could not get http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_UnleashYourProcessors.pdf because Forbidden
+
+http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_GroovyActorsAndConcurrentDataflowWithGPars.pdf
+URL:http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_GroovyActorsAndConcurrentDataflowWithGPars.pdf
+could not get http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_GroovyActorsAndConcurrentDataflowWithGPars.pdf because Forbidden
+
+http://www.russel.org.uk/Presentations/JAXLondond2011_2011-11-01_justKeepPassingTheMessages.pdfcould not get http://www.russel.org.uk/Presentations/JAXLondond2011_2011-11-01_justKeepPassingTheMessages.pdf because http://www.russel.org.uk/Presentations/JAXLondond2011_2011-11-01_justKeepPassingTheMessages.pdf
+
+http://www.slideshare.net/gr8conf/g-pars-vaclavpech2011
+URL:http://www.slideshare.net/gr8conf/g-pars-vaclavpech2011
+ Unexpected error: Server: nginx Unexpected error: Date: Tue, 06 Oct 2015 23:11:58 GMT Unexpected error: Content-Type: text/html; charset=utf-8 Unexpected error: Status: 200 OK Unexpected error: X-Content-Type-Options: nosniff Unexpected error: X-Request-UUID: lDjAWcd8uoAkUoDXx081cA== Unexpected error: X-Frame-Options: SAMEORIGIN Unexpected error: X-XSS-Protection: 1; mode=block Unexpected error: X-UA-Compatible: IE=Edge,chrome=1 Unexpected error: Cache-Control: max-age=0, private, must-revalidate Unexpected error: X-Runtime: 1.206792 Unexpected error: X-Bench-Route: profile/index Unexpected error: X-Request-Id: cdc005d22f764ea1eaacd80080199f6c Unexpected error: P3P: CP="OTI DSP COR CUR ADM DEV PSD IVD CONo OUR IND" Unexpected error: X-Varnish: 17154570 Unexpected error: Age: 0 Unexpected error: Via: 1.1 varnish-v4 Unexpected error: Accept-Ranges: bytes Unexpected error: Set-Cookie: _uv_id=1813729831; Path=/; Domain=.slideshare.net Unexpected error: Set-Cookie: SERVERID=r88|VhRVQ|VhRVQ; path=/ Unexpected error: X-FS-UUID: 9f4fb58cccbb0a1460edeb9c7e2b0000 Unexpected error: X-Page-Speed: 1 Unexpected error: X-Li-Fabric: prod-lva1 Unexpected error: Transfer-Encoding: chunked Unexpected error: Connection: keep-alive Unexpected error: X-Li-Pop: prod-tln1 Unexpected error: X-LI-UUID: n0+1jMy7ChRg7eucfisAAA==
+
+http://www.slideshare.net/mpassell/gpars-for-beginners
+URL:http://www.slideshare.net/mpassell/gpars-for-beginners
+ Unexpected error: Server: nginx Unexpected error: Date: Tue, 06 Oct 2015 23:12:00 GMT Unexpected error: Content-Type: text/html; charset=utf-8 Unexpected error: Status: 200 OK Unexpected error: X-XSS-Protection: 1; mode=block Unexpected error: X-Runtime: 0.394857 Unexpected error: X-Request-UUID: K/QvN6kCJjNFIZlZg7Go4Q== Unexpected error: X-Frame-Options: SAMEORIGIN Unexpected error: X-UA-Compatible: IE=Edge,chrome=1 Unexpected error: Cache-Control: max-age=0, private, must-revalidate Unexpected error: X-Request-Id: b7c9d33af61c2a44372f87f681bc67c5 Unexpected error: X-Content-Type-Options: nosniff Unexpected error: X-Bench-Route: profile/index Unexpected error: P3P: CP="OTI DSP COR CUR ADM DEV PSD IVD CONo OUR IND" Unexpected error: X-Varnish: 715571835 Unexpected error: Age: 0 Unexpected error: Via: 1.1 varnish-v4 Unexpected error: Accept-Ranges: bytes Unexpected error: Set-Cookie: _uv_id=1994593887; Path=/; Domain=.slideshare.net Unexpected error: Set-Cookie: SERVERID=r87|VhRVQ|VhRVQ; path=/ Unexpected error: X-FS-UUID: 246d2bf9ccbb0a14f0b4dd457e2b0000 Unexpected error: X-Page-Speed: 1 Unexpected error: X-Li-Fabric: prod-lva1 Unexpected error: Transfer-Encoding: chunked Unexpected error: Connection: keep-alive Unexpected error: X-Li-Pop: prod-tln1 Unexpected error: X-LI-UUID: JG0r+cy7ChTwtN1FfisAAA==
+
+http://www.slideshare.net/VaclavPech/pick-up-the-lowhanging-concurrency-fruit
+URL:http://www.slideshare.net/VaclavPech/pick-up-the-lowhanging-concurrency-fruit
+ Unexpected error: Server: nginx Unexpected error: Date: Tue, 06 Oct 2015 23:12:01 GMT Unexpected error: Content-Type: text/html; charset=utf-8 Unexpected error: Status: 200 OK Unexpected error: Cache-Control: max-age=0, private, must-revalidate Unexpected error: X-Request-Id: 240e6ae6cc6a34d75c7aa6de87783ab1 Unexpected error: X-UA-Compatible: IE=Edge,chrome=1 Unexpected error: X-Bench-Route: profile/index Unexpected error: X-Frame-Options: SAMEORIGIN Unexpected error: X-Runtime: 0.271610 Unexpected error: X-Content-Type-Options: nosniff Unexpected error: X-XSS-Protection: 1; mode=block Unexpected error: X-Request-UUID: yNbfB7UmXD+cgOTU/lJO5A== Unexpected error: P3P: CP="OTI DSP COR CUR ADM DEV PSD IVD CONo OUR IND" Unexpected error: X-Varnish: 715350373 Unexpected error: Age: 0 Unexpected error: Via: 1.1 varnish-v4 Unexpected error: Accept-Ranges: bytes Unexpected error: Set-Cookie: _uv_id=1500229201; Path=/; Domain=.slideshare.net Unexpected error: Set-Cookie: SERVERID=r87|VhRVR|VhRVR; path=/ Unexpected error: X-FS-UUID: ce298e56cdbb0a1460e687467e2b0000 Unexpected error: X-Page-Speed: 1 Unexpected error: X-Li-Fabric: prod-lva1 Unexpected error: Transfer-Encoding: chunked Unexpected error: Connection: keep-alive Unexpected error: X-Li-Pop: prod-tln1 Unexpected error: X-LI-UUID: zimOVs27ChRg5odGfisAAA==
+
+http://www.slideshare.net/paulk_asert/groovy-and-concurrency
+URL:http://www.slideshare.net/paulk_asert/groovy-and-concurrency
+ Unexpected error: Server: nginx Unexpected error: Date: Tue, 06 Oct 2015 23:12:02 GMT Unexpected error: Content-Type: text/html; charset=utf-8 Unexpected error: Status: 200 OK Unexpected error: X-Content-Type-Options: nosniff Unexpected error: Cache-Control: max-age=0, private, must-revalidate Unexpected error: X-Runtime: 0.339552 Unexpected error: X-Bench-Route: profile/index Unexpected error: X-UA-Compatible: IE=Edge,chrome=1 Unexpected error: X-Request-UUID: Exw9wpCJBZXfhnv1i4S/mQ== Unexpected error: X-Frame-Options: SAMEORIGIN Unexpected error: X-XSS-Protection: 1; mode=block Unexpected error: X-Request-Id: 6fa9372f9468190f74a47cfeb425c086 Unexpected error: P3P: CP="OTI DSP COR CUR ADM DEV PSD IVD CONo OUR IND" Unexpected error: X-Varnish: 701166107 Unexpected error: Age: 0 Unexpected error: Via: 1.1 varnish-v4 Unexpected error: Accept-Ranges: bytes Unexpected error: Set-Cookie: _uv_id=941413179; Path=/; Domain=.slideshare.net Unexpected error: Set-Cookie: SERVERID=r87|VhRVR|VhRVR; path=/ Unexpected error: X-FS-UUID: e4a40690cdbb0a14105696cf7c2b0000 Unexpected error: X-Page-Speed: 1 Unexpected error: X-Li-Fabric: prod-lva1 Unexpected error: Transfer-Encoding: chunked Unexpected error: Connection: keep-alive Unexpected error: X-Li-Pop: prod-tln1 Unexpected error: X-LI-UUID: 5KQGkM27ChQQVpbPfCsAAA==
+
+http://jazoon.com/Portals/0/Content/slides/we_a5_1330-1420_koenig.pdfcould not get http://jazoon.com/Portals/0/Content/slides/we_a5_1330-1420_koenig.pdf because http://jazoon.com/Portals/0/Content/slides/we_a5_1330-1420_koenig.pdf
+
+http://www.parleys.com/#id=1990&amp;st=5
+URL:http://www.parleys.com/#id=1990&amp;st=5
+ Unexpected error: Accept-Ranges: bytes Unexpected error: Content-Type: text/html Unexpected error: Date: Tue, 06 Oct 2015 23:14:45 GMT Unexpected error: ETag: "64e38-beb-51e31286a8dd2" Unexpected error: Last-Modified: Wed, 26 Aug 2015 06:42:43 GMT Unexpected error: Server: Apache Unexpected error: Vary: Accept-Encoding,User-Agent Unexpected error: Content-Length: 3051 Unexpected error: Connection: keep-alive
+
+http://www.jfokus.se/jfokus/preso/jf-10_GroovyActorsAndConcurrentDataflowWithGPars.pdfcould not get http://www.jfokus.se/jfokus/preso/jf-10_GroovyActorsAndConcurrentDataflowWithGPars.pdf because http://www.jfokus.se/jfokus/preso/jf-10_GroovyActorsAndConcurrentDataflowWithGPars.pdf
+
+http://www.russel.org.uk/Presentations/accu2010_parallelism_theJVMRocks.pdfcould not get http://www.russel.org.uk/Presentations/accu2010_parallelism_theJVMRocks.pdf because http://www.russel.org.uk/Presentations/accu2010_parallelism_theJVMRocks.pdf
+
+http://accu.org
+URL:http://accu.org
+ Unexpected error: Date: Tue, 06 Oct 2015 23:12:05 GMT Unexpected error: Server: Apache Unexpected error: X-Powered-By: PHP/5.5.29 Unexpected error: Set-Cookie: XARAYASID=012a7efcde3fcbde9abff1897f7502ce; expires=Tue, 13-Oct-2015 23:12:05 GMT; Max-Age=604800; path=/ Unexpected error: Expires: 0 Unexpected error: Cache-Control: public, must-revalidate Unexpected error: Pragma:  Unexpected error: ETag: 77b0251d68807f4c8d51c2203075e9421444173126 Unexpected error: Last-Modified: Tue, 06 Oct 2015 23:12:06 GMT Unexpected error: Keep-Alive: timeout=5, max=100 Unexpected error: Connection: Keep-Alive Unexpected error: Transfer-Encoding: chunked Unexpected error: Content-Type: text/html; charset=utf-8
+
+http://www.slideshare.net/VaclavPech/gpars-concepts-explained
+URL:http://www.slideshare.net/VaclavPech/gpars-concepts-explained
+ Unexpected error: Server: nginx Unexpected error: Date: Tue, 06 Oct 2015 23:12:08 GMT Unexpected error: Content-Type: text/html; charset=utf-8 Unexpected error: Status: 200 OK Unexpected error: X-XSS-Protection: 1; mode=block Unexpected error: X-Runtime: 0.206337 Unexpected error: X-Content-Type-Options: nosniff Unexpected error: X-Request-Id: 39ab490f57642a35ede647ed3e38ce8d Unexpected error: X-Frame-Options: SAMEORIGIN Unexpected error: X-Bench-Route: profile/index Unexpected error: X-UA-Compatible: IE=Edge,chrome=1 Unexpected error: X-Request-UUID: 9e7SVO3Jzf97k45eOBLP9Q== Unexpected error: Cache-Control: max-age=0, private, must-revalidate Unexpected error: P3P: CP="OTI DSP COR CUR ADM DEV PSD IVD CONo OUR IND" Unexpected error: X-Varnish: 726893298 Unexpected error: Age: 0 Unexpected error: Via: 1.1 varnish-v4 Unexpected error: Accept-Ranges: bytes Unexpected error: Set-Cookie: _uv_id=15435772; Path=/; Domain=.slideshare.net Unexpected error: Set-Cookie: SERVERID=r87|VhRVS|VhRVS; path=/ Unexpected error: X-FS-UUID: faf9dc15cfbb0a14b0115db07e2b0000 Unexpected error: X-Page-Speed: 1 Unexpected error: X-Li-Fabric: prod-lva1 Unexpected error: Transfer-Encoding: chunked Unexpected error: Connection: keep-alive Unexpected error: X-Li-Pop: prod-tln1 Unexpected error: X-LI-UUID: +vncFc+7ChSwEV2wfisAAA==
+
+http://people.canoo.com/mittie/gpars.mov

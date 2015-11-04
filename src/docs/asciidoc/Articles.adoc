@@ -1,0 +1,61 @@
+= GPars - Groovy Parallel Systems
+Russell Winder <russel@winder.org.uk>
+v1.0, 2015-10-01
+:linkattrs:
+:linkcss:
+:toc: left
+:toc-title: Document Index
+:icons: font
+:source-highlighter: coderay
+:docslink: http://www.gpars.org/guide/[GPars Docs]
+:description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
+:doctitle: Articles
+
+== Print
+
+https://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-104729.html[Java Tech Journal April 2012] on GPars, parallel collections, asynchronous functions and dataflow concurrency (by Vaclav Pech)
+
+http://www.manning.com/koenig2[Groovy in Action, 2nd Edition] chapter 17 (available in MEAP) covers the basics of *GPars*.
+
+== Wrote or spoke about *GPars*
+
+http://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-43529.html[jaxenter April 2012] on *GPars*, parallel collections, asynchronous functions and dataflow concurrency (by Vaclav Pech)
+
+http://drdobbs.com/high-performance-computing/229402193[JVM Concurrency and Actors with *GPars*] article at Dr.Dobb's
+
+http://www.dzone.com/links/r/concurrency_and_background_tasks_in_grails.html[*GPars* concurrency and background processing in Grails]
+
+http://www.jroller.com/vaclav/entry/dataflow_speculations[Dataflow Speculations in *GPars*]
+
+http://www.ibm.com/developerworks/java/library/j-gpars/index.html[DeveloperWork: Resolve common concurrency problems with *GPars*] by http://tech.puredanger.com/[Alex Miller]
+
+http://fbflex.wordpress.com/2010/06/11/writing-batch-import-scripts-with-grails-gsql-and-gpars/[Writing batch import scripts with Grails, GSQL and *GPars*]
+
+http://java.dzone.com/articles/flowing-data[Flowing With the Data] -- Vaclav Pech
+
+http://wordpress.transentia.com.au/wordpress/2010/03/05/playing-with-gpars/[Playing with *GPars* (Actors/Dataflow
+variables)]
+
+http://java.dzone.com/articles/dont-be-afraid-try-gpars[Concurrency in Groovy on Javalobby]
+
+http://hamletdarcy.blogspot.com/2010/02/testing-asynchronous-code-with-gpars.html[Testing Asynchronous Code with *GPars*
+Dataflows] by Hamlet D'Arcy
+
+http://www.concertant.com/blog/2009-10-08-07-15[The Concertant Blog - 2009-10-08 07:15+01:00]
+
+http://groovy.dzone.com/announcements/gparalelizer-08-released[The 0.8 release announcement]
+
+http://www.ddj.com/go-parallel/blog/archives/2009/06/a_domainspecifi.html[A Domain-Specific Language to Let Groovy Go Parallel by Gaston Hillar]
+
+http://www.jroller.com/vaclav/entry/another_milestone_for_gparallelizer_the[The 0.7 release announcement]
+
+http://www.javaworld.com/javaworld/jw-03-2009/jw-03-actor-concurrency2.html[Actor libraries on JVM comparison by Alex
+Miller]
+
+http://groovy.dzone.com/news/event-based-actors-groovy[Event-based actors in Groovy (DZone)]
+
+http://www.jroller.com/vaclav/entry/event_based_actors_in_groovy[Event-based actors in Groovy]
+
+http://www.jroller.com/vaclav/entry/groovy_actors_in_gparallelizer_concurrency[Actors in Groovy]
+
+http://www.jroller.com/vaclav/entry/gparallelizer_made_available[GParallelizer announced]

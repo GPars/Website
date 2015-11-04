@@ -1,0 +1,52 @@
+= GPars - Groovy Parallel Systems
+Russell Winder <russel@winder.org.uk>
+v1.0, 2015-10-01
+:linkattrs:
+:linkcss:
+:toc: left
+:toc-title: Document Index
+:icons: font
+:source-highlighter: coderay
+:docslink: http://www.gpars.org/guide/[GPars Docs]
+:description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
+:doctitle: Roadmap
+
+
+== Roadmap -- What to look forward to
+
+=== Last release
+
+==== Version: 1.2.1 
+
+_Date: May 9th 2014_
+
+  * Leveraging Groovy 2.1 functionality, such as @DelegatesTo and @CompileStatic
+  * Promise API enhancements
+  * Further documentation improvements
+
+
+=== Planned releases
+
+==== Version 1.3
+
+_Date: December 20th 2014_
+
+  * Remote actors, agents and dataflow
+  * Dropping JDK 6 support, leveraging JDK 7 functionality (Fork/Join)
+  * Upgrade the Groovy dependency to 2.3
+
+=== Version 1.4
+
+  * Leveraging Groovy 3.0 -- new MOP
+  * Actor and actor queue monitoring
+  * Actor failover
+  * Flow-specific actors
+  * Active objects API enhancements
+  * Re-address the Stm support
+
+=== Version 2.0
+
+  * Upgrade the Java dependency to JDK 8
+  * Replace the parallel collection functionality with JDK parellel streams
+  * Remoting for actors and dataflow
+  * GPU suppport

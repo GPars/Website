@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.2">
+<meta name="description" content="GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.">
+<meta name="author" content="The Whole GPars Team &lt;https://groups.google.com/forum/#!forum/gpars-users&gt;">
+<title>User Guide</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./coderay-asciidoctor.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>User Guide</h1>
+<div class="details">
+<span id="author" class="author">The Whole GPars Team &lt;https://groups.google.com/forum/#!forum/gpars-users&gt;</span><br>
+<span id="revnumber">version 1.0,</span>
+<span id="revdate">2015-11-01</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Document Index</div>
+<ul class="sectlevel1">
+<li><a href="#_an_introduction">An Introduction</a></li>
+<li><a href="#_enter_strong_gpars_strong">Enter <strong>GPars</strong></a></li>
+<li><a href="#_credits">Credits</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_an_introduction">An Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The world of mainstream computing is changing rapidly these days. If you open the case and look under the
+covers of your computer, you&#8217;ll most likely see a dual-core processor there, or a quad-core one, if you have
+a high-end computer.  We all now run our software on multi-processor systems.</p>
+</div>
+<div class="paragraph">
+<div class="title">Why do people still create single-threaded code ?</div>
+<p>The code we write today and tomorrow will probably never run on a single processor system: parallel hardware has become standard.  Not
+so with the software though, at least not yet. People still create single-threaded code, even though it will
+not be able to leverage the full power of current and future hardware.</p>
+</div>
+<hr>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+The code we write today will probably never run on a single processor system !
+</td>
+</tr>
+</table>
+</div>
+<hr>
+<div class="paragraph">
+<p>Some developers experiment with low-level concurrency primitives, like threads, and locks or synchronized blocks.
+However, it has become obvious that the shared-memory multi-threading approach used at the application level causes more trouble
+than it solves. Low-level concurrency handling is usually hard to get right, and it&#8217;s not much fun either.</p>
+</div>
+<div class="paragraph">
+<p>With such a radical change in hardware, software inevitably has to change dramatically too. Higher-levelS OF
+concurrency and parallelism concepts like <em>map/reduce</em>, <em>fork/join</em>, <em>actors</em> and <em>dataflow</em> provide natural
+abstractions for different types of problem domains while leveraging the multi-core hardware.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_enter_strong_gpars_strong">Enter <strong>GPars</strong></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Meet <a href="http://gpars.org"><strong>GPars</strong></a>, an open-source concurrency and parallelism library for <strong>Java</strong> and <strong>Groovy</strong> that gives you a number of high-level abstractions for writing concurrent and parallel code in <strong>Groovy</strong>
+(<em>map/reduce, fork/join, asynchronous closures, actors, agents, dataflow concurrency</em> and other concepts),
+which can make your <strong>Java</strong> and <strong>Groovy</strong> code concurrent and/or parallel with little effort.</p>
+</div>
+<div class="paragraph">
+<p>With <strong>GPars</strong> your <strong>Java</strong> and/or <strong>Groovy</strong> code can easily utilize all the available processors on the target system. You can run
+multiple calculations at the same time, request network resources in parallel, safely solve hierarchical
+divide-and-conquer problems, perform functional style map/reduce or data parallel collection processing or
+build your applications around the actor or dataflow model.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Apache</div>
+<div class="paragraph">
+<p>The <strong>GPars</strong> project is open sourced under the <a href="http://gpars.org/License">Apache 2 License</a>.</p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>If you&#8217;re working on a commercial, open-source, educational or any other type of software project in <strong>Groovy</strong>, download the
+binaries or integrate them from the <strong>Maven</strong> repository and get going. The door to writing highly concurrent
+and/or parallel <strong>Java</strong> and <strong>Groovy</strong> code is wide open. [blue]Enjoy!</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_credits">Credits</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This project could not have reached the point where it stands currently without all the great help and
+contributionS from many individuals, who have devoted their time, energy and expertise to make <strong>GPars</strong> a solid
+product. First, it&#8217;s the people in the core team who should be mentioned:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Václav Pech</p>
+</li>
+<li>
+<p>Dierk Koenig</p>
+</li>
+<li>
+<p>Alex Tkachman</p>
+</li>
+<li>
+<p>Russel Winder</p>
+</li>
+<li>
+<p>Paul King</p>
+</li>
+<li>
+<p>Jon Kerridge</p>
+</li>
+<li>
+<p>Rafał Sławik</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Over time, many other people have contributed their ideas, provided useful feedback or helped <strong>GPars</strong> in one way or
+another.  There are many people in this group, too many to name them all, but let&#8217;s list at least the most
+active:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Hamlet d&#8217;Arcy</p>
+</li>
+<li>
+<p>Hans Dockter</p>
+</li>
+<li>
+<p>Guillaume Laforge</p>
+</li>
+<li>
+<p>Robert Fischer</p>
+</li>
+<li>
+<p>Johannes Link</p>
+</li>
+<li>
+<p>Graeme Rocher</p>
+</li>
+<li>
+<p>Alex Miller</p>
+</li>
+<li>
+<p>Jeff Gortatowsky</p>
+</li>
+<li>
+<p>Jiří Kropáček</p>
+</li>
+</ul>
+</div>
+<hr>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Many thanks to everyone!
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 1.0<br>
+Last updated 2015-10-31 14:12:58 CET
+</div>
+</div>
+</body>
+</html>

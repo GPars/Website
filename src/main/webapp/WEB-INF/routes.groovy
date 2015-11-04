@@ -1,0 +1,6 @@
+get "/", 			forward: "index.html"
+get "/datetime", 	forward: "/datetime.groovy"
+get "/guide", 		forward: "/guide/index.html"
+get "/blog", 	 	forward: "/blog.groovy"
+get "/quick", 			forward: "/quickstart/index.html"
+get "/jk", 		forward: "/JonKerridgeBook/index.html"

@@ -1,0 +1,46 @@
+= GPars - Groovy Parallel Systems
+Jon Kerridge <j.kerridge@napier.ac.uk>
+v1.0, 2015-10-29
+:linkattrs:
+:linkcss:
+:toc: left
+:toc-title: Document Index
+:icons: font
+:source-highlighter: coderay
+:docslink: http://www.gpars.org/guide/[GPars Docs]
+:description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
+
+== Dining Philosophers: A Classic Problem
+
+This problem first formulated by Dijkstra is cited by Hoare in his original paper on `Communicating Sequential Processes`. Tantalisingly, Hoare presents the problem and a partial solution leaving it up to the reader to finish the solution. 
+
+The problem was formulated at a time in the mid-1970’s when computer manufacturers were having a great deal of difficulty in building operating systems that were correct and could withstand continued use. 
+Typical problems that had to be overcome were deadlock between different tasks and other tasks being starved of resources; exactly the same problems that the client-server design pattern solves.
+
+''''
+
+=== The Problem
+
+The problem has the following statement -
+
+ * Five philosophers spend their lives thinking and eating. They share a common dining room in their college where there is a circular table surrounded by five chairs, each is assigned to one of the philosophers. 
+ * In the centre of the table there is a large bowl of spaghetti. 
+ * The table is set with five forks each one assigned to a specific philosopher. 
+ * On feeling hungry the philosopher enters the room, sits in his own chair and picks up his fork, which is to his left hand.
+ * The spaghetti is so tangled that he needs to use the fork to his right hand side as well. When he has finished eating, he replaces both forks and leaves the room. 
+ * The college has provided a butler who ensures that the bowl of spaghetti is always full and can carry out other duties as necessary such as washing-up and guiding philosophers to their own seat.
+
+''''
+
+=== Observation
+
+It is apparent that the critical aspect of this problem is in the management of the forks. If a philosopher is never able to pick up the fork to their right then they will never be able to eat and will thus exhibit starvation or as we have termed it, *livelock*. 
+
+Similarly, if all the philosophers enter the room at the same time and each picks up their own left fork none of them will be able to pick up their neighbour’s fork to their right and thus deadlock will ensue as none of the philosophers will ever be able to eat.
+
+
+''''
+
+NOTE: Want to read more of this chapter? link:pdf/C12.pdf[Download this chapter's PDF here.]
+
+''''

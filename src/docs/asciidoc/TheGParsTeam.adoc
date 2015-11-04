@@ -1,0 +1,151 @@
+= GPars - Groovy Parallel Systems
+The Whole GPars Team
+v1.0, 2015-11-04
+:linkattrs:
+:linkcss:
+:toc: left
+:toc-title: Team Members
+:icons: font
+:source-highlighter: coderay
+:docslink: http://www.gpars.org/guide/[GPars Docs]
+:description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
+:doctitle: The GPars Team
+
+
+TIP: Team members with LinkedIn profiles may want to add their status to the http://www.linkedin.com/companies/gpars-codehaus[*GPars* LinkedIn page].
+
+''''
+
+== Václav Pech 
+
+image:images/Vaclav.png[Václav Pech,role="related thumb left"] A passionate programmer and a concurrency enthusiast, focusing on parallel computing, distributed systems and domain specific languages. He is a senior software developer and a technology evangelist at http://www.jetbrains.com/[JetBrains].
+
++++
+<a target="_blank" href="https://www.openhub.net/accounts/venca?ref=sample"><img alt='Open Hub profile for Václav Pech' border='0' height='35' src='https://www.openhub.net/accounts/venca/widgets/account_detailed?format=gif&amp;ref=sample' width='230'></a>
++++
+
+
+.Social Media
+[cols="7*"]
+|===
+| Facebook | Twitter | Linked In | Google+ | Blog | Website | Email 
+ 
+^| image:images/facebook.png[title="Václav Pech has not joined"]
+^| image:images/twitter.png[link="https://twitter.com/vaclav_pech"]
+^| image:images/linkedin.png[title="Václav Pech has not joined"]
+^| image:images/google.png[title="Václav Pech has not joined"]
+^| image:images/blog.png[title="Václav Pech",link="http://www.jroller.com/vaclav/"]
+^| image:images/website.png[title="Website",link="http://www.vaclavpech.eu/"]
+^| image:images/email.png[link="mailto:vaclav@vaclavpech.eu",title="email for Václav Pech"]
+|=== 
+
+
+''''
+
+== Dierk König
+
+image:images/Dierk.png[Dierk König,role="related thumb left"] Fellow at http://www.canoo.com[Canoo Engineering AG].
+
+Lead author of http://groovy.canoo.com/gina[Groovy in Action], which in the http://www.manning.com/koenig2[second edition] also features a chapter on *GPars*.
+
++++
+<a target="_blank" href="https://www.openhub.net/accounts/mittie?ref=sample"><img alt='Open Hub profile for Dierk König' border='0' height='35' src='https://www.openhub.net/accounts/mittie/widgets/account_detailed?format=gif&amp;ref=sample' width='230'></a>
++++
+
+
+.Social Media
+[cols="7*"]
+|===
+| Facebook | Twitter | Linked In | Google+ | Blog | Website | Email 
+ 
+^| image:images/facebook.png[title="Dierk König", link="http://www.facebook.com/profile.php?id=615327618"]
+^| image:images/twitter.png[title="Dierk König", link="https://twitter.com/mittie"]
+^| image:images/linkedin.png[title="Dierk König", link="http://www.linkedin.com/in/mittie"]
+^| image:images/google.png[title="Dierk König has not joined"]
+^| image:images/blog.png[title="Dierk König has no known blog"]
+^| image:images/website.png[title="Dierk König has no known website"]
+^| image:images/email.png[title="Dierk König has no known email"]
+|=== 
+
+
+''''
+
+== Russel Winder
+
+image:images/Russel.png[Russel Winder,role="related thumb left"] Independent consultant, analyst, author, expert witness, and trainer 
+
+Director of http://www.itzinteractive.com[It'z Interactive Ltd]
+
+Partner of http://www.concertant.com[Concertant LLP] and http://www.concertant.com/blog[The Concertant Blog].
+
++++
+<a target="_blank" href="https://www.openhub.net/accounts/russel?ref=sample"><img alt='Open Hub profile for Russel Winder' border='0' height='35' src='https://www.openhub.net/accounts/russel/widgets/account_detailed?format=gif&amp;ref=sample' width='230'></a>
++++
+
+.Social Media
+[cols="7*"]
+|===
+| Facebook | Twitter | Linked In | Google+ | Blog | Website | Email 
+ 
+^| image:images/facebook.png[title="Russel Winder", link="https://www.facebook.com/russel.winder"]
+^| image:images/twitter.png[title="Russel Winder", link="https://twitter.com/russel_winder"]
+^| image:images/linkedin.png[title="Russel Winder", link="http://www.linkedin.com/in/russelwinder"]
+^| image:images/google.png[title="Russel Winder has not joined"]
+^| image:images/blog.png[title="Russel Winder has no known blog"]
+^| image:images/website.png[title="Russel Winder's website", link="http://www.russel.org.uk"]
+^| image:images/email.png[title="Russel Winder has no known email"]
+|=== 
+
+''''
+
+== Paul King
+
+image:images/King.png[Paul King,role="related thumb left"] Australian software-developer, craftsman, computer-scientist, author, speaker, trainer, mentor, manager, innovator, committer
+
++++
+<a target="_blank" href="https://www.openhub.net/accounts/paulk_asert?ref=sample"><img alt='Open Hub profile for Paul King' border='0' height='35' src='https://www.openhub.net/accounts/paulk_asert/widgets/account_detailed?format=gif&amp;ref=sample' width='230'></a>
++++
+
+.Social Media
+[cols="7*"]
+|===
+| Facebook | Twitter | Linked In | Google+ | Blog | Website | Email 
+ 
+^| image:images/facebook.png[title="Paul king", link="https://www.facebook.com/paul.king.asert"]
+^| image:images/twitter.png[title="Paul King", link="https://twitter.com/paulk_asert"]
+^| image:images/linkedin.png[title="Paul King has not joined"]
+^| image:images/google.png[title="Paul King has not joined"]
+^| image:images/blog.png[title="Paul King has no known blog"]
+^| image:images/website.png[title="Paul King has no known website"]
+^| image:images/email.png[title="Paul King has no known email"]
+|=== 
+
+''''
+
+== Alex Tkachman
+
+image:images/Tkachman.png[Alex Tkachman,role="related thumb left"]
+
++++<br />+++
+
+.Social Media
+[cols="7*"]
+|===
+| Facebook | Twitter | Linked In | Google+ | Blog | Website | Email 
+ 
+^| image:images/facebook.png[title="Alex Tkachman", link="https://www.facebook.com/alex.tkachman"]
+^| image:images/twitter.png[title="Alex Tkachman", link="https://twitter.com/alextkachman"]
+^| image:images/linkedin.png[title="Alex Tkachman", link="http://www.linkedin.com/in/alextkachman"]
+^| image:images/google.png[title="Alex Tkachman", link="https://plus.google.com/113183999235628738153/posts"]
+^| image:images/blog.png[title="Alex Tkachman has no known blog"]
+^| image:images/website.png[title="Alex Tkachman has no known website"]
+^| image:images/email.png[title="Alex Tkachman has no known email"]
+|=== 
+
+''''
+
+== Rafał Sławik
+
+Student, Google Summer of Code '14 participant
+
+ * http://pl.linkedin.com/pub/rafa%C5%82-s%C5%82awik/5b/9b1/a/[LinkedIn]

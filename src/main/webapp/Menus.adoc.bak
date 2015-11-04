@@ -1,0 +1,661 @@
+= GPars - Groovy Parallel Systems
+JNorthr <james.northrop@orange.fr>
+v1.0, 2015-10-18
+:linkattrs:
+:linkcss:
+:toc: left
+:toc-title: Stale URL Index
+:icons: font
+:source-highlighter: coderay
+:docslink: http://www.gpars.org/guide/[GPars Docs]
+:description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
+:doctitle: Website,Guide & QuickStart Pages with Stale URLs
+
+++++
+<div>
+    <a href="/"><img src="./images/gpars-rgb-reverse-grey.svg" width="200"/></a>
+</div>
+<br />
+<link rel="stylesheet" href="./css/css3menustyle.css" type="text/css" /><style>._css3m{display:none}</style>	
+<div>
+<!-- Start css3menu.com BODY section -->
+<ul id="css3menu1" class="topmenu">
+	<li class="topmenu"><a href="./index.html" title="Website Entry Point" style="height:17px;line-height:17px;"><img src="./images/blue-home2.png" alt=""/>Home</a></li>
+	
+	<li class="topmenu"><a href="#" title="Information" style="height:17px;line-height:17px;"><span><img src="./images/blue-light.png" alt=""/>News</span></a>
+		<ul>
+		<li class="subfirst"><a href="./News.html" title="News"><img src="./images/blue-tape.png" alt="News"/>News</a></li>
+		<li><a href="./Events.html" title="Events"><img src="./images/blue-folder3.png" alt="Events"/>Events</a></li>
+		<li><a href="./User_Voices.html" title="User Voices"><img src="./images/blue-application.png" alt="User Voices"/>User Voices</a></li>
+		<li><a href="./Sponsors.html" title="Sponsors"><img src="./images/blue-application.png" alt="Sponsors"/>Sponsors</a></li>
+		<li><a href="./Roadmap.html" title="Roadmap"><img src="./images/blue-application.png" alt="Roadmap"/>Roadmap</a></li>
+		<li><a href="./GPars_Logo.html" title="GPars_Logo.html"><img src="./images/blue-application.png" alt="GPars Logo"/>GPars Logo</a></li>
+		<li class="sublast"><a href="./GPars_History.html" title="The GPars History"><img src="./images/blue-directions.png" alt="The GPars History"/>GPars History</a></li>
+		</ul>
+	</li>
+		
+	<li class="topmenu"><a href="#" title="Using GPars" style="height:17px;line-height:17px;"><span><img src="./images/blue-hand.png" alt="Using GPars"/>Using GPars</span></a>
+		<ul>
+		<li class="subfirst"><a href="./Integration.html" title="Integration"><img src="./images/blue-start.png" alt="Integration"/>Integration</a></li>
+		<li><a href="./Download.html" title="Download"><img src="./images/blue-user.png" alt="Download"/>Download</a></li>
+		<li><a href="./Support.html" title="Support"><img src="./images/blue-user.png" alt="Support"/>Support</a></li>
+		<li class="sublast"><a href="./Community.html" title="Community"><img src="./images/blue-health.png" alt="Community"/>Community</a></li>
+		</ul>
+	</li>
+			
+	<li class="topmenu"><a href="#" title="Documents" style="height:17px;line-height:17px;"><span><img src="./images/blue-man.png" alt="Documentation"/>Documents</span></a>
+		<ul>
+		<li class="subfirst"><a href="./guide/index.html" title="User Guide"><img src="./images/blue-luggage.png" alt="User Guide"/>User Guide</a></li>
+		<li><a href="./User_Guide.html" title="Old User Guides"><img src="./images/blue-luggage.png" alt="Old User Guides"/>Old User Guides</a></li>
+		<li><a href="./API_Doc.html" title="API Documentation"><img src="./images/blue-user.png" alt="API Documentation"/>API Documentation</a></li>
+		<li><a href="./Concepts_Compared.html" title="Concepts Compared"><img src="./images/blue-user.png" alt="Concepts Compared"/>Concepts Compared</a></li>
+		<li><a href="./Breaking_Changes.html" title="Breaking Changes"><img src="./images/blue-user.png" alt="Breaking Changes"/>Breaking Changes</a></li>
+		<li><a href="./Articles.html" title="Articles"><img src="./images/blue-user.png" alt="Articles"/>Articles</a></li>
+		<li><a href="./Demos.html" title="Demos"><img src="./images/blue-user.png" alt="Demos"/>Demos</a></li>
+		<li class="sublast"><a href="./Presentations.html" title="Presentations"><img src="./images/blue-question.png" alt="Presentations"/>Presentations</a></li>
+		</ul>
+	</li>
+	
+	<li class="topmenu"><a href="#" title="Hacking GPars" style="height:17px;line-height:17px;"><span><img src="./images/blue-flag.png" alt="Developing GPars"/>Hacking GPars</span></a>
+		<ul>
+		<li class="subfirst"><a href="./Developer_Zone.html" title="Developer Zone"><img src="./images/blue-luggage.png" alt="Developer Zone"/>Developer Zone</a></li>
+		<li><a href="./Code_Style.html" title="Code Style guidelines"><img src="./images/blue-user.png" alt="Code Style guidelines"/>Code-Style guidelines</a></li>
+		<li><a href="./TheGParsTeam.html" title="The GPars Team"><img src="./images/blue-photo.png" alt="The GPars Team"/>The GPars Team</a></li>
+		<li class="sublast"><a href="./Hackergarten.html" title="Hackergarten"><img src="./images/blue-question.png" alt="Hackergarten"/>Hackergarten</a></li>
+		</ul>
+	</li>
+
+	
+	<li class="topmenu"><a href="" title="Chatter" style="height:17px;line-height:17px;"><span><img src="./images/blue-search.png" alt="Chat"/>Chatter</span></a>
+		<ul>
+		<li class="subfirst"><a href="./Concurrency_Topics.html" title="Concurrency Topics"><img src="./images/blue-luggage.png" alt="Concurrency Topics"/>Concurrency Topics</a></li>
+		<li class="sublast"><a href="http://www.gpars.org/1.2.1/guide/guide/actors.html#actors_classicExamples.html" title="Classic Examples"><img src="./images/blue-question.png" alt="Classic Examples"/>Classic Examples</a></li>
+		</ul>
+	</li>
+	
+</ul>
+</div>
+<!-- End css3menu.com BODY section -->
+<br /><br />
+++++
+
+''''
+
+== Reviewed 17-18 Oct.2015 for Stale Links 
+
+=== Review
+
+There are three sections of documentation for GPars :
+
+ . The website pages
+ . User Guide
+ . Quick Start Manual
+ . ( A Series of PDF's also exists but is not included in this solution - need permissions. )
+ 
+ 
+=== Purpose
+
+Have combined all three of these groups into a single entity with a sub-group each for the `User Guide` and `Quick Start`. Note comments in red after HREF lines that have problems.
+
+All pages are now styled in the *asciidoctor* syntax and will produce .html (optionally .pdf) output when running the ruby gem *asciidoctor* or the `asciidoctor plugin` for *Gradle*.
+
+This menu is simply a temporary index into each page of our GPars documentation. You can click each page link to reach the converted result.
+
+A navigation bar solution is in progress.
+
+A workflow sequence-of-steps to update the GPars docs is also in progress. 
+
+An opportunity exists for 'live-code' style documentation. This idea copies out each identifible code fragment and compiles it to confirm it works. It reports code examples that do not work too so they can be fixed. - Just an idea :-}
+
+For example, a sample from the agent page looks like this in *asciidoctor*
+
+++++
+.Sample One<br />
+[source,groovy]<br />
+----<br />
+++++
+
+[source,groovy]
+----
+agent = new Agent(0)  //created a new Agent wrapping an integer with initial value 0
+agent.send {increment()}  //asynchronous send operation, sending the increment() function
+. . .
+//after some delay to process the message the internal Agent's state has been updated
+. . .
+assert agent.val== 1
+----
+
+++++
+----<br />
+++++
+
+It's fairly trivial to capture each code sample and compile it. Just harvest code between the ---- lines.
+
+''''
+
+IMPORTANT: Need new location for GPars forums, user groups, Q&A, etc. !
+
+
+''''
+
+== GPars.org Website Pages
+
+=== link:./actor.html[Actor Page]
+
+ * http://ruben.savanne.be/articles/concurrency-in-erlang-scala[http://ruben.savanne.be/articles/concurrency-in-erlang-scala] - [green]*ok*
+ * http://gpars.org/guide/guide/actors.html[http://gpars.org/guide/guide/actors.html] - [green]*ok*
+
+=== link:./agent.html[Agent Page]
+
+ * http://gpars.org/guide/guide/agents.html[http://gpars.org/guide/guide/agents.html] - [green]*ok*
+
+=== link:./api_doc.html[Api Docs Page]
+
+ * http://gpars.org/SNAPSHOT/javadoc/index.html[http://gpars.org/SNAPSHOT/javadoc/index.html] - [green]*ok*
+ * http://gpars.org/SNAPSHOT/groovydoc/index.html[http://gpars.org/SNAPSHOT/groovydoc/index.html] - [green]*ok*
+ * http://gpars.org/1.2.1/javadoc/index.html[http://gpars.org/1.2.1/javadoc/index.html] - [green]*ok*
+ * http://gpars.org/1.2.1/groovydoc/index.html[http://gpars.org/1.2.1/groovydoc/index.html] - [green]*ok*
+ * http://gpars.org/1.2.0/javadoc/index.html[http://gpars.org/1.2.0/javadoc/index.html] - [green]*ok*
+ * http://gpars.org/1.2.0/groovydoc/index.html[http://gpars.org/1.2.0/groovydoc/index.html] - [green]*ok*
+ * http://gpars.org/1.1.0/javadoc/index.html[http://gpars.org/1.1.0/javadoc/index.html] - [green]*ok*
+ * http://gpars.org/1.1.0/groovydoc/index.html[http://gpars.org/1.1.0/groovydoc/index.html] - [green]*ok*
+ * http://gpars.org/1.0.0/javadoc/index.html[http://gpars.org/1.0.0/javadoc/index.html] - [green]*ok*
+ * http://gpars.org/1.0.0/groovydoc/index.html[http://gpars.org/1.0.0/groovydoc/index.html] - [green]*ok*
+
+=== link:./articles.html[Articles Page]
+
+ * http://jaxenter.com/java-tech-journal/JTJ-2012-03[http://jaxenter.com/java-tech-journal/JTJ-2012-03] - [red]*404*
+ * http://www.heise-shop.de/heise-zeitschriften-verlag/zeitschriften/ix-developer-01-2012-programmieren-heute-sonderhefte_pid_755_17704675.html[http://www.heise-shop.de/heise-zeitschriften-verlag/zeitschriften/ix-developer-01-2012-programmieren-heute-sonderhefte_pid_755_17704675.html] - [red]*404*
+ * http://www.manning.com/koenig2[http://www.manning.com/koenig2] - [green]*ok*
+ * http://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-43529.html[http://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-43529.html] - [green]*ok*
+ * http://drdobbs.com/high-performance-computing/229402193[http://drdobbs.com/high-performance-computing/229402193] - [green]*ok*
+ * http://www.dzone.com/links/r/concurrency_and_background_tasks_in_grails.html[http://www.dzone.com/links/r/concurrency_and_background_tasks_in_grails.html] - [green]*ok*
+ * http://www.jroller.com/vaclav/entry/dataflow_speculations[http://www.jroller.com/vaclav/entry/dataflow_speculations] - [green]*ok*
+ * http://www.ibm.com/developerworks/java/library/j-gpars/index.html[http://www.ibm.com/developerworks/java/library/j-gpars/index.html] - [green]*ok*
+ * http://tech.puredanger.com/[http://tech.puredanger.com/] - [green]*ok*
+ * http://fbflex.wordpress.com/2010/06/11/writing-batch-import-scripts-with-grails-gsql-and-gpars/[http://fbflex.wordpress.com/2010/06/11/writing-batch-import-scripts-with-grails-gsql-and-gpars/] - [green]*ok*
+ * http://java.dzone.com/articles/flowing-data[http://java.dzone.com/articles/flowing-data] - [green]*ok*
+ * http://wordpress.transentia.com.au/wordpress/2010/03/05/playing-with-gpars/[http://wordpress.transentia.com.au/wordpress/2010/03/05/playing-with-gpars/] - [green]*ok*
+ * http://java.dzone.com/articles/dont-be-afraid-try-gpars[http://java.dzone.com/articles/dont-be-afraid-try-gpars] - [green]*ok*
+ * http://hamletdarcy.blogspot.com/2010/02/testing-asynchronous-code-with-gpars.html[http://hamletdarcy.blogspot.com/2010/02/testing-asynchronous-code-with-gpars.html] - [green]*ok*
+ * http://www.grailspodcast.com/blog/id/516[http://www.grailspodcast.com/blog/id/516] - [red]*404*
+ * http://it-republik.de/jaxenter/artikel/GPars-Parallelitaet-fuer-Java-mit-Groovy-Mitteln-2608.html[http://it-republik.de/jaxenter/artikel/GPars-Parallelitaet-fuer-Java-mit-Groovy-Mitteln-2608.html] - [red]*Looks like a home page now*
+ * http://www.concertant.com/blog/2009-10-08-07-15[http://www.concertant.com/blog/2009-10-08-07-15] - [green]*ok*
+ * http://www.russel.org.uk/blog/2009-10-07-09-30[http://www.russel.org.uk/blog/2009-10-07-09-30] - [red]*404*
+ * http://javaposse.com/index.php?post_id=501792[http://javaposse.com/index.php?post_id=501792] - [red]*Terminated*
+ * http://www.groovymag.com/main.issues.description/id=11/[http://www.groovymag.com/main.issues.description/id=11/] - [red]*404*
+ * http://groovy.dzone.com/announcements/gparalelizer-08-released[http://groovy.dzone.com/announcements/gparalelizer-08-released] - [green]*ok*
+ * http://www.ddj.com/go-parallel/blog/archives/2009/06/a_domainspecifi.html[http://www.ddj.com/go-parallel/blog/archives/2009/06/a_domainspecifi.html] - [green]*ok*
+ * http://www.jroller.com/vaclav/entry/another_milestone_for_gparallelizer_the[http://www.jroller.com/vaclav/entry/another_milestone_for_gparallelizer_the] - [green]*ok*
+ * http://www.javaworld.com/javaworld/jw-03-2009/jw-03-actor-concurrency2.html[http://www.javaworld.com/javaworld/jw-03-2009/jw-03-actor-concurrency2.html] - [green]*ok*
+ * http://www.gr8conf.org/blog/2009/03/05/19[http://www.gr8conf.org/blog/2009/03/05/19] - [red]*404*
+ * http://groovy.dzone.com/news/event-based-actors-groovy[http://groovy.dzone.com/news/event-based-actors-groovy] - [green]*ok*
+ * http://www.jroller.com/vaclav/entry/event_based_actors_in_groovy[http://www.jroller.com/vaclav/entry/event_based_actors_in_groovy] - [green]*ok*
+ * http://www.jroller.com/vaclav/entry/groovy_actors_in_gparallelizer_concurrency[http://www.jroller.com/vaclav/entry/groovy_actors_in_gparallelizer_concurrency] - [green]*ok*
+ * http://www.jroller.com/vaclav/entry/gparallelizer_made_available[http://www.jroller.com/vaclav/entry/gparallelizer_made_available] - [green]*ok*
+
+=== link:./asynchronous_functions.html[Asynchronous Functions Page]
+
+ * http://gpars.org/guide/guide/dataParallelism.html#dataParallelism_asynchronousInvocation[http://gpars.org/guide/guide/dataParallelism.html#dataParallelism_asynchronousInvocation] - [green]*ok*
+
+=== link:./breaking_changes.html[Breaking Changes Page]
+
+
+=== link:./code_style.html[Code Style Page]
+
+ * http://teamcity.jetbrains.com/viewType.html?buildTypeId=bt183&amp;tab=buildTypeStatusDiv[http://teamcity.jetbrains.com/viewType.html?buildTypeId=bt183&amp;tab=buildTypeStatusDiv] - [red]*Requires Login*
+
+=== link:./community.html[Community Page]
+
+ * http://www.ohloh.net[http://www.ohloh.net] - [green]*ok*
+ * https://www.ohloh.net/p/gpars[https://www.ohloh.net/p/gpars] - [green]*ok*
+ * http://gpars-user-mailing-list.19372.n3.nabble.com/[http://gpars-user-mailing-list.19372.n3.nabble.com/] - [green]*ok*
+ * http://gpars-developer-list.729030.n3.nabble.com/[http://gpars-developer-list.729030.n3.nabble.com/] - [green]*ok*
+ * http://xircles.codehaus.org/projects/gpars/lists[http://xircles.codehaus.org/projects/gpars/lists] - [red]*Not Authorised*
+ * http://n3.nabble.com/GPars-user-mailing-list-f19372.html[http://n3.nabble.com/GPars-user-mailing-list-f19372.html] - [red]*404*
+ * http://jira.codehaus.org/browse/GPARS[http://jira.codehaus.org/browse/GPARS] - [red]*terminated*
+ * https://github.com/GPars/GPars[https://github.com/GPars/GPars] - [green]*ok*
+
+=== link:./concepts_compared.html[Concepts Compared Page]
+
+
+=== link:./concurrency_topics.html[Concurrency Topics Page]
+
+ * http://www.alphaworks.ibm.com/tech/msdk[http://www.alphaworks.ibm.com/tech/msdk] - [red]*Now Home Page*
+
+=== link:./csp.html[CSP Page]
+
+ * http://en.wikipedia.org/wiki/Communicating_sequential_processes[http://en.wikipedia.org/wiki/Communicating_sequential_processes] - [green]*ok*
+ * http://gpars.org/guide/guide/GroovyCSP.html[http://gpars.org/guide/guide/GroovyCSP.html] - [green]*ok*
+
+
+=== link:./dataflow.html[Dataflow Page]
+
+ * http://www.jonasboner.com[http://www.jonasboner.com] - [green]*ok*
+ * http://gpars.org/guide/guide/dataflow.html[http://gpars.org/guide/guide/dataflow.html] - [green]*ok*
+ * https://github.com/jboner/scala-dataflow/[https://github.com/jboner/scala-dataflow/] - [green]*ok*
+ * http://jonasboner.com/talks.html[http://jonasboner.com/talks.html] - [green]*ok*
+ * http://github.com/larrytheliquid/dataflow/tree/master[http://github.com/larrytheliquid/dataflow/tree/master] - [green]*ok*
+
+=== link:./demos.html[Demos Page]
+
+ * http://gpars.org/download/1.2.1/gpars-samples-1.2.1.zip[http://gpars.org/download/1.2.1/gpars-samples-1.2.1.zip] - [green]*ok*
+ * http://bamboo.ci.codehaus.org/browse/GPARS-DEF/latest/artifact[http://bamboo.ci.codehaus.org/browse/GPARS-DEF/latest/artifact] - [red]*Not Authorised*
+ * http://gpars.org/download/1.2.1/gpars-mvn-java-demo-1.2.1.zip[http://gpars.org/download/1.2.1/gpars-mvn-java-demo-1.2.1.zip] - [green]*ok*
+ * http://bamboo.ci.codehaus.org/browse/GPARS-DEF/latest/artifact[http://bamboo.ci.codehaus.org/browse/GPARS-DEF/latest/artifact] - [red]*Not Authorised*
+
+=== link:./developer_zone.html[Developer Zone Page]
+
+ * https://travis-ci.org/GPars/GPars[https://travis-ci.org/GPars/GPars] - [green]*ok*
+ * https://travis-ci.org/GPars/GPars.svg?branch=master[https://travis-ci.org/GPars/GPars.svg?branch=master] - [green]*ok*
+ * https://snap-ci.com/GPars/GPars/branch/master[https://snap-ci.com/GPars/GPars/branch/master] - [green]*ok*
+ * https://snap-ci.com/GPars/GPars/branch/master/build_image[https://snap-ci.com/GPars/GPars/branch/master/build_image] - [green]*ok*
+ * http://teamcity.jetbrains.com/project.html?projectId=GPars[http://teamcity.jetbrains.com/project.html?projectId=GPars] - [red]*Requires Login*
+ * http://bamboo.ci.codehaus.org/browse/GPARS-DEF[http://bamboo.ci.codehaus.org/browse/GPARS-DEF] - [red]*Not Authorised*
+ * http://jira.codehaus.org/browse/GPARS[http://jira.codehaus.org/browse/GPARS] - [red]*Terminated*
+ * https://dav.codehaus.org/snapshots.repository/gpars/[https://dav.codehaus.org/snapshots.repository/gpars/] - [red]*Terminated*
+ * https://dav.codehaus.org/repository/gpars/[https://dav.codehaus.org/repository/gpars/] - [red]*Terminated*
+ * http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/[http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/] - [green]*ok*
+ * https://dav.codehaus.org/snapshots.repository/gpars/[https://dav.codehaus.org/snapshots.repository/gpars/] - [red]*Terminated*
+ * http://www.anyclient.com/download.html[http://www.anyclient.com/download.html] - [green]*ok*
+ * http://www.gpars.org/guide/[http://www.gpars.org/guide/] - [green]*ok*
+ * http://gpars.org/javadoc/index.html[http://gpars.org/javadoc/index.html] - [red]*404*
+ * http://gpars.org/groovydoc/index.html%20respectively[http://gpars.org/groovydoc/index.html%20respectively] - [red]*404*
+ * http://docs.codehaus.org/pages/createblogpost.action?spaceKey=GPARS[http://docs.codehaus.org/pages/createblogpost.action?spaceKey=GPARS] - [red]*Terminated*
+ * http://xircles.codehaus.org/projects/gpars[http://xircles.codehaus.org/projects/gpars] - [red]*Not Authorised*
+
+=== link:./download.html[Download Page]
+
+ * http://gpars.org/download/1.2.1/[http://gpars.org/download/1.2.1/] - [green]*ok*
+ * http://gpars.org/download/1.2.0/[http://gpars.org/download/1.2.0/] - [green]*ok*
+ * http://gpars.org/download/1.1.0/[http://gpars.org/download/1.1.0/] - [green]*ok*
+ * http://gpars.org/download/1.0.0/[http://gpars.org/download/1.0.0/] - [green]*ok*
+ * http://bamboo.ci.codehaus.org/browse/GPARS-DEF/latest/artifact[http://bamboo.ci.codehaus.org/browse/GPARS-DEF/latest/artifact] - [red]*Not Authorised*
+
+=== link:./events.html[Events Page]
+
+ * http://gr8conf.eu/Presentations/GPars-how-to-guide[http://gr8conf.eu/Presentations/GPars-how-to-guide] - [red]*404*
+ * http://gr8conf.eu/Presentations/---GPars-Workshop[http://gr8conf.eu/Presentations/---GPars-Workshop] - [red]*404*
+ * http://greach.es/[http://greach.es/] - [green]*ok*
+ * http://greach.es/[http://greach.es/] - [green]*ok*
+ * http://skillsmatter.com/podcast/groovy-grails/gpars-vs-wild[http://skillsmatter.com/podcast/groovy-grails/gpars-vs-wild] - [green]*ok*
+ * http://topconf.com/Conference/Abstracts/unleash/tabid/131/language/en-US/Default.aspx[http://topconf.com/Conference/Abstracts/unleash/tabid/131/language/en-US/Default.aspx] - [red]*404*
+ * http://jax.de/wjax2011/[http://jax.de/wjax2011/] - [red]*404*
+ * http://entwickler.com/konferenzen/ext_scripts/v2/php/sessions-popup.php?module=wjax2011&amp;id=18755[http://entwickler.com/konferenzen/ext_scripts/v2/php/sessions-popup.php?module=wjax2011&amp;id=18755] - [red]*404*
+ * http://entwickler.com/konferenzen/ext_scripts/v2/php/sessions-popup.php?module=wjax2011&amp;id=18757[http://entwickler.com/konferenzen/ext_scripts/v2/php/sessions-popup.php?module=wjax2011&amp;id=18757] - [red]*404*
+ * http://www.devoxx.com/display/DV11/Groovy+actors+and+concurrent+dataflow+with+GPars[http://www.devoxx.com/display/DV11/Groovy+actors+and+concurrent+dataflow+with+GPars] - [red]*404*
+ * http://gotocon.com/prague-2011/[http://gotocon.com/prague-2011/] - [green]*ok*
+ * http://gotocon.com/prague-2011/presentation/Unleash%20your%20processor%28s%29[http://gotocon.com/prague-2011/presentation/Unleash%20your%20processor%28s%29] - [green]*ok*
+ * http://gotocon.com/prague-2011/presentation/Groovy%20actors%20and%20concurrent%20dataflow%20with%20GPars[http://gotocon.com/prague-2011/presentation/Groovy%20actors%20and%20concurrent%20dataflow%20with%20GPars] - [green]*ok*
+ * http://www.con-fess.com/web/guest[http://www.con-fess.com/web/guest] - [red]*404*
+ * http://2011.geecon.org/main/home[http://2011.geecon.org/main/home] - [green]*ok*
+ * http://www.eu2011.gr8conf.org/[http://www.eu2011.gr8conf.org/] - [green]*ok*
+ * http://eu.gr8conf.org/eu2010/agenda/index[http://eu.gr8conf.org/eu2010/agenda/index] - [red]*404*
+ * http://2010.geecon.org/main/home[http://2010.geecon.org/main/home] - [green]*ok*
+ * http://www.jfokus.se/jfokus/speakers.jsp#V%C3%A1clav%20Pech[http://www.jfokus.se/jfokus/speakers.jsp#V%C3%A1clav%20Pech] - [green]*ok*
+ * http://www.jfokus.se/jfokus/speakers.jsp#Vaclav%20Pech[http://www.jfokus.se/jfokus/speakers.jsp#Vaclav%20Pech] - [green]*ok*
+ * http://www.jax.de[http://www.jax.de] - [green]*ok*
+ * http://www.devoxx.com/display/DV09/Quickie+Day+1[http://www.devoxx.com/display/DV09/Quickie+Day+1] - [red]*404*
+
+=== link:./forkjoin.html[Fork / Join Page]
+
+ * http://gpars.org/guide/guide/dataParallelism.html#dataParallelism_fork-join[http://gpars.org/guide/guide/dataParallelism.html#dataParallelism_fork-join] - [green]*ok*
+
+=== link:./gpars_history.html[GPars History Page]
+
+ * http://www.vaclavpech.eu/index.html[http://www.vaclavpech.eu/index.html] - [green]*ok*
+ * http://code.google.com/p/gparallelizer/[http://code.google.com/p/gparallelizer/] - [green]*ok*
+ * http://jonasboner.com/[http://jonasboner.com/] - [green]*ok*
+ * http://www.gpars.org/guide/index.html[http://www.gpars.org/guide/index.html] - [green]*ok*
+ * http://www.cs.kent.ac.uk/projects/ofa/jcsp/[http://www.cs.kent.ac.uk/projects/ofa/jcsp/] - [green]*ok*
+
+=== link:./gpars_logo.html[GPars Logo Page]
+
+ * http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=blob_plain;f=artwork/gpars-logo.PNG;hb=HEAD[http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=blob_plain;f=artwork/gpars-logo.PNG;hb=HEAD] - [red]*Not Authorised*
+ * http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=blob_plain;f=artwork/gpars-rgb.svg;hb=HEAD[http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=blob_plain;f=artwork/gpars-rgb.svg;hb=HEAD] - [red]*Not Authorised*
+ * http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=blob_plain;f=artwork/GPars_logo.zip;hb=HEAD[http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=blob_plain;f=artwork/GPars_logo.zip;hb=HEAD] - [red]*Not Authorised*
+
+=== link:./gparspool.html[GParspool Page]
+
+ * http://gpars.org/guide/guide/dataParallelism.html[http://gpars.org/guide/guide/dataParallelism.html] - [green]*ok*
+
+=== link:./grails_and_griffon_fast_track.html[Grails and Griffon Fast Track Page]
+
+ * http://gpars.org/guide/index.html[http://gpars.org/guide/index.html] - [green]*ok*
+
+=== link:./groovy_fast_track.html[Groovy Fast Track Page]
+
+ * http://www.gpars.org/guide/guide/dataParallelism.html#dataParallelism_parallelCollections[http://www.gpars.org/guide/guide/dataParallelism.html#dataParallelism_parallelCollections] - [green]*ok*
+ * http://www.gpars.org/guide/[http://www.gpars.org/guide/] - [green]*ok*
+ * http://www.gpars.org/guide/guide/actors.html[http://www.gpars.org/guide/guide/actors.html] - [green]*ok*
+ * http://www.gpars.org/guide/[http://www.gpars.org/guide/] - [green]*ok*
+ * http://www.gpars.org/guide/[http://www.gpars.org/guide/] - [green]*ok*
+ * http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=tree;f=src/test/groovy/groovyx/gpars/samples;h=6e25c7ecb409197aced73a76719795976ee461ec;hb=HEAD[http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=tree;f=src/test/groovy/groovyx/gpars/samples;h=6e25c7ecb409197aced73a76719795976ee461ec;hb=HEAD] - [red]*Not Authorised*
+
+
+=== link:./hackergarten.html[Hackergarten Page]
+
+
+=== link:./index.html[Index Page]
+
+ * http://www.gpars.org/1.2.1/guide/guide/actors.html#actors_classicExamples.html[http://www.gpars.org/1.2.1/guide/guide/actors.html#actors_classicExamples.html] - [green]*ok*
+ * http://www.groovy-lang.org/[http://www.groovy-lang.org/] - [green]*ok*
+ * http://www.apache.org/licenses/LICENSE-2.0.html[http://www.apache.org/licenses/LICENSE-2.0.html] - [green]*ok*
+ * http://www.apache.org/licenses/LICENSE-2.0.html[http://www.apache.org/licenses/LICENSE-2.0.html] - [green]*ok*
+
+=== link:./integration.html[Integration Page]
+
+ * http://gpars.org/download/1.2.0/gpars-mvn-java-demo-1.2.0.zip[http://gpars.org/download/1.2.0/gpars-mvn-java-demo-1.2.0.zip] - [green]*ok*
+ * http://bamboo.ci.codehaus.org/browse/GPARS-DEF/latest/artifact[http://bamboo.ci.codehaus.org/browse/GPARS-DEF/latest/artifact] - [red]*Not Authorised*
+
+=== link:./java_fast_track.html[Java Fast Track Page]
+
+ * http://gpars.org/download/1.1.0/gpars-mvn-java-demo-1.1.0.zip[http://gpars.org/download/1.1.0/gpars-mvn-java-demo-1.1.0.zip] - [green]*ok*
+ * http://gpars.org/download/1.1.0/gpars-mvn-java-demo-1.1.0.zip[http://gpars.org/download/1.1.0/gpars-mvn-java-demo-1.1.0.zip] - [green]*ok*
+ * http://www.gpars.org/guide/guide/gettingStarted.html#gettingStarted_JavaAPI-usingGParsFromJava[http://www.gpars.org/guide/guide/gettingStarted.html#gettingStarted_JavaAPI-usingGParsFromJava] - [green]*ok*
+ * http://www.gpars.org/guide/[http://www.gpars.org/guide/] - [green]*ok*
+ * http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=tree;f=src/test/groovy/groovyx/gpars/samples;h6e25c7ecb409197aced73a76719795976ee461ec;hb=HEAD[http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=tree;f=src/test/groovy/groovyx/gpars/samples;h6e25c7ecb409197aced73a76719795976ee461ec;hb=HEAD] - [red]*Not Authorised*
+
+=== link:./license.html[License Page]
+
+ * http://www.vaclavpech.eu/[http://www.vaclavpech.eu/] - [green]*ok*
+ * http://www.apache.org/licenses/LICENSE-2.0[http://www.apache.org/licenses/LICENSE-2.0] - [green]*ok*
+
+=== link:./logo_usage_policy.html[Logo Usage Policy Page]
+
+ * http://www.python.org/psf/trademarks/#uses-that-never-require-approval[http://www.python.org/psf/trademarks/#uses-that-never-require-approval] - [green]*ok*
+ * http://creativecommons.org/publicdomain/zero/1.0/[http://creativecommons.org/publicdomain/zero/1.0/] - [green]*ok*
+
+=== link:./news.html[News Page]
+
+ * http://docs.codehaus.org/display/GPARS/2014/09/06/Remoting+for+GPars[http://docs.codehaus.org/display/GPARS/2014/09/06/Remoting+for+GPars] - [red]*Terminated*
+ * http://gpars.org/SNAPSHOT/aguide/index.html#_remoting[http://gpars.org/SNAPSHOT/aguide/index.html#_remoting] - [red]*404*
+ * http://docs.codehaus.org/display/GPARS/2013/07/25/Here+comes+GPars+1.1[http://docs.codehaus.org/display/GPARS/2013/07/25/Here+comes+GPars+1.1] - [red]*Terminated*
+ * http://docs.codehaus.org/display/GPARS/2013/07/17/Arriving+at+1.1.0[http://docs.codehaus.org/display/GPARS/2013/07/17/Arriving+at+1.1.0] - [red]*Terminated*
+ * http://gpars.org/download/1.1.0-rc1/[http://gpars.org/download/1.1.0-rc1/] - [green]*ok*
+ * http://docs.codehaus.org/display/GPARS/2012/12/19/GPars+1.0+arrived[http://docs.codehaus.org/display/GPARS/2012/12/19/GPars+1.0+arrived] - [red]*Terminated*
+ * http://www.gpars.org/1.0.0/guide[http://www.gpars.org/1.0.0/guide] - [green]*ok*
+ * http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=12030&amp;version=17007[http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=12030&amp;version=17007] - [red]*Terminated*
+ * http://docs.codehaus.org/display/GPARS/2012/12/11/The+first+release+candidate+of+1.0+is+available[http://docs.codehaus.org/display/GPARS/2012/12/11/The+first+release+candidate+of+1.0+is+available] - [red]*Terminated*
+ * http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=12030&amp;version=17007[http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=12030&amp;version=17007] - [red]*Terminated*
+ * http://docs.codehaus.org/display/GPARS/2012/09/10/Beta+3+is+out[http://docs.codehaus.org/display/GPARS/2012/09/10/Beta+3+is+out] - [red]*Terminated*
+ * http://gpars.org/download/1.0-beta-3/[http://gpars.org/download/1.0-beta-3/] - [green]*ok*
+ * http://docs.codehaus.org/display/GPARS/2011/12/30/GPars+1.0+beta-1+ready+for+a+test+ride[http://docs.codehaus.org/display/GPARS/2011/12/30/GPars+1.0+beta-1+ready+for+a+test+ride] - [red]*Terminated*
+ * http://docs.codehaus.org/display/GPARS/2011/09/01/Parallel+Game+of+Life[http://docs.codehaus.org/display/GPARS/2011/09/01/Parallel+Game+of+Life] - [red]*Terminated*
+ * http://www.jroller.com/vaclav/entry/parallel_game_of_life[http://www.jroller.com/vaclav/entry/parallel_game_of_life] - [green]*ok*
+ * http://docs.codehaus.org/display/GPARS/2011/06/02/GPars+turns+0.12+today[http://docs.codehaus.org/display/GPARS/2011/06/02/GPars+turns+0.12+today] - [red]*Terminated*
+ * http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=12030&amp;version=16994[http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=12030&amp;version=16994] - [red]*Terminated*
+ * http://gpars.org/0.12/guide/index.html[http://gpars.org/0.12/guide/index.html] - [green]*ok*
+ * http://gpars.org/0.12/guide/gpars-guide-0.12.pdf[http://gpars.org/0.12/guide/gpars-guide-0.12.pdf] - [green]*ok*
+ * http://docs.codehaus.org/display/GPARS/2011/04/26/JVM+Concurrency+and+Actors+with+GPars[http://docs.codehaus.org/display/GPARS/2011/04/26/JVM+Concurrency+and+Actors+with+GPars] - [red]*Terminated*
+ * http://drdobbs.com/high-performance-computing/229402193[http://drdobbs.com/high-performance-computing/229402193] - [green]*ok*
+
+=== link:./presentations.html[Presentations Page]
+
+ * https://www.youtube.com/watch?v=unUJwAAtLcM&amp;feature=youtu.be[https://www.youtube.com/watch?v=unUJwAAtLcM&amp;feature=youtu.be] - [green]*ok*
+ * http://www.slideshare.net/VaclavPech/g-pars-howto[http://www.slideshare.net/VaclavPech/g-pars-howto] - [green]*ok*
+ * http://gr8conf.eu/Presentations/GPars-how-to-guide[http://gr8conf.eu/Presentations/GPars-how-to-guide] - [green]*ok*
+ * http://www.slideshare.net/VaclavPech/gpars-workshop-21832702[http://www.slideshare.net/VaclavPech/gpars-workshop-21832702] - [green]*ok*
+ * http://www.youtube.com/watch?v=0St2X1DJhpA[http://www.youtube.com/watch?v=0St2X1DJhpA] - [green]*ok*
+ * http://skillsmatter.com/podcast/home/gpars-vs-wild/te-6299[http://skillsmatter.com/podcast/home/gpars-vs-wild/te-6299] - [green]*ok*
+ * http://www.java-tv.com/2012/10/01/groovy-and-concurrency-with-gpars/[http://www.java-tv.com/2012/10/01/groovy-and-concurrency-with-gpars/] - [green]*ok*
+ * http://www.parleys.com/#st=5&amp;id=2940&amp;sl=6[http://www.parleys.com/#st=5&amp;id=2940&amp;sl=6] - [red]*Heavily restricted*
+ * http://www.russel.org.uk/Presentations/LJCConf_2011_GPars_ParallelismTheRightWay.pdf[http://www.russel.org.uk/Presentations/LJCConf_2011_GPars_ParallelismTheRightWay.pdf] - [red]*404*
+ * http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_UnleashYourProcessors.pdf[http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_UnleashYourProcessors.pdf] - [green]*ok*
+ * http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_GroovyActorsAndConcurrentDataflowWithGPars.pdf[http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_GroovyActorsAndConcurrentDataflowWithGPars.pdf] - [green]*ok*
+ * http://www.russel.org.uk/Presentations/JAXLondond2011_2011-11-01_justKeepPassingTheMessages.pdf[http://www.russel.org.uk/Presentations/JAXLondond2011_2011-11-01_justKeepPassingTheMessages.pdf] - [red]*404*
+ * http://www.slideshare.net/gr8conf/g-pars-vaclavpech2011[http://www.slideshare.net/gr8conf/g-pars-vaclavpech2011] - [green]*ok*
+ * http://www.slideshare.net/mpassell/gpars-for-beginners[http://www.slideshare.net/mpassell/gpars-for-beginners] - [green]*ok*
+ * http://www.slideshare.net/VaclavPech/pick-up-the-lowhanging-concurrency-fruit[http://www.slideshare.net/VaclavPech/pick-up-the-lowhanging-concurrency-fruit] - [green]*ok*
+ * http://www.slideshare.net/paulk_asert/groovy-and-concurrency[http://www.slideshare.net/paulk_asert/groovy-and-concurrency] - [green]*ok*
+ * http://jazoon.com/Portals/0/Content/slides/we_a5_1330-1420_koenig.pdf[http://jazoon.com/Portals/0/Content/slides/we_a5_1330-1420_koenig.pdf] - [red]*404*
+ * http://www.parleys.com/#id=1990&amp;st=5[http://www.parleys.com/#id=1990&amp;st=5] - [red]*Heavily Restricted*
+ * http://www.jfokus.se/jfokus/preso/jf-10_GroovyActorsAndConcurrentDataflowWithGPars.pdf[http://www.jfokus.se/jfokus/preso/jf-10_GroovyActorsAndConcurrentDataflowWithGPars.pdf] - [red]*404*
+ * http://www.russel.org.uk/Presentations/accu2010_parallelism_theJVMRocks.pdf[http://www.russel.org.uk/Presentations/accu2010_parallelism_theJVMRocks.pdf] - [red]*404*
+ * http://accu.org[http://accu.org] - [red]*Now just home page*
+ * http://www.slideshare.net/VaclavPech/gpars-concepts-explained[http://www.slideshare.net/VaclavPech/gpars-concepts-explained] - [green]*ok*
+ * http://people.canoo.com/mittie/gpars.mov[http://people.canoo.com/mittie/gpars.mov] - [green]*ok*
+ * http://skillsmatter.com/podcast/groovy-grails/concurrent-programming-for-you-and-me[http://skillsmatter.com/podcast/groovy-grails/concurrent-programming-for-you-and-me] - [green]*ok*
+ * http://streaming.java.no/tcs/#page:recordingList&amp;pageNumber:1&amp;id:8FAE6BDA-0980-4371-A5D3-B38692B81572[http://streaming.java.no/tcs/#page:recordingList&amp;pageNumber:1&amp;id:8FAE6BDA-0980-4371-A5D3-B38692B81572] - [red]*404*
+
+=== link:./readme.html[Readme Page]
+
+
+=== link:./roadmap.html[Roadmap Page]
+
+
+=== link:./sponsors.html[Sponsors Page]
+
+ * http://www.jetbrains.com/idea/index.html[http://www.jetbrains.com/idea/index.html] - [green]*ok*
+ * http://www.jetbrains.com/[http://www.jetbrains.com/] - [green]*ok*
+ * http://www.jetbrains.com/teamcity/index.html[http://www.jetbrains.com/teamcity/index.html] - [green]*ok*
+ * http://teamcity.jetbrains.com[http://teamcity.jetbrains.com] - [green]*ok*
+ * http://www.altassian.com/[http://www.altassian.com/] - [red]*404*
+
+=== link:./support.html[Support Page]
+
+ * http://jira.codehaus.org/browse/GPARS[http://jira.codehaus.org/browse/GPARS] - [red]*Terminated*
+
+=== link:./thegparsteam.html[The GPars Team Page]
+
+ * http://www.linkedin.com/companies/gpars-codehaus[http://www.linkedin.com/companies/gpars-codehaus] - [green]*ok*
+ * http://www.jetbrains.com/[http://www.jetbrains.com/] - [green]*ok*
+ * http://www.vaclavpech.euPersonal[http://www.vaclavpech.euPersonal] - [red]*404*
+ * http://www.jroller.com/vaclav[http://www.jroller.com/vaclav] - [green]*ok*
+ * https://www.ohloh.net/accounts/60649/widgets/account_detailed.gif[https://www.ohloh.net/accounts/60649/widgets/account_detailed.gif] - [green]*ok*
+ * http://www.canoo.com[http://www.canoo.com] - [green]*ok*
+ * http://groovy.canoo.com/gina[http://groovy.canoo.com/gina] - [green]*ok*
+ * http://www.manning.com/koenig2[http://www.manning.com/koenig2] - [green]*ok*
+ * http://twitter.com/mittie[http://twitter.com/mittie] - [green]*ok*
+ * http://www.linkedin.com/in/mittie[http://www.linkedin.com/in/mittie] - [green]*ok*
+ * https://www.xing.com/profile/Dierk_Koenig[https://www.xing.com/profile/Dierk_Koenig] - [red]*404*
+ * http://www.facebook.com/profile.php?id=615327618[http://www.facebook.com/profile.php?id=615327618] - [green]*ok*
+ * https://www.ohloh.net/accounts/1466/widgets/account_detailed.gif[https://www.ohloh.net/accounts/1466/widgets/account_detailed.gif] - [green]*ok*
+ * http://www.russel.org.uk[http://www.russel.org.uk] - [green]*ok*
+ * http://www.itzinteractive.com[http://www.itzinteractive.com] - [green]*ok*
+ * http://www.concertant.com[http://www.concertant.com] - [green]*ok*
+ * http://www.concertant.com/blog[http://www.concertant.com/blog] - [green]*ok*
+ * http://twitter.com/russel_winder[http://twitter.com/russel_winder] - [green]*ok*
+ * http://uk.linkedin.com/in/russelwinder[http://uk.linkedin.com/in/russelwinder] - [green]*ok*
+ * http://facebook.com/russel.winder[http://facebook.com/russel.winder] - [green]*ok*
+ * https://www.ohloh.net/accounts/35897/widgets/account_detailed.gif[https://www.ohloh.net/accounts/35897/widgets/account_detailed.gif] - [green]*ok*
+ * http://pl.linkedin.com/pub/rafa%C5%82-s%C5%82awik/5b/9b1/a/[http://pl.linkedin.com/pub/rafa%C5%82-s%C5%82awik/5b/9b1/a/] - [green]*ok*
+
+=== link:./user_guide.html[User Guide Page]
+
+ * http://www.gpars.org/guide/index.html[http://www.gpars.org/guide/index.html] - [green]*ok*
+ * http://gpars.org/SNAPSHOT/aguide/html5/index.html[http://gpars.org/SNAPSHOT/aguide/html5/index.html] - [red]*404*
+ * http://gpars.org/SNAPSHOT/aguide/pdf/index.pdf[http://gpars.org/SNAPSHOT/aguide/pdf/index.pdf] - [red]*404*
+ * http://gpars.org/1.2.1/guide/index.html[http://gpars.org/1.2.1/guide/index.html] - [green]*ok*
+ * http://gpars.org/1.2.1/guide/guide/single.html[http://gpars.org/1.2.1/guide/guide/single.html] - [green]*ok*
+ * http://gpars.org/1.2.1/guide/gpars-guide-1.2.1.pdf[http://gpars.org/1.2.1/guide/gpars-guide-1.2.1.pdf] - [green]*ok*
+ * http://gpars.org/1.2.0/guide/index.html[http://gpars.org/1.2.0/guide/index.html] - [green]*ok*
+ * http://gpars.org/1.2.0/guide/guide/single.html[http://gpars.org/1.2.0/guide/guide/single.html] - [green]*ok*
+ * http://gpars.org/1.2.0/guide/gpars-guide-1.2.0.pdf[http://gpars.org/1.2.0/guide/gpars-guide-1.2.0.pdf] - [green]*ok*
+ * http://gpars.org/1.1.0/guide/index.html[http://gpars.org/1.1.0/guide/index.html] - [green]*ok*
+ * http://gpars.org/1.1.0/guide/guide/single.html[http://gpars.org/1.1.0/guide/guide/single.html] - [green]*ok*
+ * http://gpars.org/1.1.0/guide/gpars-guide-1.1.0.pdf[http://gpars.org/1.1.0/guide/gpars-guide-1.1.0.pdf] - [green]*ok*
+ * http://gpars.org/1.0.0/guide/index.html[http://gpars.org/1.0.0/guide/index.html] - [green]*ok*
+ * http://gpars.org/1.0.0/guide/guide/single.html[http://gpars.org/1.0.0/guide/guide/single.html] - [green]*ok*
+ * http://gpars.org/1.0.0/guide/gpars-guide-1.0.0.pdf[http://gpars.org/1.0.0/guide/gpars-guide-1.0.0.pdf] - [green]*ok*
+
+=== link:./user_voices.html[User Voices Page]
+
+ * http://blog.xebia.fr[http://blog.xebia.fr] - [red]*Looks like a home page*
+ * http://www.ecircle.com/en/home.html[http://www.ecircle.com/en/home.html] - [red]*404*
+ * http://leanjavaengineering.wordpress.com/2010/10/06/groovy-salesforce-api[http://leanjavaengineering.wordpress.com/2010/10/06/groovy-salesforce-api] - [green]*ok*
+ * http://www.jcraft.com/jsch/[http://www.jcraft.com/jsch/] - [green]*ok*
+ * http://twitter.com/gblack[http://twitter.com/gblack] - [green]*ok*
+ * https://spreadsheets.google.com/viewform?hl=en&amp;formkey=dFdYb2U1dFo2am9OZ1NTQUFuY0lSdXc6MQ#gid=0[https://spreadsheets.google.com/viewform?hl=en&amp;formkey=dFdYb2U1dFo2am9OZ1NTQUFuY0lSdXc6MQ#gid=0] - [green]*GPars User Voice Form in Google*
+
+''''
+
+== Quick Start Folder
+
+=== link:./quick_reference/actors.html[Actors Page]
+
+=== link:./quick_reference/agents.html[Agents Page]
+
+
+=== link:./quick_reference/csp.html[CSP Page]
+
+ * http://www.cs.kent.ac.uk/projects/ofa/jcsp/[http://www.cs.kent.ac.uk/projects/ofa/jcsp/] - [green]*ok*
+ * http://en.wikipedia.org/wiki/Communicating_sequential_processes[http://en.wikipedia.org/wiki/Communicating_sequential_processes] - [green]*ok*
+ * http://golang.org/[http://golang.org/] - [green]*ok*
+
+=== link:./quick_reference/dataflow.html[Dataflow Page]
+
+
+=== link:./quick_reference/forkjoin.html[Fork / Join Page]
+
+
+=== link:./quick_reference/forkjoinpool.html[Fork / Join Pool Page]
+
+
+=== link:./quick_reference/stm.html[STM Page]
+
+ * https://github.com/pveentjer/Multiverse[https://github.com/pveentjer/Multiverse] - [green]*ok*
+
+=== link:./quick_reference/threadpool.html[Thread Pool Page]
+
+''''
+
+== User Guide
+
+=== link:./guide/actors.html[Actors Page]
+
+ * http://ruben.savanne.be/articles/concurrency-in-erlang-scala[http://ruben.savanne.be/articles/concurrency-in-erlang-scala] - [green]*ok*
+ * http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=blob_plain;f=src/test/groovy/groovyx/gpars/samples/actors/stateful/DemoMultiMessage.groovy;hb=HEAD[http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=blob_plain;f=src/test/groovy/groovyx/gpars/samples/actors/stateful/DemoMultiMessage.groovy;hb=HEAD] - [red]*Unauthorized*
+ * http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=tree;f=src/test/groovy/groovyx/gpars/samples;h=f9a751689a034a1d3de13c4874f4f4e839cb1026;hb=HEAD[http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=tree;f=src/test/groovy/groovyx/gpars/samples;h=f9a751689a034a1d3de13c4874f4f4e839cb1026;hb=HEAD] - [red]*Unauthorized*
+ * http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes[http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes] - [green]*ok*
+ * http://en.wikipedia.org/wiki/Sleeping_barber_problem[http://en.wikipedia.org/wiki/Sleeping_barber_problem] - [green]*ok*
+ * http://en.wikipedia.org/wiki/Dining_philosophers_problem[http://en.wikipedia.org/wiki/Dining_philosophers_problem] - [green]*ok*
+ * http://fupeg.blogspot.com/2009/06/scala-concurrency.html[http://fupeg.blogspot.com/2009/06/scala-concurrency.html] - [green]*ok*
+
+=== link:./guide/agents.html[Agents Page]
+
+
+=== link:./guide/conclusion.html[Conclusions Page]
+
+
+=== link:./guide/data_parallelism.html[Data Parallelism Page]
+
+ * http://groovy.dzone.com/articles/parallelize-your-arrays-with-j[http://groovy.dzone.com/articles/parallelize-your-arrays-with-j] - [green]*ok*
+ * http://github.com/thevery[http://github.com/thevery] - [green]*ok*
+ * https://en.wikipedia.org/wiki/Java_concurrency[https://en.wikipedia.org/wiki/Java_concurrency] - [green]*ok*
+ * https://en.wikipedia.org/wiki/Java_concurrency[https://en.wikipedia.org/wiki/Java_concurrency] - [green]*ok*
+ * https://en.wikipedia.org/wiki/Java_concurrency[https://en.wikipedia.org/wiki/Java_concurrency] - [green]*ok*
+ * http://blog.krecan.net/2011/03/27/visualizing-forkjoin/[http://blog.krecan.net/2011/03/27/visualizing-forkjoin/] - [green]*ok*
+
+=== link:./guide/dataflow.html[Dataflow Page]
+
+ * http://www.jonasboner.com[http://www.jonasboner.com] - [green]*ok*
+ * http://gpars.codehaus.org/API+doc[http://gpars.codehaus.org/API doc] - [red]*Unauthorized*
+ * http://blog.jcoglan.com/2013/03/30/callbacks-are-imperative-promises-are-functional-nodes-biggest-missed-opportunity/[http://blog.jcoglan.com/2013/03/30/callbacks-are-imperative-promises-are-functional-nodes-biggest-missed-opportunity/] - [green]*ok*
+ * http://github.com/jboner/scala-dataflow/tree/f9a38992f5abed4df0b12f6a5293f703aa04dc33/src[http://github.com/jboner/scala-dataflow/tree/f9a38992f5abed4df0b12f6a5293f703aa04dc33/src] - [green]*ok*
+ * http://jonasboner.com/talks/state_youre_doing_it_wrong/html/all.html[http://jonasboner.com/talks/state_youre_doing_it_wrong/html/all.html] - [red]*404*
+ * http://github.com/larrytheliquid/dataflow/tree/master[http://github.com/larrytheliquid/dataflow/tree/master] - [green]*ok*
+ * http://people.canoo.com/mittie/kanbanflow.html[http://people.canoo.com/mittie/kanbanflow.html] - [green]*ok*
+ * https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/dataflow/KanbanFlowTest.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/dataflow/KanbanFlowTest.groovy] - [green]*ok*
+ * https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlow.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlow.groovy] - [green]*ok*
+ * https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowBroadcast.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowBroadcast.groovy] - [green]*ok*
+ * https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowCycle.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowCycle.groovy] - [green]*ok*
+ * https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanLazyPrimeSequenceLoops.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanLazyPrimeSequenceLoops.groovy] - [green]*ok*
+
+=== link:./guide/getting_started.html[Getting Started Page]
+
+ * http://groovy-lang.org/download.html[http://groovy-lang.org/download.html] - [green]*ok*
+ * http://www.jetbrains.net/confluence/display/GRVY/Scripting+IDE+for+DSL+awareness[http://www.jetbrains.net/confluence/display/GRVY/Scripting+IDE+for+DSL+awareness] - [green]*ok*
+ * http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=12030&amp;version=20355[http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=12030&amp;version=20355] - [red]*Terminated*
+
+=== link:./guide/google_app_engine_integration.html[Google App Engine Integration Page]
+
+ * https://developers.google.com/appengine/[https://developers.google.com/appengine/] - [green]*ok*
+ * https://developers.google.com/appengine/[https://developers.google.com/appengine/] - [green]*ok*
+ * https://github.com/musketyr/gpars-appengine[https://github.com/musketyr/gpars-appengine] - [green]*ok*
+ * https://github.com/musketyr/gpars-appengine[https://github.com/musketyr/gpars-appengine] - [green]*ok*
+
+=== link:./guide/groovy_csp.html[Groovy CSP Page]
+
+ * http://www.cs.kent.ac.uk/projects/ofa/jcsp/[http://www.cs.kent.ac.uk/projects/ofa/jcsp/] - [green]*ok*
+ * http://www.soc.napier.ac.uk/~cs10/#_Toc271192596[http://www.soc.napier.ac.uk/~cs10/#_Toc271192596] - [red]*Looks like a home page now*
+
+=== link:./guide/index.html[Index Page]
+
+ * http://www.gpars.org/1.2.1/guide/guide/actors.html#actors_classicExamples.html[http://www.gpars.org/1.2.1/guide/guide/actors.html#actors_classicExamples.html] - [green]*ok*
+ * https://github.com/GPars/GPars/tree/master/src/docs/asciidoc/guide[https://github.com/GPars/GPars/tree/master/src/docs/asciidoc/guide] - [green]*ok*
+ * http://gpars.codehaus.org[http://gpars.codehaus.org] - [red]*Unauthorized*
+ * http://gpars.codehaus.org/License[http://gpars.codehaus.org/License] - [red]*Unauthorized*
+ * http://groovy-lang.org/download.html[http://groovy-lang.org/download.html] - [green]*ok*
+ * http://www.jetbrains.net/confluence/display/GRVY/Scripting+IDE+for+DSL+awareness[http://www.jetbrains.net/confluence/display/GRVY/Scripting+IDE+for+DSL+awareness] - [green]*ok*
+ * http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=12030&amp;version=20355[http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=12030&amp;version=20355] - [red]*Terminateded*
+ * http://ruben.savanne.be/articles/concurrency-in-erlang-scala[http://ruben.savanne.be/articles/concurrency-in-erlang-scala] - [green]*ok*
+ * http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=blob_plain;f=src/test/groovy/groovyx/gpars/samples/actors/stateful/DemoMultiMessage.groovy;hb=HEAD[http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=blob_plain;f=src/test/groovy/groovyx/gpars/samples/actors/stateful/DemoMultiMessage.groovy;hb=HEAD] - [red]*Unauthorized*
+ * http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=tree;f=src/test/groovy/groovyx/gpars/samples;h=f9a751689a034a1d3de13c4874f4f4e839cb1026;hb=HEAD[http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=tree;f=src/test/groovy/groovyx/gpars/samples;h=f9a751689a034a1d3de13c4874f4f4e839cb1026;hb=HEAD] - [red]*Unauthorized*
+ * http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes[http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes] - [green]*ok*
+ * http://en.wikipedia.org/wiki/Sleeping_barber_problem[http://en.wikipedia.org/wiki/Sleeping_barber_problem] - [green]*ok*
+ * http://en.wikipedia.org/wiki/Dining_philosophers_problem[http://en.wikipedia.org/wiki/Dining_philosophers_problem] - [green]*ok*
+ * http://fupeg.blogspot.com/2009/06/scala-concurrency.html[http://fupeg.blogspot.com/2009/06/scala-concurrency.html] - [green]*ok*
+ * http://groovy.dzone.com/articles/parallelize-your-arrays-with-j[http://groovy.dzone.com/articles/parallelize-your-arrays-with-j] - [green]*ok*
+ * http://github.com/thevery[http://github.com/thevery] - [green]*ok*
+ * https://en.wikipedia.org/wiki/Java_concurrency[https://en.wikipedia.org/wiki/Java_concurrency] - [green]*ok*
+ * https://en.wikipedia.org/wiki/Java_concurrency[https://en.wikipedia.org/wiki/Java_concurrency] - [green]*ok*
+ * https://en.wikipedia.org/wiki/Java_concurrency[https://en.wikipedia.org/wiki/Java_concurrency] - [green]*ok*
+ * http://blog.krecan.net/2011/03/27/visualizing-forkjoin/[http://blog.krecan.net/2011/03/27/visualizing-forkjoin/] - [green]*ok*
+ * http://www.jonasboner.com[http://www.jonasboner.com] - [green]*ok*
+ * http://gpars.codehaus.org/API+doc[http://gpars.codehaus.org/API+doc] - [red]*Unauthorized*
+ * http://blog.jcoglan.com/2013/03/30/callbacks-are-imperative-promises-are-functional-nodes-biggest-missed-opportunity/[http://blog.jcoglan.com/2013/03/30/callbacks-are-imperative-promises-are-functional-nodes-biggest-missed-opportunity/] - [green]*ok*
+ * http://github.com/jboner/scala-dataflow/tree/f9a38992f5abed4df0b12f6a5293f703aa04dc33/src[http://github.com/jboner/scala-dataflow/tree/f9a38992f5abed4df0b12f6a5293f703aa04dc33/src] - [green]*ok*
+ * http://jonasboner.com/talks/state_youre_doing_it_wrong/html/all.html[http://jonasboner.com/talks/state_youre_doing_it_wrong/html/all.html] - [red]*404*
+ * http://github.com/larrytheliquid/dataflow/tree/master[http://github.com/larrytheliquid/dataflow/tree/master] - [green]*ok*
+ * http://people.canoo.com/mittie/kanbanflow.html[http://people.canoo.com/mittie/kanbanflow.html] - [green]*ok*
+ * https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/dataflow/KanbanFlowTest.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/dataflow/KanbanFlowTest.groovy] - [green]*ok*
+ * https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlow.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlow.groovy] - [green]*ok*
+ * https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowBroadcast.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowBroadcast.groovy] - [green]*ok*
+ * https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowCycle.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowCycle.groovy] - [green]*ok*
+ * https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanLazyPrimeSequenceLoops.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanLazyPrimeSequenceLoops.groovy] - [green]*ok*
+ * https://developers.google.com/appengine/[https://developers.google.com/appengine/] - [green]*ok*
+ * https://developers.google.com/appengine/[https://developers.google.com/appengine/] - [green]*ok*
+ * https://github.com/musketyr/gpars-appengine[https://github.com/musketyr/gpars-appengine] - [green]*ok*
+ * https://github.com/musketyr/gpars-appengine[https://github.com/musketyr/gpars-appengine] - [green]*ok*
+ * http://www.cs.kent.ac.uk/projects/ofa/jcsp/[http://www.cs.kent.ac.uk/projects/ofa/jcsp/] - [green]*ok*
+ * http://www.soc.napier.ac.uk/[http://www.soc.napier.ac.uk/] - [green]*ok*
+ * http://www.soc.napier.ac.uk/[http://www.soc.napier.ac.uk/] - [green]*ok*
+ * http://netty.io[http://netty.io] - [green]*ok*
+ * https://github.com/pveentjer/Multiverse[https://github.com/pveentjer/Multiverse] - [green]*ok*
+ * https://github.com/pveentjer/Multiverse[https://github.com/pveentjer/Multiverse] - [green]*ok*
+ * http://gpars.codehaus.org/Demos[http://gpars.codehaus.org/Demos] - [red]*Unauthorized*
+
+=== link:./guide/introduction.html[Introduction Page]
+
+ * http://gpars.codehaus.org[http://gpars.codehaus.org] - [red]*Unauthorized*
+ * http://gpars.codehaus.org/License[http://gpars.codehaus.org/License] - [red]*Unauthorized*
+
+=== link:./guide/remoting.html[Remoting Page]
+
+ * http://netty.io[http://netty.io] - [green]*ok*
+
+=== link:./guide/stm.html[STM Page]
+
+ * https://github.com/pveentjer/Multiverse[https://github.com/pveentjer/Multiverse] - [green]*ok*
+ * https://github.com/pveentjer/Multiverse[https://github.com/pveentjer/Multiverse] - [green]*ok*
+
+=== link:./guide/tips.html[Tips Page]
+
+ * http://gpars.codehaus.org/Demos[http://gpars.codehaus.org/Demos] - [red]*Unauthorized*
+
+
+''''
+
+IMPORTANT: 58 files have 321 HREF links including 90 Links with problems
+
+''''
+
+=== Storage Folder: `/Users/jimnorthrop/Dropbox/Projects/GParsDocs/src/main/webapp` 
+
+''''
+
+TIP: Avoid re-running FindHTML.groovy as this will destroy and re-create this file loosing all manual changes to it.
+
+''''
+

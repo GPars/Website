@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.2">
+<meta name="description" content="GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.">
+<meta name="author" content="The Whole GPars Team &lt;https://groups.google.com/forum/#!forum/gpars-users&gt;">
+<title>GPars User Guide To Remoting</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./coderay-asciidoctor.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1><strong>GPars</strong> User Guide To Remoting</h1>
+<div class="details">
+<span id="author" class="author">The Whole GPars Team &lt;https://groups.google.com/forum/#!forum/gpars-users&gt;</span><br>
+<span id="revnumber">version 1.0,</span>
+<span id="revdate">2015-11-01</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Document Index</div>
+<ul class="sectlevel1">
+<li><a href="#_introduction">Introduction</a>
+<ul class="sectlevel2">
+<li><a href="#_remote_serialization">Remote Serialization</a></li>
+</ul>
+</li>
+<li><a href="#__em_dataflows_em"><em>Dataflows</em></a>
+<ul class="sectlevel2">
+<li><a href="#_dataflowvariable">DataflowVariable</a></li>
+<li><a href="#_dataflowbroadcast">DataflowBroadcast</a></li>
+<li><a href="#_dataflowqueue">DataflowQueue</a></li>
+</ul>
+</li>
+<li><a href="#__em_actors_em"><em>Actors</em></a>
+<ul class="sectlevel2">
+<li><a href="#_remote_actor_names">Remote Actor Names</a></li>
+</ul>
+</li>
+<li><a href="#_agents">Agents</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Concepts like <em>Actors</em>, <em>Dataflows</em> and <em>Agents</em> are not restricted just to a single VM. They provide an abstraction layer for concurrent programming that allows us to separate logic from low level synchronization code.
+These concepts can be easly extended to multiple nodes in a network.</p>
+</div>
+<div class="paragraph">
+<p>The following guide describes <strong>Remoting</strong> in <strong>GPars</strong>.</p>
+</div>
+<hr>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Remoting for <strong>GPars</strong> was a <em>Google Summer of Code 2014</em> project.
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_introduction">Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To use <em>Actors</em>, <em>Dataflows</em> or <em>Agent</em> remotely, a new remote proxy object was introduced with the <em>Remote</em> prefix.</p>
+</div>
+<div class="paragraph">
+<p>The proxy object usually has an identical interface to it&#8217;s local counterpart. This allows us to use it in place of local counterpart.
+Under the covers, a proxy object just sends messages over the wire to an original instance.</p>
+</div>
+<div class="paragraph">
+<p>To transport messages across the network, the <a href="http://netty.io">Netty</a> library was used.</p>
+</div>
+<div class="paragraph">
+<p>To create a proxy-object, the instance serialization mechanism was used (more in <strong>remote-serialization</strong> below).</p>
+</div>
+<div class="paragraph">
+<p>The general approach to using remotes is as follows (details below):</p>
+</div>
+<div class="paragraph">
+<p>At <em>host A</em>:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Create remoting context and start a server to handle incoming requests.</p>
+</li>
+<li>
+<p>Publish an instance under a specified <em>name</em></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>At <em>host B</em>:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Create remoting context</p>
+</li>
+<li>
+<p>Ask for an instance with specified <em>name</em> from <em>hostA:port</em>. A promise object is returned.</p>
+</li>
+<li>
+<p>Get a proxy object from the promise.</p>
+</li>
+</ol>
+</div>
+<hr>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+At this point, a new connection is created for each request
+</td>
+</tr>
+</table>
+</div>
+<hr>
+<div class="sect2">
+<h3 id="_remote_serialization">Remote Serialization</h3>
+<div class="paragraph">
+<p>The following mechanism was used to create proxy objects:</p>
+</div>
+<div class="paragraph">
+<p><em>object</em> &#8592;(serialization)&#8594; <em>handle</em> ---- [network] ---- <em>handle</em> &#8592;(serialization)&#8594; <em>proxy-object</em></p>
+</div>
+<div class="paragraph">
+<p>One of the main advantages of this mechanism is that sending proxy-object references back is deserialized back to the original instance.</p>
+</div>
+<div class="paragraph">
+<p>As all messages are seralized before sending over a wire, they must implement the <em>Serializable</em> interface.</p>
+</div>
+<div class="paragraph">
+<p>This is a consequence of using build-in <strong>Java8 serialization mechanism and *Netty</strong> <em>ObjectDecoder/ObjectEncoder</em>.
+On the other hand, it gives us the flexibility to send any custom object as a message to an <strong>Actor</strong> or to use <strong>DataflowVariable</strong>(s) of any type.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__em_dataflows_em"><em>Dataflows</em></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In order to use remoting for <em>Dataflows</em>, a context (<em>RemoteDataflows</em> class) has to be created. Within this context, <em>Dataflows</em> can be published and retrieved from remote hosts.</p>
+</div>
+<div class="listingblock">
+<div class="title">A Sample</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> remoteDataflows = RemoteDataflows.create()</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<hr>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+In all subsections we assume that a context has already been created as shown above.
+</td>
+</tr>
+</table>
+</div>
+<hr>
+<div class="paragraph">
+<p>After creating a context, if you want to allow other hosts to retrieve published <em>Dataflows</em>,
+you need to start a server. You need to provide an address and port to listen on (say, like: <em>localhost</em>:11222, or 10.0.0.123:11333).</p>
+</div>
+<div class="listingblock">
+<div class="title">Start A Sample Server</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+</pre></td>
+  <td class="code"><pre>remoteDataflows.startServer HOST PORT</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To stop the server, we have a <em>stopServer()</em> method. Note that both start and stop methods are asynchronous,
+and they don&#8217;t block; the server is started/stopped in background.</p>
+</div>
+<div class="paragraph">
+<p>Multiple execution of these methods or executing them in wrong order will result in an exception.</p>
+</div>
+<hr>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+To only retrieve instances from remote hosts starting a server is not necessary.
+</td>
+</tr>
+</table>
+</div>
+<hr>
+<div class="sect2">
+<h3 id="_dataflowvariable">DataflowVariable</h3>
+<div class="paragraph">
+<p>The <strong>DataflowVariable</strong> is a core part of <em>Dataflows</em> subsystem that gains remoting abilities. Other structures(?) and subsystems depend on it.</p>
+</div>
+<div class="paragraph">
+<p>Publishing a variable within context is done simply by:</p>
+</div>
+<div class="listingblock">
+<div class="title">Publishing a Context</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> variable = <span class="keyword">new</span> DataflowVariable()
+remoteDataflows.publish variable <span class="string"><span class="delimiter">&quot;</span><span class="content">my-first-variable</span><span class="delimiter">&quot;</span></span></pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This registers the variable under a given name, so when a request for a variable with name <em>my-first-variable</em> arrives, the variable can be sent to the remote host.</p>
+</div>
+<div class="paragraph">
+<p>It&#8217;s important to remember that publishing another variable under the same name, will override the provious one and subsequent requests will send the newly published one.</p>
+</div>
+<div class="paragraph">
+<p>Variable retrieval is done by:</p>
+</div>
+<div class="listingblock">
+<div class="title">Variable Retrieval</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> remoteVariablePromise = remoteDataflows.getVariable HOST, PORT, <span class="string"><span class="delimiter">&quot;</span><span class="content">my-first-variable</span><span class="delimiter">&quot;</span></span>
+<span class="keyword">def</span> remoteVariable = remoteVariablePromise.get()</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <em>getVariable</em> method is non-blocking and returns a promise object that will eventually hold a proxy object to that variable.
+This proxy has the same interface as a <strong>DataflowVariable</strong> and can be used seemlessly as a regular variable.</p>
+</div>
+<div class="paragraph">
+<p>To explore a full example see: <em>groovyx.gpars.samples.remote.dataflow.variable</em></p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_dataflowbroadcast">DataflowBroadcast</h3>
+<div class="paragraph">
+<p>It&#8217;s possible to subscribe to a <strong>DataflowBroadcast</strong> on a remote host. To do this, we had to have published it first (assuming the context already exists):</p>
+</div>
+<div class="listingblock">
+<div class="title">A DataflowBroadcast Sample</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> stream = <span class="keyword">new</span> DataflowBroadcast()
+remoteDataflows.publish stream <span class="string"><span class="delimiter">&quot;</span><span class="content">my-first-broadcast</span><span class="delimiter">&quot;</span></span></pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Then on other host it can be retrieved:</p>
+</div>
+<div class="listingblock">
+<div class="title">A Retrieval Sample</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> readChannelPromise = remoteDataflows.getReadChannel HOST, PORT, <span class="string"><span class="delimiter">&quot;</span><span class="content">my-first-broadcast</span><span class="delimiter">&quot;</span></span>
+<span class="keyword">def</span> readChannel = readChannelPromise.get()</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The proxy object has the same interface as a <strong>ReadChannel</strong> and can be used in same fashion as a <strong>ReadChannel</strong> of a regular <strong>DataflowBroadcast</strong>.</p>
+</div>
+<div class="paragraph">
+<p>To explore a full example, please see: <em>groovyx.gpars.samples.remote.dataflow.broadcast</em></p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_dataflowqueue">DataflowQueue</h3>
+<div class="paragraph">
+<p>The <strong>DataflowQueue</strong> feature received similar functionality, and is published like this :</p>
+</div>
+<div class="listingblock">
+<div class="title">A Publish Sample</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> queue = <span class="keyword">new</span> DataflowQueue()
+remoteDataflows.publish queue, <span class="string"><span class="delimiter">&quot;</span><span class="content">my-first-queue</span><span class="delimiter">&quot;</span></span></pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>and in similar way, we can retrieved it on the remote host:</p>
+</div>
+<div class="listingblock">
+<div class="title">Retrieval from Remote Sources</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> queuePromise = remoteDataflows.getQueue HOST, PORT, <span class="string"><span class="delimiter">&quot;</span><span class="content">my-first-queue</span><span class="delimiter">&quot;</span></span>
+<span class="keyword">def</span> queue = queuePromise.get()</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>New items can be pushed into the queue of the remote proxy. Such elements are sent over a wire to the original instance and pushed into it.</p>
+</div>
+<div class="paragraph">
+<p>Retrieval commands send a request for an element to the original instance.</p>
+</div>
+<div class="paragraph">
+<p>Conceptually, the remote proxy is an interface - it just sends requests to an original instance.</p>
+</div>
+<div class="paragraph">
+<p>To explore a full example see:</p>
+</div>
+<div class="paragraph">
+<p><em>groovyx.gpars.samples.remote.dataflow.queue</em> or <em>groovyx.gpars.samples.remote.dataflow.queuebalancer</em></p>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__em_actors_em"><em>Actors</em></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <code>Remote Actors</code> subsystem is designed in similar way.</p>
+</div>
+<div class="paragraph">
+<p>To start a <em>RemoteActors</em> class, a context has to be created. Then within this context, an <em>Actors</em> instance can be published or retrieved from a remote host.</p>
+</div>
+<div class="listingblock">
+<div class="title">Remote Creation</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> remoteActors = RemoteActors.create()</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Publishing :</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> actor = ...
+remoteActors.publish actor, <span class="string"><span class="delimiter">&quot;</span><span class="content">actor-name</span><span class="delimiter">&quot;</span></span></pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Retrieval :</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> actorPromise = remoteActors.get HOST, PORT, <span class="string"><span class="delimiter">&quot;</span><span class="content">actor-name</span><span class="delimiter">&quot;</span></span>
+<span class="keyword">def</span> remoteActor = actorPromise.get()</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>It&#8217;s possible to join a remote <strong>Actor</strong>, but this will block until the original <strong>Actor</strong> ends its work.
+Sending replies and the <em>sendAndWait</em> method are supported as well.</p>
+</div>
+<div class="paragraph">
+<p>One can send any object as a message to an <strong>Actor</strong>, but keep in mind it has to be <strong class="blue">Serializable</strong>.</p>
+</div>
+<div class="paragraph">
+<p>See example: <em>groovyx.gpars.samples.remote.actor</em></p>
+</div>
+<hr>
+<div class="sect2">
+<h3 id="_remote_actor_names">Remote Actor Names</h3>
+<div class="paragraph">
+<p>A <em>RemoteActors</em> class context may be identified by a name. To create one with a name use:</p>
+</div>
+<div class="listingblock">
+<div class="title">Create A Named Context</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> remoteActors = RemoteActors.create <span class="string"><span class="delimiter">&quot;</span><span class="content">test-group-1</span><span class="delimiter">&quot;</span></span></pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><em>Actors</em> published within this context may be accessed by providing a special <strong>Actor</strong> URL.</p>
+</div>
+<div class="paragraph">
+<p>For example: publishing an <strong>actor</strong> under the name  of [blue]"actor" within this context makes it accessible under the URL
+"test-group-1/actor".</p>
+</div>
+<div class="listingblock">
+<div class="title">A Sample</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> actor = remoteActors.get <span class="string"><span class="delimiter">&quot;</span><span class="content">test-group-1/actor</span><span class="delimiter">&quot;</span></span></pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The host and port of an instance holding this actor is determined automatically.</p>
+</div>
+<div class="paragraph">
+<p>Invoking the <em>get</em> method will send a broadcast query to <em>255.255.255.255</em> with a search for an actor within a context with that specific name.
+A matching instance responds to that query with necessary information like host and port.</p>
+</div>
+<div class="listingblock">
+<div class="title">Allowed actor and context names</div>
+<div class="content">
+<pre>As the URL contains "/" (backslash) as a separator between context and actor name, we cannot use backslashes in an actor's name, but a context name can contain any UTF characters.</pre>
+</div>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_agents">Agents</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A <code>Remote Agents</code> system is designed in similar fashion.</p>
+</div>
+<div class="paragraph">
+<p>To begin, a <em>RemoteAgents</em> class context has to be created. Within this context, <em>Agents</em> can be published or retrieved from remote hosts.</p>
+</div>
+<div class="listingblock">
+<div class="title">A Sample</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> remoteAgents = RemoteAgents.create()</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Publishing :</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> agent = ...
+remoteAgents.publish agent, <span class="string"><span class="delimiter">&quot;</span><span class="content">agent-name</span><span class="delimiter">&quot;</span></span></pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Retrieval :</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> agentPromise = remoteAgents.get HOST, PORT, <span class="string"><span class="delimiter">&quot;</span><span class="content">agent-name</span><span class="delimiter">&quot;</span></span>
+<span class="keyword">def</span> remoteAgent = agentPromise.get()</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>There are two ways to execute closures used to update the state of a remote <em>Agent</em> instance:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><em>remote</em> - closure is serialized and sent to original instance and executed in that context</p>
+</li>
+<li>
+<p><em>local</em> - current state is retrieved and closure is executed where the update originated, then updated value is sent to original instance. Concurrent changes to <em>Agent</em> wait until this process ends.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>By default, remote <em>Agents</em> uses a <em>remote</em> execution policy. We can change it if necessary :</p>
+</div>
+<div class="listingblock">
+<div class="title">Changing Policy</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> agentPromise = remoteAgents.get HOST, PORT, <span class="string"><span class="delimiter">&quot;</span><span class="content">agent</span><span class="delimiter">&quot;</span></span>
+<span class="keyword">def</span> remoteAgent =  agentPromise.get()
+remoteAgent.executionPolicy = AgentClosureExecutionPolicy.LOCAL</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 1.0<br>
+Last updated 2015-10-31 14:13:19 CET
+</div>
+</div>
+</body>
+</html>

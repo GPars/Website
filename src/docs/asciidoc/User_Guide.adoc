@@ -1,0 +1,46 @@
+= GPars - Groovy Parallel Systems
+Russell Winder <russel@winder.org.uk>
+v1.0, 2015-10-01
+:linkattrs:
+:linkcss:
+:toc: left
+:toc-title: Document Index
+:icons: font
+:source-highlighter: coderay
+:docslink: http://www.gpars.org/guide/[GPars Docs]
+:description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
+:doctitle: User Guide
+
+
+== User Guide
+
+The http://www.gpars.org/guide/index.html[User Guide] introduces all the essential concepts and gives you details and samples on how to use GPars in your code.
+
+
+[cols="4*", options="header"]
+|===
+| Version 
+| HTML 
+| One-page 
+| PDF 
+
+|1.2.1 GA 
+| http://gpars.org/1.2.1/guide/index.html[User Guide] 
+| http://gpars.org/1.2.1/guide/guide/single.html[One Page User Guide] 
+| http://gpars.org/1.2.1/guide/gpars-guide-1.2.1.pdf[PDF]
+
+|1.2.0 GA 
+| http://gpars.org/1.2.0/guide/index.html[User Guide] 
+| http://gpars.org/1.2.0/guide/guide/single.html[One Page User Guide] 
+| http://gpars.org/1.2.0/guide/gpars-guide-1.2.0.pdf[PDF] 
+
+|1.1.0 GA 
+| http://gpars.org/1.1.0/guide/index.html[User Guide] 
+| http://gpars.org/1.1.0/guide/guide/single.html[One Page User Guide] 
+| http://gpars.org/1.1.0/guide/gpars-guide-1.1.0.pdf[PDF] 
+
+|1.0.0 GA 
+| http://gpars.org/1.0.0/guide/index.html[User Guide] 
+| http://gpars.org/1.0.0/guide/guide/single.html[One Page User Guide] 
+| http://gpars.org/1.0.0/guide/gpars-guide-1.0.0.pdf[PDF] 
+|===

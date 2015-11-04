@@ -1,0 +1,23 @@
+= GPars - Groovy Parallel Systems
+The Whole GPars Team <https://groups.google.com/forum/#!forum/gpars-users>
+v1.0, 2015-11-01
+:linkattrs:
+:linkcss:
+:toc: left
+:toc-title: Document Index
+:icons: font
+:source-highlighter: coderay
+:docslink: http://www.gpars.org/guide/[GPars Docs]
+:description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
+:doctitle: User Guide To The Conclusion
+
+NOTE: This was quite a wild ride, wasn't it? 
+
+Now, after going through this *User Guide*, you're certainly ready to build fast, robust, reliable and concurrent applications.  
+
+You've seen that there are many concepts you can choose from and each has its own areas of applicability. The ability to pick the right concept to apply to a
+given problem and combine it with the rest of the system is key to being a successful developer.  
+
+If you feel you can do this with *GPars*, the mission of this *User Guide* has been accomplished.
+
+IMPORTANT: Now, go ahead, use *GPars* and have fun!

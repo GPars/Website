@@ -1,0 +1,28 @@
+= GPars - Groovy Parallel Systems
+Jon Kerridge <j.kerridge@napier.ac.uk>
+v1.0, 2015-10-29
+:linkattrs:
+:linkcss:
+:toc: left
+:toc-title: Document Index
+:icons: font
+:source-highlighter: coderay
+:docslink: http://www.gpars.org/guide/[GPars Docs]
+:description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
+
+
+== Process Networks: Build It Like Lego
+
+One of the main advantages of the *CSP* based approach we are using is that processes can be combined using a simple compositional style. It is very much what you see is what you get!
+
+In arithmetic, the meaning of the composition `1 + 2 + 3` is immediately obvious and results in the answer 6. The composition of processes is equally simple and obvious. 
+
+Thus, we can build a set of basic building block processes, like Lego bricks, from which we can construct larger systems. The meaning of this will be obvious, given our understanding of the basic processes.
+
+All of the building block processes are to be found in the `package org.jcsp.groovy.plugAndPlay`. A more detailed discussion of these processes can be found in `Appendix 4`.
+
+''''
+
+NOTE: Want to read more of this chapter? link:pdf/C3.pdf[Download this chapter's PDF here.]
+
+''''

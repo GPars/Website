@@ -1,0 +1,32 @@
+@import url(http://fonts.googleapis.com/css?family=Asul:400,700);
+@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro:400,700);
+
+html {
+    font-family: Asul, sans-serif;
+    background: #333333;
+}
+
+body {
+    color: #dddddd;
+}
+
+#header {
+    font-style: italic;
+}
+
+#content {
+    font-family: Asul, sans-serif;
+    background: #333333;
+}
+
+h1 {
+    font-size: 40pt;
+}
+
+#footer {
+    font-style: italic;
+}
+
+#navigation ul {
+    float: right;
+}
