@@ -1,0 +1,199 @@
+= GPars - Groovy Parallel Systems
+Russell Winder <russel@winder.org.uk>
+v1.0, 2015-10-01
+:linkattrs:
+:linkcss:
+:toc: left
+:toc-title: Document Index
+:icons: font
+:source-highlighter: coderay
+:docslink: http://www.gpars.org/guide/[GPars Docs]
+:description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
+:doctitle: User Guide with Stale URLs
+
+++++
+<div>
+    <a href="/"><img src="../images/gpars-rgb-reverse-grey.svg" width="200"/></a>
+</div>
+<br />
+<link rel="stylesheet" href="../css/css3menustyle.css" type="text/css" /><style>._css3m{display:none}</style>	
+<div>
+<!-- Start css3menu.com BODY section -->
+<ul id="css3menu1" class="topmenu">
+	<li class="topmenu"><a href="../index.html" title="Website Entry Point" style="height:17px;line-height:17px;"><img src="../images/blue-home2.png" alt=""/>Home</a></li>
+	
+	<li class="topmenu"><a href="#" title="Information" style="height:17px;line-height:17px;"><span><img src="../images/blue-light.png" alt=""/>Information</span></a>
+		<ul>
+		<li class="subfirst"><a href="../News.html" title="News"><img src="../images/blue-tape.png" alt="News"/>News</a></li>
+		<li><a href="../Events.html" title="Events"><img src="../images/blue-folder3.png" alt="Events"/>Events</a></li>
+		<li><a href="../User_Voices.html" title="User Voices"><img src="../images/blue-application.png" alt="User Voices"/>User Voices</a></li>
+		<li><a href="../Sponsors.html" title="Sponsors"><img src="../images/blue-application.png" alt="Sponsors"/>Sponsors</a></li>
+		<li><a href="../Roadmap.html" title="Roadmap"><img src="../images/blue-application.png" alt="Roadmap"/>Roadmap</a></li>
+		<li><a href="../GPars_Logo.html" title="GPars_Logo.html"><img src="../images/blue-application.png" alt="GPars Logo"/>GPars Logo</a></li>
+		<li class="sublast"><a href="../GPars_History.html" title="The GPars History"><img src="../images/blue-directions.png" alt="The GPars History"/>GPars History</a></li>
+		</ul>
+	</li>
+		
+	<li class="topmenu"><a href="#" title="Using GPars" style="height:17px;line-height:17px;"><span><img src="../images/blue-hand.png" alt="Using GPars"/>Using GPars</span></a>
+		<ul>
+		<li class="subfirst"><a href="../Integration.html" title="Integration"><img src="../images/blue-start.png" alt="Integration"/>Integration</a></li>
+		<li><a href="../Download.html" title="Download"><img src="../images/blue-user.png" alt="Download"/>Download</a></li>
+		<li><a href="../Support.html" title="Support"><img src="../images/blue-user.png" alt="Support"/>Support</a></li>
+		<li class="sublast"><a href="../Community.html" title="Community"><img src="../images/blue-health.png" alt="Community"/>Community</a></li>
+		</ul>
+	</li>
+			
+	<li class="topmenu"><a href="#" title="Documentation" style="height:17px;line-height:17px;"><span><img src="../images/blue-man.png" alt="Documentation"/>Documentation</span></a>
+		<ul>
+		<li class="subfirst"><a href="#" title="User Guide"><img src="../images/blue-luggage.png" alt="User Guide"/>User Guide</a></li>
+		<li><a href="../User_Guide.html" title="Old User Guides"><img src="../images/blue-luggage.png" alt="Old User Guides"/>Old User Guides</a></li>
+		<li><a href="../API_Doc.html" title="API Documentation"><img src="../images/blue-user.png" alt="API Documentation"/>API Documentation</a></li>
+		<li><a href="../Concepts_Compared.html" title="Concepts Compared"><img src="../images/blue-user.png" alt="Concepts Compared"/>Concepts Compared</a></li>
+		<li><a href="../Breaking_Changes.html" title="Breaking Changes"><img src="../images/blue-user.png" alt="Breaking Changes"/>Breaking Changes</a></li>
+		<li><a href="../Articles.html" title="Articles"><img src="../images/blue-user.png" alt="Articles"/>Articles</a></li>
+		<li><a href="../Demos.html" title="Demos"><img src="../images/blue-user.png" alt="Demos"/>Demos</a></li>
+		<li class="sublast"><a href="../Presentations.html" title="Presentations"><img src="../images/blue-question.png" alt="Presentations"/>Presentations</a></li>
+		</ul>
+	</li>
+	
+	<li class="topmenu"><a href="#" title="Developing GPars" style="height:17px;line-height:17px;"><span><img src="../images/blue-flag.png" alt="Developing GPars"/>Developing GPars</span></a>
+		<ul>
+		<li class="subfirst"><a href="../Developer_Zone.html" title="Developer Zone"><img src="../images/blue-luggage.png" alt="Developer Zone"/>Developer Zone</a></li>
+		<li><a href="../Code_Style.html" title="Code Style guidelines"><img src="../images/blue-user.png" alt="Code Style guidelines"/>Code-Style guidelines</a></li>
+		<li><a href="../TheGParsTeam.html" title="The GPars Team"><img src="../images/blue-photo.png" alt="The GPars Team"/>The GPars Team</a></li>
+		<li class="sublast"><a href="../Hackergarten.html" title="Hackergarten"><img src="../images/blue-question.png" alt="Hackergarten"/>Hackergarten</a></li>
+		</ul>
+	</li>
+
+	
+	<li class="topmenu"><a href="" title="Chat" style="height:17px;line-height:17px;"><span><img src="../images/blue-search.png" alt="Chat"/>Discussions</span></a>
+		<ul>
+		<li class="subfirst"><a href="../Concurrency_Topics.html" title="Concurrency Topics"><img src="../images/blue-luggage.png" alt="Concurrency Topics"/>Concurrency Topics</a></li>
+		<li class="sublast"><a href="http://www.gpars.org/1.2.1/guide/guide/actors.html#actors_classicExamples.html" title="Classic Examples"><img src="../images/blue-question.png" alt="Classic Examples"/>Classic Examples</a></li>
+		</ul>
+	</li>
+	
+</ul>
+</div>
+<!-- End css3menu.com BODY section -->
+<br /><br />
+++++
+
+
+NOTE: This is a temporary navigation page to provide internal links to all the pages of this guide.
+
+''''
+
+*Hi guys,* 
+
+The conversion of this guide for our *GPars* documentation website was not originally on my to-do list. https://github.com/GPars/GPars/tree/master/src/docs/asciidoc/guide[I found these pages here.] 
+But when i saw that these 13 pages were in asciidoctor, it seemed natural to include them too. Perhaps we will can dovetail this guide under the new unbrella website as another sub-menu link ? Otherwise you can keep it in the current location.
+
+The link to each page below is clickable to review the converted page.
+
+Have reviewed the html links within this guide only (not the whole conversion yet). There are several links that are stale and i do not know what to do about them. Either we could:
+
+ . Leave them
+ . Remove them
+ . comment them out
+ . comment out the whole paragraph
+ . include an alternative - but you need to tell me what the new URL should be for the problems below. 
+ . Other ? ? ?
+ 
+''''
+ 
+NOTE: Enjoy :)
+
+'''' 
+
+== link:./introduction.html[Introduction Page]
+
+ * http://gpars.codehaus.org[http://gpars.codehaus.org] - [red]*password protected*
+ * http://gpars.codehaus.org/License[http://gpars.codehaus.org/License] - [red]*password protected*
+
+== link:./getting_started.html[Getting Started Page]
+
+ * http://groovy-lang.org/download.html[http://groovy-lang.org/download.html] - [green]*ok*
+ * http://www.jetbrains.net/confluence/display/GRVY/Scripting+IDE+for+DSL+awareness[http://www.jetbrains.net/confluence/display/GRVY/Scripting+IDE+for+DSL+awareness] - [green]*ok*
+ * http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=12030&amp;version=20355[http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=12030&amp;version=20355] -  [red]*services terminated*
+
+''''
+
+== link:./actors.html[Actors Page]
+
+ * http://ruben.savanne.be/articles/concurrency-in-erlang-scala[http://ruben.savanne.be/articles/concurrency-in-erlang-scala] - [green]*ok*
+ * http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=blob_plain;f=src/test/groovy/groovyx/gpars/samples/actors/stateful/DemoMultiMessage.groovy;hb=HEAD[http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=blob_plain;f=src/test/groovy/groovyx/gpars/samples/actors/stateful/DemoMultiMessage.groovy;hb=HEAD] - [red]*password protected*
+ * http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=tree;f=src/test/groovy/groovyx/gpars/samples;h=f9a751689a034a1d3de13c4874f4f4e839cb1026;hb=HEAD[http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=tree;f=src/test/groovy/groovyx/gpars/samples;h=f9a751689a034a1d3de13c4874f4f4e839cb1026;hb=HEAD] - [red]*password protected*
+ * http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes[http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes] - [green]*ok*
+ * http://en.wikipedia.org/wiki/Sleeping_barber_problem[http://en.wikipedia.org/wiki/Sleeping_barber_problem] - [green]*ok*
+ * http://en.wikipedia.org/wiki/Dining_philosophers_problem[http://en.wikipedia.org/wiki/Dining_philosophers_problem] - [green]*ok*
+ * http://fupeg.blogspot.com/2009/06/scala-concurrency.html[http://fupeg.blogspot.com/2009/06/scala-concurrency.html] - [green]*ok*
+
+== link:./agents.html[Agents Page]
+
+
+
+== link:./data_parallelism.html[Data Parallelism Page]
+
+ * http://groovy.dzone.com/articles/parallelize-your-arrays-with-j[http://groovy.dzone.com/articles/parallelize-your-arrays-with-j] - [green]*ok*
+ * http://github.com/thevery[http://github.com/thevery] - [green]*ok*
+ * https://en.wikipedia.org/wiki/Java_concurrency[https://en.wikipedia.org/wiki/Java_concurrency] - [green]*ok*
+ * https://en.wikipedia.org/wiki/Java_concurrency[https://en.wikipedia.org/wiki/Java_concurrency] - [green]*ok*
+ * https://en.wikipedia.org/wiki/Java_concurrency[https://en.wikipedia.org/wiki/Java_concurrency] - [green]*ok*
+ * http://blog.krecan.net/2011/03/27/visualizing-forkjoin/[http://blog.krecan.net/2011/03/27/visualizing-forkjoin/] - [green]*ok*
+
+== link:./dataflow.html[Dataflow Page]
+
+.HREF URL Links
+ * http://www.jonasboner.com[http://www.jonasboner.com] - [green]*ok*
+ * http://gpars.codehaus.org/API+doc[http://gpars.codehaus.org/API+doc] -  [red]*password protected*
+ * http://blog.jcoglan.com/2013/03/30/callbacks-are-imperative-promises-are-functional-nodes-biggest-missed-opportunity/[http://blog.jcoglan.com/2013/03/30/callbacks-are-imperative-promises-are-functional-nodes-biggest-missed-opportunity/] - [green]*ok*
+ * http://github.com/jboner/scala-dataflow/tree/f9a38992f5abed4df0b12f6a5293f703aa04dc33/src[http://github.com/jboner/scala-dataflow/tree/f9a38992f5abed4df0b12f6a5293f703aa04dc33/src] - [green]*ok*
+ * http://jonasboner.com/talks/state_youre_doing_it_wrong/html/all.html[http://jonasboner.com/talks/state_youre_doing_it_wrong/html/all.html] -  [red]*404 - mising*
+ * http://github.com/larrytheliquid/dataflow/tree/master[http://github.com/larrytheliquid/dataflow/tree/master] - [green]*ok*
+ * http://people.canoo.com/mittie/kanbanflow.html[http://people.canoo.com/mittie/kanbanflow.html] - [green]*ok*
+ * https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/dataflow/KanbanFlowTest.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/dataflow/KanbanFlowTest.groovy] - [green]*ok*
+ * https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlow.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlow.groovy] - [green]*ok*
+ * https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowBroadcast.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowBroadcast.groovy] - [green]*ok*
+ * https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowCycle.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowCycle.groovy] - [green]*ok*
+ * https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanLazyPrimeSequenceLoops.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanLazyPrimeSequenceLoops.groovy] - [green]*ok*
+
+== link:./google_app_engine_integration.html[Google App Engine Integration Page]
+
+ * https://developers.google.com/appengine/[https://developers.google.com/appengine/] - [green]*ok*
+ * https://developers.google.com/appengine/[https://developers.google.com/appengine/] - [green]*ok*
+ * https://github.com/musketyr/gpars-appengine[https://github.com/musketyr/gpars-appengine] - [green]*ok*
+ * https://github.com/musketyr/gpars-appengine[https://github.com/musketyr/gpars-appengine] - [green]*ok*
+
+== link:./groovy_csp.html[Groovy CSP Page]
+
+ * http://www.cs.kent.ac.uk/projects/ofa/jcsp/[http://www.cs.kent.ac.uk/projects/ofa/jcsp/] - [green]*ok*
+ * http://www.soc.napier.ac.uk/~cs10/#_Toc271192596[http://www.soc.napier.ac.uk/~cs10/#_Toc271192596] - [blue]*goes to Home Page now, topic page maybe missing*
+
+
+== link:./remoting.html[Discussion of Remoting Page]
+
+ * http://netty.io[http://netty.io] - [green]*ok*
+
+== link:./stm.html[Software Transactional Memory Page]
+
+ * https://github.com/pveentjer/Multiverse[https://github.com/pveentjer/Multiverse] - [green]*ok*
+ * https://github.com/pveentjer/Multiverse[https://github.com/pveentjer/Multiverse] - [green]*ok*
+
+''''
+
+== link:./tips.html[Tips Page]
+
+ * http://gpars.codehaus.org/Demos[http://gpars.codehaus.org/Demos] - [red]*password protected*
+
+
+== link:./conclusion.html[Conclusion Page]
+
+
+
+''''
+
+IMPORTANT: 12 files have 40 HREF links including 8 Missing/404/Password Protected Links to be fixed
+
+''''
+

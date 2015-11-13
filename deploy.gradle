@@ -1,0 +1,65 @@
+/*
+ GParsDocs - deploy to CloudFoundry PaaS Service provider named anynines.com @ http://gparsdocs.de.a9sapp.eu
+ 
+ See: http://cloudnines.de.a9sapp.eu/ for tutorial on how to use this Cloud
+
+ To manually deploy GParsDocs using the CF command-line tool - :
+ cd /Users/jim/Dropbox/GParsDocs/
+ cf push GParsDocs -b https://github.com/cloudfoundry/java-buildpack.git -p build/libs/GParsDocs.war
+
+ This is a sample gradle script using the gradle plugin for cloud foundry to upload our war file to target PaaS service, anynines.com in Berlin
+ so use this gradle script to automatically deploy ('cd' into this folder then from a terminal type):
+
+ cd /Users/jim/Dropbox/GParsDocs/
+ ./gradlew -b deploy.gradle cfLogin cfDelete cfPush
+ 
+ NOTE: This deploy script requires your system to have Java JRE 1.7+ also first fill in username and password credentials below 
+ 
+*/
+
+
+buildscript {
+  repositories {
+    mavenLocal()
+    jcenter()
+    maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local' }
+  }
+
+  dependencies {
+    classpath group: 'org.cloudfoundry', name: 'cf-gradle-plugin', version: '1.1.3'
+  }
+}
+
+repositories {
+  mavenLocal()
+  jcenter()
+  maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local' }
+}
+
+apply plugin: 'war'
+apply plugin: 'cloudfoundry'
+
+
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:2.4.5"
+    runtime "redis.clients:jedis:2.7.2"
+}
+
+war {
+  archiveName 'GParsDocs.war'
+}
+
+cloudfoundry {
+	file = new File('build/libs/GParsDocs.war')
+
+	application = 'GParsDocs'
+    target = 'https://api.de.a9s.eu'
+    uri = 'http://gparsdocs.de.a9sapp.eu/'
+
+    space = 'development'
+    memory = 300	// MB
+
+	// your credentials go here
+    username = ''
+    password = ''
+}

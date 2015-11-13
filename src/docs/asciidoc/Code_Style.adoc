@@ -1,0 +1,25 @@
+= GPars - Groovy Parallel Systems
+Russell Winder <russel@winder.org.uk>
+v1.0, 2015-10-01
+:linkattrs:
+:linkcss:
+:toc: left
+:toc-title: Document Index
+:icons: font
+:source-highlighter: coderay
+:docslink: http://www.gpars.org/guide/[GPars Docs]
+:description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
+:doctitle: Code Style
+
+
+== Code Style
+
+A few simple rules to follow when contributing to the *GPars* project:
+
+ . Prefer _final_ wherever applicable - variables, parameters, methods and classes
+ . Single-statement conditions, _else_ branches or loops don't need braces - _if (cond) latch.countDown()_
+ . Place the openning brace on the same line - _class Foo {_
+ . Follow the common Java/Groovy naming and capitalization conventions
+ . _Tab_ size is four characters
+ . The _Code Style_ IntelliJ IDEA inspection profile is the ultimate guide and verification mechanism for the *GPars* code base. The regular reports can be checked (after login) at http://teamcity.jetbrains.com/viewType.html?buildTypeId=bt183&tab=buildTypeStatusDiv[the particular TeamCity page].
+ . Any apidoc for methods with Closure arguments like in _Promise.java_ should declare which arguments are passed into the closure call and which return values (if any) are expected.

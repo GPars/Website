@@ -1,0 +1,28 @@
+= GPars - Groovy Parallel Systems
+The Whole GPars Team <https://groups.google.com/forum/#!forum/gpars-users>
+v1.0, 2015-11-01
+:linkattrs:
+:linkcss:
+:toc: left
+:toc-title: Document Index
+:icons: font
+:source-highlighter: coderay
+:docslink: http://www.gpars.org/guide/[GPars Docs]
+:description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
+:doctitle: User Guide To Google App Engine Integration
+
+*GPars* can be run on the https://developers.google.com/appengine/[Google App Engine (*GAE*)].  It can be made
+part of *Groovy* and *Java* _GAE applications_ as well as a plugged into *Gaelyk*.  
+
+''''
+
+NOTE: The https://developers.google.com/appengine/[Google App Engine] is known as *GAE*
+
+''''
+
+The small https://github.com/musketyr/gpars-appengine[GPars App Engine integration library] provides all the necessary
+infrastructure to hook *GAE* services into *GPars*.  Although you'll be running on *GAE* threads and leveraging
+*GAE* timer services, the high-level abstractions remain the same.  With a few restrictions you can still use
+*GPars* _actors, dataflow, agents, parallel collections_ and other handy concepts.
+
+Please refer to the https://github.com/musketyr/gpars-appengine[GPars App Engine library] for details on how to proceed with *GPars* on *GAE*.

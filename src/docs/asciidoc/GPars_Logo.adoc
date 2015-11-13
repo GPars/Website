@@ -1,0 +1,30 @@
+= GPars - Groovy Parallel Systems
+Russell Winder <russel@winder.org.uk>
+v1.0, 2015-10-01
+:linkattrs:
+:linkcss:
+:toc: left
+:toc-title: Document Index
+:icons: font
+:source-highlighter: coderay
+:docslink: http://www.gpars.org/guide/[GPars Docs]
+:description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
+:doctitle: GPars Logo
+
+image::https://github.com/GPars/GPars/blob/master/artwork/gpars-logo.png[]
+
+We encourage projects and companies that use *GPars* to display the *GPars* logo on their websites, and elsewhere to help us spread the word and demonstrate the usefulness of *GPars*.
+
+== The Logo Author - Jiři Kropaček
+
+The original graphics of the logo:
+
+ * https://github.com/GPars/GPars/blob/master/artwork/gpars-logo.PNG[PNG format]
+ * https://github.com/GPars/GPars/blob/master/artwork/gpars-rgb.svg[SVG format]
+ * https://github.com/GPars/GPars/blob/master/artwork/GPars_logo.zip[Zip format] (zipped)
+
+== Guidelines for Use
+
+See the link:Logo_Usage_Policy.html[Logo Usage Policy].
+
+The logo is to be used widely. When using a derived version of the logo or when in doubt, please ask us first by email.

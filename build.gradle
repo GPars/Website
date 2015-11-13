@@ -1,0 +1,67 @@
+/*
+
+	Build.gradle script to construct the GParsDocs website
+
+	from a terminal command line, 'cd' into this folder then:	
+	gradlew 
+	
+	this runs the defaultTasks below using the gradle wrapper tool gradlew <or> bash ./gradlew
+*/
+apply plugin: 'groovy'
+apply plugin: 'war'
+
+apply plugin: 'org.asciidoctor.gradle.asciidoctor'
+apply plugin: 'org.asciidoctor.convert' 
+
+
+defaultTasks 'clean', 'build', 'war' //  'asciidoctor',
+
+// logic to suport asciidoctor html, pdf and diagrams output
+buildscript {
+    repositories {
+        jcenter()
+        maven{ url "http://repository.jboss.org/maven2/"}
+    }
+
+    dependencies {
+        classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.2'
+        classpath("org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.9") // for PDF's
+    }
+}
+
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:2.4.5"
+    runtime "org.codehaus.groovy:groovy-all:2.4.5"
+    runtime "redis.clients:jedis:2.7.2"	// potential page caching service if Redis service available on PaaS target
+}
+
+war {
+  archiveName 'GParsDocs.war'
+}
+
+
+// closure for asciidoctor plugin; chg these values to influence asciidoctor task
+asciidoctor { 
+	sourceDir = file('src/docs/asciidoc') // plugin reads all *.adoc files in this folder and any sub-folder
+    outputDir = file('src/main/webapp')   // file("$buildDir/docs")
+    separateOutputDirs=false	// true mkdir 2 folders within the outDir: one for html, one for pdf
+    backends = ['html5' ]	// to create both html and pdf output:  backends = ['html5' ,'pdf'] (buggy!)
+    options = [
+        doctype: 'book',
+        attributes: [
+            'source-highlighter': 'coderay',
+     		'toc-title'           : 'Table of Contents',
+            'toc'                 : 'right'
+        ]
+    ]
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.8'
+}
+

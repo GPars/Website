@@ -1,0 +1,31 @@
+= The GPars Quick Reference image:gpars.svg[Logo,240,float="right"]
+The Whole GPars Team 
+v1.0, 2015-11-04
+:toc: right
+:toc-title: Document Index
+:icons: font
+:source-highlighter: coderay
+:data-uri:
+:linkattrs:
+:leveloffset: 0
+:numbered!:
+
+NOTE: To download this document as a PDF - link:./quickstart/quickstart.pdf[click here]
+
+''''
+
+include::actors.txt[]
+
+include::agents.txt[]
+
+include::csp.txt[]
+
+include::dataflow.txt[]
+
+include::forkjoin.txt[]
+
+include::forkjoinpool.txt[]
+
+include::stm.txt[]
+
+include::threadpool.txt[]

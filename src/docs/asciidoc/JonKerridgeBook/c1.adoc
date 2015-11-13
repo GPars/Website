@@ -1,0 +1,30 @@
+= GPars - Groovy Parallel Systems
+Jon Kerridge <j.kerridge@napier.ac.uk>
+v1.0, 2015-10-29
+:linkattrs:
+:linkcss:
+:toc: left
+:toc-title: Document Index
+:icons: font
+:source-highlighter: coderay
+:docslink: http://www.gpars.org/guide/[GPars Docs]
+:description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
+
+== Why Java and Groovy and Eclipse?
+
+*Java* is widely used and, increasingly in mobile applications, where the ability to build parallel systems is crucial. 
+
+Most user interfaces are, in fact, concurrent in nature but you would not think so given the contortions a Java programmer has to go to make them appear sequential. 
+
+*Groovy* is a scripting language for the Java platform, that was developed and progressed through the Sun Java release programme. 
+The addition of a small number of helper classes has made the underlying parallel design concepts far more easily accessible as the amount of code that has to be written to create a working application is dramatically reduced.
+
+*Eclipse* is becoming the de facto standard for `Integrated Software Development Environments` and as such has the appropriate plug-ins for *Java* and *Groovy* which have been extended to include the `Groovy Parallel` helper classes.
+
+It is assumed that the reader of this book has some familiarity with *Java* and `Java-like` languages and sufficient understanding of object-oriented principles to cope with data encapsulation and the concept of `get()` and `set()` methods. 
+An awareness of the java.awt package will be of benefit when user interfaces are discussed.
+
+`Parallelism`, as such, has been a topic that has been avoided by many educational establishments, possibly because of the lack of appropriate software environments and approachable tools. 
+It also suffers from the underlying models being overly complex and difficult to reason about. This book addresses these issues by providing a model of parallel programming based in the `Object Oriented` paradigm that builds upon many year’s of research into the design and implementation of parallel systems. 
+It attempts to demonstrate that parallel programming is not hard and perhaps should be considered as a more appropriate first design environment for the teaching of programming as it is closer to the way in which humans understand and investigate solutions to problems.
+

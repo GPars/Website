@@ -1,0 +1,28 @@
+= GPars - Groovy Parallel Systems
+Jon Kerridge <j.kerridge@napier.ac.uk>
+v1.0, 2015-10-29
+:linkattrs:
+:linkcss:
+:toc: left
+:toc-title: Document Index
+:icons: font
+:source-highlighter: coderay
+:docslink: http://www.gpars.org/guide/[GPars Docs]
+:description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
+
+== Mobile Agents: Going for a Trip
+
+A mobile agent is a means by which an autonomous unit of processing can be made to visit a number of processing nodes to undertake some operation on data held at that node to be returned to some initiating node. 
+
+On arrival at a node, an agent will connect itself to the host node, thereby enabling it to access the host's resources. 
+Once the interaction is complete, the agent will disconnect itself from the host's resources before moving to the next host node according to some agent-transfer regime. 
+
+During the course of its travels, an agent is required to collect some data from the host nodes, which it either communicates immediately or can be accessed when the agent returns to its originating node. 
+An agent can also modify the nodes that it visits depending on the outcome of an interaction at a particular node.
+
+
+''''
+
+NOTE: Want to read more of this chapter? link:pdf/C18.pdf[Download this chapter's PDF here.]
+
+''''

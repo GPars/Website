@@ -1,0 +1,57 @@
+= GPars - Groovy Parallel Systems
+Russell Winder <russel@winder.org.uk>
+v1.0, 2015-10-01
+:linkattrs:
+:linkcss:
+:toc: left
+:toc-title: Document Index
+:icons: font
+:source-highlighter: coderay
+:docslink: http://www.gpars.org/guide/[GPars Docs]
+:description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
+:doctitle: Grails and Griffon Fast Track
+
+
+*GPars* has been designed as a concurrency library for the Groovy programming
+language. This naturally implies *GPars* is very friendly to _Grails_ and _Griffon_ frameworks and offers applications, which build on top of these frameworks, the ability to:
+
+* Run expensive computations in the background
+* Parallelize access to remote services or databases and so limit the effects of latency of these services
+* Leverage the high-level concurrency concepts like actors, agents, parallel collections, dataflow and others
+
+To enable *GPars* in your _Grails_ application, alter the _BuildConfig.groovy_
+file as follows:
+
+.BuildConfig Sample
+[source,groovy,linenums]
+----
+repositories {
+    mavenCentral()
+    mavenRepo 'http://repository.jboss.org/maven2/'
+}
+dependencies {
+    build 'org.codehaus.gpars:gpars:1.1.0'
+}
+----
+
+In _Griffon_, use the following:
+
+.Griffon
+[source,groovy,linenums]
+----
+griffon.project.dependency.resolution = {
+    inherits "global"
+
+    default dependencies
+        repositories {
+            griffonHome()
+            mavenCentral()
+        }
+        dependencies {
+            runtime org.codehaus.gpars:gpars:1.1.0
+        }
+    }
+}
+----
+
+Once the dependency has been specified, you can start using *GPars* in your project. You may now want to check out the link:Groovy_Fast_Track.html[Groovy Fast Track] to do your first *GPars* experiments. Alternatively visit the http://gpars.org/guide/index.html[User Guide] and have fun!

@@ -1,0 +1,112 @@
+1 = /Users/jim/Dropbox/Projects/gpars.github.io/./Community.md        
+user@gpars.codehaus.org
+dev@gpars.codehaus.org
+scm@gpars.codehaus.org
+announce@gpars.codehaus.org
+http://xircles.codehaus.org/projects/gpars/lists
+http://jira.codehaus.org/browse/GPARS
+
+
+
+2 = /Users/jim/Dropbox/Projects/gpars.github.io/./Demos.md        
+http://bamboo.ci.codehaus.org/browse/GPARS-DEF/latest/artifact (restricted access?)
+http://gpars.org/download/1.2.1/gpars-samples-1.2.1.zip
+http://bamboo.ci.codehaus.org/browse/GPARS-DEF/latest/artifact
+http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=tree;f=src/test/groovy/groovyx/gparssamples;h=6e25c7ecb409197aced73a76719795976ee461ec;hb=HEAD
+
+
+3 = /Users/jim/Dropbox/Projects/gpars.github.io/./Developer_Zone.md
+http://bamboo.ci.codehaus.org/browse/GPARS-DEF (restricted files)
+http://jira.codehaus.org/browse/GPARS
+https://dav.codehaus.org/snapshots.repository/gpars/ 
+https://dav.codehaus.org/repository/gpars/
+http://www.anyclient.com/download.html
+announce@gpars.codehaus.org
+user@gpars.codehaus.org
+dev@gpars.codehaus.org
+user@groovy.codehaus.org
+http://xircles.codehaus.org/projects/gpars
+
+
+4 = /Users/jim/Dropbox/Projects/gpars.github.io/./Download.md
+http://bamboo.ci.codehaus.org/browse/GPARS-DEF/latest/artifact (restricted)
+
+5 = /Users/jim/Dropbox/Projects/gpars.github.io/./GPars_Logo.md
+http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=blob_plain;f=artwork/gpars-logo.PNG;hb=HEAD (restricted)
+http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=blob_plain;f=artwork/gpars-logo.SVG;hb=HEAD (restricted)
+http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=blob_plain;f=artwork/gpars-logo.ZIP;hb=HEAD (restricted)
+
+
+6 = /Users/jim/Dropbox/Projects/gpars.github.io/./Grails_and_Griffon_Fast_Track.md          
+dependencies {
+    build 'org.codehaus.gpars:gpars:1.1.0'
+}
+
+
+
+7 = /Users/jim/Dropbox/Projects/gpars.github.io/./Groovy_Fast_Track.md     
+----
+    @Grab(group='org.codehaus.gpars', module='gpars', version='1.2.0')
+----
+http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=tree;f=src/test/groovy/groovyx/gpars/samples;h=6e25c7ecb409197aced73a76719795976ee461ec;hb=HEAD
+
+
+8 = /Users/jim/Dropbox/Projects/gpars.github.io/./Hackergarten.md       
+http://jira.codehaus.org/browse/GPARS-96
+https://jira.codehaus.org/browse/GPARS-202
+http://jira.codehaus.org/browse/GPARS-243
+https://jira.codehaus.org/browse/GPARS-209
+http://jira.codehaus.org/browse/GPARS-147
+http://jira.codehaus.org/browse/GPARS-150
+http://jira.codehaus.org/browse/GPARS-152
+http://jira.codehaus.org/browse/GPARS-153
+
+
+
+9 = /Users/jim/Dropbox/Projects/gpars.github.io/./Integration.md
+@Grab(group='org.codehaus.gpars', module='gpars', version='1.2.1')
+@GrabResolver(name='gpars', root='http://snapshots.repository.codehaus.org/', m2Compatible=true)
+ibiblio name="codehaus" root="http://repository.codehaus.org/" m2compatible="true"
+http://repo1.maven.org/maven2/org/codehaus/gpars/
+http://repository.codehaus.org/org/codehaus/gpars/gpars/
+maven{url 'http://snapshots.repository.codehaus.org/'}
+runtime org.codehaus.gpars:gpars:1.2.1
+
+
+
+10 = /Users/jim/Dropbox/Projects/gpars.github.io/./Java_Fast_Track.md
+http://git.codehaus.org/gitweb.cgi?p=gpars.git;a=tree;f=src/test/groovy/groovyx/gpars/samples;h6e25c7ecb409197aced73a76719795976ee461ec;hb=HEAD
+
+
+11 = /Users/jim/Dropbox/Projects/gpars.github.io/./News.md      
+http://docs.codehaus.org/images/icons/profilepics/default.png
+http://docs.codehaus.org/display/GPARS/2014/09/06/Remoting+for+GPars
+http://gpars.codehaus.org/display/~venca
+http://docs.codehaus.org/images/icons/profilepics/default.png
+http://docs.codehaus.org/display/GPARS/2013/07/25/Here+comes+GPars+1.1
+http://docs.codehaus.org/display/GPARS/2013/07/17/Arriving+at+1.1.0
+http://docs.codehaus.org/display/GPARS/2012/12/19/GPars+1.0+arrived
+http://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=12030&version=17007
+http://docs.codehaus.org/display/GPARS/2012/12/11/The+first+release+candidate+of+1.0+is+available
+http://docs.codehaus.org/display/GPARS/2012/09/10/Beta+3+is+out
+http://docs.codehaus.org/display/GPARS/2011/12/30/GPars+1.0+beta-1+ready+for+a+test+ride
+http://docs.codehaus.org/display/GPARS/2011/09/01/Parallel+Game+of+Life
+http://docs.codehaus.org/display/GPARS/2011/06/02/GPars+turns+0.12+today
+http://docs.codehaus.org/display/GPARS/2011/04/26/JVM+Concurrency+and+Actors+with+GPars
+
+
+12 = /Users/jim/Dropbox/Projects/gpars.github.io/./Sponsors.md
+http://www.codehaus.org/  ( could make this into a comment )
+
+13 = /Users/jim/Dropbox/Projects/gpars.github.io/./Support.md       
+http://jira.codehaus.org/browse/GPARS
+
+
+14 = /Users/jim/Dropbox/Projects/gpars.github.io/./TheGParsTeam.md  
+https://www.ohloh.net/accounts/60649/widgets/account_detailed.gif
+https://www.openhub.net/accounts/60649/widgets/account_detailed.gif
+
+
+
+15 = /Users/jim/Dropbox/Projects/gpars.github.io/./User_Voices.md 
+user@gpars.codehaus.org

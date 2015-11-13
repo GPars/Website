@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.2">
+<meta name="description" content="GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.">
+<meta name="author" content="The Whole GPars Team &lt;https://groups.google.com/forum/#!forum/gpars-users&gt;">
+<title>User Guide To Agents</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./coderay-asciidoctor.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>User Guide To Agents</h1>
+<div class="details">
+<span id="author" class="author">The Whole GPars Team &lt;https://groups.google.com/forum/#!forum/gpars-users&gt;</span><br>
+<span id="revnumber">version 1.0,</span>
+<span id="revdate">2015-11-01</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Document Index</div>
+<ul class="sectlevel1">
+<li><a href="#_introduction">Introduction</a></li>
+<li><a href="#_concepts">Concepts</a>
+<ul class="sectlevel2">
+<li><a href="#_basic_rules">Basic Rules</a></li>
+</ul>
+</li>
+<li><a href="#_examples">Examples</a>
+<ul class="sectlevel2">
+<li><a href="#_shared_list_of_members">Shared List of Members</a></li>
+<li><a href="#_shared_conference_counting_number_of_registrations">Shared Conference Counting Number of Registrations</a></li>
+</ul>
+</li>
+<li><a href="#_factory_methods">Factory Methods</a></li>
+<li><a href="#_listeners_and_validators">Listeners and Validators</a>
+<ul class="sectlevel2">
+<li><a href="#_validator_gotchas">Validator Gotchas</a></li>
+</ul>
+</li>
+<li><a href="#_grouping">Grouping</a>
+<ul class="sectlevel2">
+<li><a href="#_direct_pool_replacement">Direct Pool Replacement</a></li>
+<li><a href="#_the_shopping_cart_example">The Shopping Cart Example</a></li>
+<li><a href="#_the_printer_rervice_example">The Printer Rervice Example</a></li>
+</ul>
+</li>
+<li><a href="#_reading_the_value">Reading The Value</a></li>
+<li><a href="#_state_copy_strategy">State Copy Strategy</a></li>
+<li><a href="#_error_handling">Error Handling</a></li>
+<li><a href="#_fair_and_non_fair_strong_agents_strong">Fair and Non-fair <strong>Agents</strong></a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>Agent</strong> class is a thread-safe non-blocking shared mutable state wrapper implementation inspired by
+<strong>Agents</strong> in <strong>Clojure</strong>.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Shared Mutable State can&#8217;t be avoided</div>
+<div class="paragraph">
+<p>A lot of the concurrency problems disappear when you eliminate the need for <em>Shared Mutable State</em> with your
+architecture.  Indeed, concepts like <strong>actors</strong>, <strong>CSP</strong> or <strong>dataflow concurrency</strong> avoid or isolate mutable state
+completely.</p>
+</div>
+<div class="paragraph">
+<p>In some cases, however, sharing mutable data is either inevitable or makes the design more
+natural and understandable. For example, think of a shopping cart in a typical e-commerce application, when
+multiple [blue]AJAX requests may hit the cart with read or write requests concurrently.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_introduction">Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In the <strong>Clojure</strong> programing language, you can find a concept of <strong>Agents</strong>, the purpose of which is to protect
+mutable data that need to be shared across threads.  <strong>Agents</strong> hide the data and protect it from direct
+access. Clients can only send commands (functions) to the <strong>agent</strong>. The commands will be serialized and
+processed against the data one-by-one in turn.</p>
+</div>
+<div class="paragraph">
+<p>With the commands being executed serially, the commands do not need to care about concurrency and can assume the data is all theirs when run.
+Although implemented differently, <strong>GPars Agents</strong>, called <em>Agent</em> , fundamentally behave like <strong>actors</strong>. They accept messages and
+process them asynchronously.  The messages, however, must be commands (functions or <strong>Groovy</strong> closures) and
+will be executed inside the <strong>agent</strong>.  After reception, the received function is run against the internal state
+of the <strong>Agent</strong> and the return value of the function is considered to be the new internal state of the <strong>Agent</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Essentially, <strong>agents</strong> safe-guard mutable values by allowing only a single <em>agent-managed thread</em> to make
+modifications to them. The mutable values are <strong>not directly accessible</strong> from outside, but instead <em>requests
+have to be sent to the agent</em> and the <strong>agent</strong> guarantees to process the requests sequentially on behalf of the
+callers.  <strong>Agents</strong> guarantee sequential execution of all requests and so consistency of the values.</p>
+</div>
+<div class="listingblock">
+<div class="title">Schematically -</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+</pre></td>
+  <td class="code"><pre>agent = <span class="keyword">new</span> Agent(<span class="integer">0</span>)  <span class="comment">//created a new Agent wrapping an integer with initial value 0</span>
+agent.send {increment()}  <span class="comment">//asynchronous send operation, sending the increment() function</span>
+...
+
+<span class="comment">//after some delay to process the message the internal Agent's state has been updated</span>
+...
+
+assert agent.val== <span class="integer">1</span></pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To wrap integers, we can certainly use AtomicXXX types on the <strong>Java</strong> platform, but when the state is a more
+complex object we need more support.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_concepts">Concepts</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>GPars</strong> provides an <strong>Agent</strong> class, which is a special-purpose, thread-safe, non-blocking implementation inspired
+by <strong>Agents</strong> in <strong>Clojure</strong>.</p>
+</div>
+<div class="paragraph">
+<p>An <strong>Agent</strong> wraps a reference to mutable state, held inside a single field, and accepts code (closures or
+commands) as messages, which can be sent to the <strong>Agent</strong> just like to any other actor using the <strong class="red">'&lt;&lt;'</strong> operator,
+the <em>send()</em> methods or the <em>implicit call()</em> method.</p>
+</div>
+<div class="paragraph">
+<p>At some point after reception of a closure / command, the closure is invoked against the internal mutable field and can make changes to it.
+The closure is guaranteed to be run without intervention from other threads and so may freely alter the internal state of
+the <strong>Agent</strong> held in the internal <em>data</em> field.</p>
+</div>
+<div class="paragraph">
+<p>The whole update process is of the <code>fire-and-forget</code> type since, once the message (closure) is sent to the
+Agent, the caller thread can go off to do other things and come back later to check the current value with
+<strong>Agent.val</strong> or <strong>Agent.valAsync(closure)</strong>.</p>
+</div>
+<div class="sect2">
+<h3 id="_basic_rules">Basic Rules</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>When executed, the submitted commands obtain the <strong>agent</strong>'s state as a parameter.</p>
+</li>
+<li>
+<p>The submitted commands /closures can call any methods on the *agent8&#8217;s state.</p>
+</li>
+<li>
+<p>Replacing the state object with a new one is also possible and is done using the <strong>updateValue()</strong> method.</p>
+</li>
+<li>
+<p>The <em>return value</em> of the submitted closure doesn&#8217;t have a special meaning and is ignored.</p>
+</li>
+<li>
+<p>If the message sent to an <strong>Agent</strong> is <code>not a closure</code>, it is considered to be a new value for the internal reference field.</p>
+</li>
+<li>
+<p>The <em>val</em> property of an <strong>Agent</strong> will wait until all preceding commands in the agent&#8217;s queue are consumed and then safely return the value of the <strong>Agent</strong>.</p>
+</li>
+<li>
+<p>The <em>valAsync()</em> method will do the same <strong class="red">without</strong> blocking the caller.</p>
+</li>
+<li>
+<p>The <em>instantVal</em> property will return an immediate snapshot of the internal <strong>agent</strong>'s state.</p>
+</li>
+<li>
+<p>All <strong>Agent</strong> instances share a default daemon thread pool. Setting the <em>threadPool</em> property of an <strong>Agent</strong> instance will allow it to use a different thread pool.</p>
+</li>
+<li>
+<p>Exceptions thrown by the commands can be collected using the <em>errors</em> property.</p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_examples">Examples</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_shared_list_of_members">Shared List of Members</h3>
+<div class="paragraph">
+<p>The <strong>Agent</strong> wraps a list of members, who have been added to the club. To add a new member, a message (command to
+add a member) has to be sent to the <em>clubMembers</em> Agent.</p>
+</div>
+<div class="listingblock">
+<div class="title">A Sample -</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+<strong>10</strong>
+11
+12
+13
+14
+15
+16
+17
+18
+19
+<strong>20</strong>
+21
+22
+23
+24
+</pre></td>
+  <td class="code"><pre><span class="keyword">import</span> <span class="include">groovyx.gpars.agent.Agent</span> <span class="include">import</span>
+java.util.concurrent.ExecutorService <span class="keyword">import</span> <span class="include">java.util.concurrent.Executors</span>
+
+<span class="comment">/**
+ * Create a new Agent wrapping a list of strings
+ */</span>
+<span class="keyword">def</span> clubMembers = <span class="keyword">new</span> Agent&lt;<span class="predefined-type">List</span>&lt;<span class="predefined-type">String</span>&gt;&gt;([<span class="string"><span class="delimiter">'</span><span class="content">Me</span><span class="delimiter">'</span></span>])  <span class="comment">//add Me</span>
+
+clubMembers.send {<span class="local-variable">it</span>.add <span class="string"><span class="delimiter">'</span><span class="content">James</span><span class="delimiter">'</span></span>}  <span class="comment">//add James</span>
+
+<span class="directive">final</span> <span class="predefined-type">Thread</span> t1 = <span class="predefined-type">Thread</span>.start {
+    clubMembers.send {<span class="local-variable">it</span>.add <span class="string"><span class="delimiter">'</span><span class="content">Joe</span><span class="delimiter">'</span></span>}  <span class="comment">//add Joe</span>
+}
+
+<span class="directive">final</span> <span class="predefined-type">Thread</span> t2 = <span class="predefined-type">Thread</span>.start {
+    clubMembers &lt;&lt; {<span class="local-variable">it</span>.add <span class="string"><span class="delimiter">'</span><span class="content">Dave</span><span class="delimiter">'</span></span>}  <span class="comment">//add Dave</span>
+    clubMembers {<span class="local-variable">it</span>.add <span class="string"><span class="delimiter">'</span><span class="content">Alice</span><span class="delimiter">'</span></span>}    <span class="comment">//add Alice (using the implicit call() method)</span>
+}
+
+[t1, t2]*.join()
+println clubMembers.val
+clubMembers.valAsync {println <span class="string"><span class="delimiter">&quot;</span><span class="content">Current members: </span><span class="inline"><span class="inline-delimiter">$</span><span class="local-variable">it</span></span><span class="delimiter">&quot;</span></span>}
+
+clubMembers.await()</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_shared_conference_counting_number_of_registrations">Shared Conference Counting Number of Registrations</h3>
+<div class="paragraph">
+<p>The <strong>Conference</strong> class allows registration and un-registration, however these methods can only be called from
+the commands sent to the <em>conference</em> <strong>Agent</strong>.</p>
+</div>
+<div class="listingblock">
+<div class="title">A Conference Sample -</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+<strong>10</strong>
+11
+12
+13
+14
+15
+16
+17
+18
+19
+<strong>20</strong>
+21
+22
+23
+24
+25
+26
+27
+28
+29
+<strong>30</strong>
+31
+32
+33
+34
+</pre></td>
+  <td class="code"><pre><span class="keyword">import</span> <span class="include">groovyx.gpars.agent.Agent</span>
+
+<span class="comment">/**
+ * Conference stores number of registrations and allows parties to register and unregister.
+ * It inherits from the Agent class and adds the register() and unregister() private methods,
+ * which callers may use it the commands they submit to the Conference.
+ */</span>
+<span class="type">class</span> <span class="class">Conference</span> <span class="directive">extends</span> Agent&lt;<span class="predefined-type">Long</span>&gt; {
+    <span class="keyword">def</span> <span class="function">Conference</span>() { <span class="local-variable">super</span>(<span class="integer">0</span>) }
+    <span class="directive">private</span> <span class="keyword">def</span> <span class="function">register</span>(<span class="type">long</span> num) { data += num }
+    <span class="directive">private</span> <span class="keyword">def</span> <span class="function">unregister</span>(<span class="type">long</span> num) { data -= num }
+}
+
+<span class="directive">final</span> Agent conference = <span class="keyword">new</span> Conference()  <span class="comment">//new Conference created</span>
+
+<span class="comment">/**
+ * Three external parties will try to register/unregister concurrently
+ */</span>
+
+<span class="directive">final</span> <span class="predefined-type">Thread</span> t1 = <span class="predefined-type">Thread</span>.start {
+    conference &lt;&lt; {register(<span class="integer">10L</span>)}               <span class="comment">//send a command to register 10 attendees</span>
+}
+
+<span class="directive">final</span> <span class="predefined-type">Thread</span> t2 = <span class="predefined-type">Thread</span>.start {
+    conference &lt;&lt; {register(<span class="integer">5L</span>)}                <span class="comment">//send a command to register 5 attendees</span>
+}
+
+<span class="directive">final</span> <span class="predefined-type">Thread</span> t3 = <span class="predefined-type">Thread</span>.start {
+    conference &lt;&lt; {unregister(<span class="integer">3L</span>)}              <span class="comment">//send a command to unregister 3 attendees</span>
+}
+
+[t1, t2, t3]*.join()
+
+<span class="keyword">assert</span> <span class="integer">12L</span> == conference.val</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_factory_methods">Factory Methods</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Agent</strong> instances can also be created using the <em>Agent.agent()</em> factory method.</p>
+</div>
+<div class="listingblock">
+<div class="title">A Sample to Make an Agent Instance</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> clubMembers = Agent.agent [<span class="string"><span class="delimiter">'</span><span class="content">Me</span><span class="delimiter">'</span></span>]  <span class="comment">//add Me</span></pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_listeners_and_validators">Listeners and Validators</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Agents allow the user to add listeners and validators. While listeners are notified each time the
+internal state changes, validators get a chance to reject or veto a coming change by throwing an exception.</p>
+</div>
+<div class="listingblock">
+<div class="title">A Concrete Example -</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+<strong>10</strong>
+11
+12
+13
+14
+15
+16
+17
+18
+19
+<strong>20</strong>
+</pre></td>
+  <td class="code"><pre><span class="directive">final</span> Agent counter = <span class="keyword">new</span> Agent()
+
+counter.addListener {oldValue, newValue -&gt; println <span class="string"><span class="delimiter">&quot;</span><span class="content">Changing value from </span><span class="inline"><span class="inline-delimiter">$</span>oldValue</span><span class="content"> to </span><span class="inline"><span class="inline-delimiter">$</span>newValue</span><span class="delimiter">&quot;</span></span>}
+counter.addListener {agent, oldValue, newValue -&gt; println <span class="string"><span class="delimiter">&quot;</span><span class="content">Agent </span><span class="inline"><span class="inline-delimiter">$</span>agent</span><span class="content"> changing value from </span><span class="inline"><span class="inline-delimiter">$</span>oldValue</span><span class="content"> to </span><span class="inline"><span class="inline-delimiter">$</span>newValue</span><span class="delimiter">&quot;</span></span>}
+
+counter.addValidator {oldValue, newValue -&gt; <span class="keyword">if</span> (oldValue &gt; newValue) <span class="keyword">throw</span> <span class="keyword">new</span> <span class="exception">IllegalArgumentException</span>(<span class="string"><span class="delimiter">'</span><span class="content">Things can only go up in Groovy</span><span class="delimiter">'</span></span>)}
+counter.addValidator {agent, oldValue, newValue -&gt; <span class="keyword">if</span> (oldValue == newValue) <span class="keyword">throw</span> <span class="keyword">new</span> <span class="exception">IllegalArgumentException</span>(<span class="string"><span class="delimiter">'</span><span class="content">Things never stay the same for $agent</span><span class="delimiter">'</span></span>)}
+
+counter <span class="integer">10</span>
+counter <span class="integer">11</span>
+counter {updateValue <span class="integer">12</span>}
+counter <span class="integer">10</span>  <span class="comment">//Will be rejected</span>
+
+counter {updateValue <span class="local-variable">it</span> - <span class="integer">1</span>}  <span class="comment">//Will be rejected</span>
+counter {updateValue <span class="local-variable">it</span>}  <span class="comment">//Will be rejected</span>
+counter {updateValue <span class="integer">11</span>}  <span class="comment">//Will be rejected</span>
+counter <span class="integer">12</span>  <span class="comment">//Will be rejected</span>
+
+counter <span class="integer">20</span>
+counter.await()</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Both listeners and validators are essentially closures taking two or three arguments. Exceptions thrown from the validators
+will be logged inside the <strong>agent</strong> and can be tested using the <em>hasErrors()</em> method or retrieved through the <em>errors</em> property.</p>
+</div>
+<div class="listingblock">
+<div class="title">Testing for Errors Sample</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+</pre></td>
+  <td class="code"><pre><span class="keyword">assert</span> counter.hasErrors()
+<span class="keyword">assert</span> counter.errors.size() == <span class="integer">5</span></pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<hr>
+<div class="sect2">
+<h3 id="_validator_gotchas">Validator Gotchas</h3>
+<div class="paragraph">
+<p><strong>Groovy</strong> is not very strict on variable data types and immutability, so <strong>agent</strong> users should be aware of potential bumps on the road.</p>
+</div>
+<div class="paragraph">
+<p>If the submitted code modifies the state directly, validators will not be able to un-do the change in case of a validation rule violation.
+There are two possible solutions available:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Make sure you never change the supplied object representing current agent state</p>
+</li>
+<li>
+<p>Use custom copy strategy on the agent to allow the agent to create copies of the internal state</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In both cases you need to call <em>updateValue()</em> to set and validate the new state properly.</p>
+</div>
+<div class="paragraph">
+<p>The problem as well as both of the solutions follows :</p>
+</div>
+<div class="listingblock">
+<div class="title">A Validator Sample -</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+<strong>10</strong>
+11
+12
+13
+14
+15
+16
+17
+18
+19
+<strong>20</strong>
+21
+22
+23
+24
+25
+</pre></td>
+  <td class="code"><pre><span class="comment">//Create an agent storing names, rejecting 'Joe'</span>
+<span class="directive">final</span> Closure rejectJoeValidator = {oldValue, newValue -&gt; <span class="keyword">if</span> (<span class="string"><span class="delimiter">'</span><span class="content">Joe</span><span class="delimiter">'</span></span> <span class="keyword">in</span> newValue) <span class="keyword">throw</span> <span class="keyword">new</span> <span class="exception">IllegalArgumentException</span>(<span class="string"><span class="delimiter">'</span><span class="content">Joe is not allowed to enter our list.</span><span class="delimiter">'</span></span>)}
+
+Agent agent = <span class="keyword">new</span> Agent(<span class="type">[]</span>)
+agent.addValidator rejectJoeValidator
+
+agent {<span class="local-variable">it</span> &lt;&lt; <span class="string"><span class="delimiter">'</span><span class="content">Dave</span><span class="delimiter">'</span></span>}                    <span class="comment">//Accepted</span>
+agent {<span class="local-variable">it</span> &lt;&lt; <span class="string"><span class="delimiter">'</span><span class="content">Joe</span><span class="delimiter">'</span></span>}                     <span class="comment">//Erroneously accepted, since by-passes the validation mechanism</span>
+println agent.val
+
+<span class="comment">//Solution 1 - never alter the supplied state object</span>
+agent = <span class="keyword">new</span> Agent(<span class="type">[]</span>)
+agent.addValidator rejectJoeValidator
+
+agent {updateValue([<span class="string"><span class="delimiter">'</span><span class="content">Dave</span><span class="delimiter">'</span></span>, * <span class="local-variable">it</span>])}      <span class="comment">//Accepted</span>
+agent {updateValue([<span class="string"><span class="delimiter">'</span><span class="content">Joe</span><span class="delimiter">'</span></span>, * <span class="local-variable">it</span>])}       <span class="comment">//Rejected</span>
+println agent.val
+
+<span class="comment">//Solution 2 - use custom copy strategy on the agent</span>
+agent = <span class="keyword">new</span> Agent(<span class="type">[]</span>, {<span class="local-variable">it</span>.clone()})
+agent.addValidator rejectJoeValidator
+
+agent {updateValue <span class="local-variable">it</span> &lt;&lt; <span class="string"><span class="delimiter">'</span><span class="content">Dave</span><span class="delimiter">'</span></span>}        <span class="comment">//Accepted</span>
+agent {updateValue <span class="local-variable">it</span> &lt;&lt; <span class="string"><span class="delimiter">'</span><span class="content">Joe</span><span class="delimiter">'</span></span>}         <span class="comment">//Rejected, since 'it' is now just a copy of the internal agent's state</span>
+println agent.val</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_grouping">Grouping</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>By default, all <strong>Agent</strong> instances belong to the same group sharing its daemon thread pool.</p>
+</div>
+<div class="paragraph">
+<p>Custom groups can also create instances of <strong>Agent</strong>. These instances will belong to the group, which created
+them, and will share a thread pool.  To create an <strong>Agent</strong> instance belonging to a group, call the <em>agent()</em>
+factory method on the group. This way you can organize and tune performance of agents.</p>
+</div>
+<div class="listingblock">
+<div class="title">Create Groups Around a Thread Pools</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+</pre></td>
+  <td class="code"><pre><span class="directive">final</span> <span class="keyword">def</span> group = <span class="keyword">new</span> NonDaemonPGroup(<span class="integer">5</span>)  <span class="comment">//create a group around a thread pool</span>
+<span class="keyword">def</span> clubMembers = group.agent([<span class="string"><span class="delimiter">'</span><span class="content">Me</span><span class="delimiter">'</span></span>])  <span class="comment">//add Me</span></pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Custom Thread Pools for Agents</div>
+<div class="paragraph">
+<p>The default thread pool for <strong>agents</strong> contains daemon threads. Make sure that your custom thread pools either
+use daemon threads, too, which can be achieved either by using <strong>DefaultPGroup</strong> or by providing your own thread
+factory to a <em>thread pool constructor</em>.</p>
+</div>
+<div class="paragraph">
+<p>Alterntively, in case your thread pools use non-daemon threads, such as when using the <strong>NonDaemonPGroup</strong> group class,
+make sure you shutdown the group or the thread pool explicitly by calling its <code>shutdown()</code> method, otherwise your applications will [red]never exit.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_direct_pool_replacement">Direct Pool Replacement</h3>
+<div class="paragraph">
+<p>Alternatively, by calling the <em>attachToThreadPool()</em> method on an <strong>Agent</strong> instance, a custom thread pool can be specified for it.</p>
+</div>
+<div class="listingblock">
+<div class="title"><strong>attachToThreadPool()</strong> Example</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> clubMembers = <span class="keyword">new</span> Agent&lt;<span class="predefined-type">List</span>&lt;<span class="predefined-type">String</span>&gt;&gt;([<span class="string"><span class="delimiter">'</span><span class="content">Me</span><span class="delimiter">'</span></span>])  <span class="comment">//add Me</span>
+
+<span class="directive">final</span> <span class="predefined-type">ExecutorService</span> pool = <span class="predefined-type">Executors</span>.newFixedThreadPool(<span class="integer">10</span>)
+clubMembers.attachToThreadPool(<span class="keyword">new</span> DefaultPool(pool))</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Remember, like <strong>actors</strong>, a single <strong>Agent</strong> instance (aka agent) can never use more than one thread at a time
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_the_shopping_cart_example">The Shopping Cart Example</h3>
+<div class="listingblock">
+<div class="title">A Sample -</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+<strong>10</strong>
+11
+12
+13
+14
+15
+16
+17
+18
+19
+<strong>20</strong>
+21
+22
+23
+24
+25
+26
+27
+28
+29
+<strong>30</strong>
+31
+32
+33
+34
+35
+36
+37
+38
+39
+<strong>40</strong>
+</pre></td>
+  <td class="code"><pre><span class="keyword">import</span> <span class="include">groovyx.gpars.agent.Agent</span>
+
+<span class="type">class</span> <span class="class">ShoppingCart</span> {
+    <span class="directive">private</span> <span class="keyword">def</span> cartState = <span class="keyword">new</span> Agent([:])
+<span class="comment">//----------------- public methods below here ----------------------------------</span>
+    <span class="directive">public</span> <span class="type">void</span> addItem(<span class="predefined-type">String</span> product, <span class="type">int</span> quantity) {
+        cartState &lt;&lt; {<span class="local-variable">it</span>[product] = quantity}  <span class="comment">//the &lt;&lt; operator sends</span>
+                                               <span class="comment">//a message to the Agent</span>
+    }    <span class="directive">public</span> <span class="type">void</span> removeItem(<span class="predefined-type">String</span> product) {
+        cartState &lt;&lt; {<span class="local-variable">it</span>.remove(product)}
+    }    <span class="directive">public</span> <span class="predefined-type">Object</span> listContent() {
+        <span class="keyword">return</span> cartState.val
+    }    <span class="directive">public</span> <span class="type">void</span> clearItems() {
+        cartState &lt;&lt; performClear
+    }
+
+    <span class="directive">public</span> <span class="type">void</span> increaseQuantity(<span class="predefined-type">String</span> product, <span class="type">int</span> quantityChange) {
+        cartState &lt;&lt; <span class="local-variable">this</span>.&amp;changeQuantity.curry(product, quantityChange)
+    }
+<span class="comment">//----------------- private methods below here ---------------------------------</span>
+    <span class="directive">private</span> <span class="type">void</span> changeQuantity(<span class="predefined-type">String</span> product, <span class="type">int</span> quantityChange, <span class="predefined-type">Map</span> items) {
+        items[product] = (items[product] ?: <span class="integer">0</span>) + quantityChange
+    }    <span class="directive">private</span> Closure performClear = { <span class="local-variable">it</span>.clear() }
+}
+<span class="comment">//----------------- script code below here -------------------------------------</span>
+<span class="directive">final</span> ShoppingCart cart = <span class="keyword">new</span> ShoppingCart()
+cart.addItem <span class="string"><span class="delimiter">'</span><span class="content">Pilsner</span><span class="delimiter">'</span></span>, <span class="integer">10</span>
+cart.addItem <span class="string"><span class="delimiter">'</span><span class="content">Budweisser</span><span class="delimiter">'</span></span>, <span class="integer">5</span>
+cart.addItem <span class="string"><span class="delimiter">'</span><span class="content">Staropramen</span><span class="delimiter">'</span></span>, <span class="integer">20</span>
+
+cart.removeItem <span class="string"><span class="delimiter">'</span><span class="content">Budweisser</span><span class="delimiter">'</span></span>
+cart.addItem <span class="string"><span class="delimiter">'</span><span class="content">Budweisser</span><span class="delimiter">'</span></span>, <span class="integer">15</span>
+
+println <span class="string"><span class="delimiter">&quot;</span><span class="content">Contents </span><span class="inline"><span class="inline-delimiter">${</span>cart.listContent()<span class="inline-delimiter">}</span></span><span class="delimiter">&quot;</span></span>
+
+cart.increaseQuantity <span class="string"><span class="delimiter">'</span><span class="content">Budweisser</span><span class="delimiter">'</span></span>, <span class="integer">3</span>
+println <span class="string"><span class="delimiter">&quot;</span><span class="content">Contents </span><span class="inline"><span class="inline-delimiter">${</span>cart.listContent()<span class="inline-delimiter">}</span></span><span class="delimiter">&quot;</span></span>
+
+cart.clearItems()
+println <span class="string"><span class="delimiter">&quot;</span><span class="content">Contents </span><span class="inline"><span class="inline-delimiter">${</span>cart.listContent()<span class="inline-delimiter">}</span></span><span class="delimiter">&quot;</span></span></pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You might have noticed two implementation strategies in the code.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Public methods may internally just send the required code off to the <strong>Agent</strong>, instead of executing the same functionality directly</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="title">And so Typically Sequential Code Like This</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+</pre></td>
+  <td class="code"><pre><span class="directive">public</span> <span class="type">void</span> addItem(<span class="predefined-type">String</span> product, <span class="type">int</span> quantity) {
+    cartState[product]=quantity
+}</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Becomes</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+</pre></td>
+  <td class="code"><pre><span class="directive">public</span> <span class="type">void</span> addItem(<span class="predefined-type">String</span> product, <span class="type">int</span> quantity) {
+    cartState &lt;&lt; {<span class="local-variable">it</span>[product] = quantity}
+}</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Public methods may send references to internal private methods or closures, which hold the desired functionality to perform the deed.</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="title">A Public-to-Private Sample</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+5
+</pre></td>
+  <td class="code"><pre><span class="directive">public</span> <span class="type">void</span> clearItems() {
+    cartState &lt;&lt; performClear
+}
+
+<span class="directive">private</span> Closure performClear = { <span class="local-variable">it</span>.clear() }</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Currying might be necessary</strong>, if the closure takes other arguments besides the current internal state
+ instance. See the <em>increaseQuantity</em> method.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_printer_rervice_example">The Printer Rervice Example</h3>
+<div class="paragraph">
+<p>Another example, suppose a not thread-safe printer service is shared by multiple threads. The printer needs to have
+the document and quality properties set before printing, so obviously we have a potential for race conditions if not
+guarded properly. Callers don&#8217;t want to block until the printer is available, which the <code>fire-and-forget</code> nature that <strong>actors</strong> solve very elegantly.</p>
+</div>
+<div class="listingblock">
+<div class="title">A Sample Printer Service</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+<strong>10</strong>
+11
+12
+13
+14
+15
+16
+17
+18
+19
+<strong>20</strong>
+21
+22
+23
+24
+25
+26
+27
+28
+29
+<strong>30</strong>
+31
+32
+33
+34
+35
+36
+37
+38
+39
+<strong>40</strong>
+41
+42
+43
+44
+45
+46
+</pre></td>
+  <td class="code"><pre><span class="keyword">import</span> <span class="include">groovyx.gpars.agent.Agent</span>
+
+<span class="comment">/**
+ * A non-thread-safe service that slowly prints documents on at a time
+ */</span>
+<span class="type">class</span> <span class="class">PrinterService</span> {
+    <span class="predefined-type">String</span> document
+    <span class="predefined-type">String</span> quality
+
+    <span class="directive">public</span> <span class="type">void</span> printDocument() {
+        println <span class="string"><span class="delimiter">&quot;</span><span class="content">Printing </span><span class="inline"><span class="inline-delimiter">$</span>document</span><span class="content"> in </span><span class="inline"><span class="inline-delimiter">$</span>quality</span><span class="content"> quality</span><span class="delimiter">&quot;</span></span>
+        <span class="predefined-type">Thread</span>.sleep <span class="integer">5000</span>
+        println <span class="string"><span class="delimiter">&quot;</span><span class="content">Done printing </span><span class="inline"><span class="inline-delimiter">$</span>document</span><span class="delimiter">&quot;</span></span>
+    }
+}
+
+<span class="keyword">def</span> printer = <span class="keyword">new</span> Agent&lt;PrinterService&gt;(<span class="keyword">new</span> PrinterService())
+
+<span class="directive">final</span> <span class="predefined-type">Thread</span> thread1 = <span class="predefined-type">Thread</span>.start {
+    <span class="keyword">for</span> (num <span class="keyword">in</span> (<span class="integer">1</span>..<span class="integer">3</span>)) {
+        <span class="directive">final</span> <span class="predefined-type">String</span> text = <span class="string"><span class="delimiter">&quot;</span><span class="content">document </span><span class="inline"><span class="inline-delimiter">$</span>num</span><span class="delimiter">&quot;</span></span>
+        printer &lt;&lt; {printerService -&gt;
+            printerService.document = text
+            printerService.quality = <span class="string"><span class="delimiter">'</span><span class="content">High</span><span class="delimiter">'</span></span>
+            printerService.printDocument()
+        }
+        <span class="predefined-type">Thread</span>.sleep <span class="integer">200</span>
+    }
+    println <span class="string"><span class="delimiter">'</span><span class="content">Thread 1 is ready to do something else. All print tasks have been submitted</span><span class="delimiter">'</span></span>
+}
+
+<span class="directive">final</span> <span class="predefined-type">Thread</span> thread2 = <span class="predefined-type">Thread</span>.start {
+    <span class="keyword">for</span> (num <span class="keyword">in</span> (<span class="integer">1</span>..<span class="integer">4</span>)) {
+        <span class="directive">final</span> <span class="predefined-type">String</span> text = <span class="string"><span class="delimiter">&quot;</span><span class="content">picture </span><span class="inline"><span class="inline-delimiter">$</span>num</span><span class="delimiter">&quot;</span></span>
+        printer &lt;&lt; {printerService -&gt;
+            printerService.document = text
+            printerService.quality = <span class="string"><span class="delimiter">'</span><span class="content">Medium</span><span class="delimiter">'</span></span>
+            printerService.printDocument()
+        }
+        <span class="predefined-type">Thread</span>.sleep <span class="integer">500</span>
+    }
+    println <span class="string"><span class="delimiter">'</span><span class="content">Thread 2 is ready to do something else. All print tasks have been submitted</span><span class="delimiter">'</span></span>
+}
+
+[thread1, thread2]*.join()
+printer.await()</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<hr>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+For the latest updates, see the respective <a href="Demos.html">Demos</a>
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_reading_the_value">Reading The Value</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To follow the <strong>Clojure</strong> philosophy closely, the <strong>Agent</strong> class gives reads higher priority than to writes.  By
+using the <em>instantVal</em> property, your read request will bypass the incoming message queue of the <strong>Agent</strong> and
+returns the current snapshot of the internal state.  The <em>val</em> property will wait in the message queue for
+processing, just like the non-blocking variant <em>valAsync(Clojure cl)</em> , which will invoke the provided
+closure with the internal state as a parameter.</p>
+</div>
+<div class="paragraph">
+<p>You have to bear in mind that the <em>instantVal</em> property might return although correct, but randomly looking
+results, since the internal state of the <strong>Agent</strong> at the time of <em>instantVal</em> execution is non-deterministic
+and depends on the messages that have been processed before the thread scheduler executes the body of
+<em>instantVal</em> .</p>
+</div>
+<div class="paragraph">
+<p>The <em>await()</em> method lets you wait for the processing of all the messages submitted to the <strong>Agent</strong> before and so may
+block the calling thread.</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_state_copy_strategy">State Copy Strategy</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To avoid leaking the internal state, the <strong>Agent</strong> class can specify a <code>copy strategy</code> as the second
+constructor argument.  With the <code>copy strategy</code> specified, the internal state is processed by the <code>copy
+strategy</code> closure and the output value of the <code>copy strategy</code> value is returned to the caller instead of the
+actual internal state. This applies to <em>instantVal</em>, <em>val</em> as well as to <em>valAsync()</em> .</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_error_handling">Error Handling</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Exceptions thrown from within the submitted commands are stored inside the <strong>agent</strong> and can be obtained from
+the <em>errors</em> property.  The property gets cleared once read.</p>
+</div>
+<div class="listingblock">
+<div class="title">A Sample of Error Handling</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+<strong>10</strong>
+11
+12
+13
+14
+15
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> clubMembers = <span class="keyword">new</span> Agent&lt;<span class="predefined-type">List</span>&gt;()
+<span class="keyword">assert</span> clubMembers.errors.empty
+
+    clubMembers.send {<span class="keyword">throw</span> <span class="keyword">new</span> <span class="exception">IllegalStateException</span>(<span class="string"><span class="delimiter">'</span><span class="content">test1</span><span class="delimiter">'</span></span>)}
+    clubMembers.send {<span class="keyword">throw</span> <span class="keyword">new</span> <span class="exception">IllegalArgumentException</span>(<span class="string"><span class="delimiter">'</span><span class="content">test2</span><span class="delimiter">'</span></span>)}
+    clubMembers.await()
+
+    <span class="predefined-type">List</span> errors = clubMembers.errors
+    <span class="keyword">assert</span> <span class="integer">2</span> == errors.size()
+    <span class="keyword">assert</span> errors[<span class="integer">0</span>] <span class="keyword">instanceof</span> <span class="exception">IllegalStateException</span>
+    <span class="keyword">assert</span> <span class="string"><span class="delimiter">'</span><span class="content">test1</span><span class="delimiter">'</span></span> == errors[<span class="integer">0</span>].message
+    <span class="keyword">assert</span> errors[<span class="integer">1</span>] <span class="keyword">instanceof</span> <span class="exception">IllegalArgumentException</span>
+    <span class="keyword">assert</span> <span class="string"><span class="delimiter">'</span><span class="content">test2</span><span class="delimiter">'</span></span> == errors[<span class="integer">1</span>].message
+
+    <span class="keyword">assert</span> clubMembers.errors.empty</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_fair_and_non_fair_strong_agents_strong">Fair and Non-fair <strong>Agents</strong></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Agents</strong> can be either fair or non-fair. Fair <strong>agents</strong> give up the thread after processing each message, unfair <strong>agents</strong> keep a thread until their message queue is empty.
+As a result, non-fair <strong>agents</strong> tend to perform better than fair ones.</p>
+</div>
+<div class="paragraph">
+<p>The default setting for all <strong>Agent</strong> instances is to be <strong>non-fair</strong>, however by calling its <em>makeFair()</em> method the instance can be made fair.</p>
+</div>
+<div class="listingblock">
+<div class="title">A Sample To Make It Fair</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> clubMembers = <span class="keyword">new</span> Agent&lt;<span class="predefined-type">List</span>&gt;([<span class="string"><span class="delimiter">'</span><span class="content">Me</span><span class="delimiter">'</span></span>])  <span class="comment">//add Me</span>
+clubMembers.makeFair()</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 1.0<br>
+Last updated 2015-10-31 14:09:18 CET
+</div>
+</div>
+</body>
+</html>
