@@ -1,5 +1,5 @@
 = GPars - Groovy Parallel Systems
-Russell Winder <russel@winder.org.uk>
+The Whole GPars Team <gpars-developers@googlegroups.com>
 v1.0, 2015-10-01
 :linkattrs:
 :linkcss:
@@ -16,8 +16,7 @@ v1.0, 2015-10-01
 
 We're using http://www.jetbrains.com/idea/index.html[IntelliJ IDEA] by http://www.jetbrains.com/[Jetbrains] to write, refactor, analyze and maintain code.
 
-For Continuous Integration, which builds our software day-and-night, tests it and monitors its quality, we use http://www.jetbrains.com/teamcity/index.html[TeamCity] 
-hosted at the http://teamcity.jetbrains.com[public TeamCity hosting] site.
+For Continuous Integration, which builds our software day-and-night, tests it and monitors its quality, we use http://www.jetbrains.com/teamcity/index.html[TeamCity]  hosted at the http://teamcity.jetbrains.com[public TeamCity hosting] site.
 
 == Codehaus
 
@@ -25,8 +24,8 @@ hosted at the http://teamcity.jetbrains.com[public TeamCity hosting] site.
 
 == Atlassian
 
-Atlassian provided JIRA/Confluence/Clover/Bamboo, which we also happily use.
+Atlassian provided _JIRA/Confluence/Clover/Bamboo_, which we also happily use.
 
-== Sponsorship and donations
+== Sponsorship and Donations
 
 We will accept donations or sponsorship. Please contact us at _consult@gpars.org_ with your offers.

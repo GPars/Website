@@ -1,5 +1,5 @@
 = GPars - Groovy Parallel Systems
-Russell Winder <russel@winder.org.uk>
+The Whole GPars Team <gpars-developers@googlegroups.com>
 v1.0, 2015-10-01
 :linkattrs:
 :linkcss:
@@ -67,6 +67,8 @@ Please see the link:Events.html[Events] section.
 
  * http://www.slideshare.net/VaclavPech/gpars-concepts-explained[*GPars* concepts explained] by _Vaclav Pech_
 
+ * http://cdn.oreillystatic.com/en/assets/1/event/45/GPars%20-%20Groovy%20Concurrency%20Presentation.pdf[GPars Review PDF] by _Alex Miller_
+ 
 ''''
 
 === Recorded Presentations

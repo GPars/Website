@@ -1,5 +1,5 @@
 = GPars - Groovy Parallel Systems
-Russell Winder <russel@winder.org.uk>
+The Whole GPars Team <gpars-developers@googlegroups.com>
 v1.0, 2015-10-01
 :linkattrs:
 :linkcss:
@@ -25,7 +25,7 @@ IMPORTANT: The *JSR-166y* library leaves a couple of rough edges, which can hurt
 
 The *JSR-166y* library solves _Fork/Join_ orchestration pretty nicely for us, but leaves a couple of rough edges, which can hurt you, if you don't pay attention enough. You still deal with threads, pools and synchronization barriers.
 
-
+''''
 
 == The GPars Abstraction Convenience Layer
 
@@ -59,6 +59,8 @@ withPool(1) {pool ->
 
 == _Fork/Join_ Saves Your Resources
 
-_Fork/Join_ operations can be safely run with small number of threads thanks to internally using the TaskBarrier class to synchronize the threads. While a thread is blocked inside an algorithm waiting for its sub-problems to be calculated, the thread is silently returned to the pool to take on any of the available sub-problems from the task queue and process them. Although the algorithm creates as many tasks as there are sub-directories and tasks wait for the sub-directory tasks to complete, as few as one thread is enough to keep the computation going and eventually calculate a valid result.
+_Fork/Join_ operations can be safely run with small number of threads thanks to internally using the TaskBarrier class to synchronize the threads. 
+While a thread is blocked inside an algorithm waiting for its sub-problems to be calculated, the thread is silently returned to the pool to take on any of the available sub-problems from the task queue and process them. 
+Although the algorithm creates as many tasks as there are sub-directories and tasks wait for the sub-directory tasks to complete, as few as one thread is enough to keep the computation going and eventually calculate a valid result.
 
-If you'd like to know more, check out http://gpars.org/guide/guide/dataParallelism.html#dataParallelism_fork-join[the _Fork/Join_ section of the User Guide].
+If you'd like to know more, check out link:./guide/#_fork_join_2[the _Fork/Join_ section of the User Guide].

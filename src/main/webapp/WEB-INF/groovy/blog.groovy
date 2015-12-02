@@ -8,7 +8,7 @@ String blogtext = """<div id="main" class="container clear">
 """;
 
 // define the url, change it to whatever rss url you like; this one is an xml feed
-def url = "http://blog.anynines.com/feed/" 
+def url = "https://groups.google.com/forum/feed/gpars-users/msgs/rss.xml?num=15" 
 def rss = new XmlSlurper().parse(url) 
 
 //println rss.channel.title
@@ -29,9 +29,7 @@ rss.channel.item.each {
 }
 
 blogtext +=  "</div></div></div><br />\n"
-
 //println blogtext.toString()
 
-//log.info "Forwarding to the blog template"
-
+request.setAttribute 'payload', blogtext.toString()
 forward '/WEB-INF/pages/blog.gtpl'

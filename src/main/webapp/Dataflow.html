@@ -4,31 +4,34 @@
 <meta charset="UTF-8">
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 1.5.1">
+<meta name="generator" content="Asciidoctor 1.5.3">
 <meta name="description" content="GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.">
-<meta name="author" content="Russell Winder">
+<meta name="author" content="The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;">
 <title>Dataflow</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic|Noto+Serif:400,400italic,700,700italic|Droid+Sans+Mono:400">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <link rel="stylesheet" href="./asciidoctor.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="./coderay-asciidoctor.css">
 </head>
-<body class="article toc2 toc-left">
+<body class="book toc2 toc-right">
 <div id="header">
 <h1>Dataflow</h1>
 <div class="details">
-<span id="author" class="author">Russell Winder</span><br>
-<span id="email" class="email"><a href="mailto:russel@winder.org.uk">russel@winder.org.uk</a></span><br>
+<span id="author" class="author">The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;</span><br>
 <span id="revnumber">version 1.0,</span>
 <span id="revdate">2015-10-01</span>
 </div>
 <div id="toc" class="toc2">
-<div id="toctitle">Document Index</div>
+<div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_dataflow">Dataflow</a></li>
-<li><a href="#_introduction">Introduction</a></li>
+<li><a href="#_introduction">Introduction</a>
+<ul class="sectlevel2">
+<li><a href="#_review">Review</a></li>
 <li><a href="#_benefits">Benefits</a></li>
 <li><a href="#_further_reading">Further reading</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -37,7 +40,7 @@
 <h2 id="_dataflow">Dataflow</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Dataflow concurrency offers an alternative concurrency model, which is inherently safe and robust.</p>
+<p><code>Dataflow concurrency</code> offers an alternative concurrency model, which is inherently safe and robust.</p>
 </div>
 </div>
 </div>
@@ -45,7 +48,7 @@
 <h2 id="_introduction">Introduction</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Check out the small example written in Groovy using GPars, which sums results of calculations performed by three concurrently run tasks:</p>
+<p>Check out the small example written in <strong>Groovy</strong> using <strong>GPars</strong>, which sums results of calculations performed by three concurrently run tasks:</p>
 </div>
 <div class="listingblock">
 <div class="title">Dataflow Sample</div>
@@ -60,7 +63,7 @@
 7
 8
 9
-<strong>10</strong>
+10
 11
 12
 13
@@ -89,34 +92,37 @@ task {
 </tr></table></code></pre>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_review">Review</h3>
 <div class="paragraph">
-<p>We start three logical tasks, which can run in parallel and perform their
-particular activities. The tasks need to exchange data and they do so using
-<strong>Dataflow Variables</strong>. Think of Dataflow Variables as one-shot channels
-safely and reliably tranferring data from producers to their consumers.</p>
+<p>We start three logical tasks, which can run in parallel and perform their particular activities. The tasks need to exchange data and they do so using <em>Dataflow Variables</em>.
+Think of <em>Dataflow Variables</em> as one-shot channels safely and reliably tranferring data from producers to their consumers.</p>
 </div>
 <div class="paragraph">
-<p>The Dataflow Variables have a pretty straightforward semantics. When a task
-needs to read a value from <em>DataflowVariable</em> (through the val property), it
-will block until the value has been set by another task or thread (using the
-'&lt;&lt;' operator). Each <em>DataflowVariable</em> can be set <strong>only once</strong> in its
-lifetime. Notice that you don&#8217;t have to bother with ordering and synchronizing
-the tasks or threads and their access to shared variables. The values are
-magically transferred among tasks at the right time without your intervention.
-The data flows seamlessly among tasks / threads without your intervention or
-care.</p>
+<p>The <em>Dataflow Variables</em> have a pretty straightforward semantics. When a task needs to read a value from <em>DataflowVariable</em> (through the val property), it will block until the value has been set by another task or thread (using the '&lt;&lt;' operator).
+Each <em>DataflowVariable</em> can be set <strong>only once</strong> in its lifetime.
+Notice that you don&#8217;t have to bother with ordering and synchronizing the tasks or threads and their access to shared variables.
+The values are magically transferred among tasks at the right time without your intervention.</p>
 </div>
 <div class="paragraph">
-<p><strong>Implementation detail:</strong> The three tasks in the example <strong>do not necessarily need to be mapped to three physical threads</strong>. Tasks represent so-called "green" or "logical" threads and can be mapped under the covers to any number of physical threads.</p>
+<p>The data flows seamlessly among tasks / threads without your intervention or care.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Implementation detail</div>
+<div class="paragraph">
+<p>The three tasks in the previous example <strong>do not necessarily need to be mapped to three physical threads</strong>.
+Tasks represent so-called "green" or "logical" threads and can be mapped under the covers to any number of physical threads.</p>
+</div>
+</div>
 </div>
 <div class="paragraph">
 <p>The actual mapping depends on the scheduler, but the outcome of dataflow algorithms doesn&#8217;t depend on the actual scheduling.</p>
 </div>
+<hr>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_benefits">Benefits</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_benefits">Benefits</h3>
 <div class="paragraph">
 <p>Here&#8217;s what you gain by using Dataflow Concurrency (by Jonas Boner <a href="http://www.jonasboner.com">www.jonasboner.com</a> ):</p>
 </div>
@@ -135,7 +141,7 @@ care.</p>
 <p>Completely deterministic programs</p>
 </li>
 <li>
-<p>BEAUTIFUL code.</p>
+<p><em>BEAUTIFUL</em> code.</p>
 </li>
 </ul>
 </div>
@@ -147,10 +153,8 @@ care.</p>
 Dataflow concurrency section of the User Guide</a>.</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_further_reading">Further reading</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_further_reading">Further reading</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -167,10 +171,11 @@ Dataflow concurrency section of the User Guide</a>.</p>
 </div>
 </div>
 </div>
+</div>
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2015-10-02 23:46:58 CEST
+Last updated 2015-11-17 21:25:11 +01:00
 </div>
 </div>
 </body>

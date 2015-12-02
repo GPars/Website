@@ -1,5 +1,5 @@
 = GPars - Groovy Parallel Systems
-Russell Winder <russel@winder.org.uk>
+The Whole GPars Team <gpars-developers@googlegroups.com>
 v1.0, 2015-10-01
 :linkattrs:
 :linkcss:
@@ -11,7 +11,7 @@ v1.0, 2015-10-01
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: GPars Logo
 
-image::https://github.com/GPars/GPars/blob/master/artwork/gpars-logo.png[]
+image::images/gpars-rgb.svg[]
 
 We encourage projects and companies that use *GPars* to display the *GPars* logo on their websites, and elsewhere to help us spread the word and demonstrate the usefulness of *GPars*.
 

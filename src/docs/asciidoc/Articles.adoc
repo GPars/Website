@@ -1,6 +1,6 @@
 = GPars - Groovy Parallel Systems
-Russell Winder <russel@winder.org.uk>
-v1.0, 2015-10-01
+The Whole GPars Team <gpars-developers@googlegroups.com>
+v1.0, 2015-11-01
 :linkattrs:
 :linkcss:
 :toc: left

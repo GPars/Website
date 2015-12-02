@@ -39,6 +39,8 @@ repositories {
 apply plugin: 'war'
 apply plugin: 'cloudfoundry'
 
+defaultTasks 'cfLogin','cfDelete', 'cfPush'
+
 
 dependencies {
     compile "org.codehaus.groovy:groovy-all:2.4.5"
@@ -60,6 +62,6 @@ cloudfoundry {
     memory = 300	// MB
 
 	// your credentials go here
-    username = ''
-    password = ''
+    username = 'james.northrop@orange.fr'
+    password = '******'
 }

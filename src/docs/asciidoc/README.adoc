@@ -1,14 +1,85 @@
 = GPars - Groovy Parallel Systems
-Russell Winder <russel@winder.org.uk>
-v1.0, 2015-10-01
+The Whole GPars Team <gpars-developers@googlegroups.com>
+v1.0, 2015-11-21
 :linkattrs:
 :linkcss:
 :toc: left
-:toc-title: Document Index
+:toc-title: README Index
 :icons: font
 :source-highlighter: coderay
 :docslink: http://www.gpars.org/guide/[GPars Docs]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
-== gpars.github.io
 
-GPars organization GitHub pages
+== GPars Website Organization GitHub pages
+
+=== Source for the GPars website
+
+==== 4 Nov.2015 - JNorthr
+
+This is the initial Commit of GPars Documentation reworked using asciidoctor markup.
+
+There is much remaining to do, so just wanted to get this set of stuff into GitHub before it is lost.
+
+There are four gradle build scripts included plus the gradle 2.9 wrapper. To build/translate/test/deploy etc. do this:
+
+ . open terminal
+ . clone this repo
+ . change directories into root folder of this repo.
+ . ./gradlew check
+
+<or> 
+
+[source,groovy,linenums]
+.Confirm Gradle is Happy
+----
+gradlew check
+----
+
+This confirms that all dependencies have been downloaded.
+
+Then to rebuild .html from each .adoc file, do this:
+
+[source,groovy,linenums]
+.Ask Gradle to translate .adoc files to .html
+----
+./gradlew asciidoctor
+----
+
+To build a deployable war file, run script with no parms - this will run *Gradle* with default tasks creating *.WAR*
+
+[source,groovy,linenums]
+.Ask Gradle to translate .adoc files and then build a *.WAR* file
+----
+./gradlew 
+----
+
+To test this war file on your own system before uploading, the `gretty.gradle` script starts a local *jetty7* server. Then you can then open a browser to `localhost:8080`  to see how the website looks and make any tweeks first before you deploy to a cloud foundry target.
+
+[source,groovy,linenums]
+.Ask Gradle to run the Jetty server on your local machine
+----
+cd /Users/jim/Dropbox/GParsDocs/build/libs 
+./gradlew -b gretty.gradle appRunWAR
+----
+
+===== Deploy 
+
+When ready to deploy you will need a client account on any CloudFoundry provider; the third gradle script is to deploy our docs to a cloud foundry instance. Typically:
+
+[source,groovy,linenums]
+.Ask Gradle to deploy our website to a CloudFoundry target
+----
+ cd /Users/jim/Dropbox/GParsDocs/
+ ./gradlew -b deploy.gradle cfLogin cfDelete cfPush
+----
+
+should create a running web app at the URI declared within the cloudfoundry{} closure; 
+
+IMPORTANT: include your own credentials before first run
+
+''''
+
+Our webapp lives in the `anynines.com` *PaaS* provider in Berlin. The 'target' and 'uri' values point to that provider. You can deploy this .war file other splaces if you join a different provider.
+
+If you need a tut or how-to, read this: http://cloudnines.de.a9sapp.eu/[How Does CloudFoundry Work ?]
+  

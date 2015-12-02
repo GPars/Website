@@ -1,5 +1,5 @@
 = GPars - Groovy Parallel Systems
-Russell Winder <russel@winder.org.uk>
+The Whole GPars Team <gpars-developers@googlegroups.com>
 v1.0, 2015-10-01
 :linkattrs:
 :linkcss:
@@ -11,16 +11,17 @@ v1.0, 2015-10-01
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: Groovy Fast Track
 
-
-Using the *Groovy Fast Track* you will start experimenting with GPars in about 3 minutes. We assume you have Groovy installed on your system.
+Using this *Groovy Fast Track*, you will start experimenting with GPars in about 3 minutes. We assume you have Groovy installed on your system.
 
 == Step 1 -- Start up the Groovy Console
 
-Start fresh Groovy Console or open up an empty groovy script source in your favorite IDE
+Start a fresh Groovy Console or open up an empty groovy script source in your favorite IDE
 
 == Step 2 -- Add dependencies
 
-_Note: *GPars* comes bundled with Groovy distributions so this step should normally be not required._
+TIP: *GPars* comes bundled with Groovy distributions so this step should normally be not required._
+
+''''
 
 We'll use Groovy's _Grape_ functionaity to grab all the requited dependencies for us. You may check out the link:Integration.html[*GPars* Integration page] for other ways to integrate *GPars* with your project.
 
@@ -54,9 +55,10 @@ Run the script and you should get the following output:
  . Found an ant
  . Some animals can live without an a
 
-Now feel free to experiment changing the regular expressions, using different collections or different methods, like _eachParallel()_, _collectParallel()_, _maxParallel()_, _sumParallel()_ and others. You get the idea, right?
+Now feel free to experiment by changing the regular expressions, using different collections or different methods, like _eachParallel()_, _collectParallel()_, _maxParallel()_, _sumParallel()_ and others. 
+You get the idea, right?
 
-To find out more about parallel collection processing, visit the link:http://www.gpars.org/guide/guide/dataParallelism.html#dataParallelism_parallelCollections[Parallel Collections section] of the http://www.gpars.org/guide/[User Guide].
+To find out more about parallel collection processing, visit the link:http://www.gpars.org/guide/guide/dataParallelism.html#dataParallelism_parallelCollections[Parallel Collections section] of the link:./guide/[User Guide].
 
 == Step 4 -- Actors
 
@@ -102,17 +104,14 @@ actor 'Hello'
 println actor.sendAndWait(null)
 ----
 
-Our actor maintains a private counter and accepts different types of messages,
-which result in updating the counter. Sending a null value will make the actor
-reply the current counter value back to us. Notice the _send()_ method name is
-optional and can be replaced by the _<<_ operator or ommited altogether.
+Our actor maintains a private counter and accepts different types of messages, which result in updating the counter. 
+Sending a null value will make the actor reply the current counter value back to us. 
+Notice the _send()_ method name is optional and can be replaced by the _<<_ operator or ommited altogether.
 
-The http://www.gpars.org/guide/guide/actors.html[Actor section] of the http://www.gpars.org/guide/[User
-Guide] will help you dive deeper into *GPars* actors.
+The link:./guide/#_user_guide_to_actors[Actors review] of the link:./guide/[UserGuide] will help you dive deeper into *GPars* actors.
 
 == Further steps
 
-Now when you have *GPars* runing on your system, now's the time to open up
-the http://www.gpars.org/guide/[User Guide], browse the *GPars* code examples and continue experimenting. 
+Now when you have *GPars* runing on your system, now's the time to open up the link:./guide/[User Guide], browse the *GPars* code examples and continue experimenting. 
 
 You may also consider checking out the link:Java_Fast_Track.html[Java Fast Track], in case you need to use *GPars* high-level concurency abstractions from Java code. Good luck!

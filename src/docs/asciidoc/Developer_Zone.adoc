@@ -1,5 +1,5 @@
 = GPars - Groovy Parallel Systems
-Russell Winder <russel@winder.org.uk>
+The Whole GPars Team <gpars-developers@googlegroups.com>
 v1.0, 2015-10-01
 :linkattrs:
 :linkcss:
@@ -15,41 +15,43 @@ v1.0, 2015-10-01
 
 === Information for *GPars* Developers
 
-== Build Info
+==== Build Info
 
 The continuous integration build can be found under:
 
 .Build Servers
 [cols="3*", options="header"]
 |===
-|Build Server | Link | Note |
----|---|---|
-Travis-CI | https://travis-ci.org/GPars/GPars[*GPars*] | https://travis-ci.org/GPars/GPars.svg?branch=master[Travis-CI status master] |
-Snap-CI | https://snap-ci.com/GPars/GPars/branch/master[GPars/branch/master] | https://snap-ci.com/GPars/GPars/branch/master/build_image[Snap-CI status master] |
-JetBrains TeamCity | http://teamcity.jetbrains.com/project.html?projectId=GPars[jetbrains.com] | needs registration |
+|Build Server | Link | Note 
+|---|---|---
+|Travis-CI | https://travis-ci.org/GPars/GPars[*GPars*] | https://travis-ci.org/GPars/GPars.svg?branch=master[Travis-CI status master] 
+|Snap-CI | https://snap-ci.com/GPars/GPars/branch/master[GPars/branch/master] | https://snap-ci.com/GPars/GPars/branch/master/build_image[Snap-CI status master] 
+|JetBrains TeamCity | http://teamcity.jetbrains.com/project.html?projectId=GPars[jetbrains.com] | needs registration 
 |===
 
-== Issue Tracker
+=== Issue Tracker
 
 The JIRA issue tracker: http://jira.codehaus.org/browse/GPARS - no longer works.
 
-== Source Repository
+=== Source Repository
 
 The Git repository held at GitHub is the official mainline:
 
-To work on the codebase please fork the repository on GitHub in the usual GitHub workflow way. Keeping the master branch as a mirror of the mainline, working on a feature branch and then sending in pull requests based on that feature branch seems to be the best way of working. Please refer to the Git and GitHub documentation for any further details on using Git and GitHub.
+To work on the codebase please fork the repository on GitHub in the usual GitHub workflow way. Keeping the master branch as a mirror of the mainline, working on a feature branch and then sending in pull requests based on that feature branch seems to be the best way of working. 
+Please refer to the Git and GitHub documentation for any further details on using Git and GitHub.
 
-== Mirror Repository
+=== Mirror Repository
 
-A repository that is a mirror of the GitHub repository was maintained at Codehaus (before they closed) in order to continue integration with various continuous integration servers (over time more of this will migrate to GitHub). Also this Codehaus project was the location of the issue tracker and the route for artifacts to get into the Maven repository.
+A repository that is a mirror of the GitHub repository was maintained at Codehaus (before they closed) in order to continue integration with various continuous integration servers (over time more of this will migrate to GitHub). 
+Also this Codehaus project was the location of the issue tracker and the route for artifacts to get into the Maven repository.
 
 You should never need to clone this repository, but for completeness, the command:
 
-git clone
+`git clone`
 
-creates a clone of the repository in the subdirectory GPars. The above URL gives read-only access to the repository. Those people with write access to the repository should use the URL:
+creates a clone of the repository in the subdirectory GPars. The above URL gives read-only access to the repository.
 
-== Personal Clones
+=== Personal Clones
 
 Project committers and contributors typically keep their personal clones of the main repository for feature branches:
 
@@ -72,17 +74,19 @@ Upon start or right before building the project, IDEA will prompt you for the JD
 
 === The Default IntelliJ IDEA Project File
 
-*GPars* holds a default IDEA project file in the root of the project and is named _GPars_IDEAX.ipr_. This project serves as a master copy for the
-generated project files (see above) and also to configure our Continuous Integraion. If you, for some reason, decide to use the default project file, you need to go through a few configuraion steps first.
+*GPars* holds a default IDEA project file in the root of the project and is named _GPars_IDEAX.ipr_. 
+This project serves as a master copy for the generated project files (see above) and also to configure our Continuous Integraion. 
+If you, for some reason, decide to use the default project file, you need to go through a few configuraion steps first.
 
-The first time you open the project, you will be prompted to enter a _PROJECT_JDK_NAME_ and a _MAVEN_REPOSITORY_ variable. These are IDEA variables and not system variables. These results are stored in your home directory.
+The first time you open the project, you will be prompted to enter a _PROJECT_JDK_NAME_ and a _MAVEN_REPOSITORY_ variable. These are IDEA variables and not system variables. 
+These results are stored in your home directory.
 
 Each developer can have a unique value. For example, your _MAVEN_REPOSITORY_ may be a path on your disk, and _PROJECT_JDK_NAME_ can be any string value, e.g. "1.6". This is the name of the Global JDK defined defined within IDEA.
 
 You can setup a global JDK in IDEA under `File->Project Structure->SDKs`. There is a little text box to fill in where you give the JDK a name. Whatever you typed into this textbox is what needs to be typed into the IDEA Environment Variable screen for PROJECT_JDK_NAME.
 
-The _MAVEN_REPOSITORY_ variable should point to your local maven repository, which IDEA will be using to keep downloadable artifacts of third-party
-libraries that are needed to build and run _GPars_. You need to populate the repo first for IDEA to find the necessary artifacts. The best way to do so is to open the _/java-demo/pom.xml_ file (provided Maven support is enabled in your IDEA installation) and ask IDEA to _Import_ _changes_. 
+The _MAVEN_REPOSITORY_ variable should point to your local maven repository, which IDEA will be using to keep downloadable artifacts of third-party libraries that are needed to build and run _GPars_. 
+You need to populate the repo first for IDEA to find the necessary artifacts. The best way to do so is to open the _/java-demo/pom.xml_ file (provided Maven support is enabled in your IDEA installation) and ask IDEA to _Import_ _changes_. 
 
 Alternatively you can use the _Refresh_ button in the Maven tool window.
 
@@ -103,14 +107,17 @@ If you plan to contribute code to the project, please check out our brief link:C
 
 Notice the *--no-ff* flag when merging.
 
-Note that this workflow is applicable to all people whether they are committing authors or not. It's just that non-committing authors have to
-convince a committing author to do the commit. A consequence is that people should not be advised to submit patches on JIRA issues, but instead to specify where their feature branch is so it can be pulled. Obviously patches work as well but the whole point is for everyone to publish their feature branches so others can review them in a VCS context.
+Note that this workflow is applicable to all people whether they are committing authors or not. It's just that non-committing authors have to convince a committing author to do the commit. 
+A consequence is that people should not be advised to submit patches on JIRA issues, but instead to specify where their feature branch is so it can be pulled. 
+Obviously patches work as well but the whole point is for everyone to publish their feature branches so others can review them in a VCS context.
 
 === Simplified workflow
 
 Trivial spelling error fixes, extra tests that don't necessitate a change of code but just extend the test coverage, and very simple (non-controversial) bug fixes (with their tests) are currently exempt from having a review process.
 
 Discretion on the part of committing developers is required here. (_git pull; fix; commit; git push_) or (_git pull; git checkout -b myFix; fix; commit; git checkout master; git pull; git merge --no-ff myFix;git push_)
+
+''''
 
 == Upgrading Gradle
 
@@ -125,6 +132,8 @@ Discretion on the part of committing developers is required here. (_git pull; fi
  . Push to the mainline `git push`
  . Push to the personal mirror `git push --mirror . . . `
  . Wait expectantly to see if Bamboo works or not . . .
+
+''''
 
 == The Release Plan
 

@@ -1,5 +1,5 @@
 = GPars - Groovy Parallel Systems
-Russell Winder <russel@winder.org.uk>
+The Whole GPars Team <gpars-developers@googlegroups.com>
 v1.0, 2015-10-01
 :linkattrs:
 :linkcss:
@@ -19,32 +19,26 @@ NOTE: What users say about GPars
 advanced threading concepts like DataFlows, Agents and Actors formerly only
 sparsely available in Scala, Clojure to the Groovy world.
 
-I use *GPars* in my project for a billion dollar product and services company in
-North America. Our application performs 14 to 20 million transactions a day which involves web service, complex computations and database calls. 
+I use *GPars* in my project for a billion dollar product and services company in North America. 
+Our application performs 14 to 20 million transactions a day which involves web service, complex computations and database calls. 
 
 ''''
 IMPORTANT: Our application performs 14 to 20 million transactions a day !
 
 ''''
 
-*GPars* library is solid and works like a charm. With this library, our application
-code is much shorter, clean and easier to maintain.
+*GPars* library is solid and works like a charm. With this library, our application code is much shorter, clean and easier to maintain.
 
-My work life is much easier after using Agents for monitoring and collecting
-stats on large batch processing jobs, and using Data Flow Queues and Tasks for
-adding and consuming jobs with just a few lines of code. And we got awesome
-support from the GPars team.
+My work life is much easier after using Agents for monitoring and collecting stats on large batch processing jobs, and using Data Flow Queues and Tasks for adding and consuming jobs with just a few lines of code. 
+And we got awesome support from the *GPars* team.
 
 == John Rudnik
 
-*GPars* is awesome. Generally dealing with threading and concurrency is a real
-pain. With *GPars* you can get some very usable concurrency going in 3 lines of
-code.
+*GPars* is awesome. Generally dealing with threading and concurrency is a real pain. With *GPars* you can get some very usable concurrency going in 3 lines of code.
 
 == Aurelien Maury -- Xebia France -- Tech Lead
 
-We used *GPars* Actors to scatter HTTP requests in our Grails project to
-multiple backends, gather results and stream HTTP chunks of results as soon as
+We used *GPars* Actors to scatter HTTP requests in our Grails project to multiple backends, gather results and stream HTTP chunks of results as soon as
 
 ''''
 
@@ -52,50 +46,37 @@ IMPORTANT: It was just plain fun
 
 ''''
 
-they came back from backends. It was just plain fun, no Thread management
-boilerplate, just business rules optimizations. Would definitely re-use.
+they came back from backends. It was just plain fun, no Thread management boilerplate, just business rules optimizations. Would definitely re-use.
 
 
 == Andrzej Grzesik -- eCircle, development env lead
 
-Yes, I use *GPars*, it rocks. We've hacked a rdbms -> hbase migration
-application, *GPars* helped to improve speed by a huge factor, and it was easy
-to use and didn't give us problems. - www.ecircle.com
+Yes, I use *GPars*, it rocks. We've hacked a rdbms -> hbase migration application, *GPars* helped to improve speed by a huge factor, and it was easy to use and didn't give us problems. - www.ecircle.com
 
 == Adrian Nakon
 
-*GPars* is quite awesome - I'm building a multi-threaded App that collects
-metric data across a large number of Cisco switches and Linux servers (using
-Groovy and Java), and *GPars* is working like a dream.  The concept of stateful
-Actors is very nice. Well done! :)
+*GPars* is quite awesome - I'm building a multi-threaded App that collects metric data across a large number of Cisco switches and Linux servers (using *Groovy* and *Java*), and *GPars* is working like a dream.  
+The concept of stateful *Actors* is very nice. Well done! :)
 
 == Robin Bramley
 
-On a data migration exercise from _SugarCRM_ to _Salesforce_, some of the entity
-migrations could be performed in parallel as they weren't order dependent.
-*GPars* was chosen for sheer simplicity of _GParsPool_ and _eachParallel_ - only
-requiring 3 trivial new lines of code and the addition of 'Parallel' to the
-each collection iteration. 
+On a data migration exercise from _SugarCRM_ to _Salesforce_, some of the entity migrations could be performed in parallel as they weren't order dependent.
+*GPars* was chosen for sheer simplicity of _GParsPool_ and _eachParallel_ - only requiring 3 trivial new lines of code and the addition of 'Parallel' to the each collection iteration. 
 
-*GPars* dramatically reduced the time taken to migrate the data by parallelising the processing of the database result set
-and the subsequent web service calls.
+*GPars* dramatically reduced the time taken to migrate the data by parallelising the processing of the database result set and the subsequent web service calls.
 
 http://leanjavaengineering.wordpress.com/2010/10/06/groovy-salesforce-api[leanjavaengineering.wordpress.com]
 
 == Dan Fraser
 
-_GParallelizer_ is very cool. I had to collect information from 200 machines
-using JSCH ( http://www.jcraft.com/jsch/[www.jcraft.com] ) and 3 lines of code made it 10x
-faster.
+_GParallelizer_ is very cool. I had to collect information from 200 machines using JSCH ( http://www.jcraft.com/jsch/[www.jcraft.com] ) and 3 lines of code made it 10x faster.
 
 Contact: http://twitter.com/gblack[twitter.com/gblack]
 
 == Jeff Gortatowsky -- Software Architect
 
-Been having fun with *GPARS* because it is so easy to experiment with. It lets me
-concentrate more on the solving the problem at hand rather than worrying about
-all the Java mechanics involving with coding the details of thread lifecycle
-management. Plus it is more expressive!
+Been having fun with *GPARS* because it is so easy to experiment with. It lets me concentrate more on the solving the problem at hand rather than worrying about all the Java mechanics involving with coding the details of thread lifecycle management. 
+Plus it is more expressive!
 
 ''''
 

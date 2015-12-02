@@ -1,5 +1,5 @@
 = GPars - Groovy Parallel Systems
-Russell Winder <russel@winder.org.uk>
+The Whole GPars Team <gpars-developers@googlegroups.com>
 v1.0, 2015-10-01
 :linkattrs:
 :linkcss:
@@ -14,7 +14,7 @@ v1.0, 2015-10-01
 
 == User Guide
 
-The http://www.gpars.org/guide/index.html[User Guide] introduces all the essential concepts and gives you details and samples on how to use GPars in your code.
+The link:./guide[User Guide] introduces all the essential concepts and gives you details and samples on how to use GPars in your code.
 
 
 [cols="4*", options="header"]

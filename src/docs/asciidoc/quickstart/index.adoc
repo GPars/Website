@@ -1,5 +1,5 @@
-= The GPars Quick Reference image:gpars.svg[Logo,240,float="right"]
-The Whole GPars Team 
+= The GPars Quick Reference 
+The Whole GPars Team <gpars-developers@googlegroups.com>
 v1.0, 2015-11-04
 :toc: right
 :toc-title: Document Index
@@ -10,22 +10,26 @@ v1.0, 2015-11-04
 :leveloffset: 0
 :numbered!:
 
-NOTE: To download this document as a PDF - link:./quickstart/quickstart.pdf[click here]
+image::../../images/gpars-rgb.svg[GPars Logo,320,align="center",link="./"]
 
 ''''
 
-include::actors.txt[]
+NOTE: To download this document as a PDF - link:../quickstart/index.pdf[click here]
 
-include::agents.txt[]
+''''
 
-include::csp.txt[]
+include::Actors.txt[]
 
-include::dataflow.txt[]
+include::Agents.txt[]
 
-include::forkjoin.txt[]
+include::Csp.txt[]
 
-include::forkjoinpool.txt[]
+include::Dataflow.txt[]
 
-include::stm.txt[]
+include::Forkjoin.txt[]
 
-include::threadpool.txt[]
+include::Forkjoinpool.txt[]
+
+include::Stm.txt[]
+
+include::Threadpool.txt[]

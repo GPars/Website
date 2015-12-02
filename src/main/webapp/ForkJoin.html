@@ -4,26 +4,25 @@
 <meta charset="UTF-8">
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 1.5.2">
+<meta name="generator" content="Asciidoctor 1.5.3">
 <meta name="description" content="GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.">
-<meta name="author" content="Russell Winder">
+<meta name="author" content="The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;">
 <title>Fork/Join</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <link rel="stylesheet" href="./asciidoctor.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="./coderay-asciidoctor.css">
 </head>
-<body class="article toc2 toc-left">
+<body class="book toc2 toc-right">
 <div id="header">
 <h1>Fork/Join</h1>
 <div class="details">
-<span id="author" class="author">Russell Winder</span><br>
-<span id="email" class="email"><a href="mailto:russel@winder.org.uk">russel@winder.org.uk</a></span><br>
+<span id="author" class="author">The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;</span><br>
 <span id="revnumber">version 1.0,</span>
 <span id="revdate">2015-10-01</span>
 </div>
 <div id="toc" class="toc2">
-<div id="toctitle">Document Index</div>
+<div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_the_abstraction">The Abstraction</a></li>
 <li><a href="#_the_gpars_abstraction_convenience_layer">The GPars Abstraction Convenience Layer</a></li>
@@ -73,6 +72,7 @@ The <strong>JSR-166y</strong> library leaves a couple of rough edges, which can 
 <div class="paragraph">
 <p>The <strong>JSR-166y</strong> library solves <em>Fork/Join</em> orchestration pretty nicely for us, but leaves a couple of rough edges, which can hurt you, if you don&#8217;t pay attention enough. You still deal with threads, pools and synchronization barriers.</p>
 </div>
+<hr>
 </div>
 </div>
 <div class="sect1">
@@ -94,7 +94,7 @@ The <strong>JSR-166y</strong> library leaves a couple of rough edges, which can 
 7
 8
 9
-<strong>10</strong>
+10
 11
 12
 13
@@ -104,7 +104,7 @@ The <strong>JSR-166y</strong> library leaves a couple of rough edges, which can 
 17
 18
 19
-<strong>20</strong>
+20
 21
 </pre></td>
   <td class="code"><pre><span class="keyword">import</span> <span class="include">static</span> <span class="include">groovyx.gpars.GParsPool.runForkJoin</span>
@@ -137,10 +137,12 @@ withPool(<span class="integer">1</span>) {pool -&gt;
 <h2 id="__em_fork_join_em_saves_your_resources"><em>Fork/Join</em> Saves Your Resources</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><em>Fork/Join</em> operations can be safely run with small number of threads thanks to internally using the TaskBarrier class to synchronize the threads. While a thread is blocked inside an algorithm waiting for its sub-problems to be calculated, the thread is silently returned to the pool to take on any of the available sub-problems from the task queue and process them. Although the algorithm creates as many tasks as there are sub-directories and tasks wait for the sub-directory tasks to complete, as few as one thread is enough to keep the computation going and eventually calculate a valid result.</p>
+<p><em>Fork/Join</em> operations can be safely run with small number of threads thanks to internally using the TaskBarrier class to synchronize the threads.
+While a thread is blocked inside an algorithm waiting for its sub-problems to be calculated, the thread is silently returned to the pool to take on any of the available sub-problems from the task queue and process them.
+Although the algorithm creates as many tasks as there are sub-directories and tasks wait for the sub-directory tasks to complete, as few as one thread is enough to keep the computation going and eventually calculate a valid result.</p>
 </div>
 <div class="paragraph">
-<p>If you&#8217;d like to know more, check out <a href="http://gpars.org/guide/guide/dataParallelism.html#dataParallelism_fork-join">the <em>Fork/Join</em> section of the User Guide</a>.</p>
+<p>If you&#8217;d like to know more, check out <a href="./guide/#<em>fork_join_2">the _Fork/Join</em> section of the User Guide</a>.</p>
 </div>
 </div>
 </div>
@@ -148,7 +150,7 @@ withPool(<span class="integer">1</span>) {pool -&gt;
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2015-10-04 15:00:58 CEST
+Last updated 2015-11-17 22:08:40 +01:00
 </div>
 </div>
 </body>

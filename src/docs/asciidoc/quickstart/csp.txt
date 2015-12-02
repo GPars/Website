@@ -4,10 +4,12 @@
 
 === Concepts
 
-The *CSP* ( _Communicating Sequential Processes_ ) concurrency concept provides a message-passing model with
-synchronous rendezvous-type communication. It is valued mainly for its high level of determinism and the
-ability to compose parallel processes.  *GPars* _GroovyCSP_ wraps the "JCSP library" : http://www.cs.kent.ac.uk/projects/ofa/jcsp/[jcsp] and builds on the work of _Jon
-Kerridge_ : +++http://www.iidi.napier.ac.uk/people/op/onepeople/peopleid/51+++ .  
+The *CSP* ( _Communicating Sequential Processes_ ) concurrency concept provides a message-passing model with synchronous rendezvous-type communication. 
+
+It is valued mainly for its high level of determinism and the ability to compose parallel processes.  
+
+*GPars* _GroovyCSP_ wraps the http://www.cs.kent.ac.uk/projects/ofa/jcsp/[JCSP library from The University of Canterbury] and builds on the work of _Jon
+Kerridge_. link:../jk[Please review his works here.]
 
 For more information about the *CSP* concurrency model, checkout the *CSP* section of the User Guide or refer to the links below:
 
