@@ -23,10 +23,9 @@
     <body>
             <div id="header">
             <a href="http://gpars.github.io/" alt="GPars Home">
-            <img src="/images/ipad.png" class='ipad' alt="GPars Installer - a lightweight toolkit for Parallel Processing">
-		<img src="/images/gpars-rgb.svg"  class='anynines'></a>
-        </div>
-
+            <img src="/images/ipad.png" class='ipad' alt="GPars - a lightweight toolkit for Parallel Processing">
+		    <img src="/images/gpars-rgb.svg"  class='anynines'></a>
+            </div>
 
 	<div id='cssmenu'>
 	<ul>
@@ -48,7 +47,7 @@
       			</ul>
    		</li>
 
-   		<li><a href='/a9s'>GPars Installer</a></li>
+   		<li><a href='/gpars'>GPars Installation</a></li>
 		<li><a href='/datetime'>Date &amp; Time</a></li>
 
 	</ul>

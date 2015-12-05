@@ -1,4 +1,4 @@
-= GPars - Groovy Parallel Systems image:gpars.svg[Logo,240,float=right]
+= GPars - Groovy Parallel Systems 
 Jon Kerridge <j.kerridge@napier.ac.uk>
 v1.0, 2015-10-01
 :linkattrs:
@@ -11,6 +11,11 @@ v1.0, 2015-10-01
 :docslink: http://www.gpars.org/guide/[GPars Docs]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 
+
+image::gpars-rgb.svg[GPars Logo,320,align="center",link="./"]
+
+''''
+
 == Let’s Do It in Parallel
 
 *Groovy Parallel Programming for Java Developers* 
@@ -19,7 +24,7 @@ v1.0, 2015-10-01
 ****
 School of Computing Edinburgh Napier University, Scotland 
 
-email: j.kerridge@napier.ac.uk image:JonKerridge2.jpg['Jon Kerridge',135,135,role="thumb right"]
+email: j.kerridge@napier.ac.uk image:jon2.jpg['Jon Kerridge',135,135,role="thumb right"]
 
 Tel. +44 (0)131 455 2777
 
@@ -28,6 +33,45 @@ Room D30, Merchiston Campus
 10 Colinton Road
 
 Edinburgh, Scotland EH10 5DT
+****
+
+.17 Nov.2015
+****
+Hi Team,
+
+The following documents you refer to have now been superseded by a published text book, which comes in two parts.
+
+The text is available free from http://bookboon.com/[bookboon.com]
+
+The quickest way is to search for 'bookboon kerridge',  which is the way I find my books.  In total the books have now been downloaded about 250,000 times up till June 2015.
+
+image:../images/concurrency.png[Concurrency,180,title="Using Concurrency and Parallelism Effectively",role="related thumb right",link="http://bookboon.com/en/using-concurrency-and-parallelism-effectively-i-ebook"] The actual links are:
+
+ * part 1 which is the concurrency stuff: http://bookboon.com/en/using-concurrency-and-parallelism-effectively-i-ebook[Using Concurrency and Parallelism Effectively - Part 1]
+ * part 2 which is the parallel stuff: http://bookboon.com/en/using-concurrency-and-parallelism-effectively-ii-ebook[Using Concurrency and Parallelism Effectively - Part 2]
+
+there is a link on the pulisher's web site to the code and underlying libraries
+
+So the easiest thing would be to provide a link to these two books so that people can follow then!
+
+I am in the process of writing a follow on book looking at JCSP based parallel patterns but it very much in the development stage at the moment!!
+
+
+Hope this helps and saves you a lot of effort!!
+
+Jon
+
+Professor Jon Kerridge
+
+School of Computing, Edinburgh Napier University, Merchiston Campus
+
+Edinburgh, EH10 5DT
+ 
+Tel. (0044) 0131 455 2777
+
+email: mailto:j.kerridge@napier.ac.uk[j.kerridge@napier.ac.uk]
+
+http://www.soc.napier.ac.uk/~cs10/[http://www.soc.napier.ac.uk/]
 ****
 
 
@@ -157,7 +201,7 @@ link:JonKerridgeBook/c19.html[Chapter 19]
 
 link:JonKerridgeBook/c20.html[Chapter 20]
  
-== Mobile Agents and Processes: Process Discovery   
+=== Mobile Agents and Processes: Process Discovery   
 
 link:JonKerridgeBook/c21.html[Chapter 21] 
  

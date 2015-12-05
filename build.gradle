@@ -14,7 +14,7 @@ apply plugin: 'org.asciidoctor.gradle.asciidoctor'
 apply plugin: 'org.asciidoctor.convert' 
 
 
-defaultTasks 'clean', 'build', 'war' //  'asciidoctor',
+defaultTasks 'clean','asciidoctor', 'build', 'war' //  
 
 // logic to suport asciidoctor html, pdf and diagrams output
 buildscript {
@@ -24,7 +24,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.2'
+        classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.3'
         classpath("org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.9") // for PDF's
     }
 }
@@ -47,10 +47,10 @@ war {
 
 // closure for asciidoctor plugin; chg these values to influence asciidoctor task
 asciidoctor { 
-	sourceDir = file('src/docs/asciidoc') // plugin reads all *.adoc files in this folder and any sub-folder
-    outputDir = file('src/main/webapp')   // file("$buildDir/docs")
-    separateOutputDirs=false	// true mkdir 2 folders within the outDir: one for html, one for pdf
-    backends = ['html5' ]	// to create both html and pdf output:  backends = ['html5' ,'pdf'] (buggy!)
+	sourceDir = file('src/docs/asciidoc')    //'src/docs/asciidoc')	// plugin reads all *.adoc files in this folder and any sub-folder
+    outputDir = file('src/main/webapp')            //main/tester')   // file("$buildDir/docs")
+    separateOutputDirs=false	// true creates two folders within the outDir path one for html, one for pdf
+    backends = ['html5' ]	// to create both html and pdf output:  backends = ['html5' ,'pdf']
     options = [
         doctype: 'book',
         attributes: [
@@ -62,6 +62,6 @@ asciidoctor {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '2.8'
+    gradleVersion = '2.9'
 }
 

@@ -1,5 +1,5 @@
 = GPars - Groovy Parallel Systems
-Russell Winder <russel@winder.org.uk>
+The Whole GPars Team <gpars-developers@googlegroups.com>
 v1.0, 2015-10-01
 :linkattrs:
 :linkcss:
@@ -12,7 +12,9 @@ v1.0, 2015-10-01
 :doctitle: Community
 
 
-If you are an http://www.ohloh.net[ohloh] user, please consider adding *GPars* to your https://www.ohloh.net/p/gpars[ohloh stack].
+NOTE: If you are an http://www.ohloh.net[ohloh] user, please consider adding *GPars* to your https://www.ohloh.net/p/gpars[ohloh stack]
+
+''''
 
 == Mailing Lists
 
@@ -40,13 +42,15 @@ If you are an http://www.ohloh.net[ohloh] user, please consider adding *GPars* t
 |  
 |===
 
+''''
+
 == Nabble
 
 The user mailing list was also available though http://n3.nabble.com/GPars-user-mailing-list-f19372.html but does not appear to be active.
 
 == Issue Tracker
 
-The http://jira.codehaus.org/browse/GPARS address for Jira has ben terminated.
+The http://jira.codehaus.org/browse/GPARS service for Jira has been terminated.
 
 == Source Code Repository
 

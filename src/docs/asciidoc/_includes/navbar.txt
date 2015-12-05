@@ -1,0 +1,71 @@
+image::./images/gpars-rgb-reverse-grey.svg[GPars Logo,240,align="center",link="./"]
+++++
+<link rel="stylesheet" href="./css/css3menustyle.css" type="text/css" />
+<div id="css3menus">
+<ul id="css3menu1" class="topmenu">
+	<li class="topmenu"><a href="/" title="Website Entry Point">Home</a></li>
+
+	<li class="topmenu"><a href="#" title="How Does It Work ?">Learn</a>
+		<ul>
+		<li class="subfirst"><a href="Articles.html" title="Articles">Articles</a></li>
+		<li><a href="Concepts_Compared.html" title="Comparing Concepts - Which To Use ?">Concepts Compared</a></li>
+		<li><a href="Demos.html" title="Demos and Code Samples">Demos</a></li>
+		<li><a href="Events.html" title="Events You Can Attend">Events</a></li>
+		<li><a href="News.html" title="Selected News Items">News</a></li>
+		<li class="sublast"><a href="Presentations.html" title="Presentations and Briefings">Presentations</a></li>
+		</ul>
+	</li>
+	
+	<li class="topmenu"><a href="#" title="Using GPars"><span>Use</span></a>
+		<ul>
+		<li class="subfirst"><a href="Breaking_Changes.html" title="My, How Things Have Changed">Breaking Changes</a></li>
+		<li><a href="Download.html" title="Get GPars Hot Off The Press">Download</a></li>
+		<li><a href="Integration.html" title="Build Tool Integration">Integration</a></li>
+		<li class="sublast"><a href="License.html" title="How Can I use GPars Technology ?">Terms of Use</a></li>
+		</ul>
+	</li>
+			
+	<li class="topmenu"><a href="#" title="Join Us Developing GPars">Hacking</a>
+		<ul>
+		<li class="subfirst"><a href="Code_Style.html" title="Code Style guidelines">Code-Style Guidelines</a></li>
+		<li><a href="Developer_Zone.html" title="Developer Zone">Developer Zone</a></li>
+		<li><a href="Hackergarten.html" title="Hackergarten">Hackergarten</a></li>
+		<li class="sublast"><a href="README.html" title="Latest Up-to-the-minute Details">README</a></li>
+		</ul>
+	</li>
+	
+	<li class="topmenu"><a href="#" title="The Nitty-Gritty of GPars">Docs</a>
+		<ul>
+		<li class="subfirst"><a href="API_Doc.html" title="API Document">API Documents</a></li>
+		<li><a href="User_Guide.html" title="User Guides from The Past">Older User Guides</a></li>
+		<li><a href="./qs" title="Briefly Covers Individual Concepts">Quick Reference</a></li>
+		<li><a href="./jk" title="Professor Jon Kerridge Gives Us The Skinny">Tutorials</a></li>
+		<li class="sublast"><a href="./guide" title="Latest User Guide in Detail">User Guide</a></li>
+		</ul>
+	</li>
+	
+			
+	<li class="topmenu"><a href="#" title="Who Ya Gonna Call ? GPars-Busters !">Help</a>
+		<ul>
+		<li class="subfirst"><a href="Community.html" title="Forums, Emails, JIRA, Bug Reporting">Community</a></li>
+		<li><a href="Support.html" title="How To Ask For Aid - Q&A">Support</a></li>
+		<li class="sublast"><a href="User_Voices.html" title="feedback from Our User-Base">User Voices</a></li>
+		</ul>
+	</li>
+		
+	<li class="topmenu"><a href="#" title="Our Structure, History, Direction">About</a>
+		<ul>
+		<li class="subfirst"><a href="Roadmap.html" title="Where is GPars Headed in the Future ?">Future Road Map</a></li>
+		<li><a href="GPars_History.html" title="The Origins of The Beast">GPars History</a></li>
+		<li><a href="GPars_Logo.html" title="How Did It Happen ?">GPars Logo</a></li>
+		<li><a href="Logo_Usage_Policy.html" title="Terms of Use for the GPars Logo">Logo Usage</a></li>
+		<li><a href="Sponsors.html" title="How to Help Keep Us Ticking">Sponsors</a></li>
+		<li class="sublast"><a href="TheGParsTeam.html" title="Get To Know 'The Men In Black' !">The GPars Team</a></li>
+		</ul>
+	</li>
+
+</ul>
+</div>
+<!-- End css3menu.com BODY section -->
+++++
+

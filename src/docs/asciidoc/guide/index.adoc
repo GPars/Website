@@ -1,6 +1,6 @@
-= The GPars User Guide image:gpars-rgb.svg[Logo,200,float=right]
-The Whole GPars Team <https://groups.google.com/forum/#!forum/gpars-users>
-v1.0, 2015-11-01
+= The GPars User Guide
+The Whole GPars Team <gpars-developers@googlegroups.com>
+v1.0, 2015-11-21
 :doctype: book
 :linkattrs:
 :linkcss:
@@ -10,33 +10,35 @@ v1.0, 2015-11-01
 :source-highlighter: coderay
 :docslink: http://www.gpars.org/guide/[GPars Docs]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
-:doctitle: Index to The User Guide 
-:leveloffset: +1
+:doctitle: The GPars User Guide 
 
-= User Guide Index
+image::../../images/gpars-rgb.svg[GPars Logo,320,align="center",link="./"]
 
 ''''
 
-include::introduction.adoc[]
+NOTE: To download this guide as a PDF - link:../guide/index.pdf[click here]
 
-include::getting_started.adoc[]
+include::Introduction.txt[]
 
-include::data_parallelism.adoc[]
+include::Getting_started.txt[]
 
-include::groovy_csp.adoc[]
+include::Data_parallelism.txt[]
 
-include::actors.adoc[]
+include::Groovy_csp.txt[]
 
-include::agents.adoc[]
+include::Actors.txt[]
 
-include::dataflow.adoc[]
+include::Agents.txt[]
 
-include::stm.adoc[]
+include::Dataflow.txt[]
 
-include::google_app_engine_integration.adoc[]
+include::Stm.txt[]
 
-include::tips.adoc[]
+include::Google_app_engine_integration.txt[]
 
-include::remoting.adoc[]
+include::Remoting.txt[]
 
-include::conclusion.adoc[]
+include::Tips.txt[]
+
+include::Conclusion.txt[]
+

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.3">
+<meta name="description" content="GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.">
+<meta name="author" content="The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;">
+<title>User Guide To Tips</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./coderay-asciidoctor.css">
+</head>
+<body class="book toc2 toc-right">
+<div id="header">
+<h1>User Guide To Tips</h1>
+<div class="details">
+<span id="author" class="author">The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;</span><br>
+<span id="revnumber">version 1.0,</span>
+<span id="revdate">2015-11-01</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_general_strong_gpars_strong_tips">General <strong>GPars</strong> Tips</a>
+<ul class="sectlevel2">
+<li><a href="#_grouping">Grouping</a></li>
+<li><a href="#__strong_java_strong_api"><strong>Java</strong> API</a></li>
+</ul>
+</li>
+<li><a href="#_performance">Performance</a>
+<ul class="sectlevel2">
+<li><a href="#_parallel_collections">Parallel Collections</a></li>
+<li><a href="#_actors">Actors</a></li>
+<li><a href="#__strong_agents_strong"><strong>Agents</strong></a></li>
+<li><a href="#_share_your_experience">Share Your Experience</a></li>
+</ul>
+</li>
+<li><a href="#_hosted_environment">Hosted Environment</a>
+<ul class="sectlevel2">
+<li><a href="#_shutdown">Shutdown</a></li>
+</ul>
+</li>
+<li><a href="#_compatibility">Compatibility</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_general_strong_gpars_strong_tips">General <strong>GPars</strong> Tips</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_grouping">Grouping</h3>
+<div class="paragraph">
+<p>High-level concurrency concepts, like <strong>Agents, Actors</strong> or <strong>Dataflow</strong> tasks and operators can be grouped around
+shared thread pools.  The <em>PGroup</em> class and its sub-classes represent convenient <strong>GPars</strong> wrappers around
+thread pools.  Objects created using the group&#8217;s factory methods will share the group&#8217;s thread pool.</p>
+</div>
+<div class="listingblock">
+<div class="title">A <strong>xxxPGroup</strong> Sample</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> group1 = <span class="keyword">new</span> DefaultPGroup()
+<span class="keyword">def</span> group2 = <span class="keyword">new</span> NonDaemonPGroup()
+
+group1.with {
+    task {...}
+    task {...}
+    <span class="keyword">def</span> op = operator(...) {...}
+    <span class="keyword">def</span> actor = actor{...}
+    <span class="keyword">def</span> anotherActor = group2.actor{...}  <span class="comment">//will belong to group2</span>
+    <span class="keyword">def</span> agent = safe(<span class="integer">0</span>)
+}</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Groups For Thread Pools</div>
+<div class="paragraph">
+<p>When customizing the thread pools for groups, consider using the existing <strong>GPars</strong> implementations - the
+<em>DefaultPool</em> or <em>ResizeablePool</em> classes.  Or you may wish to create your own implementation of the
+<em>groovyx.gpars.scheduler.Pool</em> interface to pass to the <em>DefaultPGroup</em> or <em>NonDaemonPGroup</em> constructors.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="__strong_java_strong_api"><strong>Java</strong> API</h3>
+<div class="paragraph">
+<p>Much of <strong>GPars</strong> functionality can be used from <strong>Java</strong> just as well as from <strong>Groovy</strong>. Checkout the
+<code>2.6 Java API - Using <strong>GPars</strong> from Java</code> section of our <code>User Guide</code>. Then experiment with the Maven-based stand-alone Java demo applications.</p>
+</div>
+<hr>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Take <strong>GPars</strong> with you wherever you go!
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_performance">Performance</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Your code in <strong>Groovy</strong> can be just as fast as code written in <strong>Java</strong>, <strong>Scala</strong> or any other programing language.
+This should not be surprising, since <strong>GPars</strong> is technically a solid tasty Java-made cake with a Groovy DSL
+frosting on it.</p>
+</div>
+<div class="paragraph">
+<p>Unlike <strong>Java</strong>, however, with <strong>GPars</strong>, as well as with other DSL-friendly languages, you are very likely to
+experience a useful code speed-up for free. This speed-up comes from a better and cleaner design of
+your application.</p>
+</div>
+<div class="paragraph">
+<p>Coding with a concurrency DSL will give you smaller code-base with code using the
+concurrency primitives as language constructs. So it&#8217;s much easier to build robust concurrent applications,
+identify potential bottle-necks or errors and then eliminate them.</p>
+</div>
+<div class="paragraph">
+<p>While this whole <code>User Guide</code> is describing how to use <strong>Groovy</strong> and <strong>GPars</strong> to create beautiful and robust
+concurrent code, we wanted to use some of these tips to highlight a few places where some code tuning or minor design
+compromises could give you interesting performance gains.</p>
+</div>
+<hr>
+<div class="sect2">
+<h3 id="_parallel_collections">Parallel Collections</h3>
+<div class="paragraph">
+<p>Methods like parallel collection processing, like <em>eachParallel()</em> , <em>collectParallel()</em> and such-like, use
+<em>Parallel Array</em> , an efficient tree-like data structure behind the scenes.  This data structure has to be
+built from the original collection each time you call any of the parallel collection methods.  Thus when
+chaining parallel method calls, you might consider using the <em>map/reduce</em> API instead or alternatively, use the
+<em>ParallelArray</em> API directly to avoid the <em>Parallel Array</em> creation overhead.</p>
+</div>
+<div class="listingblock">
+<div class="title">A Sample of Parallel Finds</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+5
+6
+</pre></td>
+  <td class="code"><pre><span class="keyword">import</span> <span class="include">groovyx.gpars.GParsPool</span>;
+GParsPool.withPool {
+    people.findAllParallel{<span class="local-variable">it</span>.isMale()}.collectParallel{<span class="local-variable">it</span>.name}.any{<span class="local-variable">it</span> == <span class="string"><span class="delimiter">'</span><span class="content">Joe</span><span class="delimiter">'</span></span>}
+    people.parallel.filter{<span class="local-variable">it</span>.isMale()}.map{<span class="local-variable">it</span>.name}.filter{<span class="local-variable">it</span> == <span class="string"><span class="delimiter">'</span><span class="content">Joe</span><span class="delimiter">'</span></span>}.size() &gt; <span class="integer">0</span>
+    people.parallelArray.withFilter({<span class="local-variable">it</span>.isMale()} <span class="keyword">as</span> <span class="predefined-type">Predicate</span>).withMapping({<span class="local-variable">it</span>.name} <span class="keyword">as</span> Mapper).any{<span class="local-variable">it</span> == <span class="string"><span class="delimiter">'</span><span class="content">Joe</span><span class="delimiter">'</span></span>} != <span class="predefined-constant">null</span>
+}</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In many scenarios, changing the pool size from the default value can give you performance benefits.
+Especially if your tasks perform IO operations, such as file or database access, networking, etc. So
+increasing the number of threads in the pool is likely to help performance.</p>
+</div>
+<div class="listingblock">
+<div class="title">To Boost Performance</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+</pre></td>
+  <td class="code"><pre><span class="keyword">import</span> <span class="include">groovyx.gpars.GParsPool</span>;
+GParsPool.withPool(<span class="integer">50</span>) {
+    ...
+}</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Since the closures you provide to the parallel collection processing methods are executed frequently,
+and concurrently, you may further slightly benefit from turning them into Java.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_actors">Actors</h3>
+<div class="paragraph">
+<p><strong>GPars</strong> actors are fast. <em>DynamicDispatchActors</em> and <em>ReactiveActors</em> are about twice as fast as the
+<em>DefaultActors</em> , since they don&#8217;t have to maintain an implicit state between subsequent message
+arrivals. The <em>DefaultActors</em> are, in fact, on a par in performance with actors from <strong>Scala</strong> , which you rarely hear of as being slow.</p>
+</div>
+<hr>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If top performance is what you&#8217;re looking for then identify patterns in your code
+</td>
+</tr>
+</table>
+</div>
+<hr>
+<div class="paragraph">
+<p>If top performance is what you&#8217;re looking for, a good start is to identify the following patterns in your actor code:</p>
+</div>
+<div class="listingblock">
+<div class="title">A Pattern To Look For</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td>
+  <td class="code"><pre>actor {
+    loop {
+        react {msg -&gt;
+            <span class="keyword">switch</span>(msg) {
+                <span class="keyword">case</span> <span class="predefined-type">String</span>:...
+                case <span class="predefined-type">Integer</span>:...
+            }
+        }
+    }
+}</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">A Better Replacement : <em>DynamicDispatchActor</em> :</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+</pre></td>
+  <td class="code"><pre>messageHandler {
+    when{<span class="predefined-type">String</span> msg -&gt; ...}
+    when{<span class="predefined-type">Integer</span> msg -&gt; ...}
+}</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <em>loop</em> and <em>react</em> methods are rather costly to call.</p>
+</div>
+<div class="paragraph">
+<p>Defining a <em>DynamicDispatchActor</em> or <em>ReactiveActor</em> as classes instead of using the <em>messageHandler</em> and
+<em>reactor</em> factory methods will also give you some more speed:</p>
+</div>
+<div class="listingblock">
+<div class="title">A Dynamic Sample</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td>
+  <td class="code"><pre><span class="type">class</span> <span class="class">MyHandler</span> <span class="directive">extends</span> DynamicDispatchActor {
+    <span class="directive">public</span> <span class="type">void</span> handleMessage(<span class="predefined-type">String</span> msg) {
+        ...
+    }
+
+    <span class="directive">public</span> <span class="type">void</span> handleMessage(<span class="predefined-type">Integer</span> msg) {
+        ...
+    }
+}</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now, convert that <em>MyHandler</em> class to Java to squeeze the last bit of performance from <strong>GPars</strong>.</p>
+</div>
+<hr>
+<div class="sect3">
+<h4 id="_pool_adjustment">Pool Adjustment</h4>
+<div class="paragraph">
+<p><strong>GPars</strong> allows you to group actors around thread pools, giving you the freedom to organize actors any way you
+like.  It&#8217;s always worthwhile to experiment with the actor pool size and type.</p>
+</div>
+<div class="paragraph">
+<p><em>FJPool</em> usually gives better characteristics that <em>DefaultPool</em> , but seems to be more sensitive to the number of threads in the
+pool.  Sometimes using a <em>ResizeablePool</em> or <em>ResizeableFJPool</em> could help performance by automatic
+eliminating unneeded threads.</p>
+</div>
+<div class="listingblock">
+<div class="title">A Sample</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+5
+6
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> attackerGroup = <span class="keyword">new</span> DefaultPGroup(<span class="keyword">new</span> ResizeableFJPool(<span class="integer">10</span>))
+<span class="keyword">def</span> defenderGroup = <span class="keyword">new</span> DefaultPGroup(<span class="keyword">new</span> DefaultPool(<span class="integer">5</span>))
+
+<span class="keyword">def</span> attacker = attackerGroup.actor {...}
+<span class="keyword">def</span> defender = defenderGroup.messageHandler {...}
+...</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect2">
+<h3 id="__strong_agents_strong"><strong>Agents</strong></h3>
+<div class="paragraph">
+<p><strong>GPars Agents</strong> are even a bit faster in processing messages than <strong>actors</strong>. The advice to group <strong>agents</strong> wisely
+around thread pools and then tune the pool sizes and types applies to <strong>agents</strong> as well as <strong>actors</strong>.  With <strong>agents</strong>,
+you may also benefit from submitting Java-written closures as messages.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_share_your_experience">Share Your Experience</h3>
+<div class="paragraph">
+<p>The more we hear about <strong>GPars</strong> uses in the wild, the better we can adapt it for the future. Let us know how you
+use <strong>GPars</strong> and how it performs.  Send us your benchmarks, performance comparisons or profiling reports to
+help us tune <strong>GPars</strong> for you. See <a href="../User_Voices.html">this page for more details.</a></p>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_hosted_environment">Hosted Environment</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Hosted environments, such as <em>Google App Engine</em>, can impose additional restrictions on threading. For <strong>GPars</strong> to better
+integrate with these environments, the default thread factory and timer factory can be customized.</p>
+</div>
+<hr>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Hosted environments like <em>Google App Engine</em> impose restrictions on threading
+</td>
+</tr>
+</table>
+</div>
+<hr>
+<div class="paragraph">
+<p>The <strong>GPars_Config</strong> class provides static initialization methods allowing third parties to register their own
+implementations of the <em>PoolFactory</em> and <em>TimerFactory</em> interfaces. These can then be used to create default pools and timers for <strong>Actors</strong>, <strong>Dataflow</strong> and <strong>PGroups</strong>.</p>
+</div>
+<div class="listingblock">
+<div class="title">Some Static Methods To Initialize Objects</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td>
+  <td class="code"><pre><span class="directive">public</span> <span class="directive">final</span> <span class="type">class</span> <span class="class">GParsConfig</span> {
+    <span class="directive">private</span> <span class="directive">static</span> <span class="directive">volatile</span> PoolFactory poolFactory;
+    <span class="directive">private</span> <span class="directive">static</span> <span class="directive">volatile</span> TimerFactory timerFactory;
+
+    <span class="directive">public</span> <span class="directive">static</span> <span class="type">void</span> setPoolFactory(<span class="directive">final</span> PoolFactory pool)
+
+    <span class="directive">public</span> <span class="directive">static</span> PoolFactory getPoolFactory()
+
+    <span class="directive">public</span> <span class="directive">static</span> Pool retrieveDefaultPool()
+
+    <span class="directive">public</span> <span class="directive">static</span> <span class="type">void</span> setTimerFactory(<span class="directive">final</span> TimerFactory timerFactory)
+
+    <span class="directive">public</span> <span class="directive">static</span> TimerFactory getTimerFactory()
+
+    <span class="directive">public</span> <span class="directive">static</span> GeneralTimer retrieveDefaultTimer(<span class="directive">final</span> <span class="predefined-type">String</span> name, <span class="directive">final</span> <span class="type">boolean</span> daemon)
+
+    <span class="directive">public</span> <span class="directive">static</span> <span class="type">void</span> shutdown()
+}</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The custom factories should be registered immediately after application startup in order for <strong>Actors</strong> and
+<strong>Dataflow</strong> to be able to use them for their default groups.</p>
+</div>
+<hr>
+<div class="sect2">
+<h3 id="_shutdown">Shutdown</h3>
+<div class="paragraph">
+<p>The <em>GParsConfig.shutdown()</em> method can be used in managed environments to properly shutdown all
+asynchronously running timers and free up the memory from all thread-local variables.</p>
+</div>
+<div class="paragraph">
+<p>After the call to this method, the <strong>GPars</strong> library can no longer provide the declared services.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_compatibility">Compatibility</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Some further compatibility issues can occur when running <strong>GPars</strong> in a hosted environment. The most
+noticeable one is probably the lack of <strong>ForkJoinThreadPool</strong> support in <strong>GAE</strong>. Functionality such as <strong>Fork/Join</strong>
+and <strong>GParsPool</strong> may  not be available on some services as a result. However, <strong>GParsExecutorsPool, Dataflow,
+Actors, Agents</strong> and <strong>Stm</strong> should work normally even when using managed non-Java SE thread pools.</p>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 1.0<br>
+Last updated 2015-11-13 15:48:18 +01:00
+</div>
+</div>
+</body>
+</html>

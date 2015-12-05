@@ -1,5 +1,5 @@
 = GPars - Groovy Parallel Systems
-Russell Winder <russel@winder.org.uk>
+The Whole GPars Team <gpars-developers@googlegroups.com>
 v1.0, 2015-10-01
 :linkattrs:
 :linkcss:
@@ -21,4 +21,4 @@ how to setup necessary dependencies and the included Java classes will give you 
 
 Get the http://gpars.org/download/1.1.0/gpars-mvn-java-demo-1.1.0.zip[Sample Pure Java Project].
 
-You may also check out the http://www.gpars.org/guide/guide/gettingStarted.html#gettingStarted_JavaAPI-usingGParsFromJava[Java APIsection] in the http://www.gpars.org/guide/[User Guide] as well as the many code examples of *GPars* use.
+You may also check out the http://www.gpars.org/guide/guide/gettingStarted.html#gettingStarted_JavaAPI-usingGParsFromJava[Java APIsection] in the link:./guide[User Guide] as well as the many code examples of *GPars* use.

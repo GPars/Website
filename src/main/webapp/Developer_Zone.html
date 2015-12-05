@@ -4,37 +4,35 @@
 <meta charset="UTF-8">
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 1.5.1">
+<meta name="generator" content="Asciidoctor 1.5.3">
 <meta name="description" content="GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.">
-<meta name="author" content="Russell Winder">
+<meta name="author" content="The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;">
 <title>Developer Zone</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic|Noto+Serif:400,400italic,700,700italic|Droid+Sans+Mono:400">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <link rel="stylesheet" href="./asciidoctor.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="./coderay-asciidoctor.css">
 </head>
-<body class="article toc2 toc-left">
+<body class="book toc2 toc-right">
 <div id="header">
 <h1>Developer Zone</h1>
 <div class="details">
-<span id="author" class="author">Russell Winder</span><br>
-<span id="email" class="email"><a href="mailto:russel@winder.org.uk">russel@winder.org.uk</a></span><br>
+<span id="author" class="author">The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;</span><br>
 <span id="revnumber">version 1.0,</span>
 <span id="revdate">2015-10-01</span>
 </div>
 <div id="toc" class="toc2">
-<div id="toctitle">Document Index</div>
+<div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_developer_zone">Developer Zone</a>
 <ul class="sectlevel2">
 <li><a href="#_information_for_strong_gpars_strong_developers">Information for <strong>GPars</strong> Developers</a></li>
-</ul>
-</li>
-<li><a href="#_build_info">Build Info</a></li>
 <li><a href="#_issue_tracker">Issue Tracker</a></li>
 <li><a href="#_source_repository">Source Repository</a></li>
 <li><a href="#_mirror_repository">Mirror Repository</a></li>
 <li><a href="#_personal_clones">Personal Clones</a></li>
+</ul>
+</li>
 <li><a href="#_building_the_project">Building The Project</a></li>
 <li><a href="#_ide_integration">IDE integration</a>
 <ul class="sectlevel2">
@@ -73,13 +71,8 @@
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_information_for_strong_gpars_strong_developers">Information for <strong>GPars</strong> Developers</h3>
-
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_build_info">Build Info</h2>
-<div class="sectionbody">
+<div class="sect3">
+<h4 id="_build_info">Build Info</h4>
 <div class="paragraph">
 <p>The continuous integration build can be found under:</p>
 </div>
@@ -122,45 +115,40 @@
 </table>
 </div>
 </div>
-<div class="sect1">
-<h2 id="_issue_tracker">Issue Tracker</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_issue_tracker">Issue Tracker</h3>
 <div class="paragraph">
 <p>The JIRA issue tracker: <a href="http://jira.codehaus.org/browse/GPARS" class="bare">http://jira.codehaus.org/browse/GPARS</a> - no longer works.</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_source_repository">Source Repository</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_source_repository">Source Repository</h3>
 <div class="paragraph">
 <p>The Git repository held at GitHub is the official mainline:</p>
 </div>
 <div class="paragraph">
-<p>To work on the codebase please fork the repository on GitHub in the usual GitHub workflow way. Keeping the master branch as a mirror of the mainline, working on a feature branch and then sending in pull requests based on that feature branch seems to be the best way of working. Please refer to the Git and GitHub documentation for any further details on using Git and GitHub.</p>
+<p>To work on the codebase please fork the repository on GitHub in the usual GitHub workflow way. Keeping the master branch as a mirror of the mainline, working on a feature branch and then sending in pull requests based on that feature branch seems to be the best way of working.
+Please refer to the Git and GitHub documentation for any further details on using Git and GitHub.</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_mirror_repository">Mirror Repository</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_mirror_repository">Mirror Repository</h3>
 <div class="paragraph">
-<p>A repository that is a mirror of the GitHub repository was maintained at Codehaus (before they closed) in order to continue integration with various continuous integration servers (over time more of this will migrate to GitHub). Also this Codehaus project was the location of the issue tracker and the route for artifacts to get into the Maven repository.</p>
+<p>A repository that is a mirror of the GitHub repository was maintained at Codehaus (before they closed) in order to continue integration with various continuous integration servers (over time more of this will migrate to GitHub).
+Also this Codehaus project was the location of the issue tracker and the route for artifacts to get into the Maven repository.</p>
 </div>
 <div class="paragraph">
 <p>You should never need to clone this repository, but for completeness, the command:</p>
 </div>
 <div class="paragraph">
-<p>git clone</p>
+<p><code>git clone</code></p>
 </div>
 <div class="paragraph">
-<p>creates a clone of the repository in the subdirectory GPars. The above URL gives read-only access to the repository. Those people with write access to the repository should use the URL:</p>
+<p>creates a clone of the repository in the subdirectory GPars. The above URL gives read-only access to the repository.</p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_personal_clones">Personal Clones</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_personal_clones">Personal Clones</h3>
 <div class="paragraph">
 <p>Project committers and contributors typically keep their personal clones of the main repository for feature branches:</p>
 </div>
@@ -175,6 +163,7 @@
 </ul>
 </div>
 <hr>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -200,11 +189,13 @@
 <div class="sect2">
 <h3 id="_the_default_intellij_idea_project_file">The Default IntelliJ IDEA Project File</h3>
 <div class="paragraph">
-<p><strong>GPars</strong> holds a default IDEA project file in the root of the project and is named <em>GPars_IDEAX.ipr</em>. This project serves as a master copy for the
-generated project files (see above) and also to configure our Continuous Integraion. If you, for some reason, decide to use the default project file, you need to go through a few configuraion steps first.</p>
+<p><strong>GPars</strong> holds a default IDEA project file in the root of the project and is named <em>GPars_IDEAX.ipr</em>.
+This project serves as a master copy for the generated project files (see above) and also to configure our Continuous Integraion.
+If you, for some reason, decide to use the default project file, you need to go through a few configuraion steps first.</p>
 </div>
 <div class="paragraph">
-<p>The first time you open the project, you will be prompted to enter a <em>PROJECT_JDK_NAME</em> and a <em>MAVEN_REPOSITORY</em> variable. These are IDEA variables and not system variables. These results are stored in your home directory.</p>
+<p>The first time you open the project, you will be prompted to enter a <em>PROJECT_JDK_NAME</em> and a <em>MAVEN_REPOSITORY</em> variable. These are IDEA variables and not system variables.
+These results are stored in your home directory.</p>
 </div>
 <div class="paragraph">
 <p>Each developer can have a unique value. For example, your <em>MAVEN_REPOSITORY</em> may be a path on your disk, and <em>PROJECT_JDK_NAME</em> can be any string value, e.g. "1.6". This is the name of the Global JDK defined defined within IDEA.</p>
@@ -213,8 +204,8 @@ generated project files (see above) and also to configure our Continuous Integra
 <p>You can setup a global JDK in IDEA under <code>File&#8594;Project Structure&#8594;SDKs</code>. There is a little text box to fill in where you give the JDK a name. Whatever you typed into this textbox is what needs to be typed into the IDEA Environment Variable screen for PROJECT_JDK_NAME.</p>
 </div>
 <div class="paragraph">
-<p>The <em>MAVEN_REPOSITORY</em> variable should point to your local maven repository, which IDEA will be using to keep downloadable artifacts of third-party
-libraries that are needed to build and run <em>GPars</em>. You need to populate the repo first for IDEA to find the necessary artifacts. The best way to do so is to open the <em>/java-demo/pom.xml</em> file (provided Maven support is enabled in your IDEA installation) and ask IDEA to <em>Import</em> <em>changes</em>.</p>
+<p>The <em>MAVEN_REPOSITORY</em> variable should point to your local maven repository, which IDEA will be using to keep downloadable artifacts of third-party libraries that are needed to build and run <em>GPars</em>.
+You need to populate the repo first for IDEA to find the necessary artifacts. The best way to do so is to open the <em>/java-demo/pom.xml</em> file (provided Maven support is enabled in your IDEA installation) and ask IDEA to <em>Import</em> <em>changes</em>.</p>
 </div>
 <div class="paragraph">
 <p>Alternatively you can use the <em>Refresh</em> button in the Maven tool window.</p>
@@ -262,8 +253,9 @@ libraries that are needed to build and run <em>GPars</em>. You need to populate 
 <p>Notice the <strong>--no-ff</strong> flag when merging.</p>
 </div>
 <div class="paragraph">
-<p>Note that this workflow is applicable to all people whether they are committing authors or not. It&#8217;s just that non-committing authors have to
-convince a committing author to do the commit. A consequence is that people should not be advised to submit patches on JIRA issues, but instead to specify where their feature branch is so it can be pulled. Obviously patches work as well but the whole point is for everyone to publish their feature branches so others can review them in a VCS context.</p>
+<p>Note that this workflow is applicable to all people whether they are committing authors or not. It&#8217;s just that non-committing authors have to convince a committing author to do the commit.
+A consequence is that people should not be advised to submit patches on JIRA issues, but instead to specify where their feature branch is so it can be pulled.
+Obviously patches work as well but the whole point is for everyone to publish their feature branches so others can review them in a VCS context.</p>
 </div>
 <div class="sect2">
 <h3 id="_simplified_workflow">Simplified workflow</h3>
@@ -273,6 +265,7 @@ convince a committing author to do the commit. A consequence is that people shou
 <div class="paragraph">
 <p>Discretion on the part of committing developers is required here. (<em>git pull; fix; commit; git push</em>) or (<em>git pull; git checkout -b myFix; fix; commit; git checkout master; git pull; git merge --no-ff myFix;git push</em>)</p>
 </div>
+<hr>
 </div>
 </div>
 </div>
@@ -316,6 +309,7 @@ convince a committing author to do the commit. A consequence is that people shou
 </li>
 </ol>
 </div>
+<hr>
 </div>
 </div>
 <div class="sect1">
@@ -418,7 +412,7 @@ convince a committing author to do the commit. A consequence is that people shou
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2015-10-27 08:53:28 CET
+Last updated 2015-11-17 21:32:21 +01:00
 </div>
 </div>
 </body>

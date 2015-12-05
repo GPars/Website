@@ -1,5 +1,5 @@
 = GPars - Groovy Parallel Systems
-Russell Winder <russel@winder.org.uk>
+The Whole GPars Team <gpars-developers@googlegroups.com>
 v1.0, 2015-10-01
 :linkattrs:
 :linkcss:
@@ -9,8 +9,7 @@ v1.0, 2015-10-01
 :source-highlighter: coderay
 :docslink: http://www.gpars.org/guide/[GPars Docs]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
-:doctitle: Demos
-
+:doctitle: Sample Demos
 
 == Demos
 

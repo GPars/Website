@@ -1,3 +1,6 @@
+// utility to convert markdown formatted .md text files into asciidoctor .adoc formats; 
+// not a full-fledged translator, just the most common .md syntax; so a file named abc.md becomes abc.adoc in same folder
+ 
 import static groovy.io.FileType.FILES
 
 int count = 0;
@@ -28,6 +31,8 @@ new File('.').eachFileRecurse(FILES) {
             if (i>-1) { fnoa=fnoa.substring(0,i)+"/asciidocs"+fnoa.substring(i); }
             def yn = new File(fnoa).exists();
             //if (count<4) {println "i=$i yn=${yn} fn="+fn+" ="+fno;}
+
+			// convert first 61 .md files as a test, bump 61 up to do more files
             count+=1;
             if (count<61 && !yn)
             {

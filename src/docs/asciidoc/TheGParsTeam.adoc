@@ -1,5 +1,5 @@
 = GPars - Groovy Parallel Systems
-The Whole GPars Team
+The Whole GPars Team <gpars-developers@googlegroups.com>
 v1.0, 2015-11-04
 :linkattrs:
 :linkcss:
@@ -10,19 +10,23 @@ v1.0, 2015-11-04
 :docslink: http://www.gpars.org/guide/[GPars Docs]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: The GPars Team
+:imagesdir: ./images
 
-
-TIP: Team members with LinkedIn profiles may want to add their status to the http://www.linkedin.com/companies/gpars-codehaus[*GPars* LinkedIn page].
+== Need A GPars Conference Speaker ? 
 
 ''''
 
-== Václav Pech 
+NOTE: image:Lanyrd.png[link="http://lanyrd.com/speakers/gpars/",title="Click here for your GPars speaker"] -> Look for us here at http://lanyrd.com/speakers/gpars/[*Lanyrd*.com.] 
 
-image:images/Vaclav.png[Václav Pech,role="related thumb left"] A passionate programmer and a concurrency enthusiast, focusing on parallel computing, distributed systems and domain specific languages. He is a senior software developer and a technology evangelist at http://www.jetbrains.com/[JetBrains].
+== Our Team
 
-+++
+=== Václav Pech 
+
+image:Confess2015.png[MPS,200,title="Meta Programming Solutions",role="related thumb right", link="http://2015.con-fess.com/ZW98zvVz/ConFESS_2015_Day1_1600_R1_Vaclav_Pech_JetBrains_MPS_confess.mp4"]  image:vaclav2.png[Václav Pech,role="related thumb left"] A passionate programmer and a concurrency enthusiast, focusing on parallel computing, distributed systems and domain specific languages. He is a senior software developer and a technology evangelist at http://www.jetbrains.com/[JetBrains].
+
+++++
 <a target="_blank" href="https://www.openhub.net/accounts/venca?ref=sample"><img alt='Open Hub profile for Václav Pech' border='0' height='35' src='https://www.openhub.net/accounts/venca/widgets/account_detailed?format=gif&amp;ref=sample' width='230'></a>
-+++
+++++
 
 
 .Social Media
@@ -30,27 +34,27 @@ image:images/Vaclav.png[Václav Pech,role="related thumb left"] A passionate pro
 |===
 | Facebook | Twitter | Linked In | Google+ | Blog | Website | Email 
  
-^| image:images/facebook.png[title="Václav Pech has not joined"]
-^| image:images/twitter.png[link="https://twitter.com/vaclav_pech"]
-^| image:images/linkedin.png[title="Václav Pech has not joined"]
-^| image:images/google.png[title="Václav Pech has not joined"]
-^| image:images/blog.png[title="Václav Pech",link="http://www.jroller.com/vaclav/"]
-^| image:images/website.png[title="Website",link="http://www.vaclavpech.eu/"]
-^| image:images/email.png[link="mailto:vaclav@vaclavpech.eu",title="email for Václav Pech"]
+^| 
+^| image:twitter.png[link="https://twitter.com/vaclav_pech"]
+^| image:linkedin.png[title="Václav Pech",link="https://cz.linkedin.com/in/vaclavpech"]
+^| 
+^| image:blog.png[title="Václav Pech",link="http://www.jroller.com/vaclav/"]
+^| image:website.png[title="Website",link="http://www.vaclavpech.eu/"]
+^| image:email.png[link="mailto:vaclav@vaclavpech.eu",title="email for Václav Pech"]
 |=== 
 
 
 ''''
 
-== Dierk König
+=== Dierk König
 
-image:images/Dierk.png[Dierk König,role="related thumb left"] Fellow at http://www.canoo.com[Canoo Engineering AG].
+image:dierk.png[Dierk König,role="related thumb left"] Fellow at http://www.canoo.com[Canoo Engineering AG]. image:gina2.jpg[GINA/2,150,title="Groovy In Action/2",role="related thumb right",link="https://www.manning.com/books/groovy-in-action-second-edition?a_bid=8ade3b0e&a_aid=regina"]
 
 Lead author of http://groovy.canoo.com/gina[Groovy in Action], which in the http://www.manning.com/koenig2[second edition] also features a chapter on *GPars*.
 
-+++
+++++
 <a target="_blank" href="https://www.openhub.net/accounts/mittie?ref=sample"><img alt='Open Hub profile for Dierk König' border='0' height='35' src='https://www.openhub.net/accounts/mittie/widgets/account_detailed?format=gif&amp;ref=sample' width='230'></a>
-+++
+++++
 
 
 .Social Media
@@ -58,73 +62,73 @@ Lead author of http://groovy.canoo.com/gina[Groovy in Action], which in the http
 |===
 | Facebook | Twitter | Linked In | Google+ | Blog | Website | Email 
  
-^| image:images/facebook.png[title="Dierk König", link="http://www.facebook.com/profile.php?id=615327618"]
-^| image:images/twitter.png[title="Dierk König", link="https://twitter.com/mittie"]
-^| image:images/linkedin.png[title="Dierk König", link="http://www.linkedin.com/in/mittie"]
-^| image:images/google.png[title="Dierk König has not joined"]
-^| image:images/blog.png[title="Dierk König has no known blog"]
-^| image:images/website.png[title="Dierk König has no known website"]
-^| image:images/email.png[title="Dierk König has no known email"]
+^| image:facebook.png[title="Dierk König", link="http://www.facebook.com/profile.php?id=615327618"]
+^| image:twitter.png[title="Dierk König", link="https://twitter.com/mittie"]
+^| image:linkedin.png[title="Dierk König", link="http://www.linkedin.com/in/mittie"]
+^| 
+^| 
+^| 
+^| 
 |=== 
 
 
 ''''
 
-== Russel Winder
+=== Russel Winder
 
-image:images/Russel.png[Russel Winder,role="related thumb left"] Independent consultant, analyst, author, expert witness, and trainer 
+image:devjava.png[Developing Java,200,title="Developing Java Software",role="related thumb right", link="http://www.amazon.co.uk/Developing-Java-Software-Russel-Winder/dp/0470090251/"] image:russel.png[Russel Winder,role="related thumb left"] Independent consultant, analyst, author, expert witness, and trainer 
 
 Director of http://www.itzinteractive.com[It'z Interactive Ltd]
 
 Partner of http://www.concertant.com[Concertant LLP] and http://www.concertant.com/blog[The Concertant Blog].
 
-+++
+++++
 <a target="_blank" href="https://www.openhub.net/accounts/russel?ref=sample"><img alt='Open Hub profile for Russel Winder' border='0' height='35' src='https://www.openhub.net/accounts/russel/widgets/account_detailed?format=gif&amp;ref=sample' width='230'></a>
-+++
+++++
 
 .Social Media
 [cols="7*"]
 |===
 | Facebook | Twitter | Linked In | Google+ | Blog | Website | Email 
  
-^| image:images/facebook.png[title="Russel Winder", link="https://www.facebook.com/russel.winder"]
-^| image:images/twitter.png[title="Russel Winder", link="https://twitter.com/russel_winder"]
-^| image:images/linkedin.png[title="Russel Winder", link="http://www.linkedin.com/in/russelwinder"]
-^| image:images/google.png[title="Russel Winder has not joined"]
-^| image:images/blog.png[title="Russel Winder has no known blog"]
-^| image:images/website.png[title="Russel Winder's website", link="http://www.russel.org.uk"]
-^| image:images/email.png[title="Russel Winder has no known email"]
+^| image:facebook.png[title="Russel Winder", link="https://www.facebook.com/russel.winder"]
+^| image:twitter.png[title="Russel Winder", link="https://twitter.com/russel_winder"]
+^| image:linkedin.png[title="Russel Winder", link="http://www.linkedin.com/in/russelwinder"]
+^| 
+^| 
+^| image:website.png[title="Russel Winder's website", link="http://www.russel.org.uk"]
+^| image:email.png[title="email for Russel Winder", link="mailto:russel@winder.org.uk"]
 |=== 
 
 ''''
 
-== Paul King
+=== Paul King
 
-image:images/King.png[Paul King,role="related thumb left"] Australian software-developer, craftsman, computer-scientist, author, speaker, trainer, mentor, manager, innovator, committer
+image:gina2.jpg[GINA/2,150,title="Groovy In Action/2",role="related thumb right",link="https://www.manning.com/books/groovy-in-action-second-edition?a_bid=8ade3b0e&a_aid=regina"]  image:paul.png[Paul King,role="related thumb left"] Australian software-developer, craftsman, computer-scientist, author, speaker, trainer, mentor, manager, innovator, committer, contributing author to *Groovy-In-Action* 
 
-+++
+++++
 <a target="_blank" href="https://www.openhub.net/accounts/paulk_asert?ref=sample"><img alt='Open Hub profile for Paul King' border='0' height='35' src='https://www.openhub.net/accounts/paulk_asert/widgets/account_detailed?format=gif&amp;ref=sample' width='230'></a>
-+++
+++++
 
 .Social Media
 [cols="7*"]
 |===
 | Facebook | Twitter | Linked In | Google+ | Blog | Website | Email 
  
-^| image:images/facebook.png[title="Paul king", link="https://www.facebook.com/paul.king.asert"]
-^| image:images/twitter.png[title="Paul King", link="https://twitter.com/paulk_asert"]
-^| image:images/linkedin.png[title="Paul King has not joined"]
-^| image:images/google.png[title="Paul King has not joined"]
-^| image:images/blog.png[title="Paul King has no known blog"]
-^| image:images/website.png[title="Paul King has no known website"]
-^| image:images/email.png[title="Paul King has no known email"]
+^| image:facebook.png[title="Paul king", link="https://www.facebook.com/paul.king.asert"]
+^| image:twitter.png[title="Paul King @paulk_asert", link="https://twitter.com/paulk_asert"]
+^| image:linkedin.png[title="Paul King", link="https://au.linkedin.com/in/paulwilliamking"]
+^| image:google.png[title="Paul King's GitHub", link="https://github.com/paulk-asert"]
+^| 
+^| image:website.png[title="Paul King's website", link="http://www.asert.com.au"]
+^| image:email.png[title="Paul King email", link="mailto:paulk@asert.com.au"]
 |=== 
 
 ''''
 
-== Alex Tkachman
+=== Alex Tkachman
 
-image:images/Tkachman.png[Alex Tkachman,role="related thumb left"]
+image:alex.png[Alex Tkachman,role="related thumb left"]
 
 +++<br />+++
 
@@ -133,18 +137,39 @@ image:images/Tkachman.png[Alex Tkachman,role="related thumb left"]
 |===
 | Facebook | Twitter | Linked In | Google+ | Blog | Website | Email 
  
-^| image:images/facebook.png[title="Alex Tkachman", link="https://www.facebook.com/alex.tkachman"]
-^| image:images/twitter.png[title="Alex Tkachman", link="https://twitter.com/alextkachman"]
-^| image:images/linkedin.png[title="Alex Tkachman", link="http://www.linkedin.com/in/alextkachman"]
-^| image:images/google.png[title="Alex Tkachman", link="https://plus.google.com/113183999235628738153/posts"]
-^| image:images/blog.png[title="Alex Tkachman has no known blog"]
-^| image:images/website.png[title="Alex Tkachman has no known website"]
-^| image:images/email.png[title="Alex Tkachman has no known email"]
+^| image:facebook.png[title="Alex Tkachman", link="https://www.facebook.com/alex.tkachman"]
+^| image:twitter.png[title="Alex Tkachman", link="https://twitter.com/alextkachman"]
+^| image:linkedin.png[title="Alex Tkachman", link="http://www.linkedin.com/in/alextkachman"]
+^| image:google.png[title="Alex Tkachman", link="https://plus.google.com/113183999235628738153/posts"]
+^| 
+^| 
+^| 
 |=== 
 
 ''''
 
-== Rafał Sławik
+=== Jon Kerridge
+
+image:concurrency.png[Concurrency,150,title="Using Concurrency and Parallelism Effectively",role="related thumb right",link="http://bookboon.com/en/using-concurrency-and-parallelism-effectively-i-ebook"]  image:jon2.jpg[Jon Kerridge,role="related thumb left"] Professor, Faculty of Engineering, Computing & Creative Industries , School of Computing, Software Engineering, Edinburgh Napier University, Edinburgh, Scotland EH10 5DT
+
+
+.Social Media
+[cols="7*"]
+|===
+| Facebook | Twitter | Linked In | Google+ | Blog | Website | Email 
+ 
+^| 
+^| 
+^| 
+^| 
+^| 
+^| 
+^| image:email.png[title="Jon Kerridge email", link="mailto:j.kerridge@napier.ac.uk"]
+|=== 
+
+''''
+
+=== Rafał Sławik
 
 Student, Google Summer of Code '14 participant
 

@@ -1,0 +1,21 @@
+''''
+
+image::../../images/divider.png[divider,436,align="center"]
+
+== User Guide To The Conclusion
+
+''''
+
+NOTE: This was quite a wild ride, wasn't it? 
+
+''''
+
+Now, after reading this *User Guide*, you're certainly ready to build fast, robust, reliable and concurrent applications.  
+
+You've seen that there are many concepts you can choose from and each has its own areas of applicability. The ability to pick the right concept to apply is key to being a successful developer.
+
+If you feel you can do this with *GPars*, the mission of this *User Guide* has been accomplished.
+
+TIP: Now, go ahead, use *GPars* and have fun!
+
+''''
