@@ -1,0 +1,201 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<title>groovyx.gpars.actor (org.codehaus.gpars)</title>
+<META NAME="keywords" CONTENT="groovyx.gpars.actor package">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../stylesheet.css" TITLE="Style">
+<link href="../../../groovy.ico" type="image/x-icon" rel="shortcut icon">
+<link href="../../../groovy.ico" type="image/x-icon" rel="icon">
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    parent.document.title="groovyx.gpars.actor (org.codehaus.gpars)";
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</head>
+
+<body BGCOLOR="white" onload="windowTitle();">
+<hr>
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<a name="navbar_top"><!-- --></a>
+<table summary="" width="100%" border="0" cellpadding="1" cellspacing="0">
+<tbody><tr>
+<td colspan="2" class="NavBarCell1" bgcolor="#eeeeff">
+<a name="navbar_top_firstrow"><!-- --></a>
+<table summary="" border="0" cellpadding="0" cellspacing="3">
+  <tbody><tr valign="top" align="center">
+  <td class="NavBarCell1" bgcolor="#eeeeff">    <a href="../../../overview-summary.html"><font class="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td>
+  <td class="NavBarCell1Rev" bgcolor="#ffffff"> &nbsp;<font class="NavBarFont1Rev"><b>Package</b></font>&nbsp;</td>
+  <td class="NavBarCell1" bgcolor="#eeeeff">    <font class="NavBarFont1">Class</font>&nbsp;</td>
+  <!--
+  <td class="NavBarCell1" bgcolor="#eeeeff">    <a href="overview-tree.html"><font class="NavBarFont1"><b>Tree</b></font></a>&nbsp;</td>
+  -->
+  <td class="NavBarCell1" bgcolor="#eeeeff">    <a href="../../../deprecated-list.html"><font class="NavBarFont1"><b>Deprecated</b></font></a>&nbsp;</td>
+  <td class="NavBarCell1" bgcolor="#eeeeff">    <a href="../../../index-all.html"><font class="NavBarFont1"><b>Index</b></font></a>&nbsp;</td>
+  <td class="NavBarCell1" bgcolor="#eeeeff">    <a href="../../../help-doc.html"><font class="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+  </tr>
+</tbody></table>
+</td>
+<td rowspan="3" valign="top" align="right"><em>
+    <b>org.codehaus.gpars</b>
+</em>
+</td>
+</tr>
+
+<tr>
+<td class="NavBarCell2" bgcolor="white"><font size="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</font></td>
+<td class="NavBarCell2" bgcolor="white"><font size="-2">
+  <a href="../../../index.html?groovyx/gpars/actor/package-summary.html" target="_top"><b>FRAMES</b></a>  &nbsp;
+&nbsp;<a href="package-summary.html" target="_top"><b>NO FRAMES</b></a>  &nbsp;
+&nbsp;<script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../allclasses-frame.html"><B>All Classes</B></A>');
+  }
+  //-->
+</script>
+<noscript>
+  <A HREF="../../../allclasses-frame.html"><B>All Classes</B></A>
+</noscript>
+
+
+</font></td>
+</tr>
+</tbody></table>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+
+<HR>
+<H2>
+Package groovyx.gpars.actor
+</H2>
+
+
+
+<P>&nbsp;</P>
+
+
+
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+    <TR BGCOLOR="#90DDF7" CLASS="TableHeadingColor">
+    <TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+    <B>Class Summary</B></FONT></TH>
+    </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractLoopingActor.html" title="class in groovyx/gpars/actor">AbstractLoopingActor</A></B></TD>
+        <TD>Wraps all actors that repeatedly loop through incoming messages and hold no implicit state between subsequent messages.</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Actor.html" title="class in groovyx/gpars/actor">Actor</A></B></TD>
+        <TD>Actors are active objects, which borrow a thread from a thread pool.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Actor.MyRemoteHandle.html" title="class in groovyx/gpars/actor">Actor.MyRemoteHandle</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Actor.RemoteActor.html" title="class in groovyx/gpars/actor">Actor.RemoteActor</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Actor.RemoteActor.StopActorMsg.html" title="class in groovyx/gpars/actor">Actor.RemoteActor.StopActorMsg</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Actor.RemoteActor.TerminateActorMsg.html" title="class in groovyx/gpars/actor">Actor.RemoteActor.TerminateActorMsg</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ActorMessage.html" title="class in groovyx/gpars/actor">ActorMessage</A></B></TD>
+        <TD>An internal representation of received messages holding both the original message plus the sender actor reference.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ActorTimerTask.html" title="class in groovyx/gpars/actor">ActorTimerTask</A></B></TD>
+        <TD>Represents an ongoing timeout</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Actors.html" title="class in groovyx/gpars/actor">Actors</A></B></TD>
+        <TD>Provides handy helper methods to create pooled actors and customize the underlying thread pool.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="BlockingActor.html" title="class in groovyx/gpars/actor">BlockingActor</A></B></TD>
+        <TD>@author Vaclav Pech, Alex Tkachman, Dierk Koenig</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="DDAHelper.html" title="class in groovyx/gpars/actor">DDAHelper</A></B></TD>
+        <TD>Hooks the supplied when handlers to DDAs</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="DefaultActor.html" title="class in groovyx/gpars/actor">DefaultActor</A></B></TD>
+        <TD>The DefaultActor class is the base for all stateful actors, who need to maintain implicit state between subsequent message arrivals.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="DefaultActorClosure.html" title="class in groovyx/gpars/actor">DefaultActorClosure</A></B></TD>
+        <TD>Represents the DDA closure to invoke appropriate message handlers based on message runtime type</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="DynamicDispatchActor.html" title="class in groovyx/gpars/actor">DynamicDispatchActor</A></B></TD>
+        <TD>A pooled actor allowing for an alternative structure of the message handling code.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ForwardingDelegate.html" title="class in groovyx/gpars/actor">ForwardingDelegate</A></B></TD>
+        <TD>@author Alex Tkachman, Vaclav Pech</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ReactiveActor.html" title="class in groovyx/gpars/actor">ReactiveActor</A></B></TD>
+        <TD>An actor representing a reactor. </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="StaticDispatchActor.html" title="class in groovyx/gpars/actor">StaticDispatchActor</A></B></TD>
+        <TD>Offers a statically dispatched and thus slightly faster alternative to the DynamicDispatchActor class.
+ </TD>
+        </TR>
+
+</TABLE>
+&nbsp;
+<P>
+<DL>
+</DL>
+<hr>
+    
+
+
+
+
+
+
+<p>Copyright &#169; 2008&#8211;2013  V&#225;clav Pech.  All Rights Reserved.</p>
+<hr>
+</body>
+</html>

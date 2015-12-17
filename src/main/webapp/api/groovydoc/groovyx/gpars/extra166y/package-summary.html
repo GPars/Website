@@ -1,0 +1,2623 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<title>groovyx.gpars.extra166y (org.codehaus.gpars)</title>
+<META NAME="keywords" CONTENT="groovyx.gpars.extra166y package">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../stylesheet.css" TITLE="Style">
+<link href="../../../groovy.ico" type="image/x-icon" rel="shortcut icon">
+<link href="../../../groovy.ico" type="image/x-icon" rel="icon">
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    parent.document.title="groovyx.gpars.extra166y (org.codehaus.gpars)";
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</head>
+
+<body BGCOLOR="white" onload="windowTitle();">
+<hr>
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<a name="navbar_top"><!-- --></a>
+<table summary="" width="100%" border="0" cellpadding="1" cellspacing="0">
+<tbody><tr>
+<td colspan="2" class="NavBarCell1" bgcolor="#eeeeff">
+<a name="navbar_top_firstrow"><!-- --></a>
+<table summary="" border="0" cellpadding="0" cellspacing="3">
+  <tbody><tr valign="top" align="center">
+  <td class="NavBarCell1" bgcolor="#eeeeff">    <a href="../../../overview-summary.html"><font class="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td>
+  <td class="NavBarCell1Rev" bgcolor="#ffffff"> &nbsp;<font class="NavBarFont1Rev"><b>Package</b></font>&nbsp;</td>
+  <td class="NavBarCell1" bgcolor="#eeeeff">    <font class="NavBarFont1">Class</font>&nbsp;</td>
+  <!--
+  <td class="NavBarCell1" bgcolor="#eeeeff">    <a href="overview-tree.html"><font class="NavBarFont1"><b>Tree</b></font></a>&nbsp;</td>
+  -->
+  <td class="NavBarCell1" bgcolor="#eeeeff">    <a href="../../../deprecated-list.html"><font class="NavBarFont1"><b>Deprecated</b></font></a>&nbsp;</td>
+  <td class="NavBarCell1" bgcolor="#eeeeff">    <a href="../../../index-all.html"><font class="NavBarFont1"><b>Index</b></font></a>&nbsp;</td>
+  <td class="NavBarCell1" bgcolor="#eeeeff">    <a href="../../../help-doc.html"><font class="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+  </tr>
+</tbody></table>
+</td>
+<td rowspan="3" valign="top" align="right"><em>
+    <b>org.codehaus.gpars</b>
+</em>
+</td>
+</tr>
+
+<tr>
+<td class="NavBarCell2" bgcolor="white"><font size="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</font></td>
+<td class="NavBarCell2" bgcolor="white"><font size="-2">
+  <a href="../../../index.html?groovyx/gpars/extra166y/package-summary.html" target="_top"><b>FRAMES</b></a>  &nbsp;
+&nbsp;<a href="package-summary.html" target="_top"><b>NO FRAMES</b></a>  &nbsp;
+&nbsp;<script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../allclasses-frame.html"><B>All Classes</B></A>');
+  }
+  //-->
+</script>
+<noscript>
+  <A HREF="../../../allclasses-frame.html"><B>All Classes</B></A>
+</noscript>
+
+
+</font></td>
+</tr>
+</tbody></table>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+
+<HR>
+<H2>
+Package groovyx.gpars.extra166y
+</H2>
+
+ Collections supporting parallel operations.
+ 
+
+
+<P>&nbsp;</P>
+
+
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+    <TR BGCOLOR="#90DDF7" CLASS="TableHeadingColor">
+    <TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+    <B>Interface Summary</B></FONT></TH>
+    </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.Equivalence.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.Equivalence</A></B></TD>
+        <TD>An object performing equality comparisons, along with a hash
+ function consistent with this comparison.  </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.MappingFunction.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.MappingFunction</A></B></TD>
+        <TD>A function computing a mapping from the given key to a value,
+ or <CODE>null</CODE> if there is no mapping.</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.Node.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.Node</A></B></TD>
+        <TD>An object maintaining a key-value mapping. </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.NodeFactory.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.NodeFactory</A></B></TD>
+        <TD>A factory for Nodes.</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.Reclaimable.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.Reclaimable</A></B></TD>
+        <TD>An object that may be subject to cleanup operations when
+ removed from a java.lang.ref.ReferenceQueue</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.RemappingFunction.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.RemappingFunction</A></B></TD>
+        <TD>A function computing a new mapping from the given key and its
+ current value to a new value, or <CODE>null</CODE> if there is
+ no mapping.</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.Action.html" title="class in groovyx/gpars/extra166y">Ops.Action</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.BinaryDoubleOp.html" title="class in groovyx/gpars/extra166y">Ops.BinaryDoubleOp</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.BinaryDoublePredicate.html" title="class in groovyx/gpars/extra166y">Ops.BinaryDoublePredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.BinaryIntOp.html" title="class in groovyx/gpars/extra166y">Ops.BinaryIntOp</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.BinaryIntPredicate.html" title="class in groovyx/gpars/extra166y">Ops.BinaryIntPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.BinaryLongOp.html" title="class in groovyx/gpars/extra166y">Ops.BinaryLongOp</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.BinaryLongPredicate.html" title="class in groovyx/gpars/extra166y">Ops.BinaryLongPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.BinaryOp.html" title="class in groovyx/gpars/extra166y">Ops.BinaryOp</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.BinaryPredicate.html" title="class in groovyx/gpars/extra166y">Ops.BinaryPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleAndDoubleProcedure.html" title="class in groovyx/gpars/extra166y">Ops.DoubleAndDoubleProcedure</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleAndDoubleToInt.html" title="class in groovyx/gpars/extra166y">Ops.DoubleAndDoubleToInt</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleAndDoubleToLong.html" title="class in groovyx/gpars/extra166y">Ops.DoubleAndDoubleToLong</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleAndDoubleToObject.html" title="class in groovyx/gpars/extra166y">Ops.DoubleAndDoubleToObject</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleAndIntPredicate.html" title="class in groovyx/gpars/extra166y">Ops.DoubleAndIntPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleAndIntProcedure.html" title="class in groovyx/gpars/extra166y">Ops.DoubleAndIntProcedure</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleAndIntToDouble.html" title="class in groovyx/gpars/extra166y">Ops.DoubleAndIntToDouble</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleAndIntToInt.html" title="class in groovyx/gpars/extra166y">Ops.DoubleAndIntToInt</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleAndIntToLong.html" title="class in groovyx/gpars/extra166y">Ops.DoubleAndIntToLong</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleAndIntToObject.html" title="class in groovyx/gpars/extra166y">Ops.DoubleAndIntToObject</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleAndLongPredicate.html" title="class in groovyx/gpars/extra166y">Ops.DoubleAndLongPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleAndLongProcedure.html" title="class in groovyx/gpars/extra166y">Ops.DoubleAndLongProcedure</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleAndLongToDouble.html" title="class in groovyx/gpars/extra166y">Ops.DoubleAndLongToDouble</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleAndLongToInt.html" title="class in groovyx/gpars/extra166y">Ops.DoubleAndLongToInt</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleAndLongToLong.html" title="class in groovyx/gpars/extra166y">Ops.DoubleAndLongToLong</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleAndLongToObject.html" title="class in groovyx/gpars/extra166y">Ops.DoubleAndLongToObject</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleAndObjectPredicate.html" title="class in groovyx/gpars/extra166y">Ops.DoubleAndObjectPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleAndObjectProcedure.html" title="class in groovyx/gpars/extra166y">Ops.DoubleAndObjectProcedure</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleAndObjectToDouble.html" title="class in groovyx/gpars/extra166y">Ops.DoubleAndObjectToDouble</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleAndObjectToInt.html" title="class in groovyx/gpars/extra166y">Ops.DoubleAndObjectToInt</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleAndObjectToLong.html" title="class in groovyx/gpars/extra166y">Ops.DoubleAndObjectToLong</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleAndObjectToObject.html" title="class in groovyx/gpars/extra166y">Ops.DoubleAndObjectToObject</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleComparator.html" title="class in groovyx/gpars/extra166y">Ops.DoubleComparator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleGenerator.html" title="class in groovyx/gpars/extra166y">Ops.DoubleGenerator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleOp.html" title="class in groovyx/gpars/extra166y">Ops.DoubleOp</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoublePredicate.html" title="class in groovyx/gpars/extra166y">Ops.DoublePredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleProcedure.html" title="class in groovyx/gpars/extra166y">Ops.DoubleProcedure</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleReducer.html" title="class in groovyx/gpars/extra166y">Ops.DoubleReducer</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleToInt.html" title="class in groovyx/gpars/extra166y">Ops.DoubleToInt</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleToLong.html" title="class in groovyx/gpars/extra166y">Ops.DoubleToLong</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.DoubleToObject.html" title="class in groovyx/gpars/extra166y">Ops.DoubleToObject</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.Generator.html" title="class in groovyx/gpars/extra166y">Ops.Generator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntAndDoublePredicate.html" title="class in groovyx/gpars/extra166y">Ops.IntAndDoublePredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntAndDoubleProcedure.html" title="class in groovyx/gpars/extra166y">Ops.IntAndDoubleProcedure</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntAndDoubleToDouble.html" title="class in groovyx/gpars/extra166y">Ops.IntAndDoubleToDouble</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntAndDoubleToInt.html" title="class in groovyx/gpars/extra166y">Ops.IntAndDoubleToInt</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntAndDoubleToLong.html" title="class in groovyx/gpars/extra166y">Ops.IntAndDoubleToLong</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntAndDoubleToObject.html" title="class in groovyx/gpars/extra166y">Ops.IntAndDoubleToObject</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntAndIntProcedure.html" title="class in groovyx/gpars/extra166y">Ops.IntAndIntProcedure</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntAndIntToDouble.html" title="class in groovyx/gpars/extra166y">Ops.IntAndIntToDouble</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntAndIntToLong.html" title="class in groovyx/gpars/extra166y">Ops.IntAndIntToLong</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntAndIntToObject.html" title="class in groovyx/gpars/extra166y">Ops.IntAndIntToObject</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntAndLongPredicate.html" title="class in groovyx/gpars/extra166y">Ops.IntAndLongPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntAndLongProcedure.html" title="class in groovyx/gpars/extra166y">Ops.IntAndLongProcedure</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntAndLongToDouble.html" title="class in groovyx/gpars/extra166y">Ops.IntAndLongToDouble</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntAndLongToInt.html" title="class in groovyx/gpars/extra166y">Ops.IntAndLongToInt</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntAndLongToLong.html" title="class in groovyx/gpars/extra166y">Ops.IntAndLongToLong</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntAndLongToObject.html" title="class in groovyx/gpars/extra166y">Ops.IntAndLongToObject</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntAndObjectPredicate.html" title="class in groovyx/gpars/extra166y">Ops.IntAndObjectPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntAndObjectProcedure.html" title="class in groovyx/gpars/extra166y">Ops.IntAndObjectProcedure</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntAndObjectToDouble.html" title="class in groovyx/gpars/extra166y">Ops.IntAndObjectToDouble</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntAndObjectToInt.html" title="class in groovyx/gpars/extra166y">Ops.IntAndObjectToInt</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntAndObjectToLong.html" title="class in groovyx/gpars/extra166y">Ops.IntAndObjectToLong</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntAndObjectToObject.html" title="class in groovyx/gpars/extra166y">Ops.IntAndObjectToObject</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntComparator.html" title="class in groovyx/gpars/extra166y">Ops.IntComparator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntGenerator.html" title="class in groovyx/gpars/extra166y">Ops.IntGenerator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntOp.html" title="class in groovyx/gpars/extra166y">Ops.IntOp</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntPredicate.html" title="class in groovyx/gpars/extra166y">Ops.IntPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntProcedure.html" title="class in groovyx/gpars/extra166y">Ops.IntProcedure</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntReducer.html" title="class in groovyx/gpars/extra166y">Ops.IntReducer</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntToDouble.html" title="class in groovyx/gpars/extra166y">Ops.IntToDouble</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntToLong.html" title="class in groovyx/gpars/extra166y">Ops.IntToLong</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.IntToObject.html" title="class in groovyx/gpars/extra166y">Ops.IntToObject</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongAndDoublePredicate.html" title="class in groovyx/gpars/extra166y">Ops.LongAndDoublePredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongAndDoubleProcedure.html" title="class in groovyx/gpars/extra166y">Ops.LongAndDoubleProcedure</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongAndDoubleToDouble.html" title="class in groovyx/gpars/extra166y">Ops.LongAndDoubleToDouble</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongAndDoubleToInt.html" title="class in groovyx/gpars/extra166y">Ops.LongAndDoubleToInt</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongAndDoubleToLong.html" title="class in groovyx/gpars/extra166y">Ops.LongAndDoubleToLong</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongAndDoubleToObject.html" title="class in groovyx/gpars/extra166y">Ops.LongAndDoubleToObject</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongAndIntPredicate.html" title="class in groovyx/gpars/extra166y">Ops.LongAndIntPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongAndIntProcedure.html" title="class in groovyx/gpars/extra166y">Ops.LongAndIntProcedure</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongAndIntToDouble.html" title="class in groovyx/gpars/extra166y">Ops.LongAndIntToDouble</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongAndIntToInt.html" title="class in groovyx/gpars/extra166y">Ops.LongAndIntToInt</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongAndIntToLong.html" title="class in groovyx/gpars/extra166y">Ops.LongAndIntToLong</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongAndIntToObject.html" title="class in groovyx/gpars/extra166y">Ops.LongAndIntToObject</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongAndLongProcedure.html" title="class in groovyx/gpars/extra166y">Ops.LongAndLongProcedure</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongAndLongToDouble.html" title="class in groovyx/gpars/extra166y">Ops.LongAndLongToDouble</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongAndLongToInt.html" title="class in groovyx/gpars/extra166y">Ops.LongAndLongToInt</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongAndLongToObject.html" title="class in groovyx/gpars/extra166y">Ops.LongAndLongToObject</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongAndObjectPredicate.html" title="class in groovyx/gpars/extra166y">Ops.LongAndObjectPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongAndObjectProcedure.html" title="class in groovyx/gpars/extra166y">Ops.LongAndObjectProcedure</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongAndObjectToDouble.html" title="class in groovyx/gpars/extra166y">Ops.LongAndObjectToDouble</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongAndObjectToInt.html" title="class in groovyx/gpars/extra166y">Ops.LongAndObjectToInt</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongAndObjectToLong.html" title="class in groovyx/gpars/extra166y">Ops.LongAndObjectToLong</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongAndObjectToObject.html" title="class in groovyx/gpars/extra166y">Ops.LongAndObjectToObject</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongComparator.html" title="class in groovyx/gpars/extra166y">Ops.LongComparator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongGenerator.html" title="class in groovyx/gpars/extra166y">Ops.LongGenerator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongOp.html" title="class in groovyx/gpars/extra166y">Ops.LongOp</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongPredicate.html" title="class in groovyx/gpars/extra166y">Ops.LongPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongProcedure.html" title="class in groovyx/gpars/extra166y">Ops.LongProcedure</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongReducer.html" title="class in groovyx/gpars/extra166y">Ops.LongReducer</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongToDouble.html" title="class in groovyx/gpars/extra166y">Ops.LongToDouble</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongToInt.html" title="class in groovyx/gpars/extra166y">Ops.LongToInt</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.LongToObject.html" title="class in groovyx/gpars/extra166y">Ops.LongToObject</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectAndDoublePredicate.html" title="class in groovyx/gpars/extra166y">Ops.ObjectAndDoublePredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectAndDoubleProcedure.html" title="class in groovyx/gpars/extra166y">Ops.ObjectAndDoubleProcedure</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectAndDoubleToDouble.html" title="class in groovyx/gpars/extra166y">Ops.ObjectAndDoubleToDouble</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectAndDoubleToInt.html" title="class in groovyx/gpars/extra166y">Ops.ObjectAndDoubleToInt</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectAndDoubleToLong.html" title="class in groovyx/gpars/extra166y">Ops.ObjectAndDoubleToLong</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectAndDoubleToObject.html" title="class in groovyx/gpars/extra166y">Ops.ObjectAndDoubleToObject</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectAndIntPredicate.html" title="class in groovyx/gpars/extra166y">Ops.ObjectAndIntPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectAndIntProcedure.html" title="class in groovyx/gpars/extra166y">Ops.ObjectAndIntProcedure</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectAndIntToDouble.html" title="class in groovyx/gpars/extra166y">Ops.ObjectAndIntToDouble</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectAndIntToInt.html" title="class in groovyx/gpars/extra166y">Ops.ObjectAndIntToInt</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectAndIntToLong.html" title="class in groovyx/gpars/extra166y">Ops.ObjectAndIntToLong</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectAndIntToObject.html" title="class in groovyx/gpars/extra166y">Ops.ObjectAndIntToObject</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectAndLongPredicate.html" title="class in groovyx/gpars/extra166y">Ops.ObjectAndLongPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectAndLongProcedure.html" title="class in groovyx/gpars/extra166y">Ops.ObjectAndLongProcedure</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectAndLongToDouble.html" title="class in groovyx/gpars/extra166y">Ops.ObjectAndLongToDouble</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectAndLongToInt.html" title="class in groovyx/gpars/extra166y">Ops.ObjectAndLongToInt</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectAndLongToLong.html" title="class in groovyx/gpars/extra166y">Ops.ObjectAndLongToLong</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectAndLongToObject.html" title="class in groovyx/gpars/extra166y">Ops.ObjectAndLongToObject</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectAndObjectProcedure.html" title="class in groovyx/gpars/extra166y">Ops.ObjectAndObjectProcedure</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectAndObjectToDouble.html" title="class in groovyx/gpars/extra166y">Ops.ObjectAndObjectToDouble</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectAndObjectToInt.html" title="class in groovyx/gpars/extra166y">Ops.ObjectAndObjectToInt</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectAndObjectToLong.html" title="class in groovyx/gpars/extra166y">Ops.ObjectAndObjectToLong</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectToDouble.html" title="class in groovyx/gpars/extra166y">Ops.ObjectToDouble</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectToInt.html" title="class in groovyx/gpars/extra166y">Ops.ObjectToInt</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.ObjectToLong.html" title="class in groovyx/gpars/extra166y">Ops.ObjectToLong</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.Op.html" title="class in groovyx/gpars/extra166y">Ops.Op</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.Predicate.html" title="class in groovyx/gpars/extra166y">Ops.Predicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.Procedure.html" title="class in groovyx/gpars/extra166y">Ops.Procedure</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.Reducer.html" title="class in groovyx/gpars/extra166y">Ops.Reducer</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelArray.SummaryStatistics.html" title="class in groovyx/gpars/extra166y">ParallelArray.SummaryStatistics</A></B></TD>
+        <TD>Summary statistics for a possibly bounded, filtered, and/or
+ mapped ParallelArray.</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelDoubleArray.SummaryStatistics.html" title="class in groovyx/gpars/extra166y">ParallelDoubleArray.SummaryStatistics</A></B></TD>
+        <TD>Summary statistics for a possibly bounded, filtered, and/or
+ mapped ParallelDoubleArray.</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelLongArray.SummaryStatistics.html" title="class in groovyx/gpars/extra166y">ParallelLongArray.SummaryStatistics</A></B></TD>
+        <TD>Summary statistics for a possibly bounded, filtered, and/or
+ mapped ParallelLongArray.</TD>
+        </TR>
+
+</TABLE>
+&nbsp;
+<P>
+<DL>
+</DL>
+<hr>
+    
+
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+    <TR BGCOLOR="#90DDF7" CLASS="TableHeadingColor">
+    <TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+    <B>Class Summary</B></FONT></TH>
+    </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray</A></B></TD>
+        <TD>Abstract class serving as the basis of parallel
+ array classes across types.</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.AndPredicate.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.AndPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DDCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DDCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DDMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DDMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DFDCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DFDCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DFDMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DFDMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DFLCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DFLCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DFLMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DFLMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DFOCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DFOCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DFOMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DFOMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DFPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DFPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DLCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DLCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DLMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DLMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DOCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DOCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DOMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DOMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DRDCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DRDCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DRDMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DRDMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DRLCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DRLCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DRLMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DRLMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DROCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DROCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DROMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DROMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DRPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DRPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DUDCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DUDCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DUDMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DUDMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DULCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DULCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DULMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DULMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DUOCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DUOCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DUOMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DUOMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.DUPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.DUPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.FilteredAsDoubleIterator.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.FilteredAsDoubleIterator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.FilteredAsLongIterator.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.FilteredAsLongIterator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.FilteredIterator.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.FilteredIterator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LDCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LDCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LDMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LDMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LFDCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LFDCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LFDMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LFDMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LFLCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LFLCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LFLMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LFLMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LFOCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LFOCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LFOMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LFOMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LFPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LFPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LLCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LLCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LLMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LLMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LOCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LOCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LOMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LOMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LRDCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LRDCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LRDMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LRDMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LRLCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LRLCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LRLMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LRLMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LROCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LROCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LROMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LROMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LRPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LRPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LUDCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LUDCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LUDMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LUDMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LULCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LULCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LULMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LULMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LUOCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LUOCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LUOMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LUOMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.LUPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.LUPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.ODCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.ODCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.ODMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.ODMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.OFDCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.OFDCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.OFDMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.OFDMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.OFLCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.OFLCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.OFLMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.OFLMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.OFOCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.OFOCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.OFOMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.OFOMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.OFPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.OFPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.OLCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.OLCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.OLMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.OLMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.OOCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.OOCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.OOMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.OOMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.OPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.OPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.ORDCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.ORDCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.ORDMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.ORDMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.ORLCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.ORLCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.ORLMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.ORLMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.OROCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.OROCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.OROMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.OROMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.ORPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.ORPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.OUDCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.OUDCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.OUDMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.OUDMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.OULCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.OULCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.OULMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.OULMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.OUOCPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.OUOCPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.OUOMPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.OUOMPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.OUPap.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.OUPap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.Sequentially.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.Sequentially</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.SequentiallyAsDouble.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.SequentiallyAsDouble</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.SequentiallyAsLong.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.SequentiallyAsLong</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.UnfilteredAsDoubleIterator.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.UnfilteredAsDoubleIterator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.UnfilteredAsLongIterator.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.UnfilteredAsLongIterator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="AbstractParallelAnyArray.UnfilteredIterator.html" title="class in groovyx/gpars/extra166y">AbstractParallelAnyArray.UnfilteredIterator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.html" title="class in groovyx/gpars/extra166y">CommonOps</A></B></TD>
+        <TD>A collection of static factory methods providing commonly useful
+ implementations of operations.</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.DoubleAdder.html" title="class in groovyx/gpars/extra166y">CommonOps.DoubleAdder</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.DoubleBoundedRandomGenerator.html" title="class in groovyx/gpars/extra166y">CommonOps.DoubleBoundedRandomGenerator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.DoubleEqualityPredicate.html" title="class in groovyx/gpars/extra166y">CommonOps.DoubleEqualityPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.DoubleInequalityPredicate.html" title="class in groovyx/gpars/extra166y">CommonOps.DoubleInequalityPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.DoubleIntervalRandomGenerator.html" title="class in groovyx/gpars/extra166y">CommonOps.DoubleIntervalRandomGenerator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.DoubleRandomGenerator.html" title="class in groovyx/gpars/extra166y">CommonOps.DoubleRandomGenerator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.EqualityPredicate.html" title="class in groovyx/gpars/extra166y">CommonOps.EqualityPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.IdentityPredicate.html" title="class in groovyx/gpars/extra166y">CommonOps.IdentityPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.InequalityPredicate.html" title="class in groovyx/gpars/extra166y">CommonOps.InequalityPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.IntAdder.html" title="class in groovyx/gpars/extra166y">CommonOps.IntAdder</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.IntBoundedRandomGenerator.html" title="class in groovyx/gpars/extra166y">CommonOps.IntBoundedRandomGenerator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.IntEqualityPredicate.html" title="class in groovyx/gpars/extra166y">CommonOps.IntEqualityPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.IntInequalityPredicate.html" title="class in groovyx/gpars/extra166y">CommonOps.IntInequalityPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.IntIntervalRandomGenerator.html" title="class in groovyx/gpars/extra166y">CommonOps.IntIntervalRandomGenerator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.IntRandomGenerator.html" title="class in groovyx/gpars/extra166y">CommonOps.IntRandomGenerator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.IsNonNullPredicate.html" title="class in groovyx/gpars/extra166y">CommonOps.IsNonNullPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.IsNullPredicate.html" title="class in groovyx/gpars/extra166y">CommonOps.IsNullPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.LongAdder.html" title="class in groovyx/gpars/extra166y">CommonOps.LongAdder</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.LongBoundedRandomGenerator.html" title="class in groovyx/gpars/extra166y">CommonOps.LongBoundedRandomGenerator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.LongEqualityPredicate.html" title="class in groovyx/gpars/extra166y">CommonOps.LongEqualityPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.LongInequalityPredicate.html" title="class in groovyx/gpars/extra166y">CommonOps.LongInequalityPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.LongIntervalRandomGenerator.html" title="class in groovyx/gpars/extra166y">CommonOps.LongIntervalRandomGenerator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.LongRandomGenerator.html" title="class in groovyx/gpars/extra166y">CommonOps.LongRandomGenerator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.NaturalDoubleComparator.html" title="class in groovyx/gpars/extra166y">CommonOps.NaturalDoubleComparator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.NaturalDoubleMaxReducer.html" title="class in groovyx/gpars/extra166y">CommonOps.NaturalDoubleMaxReducer</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.NaturalDoubleMinReducer.html" title="class in groovyx/gpars/extra166y">CommonOps.NaturalDoubleMinReducer</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.NaturalLongComparator.html" title="class in groovyx/gpars/extra166y">CommonOps.NaturalLongComparator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.NaturalLongMaxReducer.html" title="class in groovyx/gpars/extra166y">CommonOps.NaturalLongMaxReducer</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.NaturalLongMinReducer.html" title="class in groovyx/gpars/extra166y">CommonOps.NaturalLongMinReducer</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.NonidentityPredicate.html" title="class in groovyx/gpars/extra166y">CommonOps.NonidentityPredicate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.RawComparator.html" title="class in groovyx/gpars/extra166y">CommonOps.RawComparator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.RawMaxReducer.html" title="class in groovyx/gpars/extra166y">CommonOps.RawMaxReducer</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CommonOps.RawMinReducer.html" title="class in groovyx/gpars/extra166y">CommonOps.RawMinReducer</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap</A></B></TD>
+        <TD>A <CODE>java.util.ConcurrentMap</CODE> supporting user-defined
+ equivalence comparisons, soft, weak, or strong keys and values, and
+ user-supplied computational methods for setting and updating
+ values. </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.EmbeddedSoftReference.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.EmbeddedSoftReference</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.EmbeddedWeakReference.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.EmbeddedWeakReference</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.EntryIterator.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.EntryIterator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.EntrySet.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.EntrySet</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.EquivalenceUsingEquals.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.EquivalenceUsingEquals</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.EquivalenceUsingIdentity.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.EquivalenceUsingIdentity</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.HashIterator.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.HashIterator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.IntKeyIntValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.IntKeyIntValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.IntKeyIntValueNodeFactory.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.IntKeyIntValueNodeFactory</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.IntKeyNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.IntKeyNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.IntKeySelfValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.IntKeySelfValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.IntKeySelfValueNodeFactory.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.IntKeySelfValueNodeFactory</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.IntKeySoftValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.IntKeySoftValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.IntKeySoftValueNodeFactory.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.IntKeySoftValueNodeFactory</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.IntKeyStrongValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.IntKeyStrongValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.IntKeyStrongValueNodeFactory.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.IntKeyStrongValueNodeFactory</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.IntKeyWeakValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.IntKeyWeakValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.IntKeyWeakValueNodeFactory.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.IntKeyWeakValueNodeFactory</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.KeyIterator.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.KeyIterator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.KeySet.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.KeySet</A></B></TD>
+        <TD>Creates a set with the given parameters.</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.KeySetView.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.KeySetView</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.LinkedIntKeyIntValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.LinkedIntKeyIntValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.LinkedIntKeySelfValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.LinkedIntKeySelfValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.LinkedIntKeySoftValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.LinkedIntKeySoftValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.LinkedIntKeyStrongValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.LinkedIntKeyStrongValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.LinkedIntKeyWeakValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.LinkedIntKeyWeakValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.LinkedSoftKeyIntValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.LinkedSoftKeyIntValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.LinkedSoftKeySelfValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.LinkedSoftKeySelfValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.LinkedSoftKeySoftValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.LinkedSoftKeySoftValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.LinkedSoftKeyStrongValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.LinkedSoftKeyStrongValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.LinkedSoftKeyWeakValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.LinkedSoftKeyWeakValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.LinkedStrongKeyIntValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.LinkedStrongKeyIntValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.LinkedStrongKeySelfValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.LinkedStrongKeySelfValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.LinkedStrongKeySoftValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.LinkedStrongKeySoftValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.LinkedStrongKeyStrongValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.LinkedStrongKeyStrongValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.LinkedStrongKeyWeakValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.LinkedStrongKeyWeakValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.LinkedWeakKeyIntValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.LinkedWeakKeyIntValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.LinkedWeakKeySelfValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.LinkedWeakKeySelfValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.LinkedWeakKeySoftValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.LinkedWeakKeySoftValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.LinkedWeakKeyStrongValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.LinkedWeakKeyStrongValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.LinkedWeakKeyWeakValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.LinkedWeakKeyWeakValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.ReclamationThread.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.ReclamationThread</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.Segment.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.Segment</A></B></TD>
+        <TD>Each Segment holds a count and table corresponding to a segment
+ of the table. </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.SoftKeyIntValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.SoftKeyIntValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.SoftKeyIntValueNodeFactory.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.SoftKeyIntValueNodeFactory</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.SoftKeyNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.SoftKeyNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.SoftKeySelfValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.SoftKeySelfValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.SoftKeySelfValueNodeFactory.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.SoftKeySelfValueNodeFactory</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.SoftKeySoftValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.SoftKeySoftValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.SoftKeySoftValueNodeFactory.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.SoftKeySoftValueNodeFactory</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.SoftKeyStrongValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.SoftKeyStrongValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.SoftKeyStrongValueNodeFactory.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.SoftKeyStrongValueNodeFactory</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.SoftKeyWeakValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.SoftKeyWeakValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.SoftKeyWeakValueNodeFactory.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.SoftKeyWeakValueNodeFactory</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.StrongKeyIntValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.StrongKeyIntValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.StrongKeyIntValueNodeFactory.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.StrongKeyIntValueNodeFactory</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.StrongKeyNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.StrongKeyNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.StrongKeySelfValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.StrongKeySelfValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.StrongKeySelfValueNodeFactory.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.StrongKeySelfValueNodeFactory</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.StrongKeySoftValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.StrongKeySoftValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.StrongKeySoftValueNodeFactory.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.StrongKeySoftValueNodeFactory</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.StrongKeyStrongValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.StrongKeyStrongValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.StrongKeyStrongValueNodeFactory.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.StrongKeyStrongValueNodeFactory</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.StrongKeyWeakValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.StrongKeyWeakValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.StrongKeyWeakValueNodeFactory.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.StrongKeyWeakValueNodeFactory</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.TerminalIntKeyIntValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.TerminalIntKeyIntValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.TerminalIntKeySelfValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.TerminalIntKeySelfValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.TerminalIntKeySoftValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.TerminalIntKeySoftValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.TerminalIntKeyStrongValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.TerminalIntKeyStrongValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.TerminalIntKeyWeakValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.TerminalIntKeyWeakValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.TerminalSoftKeyIntValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.TerminalSoftKeyIntValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.TerminalSoftKeySelfValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.TerminalSoftKeySelfValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.TerminalSoftKeySoftValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.TerminalSoftKeySoftValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.TerminalSoftKeyStrongValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.TerminalSoftKeyStrongValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.TerminalSoftKeyWeakValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.TerminalSoftKeyWeakValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.TerminalStrongKeyIntValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.TerminalStrongKeyIntValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.TerminalStrongKeySelfValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.TerminalStrongKeySelfValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.TerminalStrongKeySoftValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.TerminalStrongKeySoftValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.TerminalStrongKeyStrongValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.TerminalStrongKeyStrongValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.TerminalStrongKeyWeakValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.TerminalStrongKeyWeakValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.TerminalWeakKeyIntValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.TerminalWeakKeyIntValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.TerminalWeakKeySelfValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.TerminalWeakKeySelfValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.TerminalWeakKeySoftValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.TerminalWeakKeySoftValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.TerminalWeakKeyStrongValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.TerminalWeakKeyStrongValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.TerminalWeakKeyWeakValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.TerminalWeakKeyWeakValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.ValueIterator.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.ValueIterator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.Values.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.Values</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.WeakKeyIntValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.WeakKeyIntValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.WeakKeyIntValueNodeFactory.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.WeakKeyIntValueNodeFactory</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.WeakKeyNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.WeakKeyNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.WeakKeySelfValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.WeakKeySelfValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.WeakKeySelfValueNodeFactory.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.WeakKeySelfValueNodeFactory</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.WeakKeySoftValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.WeakKeySoftValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.WeakKeySoftValueNodeFactory.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.WeakKeySoftValueNodeFactory</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.WeakKeyStrongValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.WeakKeyStrongValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.WeakKeyStrongValueNodeFactory.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.WeakKeyStrongValueNodeFactory</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.WeakKeyWeakValueNode.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.WeakKeyWeakValueNode</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.WeakKeyWeakValueNodeFactory.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.WeakKeyWeakValueNodeFactory</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.WriteThroughEntry.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.WriteThroughEntry</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Ops.html" title="class in groovyx/gpars/extra166y">Ops</A></B></TD>
+        <TD>Interfaces and utilities declaring per-element operations used
+ within parallel methods on aggregates. </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.html" title="class in groovyx/gpars/extra166y">PAS</A></B></TD>
+        <TD>Shared internal execution support for ParallelArray and
+ specializations.</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJBase.html" title="class in groovyx/gpars/extra166y">PAS.FJBase</A></B></TD>
+        <TD>Base for most divide-and-conquer tasks used for computing
+ ParallelArray operations. </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJCountSelected.html" title="class in groovyx/gpars/extra166y">PAS.FJCountSelected</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDAppendAllDriver.html" title="class in groovyx/gpars/extra166y">PAS.FJDAppendAllDriver</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDApply.html" title="class in groovyx/gpars/extra166y">PAS.FJDApply</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDBinaryIndexMap.html" title="class in groovyx/gpars/extra166y">PAS.FJDBinaryIndexMap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDCMerger.html" title="class in groovyx/gpars/extra166y">PAS.FJDCMerger</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDCSorter.html" title="class in groovyx/gpars/extra166y">PAS.FJDCSorter</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDCombineInPlace.html" title="class in groovyx/gpars/extra166y">PAS.FJDCombineInPlace</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDCumulateOp.html" title="class in groovyx/gpars/extra166y">PAS.FJDCumulateOp</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDCumulatePlusOp.html" title="class in groovyx/gpars/extra166y">PAS.FJDCumulatePlusOp</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDFill.html" title="class in groovyx/gpars/extra166y">PAS.FJDFill</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDGenerate.html" title="class in groovyx/gpars/extra166y">PAS.FJDGenerate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDIndexMap.html" title="class in groovyx/gpars/extra166y">PAS.FJDIndexMap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDIndexOf.html" title="class in groovyx/gpars/extra166y">PAS.FJDIndexOf</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDMap.html" title="class in groovyx/gpars/extra166y">PAS.FJDMap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDMerger.html" title="class in groovyx/gpars/extra166y">PAS.FJDMerger</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDPACombineInPlace.html" title="class in groovyx/gpars/extra166y">PAS.FJDPACombineInPlace</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDPrecumulateOp.html" title="class in groovyx/gpars/extra166y">PAS.FJDPrecumulateOp</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDPrecumulatePlusOp.html" title="class in groovyx/gpars/extra166y">PAS.FJDPrecumulatePlusOp</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDReduce.html" title="class in groovyx/gpars/extra166y">PAS.FJDReduce</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDScan.html" title="class in groovyx/gpars/extra166y">PAS.FJDScan</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDScanOp.html" title="class in groovyx/gpars/extra166y">PAS.FJDScanOp</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDScanPlusOp.html" title="class in groovyx/gpars/extra166y">PAS.FJDScanPlusOp</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDSelectAllDriver.html" title="class in groovyx/gpars/extra166y">PAS.FJDSelectAllDriver</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDSorter.html" title="class in groovyx/gpars/extra166y">PAS.FJDSorter</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDStats.html" title="class in groovyx/gpars/extra166y">PAS.FJDStats</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDTransform.html" title="class in groovyx/gpars/extra166y">PAS.FJDTransform</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJDUniquifier.html" title="class in groovyx/gpars/extra166y">PAS.FJDUniquifier</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLAppendAllDriver.html" title="class in groovyx/gpars/extra166y">PAS.FJLAppendAllDriver</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLApply.html" title="class in groovyx/gpars/extra166y">PAS.FJLApply</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLBinaryIndexMap.html" title="class in groovyx/gpars/extra166y">PAS.FJLBinaryIndexMap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLCMerger.html" title="class in groovyx/gpars/extra166y">PAS.FJLCMerger</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLCSorter.html" title="class in groovyx/gpars/extra166y">PAS.FJLCSorter</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLCombineInPlace.html" title="class in groovyx/gpars/extra166y">PAS.FJLCombineInPlace</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLCumulateOp.html" title="class in groovyx/gpars/extra166y">PAS.FJLCumulateOp</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLCumulatePlusOp.html" title="class in groovyx/gpars/extra166y">PAS.FJLCumulatePlusOp</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLFill.html" title="class in groovyx/gpars/extra166y">PAS.FJLFill</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLGenerate.html" title="class in groovyx/gpars/extra166y">PAS.FJLGenerate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLIndexMap.html" title="class in groovyx/gpars/extra166y">PAS.FJLIndexMap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLIndexOf.html" title="class in groovyx/gpars/extra166y">PAS.FJLIndexOf</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLMap.html" title="class in groovyx/gpars/extra166y">PAS.FJLMap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLMerger.html" title="class in groovyx/gpars/extra166y">PAS.FJLMerger</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLPACombineInPlace.html" title="class in groovyx/gpars/extra166y">PAS.FJLPACombineInPlace</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLPrecumulateOp.html" title="class in groovyx/gpars/extra166y">PAS.FJLPrecumulateOp</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLPrecumulatePlusOp.html" title="class in groovyx/gpars/extra166y">PAS.FJLPrecumulatePlusOp</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLReduce.html" title="class in groovyx/gpars/extra166y">PAS.FJLReduce</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLScan.html" title="class in groovyx/gpars/extra166y">PAS.FJLScan</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLScanOp.html" title="class in groovyx/gpars/extra166y">PAS.FJLScanOp</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLScanPlusOp.html" title="class in groovyx/gpars/extra166y">PAS.FJLScanPlusOp</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLSelectAllDriver.html" title="class in groovyx/gpars/extra166y">PAS.FJLSelectAllDriver</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLSorter.html" title="class in groovyx/gpars/extra166y">PAS.FJLSorter</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLStats.html" title="class in groovyx/gpars/extra166y">PAS.FJLStats</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLTransform.html" title="class in groovyx/gpars/extra166y">PAS.FJLTransform</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJLUniquifier.html" title="class in groovyx/gpars/extra166y">PAS.FJLUniquifier</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJOAppendAllDriver.html" title="class in groovyx/gpars/extra166y">PAS.FJOAppendAllDriver</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJOApply.html" title="class in groovyx/gpars/extra166y">PAS.FJOApply</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJOBinaryIndexMap.html" title="class in groovyx/gpars/extra166y">PAS.FJOBinaryIndexMap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJOCMerger.html" title="class in groovyx/gpars/extra166y">PAS.FJOCMerger</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJOCSorter.html" title="class in groovyx/gpars/extra166y">PAS.FJOCSorter</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJOCombineInPlace.html" title="class in groovyx/gpars/extra166y">PAS.FJOCombineInPlace</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJOCumulateOp.html" title="class in groovyx/gpars/extra166y">PAS.FJOCumulateOp</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJOFill.html" title="class in groovyx/gpars/extra166y">PAS.FJOFill</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJOGenerate.html" title="class in groovyx/gpars/extra166y">PAS.FJOGenerate</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJOIndexMap.html" title="class in groovyx/gpars/extra166y">PAS.FJOIndexMap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJOIndexOf.html" title="class in groovyx/gpars/extra166y">PAS.FJOIndexOf</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJOMap.html" title="class in groovyx/gpars/extra166y">PAS.FJOMap</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJOMerger.html" title="class in groovyx/gpars/extra166y">PAS.FJOMerger</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJOPACombineInPlace.html" title="class in groovyx/gpars/extra166y">PAS.FJOPACombineInPlace</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJOPrecumulateOp.html" title="class in groovyx/gpars/extra166y">PAS.FJOPrecumulateOp</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJOReduce.html" title="class in groovyx/gpars/extra166y">PAS.FJOReduce</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJOScan.html" title="class in groovyx/gpars/extra166y">PAS.FJOScan</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJOScanOp.html" title="class in groovyx/gpars/extra166y">PAS.FJOScanOp</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJOSelectAllDriver.html" title="class in groovyx/gpars/extra166y">PAS.FJOSelectAllDriver</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJOSorter.html" title="class in groovyx/gpars/extra166y">PAS.FJOSorter</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJOStats.html" title="class in groovyx/gpars/extra166y">PAS.FJOStats</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJOTransform.html" title="class in groovyx/gpars/extra166y">PAS.FJOTransform</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJOUniquifier.html" title="class in groovyx/gpars/extra166y">PAS.FJOUniquifier</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJRemoveAll.html" title="class in groovyx/gpars/extra166y">PAS.FJRemoveAll</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJRemoveAllDriver.html" title="class in groovyx/gpars/extra166y">PAS.FJRemoveAllDriver</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJScan.html" title="class in groovyx/gpars/extra166y">PAS.FJScan</A></B></TD>
+        <TD>Cumulative scan</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJScanOp.html" title="class in groovyx/gpars/extra166y">PAS.FJScanOp</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJSearchBase.html" title="class in groovyx/gpars/extra166y">PAS.FJSearchBase</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJSelectAll.html" title="class in groovyx/gpars/extra166y">PAS.FJSelectAll</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJSelectAllDriver.html" title="class in groovyx/gpars/extra166y">PAS.FJSelectAllDriver</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJSelectAny.html" title="class in groovyx/gpars/extra166y">PAS.FJSelectAny</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.FJSubSorter.html" title="class in groovyx/gpars/extra166y">PAS.FJSubSorter</A></B></TD>
+        <TD>Performs merging for FJSorter. </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PAS.UniquifierTable.html" title="class in groovyx/gpars/extra166y">PAS.UniquifierTable</A></B></TD>
+        <TD>Returns a good size for table</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelArray.html" title="class in groovyx/gpars/extra166y">ParallelArray</A></B></TD>
+        <TD>An array supporting parallel operations.</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelArray.AsList.html" title="class in groovyx/gpars/extra166y">ParallelArray.AsList</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelArray.ListIter.html" title="class in groovyx/gpars/extra166y">ParallelArray.ListIter</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelArray.ParallelArrayIterator.html" title="class in groovyx/gpars/extra166y">ParallelArray.ParallelArrayIterator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelArrayWithBounds.html" title="class in groovyx/gpars/extra166y">ParallelArrayWithBounds</A></B></TD>
+        <TD>A prefix view of ParallelArray that causes operations to apply
+ only to elements within a given range.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelArrayWithDoubleMapping.html" title="class in groovyx/gpars/extra166y">ParallelArrayWithDoubleMapping</A></B></TD>
+        <TD>A prefix view of ParallelArray that causes operations to apply
+ to mappings of elements, not to the elements themselves.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelArrayWithFilter.html" title="class in groovyx/gpars/extra166y">ParallelArrayWithFilter</A></B></TD>
+        <TD>A prefix view of ParallelArray that causes operations to apply
+ only to elements for which a selector returns true.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelArrayWithLongMapping.html" title="class in groovyx/gpars/extra166y">ParallelArrayWithLongMapping</A></B></TD>
+        <TD>A prefix view of ParallelArray that causes operations to apply
+ to mappings of elements, not to the elements themselves.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelArrayWithMapping.html" title="class in groovyx/gpars/extra166y">ParallelArrayWithMapping</A></B></TD>
+        <TD>A prefix view of ParallelArray that causes operations to apply
+ to mappings of elements, not to the elements themselves.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelDoubleArray.html" title="class in groovyx/gpars/extra166y">ParallelDoubleArray</A></B></TD>
+        <TD>An array of doubles supporting parallel operations.  </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelDoubleArray.AsList.html" title="class in groovyx/gpars/extra166y">ParallelDoubleArray.AsList</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelDoubleArray.ListIter.html" title="class in groovyx/gpars/extra166y">ParallelDoubleArray.ListIter</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelDoubleArray.ParallelDoubleArrayIterator.html" title="class in groovyx/gpars/extra166y">ParallelDoubleArray.ParallelDoubleArrayIterator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelDoubleArrayWithBounds.html" title="class in groovyx/gpars/extra166y">ParallelDoubleArrayWithBounds</A></B></TD>
+        <TD>A prefix view of ParallelDoubleArray that causes operations to apply
+ only to elements within a given range.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelDoubleArrayWithDoubleMapping.html" title="class in groovyx/gpars/extra166y">ParallelDoubleArrayWithDoubleMapping</A></B></TD>
+        <TD>A prefix view of ParallelArray that causes operations to apply
+ to mappings of elements, not to the elements themselves.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelDoubleArrayWithFilter.html" title="class in groovyx/gpars/extra166y">ParallelDoubleArrayWithFilter</A></B></TD>
+        <TD>A prefix view of ParallelDoubleArray that causes operations to apply
+ only to elements for which a selector returns true.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelDoubleArrayWithLongMapping.html" title="class in groovyx/gpars/extra166y">ParallelDoubleArrayWithLongMapping</A></B></TD>
+        <TD>A prefix view of ParallelDoubleArray that causes operations to apply
+ to mappings of elements, not to the elements themselves.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelDoubleArrayWithMapping.html" title="class in groovyx/gpars/extra166y">ParallelDoubleArrayWithMapping</A></B></TD>
+        <TD>A prefix view of ParallelDoubleArray that causes operations to apply
+ to mappings of elements, not to the elements themselves.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelLongArray.html" title="class in groovyx/gpars/extra166y">ParallelLongArray</A></B></TD>
+        <TD>An array of longs supporting parallel operations.  </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelLongArray.AsList.html" title="class in groovyx/gpars/extra166y">ParallelLongArray.AsList</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelLongArray.ListIter.html" title="class in groovyx/gpars/extra166y">ParallelLongArray.ListIter</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelLongArray.ParallelLongArrayIterator.html" title="class in groovyx/gpars/extra166y">ParallelLongArray.ParallelLongArrayIterator</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelLongArrayWithBounds.html" title="class in groovyx/gpars/extra166y">ParallelLongArrayWithBounds</A></B></TD>
+        <TD>A prefix view of ParallelLongArray that causes operations to apply
+ only to elements within a given range.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelLongArrayWithDoubleMapping.html" title="class in groovyx/gpars/extra166y">ParallelLongArrayWithDoubleMapping</A></B></TD>
+        <TD>A prefix view of ParallelLongArray that causes operations to apply
+ to mappings of elements, not to the elements themselves.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelLongArrayWithFilter.html" title="class in groovyx/gpars/extra166y">ParallelLongArrayWithFilter</A></B></TD>
+        <TD>A prefix view of ParallelLongArray that causes operations to apply
+ only to elements for which a selector returns true.  </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelLongArrayWithLongMapping.html" title="class in groovyx/gpars/extra166y">ParallelLongArrayWithLongMapping</A></B></TD>
+        <TD>A prefix view of ParallelLongArray that causes operations to apply
+ to mappings of elements, not to the elements themselves.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ParallelLongArrayWithMapping.html" title="class in groovyx/gpars/extra166y">ParallelLongArrayWithMapping</A></B></TD>
+        <TD>A prefix view of ParallelLongArray that causes operations to apply
+ to mappings of elements, not to the elements themselves.
+ </TD>
+        </TR>
+
+</TABLE>
+&nbsp;
+<P>
+<DL>
+</DL>
+<hr>
+    
+
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+    <TR BGCOLOR="#90DDF7" CLASS="TableHeadingColor">
+    <TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+    <B>Enum Summary</B></FONT></TH>
+    </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CustomConcurrentHashMap.Strength.html" title="class in groovyx/gpars/extra166y">CustomConcurrentHashMap.Strength</A></B></TD>
+        <TD>The strength of keys and values that may be held by
+ maps. strong denotes ordinary objects. weak and soft denote the
+ corresponding java.lang.ref.Reference types.</TD>
+        </TR>
+
+</TABLE>
+&nbsp;
+<P>
+<DL>
+</DL>
+<hr>
+    
+
+
+
+
+
+<p>Copyright &#169; 2008&#8211;2013  V&#225;clav Pech.  All Rights Reserved.</p>
+<hr>
+</body>
+</html>

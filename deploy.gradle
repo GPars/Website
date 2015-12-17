@@ -39,7 +39,7 @@ repositories {
 apply plugin: 'war'
 apply plugin: 'cloudfoundry'
 
-defaultTasks 'cfLogin','cfDelete', 'cfPush'
+defaultTasks 'cfLogin','cfPush'  // 'cfDelete', 
 
 
 dependencies {
@@ -52,16 +52,17 @@ war {
 }
 
 cloudfoundry {
-	file = new File('build/libs/GParsDocs.war')
-
-	application = 'GParsDocs'
-    target = 'https://api.de.a9s.eu'
-    uri = 'http://gparsdocs.de.a9sapp.eu/'
-
-    space = 'development'
-    memory = 300	// MB
-
 	// your credentials go here
-    username = 'james.northrop@orange.fr'
-    password = '******'
+    username = ''
+    password = ''
+    target = 'https://api.de.a9s.eu'
+    space = 'development'
+	file = new File('build/libs/GParsDocs.war')
+    uri = 'http://gparsdocs.de.a9sapp.eu/'
+	application = 'GParsDocs'
+    memory = 340	// MB
+    instances = 1
+    services {"rediscloud" { label = 'redis' 
+    provider = 'Garantiadata'
+    plan = '100' } }
 }

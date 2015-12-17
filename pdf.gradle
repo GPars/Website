@@ -7,7 +7,9 @@
 	gradlew -b pdf.gradle
 	
 	this runs the defaultTasks below using the gradle wrapper tool gradlew <or> bash ./gradlew <or> gradle tool if installed
+	
 */
+
 apply plugin: 'groovy'
 apply plugin: 'war'
 
@@ -48,7 +50,7 @@ war {
 // closure for asciidoctor plugin; chg these values to influence asciidoctor task
 asciidoctor { 
 	// plugin reads all *.adoc files in this folder and any sub-folder
-	sourceDir = file('src/docs/asciidoc/guide')    
+	sourceDir = file('src/docs/asciidoc/guide')	// choose either guide  <or> quickstart folder and same for outputDir    
     outputDir = file('src/main/webapp/guide')  // file("$buildDir/docs")
     separateOutputDirs=false	// true creates two folders within the outDir path one for html, one for pdf
     backends = ['pdf' ]	// to create both html and pdf output:  backends = ['html5' ,'pdf']

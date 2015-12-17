@@ -14,7 +14,7 @@ apply plugin: 'org.asciidoctor.gradle.asciidoctor'
 apply plugin: 'org.asciidoctor.convert' 
 
 
-defaultTasks 'clean','asciidoctor', 'build', 'war' //  
+defaultTasks 'clean','asciidoctor', 'build', 'war' 
 
 // logic to suport asciidoctor html, pdf and diagrams output
 buildscript {
@@ -36,6 +36,10 @@ repositories {
 
 dependencies {
     compile "org.codehaus.groovy:groovy-all:2.4.5"
+	runtime "org.jruby:jruby-complete:1.7.21"
+	runtime "com.beust:jcommander:1.48"
+    runtime "org.asciidoctor:asciidoctorj:1.5.3.2"
+
     runtime "org.codehaus.groovy:groovy-all:2.4.5"
     runtime "redis.clients:jedis:2.7.2"	// potential page caching service if Redis service available on PaaS target
 }
@@ -49,7 +53,7 @@ war {
 asciidoctor { 
 	sourceDir = file('src/docs/asciidoc')    //'src/docs/asciidoc')	// plugin reads all *.adoc files in this folder and any sub-folder
     outputDir = file('src/main/webapp')            //main/tester')   // file("$buildDir/docs")
-    separateOutputDirs=false	// true creates two folders within the outDir path one for html, one for pdf
+    separateOutputDirs=false	// true creates two folders within the outDir path one for /html, one for /pdf
     backends = ['html5' ]	// to create both html and pdf output:  backends = ['html5' ,'pdf']
     options = [
         doctype: 'book',
