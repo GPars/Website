@@ -1,0 +1,256 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<title>groovyx.gpars.dataflow.operator (org.codehaus.gpars)</title>
+<META NAME="keywords" CONTENT="groovyx.gpars.dataflow.operator package">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../stylesheet.css" TITLE="Style">
+<link href="../../../../groovy.ico" type="image/x-icon" rel="shortcut icon">
+<link href="../../../../groovy.ico" type="image/x-icon" rel="icon">
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    parent.document.title="groovyx.gpars.dataflow.operator (org.codehaus.gpars)";
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</head>
+
+<body BGCOLOR="white" onload="windowTitle();">
+<hr>
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<a name="navbar_top"><!-- --></a>
+<table summary="" width="100%" border="0" cellpadding="1" cellspacing="0">
+<tbody><tr>
+<td colspan="2" class="NavBarCell1" bgcolor="#eeeeff">
+<a name="navbar_top_firstrow"><!-- --></a>
+<table summary="" border="0" cellpadding="0" cellspacing="3">
+  <tbody><tr valign="top" align="center">
+  <td class="NavBarCell1" bgcolor="#eeeeff">    <a href="../../../../overview-summary.html"><font class="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td>
+  <td class="NavBarCell1Rev" bgcolor="#ffffff"> &nbsp;<font class="NavBarFont1Rev"><b>Package</b></font>&nbsp;</td>
+  <td class="NavBarCell1" bgcolor="#eeeeff">    <font class="NavBarFont1">Class</font>&nbsp;</td>
+  <!--
+  <td class="NavBarCell1" bgcolor="#eeeeff">    <a href="overview-tree.html"><font class="NavBarFont1"><b>Tree</b></font></a>&nbsp;</td>
+  -->
+  <td class="NavBarCell1" bgcolor="#eeeeff">    <a href="../../../../deprecated-list.html"><font class="NavBarFont1"><b>Deprecated</b></font></a>&nbsp;</td>
+  <td class="NavBarCell1" bgcolor="#eeeeff">    <a href="../../../../index-all.html"><font class="NavBarFont1"><b>Index</b></font></a>&nbsp;</td>
+  <td class="NavBarCell1" bgcolor="#eeeeff">    <a href="../../../../help-doc.html"><font class="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+  </tr>
+</tbody></table>
+</td>
+<td rowspan="3" valign="top" align="right"><em>
+    <b>org.codehaus.gpars</b>
+</em>
+</td>
+</tr>
+
+<tr>
+<td class="NavBarCell2" bgcolor="white"><font size="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</font></td>
+<td class="NavBarCell2" bgcolor="white"><font size="-2">
+  <a href="../../../../index.html?groovyx/gpars/dataflow/operator/package-summary.html" target="_top"><b>FRAMES</b></a>  &nbsp;
+&nbsp;<a href="package-summary.html" target="_top"><b>NO FRAMES</b></a>  &nbsp;
+&nbsp;<script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../allclasses-frame.html"><B>All Classes</B></A>');
+  }
+  //-->
+</script>
+<noscript>
+  <A HREF="../../../../allclasses-frame.html"><B>All Classes</B></A>
+</noscript>
+
+
+</font></td>
+</tr>
+</tbody></table>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+
+<HR>
+<H2>
+Package groovyx.gpars.dataflow.operator
+</H2>
+
+
+
+<P>&nbsp;</P>
+
+
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+    <TR BGCOLOR="#90DDF7" CLASS="TableHeadingColor">
+    <TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+    <B>Interface Summary</B></FONT></TH>
+    </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ControlMessage.html" title="class in groovyx/gpars/dataflow/operator">ControlMessage</A></B></TD>
+        <TD>A marker interface indicating control dataflow messages, which in general do not get propagated to the operator's body</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="DataflowEventListener.html" title="class in groovyx/gpars/dataflow/operator">DataflowEventListener</A></B></TD>
+        <TD>Enables external entities to observe the state of dataflow selectors and operators</TD>
+        </TR>
+
+</TABLE>
+&nbsp;
+<P>
+<DL>
+</DL>
+<hr>
+    
+
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+    <TR BGCOLOR="#90DDF7" CLASS="TableHeadingColor">
+    <TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+    <B>Class Summary</B></FONT></TH>
+    </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="BinaryChoiceClosure.html" title="class in groovyx/gpars/dataflow/operator">BinaryChoiceClosure</A></B></TD>
+        <TD>Used by the chainWith() method to wrap the supplied closure inside the operator's body.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ChainWithClosure.html" title="class in groovyx/gpars/dataflow/operator">ChainWithClosure</A></B></TD>
+        <TD>Used by the chainWith() method to wrap the supplied closure inside the operator's body.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ChoiceClosure.html" title="class in groovyx/gpars/dataflow/operator">ChoiceClosure</A></B></TD>
+        <TD>Used by the chainWith() method to wrap the supplied closure inside the operator's body.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CopyChannelsClosure.html" title="class in groovyx/gpars/dataflow/operator">CopyChannelsClosure</A></B></TD>
+        <TD>Used by the chainWith() method to wrap the supplied closure inside the operator's body.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="CountingPoisonPill.html" title="class in groovyx/gpars/dataflow/operator">CountingPoisonPill</A></B></TD>
+        <TD>Represents a non-immediate PoisonPill that counts stopped operators and can be used to wait for all the operators to terminate.</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="DataflowEventAdapter.html" title="class in groovyx/gpars/dataflow/operator">DataflowEventAdapter</A></B></TD>
+        <TD>A default empty implementation of DataflowEventListener</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="DataflowOperator.html" title="class in groovyx/gpars/dataflow/operator">DataflowOperator</A></B></TD>
+        <TD>Dataflow selectors and operators (processors) form the basic units in dataflow networks. </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="DataflowOperatorActor.html" title="class in groovyx/gpars/dataflow/operator">DataflowOperatorActor</A></B></TD>
+        <TD>An operator's internal actor. </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="DataflowPrioritySelector.html" title="class in groovyx/gpars/dataflow/operator">DataflowPrioritySelector</A></B></TD>
+        <TD>Dataflow selectors and operators (processors) form the basic units in dataflow networks. </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="DataflowProcessor.html" title="class in groovyx/gpars/dataflow/operator">DataflowProcessor</A></B></TD>
+        <TD>Dataflow selectors and operators (processors) form the basic units in dataflow networks. </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="DataflowProcessorActor.html" title="class in groovyx/gpars/dataflow/operator">DataflowProcessorActor</A></B></TD>
+        <TD>A base actor class for operators' and selectors' actors</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="DataflowProcessorAtomicBoundAllClosure.html" title="class in groovyx/gpars/dataflow/operator">DataflowProcessorAtomicBoundAllClosure</A></B></TD>
+        <TD></TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="DataflowSelector.html" title="class in groovyx/gpars/dataflow/operator">DataflowSelector</A></B></TD>
+        <TD>Dataflow selectors and operators (processors) form the basic units in dataflow networks. </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="DataflowSelectorActor.html" title="class in groovyx/gpars/dataflow/operator">DataflowSelectorActor</A></B></TD>
+        <TD>An selector's internal actor. </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="FilterClosure.html" title="class in groovyx/gpars/dataflow/operator">FilterClosure</A></B></TD>
+        <TD>Used by the filter() method to wrap the supplied closure and use it for filtering data.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ForkingDataflowOperatorActor.html" title="class in groovyx/gpars/dataflow/operator">ForkingDataflowOperatorActor</A></B></TD>
+        <TD>An operator's internal actor. </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ForkingDataflowSelectorActor.html" title="class in groovyx/gpars/dataflow/operator">ForkingDataflowSelectorActor</A></B></TD>
+        <TD>An selector's internal actor. </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="ImmediateCountingPoisonPill.html" title="class in groovyx/gpars/dataflow/operator">ImmediateCountingPoisonPill</A></B></TD>
+        <TD>Represents an immediate PoisonPill that counts stopped operators and can be used to wait for all the operators to terminate.</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="Pipeline.html" title="class in groovyx/gpars/dataflow/operator">Pipeline</A></B></TD>
+        <TD>A builder for operator pipelines. </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PoisonPill.html" title="class in groovyx/gpars/dataflow/operator">PoisonPill</A></B></TD>
+        <TD>Represents the poison for dataflow operators.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="PoisonTrackCounter.html" title="class in groovyx/gpars/dataflow/operator">PoisonTrackCounter</A></B></TD>
+        <TD>A helper class used by poison messages to count terminated dataflow processors</TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="SeparationClosure.html" title="class in groovyx/gpars/dataflow/operator">SeparationClosure</A></B></TD>
+        <TD>Used by the chainWith() method to wrap the supplied closure inside the operator's body.
+ </TD>
+        </TR>
+
+        <TR BGCOLOR="white" CLASS="TableRowColor">
+        <TD WIDTH="15%"><B><A HREF="StopGently.html" title="class in groovyx/gpars/dataflow/operator">StopGently</A></B></TD>
+        <TD>A message to stop operators' actors once they handle the next round of messages.</TD>
+        </TR>
+
+</TABLE>
+&nbsp;
+<P>
+<DL>
+</DL>
+<hr>
+    
+
+
+
+
+
+
+<p>Copyright &#169; 2008&#8211;2013  V&#225;clav Pech.  All Rights Reserved.</p>
+<hr>
+</body>
+</html>
