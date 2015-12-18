@@ -1,0 +1,59 @@
+image::./images/gpars-rgb.svg[GPars Logo,240,align="center",link="http://gpars.org"]
+++++
+<link rel="stylesheet" href="./css/css3menu1/style.css" type="text/css" />
+<ul id="css3menu1" class="topmenu">
+	<li class="topfirst"><a href="#" style="height:16px;line-height:16px;"><span><img src="./css/css3menu1/blue-arrow1 right5.png" alt=""/>Learn</span></a>
+	<ul>
+		<li><a href="Articles.html" title="Articles">Articles</a></li>
+		<li><a href="Concepts_Compared.html" title="Comparing Concepts - Which To Use ?">Concepts</a></li>
+		<li><a href="core/index.html" title="Core Technologies Explained">Core Ideas</a></li>
+		<li><a href="Demos.html" title="Code Samples &amp; Demonstrations">Demos</a></li>
+		<li><a href="Events.html" title="Meetings You Can Attend">Events</a></li>
+		<li><a href="News.html" title="News From A Parallel Universe">News</a></li>
+		<li><a href="Presentations.html" title="Briefings and Presentations">Presentations</a></li>
+	</ul></li>
+	<li class="topmenu"><a href="#" style="height:16px;line-height:16px;"><span><img src="./css/css3menu1/blue-arrow1 right4.png" alt=""/>Use</span></a>
+	<ul>
+		<li><a href="Breaking_Changes.html" title="My, How Things Have Changed">Breaking News</a></li>
+		<li><a href="Integration.html" title="Use Gradle, Maven, etc To Get Started">Build Tools</a></li>
+		<li><a href="Download.html" title="Get GPars Hot Off The Press">Download</a></li>
+		<li><a href="Privacy.html" title="How We Protect Your Data">Privacy</a></li>
+		<li><a href="License.html" title="How Can We Use GPars Technology ?">Terms Of Use</a></li>
+	</ul></li>
+	<li class="topmenu"><a href="#" style="height:16px;line-height:16px;"><span><img src="./css/css3menu1/blue-arrow1 right3.png" alt=""/>Hacking</span></a>
+	<ul>
+		<li><a href="Code_Style.html" title="Tips For The Style-Conscious Hacker">Code Style Guides</a></li>
+		<li><a href="Developer_Zone.html" title="How To Build GPars">Developer Zone</a></li>
+		<li><a href="Roadmap.html" title="What's On The Horizon ?">Future Roadmap</a></li>
+		<li><a href="Hackergarten.html" title="Informal Hands-on Coding Gatherings of Developers">Hackergarten</a></li>
+		<li><a href="Readme.html" title="Latest Up-To-The-Minute Progress">Read Me</a></li>
+		<li><a href="Todo.html" title="What's Been Done &amp; What's Not ?">To Do List</a></li>
+	</ul></li>
+	<li class="topmenu"><a href="#" style="height:16px;line-height:16px;"><span><img src="./css/css3menu1/blue-arrow1 right2.png" alt=""/>Docs</span></a>
+	<ul>
+		<li><a href="API_Doc.html" title="API Doc.s For All Releases">API Doc.s</a></li>
+		<li><a href="./api/groovydoc/groovy-overview-summary.html" title="Groovy API Overview">Groovy API 1.2.1</a></li>
+		<li><a href="./api/javadoc/java-overview-summary.html" title="Java API Overview">Java API 1.2.1</a></li>
+		<li><a href="User_Guide.html" title="User Guides For Prior Releases">Prev.User Guides</a></li>
+		<li><a href="./qs" title="Briefly Covers Individual Concepts">Quick Reference</a></li>
+		<li><a href="./stale" title="Old,Stale,Missing,Obsolete Links In This Site">Stale URL List</a></li>
+		<li><a href="./jk" title="Prof.Jon Kerridge Gives Us The Skinny">Tutorials</a></li>
+		<li><a href="./guide" title="Latest User Guide In Detail">User Guide 1.2.1</a></li>
+	</ul></li>
+	<li class="topmenu"><a href="#" style="height:16px;line-height:16px;"><span><img src="./css/css3menu1/blue-arrow1 right1.png" alt=""/>Help</span></a>
+	<ul>
+		<li><a href="Community.html" title="Forums,Emails,JIRAs,Bug Reports">Community</a></li>
+		<li><a href="Support.html" title="How To Get Help plus Q&amp;As">Support</a></li>
+		<li><a href="User_Voices.html" title="Feedback From Our Users">User Voices</a></li>
+	</ul></li>
+	<li class="toplast"><a href="#" style="height:16px;line-height:16px;"><span><img src="./css/css3menu1/blue-arrow1 right.png" alt=""/>About</span></a>
+	<ul>
+		<li><a href="GPars_History.html" title="The Origins of This Beast">GPars History</a></li>
+		<li><a href="GPars_Logo.html" title="How Did It Happen ?">GPars Logo</a></li>
+		<li><a href="Logo_Usage_Policy.html" title="Terms Of Use For GPars Logo">Logo Usage</a></li>
+		<li><a href="Sponsors.html" title="How To Help Keep Us Ticking">Sponsors</a></li>
+		<li><a href="TheGParsTeam.html" title="Get To Know 'The Men In Black'">The GPars Team</a></li>
+	</ul></li>
+</ul>
+++++
+

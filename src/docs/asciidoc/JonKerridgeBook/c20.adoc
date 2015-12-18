@@ -1,9 +1,9 @@
 = GPars - Groovy Parallel Systems
 Jon Kerridge <j.kerridge@napier.ac.uk>
-v1.0, 2015-10-29
+v1.2.1, 2015-12-02
 :linkattrs:
 :linkcss:
-:toc: left
+:toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
@@ -21,7 +21,9 @@ In this chapter, we explore a solution to the problem that utilises two mobile a
 
 The solution, as presented, does not require any form of central control to initiate the corrective action. The agents are invoked by the node when it is determined that the processing of incoming messages has stopped. 
 The solution essentially builds an `Active Network` at the application layer, rather than the usual normal network layer. The solution also utilises the `Queue and Prompter` processes developed in `Chapter 5`. 
-These provide a means of providing a finite buffer between the ring node process and the process receiving the messages. Additionally, a console interface has been added to the message receiver process, 
+These provide a means of providing a finite buffer between the ring node process and the process receiving the messages. 
+
+Additionally, a console interface has been added to the message receiver process, 
 so that users can manipulate its behaviour and more easily observer the effect that the agents have on the overall system operation.
 
 === Architectural Overview
@@ -30,6 +32,7 @@ so that users can manipulate its behaviour and more easily observer the effect t
 It shows the state of the system once it has been detected that `RingElement -n` has stopped receiving messages. The net channel connections joining `RingElement –n` to the ring have been removed and replaced by the connection that goes between `RingElement n-1` and `RingElement n+1`.
 
 The figure also shows the additional processes used to provide the required management. The *RingElement* outputs messages into the *Queue* process, instead of directly into the *Receiver* process. The *Prompt* process requests messages from the *Queue* which it passes on to the *Receiver* process. 
+
 Whenever the *Queue* process is accessed, either for putting a new message or getting a message in response to a *Prompt8 request, the number of messages in the *Queue* is output to the `StateManager` process. 
 The `StateManager` process is able to determine how full the *Queue* is and depending on pre-defined limits will inform the `RingElement` that the *Receiver* has stopped inputting messages or has resumed. 
 This will be the trigger to send either the *StopAgent* or the *RestartAgent* around the network.

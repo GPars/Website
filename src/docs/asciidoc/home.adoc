@@ -1,85 +1,102 @@
 = GPars - Groovy Parallel Systems
 The Whole GPars Team <gpars-developers@googlegroups.com>
-v1.0, 2015-10-01
+v1.2.1, 2015-12-13
 :linkattrs:
 :linkcss:
-:toc: left
+:toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
 :docslink: http://www.gpars.org/guide/[GPars Docs]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 
-include::_includes/navbar.txt[]
+include::_includes/navbar2.txt[]
 
-== GPars - The Groovy concurrency and parallelism framework for Groovy and Java code
+== Concurrency & Parallelism Framework for Groovy&Java 
 
-The *GPars* framework offers Java developers intuitive and safe ways to handle
-Java or Groovy tasks concurrently. Leveraging the enormous flexibility of the
-http://www.groovy-lang.org/[Groovy programing language] and building on
-proven Java technologies, we aim to make concurrent programming for multi-core
-hardware intuitive, robust and enjoyable.
+=== Introduction 
 
-.withPool
-[source,groovy,linenums]
-----
-withPool {
-    def selfPortraits = images
-        .findAllParallel{it.contains me}
-        .collectParallel{it.resize()}
-}
-----
+The world of mainstream computing is changing rapidly these days. If you open the case and look under the covers of your computer, you'll most likely see a dual-core processor there, or a quad-core one, if you have a high-end computer.  
+We all now run our software on multi-processor systems. 
+
+.Why do people still create single-threaded code ?
+The code we write today and tomorrow will probably never run on a single processor system: parallel hardware has become standard.  Not so with the software though, at least not yet. 
+People still create single-threaded code, even though it will not be able to leverage the full power of current and future hardware.  
+
+''''
+
+NOTE: The code we write today will probably never run on a single processor system !
+
+''''
+
+Some developers experiment with low-level concurrency primitives, like threads, and locks or synchronized blocks.  
+However, it has become obvious that the shared-memory multi-threading approach used at the application level causes more trouble than it solves. Low-level concurrency handling is usually hard to get right, and it's not much fun either.
+
+With such a radical change in hardware, software inevitably has to change dramatically too. Higher-levelS OF 
+concurrency and parallelism concepts like _map/reduce_, _fork/join_, _actors_ and _dataflow_ provide natural
+abstractions for different types of problem domains while leveraging the multi-core hardware.
+
+image::../images/divider.png[divider,436,align="center"]
+
+=== Meet *GPars*
+
+Meet http://gpars.org[*GPars*], an open-source concurrency and parallelism library for *Java* and *Groovy* that gives you a number of high-level abstractions to write concurrent and parallel code in *Groovy* 
+(_map/reduce, fork/join, asynchronous closures, actors, agents, dataflow concurrency_ and other concepts), which can make your *Java* and *Groovy* code concurrent and/or parallel with little effort.  
+
+With *GPars*, your *Java* and/or *Groovy* code can easily utilize all the available processors on the target system. You can run multiple calculations at the same time, request network resources in parallel, safely solve hierarchical
+divide-and-conquer problems, perform functional style map/reduce or data parallel collection processing or
+build your applications around the actor or dataflow model.
+
+[sidebar]
+.Apache
+****
+The *GPars* project is open sourced under the http://www.apache.org/licenses/LICENSE-2.0.html[Apache 2 License]. 
+****
 
 
-*GPars* is a multi-paradigm concurrency framework, offering several mutually
-cooperating high-level concurrency abstractions, such as _Dataflow operators_,
-_Promises_, _CSP,_ _Actors_, _Asynchronous Functions_, _Agents_ and _Parallel
+If you're working on a commercial, open-source, educational or any other type of software project in *Groovy*, download the binaries or integrate them from the *Maven* repository and get going. 
+The door to writing highly concurrent and/or parallel *Java* and *Groovy* code is wide open. [blue]#Enjoy!#
+
+''''
+
+TIP: Does your system already have *Groovy* version 1.8 or later ? If so, *GPars* is also included, so there's no need for another download. ;-)
+
+''''
+
+=== How ?
+
+The *GPars* framework offers Java developers intuitive and safe ways to handle Java or Groovy tasks concurrently. Leveraging the enormous flexibility of the http://www.groovy-lang.org/[Groovy programing language] 
+and building on proven *Java* technologies, we aim to make concurrent programming for multi-core hardware intuitive, robust and enjoyable.
+
+*GPars* is a multi-paradigm concurrency framework, offering several mutually cooperating high-level concurrency abstractions, such as _Dataflow operators_, _Promises_, _CSP,_ _Actors_, _Asynchronous Functions_, _Agents_ and _Parallel
 Collections_.
-
-== GPars - 'coz concurrency is Groovy
 
 === Why people like *GPars*
 
-Hear those who are using *GPars* already, check out the link:User_Voices.html[User
-Voices].
+Hear those who are using *GPars* already, check out the link:User_Voices.html[User Voices].
 
-The traditional thread-based concurrency model built into Java doesn't match
-well with the natural human sense for parallelism. While this was not a
-problem at times, when the level of parallelism in software was low and
-concurrency offered only limited benefits compared to sequential code,
-nowadays, with the number of cores on a single main-stream chip doubling
-almost every year, sequential code quickly looses ground and fails to compete
-in performance and hardware utilization with concurrent code.
+The traditional thread-based concurrency model built into *Java* doesn't match well with the natural human sense for parallelism. 
+While this was not a problem at times, when the level of parallelism in software was low and concurrency offered only limited benefits compared to sequential code. 
 
-Inevitably, for concurrent programming to be effective, the mental models of
-concurrent systems interactions that people create in their heads have to
-respect the nature of human brains more than the wires on the chips. Luckily,
-such abstractions have been around for several decades, used at universities,
-in telephone switches, the super-computing industry and some other inherently
-concurrent domains. The current challenge for *GPars* is to bring these
-abstractions up to the mainstream software developers to help us solve our
-practical daily issues.
+Nowadays, with the number of cores on a single main-stream chip doubling almost every year, sequential code quickly looses ground and fails to compete in performance and hardware utilization with concurrent code.
 
-=== User Guide
+Inevitably, for concurrent programming to be effective, the mental models of concurrent systems interactions that people create in their heads have to respect the nature of human brains more than the wires on the chips. 
+Luckily, such abstractions have been around for several decades, used at universities, in telephone switches, the super-computing industry and some other inherently concurrent domains. 
+The current challenge for *GPars* is to bring these abstractions up to the mainstream software developers to help us solve our practical daily issues.
 
-Please refer to the link:User_Guide.html[User Guide] for an extensive coverage of
-*GPars* abstractions. You may also like a few link:Demos.html[Demos] to get a taste of
-what's in here for you.
+''''
 
-The framework provides straightforward Java or Groovy-based APIs to declare,
-which parts of the code should be performed in parallel. Collections can have
-their elements processed concurrently, closures can be turned into composable
-asynchronous functions and run in the background on your behalf, mutable data
-can be protected by agents or software transactional memory.
+== A User Guide
 
-For the common scenario that one or multiple results are calculated
-concurrently but need to be processed as soon as they are available, *GPars*
-makes it a breeze to correctly model this with link:Dataflow.html[Dataflow]. Dataflow
-variables and channels gives you a handy abstraction of single-assignment
-multiple-read data elements, while dataflow operators let you build efficient
-concurrent data-processing networks.
+Please refer to our link:./guide[most recent User Guide] or any of our older link:User_Guide.html[User Guides] for an extensive coverage of *GPars* abstractions. You may also like a few link:Demos.html[Demos] to get a taste of what's in here for you.
 
-.DataFlows
+The framework provides straightforward *Java* or *Groovy*-based APIs to declare which parts of the code should be performed in parallel. 
+Collections can have their elements processed concurrently, closures can be turned into composable asynchronous functions and run in the background on your behalf, mutable data can be protected by agents or software transactional memory.
+
+For the common scenario that one or more results are calculated concurrently, but need to be processed as soon as they are available, *GPars* makes it a breeze to correctly model this with link:./core/Dataflow.html[*Dataflow*]. 
+_Dataflow variables_ and channels give you a handy abstraction of single-assignment multiple-read data elements, while _dataflow operators_ let you build efficient concurrent data-processing networks.
+
+.DataFlows Sample
 [source,groovy,linenums]
 ----
 final SyncDataflowQueue channel = new SyncDataflowQueue()
@@ -102,46 +119,53 @@ def consumer = task {
 producer.join()
 ----
 
-The concept of link:Actor.html[Actors] as an approach to organizing concurrent
-activities has recently gained new popularity (thanks to the Scala, Erlang,
-and other programming languages). 
+The concept of link:core/Actor.html[*Actors*] as an approach to organizing concurrent activities has recently gained new popularity (thanks to the Scala, Erlang, and other programming languages). 
 
-*GPars* implements this concept for Java and Groovy developers. With actors support you can quickly create several
-independent Actors, which consume messages passed to them and communicate with other actors by sending them messages. You then build your solution by combining these actors into a communication network.
+*GPars* implements this concept for *Java* and *Groovy* developers. With actors support, you can quickly create several independent *Actors*, which consume messages passed to them and communicate with other actors by sending them messages. 
+You then build your solution by combining these actors into a communication network.
 
-== Let the fun begin!
 
-=== Main Areas
+image::../images/divider.png[divider,436,align="center"]
 
-* link:Dataflow.html[Dataflow concurrency]
-* link:Actor.html[Actor programming model]
-* link:CSP.html[CSP]
-* link:Agent.html[Agent] -- an thread-safe reference to mutable state
-* link:GParsPool.html[Concurrent collection processing]
-* link:Asynchronous_Functions.html[Composable asynchronous functions]
-* link:ForkJoin.html[Fork/Join]
-// <!-- * [STM](STM.html) (Software Transactional Memory) -->
+== Let the Fun Begin!
 
-=== Project's main priorities
+TIP: Here's an overview of the concepts available in *GPars*
+
+''''
+
+=== Core Areas of Interest
+
+* link:core/Actor.html[Actor programming model]
+* link:core/Agent.html[Agent] -- an thread-safe reference to mutable state
+* link:core/Asynchronous_Functions.html[Composable asynchronous functions]
+* link:core/CSP.html[CSP] - Communicating Sequential Processes
+* link:core/Dataflow.html[Dataflow concurrency]
+* link:core/ForkJoin.html[Fork/Join]
+* link:core/GParsPool.html[Concurrent collection processing]
+
+''''
+
+=== Project's Main Priorities
 
 * Good and clean design
-* Elegant Java and Groovy APIs
+* Elegant *Java* and *Groovy* APIs
 * Flexibility through meta-programming
-* Application-level solutions that scale with number of cores
+* Application-level solutions that scale with the number of *CPU* cores
+
+''''
 
 === Fast Track
 
-If you want to start experimenting with *GPars* right away, use our Fast Track
-to get up and running within minutes.
+If you want to start experimenting with *GPars* right away, use these Fast Track tips to get up and running quickly.
 
+* link:Integration.html[Build Tool Integration]
 * link:Groovy_Fast_Track.html[Groovy Fast Track]
-* link:Java_Fast_Track.html[Java Fast Track]
 * link:Grails_and_Griffon_Fast_Track.html[Grails and Griffon Fast Track]
+* link:Java_Fast_Track.html[Java Fast Track]
 
-=== What people say about *GPars*
+=== What They Say About *GPars*
 
-Check out the link:User_Voices.html[User Voices] to hear the opinions of people
-walking here before you.
+Check out the link:User_Voices.html[User Voices] to hear opinions of people walked here before you.
 
 ''''
 
@@ -149,4 +173,4 @@ walking here before you.
 
 GPars is distributed under the open-source http://www.apache.org/licenses/LICENSE-2.0.html[Apache 2
 License]. By using *GPars* you accept fully the terms stated in the license. For full details, please see the
-http://www.apache.org/licenses/LICENSE-2.0.html[Apache 2 License] document.
+http://www.apache.org/licenses/LICENSE-2.0.html[Apache 2 License] document or link:License.html[License].

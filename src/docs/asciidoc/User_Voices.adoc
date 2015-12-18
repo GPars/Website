@@ -1,17 +1,20 @@
 = GPars - Groovy Parallel Systems
 The Whole GPars Team <gpars-developers@googlegroups.com>
-v1.0, 2015-10-01
+v1.2.1, 2015-12-01
 :linkattrs:
 :linkcss:
-:toc: left
+:toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
 :docslink: http://www.gpars.org/guide/[GPars Docs]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: User Voices
+:imagesdir: ./images
 
-NOTE: What users say about GPars
+NOTE: What users say about *GPars*
+
+''''
 
 == Prakash Viswanathan -- Java and Groovy Developer
 
@@ -32,6 +35,8 @@ IMPORTANT: Our application performs 14 to 20 million transactions a day !
 My work life is much easier after using Agents for monitoring and collecting stats on large batch processing jobs, and using Data Flow Queues and Tasks for adding and consuming jobs with just a few lines of code. 
 And we got awesome support from the *GPars* team.
 
+''''
+
 == John Rudnik
 
 *GPars* is awesome. Generally dealing with threading and concurrency is a real pain. With *GPars* you can get some very usable concurrency going in 3 lines of code.
@@ -48,15 +53,20 @@ IMPORTANT: It was just plain fun
 
 they came back from backends. It was just plain fun, no Thread management boilerplate, just business rules optimizations. Would definitely re-use.
 
+''''
 
 == Andrzej Grzesik -- eCircle, development env lead
 
 Yes, I use *GPars*, it rocks. We've hacked a rdbms -> hbase migration application, *GPars* helped to improve speed by a huge factor, and it was easy to use and didn't give us problems. - www.ecircle.com
 
+''''
+
 == Adrian Nakon
 
 *GPars* is quite awesome - I'm building a multi-threaded App that collects metric data across a large number of Cisco switches and Linux servers (using *Groovy* and *Java*), and *GPars* is working like a dream.  
 The concept of stateful *Actors* is very nice. Well done! :)
+
+''''
 
 == Robin Bramley
 
@@ -67,11 +77,15 @@ On a data migration exercise from _SugarCRM_ to _Salesforce_, some of the entity
 
 http://leanjavaengineering.wordpress.com/2010/10/06/groovy-salesforce-api[leanjavaengineering.wordpress.com]
 
+''''
+
 == Dan Fraser
 
 _GParallelizer_ is very cool. I had to collect information from 200 machines using JSCH ( http://www.jcraft.com/jsch/[www.jcraft.com] ) and 3 lines of code made it 10x faster.
 
 Contact: http://twitter.com/gblack[twitter.com/gblack]
+
+''''
 
 == Jeff Gortatowsky -- Software Architect
 
@@ -84,4 +98,6 @@ TIP: *Feel free to add your own comments*
 
 https://spreadsheets.google.com/viewform?hl=en&formkey=dFdYb2U1dFo2am9OZ1NTQUFuY0lSdXc6MQ#gid=0[add your user voice through our form]
 
-*We will be happy to add you and your project to the list of happy GPars users.*
+IMPORTANT: We will be happy to add you and your project to the list of happy *GPars* users.
+
+''''

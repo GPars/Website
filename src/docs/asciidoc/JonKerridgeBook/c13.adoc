@@ -1,9 +1,9 @@
 = GPars - Groovy Parallel Systems
 Jon Kerridge <j.kerridge@napier.ac.uk>
-v1.0, 2015-10-29
+v1.2.1, 2015-12-02
 :linkattrs:
 :linkcss:
-:toc: left
+:toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
@@ -12,8 +12,7 @@ v1.0, 2015-10-29
 
 == Accessing Shared Resources: CREW
 
-In this chapter and the next, techniques are described that were developed for, and are used most often in, shared memory multi-processing systems. 
-In such systems, great care has to be taken to ensure that processes running on the same processor do not access an area of shared memory in an uncontrolled manner. 
+In this chapter and the next, techniques are described that were developed for, and are used most often in, shared memory multi-processing systems. In such systems, great care has to be taken to ensure that processes running on the same processor do not access an area of shared memory in an uncontrolled manner. 
 
 Up to now the solutions have simply ignored this problem because all data has been local to, and encapsulated within, a process. One process has communicated data to another as required by the needs of the solution. 
 The process and channel mechanisms have implicitly provided two capabilities, namely `synchronisation between processes` and `mutual exclusion of data areas`. 

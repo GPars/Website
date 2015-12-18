@@ -1,10 +1,10 @@
 = GPars - Groovy Parallel Systems 
 Jon Kerridge <j.kerridge@napier.ac.uk>
-v1.0, 2015-10-01
+v1.2.1, 2015-12-01
 :linkattrs:
 :linkcss:
 :imagesdir: ../images
-:toc: left
+:toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay

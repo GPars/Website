@@ -1,9 +1,9 @@
 = GPars - Groovy Parallel Systems
 Jon Kerridge <j.kerridge@napier.ac.uk>
-v1.0, 2015-10-29
+v1.2.1, 2015-12-02
 :linkattrs:
 :linkcss:
-:toc: left
+:toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
@@ -14,8 +14,7 @@ v1.0, 2015-10-29
 
 In many systems, there is a requirement to provide feedback from a down stream stage of the process to an upstream one. 
 
-The upstream process has no idea when such a piece of feedback information is going to arrive and thus has to be able to accept it at any time. 
-The behaviour of such a process is said to be `non-deterministic` because the arrival of the information cannot be determined when the process is defined. We know that such feedback can arrive but not when. 
+The upstream process has no idea when such a piece of feedback information is going to arrive and thus has to be able to accept it at any time. The behaviour of such a process is said to be `non-deterministic` because the arrival of the information cannot be determined when the process is defined. We know that such feedback can arrive but not when. 
 
 Similarly, a `process network` may be subject to external interventions that change the parameters of the system. It is known that these interventions will occur but not when. 
 This happens, for example, in medical laboratory equipment where a running check is kept of the range of values for each test that has been produced. 

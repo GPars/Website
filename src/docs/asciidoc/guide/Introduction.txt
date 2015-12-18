@@ -43,9 +43,7 @@ The *GPars* project is open sourced under the http://www.apache.org/licenses/LIC
 ****
 
 
-If you're working on a commercial, open-source, educational or any other type of software project in *Groovy*, download the
-binaries or integrate them from the *Maven* repository and get going. The door to writing highly concurrent
-and/or parallel *Java* and *Groovy* code is wide open. [blue]#Enjoy!#
+If you're working on a commercial, open-source, educational or any other type of software project in *Groovy*, download the binaries or integrate them from the *Maven* repository and get going. The door to writing highly concurrent and/or parallel *Java* and *Groovy* code is wide open. [blue]#Enjoy!#
 
 === Credits
 

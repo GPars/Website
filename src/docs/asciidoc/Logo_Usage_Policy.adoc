@@ -1,15 +1,16 @@
 = GPars - Groovy Parallel Systems
 The Whole GPars Team <gpars-developers@googlegroups.com>
-v1.0, 2015-10-01
+v1.2.1, 2015-12-09
 :linkattrs:
 :linkcss:
-:toc: left
+:toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
 :docslink: http://www.gpars.org/guide/[GPars Docs]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: Logo Usage Policy
+:imagesdir: ./images
 
 
 == *GPars* Logo Trademark Usage Policy
@@ -18,20 +19,11 @@ _Version 1.0_
 
 == Introduction
 
-This document outlines the policy of the *GPars* project regarding the use of
-its trademarks. Any use of any *GPars* trademark must be in accordance with this
-policy.
+This document outlines the policy of the *GPars* project regarding the use of its trademarks. Any use of any *GPars* trademark must be in accordance with this policy.
 
-"*GPars*" stands for Groovy Parallel Systems. The *GPars* logos (in several
-variants) are trademarks of the *GPars* project as well. The logos are not
-registered, but registration does not equal ownership of trademarks.
+"*GPars*" stands for Groovy Parallel Systems. The *GPars* logos (in several variants) are trademarks of the *GPars* project as well. The logos are not registered, but registration does not equal ownership of trademarks.
 
-All trademarks, even those that apply to open source software, must be used
-according to certain legal requirements. If these requirements are not met,
-the trademark may be endangered or lost. One of these requirements is for the
-trademark owner (in this case, the *GPars* project) to maintain standards for
-using its trademarks, and to enforce acceptable use of the trademarks by
-taking action against parties that violate those standards.
+All trademarks, even those that apply to open source software, must be used according to certain legal requirements. If these requirements are not met, the trademark may be endangered or lost. One of these requirements is for the trademark owner (in this case, the *GPars* project) to maintain standards for using its trademarks, and to enforce acceptable use of the trademarks by taking action against parties that violate those standards.
 
 Trademark law is mainly a way to protect the public, rather than the trademark
 holder. This means that uses of trademarks that confuse consumers -- which in

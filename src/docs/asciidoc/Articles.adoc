@@ -1,9 +1,9 @@
 = GPars - Groovy Parallel Systems
 The Whole GPars Team <gpars-developers@googlegroups.com>
-v1.0, 2015-11-01
+v1.2.1, 2015-12-01
 :linkattrs:
 :linkcss:
-:toc: left
+:toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
@@ -13,7 +13,7 @@ v1.0, 2015-11-01
 
 == Print
 
-https://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-104729.html[Java Tech Journal April 2012] on GPars, parallel collections, asynchronous functions and dataflow concurrency (by Vaclav Pech)
+https://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-104729.html[Java Tech Journal April 2012] on GPars, parallel collections, asynchronous functions and dataflow concurrency (by _Vaclav Pech_)
 
 http://www.manning.com/koenig2[Groovy in Action, 2nd Edition] chapter 17 (available in MEAP) covers the basics of *GPars*.
 

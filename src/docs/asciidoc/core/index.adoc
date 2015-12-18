@@ -1,0 +1,55 @@
+= The GPars Guide To Core Features
+The Whole GPars Team <gpars-developers@googlegroups.com>
+v1.2.1, 2015-12-04
+:doctype: book
+:linkattrs:
+:linkcss:
+:toc: right
+:toc-title: Document Index
+:icons: font
+:source-highlighter: coderay
+:docslink: http://www.gpars.org/guide/[GPars Docs]
+:description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
+:doctitle: The GPars Guide to Core Features
+:pdf-page-size: A4
+
+image::../../images/gpars-rgb.svg[GPars Logo,320,align="center",link="http://gpars.org/"]
+
+''''
+
+== Contents
+
+=== link:Actor.html[The *Actor* Mechanism]
+
+*Actors* are independent isolated active objects, which mutually share no data and communicate solely by messages passing. 
+The code body of each actor is executed by a random thread from a thread pool and so actors can proceed concurrently and independently.
+
+=== link:Agent.html[The *Agent* Mechanism]
+
+In several programing languages, we find a concept of *Agents*, who behave like actors, taking coded functions as messages. 
+After reception, the received function is run against the internal state of the *Agent* and the return value of the function is considered to be the new internal state of the *Agent*. 
+
+=== link:Asynchronous_Functions.html[The *Asynchronous_Functions* Mechanism]
+
+*GPars* provides several ways to run tasks in the background asynchronously.
+
+=== link:CSP.html[The *CSP* Mechanism]
+
+The *CSP* ( `Communicating Sequential Processes` ) concurrency concept is a message-passing model with synchronous rendezvous-type communication.
+It's valued for its high level of determinism and the ability to compose parallel processes.
+
+=== link:Dataflow.html[The *Dataflow* Mechanism]
+
+_Dataflow Concurrency_ offers an alternative concurrency model, which is inherently safe and robust. 
+It puts an emphasis on the data and their flow though your processes 
+
+=== link:ForkJoin.html[The *ForkJoin* Mechanism]
+
+Our code frequently needs to manipulate collections. Lists, arrays, sets, maps, iterators, strings and lot of other data types can be viewed as collections of items. 
+The common pattern to process collections is to take elements sequentially, one-by-one, and make an action for each of the items in row.
+
+Thanks to *Groovy*, a number of methods are currently supported for `Parallel Collection Processing`.
+
+=== link:GParsPool.html[The *GParsPool* Mechanism]
+
+On multi-core systems, we can benefit from having some tasks run asynchronously in the background, and so off-load our main thread of execution. 

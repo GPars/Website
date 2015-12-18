@@ -1,44 +1,47 @@
 = The GPars User Guide
 The Whole GPars Team <gpars-developers@googlegroups.com>
-v1.0, 2015-11-21
+v1.2.1, 2015-12-14
 :doctype: book
 :linkattrs:
 :linkcss:
-:toc: left
+:toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
 :docslink: http://www.gpars.org/guide/[GPars Docs]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: The GPars User Guide 
+:pdf-page-size: A4
 
-image::../../images/gpars-rgb.svg[GPars Logo,320,align="center",link="./"]
+image::../../images/gpars-rgb.svg[GPars Logo,320,align="center",link="http://gpars.org/"]
 
 ''''
 
 NOTE: To download this guide as a PDF - link:../guide/index.pdf[click here]
 
-include::Introduction.txt[]
+''''
 
-include::Getting_started.txt[]
+include::introduction.txt[]
 
-include::Data_parallelism.txt[]
+include::getting_started.txt[]
 
-include::Groovy_csp.txt[]
+include::data_parallelism.txt[]
 
-include::Actors.txt[]
+include::groovy_csp.txt[]
 
-include::Agents.txt[]
+include::actors.txt[]
 
-include::Dataflow.txt[]
+include::agents.txt[]
 
-include::Stm.txt[]
+include::dataflow.txt[]
 
-include::Google_app_engine_integration.txt[]
+include::stm.txt[]
 
-include::Remoting.txt[]
+include::google_app_engine_integration.txt[]
 
-include::Tips.txt[]
+include::remoting.txt[]
 
-include::Conclusion.txt[]
+include::tips.txt[]
+
+include::conclusion.txt[]
 
