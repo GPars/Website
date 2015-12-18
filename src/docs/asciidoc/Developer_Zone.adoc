@@ -1,9 +1,9 @@
 = GPars - Groovy Parallel Systems
 The Whole GPars Team <gpars-developers@googlegroups.com>
-v1.0, 2015-10-01
+v1.2.1, 2015-12-01
 :linkattrs:
 :linkcss:
-:toc: left
+:toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
@@ -35,21 +35,20 @@ The JIRA issue tracker: http://jira.codehaus.org/browse/GPARS - no longer works.
 
 === Source Repository
 
-The Git repository held at GitHub is the official mainline:
+The Git repository held at GitHub is the official mainline: https://github.com/GPars/GPars[Our Repo is here.]
 
-To work on the codebase please fork the repository on GitHub in the usual GitHub workflow way. Keeping the master branch as a mirror of the mainline, working on a feature branch and then sending in pull requests based on that feature branch seems to be the best way of working. 
+To work on the codebase, please fork the repository on GitHub in the usual GitHub workflow way. Keeping the master branch as a mirror of the mainline, working on a feature branch and then sending in pull requests based on that feature branch seems to be the best way of working. 
 Please refer to the Git and GitHub documentation for any further details on using Git and GitHub.
 
 === Mirror Repository
 
-A repository that is a mirror of the GitHub repository was maintained at Codehaus (before they closed) in order to continue integration with various continuous integration servers (over time more of this will migrate to GitHub). 
-Also this Codehaus project was the location of the issue tracker and the route for artifacts to get into the Maven repository.
+A repository that was a mirror of the GitHub repository was maintained at Codehaus (before they closed) in order to continue integration with various continuous integration servers (over time more of this will migrate to GitHub). Also that Codehaus project was the location of our issue tracker and the route for artifacts to get into the Maven repository.
 
 You should never need to clone this repository, but for completeness, the command:
 
-`git clone`
+`git clone https://github.com/GPars/GPars.git`
 
-creates a clone of the repository in the subdirectory GPars. The above URL gives read-only access to the repository.
+creates a clone of the repository in the subdirectory *GPars*. This URL gives  read-only access to the repository.
 
 === Personal Clones
 
@@ -62,7 +61,7 @@ Project committers and contributors typically keep their personal clones of the 
 
 == Building The Project
 
-The _gradlew_ build script will download and setup gradle for the project and execute the build.
+The *Gradle* build tool wrapper is included, so running the _gradlew_ build script will download and setup gradle for the project and execute the build.
 
 == IDE integration
 
@@ -78,8 +77,7 @@ Upon start or right before building the project, IDEA will prompt you for the JD
 This project serves as a master copy for the generated project files (see above) and also to configure our Continuous Integraion. 
 If you, for some reason, decide to use the default project file, you need to go through a few configuraion steps first.
 
-The first time you open the project, you will be prompted to enter a _PROJECT_JDK_NAME_ and a _MAVEN_REPOSITORY_ variable. These are IDEA variables and not system variables. 
-These results are stored in your home directory.
+The first time you open the project, you will be prompted to enter a _PROJECT_JDK_NAME_ and a _MAVEN_REPOSITORY_ variable. These are IDEA variables and not system variables. These results are stored in your home directory.
 
 Each developer can have a unique value. For example, your _MAVEN_REPOSITORY_ may be a path on your disk, and _PROJECT_JDK_NAME_ can be any string value, e.g. "1.6". This is the name of the Global JDK defined defined within IDEA.
 
@@ -92,26 +90,25 @@ Alternatively you can use the _Refresh_ button in the Maven tool window.
 
 Future IDEA environment variables can be declared within the *.ipr* and *.iml* with the syntax $VAR_NAME$. Anything undefined at project startup will prompt the user for entry.
 
-== Code style
+== Code Style
 
-If you plan to contribute code to the project, please check out our brief link:Code_Style.html[code style guide] to make sure your contribution fits seamlessly with the rest of the code base.
+If you plan to contribute code to the project, please check out our brief link:Code_Style.html[`code style guide`] to make sure your contribution fits seamlessly with the rest of the code base.
 
-== VCS workflow
+== VCS Workflow
 
  . People clone the main GitHub repository
  . People create feature branches in their personal cloned repository
  . People publish their work to possibly cooperate with others on the feature and when ready for review announce the branch asking for people to review. (_git push [mirrorRepo] myFeature_)
- . People reviewing the feature branch fetch the changesets from the public mirror and review running tests (_[git remote add mirrorRepo mirrorRepoUrl;] git fetch [mirrorRepo] myFeature_)
- . If there are no worries about the proposed changes then people say so, where there are issues start a debate on the email list.
+ . People reviewing the feature branch will fetch the changesets from the public mirror and review running tests (_[git remote add mirrorRepo mirrorRepoUrl;] git fetch [mirrorRepo] myFeature_)
+ . If there are no worries about the proposed changes then people say so, or where there are issues start a debate on the email list.
  . When changes have been reviewed and agreed, one of the committing authors agrees to merge the branch into their master and pushes to the GitHub main repository (and their public mirror repository of course) (_git checkout master; git pull; git merge --no-ff myFeature;git push_)
 
 Notice the *--no-ff* flag when merging.
 
 Note that this workflow is applicable to all people whether they are committing authors or not. It's just that non-committing authors have to convince a committing author to do the commit. 
-A consequence is that people should not be advised to submit patches on JIRA issues, but instead to specify where their feature branch is so it can be pulled. 
-Obviously patches work as well but the whole point is for everyone to publish their feature branches so others can review them in a VCS context.
+A consequence is that people should not be advised to submit patches on JIRA issues, but instead to specify where their feature branch is so it can be pulled. Obviously patches work as well but the whole point is for everyone to publish their feature branches so others can review them in a VCS context.
 
-=== Simplified workflow
+=== Simplified Workflow
 
 Trivial spelling error fixes, extra tests that don't necessitate a change of code but just extend the test coverage, and very simple (non-controversial) bug fixes (with their tests) are currently exempt from having a review process.
 
@@ -121,14 +118,14 @@ Discretion on the part of committing developers is required here. (_git pull; fi
 
 == Upgrading Gradle
 
- . Install Gradle from an up-to-date Gradle Trunk.
- . Edit the build.gradle file to change the number of the wrapper to the new one.
+ . Install Gradle from an up-to-date Gradle Trunk or the new *SDK* installer tool
+ . Edit the build.gradle or gradle.properties file to change the number of the wrapper to the new one.
  . Run `gradle wrapper`
- . If the wrapper is a snapshot, the edit wrapper/gradle-wrapper.properties to add back in the missing snapshots from the repository URL
+ . If the wrapper is a snapshot, then edit wrapper/gradle-wrapper.properties to add back in the missing snapshots from the repository URL
  . Check the result with `git diff`
  . Check the results with `gradlew clean test`
  . If on Linux, check that the Bamboo build should work with `env -i ./bambooBuild`
- . If everything is successful commit the result `git commit -m ' . . .' -a`
+ . If everything is successful, commit the result `git commit -m ' . . .' -a`
  . Push to the mainline `git push`
  . Push to the personal mirror `git push --mirror . . . `
  . Wait expectantly to see if Bamboo works or not . . .

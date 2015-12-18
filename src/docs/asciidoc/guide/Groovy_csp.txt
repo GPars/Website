@@ -1,6 +1,6 @@
 ''''
 
-image::../../images/divider.png[divider,436,align="center"]
+image::../images/divider.png[divider,436,align="center"]
 
 == User Guide To *CSP*
 

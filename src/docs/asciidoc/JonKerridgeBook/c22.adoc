@@ -1,9 +1,9 @@
 = GPars - Groovy Parallel Systems
 Jon Kerridge <j.kerridge@napier.ac.uk>
-v1.0, 2015-10-29
+v1.2.1, 2015-12-02
 :linkattrs:
 :linkcss:
-:toc: left
+:toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
@@ -44,13 +44,15 @@ We might then be able to move to processing systems that makes more effective us
 
 === Review
 
-The content of this book started at a basic undergraduate level and ended with examples of mobile systems that are still the subject of intense research activity (*occam-pi, mobile*). 
+The content of this book started at a basic undergraduate level and ended with examples of mobile systems that are still the subject of intense research activity (*occam-pi, mobile*).
+ 
 All the examples presented are demonstrable and where necessary operate over a network and employ aspects of mobility. 
 Yet this is achieved in manner that does not require a detailed understanding of the operation of networked systems and in which the definition of a process is not reliant upon whether it is to execute as one among many on a single processor or over a network.
 
 === Implementations
 
 The underlying support is provided by *JCSP* and it has been made easier to assimilate by use of *Groovy* because it helps to reduce the amount of code that needs writing. 
+
 These are of relatively little importance of themselves but it is important that they both utilise the underlying *JVM*. 
 
 What is really crucial is that *JCSP* provides an implementation of *CSP*. *CSP* provides the formal framework upon which *JCSP* is implemented and thereby the engineering support for programmers. 
@@ -64,7 +66,9 @@ NOTE: A programmer is no longer concerned with a poorly implemented underlying t
 === The Programmer's Job
 
 The programmers are not concerned with the inner workings of the underlying *JCSP* package because they can reason about their systems at a much higher level. 
+
 The programmer is no longer concerned with the detailed workings of a poorly implemented underlying thread model, in effect, writing machine code. 
+
 They can now concentrate on high-level design of the processes at the application layer; confident that, if they use the building blocks correctly and apply one pattern effectively then, the resulting system will operate as expected.
 
 This does not remove the need for testing, which exposes the frailties of a system when exposed to a real operating environment. In this book, we have shown how systems can be tested, albeit in a cumbersome manner but which, with further research and the development of support tools, will make it easier to achieve.
@@ -73,6 +77,7 @@ This does not remove the need for testing, which exposes the frailties of a syst
 === Usage
 
 The final chapters have shown how we can exploit the `process` concept in a more up-to-date setting and how it may address the problems that the software industry is starting to deal with in terms of how to exploit mobility, network connectivity and parallelism effectively. 
+
 Previously, parallelism has been thought of as providing a solution to the needs of high performance computing, where ultimate speed was the only driving force. 
 
 Hopefully, with some of the later examples, in particular, the reader will have been convinced that approaching a solution to a problem from the parallel point of view actually makes it easier to achieve a working and effective solution.
@@ -82,6 +87,7 @@ Hopefully, with some of the later examples, in particular, the reader will have 
 The book ends at the point where the examples have to become real problems and which, of course, tend to be too large to explain within the confines of such a book. Hopefully, however, the book contains sufficient ideas, concepts and capabilities that the solution to larger problems can be broken down into sufficiently small processes that it becomes manageable.
 
 As a final design consideration, I offer the advice that if you are having problems with a design and cannot get the design right then the solution is usually to add one or more processes. If a designer tries to restrict the number of processes then that is usually followed by problems. 
+
 In the future perhaps, we will get to the situation where team leaders will ask why a serial solution has been adopted rather than one that relies on parallel design methods!
 
 [right]*- Jon Kerridge* 

@@ -1,26 +1,26 @@
 = GPars - Groovy Parallel Systems
 The Whole GPars Team <gpars-developers@googlegroups.com>
-v1.0, 2015-10-01
+v1.2.1, 2015-12-01
 :linkattrs:
 :linkcss:
-:toc: left
+:toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
 :docslink: http://www.gpars.org/guide/[GPars Docs]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: Sponsors
-
+:imagesdir: ./images
 
 == JetBrains
 
 We're using http://www.jetbrains.com/idea/index.html[IntelliJ IDEA] by http://www.jetbrains.com/[Jetbrains] to write, refactor, analyze and maintain code.
 
-For Continuous Integration, which builds our software day-and-night, tests it and monitors its quality, we use http://www.jetbrains.com/teamcity/index.html[TeamCity]  hosted at the http://teamcity.jetbrains.com[public TeamCity hosting] site.
+For _Continuous Integration_, which builds our software day-and-night, tests it and monitors its quality, we use http://www.jetbrains.com/teamcity/index.html[TeamCity]  hosted at the http://teamcity.jetbrains.com[public TeamCity hosting] site.
 
 == Codehaus
 
-+++http://www.codehaus.org/+++ gave us a home and provided the development ecosystem, including a git repository, a wiki, mailing-lists, etc.
+Before they closed, +++http://www.codehaus.org/+++ gave us a home and provided the development ecosystem, including a git repository, a wiki, mailing-lists, etc.
 
 == Atlassian
 

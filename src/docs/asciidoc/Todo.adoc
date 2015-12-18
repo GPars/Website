@@ -1,0 +1,83 @@
+= GPars - Groovy Parallel Systems
+The Whole GPars Team <gpars-developers@googlegroups.com>
+v1.2.1, 2015-12-04
+:linkattrs:
+:toc: right
+:toc-title: To-Do List of Stuff To Be Done
+:icons: font
+:source-highlighter: coderay
+:docslink: http://www.gpars.org/guide/[GPars Docs]
+:description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
+:imagesdir: ./images
+
+== List of Future Tasks to Improve GPars Documentation
+
+=== 13 Dec.2015 - JNorthr
+
+This is an updated list of tasks to improve our `GPars Documentation` using asciidoctor markup.
+
+''''
+
+TIP: There is stuff remaining to be done, so will update this list as time permits.
+
+''''
+
+== Improvements
+
+ . replace website favicon with *GPars* version image:../images/checkmarkgreen.png[ok,36]
+ . Re-Point landing page links for *About, Services, Contact* to a page within this website  image:../images/checkmarkgreen.png[ok,36]
+ . Re-point landing page links at bottom to *Home, About, Services, Contact*  to a page within this website or remove image:../images/checkmarkgreen.png[ok,36]
+ . add, rename or remove landing page links according to Vaclav or Russel
+ . repoint landing page *Download* button to _/gpars_ download page image:../images/checkmarkgreen.png[ok,36]
+ . Complete navigation bar for _/home.html_ page image:../images/checkmarkgreen.png[ok,36]
+ . Add navigation bar to each page within `main` site but not *UserGuide*, *Quick Reference* or *Jon Kerridge Tutorial* if agreeable ?
+ . Add *LICENSE* link on *Use* nav.bar - see Terms/Conditions  image:../images/checkmarkgreen.png[ok,36]
+ . Remove *HOME* choice and make *GPars* Icon clickable to return to site landing page image:../images/checkmarkgreen.png[ok,36]
+ . move `Future Roadmap` link from nav.bar *ABOUT* menu to *HACKER* menu image:../images/checkmarkgreen.png[ok,36]
+ . Clarify URL's on *Developer Zone* page
+ . change 'lady' divider image within `User Guide` to something else image:../images/checkmarkgreen.png[ok,36]
+ . re-gen PDF one page for `User Guide` image:../images/checkmarkgreen.png[ok,36]
+ . identify topics for *'TBD'* within `User Guide`
+ . identify, locate and install support .Jars for Jon Kerridge'e *JCSP* samples and groovy helper classes
+ . integrate and provide download links to sample code for _Jon Kerridge'e_ *JCSP* samples
+ . complete installation of _DoctorTemplateEngine_ to allow live asciidoctor encoded files like .adoc, .ad image:../images/checkmarkgreen.png[ok,36]
+ . revise text for _./home.html_ introduction image:../images/checkmarkgreen.png[ok,36]
+ . finish `header.gtpl` and `footer.gtpl` layouts for skeleton usage in future pages
+ . complete `GPars Installer` image on _/gpars_ page image:../images/checkmarkgreen.png[ok,36]
+ . identify correct href target address for _/gpars_ links to *About, Download, Help, Contribute* plus ALL the links at the bottom of that page image:../images/checkmarkgreen.png[ok,36]
+ . identify URL for all missing resources we now offer on *gpars.org* download page, like samples, APIs, etc.
+ . fix CSS colors for anchor links within _/gpars_ `All Our Downloads` <a> links
+ . _/gpars_ download page needs *GPARS* icon clickable to go back to landing page image:../images/checkmarkgreen.png[ok,36]
+ . update /gpars download pg: make GPARS header icon go back to landing page image:../images/checkmarkgreen.png[ok,36]
+ . update /gpars download pg: finish Installer image image:../images/checkmarkgreen.png[ok,36]
+ . update /gpars download pg: identify proper links for ABOUT, DOWNLOAD, HELP, CONTRIBUTE links image:../images/checkmarkgreen.png[ok,36]
+ . update /gpars download pg: identify proper links for CONTRIBUTE, PRIVACY, FAQ image:../images/checkmarkgreen.png[ok,36]
+ . update /gpars download pg: identify proper links for 11 links at bottom of page image:../images/checkmarkgreen.png[ok,36]
+ . update /gpars download pg: make links to each 'All Our Download' jar colored red or dotted, ??
+ . update /gpars download pg: make links to each UserPost and Dev.Post show 'Read more...' and if clicked, takes user back to original post 
+ . update /gpars download pg: make link to an actual page for the *FAQ* - Frequently Asked Questions
+ . update front page 'Fast Track' to include *Build Tool Integration* image:../images/checkmarkgreen.png[ok,36]
+ . Add Javadoc and Groovydoc API 1.2.1 to this app; Note this will create a maintenance task when deploying next vers of GPars 
+  
+''''
+ 
+== Rework
+
+ . Need to re-visit all stale URLs with the website documentation to confirm the now work, or comment out. *In progress*
+ . Delete ununsed image files image:../images/checkmarkgreen.png[ok,36]
+ . Update README on how to change/edit document
+ . Update *To-Do* page - *In progress*
+ . Change all version numbers to 1.2.1  image:../images/checkmarkgreen.png[ok,36]
+ . Add click link to each post within `Latest User Posts` and `Latest Dev.Posts` to take user directly to that post.
+ . Develop plan to offer API, sample code, zips from internal resources folder within this website with click links to download each.
+ . Add note to _/gpars_ download page that if existing groovy already installed, user might already have *GPars* and not need to download another version
+ . Review and improve _/integration_ document about using maven and gradle to grab *GPars*.
+ . Add new and more recent articles and presentations to *LEARN* menu
+ . add `Redis` caching feature to improve site performance -  image:../images/checkmarkgreen.png[ok,36]
+ 
+== Future Ideas
+
+ . Provide a `live-code` feature where users can test/run our code samples within this site.
+ . Consider social media exposure for *GPars*
+ . Consider authoring *GPars* book for Manning press.
+ . Promote Lanyrd GPars Speaking events  

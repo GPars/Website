@@ -1,9 +1,9 @@
 = GPars - Groovy Parallel Systems
 Jon Kerridge <j.kerridge@napier.ac.uk>
-v1.0, 2015-10-29
+v1.2.1, 2015-12-02
 :linkattrs:
 :linkcss:
-:toc: left
+:toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
@@ -12,13 +12,12 @@ v1.0, 2015-10-29
 
 == More Testing: Non-terminating Process Networks
 
-`Chapter 6` showed it is possible to use the *GroovyTestCase* capability to test networks of processes, provided each of the processes in the network terminates. 
-Most of the processes used in this book do not terminate and so a means of testing such non-terminating process networks has to be developed.
+`Chapter 6` showed it is possible to use the *GroovyTestCase* capability to test networks of processes, provided each of the processes in the network terminates. Most of the processes used in this book do not terminate and so a means of testing such non-terminating process networks has to be developed.
 
 === A *PAR* Process
 
-First, however, we need to reflect on the operation of `PAR`. A `PAR` only terminates when all the process in the list of processes passed to it terminate. 
-Thus, if only one of the processes does not terminate, then the `PAR` will never terminate. However, if the assertion testing commonly used in *JUnit* and *GroovyTestCase* is to be undertaken then at least some of the test environment has to terminate. 
+First, however, we need to reflect on the operation of `PAR`. A `PAR` only terminates when all the process in the list of processes passed to it terminate. Thus, if only one of the processes does not terminate, then the `PAR` will never terminate. However, if the assertion testing commonly used in *JUnit* and *GroovyTestCase* is to be undertaken then at least some of the test environment has to terminate. 
+
 `Figure 10-1` shows a generic architecture that allows a `process network under test` (*PNUT*) to run without terminating, while the `Test-Network` does terminate, which then allows the assertion testing to take place in the normal manner.
 
 === Process Separation

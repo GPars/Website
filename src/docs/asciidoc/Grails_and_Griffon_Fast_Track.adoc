@@ -1,9 +1,9 @@
 = GPars - Groovy Parallel Systems
 The Whole GPars Team <gpars-developers@googlegroups.com>
-v1.0, 2015-10-01
+v1.2.1, 2015-12-01
 :linkattrs:
 :linkcss:
-:toc: left
+:toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
@@ -12,8 +12,7 @@ v1.0, 2015-10-01
 :doctitle: Grails and Griffon Fast Track
 
 
-*GPars* has been designed as a concurrency library for the Groovy programming
-language. This naturally implies *GPars* is very friendly to _Grails_ and _Griffon_ frameworks and offers applications, which build on top of these frameworks, the ability to:
+*GPars* has been designed as a concurrency library for the Groovy programming language. This naturally implies *GPars* is very friendly to _Grails_ and _Griffon_ frameworks and offers applications, which build on top of these frameworks, the ability to:
 
 * Run expensive computations in the background
 * Parallelize access to remote services or databases and so limit the effects of latency of these services

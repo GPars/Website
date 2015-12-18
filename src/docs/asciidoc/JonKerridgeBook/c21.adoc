@@ -1,9 +1,9 @@
 = GPars - Groovy Parallel Systems
 Jon Kerridge <j.kerridge@napier.ac.uk>
-v1.0, 2015-10-29
+v1.2.1, 2015-12-02
 :linkattrs:
 :linkcss:
-:toc: left
+:toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
@@ -29,6 +29,7 @@ Once the goal has been achieved, including any return to its home node, it then 
 Other agents with similar goals may be created but each will have a predetermined life expectancy. 
 
 By contrast, a `mobile process` is one that can be moved from one node to another, plugged into the channel structure at the receiving node and then continues to run as part of the node until such time as the node itself is no longer required. 
+
 In some cases, the `mobile process` may retain the ability to communicate with its original node, as was the case of the `Meeting Organiser` system described in `Chapter 19`.
 
 === System Architecture
@@ -48,20 +49,24 @@ On receiving these locations, the *DataGenerator* creates a `One2One` channel fr
 ==== Role Of The *DataGenerator* 
  
 The *DataGenerator* maintains a list of all the `Agent Visit Channel` locations, which it outputs to all of the connected *NodeProcesses* whenever the list changes. 
+
 The *NodeProcess* uses this information to update its *Agent* with the locations of the `Agent-Visit-Channels` that it can use when it searches for a data processing process. 
+
 In addition, the *Node* also ensures that the *Agent* holds the location of the `Agent-Return-Channel` so that a returning *Agent* knows its home location.
 
 ==== Implementation
 
-Once the system has been invoked, the *DataGenerator* randomly sends data object instances of any type to any of the nodes. If a *NodeProcess* already has an instance of the required data processing process, 
-the data is sent to that process where it is manipulated and subsequently output to the *Gatherer* process. 
+Once the system has been invoked, the *DataGenerator* randomly sends data object instances of any type to any of the nodes. If a *NodeProcess* already has an instance of the required data processing process, the data is sent to that process where it is manipulated and subsequently output to the *Gatherer* process. 
+
 If the node does not have an instance of the required process then it informs the *Agent* of the process it requires and causes the *Agent* to be sent to the first location on its list of `Agent-Visit-Channel` locations. 
 In due course, the *Agent* will return, the new process will be transferred to the *Node* and it will be connected into the *Node8 as described previously. 
 
 As soon as a *Node* sends an *Agent* to find a required process, it creates another instance of its *Agent* so that, should another data object arrive for which it does not have the data processing process, then an *Agent* can be sent to find it immediately.
 
 The operation of a *Node* matches the interactions described above. On receipt of an input, it determines if it is a list of `Agent-Visit-Channel` locations and if so updates the *Agent* appropriately. 
+
 If it is an instance of a data object, it determines its' type and, if it already has an instance of the required process, sends the data object to the required process. 
+
 Otherwise, it sends the *Agent* the required process type information, which the *Agent* can use when visiting the other nodes. Each of the processes in a *NodeProcess* is invoked using the *ProcessManager* class. 
 
 When a process is received by a *NodeProcess*, it creates a channel by which the *NodeProcess* can send data objects to it. All such processes are connected to the `Nodes-To-Gatherer` channel. 

@@ -1,23 +1,25 @@
 = GPars - Groovy Parallel Systems
 The Whole GPars Team <gpars-developers@googlegroups.com>
-v1.0, 2015-10-01
+v1.2.1, 2015-12-09
 :linkattrs:
 :linkcss:
-:toc: left
+:toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
 :docslink: http://www.gpars.org/guide/[GPars Docs]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: News
+:imagesdir: ./images
 
 == TOPICS :
 
 === Remoting for *GPars*
 
 
-This is a quick overview of *Remoting for GPars* realized during *Google Summer of Code,2014* by _Rafal Slawik_. 
+TIP: This is a quick overview of *Remoting for GPars* realized during *Google Summer of Code,2014* by _Rafal Slawik_
 
+''''
  
 The implementation has already become part of the *GPars* 1.3-SNAPSHOT and is link:Integration.html[available for immediate use].
 

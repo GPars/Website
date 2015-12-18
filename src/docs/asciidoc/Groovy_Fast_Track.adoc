@@ -1,9 +1,9 @@
 = GPars - Groovy Parallel Systems
 The Whole GPars Team <gpars-developers@googlegroups.com>
-v1.0, 2015-10-01
+v1.2.1, 2015-12-01
 :linkattrs:
 :linkcss:
-:toc: left
+:toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
@@ -19,7 +19,7 @@ Start a fresh Groovy Console or open up an empty groovy script source in your fa
 
 == Step 2 -- Add dependencies
 
-TIP: *GPars* comes bundled with Groovy distributions so this step should normally be not required._
+TIP: *GPars* comes bundled with Groovy distributions after version 1.8, so this step should normally be not required._
 
 ''''
 
@@ -30,7 +30,7 @@ Add the following line to the groovy script:
 .Use the Grape Grab Feature
 [source,groovy,linenums]
 ----
-    @Grab(group='org.codehaus.gpars', module='gpars', version='1.2.0')
+    @Grab(group='org.codehaus.gpars', module='gpars', version='1.2.1')
 ----
 
 == Step 3 -- Experiment with parallel collection processing
@@ -40,7 +40,7 @@ Believe it or not, now, we're ready to experiment. Try the following script, whi
 .Groovy Concurrent Sample
 [source,groovy,linenums]
 ----
-@Grab(group='org.codehaus.gpars', module='gpars', version='1.2.0')
+@Grab(group='org.codehaus.gpars', module='gpars', version='1.2.1')
 import groovyx.gpars.GParsPool
 
 GParsPool.withPool {
@@ -55,8 +55,7 @@ Run the script and you should get the following output:
  . Found an ant
  . Some animals can live without an a
 
-Now feel free to experiment by changing the regular expressions, using different collections or different methods, like _eachParallel()_, _collectParallel()_, _maxParallel()_, _sumParallel()_ and others. 
-You get the idea, right?
+Now feel free to experiment by changing the regular expressions, using different collections or different methods, like _eachParallel()_, _collectParallel()_, _maxParallel()_, _sumParallel()_ and others. You get the idea, right?
 
 To find out more about parallel collection processing, visit the link:http://www.gpars.org/guide/guide/dataParallelism.html#dataParallelism_parallelCollections[Parallel Collections section] of the link:./guide/[User Guide].
 
@@ -110,7 +109,7 @@ Notice the _send()_ method name is optional and can be replaced by the _<<_ oper
 
 The link:./guide/#_user_guide_to_actors[Actors review] of the link:./guide/[UserGuide] will help you dive deeper into *GPars* actors.
 
-== Further steps
+== Further Steps
 
 Now when you have *GPars* runing on your system, now's the time to open up the link:./guide/[User Guide], browse the *GPars* code examples and continue experimenting. 
 

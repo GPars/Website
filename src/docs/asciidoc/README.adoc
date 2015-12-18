@@ -1,22 +1,23 @@
 = GPars - Groovy Parallel Systems
 The Whole GPars Team <gpars-developers@googlegroups.com>
-v1.0, 2015-11-21
+v1.2.1, 2015-12-08
 :linkattrs:
 :linkcss:
-:toc: left
+:toc: right
 :toc-title: README Index
 :icons: font
 :source-highlighter: coderay
 :docslink: http://www.gpars.org/guide/[GPars Docs]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
+:imagesdir: ./images
 
-== GPars Website Organization GitHub pages
+== review of *GPars* Website Structure within the GitHub repo
 
 === Source for the GPars website
 
-==== 4 Nov.2015 - JNorthr
+==== 24 Nov.2015 - JNorthr
 
-This is the initial Commit of GPars Documentation reworked using asciidoctor markup.
+This is the initial `Commit of GPars Documentation` reworked using asciidoctor markup.
 
 There is much remaining to do, so just wanted to get this set of stuff into GitHub before it is lost.
 
