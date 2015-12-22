@@ -19,8 +19,8 @@
 <div class="details">
 <span id="author" class="author">Jon Kerridge</span><br>
 <span id="email" class="email"><a href="mailto:j.kerridge@napier.ac.uk">j.kerridge@napier.ac.uk</a></span><br>
-<span id="revnumber">version 1.0,</span>
-<span id="revdate">2015-10-29</span>
+<span id="revnumber">version 1.2.1,</span>
+<span id="revdate">2015-12-02</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -59,8 +59,10 @@ Once the goal has been achieved, including any return to its home node, it then 
 Other agents with similar goals may be created but each will have a predetermined life expectancy.</p>
 </div>
 <div class="paragraph">
-<p>By contrast, a <code>mobile process</code> is one that can be moved from one node to another, plugged into the channel structure at the receiving node and then continues to run as part of the node until such time as the node itself is no longer required.
-In some cases, the <code>mobile process</code> may retain the ability to communicate with its original node, as was the case of the <code>Meeting Organiser</code> system described in <code>Chapter 19</code>.</p>
+<p>By contrast, a <code>mobile process</code> is one that can be moved from one node to another, plugged into the channel structure at the receiving node and then continues to run as part of the node until such time as the node itself is no longer required.</p>
+</div>
+<div class="paragraph">
+<p>In some cases, the <code>mobile process</code> may retain the ability to communicate with its original node, as was the case of the <code>Meeting Organiser</code> system described in <code>Chapter 19</code>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -92,26 +94,35 @@ On receiving these locations, the <strong>DataGenerator</strong> creates a <code
 <div class="sect3">
 <h4 id="_role_of_the_strong_datagenerator_strong">Role Of The <strong>DataGenerator</strong></h4>
 <div class="paragraph">
-<p>The <strong>DataGenerator</strong> maintains a list of all the <code>Agent Visit Channel</code> locations, which it outputs to all of the connected <strong>NodeProcesses</strong> whenever the list changes.
-The <strong>NodeProcess</strong> uses this information to update its <strong>Agent</strong> with the locations of the <code>Agent-Visit-Channels</code> that it can use when it searches for a data processing process.
-In addition, the <strong>Node</strong> also ensures that the <strong>Agent</strong> holds the location of the <code>Agent-Return-Channel</code> so that a returning <strong>Agent</strong> knows its home location.</p>
+<p>The <strong>DataGenerator</strong> maintains a list of all the <code>Agent Visit Channel</code> locations, which it outputs to all of the connected <strong>NodeProcesses</strong> whenever the list changes.</p>
+</div>
+<div class="paragraph">
+<p>The <strong>NodeProcess</strong> uses this information to update its <strong>Agent</strong> with the locations of the <code>Agent-Visit-Channels</code> that it can use when it searches for a data processing process.</p>
+</div>
+<div class="paragraph">
+<p>In addition, the <strong>Node</strong> also ensures that the <strong>Agent</strong> holds the location of the <code>Agent-Return-Channel</code> so that a returning <strong>Agent</strong> knows its home location.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_implementation">Implementation</h4>
 <div class="paragraph">
-<p>Once the system has been invoked, the <strong>DataGenerator</strong> randomly sends data object instances of any type to any of the nodes. If a <strong>NodeProcess</strong> already has an instance of the required data processing process,
-the data is sent to that process where it is manipulated and subsequently output to the <strong>Gatherer</strong> process.
-If the node does not have an instance of the required process then it informs the <strong>Agent</strong> of the process it requires and causes the <strong>Agent</strong> to be sent to the first location on its list of <code>Agent-Visit-Channel</code> locations.
+<p>Once the system has been invoked, the <strong>DataGenerator</strong> randomly sends data object instances of any type to any of the nodes. If a <strong>NodeProcess</strong> already has an instance of the required data processing process, the data is sent to that process where it is manipulated and subsequently output to the <strong>Gatherer</strong> process.</p>
+</div>
+<div class="paragraph">
+<p>If the node does not have an instance of the required process then it informs the <strong>Agent</strong> of the process it requires and causes the <strong>Agent</strong> to be sent to the first location on its list of <code>Agent-Visit-Channel</code> locations.
 In due course, the <strong>Agent</strong> will return, the new process will be transferred to the <strong>Node</strong> and it will be connected into the *Node8 as described previously.</p>
 </div>
 <div class="paragraph">
 <p>As soon as a <strong>Node</strong> sends an <strong>Agent</strong> to find a required process, it creates another instance of its <strong>Agent</strong> so that, should another data object arrive for which it does not have the data processing process, then an <strong>Agent</strong> can be sent to find it immediately.</p>
 </div>
 <div class="paragraph">
-<p>The operation of a <strong>Node</strong> matches the interactions described above. On receipt of an input, it determines if it is a list of <code>Agent-Visit-Channel</code> locations and if so updates the <strong>Agent</strong> appropriately.
-If it is an instance of a data object, it determines its' type and, if it already has an instance of the required process, sends the data object to the required process.
-Otherwise, it sends the <strong>Agent</strong> the required process type information, which the <strong>Agent</strong> can use when visiting the other nodes. Each of the processes in a <strong>NodeProcess</strong> is invoked using the <strong>ProcessManager</strong> class.</p>
+<p>The operation of a <strong>Node</strong> matches the interactions described above. On receipt of an input, it determines if it is a list of <code>Agent-Visit-Channel</code> locations and if so updates the <strong>Agent</strong> appropriately.</p>
+</div>
+<div class="paragraph">
+<p>If it is an instance of a data object, it determines its' type and, if it already has an instance of the required process, sends the data object to the required process.</p>
+</div>
+<div class="paragraph">
+<p>Otherwise, it sends the <strong>Agent</strong> the required process type information, which the <strong>Agent</strong> can use when visiting the other nodes. Each of the processes in a <strong>NodeProcess</strong> is invoked using the <strong>ProcessManager</strong> class.</p>
 </div>
 <div class="paragraph">
 <p>When a process is received by a <strong>NodeProcess</strong>, it creates a channel by which the <strong>NodeProcess</strong> can send data objects to it. All such processes are connected to the <code>Nodes-To-Gatherer</code> channel.</p>
@@ -140,8 +151,8 @@ Want to read more of this chapter? <a href="pdf/C21.pdf">Download this chapter&#
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 1.0<br>
-Last updated 2015-10-29 21:21:47 +01:00
+Version 1.2.1<br>
+Last updated 2015-12-18 08:39:50 +01:00
 </div>
 </div>
 </body>

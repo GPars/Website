@@ -19,15 +19,15 @@
 <div class="details">
 <span id="author" class="author">Jon Kerridge</span><br>
 <span id="email" class="email"><a href="mailto:j.kerridge@napier.ac.uk">j.kerridge@napier.ac.uk</a></span><br>
-<span id="revnumber">version 1.0,</span>
-<span id="revdate">2015-10-29</span>
+<span id="revnumber">version 1.2.1,</span>
+<span id="revdate">2015-12-02</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_mobile_processes_ubiquitous_wireless_access">Mobile Processes: Ubiquitous Wireless Access</a>
 <ul class="sectlevel2">
-<li><a href="#_node_to_node_process_communication_within_a_network">Node-to-node process Communication Within A Network</a></li>
+<li><a href="#_node_to_node_process_communication_within_a_network">Node-to-node Process Communication Within A Network</a></li>
 <li><a href="#_potential_use_cases">Potential Use Cases</a></li>
 <li><a href="#_service_delivery">Service Delivery</a></li>
 </ul>
@@ -43,12 +43,16 @@
 <p>The previous chapter showed how it is possible to create anonymous network channels over which agents could be transferred.</p>
 </div>
 <div class="sect2">
-<h3 id="_node_to_node_process_communication_within_a_network">Node-to-node process Communication Within A Network</h3>
+<h3 id="_node_to_node_process_communication_within_a_network">Node-to-node Process Communication Within A Network</h3>
 <div class="paragraph">
-<p>In this chapter, we take that concept one stage further and provide a mechanism whereby a process can be communicated from one node to another within the network.
-The only requirement is that the receiving node has to run a simple process that loads the mobile process.
-This is further extended to load a process from a server over a wireless network to a mobile device. The mobile device becomes a member of the server&#8217;s network for the duration of the interaction.
-The mobile device scans for accessible wireless networks and then is able to download a process from that network by which it can interact with the service provided.</p>
+<p>In this chapter, we take that concept one stage further and provide a mechanism whereby a process can be communicated from one node to another within the network.</p>
+</div>
+<div class="paragraph">
+<p>The only requirement is that the receiving node has to run a simple process that loads the mobile process.
+This is further extended to load a process from a server over a wireless network to a mobile device. The mobile device becomes a member of the server&#8217;s network for the duration of the interaction.</p>
+</div>
+<div class="paragraph">
+<p>The mobile device scans for accessible wireless networks and then is able to download a process from that network by which it can interact with the service provided.</p>
 </div>
 </div>
 <div class="sect2">
@@ -56,8 +60,10 @@ The mobile device scans for accessible wireless networks and then is able to dow
 <div class="sect3">
 <h4 id="_retail_environment">Retail Environment</h4>
 <div class="paragraph">
-<p>This technology could be used in a retail environment to let stores make offers to customers, as they walk into the store, based upon their previous shopping patterns.
-In addition, the store could make offers on surplus items to customers they know might be susceptible to the offer.
+<p>This technology could be used in a retail environment to let stores make offers to customers, as they walk into the store, based upon their previous shopping patterns.</p>
+</div>
+<div class="paragraph">
+<p>In addition, the store could make offers on surplus items to customers they know might be susceptible to the offer.
 The only requirement is that the customer has a mobile device into which the process loading process has been installed.
 The customer would also need to store some means of identifying themselves to the store‟s systems but with loyalty or reward cards this is not a problem.</p>
 </div>
@@ -65,16 +71,19 @@ The customer would also need to store some means of identifying themselves to th
 <div class="sect3">
 <h4 id="_medical_situations">Medical Situations</h4>
 <div class="paragraph">
-<p>The technology could be used in a hospital environment to allow access to electronic patient records by registered users, using their own mobile device.
-The great advantage being that the location of a person can be determined by the wireless access points that are available and this could result in the most appropriate process being downloaded into the mobile device depending upon the user and their role.
-Obviously, some form of authentication process would be required to ensure authorised access but the advantage of this style of interaction is that no sensitive data is held in the mobile device.</p>
+<p>The technology could be used in a hospital environment to allow access to electronic patient records by registered users, using their own mobile device. The great advantage being that the location of a person can be determined by the wireless access points that are available and this could result in the most appropriate process being downloaded into the mobile device depending upon the user and their role.</p>
+</div>
+<div class="paragraph">
+<p>Obviously, some form of authentication process would be required to ensure authorised access but the advantage of this style of interaction is that no sensitive data is held in the mobile device.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_public_service_ideas">Public Service Ideas</h4>
 <div class="paragraph">
-<p>Finally, it could be used in museums to provide additional resources to visitors about the items on display. In this case, rather than using wi-fi, we could use <strong>Bluetooth</strong> to give more locality of information.
-The downloaded process could provide additional information in the form of an audio stream giving an aural description of the exhibit, possibly supported by an image that shows the particular part of the object being described.
+<p>Finally, it could be used in museums to provide additional resources to visitors about the items on display. In this case, rather than using wi-fi, we could use <strong>Bluetooth</strong> to give more locality of information.</p>
+</div>
+<div class="paragraph">
+<p>The downloaded process could provide additional information in the form of an audio stream giving an aural description of the exhibit, possibly supported by an image that shows the particular part of the object being described.
 The audio stream could be in any natural language. The particular advantage for the museum is that visitors can use their own mobile devices, provided they have the process to download other processes.</p>
 </div>
 </div>
@@ -82,21 +91,25 @@ The audio stream could be in any natural language. The particular advantage for 
 <div class="sect2">
 <h3 id="_service_delivery">Service Delivery</h3>
 <div class="paragraph">
-<p>The mobile process capability is provided by a mobile package within the <code>jcsp.net</code> capability.
-It deals with the dynamic loading of classes over the network in an efficient manner that is totally transparent to the programmer and of the underlying network technology.</p>
+<p>The mobile process capability is provided by a mobile package within the <code>jcsp.net</code> capability.</p>
 </div>
 <div class="paragraph">
-<p>Processes are loaded just like any other object as a <strong>Serializable</strong> data object. The processes will include some of the network channels in their definition that will allow the loaded process to communicate from the mobile device to the server.
-However, channels that enable communication from the server to the loaded mobile process will need to be created dynamically.</p>
+<p>It deals with the dynamic loading of classes over the network in an efficient manner that is totally transparent to the programmer and of the underlying network technology.</p>
 </div>
 <div class="paragraph">
-<p>This application is different from others because we are running the systems of processors with different resource capability.
-In particular, the requirement to run <strong>Groovy</strong> on a mobile device is problematic, given its size and the underlying functionality it requires in terms of reflector requirements.
-To this end, all the processes that execute on the mobile device are written in pure <strong>Java</strong>. They do, however, interact with server processes written in <strong>Groovy</strong>.</p>
+<p>Processes are loaded just like any other object as a <strong>Serializable</strong> data object. The processes will include some of the network channels in their definition that will allow the loaded process to communicate from the mobile device to the server.</p>
 </div>
 <div class="paragraph">
-<p>Thus this chapter demonstrates that <strong>Groovy</strong> and <strong>Java</strong> components can be combined into a single application environment.
-The dominant requirement being that all devices run using a <code>Java Virtual Machine</code>, which is the case with most mobile devices.</p>
+<p>However, channels that enable communication from the server to the loaded mobile process will need to be created dynamically.</p>
+</div>
+<div class="paragraph">
+<p>This application is different from others because we are running the systems of processors with different resource capability.</p>
+</div>
+<div class="paragraph">
+<p>In particular, the requirement to run <strong>Groovy</strong> on a mobile device is problematic, given its size and the underlying functionality it requires in terms of reflector requirements.  To this end, all the processes that execute on the mobile device are written in pure <strong>Java</strong>. They do, however, interact with server processes written in <strong>Groovy</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Thus this chapter demonstrates that <strong>Groovy</strong> and <strong>Java</strong> components can be combined into a single application environment. The dominant requirement being that all devices run using a <code>Java Virtual Machine</code>, which is the case with most mobile devices.</p>
 </div>
 <hr>
 <div class="admonitionblock note">
@@ -118,8 +131,8 @@ Want to read more of this chapter? <a href="pdf/C19.pdf">Download this chapter&#
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 1.0<br>
-Last updated 2015-10-29 21:21:25 +01:00
+Version 1.2.1<br>
+Last updated 2015-12-18 08:39:50 +01:00
 </div>
 </div>
 </body>

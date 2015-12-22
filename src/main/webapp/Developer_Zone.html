@@ -18,8 +18,8 @@
 <h1>Developer Zone</h1>
 <div class="details">
 <span id="author" class="author">The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;</span><br>
-<span id="revnumber">version 1.0,</span>
-<span id="revdate">2015-10-01</span>
+<span id="revnumber">version 1.2.1,</span>
+<span id="revdate">2015-12-01</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -40,10 +40,10 @@
 <li><a href="#_the_default_intellij_idea_project_file">The Default IntelliJ IDEA Project File</a></li>
 </ul>
 </li>
-<li><a href="#_code_style">Code style</a></li>
-<li><a href="#_vcs_workflow">VCS workflow</a>
+<li><a href="#_code_style">Code Style</a></li>
+<li><a href="#_vcs_workflow">VCS Workflow</a>
 <ul class="sectlevel2">
-<li><a href="#_simplified_workflow">Simplified workflow</a></li>
+<li><a href="#_simplified_workflow">Simplified Workflow</a></li>
 </ul>
 </li>
 <li><a href="#_upgrading_gradle">Upgrading Gradle</a></li>
@@ -124,27 +124,26 @@
 <div class="sect2">
 <h3 id="_source_repository">Source Repository</h3>
 <div class="paragraph">
-<p>The Git repository held at GitHub is the official mainline:</p>
+<p>The Git repository held at GitHub is the official mainline: <a href="https://github.com/GPars/GPars">Our Repo is here.</a></p>
 </div>
 <div class="paragraph">
-<p>To work on the codebase please fork the repository on GitHub in the usual GitHub workflow way. Keeping the master branch as a mirror of the mainline, working on a feature branch and then sending in pull requests based on that feature branch seems to be the best way of working.
+<p>To work on the codebase, please fork the repository on GitHub in the usual GitHub workflow way. Keeping the master branch as a mirror of the mainline, working on a feature branch and then sending in pull requests based on that feature branch seems to be the best way of working.
 Please refer to the Git and GitHub documentation for any further details on using Git and GitHub.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_mirror_repository">Mirror Repository</h3>
 <div class="paragraph">
-<p>A repository that is a mirror of the GitHub repository was maintained at Codehaus (before they closed) in order to continue integration with various continuous integration servers (over time more of this will migrate to GitHub).
-Also this Codehaus project was the location of the issue tracker and the route for artifacts to get into the Maven repository.</p>
+<p>A repository that was a mirror of the GitHub repository was maintained at Codehaus (before they closed) in order to continue integration with various continuous integration servers (over time more of this will migrate to GitHub). Also that Codehaus project was the location of our issue tracker and the route for artifacts to get into the Maven repository.</p>
 </div>
 <div class="paragraph">
 <p>You should never need to clone this repository, but for completeness, the command:</p>
 </div>
 <div class="paragraph">
-<p><code>git clone</code></p>
+<p><code>git clone <a href="https://github.com/GPars/GPars.git" class="bare">https://github.com/GPars/GPars.git</a></code></p>
 </div>
 <div class="paragraph">
-<p>creates a clone of the repository in the subdirectory GPars. The above URL gives read-only access to the repository.</p>
+<p>creates a clone of the repository in the subdirectory <strong>GPars</strong>. This URL gives  read-only access to the repository.</p>
 </div>
 </div>
 <div class="sect2">
@@ -170,7 +169,7 @@ Also this Codehaus project was the location of the issue tracker and the route f
 <h2 id="_building_the_project">Building The Project</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The <em>gradlew</em> build script will download and setup gradle for the project and execute the build.</p>
+<p>The <strong>Gradle</strong> build tool wrapper is included, so running the <em>gradlew</em> build script will download and setup gradle for the project and execute the build.</p>
 </div>
 </div>
 </div>
@@ -194,8 +193,7 @@ This project serves as a master copy for the generated project files (see above)
 If you, for some reason, decide to use the default project file, you need to go through a few configuraion steps first.</p>
 </div>
 <div class="paragraph">
-<p>The first time you open the project, you will be prompted to enter a <em>PROJECT_JDK_NAME</em> and a <em>MAVEN_REPOSITORY</em> variable. These are IDEA variables and not system variables.
-These results are stored in your home directory.</p>
+<p>The first time you open the project, you will be prompted to enter a <em>PROJECT_JDK_NAME</em> and a <em>MAVEN_REPOSITORY</em> variable. These are IDEA variables and not system variables. These results are stored in your home directory.</p>
 </div>
 <div class="paragraph">
 <p>Each developer can have a unique value. For example, your <em>MAVEN_REPOSITORY</em> may be a path on your disk, and <em>PROJECT_JDK_NAME</em> can be any string value, e.g. "1.6". This is the name of the Global JDK defined defined within IDEA.</p>
@@ -217,15 +215,15 @@ You need to populate the repo first for IDEA to find the necessary artifacts. Th
 </div>
 </div>
 <div class="sect1">
-<h2 id="_code_style">Code style</h2>
+<h2 id="_code_style">Code Style</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>If you plan to contribute code to the project, please check out our brief <a href="Code_Style.html">code style guide</a> to make sure your contribution fits seamlessly with the rest of the code base.</p>
+<p>If you plan to contribute code to the project, please check out our brief <a href="Code_Style.html"><code>code style guide</code></a> to make sure your contribution fits seamlessly with the rest of the code base.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_vcs_workflow">VCS workflow</h2>
+<h2 id="_vcs_workflow">VCS Workflow</h2>
 <div class="sectionbody">
 <div class="olist arabic">
 <ol class="arabic">
@@ -239,10 +237,10 @@ You need to populate the repo first for IDEA to find the necessary artifacts. Th
 <p>People publish their work to possibly cooperate with others on the feature and when ready for review announce the branch asking for people to review. (<em>git push [mirrorRepo] myFeature</em>)</p>
 </li>
 <li>
-<p>People reviewing the feature branch fetch the changesets from the public mirror and review running tests (<em>[git remote add mirrorRepo mirrorRepoUrl;] git fetch [mirrorRepo] myFeature</em>)</p>
+<p>People reviewing the feature branch will fetch the changesets from the public mirror and review running tests (<em>[git remote add mirrorRepo mirrorRepoUrl;] git fetch [mirrorRepo] myFeature</em>)</p>
 </li>
 <li>
-<p>If there are no worries about the proposed changes then people say so, where there are issues start a debate on the email list.</p>
+<p>If there are no worries about the proposed changes then people say so, or where there are issues start a debate on the email list.</p>
 </li>
 <li>
 <p>When changes have been reviewed and agreed, one of the committing authors agrees to merge the branch into their master and pushes to the GitHub main repository (and their public mirror repository of course) (<em>git checkout master; git pull; git merge --no-ff myFeature;git push</em>)</p>
@@ -254,11 +252,10 @@ You need to populate the repo first for IDEA to find the necessary artifacts. Th
 </div>
 <div class="paragraph">
 <p>Note that this workflow is applicable to all people whether they are committing authors or not. It&#8217;s just that non-committing authors have to convince a committing author to do the commit.
-A consequence is that people should not be advised to submit patches on JIRA issues, but instead to specify where their feature branch is so it can be pulled.
-Obviously patches work as well but the whole point is for everyone to publish their feature branches so others can review them in a VCS context.</p>
+A consequence is that people should not be advised to submit patches on JIRA issues, but instead to specify where their feature branch is so it can be pulled. Obviously patches work as well but the whole point is for everyone to publish their feature branches so others can review them in a VCS context.</p>
 </div>
 <div class="sect2">
-<h3 id="_simplified_workflow">Simplified workflow</h3>
+<h3 id="_simplified_workflow">Simplified Workflow</h3>
 <div class="paragraph">
 <p>Trivial spelling error fixes, extra tests that don&#8217;t necessitate a change of code but just extend the test coverage, and very simple (non-controversial) bug fixes (with their tests) are currently exempt from having a review process.</p>
 </div>
@@ -275,16 +272,16 @@ Obviously patches work as well but the whole point is for everyone to publish th
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Install Gradle from an up-to-date Gradle Trunk.</p>
+<p>Install Gradle from an up-to-date Gradle Trunk or the new <strong>SDK</strong> installer tool</p>
 </li>
 <li>
-<p>Edit the build.gradle file to change the number of the wrapper to the new one.</p>
+<p>Edit the build.gradle or gradle.properties file to change the number of the wrapper to the new one.</p>
 </li>
 <li>
 <p>Run <code>gradle wrapper</code></p>
 </li>
 <li>
-<p>If the wrapper is a snapshot, the edit wrapper/gradle-wrapper.properties to add back in the missing snapshots from the repository URL</p>
+<p>If the wrapper is a snapshot, then edit wrapper/gradle-wrapper.properties to add back in the missing snapshots from the repository URL</p>
 </li>
 <li>
 <p>Check the result with <code>git diff</code></p>
@@ -296,7 +293,7 @@ Obviously patches work as well but the whole point is for everyone to publish th
 <p>If on Linux, check that the Bamboo build should work with <code>env -i ./bambooBuild</code></p>
 </li>
 <li>
-<p>If everything is successful commit the result <code>git commit -m ' . . .' -a</code></p>
+<p>If everything is successful, commit the result <code>git commit -m ' . . .' -a</code></p>
 </li>
 <li>
 <p>Push to the mainline <code>git push</code></p>
@@ -411,8 +408,8 @@ Obviously patches work as well but the whole point is for everyone to publish th
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 1.0<br>
-Last updated 2015-11-17 21:32:21 +01:00
+Version 1.2.1<br>
+Last updated 2015-12-18 08:39:50 +01:00
 </div>
 </div>
 </body>

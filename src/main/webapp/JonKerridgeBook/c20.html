@@ -19,8 +19,8 @@
 <div class="details">
 <span id="author" class="author">Jon Kerridge</span><br>
 <span id="email" class="email"><a href="mailto:j.kerridge@napier.ac.uk">j.kerridge@napier.ac.uk</a></span><br>
-<span id="revnumber">version 1.0,</span>
-<span id="revdate">2015-10-29</span>
+<span id="revnumber">version 1.2.1,</span>
+<span id="revdate">2015-12-02</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -50,7 +50,10 @@ No consideration was given to the problems that might happen if messages were no
 <div class="paragraph">
 <p>The solution, as presented, does not require any form of central control to initiate the corrective action. The agents are invoked by the node when it is determined that the processing of incoming messages has stopped.
 The solution essentially builds an <code>Active Network</code> at the application layer, rather than the usual normal network layer. The solution also utilises the <code>Queue and Prompter</code> processes developed in <code>Chapter 5</code>.
-These provide a means of providing a finite buffer between the ring node process and the process receiving the messages. Additionally, a console interface has been added to the message receiver process,
+These provide a means of providing a finite buffer between the ring node process and the process receiving the messages.</p>
+</div>
+<div class="paragraph">
+<p>Additionally, a console interface has been added to the message receiver process,
 so that users can manipulate its behaviour and more easily observer the effect that the agents have on the overall system operation.</p>
 </div>
 </div>
@@ -61,8 +64,10 @@ so that users can manipulate its behaviour and more easily observer the effect t
 It shows the state of the system once it has been detected that <code>RingElement -n</code> has stopped receiving messages. The net channel connections joining <code>RingElement –n</code> to the ring have been removed and replaced by the connection that goes between <code>RingElement n-1</code> and <code>RingElement n+1</code>.</p>
 </div>
 <div class="paragraph">
-<p>The figure also shows the additional processes used to provide the required management. The <strong>RingElement</strong> outputs messages into the <strong>Queue</strong> process, instead of directly into the <strong>Receiver</strong> process. The <strong>Prompt</strong> process requests messages from the <strong>Queue</strong> which it passes on to the <strong>Receiver</strong> process.
-Whenever the <strong>Queue</strong> process is accessed, either for putting a new message or getting a message in response to a <strong>Prompt8 request, the number of messages in the *Queue</strong> is output to the <code>StateManager</code> process.
+<p>The figure also shows the additional processes used to provide the required management. The <strong>RingElement</strong> outputs messages into the <strong>Queue</strong> process, instead of directly into the <strong>Receiver</strong> process. The <strong>Prompt</strong> process requests messages from the <strong>Queue</strong> which it passes on to the <strong>Receiver</strong> process.</p>
+</div>
+<div class="paragraph">
+<p>Whenever the <strong>Queue</strong> process is accessed, either for putting a new message or getting a message in response to a <strong>Prompt8 request, the number of messages in the *Queue</strong> is output to the <code>StateManager</code> process.
 The <code>StateManager</code> process is able to determine how full the <strong>Queue</strong> is and depending on pre-defined limits will inform the <code>RingElement</code> that the <strong>Receiver</strong> has stopped inputting messages or has resumed.
 This will be the trigger to send either the <strong>StopAgent</strong> or the <strong>RestartAgent</strong> around the network.</p>
 </div>
@@ -97,8 +102,8 @@ Want to read more of this chapter? <a href="pdf/C20.pdf">Download this chapter&#
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 1.0<br>
-Last updated 2015-10-29 21:21:35 +01:00
+Version 1.2.1<br>
+Last updated 2015-12-18 08:39:50 +01:00
 </div>
 </div>
 </body>

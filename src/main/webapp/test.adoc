@@ -1,0 +1,18 @@
+= GPars - Groovy Parallel Systems
+The Whole GPars Team <gpars-developers@googlegroups.com>
+v1.0, 2015-12-04
+:linkattrs:
+:toc: right
+:toc-title: To-Do List of Stuff To Be Done
+:icons: font
+:source-highlighter: coderay
+:docslink: http://www.gpars.org/guide/[GPars Docs]
+:description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
+
+== Test .adoc File
+
+=== 5 Dec.2015 - JNorthr
+
+This is an initial list of tasks to improve our `GPars Documentation` using asciidoctor markup.
+
+''''
