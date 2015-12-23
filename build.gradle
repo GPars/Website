@@ -2,19 +2,19 @@
 
 	Build.gradle script to construct the GParsDocs website
 
-	from a terminal command line, 'cd' into this folder then:	
-	gradlew 
-	
+	from a terminal command line, 'cd' into this folder then:
+	gradlew
+
 	this runs the defaultTasks below using the gradle wrapper tool gradlew <or> bash ./gradlew
 */
 apply plugin: 'groovy'
 apply plugin: 'war'
 
 apply plugin: 'org.asciidoctor.gradle.asciidoctor'
-apply plugin: 'org.asciidoctor.convert' 
+apply plugin: 'org.asciidoctor.convert'
 
 
-defaultTasks 'clean','asciidoctor', 'build', 'war' 
+defaultTasks 'clean','asciidoctor', 'build', 'war'
 
 // logic to suport asciidoctor html, pdf and diagrams output
 buildscript {
@@ -25,7 +25,7 @@ buildscript {
 
     dependencies {
         classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.3'
-        classpath("org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.9") // for PDF's
+        classpath("org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.10.1") // for PDF's
     }
 }
 
@@ -50,7 +50,7 @@ war {
 
 
 // closure for asciidoctor plugin; chg these values to influence asciidoctor task
-asciidoctor { 
+asciidoctor {
 	sourceDir = file('src/docs/asciidoc')    //'src/docs/asciidoc')	// plugin reads all *.adoc files in this folder and any sub-folder
     outputDir = file('src/main/webapp')            //main/tester')   // file("$buildDir/docs")
     separateOutputDirs=false	// true creates two folders within the outDir path one for /html, one for /pdf
@@ -66,6 +66,5 @@ asciidoctor {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '2.9'
+    gradleVersion = '2.10'
 }
-
