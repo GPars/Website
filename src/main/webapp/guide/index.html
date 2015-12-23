@@ -18,8 +18,8 @@
 <h1>The GPars User Guide</h1>
 <div class="details">
 <span id="author" class="author">The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;</span><br>
-<span id="revnumber">version 1.0,</span>
-<span id="revdate">2015-11-21</span>
+<span id="revnumber">version 1.2.1,</span>
+<span id="revdate">2015-12-14</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -174,7 +174,7 @@
 <li><a href="#_synchronous_dataflow_broadcast">Synchronous Dataflow Broadcast</a></li>
 <li><a href="#_synchronous_dataflow_variable">Synchronous Dataflow Variable</a></li>
 <li><a href="#_kanban_flow">Kanban Flow</a></li>
-<li><a href="#_kanbanflow">KanbanFlow</a></li>
+<li><a href="#_kanbanflow_description">KanbanFlow Description</a></li>
 <li><a href="#_classic_examples_2">Classic Examples</a></li>
 </ul>
 </li>
@@ -227,7 +227,7 @@
 <div class="sectionbody">
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<a class="image" href="./"><img src="../../images/gpars-rgb.svg" alt="GPars Logo" width="320"></a>
+<a class="image" href="http://gpars.org/"><img src="../../images/gpars-rgb.svg" alt="GPars Logo" width="320"></a>
 </div>
 </div>
 <hr>
@@ -243,6 +243,7 @@ To download this guide as a PDF - <a href="../guide/index.pdf">click here</a>
 </tr>
 </table>
 </div>
+<hr>
 <hr>
 </div>
 </div>
@@ -306,9 +307,7 @@ build your applications around the actor or dataflow model.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>If you&#8217;re working on a commercial, open-source, educational or any other type of software project in <strong>Groovy</strong>, download the
-binaries or integrate them from the <strong>Maven</strong> repository and get going. The door to writing highly concurrent
-and/or parallel <strong>Java</strong> and <strong>Groovy</strong> code is wide open. <span class="blue">Enjoy!</span></p>
+<p>If you&#8217;re working on a commercial, open-source, educational or any other type of software project in <strong>Groovy</strong>, download the binaries or integrate them from the <strong>Maven</strong> repository and get going. The door to writing highly concurrent and/or parallel <strong>Java</strong> and <strong>Groovy</strong> code is wide open. <span class="blue">Enjoy!</span></p>
 </div>
 </div>
 <div class="sect2">
@@ -398,7 +397,7 @@ Many thanks to everyone!
 <hr>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="../../images/divider.png" alt="divider" width="436">
+<img src="../images/divider.png" alt="divider" width="436">
 </div>
 </div>
 </div>
@@ -1607,7 +1606,7 @@ pure <strong>Java</strong> application – <a href="../Demos.html"><strong>Java<
 <hr>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="../../images/divider.png" alt="divider" width="436">
+<img src="../images/divider.png" alt="divider" width="436">
 </div>
 </div>
 </div>
@@ -4843,7 +4842,7 @@ println result.val.contains(<span class="string"><span class="delimiter">'</span
 <hr>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="../../images/divider.png" alt="divider" width="436">
+<img src="../images/divider.png" alt="divider" width="436">
 </div>
 </div>
 </div>
@@ -5536,7 +5535,7 @@ sleep <span class="integer">10000</span></pre></td>
 <hr>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="../../images/divider.png" alt="divider" width="436">
+<img src="../images/divider.png" alt="divider" width="436">
 </div>
 </div>
 </div>
@@ -9959,7 +9958,7 @@ balancer.join()</pre></td>
 <hr>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="../../images/divider.png" alt="divider" width="436">
+<img src="../images/divider.png" alt="divider" width="436">
 </div>
 </div>
 </div>
@@ -10877,7 +10876,7 @@ clubMembers.makeFair()</pre></td>
 <hr>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="../../images/divider.png" alt="divider" width="436">
+<img src="../images/divider.png" alt="divider" width="436">
 </div>
 </div>
 </div>
@@ -16866,54 +16865,55 @@ group.shutdown()</pre></td>
 </div>
 <div class="sect2">
 <h3 id="_kanban_flow">Kanban Flow</h3>
-<div class="paragraph">
-<p>APIs:</p>
-</div>
-<table class="tableblock frame-all grid-all spread">
+<table class="tableblock frame-topbot grid-all spread">
+<caption class="title">Table 1. Kanban Flow API Links</caption>
 <colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
 </colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">API Link</th>
+<th class="tableblock halign-left valign-top">API Link</th>
+<th class="tableblock halign-left valign-top">API Link</th>
+<th class="tableblock halign-left valign-top">API Link</th>
+</tr>
+</thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">KanbanFlow</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">api:groovyx.gpars.dataflow.KanbanFlow</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">KanbanLink</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">api:groovyx.gpars.dataflow.KanbanLink</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">KanbanTray</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">api:groovyx.gpars.dataflow.KanbanTray</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ProcessingNode</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">api:groovyx.gpars.dataflow.ProcessingNode</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../api/groovydoc/groovyx/gpars/dataflow/KanbanFlow.html">Kanban Flow</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../api/groovydoc/groovyx/gpars/dataflow/KanbanLink.html">Kanban Link</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../api/groovydoc/groovyx/gpars/dataflow/KanbanTray.html">Kanban Tray</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../api/groovydoc/groovyx/gpars/dataflow/ProcessingNode.html">Processing Node</a></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_kanbanflow">KanbanFlow</h3>
+<h3 id="_kanbanflow_description">KanbanFlow Description</h3>
 <div class="paragraph">
-<p>A <em>KanbanFlow</em> is a composed object that uses dataflow abstractions to define dependencies between multiple
-concurrent producer and consumer operators.</p>
+<p>A <em>KanbanFlow</em> is a composed object that uses dataflow abstractions to define dependencies between multiple concurrent producer and consumer operators.</p>
 </div>
 <div class="paragraph">
 <p>Each link between a producer and a consumer is defined by a <em>KanbanLink</em>.</p>
 </div>
 <div class="paragraph">
-<p>Inside each KanbanLink, the communication between producer and consumer follows the KanbanFlow pattern as
-described in <a href="http://people.canoo.com/mittie/kanbanflow.html">The KanbanFlow Pattern</a>.  They use objects of
-type <em>KanbanTray</em> to send products downstream and signal requests for further products back to the producer.</p>
+<p>Inside each <em>KanbanLink</em>, the communication between producer and consumer follows the <em>KanbanFlow</em> pattern as described in <a href="http://people.canoo.com/mittie/kanbanflow.html">The KanbanFlow Pattern</a>.
+They use objects of type <em>KanbanTray</em> to send products downstream and to signal requests for further products back to the producer.</p>
 </div>
 <div class="paragraph">
-<p>The figure below shows a <em>KanbanLink</em> with one producer, one consumer and five trays numbered 0 to 4. Tray
-number 0 has been used to take a product from producer to consumer, has been emptied by the consumer and is
-now sent back to the producer&#8217;s input queue. Trays 1 and 2 wait carry products waiting for consumption,
-trays 3 and 4 wait to be used by producers.</p>
+<p>The figure below illustrates a <em>KanbanLink</em> with one producer, one consumer and five trays numbered 0 to 4.
+Tray number 0 has been used to take a product from producer to consumer, has been emptied by the consumer and is now sent back to the producer&#8217;s input queue.
+Trays 1 and 2 wait to carry products waiting for consumption, while trays 3 and 4 wait to be used by producers.</p>
 </div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/dataflow_kanban.png" alt="dataflow kanban">
+</div>
+</div>
+<hr>
 <div class="paragraph">
 <p>A <em>KanbanFlow</em> object links producers to consumers thus creating <em>KanbanLink</em> objects.
 In the course of this activity, a second link may be constructed where the producer is the same object that acted as the consumer in a formerly created link such that the two links become connected to build a chain.</p>
@@ -16954,7 +16954,7 @@ In the course of this activity, a second link may be constructed where the produ
 </div>
 </div>
 <div class="paragraph">
-<p>For putting a product into a tray and sending the tray downstream, one can either use the @send()@ method, the @&lt;&lt;@ operator, or use the tray as a method object.
+<p>To put a product into a tray and send the tray downstream, one can either use the <strong>send()</strong> method, the <strong>&lt;&lt;</strong> operator, or use the tray as a method object.
 The following lines are equivalent:</p>
 </div>
 <div class="listingblock">
@@ -16972,7 +16972,7 @@ node { down -&gt; down <span class="integer">1</span> }</pre></td>
 </div>
 </div>
 <div class="paragraph">
-<p>When a product is taken from the input tray with the @take()@ method, the empty tray is automatically released.</p>
+<p>When a product is taken from the input tray with the <strong>take()</strong> method, the empty tray is automatically released.</p>
 </div>
 <hr>
 <div class="admonitionblock warning">
@@ -16982,16 +16982,18 @@ node { down -&gt; down <span class="integer">1</span> }</pre></td>
 <i class="fa icon-warning" title="Warning"></i>
 </td>
 <td class="content">
-You should call @take()@ only once!
+You should call <strong>take()</strong> only once!
 </td>
 </tr>
 </table>
 </div>
 <hr>
 <div class="paragraph">
-<p>If you prefer to not using an empty tray for sending products downstream (as typically the case when a <em>ProcessingNode</em> acts as a filter),
-you must release the tray in order to keep it in play. Otherwise, the number of trays in the system decreases.
-You can release a tray either by calling the @release()@ method or by using the @~@ operator (think "shake it off").
+<p>If you prefer not to use an empty tray to send products downstream (as typically the case when a <em>ProcessingNode</em> acts as a filter), you must release the tray in order to keep it in play.
+Otherwise, the number of trays in the system decreases.</p>
+</div>
+<div class="paragraph">
+<p>You can release a tray either by calling the <strong>release()</strong> method or by using the <strong>~</strong> operator (think "shake it off").
 The following lines are equivalent:</p>
 </div>
 <div class="listingblock">
@@ -17010,16 +17012,15 @@ node { down -&gt; ~down }</pre></td>
 <div class="content">
 <div class="title">Tray Release</div>
 <div class="paragraph">
-<p>Trays are automatically released, if you call any of the @take()@ or @send()@ methods.</p>
+<p>Trays are automatically released, if you call any of the <strong>take()</strong> or <strong>send()</strong> methods.</p>
 </div>
 </div>
 </div>
-<hr>
 <div class="sect3">
 <h4 id="_various_linking_structures">Various Linking Structures</h4>
 <div class="paragraph">
-<p>In addition to a linear chains, a <em>KanbanFlow</em> can also link a single producer to multiple consumers (tree)
-or multiple producers to a single consumer (collector) or any combination of the above that results in a directed acyclic graph (<strong>DAG</strong>).</p>
+<p>In addition to linear chains, a <em>KanbanFlow</em> can also link a single producer to multiple consumers (like a tree) or link multiple producers to a single consumer (collector)
+or any combination of the above that results in a directed acyclic graph (<strong>DAG</strong>).</p>
 </div>
 <div class="paragraph">
 <p>The <em>KanbanFlowTest</em> class has many examples for such structures, including scenarios where a single producer delegates work to multiple consumers with:</p>
@@ -17038,25 +17039,22 @@ or multiple producers to a single consumer (collector) or any combination of the
 </ul>
 </div>
 <div class="paragraph">
-<p>Cycles are forbidden by default but when enabled, they can be used as so-called generators. A producer can
-even be his own consumer that increases a product value in every cycle. The generator itself remains
-state-free since the value is only stored as a product riding on a tray.  Such a generator can be used for
-e.g. lazy sequences or as a the "heartbeat" of a subsequent flow.</p>
+<p>Cycles are forbidden by default but when enabled, they can be used as so-called generators.
+A producer can even be his own consumer that increases a product value every cycle. The generator itself remains state-free since the value is only stored as a product riding on a tray.
+Such a generator can be used for e.g. lazy sequences or as a the <code>heartbeat</code> of a subsequent flow.</p>
 </div>
 <div class="paragraph">
-<p>The approach of generator "loops" can equally be applied to collectors, where a collector does not maintain
-any internal state but sends a collection onto itself, adding products at each call.</p>
+<p>The approach of generator <code>loops</code> can be equally applied to collectors, where a collector does not maintain any internal state but sends a collection to itself, adding products at each call.</p>
 </div>
 <div class="paragraph">
-<p>Generally speaking, a <em>ProcessingNode</em> can link to itself for exporting state to the tray/product that it
-sends to itself. Access to the product is then <strong>thread-safe by design</strong>.</p>
+<p>Generally speaking, a <em>ProcessingNode</em> can link to itself to export state to the tray/product that it sends to itself. Access to the product is then <strong>thread-safe by design</strong>.</p>
 </div>
 <hr>
 </div>
 <div class="sect3">
 <h4 id="_composing_kanbanflows">Composing KanbanFlows</h4>
 <div class="paragraph">
-<p>Just as <em>KanbanLink</em> objects can be chained together to form a <em>KanbanFlow</em>, flows themselves can be composed again to form new greater flows from existing smaller ones.</p>
+<p>Just as <em>KanbanLink</em> objects can be chained together to form a <em>KanbanFlow</em>, flows themselves can be composed again to form new, greater flows from existing smaller ones.</p>
 </div>
 <div class="listingblock">
 <div class="title">A KanbanFlow Sample</div>
@@ -17097,8 +17095,7 @@ flow.start()</pre></td>
 <div class="sect3">
 <h4 id="_customizing_concurrency_characteristics">Customizing Concurrency Characteristics</h4>
 <div class="paragraph">
-<p>The amount of concurrency in a kanban system is determined by the number of trays (sometimes called <strong>WIP</strong> =
-work in progress). With no trays in the streams, the system does nothing:</p>
+<p>The amount of concurrency in a kanban system is determined by the number of trays (sometimes called <strong>WIP</strong> = <em>work-in-progress</em>). With no trays in the streams, the system does nothing:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -17131,12 +17128,10 @@ flow.start()  <span class="comment">// start with the optimal number of trays</s
 </div>
 </div>
 <div class="paragraph">
-<p>In addition to the trays, the <em>KanbanFlow</em> may also be constrained by its underlying <em>ThreadPool</em>. A pool of
-size 1 for example will not allow much concurrency.</p>
+<p>In addition to the trays, the <em>KanbanFlow</em> may also be constrained by its underlying <em>ThreadPool</em>. A pool of size <strong>1</strong> for example will not allow much concurrency.</p>
 </div>
 <div class="paragraph">
-<p><em>KanbanFlows</em> use a default pool that is dimensioned by the number of available cores. This can be
-customized by setting the @pooledGroup@ property.</p>
+<p><em>KanbanFlows</em> use a default pool that is dimensioned by the number of available cores. This can be customized by setting the <strong>pooledGroup</strong> property.</p>
 </div>
 <hr>
 </div>
@@ -17151,7 +17146,7 @@ customized by setting the @pooledGroup@ property.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_demos">Demos</h4>
+<h4 id="_kanban_code_samples_in_strong_groovy_strong">Kanban Code Samples in <strong>Groovy</strong></h4>
 <div class="ulist">
 <ul>
 <li>
@@ -17389,7 +17384,7 @@ requestedPrimeNumberCount.times {
 <hr>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="../../images/divider.png" alt="divider" width="436">
+<img src="../images/divider.png" alt="divider" width="436">
 </div>
 </div>
 </div>
@@ -17672,7 +17667,7 @@ normal <strong>Java</strong> classes do not support transactions
 <hr>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="../../images/divider.png" alt="divider" width="436">
+<img src="../images/divider.png" alt="divider" width="436">
 </div>
 </div>
 </div>
@@ -17712,7 +17707,7 @@ With a few restrictions you can still use <strong>GPars</strong> <em>actors, dat
 <hr>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="../../images/divider.png" alt="divider" width="436">
+<img src="../images/divider.png" alt="divider" width="436">
 </div>
 </div>
 </div>
@@ -18199,7 +18194,7 @@ remoteAgent.executionPolicy = AgentClosureExecutionPolicy.LOCAL</pre></td>
 <hr>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="../../images/divider.png" alt="divider" width="436">
+<img src="../images/divider.png" alt="divider" width="436">
 </div>
 </div>
 </div>
@@ -18598,7 +18593,7 @@ However, <strong>GParsExecutorsPool, Dataflow, Actors, Agents</strong> and <stro
 <hr>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="../../images/divider.png" alt="divider" width="436">
+<img src="../images/divider.png" alt="divider" width="436">
 </div>
 </div>
 </div>
@@ -18648,8 +18643,8 @@ Now, go ahead, use <strong>GPars</strong> and have fun!
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 1.0<br>
-Last updated 2015-11-20 17:09:35 +01:00
+Version 1.2.1<br>
+Last updated 2015-12-18 08:39:50 +01:00
 </div>
 </div>
 </body>

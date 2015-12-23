@@ -19,8 +19,8 @@
 <div class="details">
 <span id="author" class="author">Jon Kerridge</span><br>
 <span id="email" class="email"><a href="mailto:j.kerridge@napier.ac.uk">j.kerridge@napier.ac.uk</a></span><br>
-<span id="revnumber">version 1.0,</span>
-<span id="revdate">2015-10-29</span>
+<span id="revnumber">version 1.2.1,</span>
+<span id="revdate">2015-12-02</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -98,16 +98,20 @@ We might then be able to move to processing systems that makes more effective us
 <div class="sect2">
 <h3 id="_review">Review</h3>
 <div class="paragraph">
-<p>The content of this book started at a basic undergraduate level and ended with examples of mobile systems that are still the subject of intense research activity (<strong>occam-pi, mobile</strong>).
-All the examples presented are demonstrable and where necessary operate over a network and employ aspects of mobility.
+<p>The content of this book started at a basic undergraduate level and ended with examples of mobile systems that are still the subject of intense research activity (<strong>occam-pi, mobile</strong>).</p>
+</div>
+<div class="paragraph">
+<p>All the examples presented are demonstrable and where necessary operate over a network and employ aspects of mobility.
 Yet this is achieved in manner that does not require a detailed understanding of the operation of networked systems and in which the definition of a process is not reliant upon whether it is to execute as one among many on a single processor or over a network.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_implementations">Implementations</h3>
 <div class="paragraph">
-<p>The underlying support is provided by <strong>JCSP</strong> and it has been made easier to assimilate by use of <strong>Groovy</strong> because it helps to reduce the amount of code that needs writing.
-These are of relatively little importance of themselves but it is important that they both utilise the underlying <strong>JVM</strong>.</p>
+<p>The underlying support is provided by <strong>JCSP</strong> and it has been made easier to assimilate by use of <strong>Groovy</strong> because it helps to reduce the amount of code that needs writing.</p>
+</div>
+<div class="paragraph">
+<p>These are of relatively little importance of themselves but it is important that they both utilise the underlying <strong>JVM</strong>.</p>
 </div>
 <div class="paragraph">
 <p>What is really crucial is that <strong>JCSP</strong> provides an implementation of <strong>CSP</strong>. <strong>CSP</strong> provides the formal framework upon which <strong>JCSP</strong> is implemented and thereby the engineering support for programmers.</p>
@@ -130,9 +134,13 @@ A programmer is no longer concerned with a poorly implemented underlying thread 
 <div class="sect2">
 <h3 id="_the_programmer_s_job">The Programmer&#8217;s Job</h3>
 <div class="paragraph">
-<p>The programmers are not concerned with the inner workings of the underlying <strong>JCSP</strong> package because they can reason about their systems at a much higher level.
-The programmer is no longer concerned with the detailed workings of a poorly implemented underlying thread model, in effect, writing machine code.
-They can now concentrate on high-level design of the processes at the application layer; confident that, if they use the building blocks correctly and apply one pattern effectively then, the resulting system will operate as expected.</p>
+<p>The programmers are not concerned with the inner workings of the underlying <strong>JCSP</strong> package because they can reason about their systems at a much higher level.</p>
+</div>
+<div class="paragraph">
+<p>The programmer is no longer concerned with the detailed workings of a poorly implemented underlying thread model, in effect, writing machine code.</p>
+</div>
+<div class="paragraph">
+<p>They can now concentrate on high-level design of the processes at the application layer; confident that, if they use the building blocks correctly and apply one pattern effectively then, the resulting system will operate as expected.</p>
 </div>
 <div class="paragraph">
 <p>This does not remove the need for testing, which exposes the frailties of a system when exposed to a real operating environment. In this book, we have shown how systems can be tested, albeit in a cumbersome manner but which, with further research and the development of support tools, will make it easier to achieve.</p>
@@ -141,8 +149,10 @@ They can now concentrate on high-level design of the processes at the applicatio
 <div class="sect2">
 <h3 id="_usage">Usage</h3>
 <div class="paragraph">
-<p>The final chapters have shown how we can exploit the <code>process</code> concept in a more up-to-date setting and how it may address the problems that the software industry is starting to deal with in terms of how to exploit mobility, network connectivity and parallelism effectively.
-Previously, parallelism has been thought of as providing a solution to the needs of high performance computing, where ultimate speed was the only driving force.</p>
+<p>The final chapters have shown how we can exploit the <code>process</code> concept in a more up-to-date setting and how it may address the problems that the software industry is starting to deal with in terms of how to exploit mobility, network connectivity and parallelism effectively.</p>
+</div>
+<div class="paragraph">
+<p>Previously, parallelism has been thought of as providing a solution to the needs of high performance computing, where ultimate speed was the only driving force.</p>
 </div>
 <div class="paragraph">
 <p>Hopefully, with some of the later examples, in particular, the reader will have been convinced that approaching a solution to a problem from the parallel point of view actually makes it easier to achieve a working and effective solution.</p>
@@ -157,8 +167,10 @@ Previously, parallelism has been thought of as providing a solution to the needs
 <p>The book ends at the point where the examples have to become real problems and which, of course, tend to be too large to explain within the confines of such a book. Hopefully, however, the book contains sufficient ideas, concepts and capabilities that the solution to larger problems can be broken down into sufficiently small processes that it becomes manageable.</p>
 </div>
 <div class="paragraph">
-<p>As a final design consideration, I offer the advice that if you are having problems with a design and cannot get the design right then the solution is usually to add one or more processes. If a designer tries to restrict the number of processes then that is usually followed by problems.
-In the future perhaps, we will get to the situation where team leaders will ask why a serial solution has been adopted rather than one that relies on parallel design methods!</p>
+<p>As a final design consideration, I offer the advice that if you are having problems with a design and cannot get the design right then the solution is usually to add one or more processes. If a designer tries to restrict the number of processes then that is usually followed by problems.</p>
+</div>
+<div class="paragraph">
+<p>In the future perhaps, we will get to the situation where team leaders will ask why a serial solution has been adopted rather than one that relies on parallel design methods!</p>
 </div>
 <div class="paragraph">
 <p><strong class="right">- Jon Kerridge</strong></p>
@@ -169,8 +181,8 @@ In the future perhaps, we will get to the situation where team leaders will ask 
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 1.0<br>
-Last updated 2015-10-26 14:14:28 +01:00
+Version 1.2.1<br>
+Last updated 2015-12-18 08:39:50 +01:00
 </div>
 </div>
 </body>

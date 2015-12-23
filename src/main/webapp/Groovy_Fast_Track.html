@@ -18,8 +18,8 @@
 <h1>Groovy Fast Track</h1>
 <div class="details">
 <span id="author" class="author">The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;</span><br>
-<span id="revnumber">version 1.0,</span>
-<span id="revdate">2015-10-01</span>
+<span id="revnumber">version 1.2.1,</span>
+<span id="revdate">2015-12-01</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -28,7 +28,7 @@
 <li><a href="#_step_2_add_dependencies">Step 2&#8201;&#8212;&#8201;Add dependencies</a></li>
 <li><a href="#_step_3_experiment_with_parallel_collection_processing">Step 3&#8201;&#8212;&#8201;Experiment with parallel collection processing</a></li>
 <li><a href="#_step_4_actors">Step 4&#8201;&#8212;&#8201;Actors</a></li>
-<li><a href="#_further_steps">Further steps</a></li>
+<li><a href="#_further_steps">Further Steps</a></li>
 </ul>
 </div>
 </div>
@@ -58,7 +58,7 @@
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-<strong>GPars</strong> comes bundled with Groovy distributions so this step should normally be not required._
+<strong>GPars</strong> comes bundled with Groovy distributions after version 1.8, so this step should normally be not required._
 </td>
 </tr>
 </table>
@@ -76,7 +76,7 @@
 <pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
   <td class="line-numbers"><pre>1
 </pre></td>
-  <td class="code"><pre>    <span class="annotation">@Grab</span>(group=<span class="string"><span class="delimiter">'</span><span class="content">org.codehaus.gpars</span><span class="delimiter">'</span></span>, module=<span class="string"><span class="delimiter">'</span><span class="content">gpars</span><span class="delimiter">'</span></span>, version=<span class="string"><span class="delimiter">'</span><span class="content">1.2.0</span><span class="delimiter">'</span></span>)</pre></td>
+  <td class="code"><pre>    <span class="annotation">@Grab</span>(group=<span class="string"><span class="delimiter">'</span><span class="content">org.codehaus.gpars</span><span class="delimiter">'</span></span>, module=<span class="string"><span class="delimiter">'</span><span class="content">gpars</span><span class="delimiter">'</span></span>, version=<span class="string"><span class="delimiter">'</span><span class="content">1.2.1</span><span class="delimiter">'</span></span>)</pre></td>
 </tr></table></code></pre>
 </div>
 </div>
@@ -101,7 +101,7 @@
 7
 8
 </pre></td>
-  <td class="code"><pre><span class="annotation">@Grab</span>(group=<span class="string"><span class="delimiter">'</span><span class="content">org.codehaus.gpars</span><span class="delimiter">'</span></span>, module=<span class="string"><span class="delimiter">'</span><span class="content">gpars</span><span class="delimiter">'</span></span>, version=<span class="string"><span class="delimiter">'</span><span class="content">1.2.0</span><span class="delimiter">'</span></span>)
+  <td class="code"><pre><span class="annotation">@Grab</span>(group=<span class="string"><span class="delimiter">'</span><span class="content">org.codehaus.gpars</span><span class="delimiter">'</span></span>, module=<span class="string"><span class="delimiter">'</span><span class="content">gpars</span><span class="delimiter">'</span></span>, version=<span class="string"><span class="delimiter">'</span><span class="content">1.2.1</span><span class="delimiter">'</span></span>)
 <span class="keyword">import</span> <span class="include">groovyx.gpars.GParsPool</span>
 
 GParsPool.withPool {
@@ -126,8 +126,7 @@ GParsPool.withPool {
 </ol>
 </div>
 <div class="paragraph">
-<p>Now feel free to experiment by changing the regular expressions, using different collections or different methods, like <em>eachParallel()</em>, <em>collectParallel()</em>, <em>maxParallel()</em>, <em>sumParallel()</em> and others.
-You get the idea, right?</p>
+<p>Now feel free to experiment by changing the regular expressions, using different collections or different methods, like <em>eachParallel()</em>, <em>collectParallel()</em>, <em>maxParallel()</em>, <em>sumParallel()</em> and others. You get the idea, right?</p>
 </div>
 <div class="paragraph">
 <p>To find out more about parallel collection processing, visit the <a href="http://www.gpars.org/guide/guide/dataParallelism.html#dataParallelism_parallelCollections">Parallel Collections section</a> of the <a href="./guide/">User Guide</a>.</p>
@@ -229,7 +228,7 @@ Notice the <em>send()</em> method name is optional and can be replaced by the <e
 </div>
 </div>
 <div class="sect1">
-<h2 id="_further_steps">Further steps</h2>
+<h2 id="_further_steps">Further Steps</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Now when you have <strong>GPars</strong> runing on your system, now&#8217;s the time to open up the <a href="./guide/">User Guide</a>, browse the <strong>GPars</strong> code examples and continue experimenting.</p>
@@ -242,8 +241,8 @@ Notice the <em>send()</em> method name is optional and can be replaced by the <e
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 1.0<br>
-Last updated 2015-11-17 21:56:32 +01:00
+Version 1.2.1<br>
+Last updated 2015-12-18 08:39:50 +01:00
 </div>
 </div>
 </body>

@@ -1,14 +1,15 @@
-@Grab(group='org.codehaus.gpars', module='gpars', version='1.2.1') 
-
+//@Grab(group='org.codehaus.gpars', module='gpars', version='1.2.1')  don't need this as groovy1.8+ alreadey has GPars in it !
+// trial to get the 3 RSS URL feeds we use in GParsDocs gpars.groovy code
 import groovyx.gpars.GParsPool
 
 
-def urls = ['http://status.anynines.com/history.rss','http://blog.anynines.com/feed/','https://script.google.com/macros/s/AKfycbyHOJ1GxXDU3DxyaW88niykuDEbBDHzMTDV0j5shw/exec?639826364674215936']
+def urls = ['http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/','https://groups.google.com/forum/feed/gpars-developers/msgs/rss.xml?num=30', 'https://groups.google.com/forum/feed/gpars-users/msgs/rss.xml?num=30']
 
 String tx="";
 
 int count=0;
 def result=[:];
+def starttask = System.currentTimeMillis();
 
 
 GParsPool.withPool() {
@@ -33,6 +34,9 @@ GParsPool.withPool() {
     
     // grab front pages from several websites and measure their size plus time to access
     def tx9 = urls.findAllParallel {url -> cachingDownload(url)}
+
+    def finitask = ( System.currentTimeMillis() - starttask ) / 1000;
+    println "elapsed in "+finitask+" sec.s";
 
     println "tx9 size()="+tx9.size()+" tx="+tx9
     println "result size()="+result.size()

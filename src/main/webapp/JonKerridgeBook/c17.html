@@ -19,8 +19,8 @@
 <div class="details">
 <span id="author" class="author">Jon Kerridge</span><br>
 <span id="email" class="email"><a href="mailto:j.kerridge@napier.ac.uk">j.kerridge@napier.ac.uk</a></span><br>
-<span id="revnumber">version 1.0,</span>
-<span id="revdate">2015-10-29</span>
+<span id="revnumber">version 1.2.1,</span>
+<span id="revdate">2015-12-02</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -39,15 +39,15 @@
 <h2 id="_more_testing_non_terminating_process_networks">More Testing: Non-terminating Process Networks</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><code>Chapter 6</code> showed it is possible to use the <strong>GroovyTestCase</strong> capability to test networks of processes, provided each of the processes in the network terminates.
-Most of the processes used in this book do not terminate and so a means of testing such non-terminating process networks has to be developed.</p>
+<p><code>Chapter 6</code> showed it is possible to use the <strong>GroovyTestCase</strong> capability to test networks of processes, provided each of the processes in the network terminates. Most of the processes used in this book do not terminate and so a means of testing such non-terminating process networks has to be developed.</p>
 </div>
 <div class="sect2">
 <h3 id="_a_strong_par_strong_process">A <strong>PAR</strong> Process</h3>
 <div class="paragraph">
-<p>First, however, we need to reflect on the operation of <code>PAR</code>. A <code>PAR</code> only terminates when all the process in the list of processes passed to it terminate.
-Thus, if only one of the processes does not terminate, then the <code>PAR</code> will never terminate. However, if the assertion testing commonly used in <strong>JUnit</strong> and <strong>GroovyTestCase</strong> is to be undertaken then at least some of the test environment has to terminate.
-<code>Figure 10-1</code> shows a generic architecture that allows a <code>process network under test</code> (<strong>PNUT</strong>) to run without terminating, while the <code>Test-Network</code> does terminate, which then allows the assertion testing to take place in the normal manner.</p>
+<p>First, however, we need to reflect on the operation of <code>PAR</code>. A <code>PAR</code> only terminates when all the process in the list of processes passed to it terminate. Thus, if only one of the processes does not terminate, then the <code>PAR</code> will never terminate. However, if the assertion testing commonly used in <strong>JUnit</strong> and <strong>GroovyTestCase</strong> is to be undertaken then at least some of the test environment has to terminate.</p>
+</div>
+<div class="paragraph">
+<p><code>Figure 10-1</code> shows a generic architecture that allows a <code>process network under test</code> (<strong>PNUT</strong>) to run without terminating, while the <code>Test-Network</code> does terminate, which then allows the assertion testing to take place in the normal manner.</p>
 </div>
 </div>
 <div class="sect2">
@@ -95,8 +95,8 @@ Want to read more of this chapter? <a href="pdf/C17.pdf">Download this chapter&#
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 1.0<br>
-Last updated 2015-10-29 21:21:05 +01:00
+Version 1.2.1<br>
+Last updated 2015-12-18 08:39:50 +01:00
 </div>
 </div>
 </body>
