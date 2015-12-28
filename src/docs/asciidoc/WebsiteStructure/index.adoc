@@ -1,0 +1,234 @@
+= GPars Website Structure
+The Whole GPars Team <gpars-developers@googlegroups.com>
+v1.2.1, 2015-12-21
+:linkattrs:
+:imagesdir: ./images
+:data-uri:
+:toc: right
+:toc-title: Document Index
+:icons: font
+:source-highlighter: coderay
+:docslink: http://www.gpars.org/[GPars Documentation]
+:description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
+:doctitle: Folder Structure & Content of GPars Documentation Website
+
+== image:../../images/gpars-rgb.svg[180,110] Documentation
+
+''''
+
+=== Goals
+
+ * To convert original [blue]*GPars* documentation from `mark-down` syntax to http://asciidoctor.org/docs/user-manual/[*Asciidoctor*]
+ * To create a new look
+ * To combine a variety of [blue]*GPars* information into a single place (guides,references,tutorials.etc.) 
+ * To re-arrange file structures as found in https://github.com/GPars/gpars.github.io[gpars.github.io] and dis-continue `Jekyll`
+ * To maintain the static nature of the website; only a few dynamic parts were needed, but more later as features grow
+
+''''
+
+TIP: For our documents, we use the http://asciidoctor.org/docs/user-manual/[*Asciidoctor*] tool and http://gradle.org/[*Gradle*] plugin for *Asciidoctor* +
+ +
+For hosting, this implementation uses a https://www.cloudfoundry.org/[CloudFoundry PaaS] provider like http://www.ibm.com/cloud-computing/bluemix/[IBM BlueMix], https://run.pivotal.io/[Pivotal], CloudBees, http://www.anynines.com/[Anynines.com]
+
+''''
+
+=== Introduction
+
+A knowledge of http://gradle.org/[*Gradle*], *GitHub*, and  both static and dynamic *web servlets* is assumed as are a familiarity with website folder structure, html, etc.
+
+The groovy-based build tool called http://gradle.org/[*Gradle*] is used to construct this website. Several different build scripts are used to implement this website. 
+Each script is plain text UTF-8 encoded. Each script serves a different purpose.
+
+Original [blue]*GPars* documents were stored as text files using the `mark-down` syntax. 
+These files have been translated into a more robust *Asciidoctor* syntax. 
+Each text file is plain text UTF-8 encoded and resides in the `./Website/src/docs/asciidoc` folder plus sub-folders for each topic.
+
+All translated files retain the original mark-down filename but now sport an *.adoc* suffix. 
+
+image::../../images/divider.png[align="center"]
+
+
+=== Gradle Build Tool Overview
+
+==== http://gradle.org/[*Gradle*] Components
+
+image:Layout1.png[root folder layout,float='right']
+
+This build tool allows us to include a _wrapper_ holding components used by *Gradle*.
+ 
+After cloning this repository, these components are all you need to build and manage this app, even if *Gradle* is not installed on your system. 
+This avoids installing http://gradle.org/[*Gradle*] on your system.
+
+.*Gradle* Tools in the Downloaded Wrapper -
+
+ . *gradlew* - a Linux/Apple bash `wrapper` script to execute the build tool
+ . *gradlew.bat* - the windows equivalent of the prior script
+ . *gradle/* - a folder of build tool components
+ . *gradle.properties* - settings to influence the execution of this build tool
+
+
+.*Gradle* Build Scripts
+
+ . *build.gradle* - executes `defaultTasks` to setup the job, run the *Asciidoctor* task, then builds a servlet war file.
+ . *gretty.gradle* - used for internal purposes to run this site as a local webservice; useful to review changes prior to server upload; from a command line, do this : +
+`cd ./Website` +
+`./gradlew -b gretty.gradle appRun` +
+then from a browser address line, use: `http://localhost:8080`  - [red]_NOTE: may not work on Java JVM9_ 
+ . *deploy.gradle* - uploads our servlet war file to target CloudFoundry (or jetty or tomcat ) service; see notes within this script for more details; [red]_NOTE: enter credentials prior to first use_; to run this script, try : +
+`cd ./Website` +
+`./gradlew -b deploy.gradle`   + 
+Default tasks in this script run several steps to login to the remote CloudFoundry API, and push an existing *.war* file to it. 
+This script posts the *.war* file that was built in the *build.gradle* script from `./build/libs` folder to the target.
+
+image::../../images/divider.png[align="center"]
+
+=== Root Folder Layout
+
+[source,gradle]
+.Input / Output Folder Designations of Website Root and Sub-Folders - see *build.gradle* 
+----
+asciidoctor { 
+    sourceDir = file('src/docs/asciidoc') <1>
+    outputDir = file('src/main/webapp')   <2>
+}
+----
+<1> declares the root input folder of all *.adoc files
+<2> declares the output folder for generated HTML documents
+
+=== Input Source
+
+For input, http://asciidoctor.org/docs/user-manual/[*Asciidoctor*] reads each *.adoc file in the `./Website/src/docs/asciidoc` folder and any sub-folders.
+
+image:Layout4.png[root folder layout,float='right']
+
+=== Input Sub-Folder Layout
+
+Topical areas of discussion are often broken into pieces, typically segregated physically as folders-within-folders (i.e. sub-folders).
+
+Our website follows this pattern. Here's a list of our current input sub-folders and their purpose as of Dec.2015. Note others maybe added later.
+
+ . *archive* - original stuff no longer needed but saved 'just-in-case'
+ . *asciidoc* - contains the converted markdown documents as *.adoc* files plus sub-folders by topic
+ . *css* - styling components; 
+ . *images* - variety of stuff, some current, some obsolete and due for a tidy-up
+ . *markdown* - original markdown files saved here from the github repo - keep or delete ? No harm for the moment 
+ . *resources* - to be used for zips of older releases
+ . *txt* - by-products of search for stale/obsolete URLs
+
+
+image::../../images/divider.png[align="center"]
+
+
+ 
+=== HTML Generation Process
+ 
+HTML generation is provided by a single task within the *build.gradle* script. The *Asciidoctor* task has this privilege.
+
+All document files have their original _mark-down_ filename plus an *.adoc* suffix. 
+
+
+The *Asciidoctor* plugin in *build.gradle* reads each *.adoc* file from the `./Website/src/docs/asciidoc` folder. 
+It renders an *.html* equivalent and writes this to the `./Website/src/main/webapp` folder, or sub-folder. 
+
+Folder structure is preserved from the source folder.
+
+=== Root HTML Generation Commands
+
+ * Manual - when used manually from a command line to run a single task in *build.gradle*, do this : +
+`cd ./Website` +
+`./gradlew asciidoctor` 
+ * Automatic - runs tasks in this script declared as default tasks. These are `'clean','asciidoctor', 'build', 'war'`. +
+Do this without any task names after gradlew: +
+`cd ./Website` +
+`./gradlew` 
+ 
+ 
+image::../../images/divider.png[align="center"]
+ 
+=== PDF Generation Scripts
+
+*PDF* generation is provided by identical gradle scripts. The only difference between them is the declarations for input and output folders.
+These appear around lines 50-55 in each script. They look like the following logic that produces a PDF document in our *core* folder for each
+`*.adoc` file :
+
+[source,gradle]
+.Sample Input / Output Folder Designations for *Core* PDFs
+----
+sourceDir = file('src/docs/asciidoc/core')	<1>  
+outputDir = file('src/main/webapp/core')    <2>
+----
+<1> declares the input folder of *.adoc files
+<2> declares the output folder for the generated PDF
+
+.List of PDF Scripts
+    
+ . *pdf.gradle* - generates a single page PDF for the full user guide as defined in `index.adoc`;  
+this index uses the `include` syntax to insert pieces of text from the *.txt files.
+ . *pdfcore.gradle* - generates a single page PDF for each ./core topic file ending with `.adoc`
+ . *pdfreference.gradle* - generates a single page PDF for the reference manual defined in `index.adoc`; 
+this index uses the `include` syntax to insert pieces of text from the *.txt files.
+ . *pdfstructure.gradle* - generates a single page PDF describing the workings of this website, it's folders, scripts,etc.
+
+image::../../images/divider.png[align="center"]
+
+image:Layout2.png['root folder layout', float='right']
+
+=== Output Generation
+
+The `./Website/src/main/webapp` folder is used as the output capture folder for our website. http://asciidoctor.org/docs/user-manual/[*Asciidoctor*] writes *.html* (or .PDF) output here. 
+Sub-folders are duplicated, if necessary, to preserve the integrity of the source.
+
+=== Output Sub-Folder Layout
+
+Topical areas of discussion are often broken into pieces, typically segregated physically as folders-within-folders (i.e. sub-folders).
+
+Our website follows this pattern. Here's a list of our current output sub-folders and their purpose as of Dec.2015. Note others maybe added later.
+
+ . *api* - groovydoc and javadoc compiler output copied over from latest release; *groovy-overview-summary.html* and *java-overview-summary.html* are re-built by build.gradle logic
+ . *core* - describes the primary mechanisms of [blue]*GPars*
+ . *css* - styling components; `css3menu1` sub-dir is for the site navigation bar
+ . *font-awesome* - used by asciidoctor to generate admonition icons
+ . *fonts* - http://asciidoctor.org/docs/user-manual/[*Asciidoctor*] usage
+ . *guide* - everything to construct our *.html* user guide and companion *.pdf*
+ . *images* - variety of stuff, some current, some obsolete and due for a tidy-up
+ . *img* - used in landing page ( *index.html* ) 
+ . *JonKerridgeBook* - chapters from his material and his PDF series
+ . *js* - for landing page and JQuery support
+ . *quickstart* - the short reference manual for both *.html* and it's one-page PDF version
+
+image::../../images/divider.png[align="center"]
+
+IMPORTANT: Our landing page *index.html* is not an http://asciidoctor.org/docs/user-manual/[*Asciidoctor*] artifact, and must [red]*NOT* be lost or deleted
+
+image::../../images/divider.png[align="center"]
+
+image:Layout3.png[root folder layout,float='right']
+
+=== *WEB-INF* Review
+
+*WEB-INF* is our deployment folder for java servlets. It holds traditional support and configuration files. 
+
+Here's a list of components, sub-folders and their purpose as of Dec.2015.
+
+ . *groovy* - dynamic components written as groovy scripts (plus a lot of obsolete stuff)
+ . *includes* - fragments of html stored as groovy templates for *include* targets
+ . *lib* - jars of runtime logic to support +
+1) additional servlet processing in `caelyf-1.3.3.jar` and +
+2) live *Asciidoctor* translation from any *.adoc file directly to servlet response stream in `Doctor-all-1.0.jar` 
+ . *pages* - groovy templates (*.gtpl*) add further text to a servlet response
+ . *logging.properties* - adjust log level as needed
+ . *routes.groovy* - adds additional mappings to our own code for browser addresses. For example : +
+`get "/datetime",forward:"/datetime.groovy", cache:2.minutes` +
+where *get*, *post*, etc HTTP requests go to a specific groovy script; if *Redis* service is running, response is copied to cache for 2 min.s before reconstructing it +
+ +
+In this example, a request from browser address: `http://localhost:8080/datetime` forwards to `datetime.groovy` script in `/Website/src/main/webapp/WEB-INF/groovy` folder. It gets system date then forwards request to a template at `/Website/src/main/webapp/WEB-INF/pages` for final response resolution.
+ . *web.xml* - configures servlet container (jetty,tomcat,etc.) by mapping file suffixes to servlets; rarely changes.
+
+
+image::../../images/divider.png[]
+
+=== Sample Workflow
+
+NOTE: To be added soon
+
+image::../../images/divider.png[]

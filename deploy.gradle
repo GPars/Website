@@ -3,14 +3,18 @@
  
  See: http://cloudnines.de.a9sapp.eu/ for tutorial on how to use this Cloud
 
- To manually deploy GParsDocs using the CF command-line tool - :
- cd /Users/jim/Dropbox/GParsDocs/
- cf push GParsDocs -b https://github.com/cloudfoundry/java-buildpack.git -p build/libs/GParsDocs.war
+ To manually deploy this site using the CF command-line tool - :
+ cd /Users/jim/Dropbox/Project/Website
+ cf push GParsDocs -b https://github.com/cloudfoundry/java-buildpack.git -p build/libs/Website.war
 
- This is a sample gradle script using the gradle plugin for cloud foundry to upload our war file to target PaaS service, anynines.com in Berlin
- so use this gradle script to automatically deploy ('cd' into this folder then from a terminal type):
+ This is a sample gradle script using the gradle plugin for cloud foundry to upload our war file to target PaaS service, anynines.com in Berlin.
+ 
+ Use this gradle script syntax to automatically deploy using defaultTasks ('cd' into this folder then from a terminal type):
+  cd /Users/jim/Dropbox/Project/Website
+ ./gradlew -b deploy.gradle 
 
- cd /Users/jim/Dropbox/GParsDocs/
+ Use this script syntax to manually deploy ('cd' into this folder then from a terminal type):
+  cd /Users/jim/Dropbox/Project/Website
  ./gradlew -b deploy.gradle cfLogin cfDelete cfPush
  
  NOTE: This deploy script requires your system to have Java JRE 1.7+ also first fill in username and password credentials below 
@@ -53,15 +57,16 @@ war {
 
 cloudfoundry {
 	// your credentials go here
-    username = ''
+    username = ''                     // credentials used to join your CloudFoundry provider
     password = ''
-    target = 'https://api.de.a9s.eu'
+    target = 'https://api.de.a9s.eu'  // cloud foundry target address for your choice of providers; this address is for anynines.com
     space = 'development'
-	file = new File('build/libs/GParsDocs.war')
-    uri = 'http://gparsdocs.de.a9sapp.eu/'
+	file = new File('build/libs/Website.war')   // if you rename the root folder from Website then your .war filename must reflect that
+    uri = 'http://gparsdocs.de.a9sapp.eu/'      // if you choose another name for this site when deployed, put that new name here and in the application value below
 	application = 'GParsDocs'
-    memory = 340	// MB
+    memory = 340	// MB - varys depending on vendor
     instances = 1
+    // redis is the tool to provide caching in Caelyf tool but is optional and still works without it
     services {"rediscloud" { label = 'redis' 
     provider = 'Garantiadata'
     plan = '100' } }
