@@ -1,6 +1,6 @@
 /*
 
-	Build.gradle script to construct the GParsDocs website
+	Build.gradle script to construct the GPars Website
 
 	from a terminal command line, 'cd' into this folder then:
 	gradlew
@@ -45,7 +45,8 @@ dependencies {
 }
 
 war {
-  archiveName 'GParsDocs.war'
+  archiveName 'Website.war'
+  from 'src/main/resources' // adds a file-set to the root of the archive
 }
 
 

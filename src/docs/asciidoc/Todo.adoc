@@ -12,7 +12,7 @@ v1.2.1, 2015-12-04
 
 == List of Future Tasks to Improve GPars Documentation
 
-=== 13 Dec.2015 - JNorthr
+=== 3 Jan.2016 - JNorthr
 
 This is an updated list of tasks to improve our `GPars Documentation` using asciidoctor markup.
 
@@ -74,6 +74,8 @@ TIP: There is stuff remaining to be done, so will update this list as time permi
  . Review and improve _/integration_ document about using maven and gradle to grab *GPars*.
  . Add new and more recent articles and presentations to *LEARN* menu
  . add `Redis` caching feature to improve site performance -  image:../images/checkmarkgreen.png[ok,36]
+ . Remove obsolete/unused images
+ . Archive unsed .groovy scripts in WEB-INF/groovy folder
  
 == Future Ideas
 

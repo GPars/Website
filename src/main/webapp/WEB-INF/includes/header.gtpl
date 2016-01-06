@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>GPars Documentation</title>
-        <meta name="description" content="Welcome to GPars&#39;the home of toolkits for parallel and concurrency problems">
+        <meta name="description" content="Welcome to GPars&#39;the home of JVM toolkits for parallel and concurrency problems">
 
 	<!-- Mobile viewport optimization h5bp.com/ad -->
     <meta name="HandheldFriendly" content="True">
@@ -13,44 +13,16 @@
 
 	<link href="/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
 	<link href="/images/favicon.ico" type="image/x-icon" rel="icon">        
-    <link rel="stylesheet" type="text/css" href="/css/core.css"/>
    	<link rel="stylesheet"  type="text/css" href="/css/styles.css">
-
-   	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-   	<script src="/js/script.js"></script>
+	<link rel="stylesheet" href="./css/screen.css" type="text/css" media="screen, projection" /> 
+	<link rel="stylesheet" href="./css/core.css" type="text/css" media="screen, projection, print" />
     </head>
 
     <body>
             <div id="header">
             <a href="http://gpars.github.io/" alt="GPars Home">
-            <img src="/images/ipad.png" class='ipad' alt="GPars - a lightweight toolkit for Parallel Processing">
+            <img src="/images/ipad.png" class='ipad' alt="GPars - a lightweight toolkit for Parallel Processing on the JVM">			
 		    <img src="/images/gpars-rgb.svg"  class='anynines'></a>
             </div>
-
-	<div id='cssmenu'>
-	<ul>
-		<li><a href='/'>Home</a></li>
-   		<li class='active'><a href='#'>Environment</a>
-	      		<ul>
-        	 		<li><a href='#'>News</a>
-            			<ul>
-               				<li><a href='/blog'>Our Blog</a></li>
-               				<li><a href='/history'>Service History</a></li>
-            			</ul>
-         			</li>
-         			<li><a href='#'>Your System</a>
-            			<ul>
-               				<li><a href='/see'>System Info</a></li>
-					<li><a href='/docs'>Choose CF</a></li>
-            			</ul>
-         			</li>
-      			</ul>
-   		</li>
-
-   		<li><a href='/gpars'>GPars Installation</a></li>
-		<li><a href='/datetime'>Date &amp; Time</a></li>
-
-	</ul>
-	</div>
 
         <div id="content">

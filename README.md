@@ -1,7 +1,7 @@
 # Website
 Source for the GPars Website
 
-22 Dec.2015 - JNorthr
+1 Jan. 2016 - JNorthr
 Project GPars Documentation - rework using asciidoctor markup.
 
 There remains several sets of changes and improvments. There are also numerous absolete pieces  to be removed. Eventually, all code samples should be made visible in our documents.

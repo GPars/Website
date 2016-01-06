@@ -27,6 +27,7 @@ image::./images/gpars-rgb.svg[GPars Logo,240,align="center",link="http://gpars.o
 		<li><a href="Roadmap.html" title="What's On The Horizon ?">Future Roadmap</a></li>
 		<li><a href="Hackergarten.html" title="Informal Hands-on Coding Gatherings of Developers">Hackergarten</a></li>
 		<li><a href="Readme.html" title="Latest Up-To-The-Minute Progress">Read Me</a></li>
+		<li><a href="WebsiteStructure/index.html" title="How To Amend Our Documentation">This Documentation</a></li>
 		<li><a href="Todo.html" title="What's Been Done &amp; What's Not ?">To Do List</a></li>
 	</ul></li>
 	<li class="topmenu"><a href="#" style="height:16px;line-height:16px;"><span><img src="./css/css3menu1/blue-arrow1 right2.png" alt=""/>Docs</span></a>

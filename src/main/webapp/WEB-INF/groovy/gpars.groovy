@@ -44,7 +44,7 @@ if (flag)
     blogtext += "</p>"
 
     def desc = it.description.toString();
-    desc = desc.replaceAll(~/Õ/, "&apos;")
+    desc = desc.replaceAll(~/â€™/, "&apos;")
     desc = desc.replaceAll(~/'/, "&apos;")
     blogtext +=  "<p>"+desc+"<br />";
     blogtext +=  "<a href=${it.link} target=\"_blank\">Read more ...</a></p>";
@@ -98,7 +98,7 @@ rss.channel.item.each {
     def desc = it.description.toString();
     if (flag){flag=false;}
 
-    desc = desc.replaceAll(~/Õ/, "&apos;")
+    desc = desc.replaceAll(~/â€™/, "&apos;")
     //desc = desc.replaceAll(~/<br />/, " ")
     blogtext +=  desc.trim();
     blogtext +=  "<p><a href=${it.link} class=\"more\" target=\"_blank\">Read more . .</a></p>"

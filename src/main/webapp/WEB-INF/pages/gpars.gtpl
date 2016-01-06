@@ -114,7 +114,7 @@
   		</div>
   		 
 		<div id="questions" class="fastlink span-7 last">  
-    		<h3><a href="#" target="_blank">FAQ</a></h3> 
+    		<h3><a href="Community.html" target="_blank">FAQ</a></h3> 
     		<p>Frequently Asked Questions.</p> 
   		</div> 
 	</div> 
@@ -133,7 +133,7 @@
       <li><strong>GPars Installer</strong></li>
       <li><a href="GPars_History.html" target="_blank">About</a></li>
       <li><a href="https://groups.google.com/forum/#!forum/gpars-users" target="_blank">Blog</a></li>
-      <li><a href="http://gpars.org/download/1.2.1/" target="_blank">Download</a></li>
+      <li><a href="Download.html" target="_blank">Download</a></li>
       <li><a href="Developer_Zone.html" target="_blank">Join Us</a></li>
     </ul>
   </div>
@@ -154,7 +154,7 @@
     </ul> 
   </div> 
   <div id="copyright" class="span-3">
-    GPars Installer<br />Copyright &#169; 2015<br /><a href="TheGParsTeam.html" target="_blank">The Whole GPars Team</a>
+    GPars Installer<br />Copyright &#169; 2016<br /><a href="TheGParsTeam.html" target="_blank">The Whole GPars Team</a>
   </div> 
   <div class="span-3 last"> 	
     		<p> &nbsp; </p> 
