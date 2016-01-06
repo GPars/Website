@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.3">
+<meta name="description" content="GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.">
+<meta name="author" content="Jon Kerridge">
+<title>GPars - Groovy Parallel Systems</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./coderay-asciidoctor.css">
+</head>
+<body class="book toc2 toc-right">
+<div id="header">
+<h1>GPars - Groovy Parallel Systems</h1>
+<div class="details">
+<span id="author" class="author">Jon Kerridge</span><br>
+<span id="email" class="email"><a href="mailto:j.kerridge@napier.ac.uk">j.kerridge@napier.ac.uk</a></span><br>
+<span id="revnumber">version 1.2.1,</span>
+<span id="revdate">2015-12-02</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_more_testing_non_terminating_process_networks">More Testing: Non-terminating Process Networks</a>
+<ul class="sectlevel2">
+<li><a href="#_a_strong_par_strong_process">A <strong>PAR</strong> Process</a></li>
+<li><a href="#_process_separation">Process Separation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_more_testing_non_terminating_process_networks">More Testing: Non-terminating Process Networks</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><code>Chapter 6</code> showed it is possible to use the <strong>GroovyTestCase</strong> capability to test networks of processes, provided each of the processes in the network terminates. Most of the processes used in this book do not terminate and so a means of testing such non-terminating process networks has to be developed.</p>
+</div>
+<div class="sect2">
+<h3 id="_a_strong_par_strong_process">A <strong>PAR</strong> Process</h3>
+<div class="paragraph">
+<p>First, however, we need to reflect on the operation of <code>PAR</code>. A <code>PAR</code> only terminates when all the process in the list of processes passed to it terminate. Thus, if only one of the processes does not terminate, then the <code>PAR</code> will never terminate. However, if the assertion testing commonly used in <strong>JUnit</strong> and <strong>GroovyTestCase</strong> is to be undertaken then at least some of the test environment has to terminate.</p>
+</div>
+<div class="paragraph">
+<p><code>Figure 10-1</code> shows a generic architecture that allows a <code>process network under test</code> (<strong>PNUT</strong>) to run without terminating, while the <code>Test-Network</code> does terminate, which then allows the assertion testing to take place in the normal manner.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_process_separation">Process Separation</h3>
+<div class="paragraph">
+<p>The separation of the <strong>PNUT</strong> from the <code>Test-Network</code> by means of a <strong>TCP/IP</strong> communications network, means that the two process networks run independently of each other and it does not matter if the <strong>PNUT</strong> <code>Process-Network-Under-Test</code> does not terminate, provided the <code>Test-Network</code> does.
+We can assume that the <strong>PNUT</strong> requires input and also that it outputs results in some format. This data is communicated by means of the network channels shown.</p>
+</div>
+<hr>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<strong>TCP/IP</strong> allows process networks to run independently
+</td>
+</tr>
+</table>
+</div>
+<hr>
+<div class="paragraph">
+<p>Both the <code>Input-Generator</code> and <code>Output-Gatherer</code> processes must run as a <strong>PAR</strong> within the process <code>Test-Network</code>, then terminate; after which their internal data structures can be tested within <code>Assertion-Testing</code>.
+This demonstrates the generic nature of the architecture in that the only part that has to be specifically written is the processes that implement the <code>Input-Generator</code> and <code>Output-Gatherer</code> respectively.
+The architecture will now be demonstrated using the <code>Scaling Device</code> example described previously in <code>Chapter 6</code>. The <code>Scaling Device</code> takes a stream of input numbers and outputs an equivalent stream of scaled numbers, while monitoring the operation of a <strong>Scale</strong> process by modifying the applied scaling factor.</p>
+</div>
+<hr>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Want to read more of this chapter? <a href="pdf/C17.pdf">Download this chapter&#8217;s PDF here.</a>
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 1.2.1<br>
+Last updated 2015-12-31 00:22:14 +01:00
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+/*
+	NOTE: this script is under development and may not work yet.
+
+	pdfguide.gradle script to construct User Guide PDF document for the asciidoctor text files 
+	within this project website
+
+	from a terminal command line, 'cd' into this folder then:	
+	gradlew -b pdfguide.gradle
+	
+	this runs the defaultTasks below using the gradle wrapper tool gradlew <or> bash ./gradlew <or> gradle tool if installed
+	
+*/
+
+apply plugin: 'org.asciidoctor.gradle.asciidoctor'
+apply plugin: 'org.asciidoctor.convert' 
+
+
+defaultTasks 'asciidoctor'  
+
+// logic to suport asciidoctor html, pdf and diagrams output
+buildscript {
+    repositories {
+        jcenter()
+        maven{ url "http://repository.jboss.org/maven2/"}
+    }
+
+    dependencies {
+        classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.3'
+        classpath("org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.9") // for PDF's
+    }
+}
+
+
+repositories {
+	mavenCentral()
+}
+
+
+
+// closure for asciidoctor plugin; chg these values to influence asciidoctor task
+asciidoctor { 
+	// plugin reads all *.adoc files in this folder and any sub-folder
+	sourceDir = file('src/docs/asciidoc/guide')	// choose either guide  <or> quickstart folder and same for outputDir    
+    outputDir = file('src/main/webapp/guide')  // file("$buildDir/docs")
+    separateOutputDirs=false	// true creates two folders within the outDir path one for html, one for pdf
+    backends = ['pdf' ]	// to create both html and pdf output:  backends = ['html5' ,'pdf']
+    options = [
+        doctype: 'book',
+        attributes: [
+            'source-highlighter': 'coderay',
+     		'toc-title'           : 'Table of Contents',
+            'toc'                 : 'right'
+        ]
+    ]
+}

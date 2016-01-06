@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.3">
+<meta name="description" content="GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.">
+<meta name="author" content="The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;">
+<title>Concurrent Collection Processing withPools</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./coderay-asciidoctor.css">
+</head>
+<body class="book toc2 toc-right">
+<div id="header">
+<h1>Concurrent Collection Processing withPools</h1>
+<div class="details">
+<span id="author" class="author">The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;</span><br>
+<span id="revnumber">version 1.2.1,</span>
+<span id="revdate">2015-12-01</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_gparspool_concurrent_collection_processing">GParsPool Concurrent Collection Processing</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+To read this topic in the PDF format, <a href="GParsPool.pdf">please click here</a>.
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_gparspool_concurrent_collection_processing">GParsPool Concurrent Collection Processing</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Dealing with data frequently involves manipulating collections. Lists, arrays, sets, maps, iterators, strings and lot of other data types can be viewed as collections of items. The common pattern to process such collections is to take elements sequentially, one-by-one, and make an action for each of the items in row.</p>
+</div>
+<div class="paragraph">
+<p>Take, for example, the <em>min()</em> function, which is supposed to return the smallest element of a collection.
+When you call the <em>min()</em> method on a collection of numbers, the caller thread will create an <em>accumulator</em> or <em>so-far-the-smallest-value</em> initialized to the minimum value of the given type, let say to zero.
+And then the thread will iterate through the elements of the collection and compare them with the value in the <em>accumulator</em> .</p>
+</div>
+<div class="paragraph">
+<p>Once all elements have been processed, the minimum value is stored in the <em>accumulator</em> .</p>
+</div>
+<div class="paragraph">
+<p>This algorithm, however simple, is <strong>totally wrong</strong> on multi-core hardware.</p>
+</div>
+<div class="paragraph">
+<p>Running the <em>min()</em> function on a dual-core chip can leverage <strong>at most 50%</strong> of the computing power of the chip. On a quad-core it would be only 25%.</p>
+</div>
+<hr>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+this algorithm effectively <strong>wastes 75% of the computing power</strong> !
+</td>
+</tr>
+</table>
+</div>
+<hr>
+<div class="paragraph">
+<p>Correct! this algorithm effectively <strong>wastes 75% of the computing power</strong> of the chip.</p>
+</div>
+<div class="paragraph">
+<p>Tree-like structures proved to be more appropriate for parallel processing.
+The <em>min()</em> function in our example doesn&#8217;t need to iterate through all the elements in row and compare their values with the <em>accumulator</em> .
+What it can do instead is relying on the multi-core nature of your hardware.</p>
+</div>
+<div class="paragraph">
+<p>A <em>parallel_min()</em> function could, for example, compare pairs (or tuples of certain size) of neighboring values in the collection and promote the smallest value from the tuple into a next round of comparison.</p>
+</div>
+<div class="paragraph">
+<p>Searching for minimum in different tuples can safely happen in parallel and so tuples in the same round can be processed by different cores at the same time without races or contention among threads.</p>
+</div>
+<div class="paragraph">
+<p>The <em>GParsPool</em> class enables a <strong>ParallelArray</strong>-based (from JSR-166y) DSL on collections.</p>
+</div>
+<div class="paragraph">
+<p>Examples of use:</p>
+</div>
+<div class="listingblock">
+<div class="title">GParsPoolwithPool Sample</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td>
+  <td class="code"><pre>GParsPool.withPool {
+    <span class="keyword">def</span> selfPortraits = images.findAllParallel{
+        <span class="local-variable">it</span>.contains me}.collectParallel {<span class="local-variable">it</span>.resize()
+    }
+
+    <span class="comment">//a map-reduce functional style</span>
+    <span class="keyword">def</span> smallestSelfPortrait = images.parallel
+        .filter{<span class="local-variable">it</span>.contains me}
+        .map{<span class="local-variable">it</span>.resize()}
+        .min{<span class="local-variable">it</span>.sizeInMB}
+}</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <em>GParsExecutorsPool</em> class provides similar functionality to the <em>GParsPool</em> class, however uses JDK thread pools instead of the more efficient <strong>ParallelArray</strong>-based (from <strong>JSR-166y</strong>) implementation.</p>
+</div>
+<div class="paragraph">
+<p>Examples of use:</p>
+</div>
+<div class="listingblock">
+<div class="title">GParsExecutorsPool.withPool</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+5
+</pre></td>
+  <td class="code"><pre>GParsExecutorsPool.withPool {
+    <span class="keyword">def</span> selfPortraits = images
+        .findAllParallel{<span class="local-variable">it</span>.contains me}
+        .collectParallel {<span class="local-variable">it</span>.resize()}
+}</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>See the <a href="./guide/#_parallel_collections_2">Parallel Collection section in the User Guide</a> for more information.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 1.2.1<br>
+Last updated 2015-12-31 00:22:14 +01:00
+</div>
+</div>
+</body>
+</html>

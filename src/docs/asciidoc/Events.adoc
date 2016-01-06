@@ -16,13 +16,13 @@ v1.2.1, 2015-12-01
 
 === Past Events
 
-_Russel Winder_ will presented a *GPars* Workshop at http://greach.es/[2013-01-25 and 2013-01-26.]  ( http://greach.es/[*Greach 2013*] )
+_Russel Winder_ presented a *GPars* Workshop at http://greach.es/[2013-01-25 and 2013-01-26.]  ( http://greach.es/[*Greach 2013*] )
 
 _Aurelian Maury_ presented a talk http://skillsmatter.com/podcast/groovy-grails/gpars-vs-wild[*GPars* vs. Wild] at *Groovy and Grails eXchange 2012, 2012-12-13*
 
 *GPars* at http://gotocon.com/prague-2011/[GoTo Prague 2011]. _Vaclav Pech_ had two sessions, one on http://gotocon.com/prague-2011/presentation/Unleash%20your%20processor%28s%29[concurrency] and a second one on http://gotocon.com/prague-2011/presentation/Groovy%20actors%20and%20concurrent%20dataflow%20with%20GPars[*GPars*] specifically.
 
-_Paul King_ at *SpringOne2GX, Oct 2011.*
+_Paul King_ was at *SpringOne2GX, Oct 2011.*
 
 _Venkat Subramaniam_ at *SpringOne2GX,Oct 2011* - *GPars Deep Dive.*
 
@@ -32,6 +32,6 @@ _Vaclav Pech_ presented *GPars* at http://eu.gr8conf.org/eu2010/agenda/index[*GR
 
 At Jfokus, Stockholm, Jan 27th 2010, _Vaclav Pech_ presented *GPars* in his session named http://www.jfokus.se/jfokus/speakers.jsp#V%C3%A1clav%20Pech[Groovy actors and concurrent dataflow with GParallelizer]. Check out http://www.jfokus.se/jfokus/speakers.jsp#Vaclav%20Pech[the abstract].
 
-At *W-Jax 2009*, Munich, Nov 9-13 _Vaclav Pech_ speaks about "Groovy actors and concurrent dataflow with GParallelizer". (http://www.jax.de[www.jax.de])
+At *W-Jax 2009*, Munich, Nov 9-13 _Vaclav Pech_ spoke about "Groovy actors and concurrent dataflow with GParallelizer". (http://www.jax.de[www.jax.de])
 
-*Devoxx 2009*, Antwerp, 18th November 2009, will host a quickie by _Vaclav Pech_ on "GParallelizer - parallelize your Groovy enjoyment". (http://www.devoxx.com/display/DV09/Quickie+Day+1[Quickie+Day])
+*Devoxx 2009*, Antwerp, 18th November 2009, hosted a quickie by _Vaclav Pech_ on "GParallelizer - parallelize your Groovy enjoyment". (http://www.devoxx.com/display/DV09/Quickie+Day+1[Quickie+Day])

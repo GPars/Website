@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.3">
+<meta name="description" content="GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.">
+<meta name="author" content="The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;">
+<title>GPars - Groovy Parallel Systems</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./coderay-asciidoctor.css">
+</head>
+<body class="book toc2 toc-right">
+<div id="header">
+<h1>GPars - Groovy Parallel Systems</h1>
+<div class="details">
+<span id="author" class="author">The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;</span><br>
+<span id="revnumber">version 1.2.1,</span>
+<span id="revdate">2015-12-08</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_review_of_strong_gpars_strong_website_structure_within_the_github_repo">review of <strong>GPars</strong> Website Structure within the GitHub repo</a>
+<ul class="sectlevel2">
+<li><a href="#_source_for_the_gpars_website">Source for the GPars website</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_review_of_strong_gpars_strong_website_structure_within_the_github_repo">review of <strong>GPars</strong> Website Structure within the GitHub repo</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_source_for_the_gpars_website">Source for the GPars website</h3>
+<div class="sect3">
+<h4 id="_24_nov_2015_jnorthr">24 Nov.2015 - JNorthr</h4>
+<div class="paragraph">
+<p>This is the initial <code>Commit of GPars Documentation</code> reworked using asciidoctor markup.</p>
+</div>
+<div class="paragraph">
+<p>There is much remaining to do, so just wanted to get this set of stuff into GitHub before it is lost.</p>
+</div>
+<div class="paragraph">
+<p>There are four gradle build scripts included plus the gradle 2.9 wrapper. To build/translate/test/deploy etc. do this:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>open terminal</p>
+</li>
+<li>
+<p>clone this repo</p>
+</li>
+<li>
+<p>change directories into root folder of this repo.</p>
+</li>
+<li>
+<p>./gradlew check</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>&lt;or&gt;</p>
+</div>
+<div class="listingblock">
+<div class="title">Confirm Gradle is Happy</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+</pre></td>
+  <td class="code"><pre>gradlew check</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This confirms that all dependencies have been downloaded.</p>
+</div>
+<div class="paragraph">
+<p>Then to rebuild .html from each .adoc file, do this:</p>
+</div>
+<div class="listingblock">
+<div class="title">Ask Gradle to translate .adoc files to .html</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+</pre></td>
+  <td class="code"><pre>.<span class="regexp"><span class="delimiter">/</span><span class="content">gradlew asciidoctor</span></span></pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To build a deployable war file, run script with no parms - this will run <strong>Gradle</strong> with default tasks creating <strong>.WAR</strong></p>
+</div>
+<div class="listingblock">
+<div class="title">Ask Gradle to translate .adoc files and then build a <strong>.WAR</strong> file</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+</pre></td>
+  <td class="code"><pre>.<span class="regexp"><span class="delimiter">/</span><span class="content">gradlew</span></span></pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To test this war file on your own system before uploading, the <code>gretty.gradle</code> script starts a local <strong>jetty7</strong> server. Then you can then open a browser to <code>localhost:8080</code>  to see how the website looks and make any tweeks first before you deploy to a cloud foundry target.</p>
+</div>
+<div class="listingblock">
+<div class="title">Ask Gradle to run the Jetty server on your local machine</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+</pre></td>
+  <td class="code"><pre>cd /Users/jim/Dropbox/GParsDocs/build/libs
+.<span class="regexp"><span class="delimiter">/</span><span class="content">gradlew -b gretty.gradle appRunWAR</span></span></pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_deploy">Deploy</h5>
+<div class="paragraph">
+<p>When ready to deploy you will need a client account on any CloudFoundry provider; the third gradle script is to deploy our docs to a cloud foundry instance. Typically:</p>
+</div>
+<div class="listingblock">
+<div class="title">Ask Gradle to deploy our website to a CloudFoundry target</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+</pre></td>
+  <td class="code"><pre> cd /Users/jim/Dropbox/GParsDocs/
+ .<span class="regexp"><span class="delimiter">/</span><span class="content">gradlew -b deploy.gradle cfLogin cfDelete cfPush</span></span></pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>should create a running web app at the URI declared within the cloudfoundry{} closure;</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+include your own credentials before first run
+</td>
+</tr>
+</table>
+</div>
+<hr>
+<div class="paragraph">
+<p>Our webapp lives in the <code>anynines.com</code> <strong>PaaS</strong> provider in Berlin. The 'target' and 'uri' values point to that provider. You can deploy this .war file other splaces if you join a different provider.</p>
+</div>
+<div class="paragraph">
+<p>If you need a tut or how-to, read this: <a href="http://cloudnines.de.a9sapp.eu/">How Does CloudFoundry Work ?</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 1.2.1<br>
+Last updated 2015-12-31 00:22:14 +01:00
+</div>
+</div>
+</body>
+</html>

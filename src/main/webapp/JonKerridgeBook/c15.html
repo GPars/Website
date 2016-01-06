@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.3">
+<meta name="description" content="GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.">
+<meta name="author" content="Jon Kerridge">
+<title>GPars - Groovy Parallel Systems</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./coderay-asciidoctor.css">
+</head>
+<body class="book toc2 toc-right">
+<div id="header">
+<h1>GPars - Groovy Parallel Systems</h1>
+<div class="details">
+<span id="author" class="author">Jon Kerridge</span><br>
+<span id="email" class="email"><a href="mailto:j.kerridge@napier.ac.uk">j.kerridge@napier.ac.uk</a></span><br>
+<span id="revnumber">version 1.2.1,</span>
+<span id="revdate">2015-12-02</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_communication_over_networks_process_parallelism">Communication over Networks: Process Parallelism</a>
+<ul class="sectlevel2">
+<li><a href="#_process_definition_remains_the_same">Process Definition Remains The Same</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_communication_over_networks_process_parallelism">Communication over Networks: Process Parallelism</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>JCSP</strong>, together with <code>JCSPNet</code> provide a transparent means of connecting processes, whether they be on the same processor, running concurrently, or if they are executing on separate processes in parallel.</p>
+</div>
+<div class="paragraph">
+<p>Further, we can simulate processes executing in parallel on a single processor by running each process network in a different <code>Java Virtual Machine</code> (<strong>JVM</strong>). In this latter case, there will be no performance gain but the designer is able to assure themselves that the system is functioning as expected.
+Thus, we can test a multi-processor system in a single processor environment knowing that, at the level of inter-process communication, the system functions as expected but that it will perform in a different manner when placed on the multi-processor system.
+If the multi-processor system uses specific hardware then that functional test will have to either be simulated or wait until the system can be tested on the actual hardware.</p>
+</div>
+<div class="sect2">
+<h3 id="_process_definition_remains_the_same">Process Definition Remains The Same</h3>
+<div class="paragraph">
+<p>The definition of the processes that make up the process network, regardless of the processor upon which it will execute and whether or not it is connected to an internal or network channel, remains the same.
+Thus once a process has been tested, as described in Chapters 7 and 10, we can be assured that it will behave as demonstrated by that testing process.</p>
+</div>
+<div class="paragraph">
+<p>The design of the <code>JCSPNet</code> package architecture means that the actual physical layer used to implement the underlying communication network is completely hidden from the application and in particular the processes and their connection over that network.
+The only requirement is that the script used to invoke a network of processes on a specific processor will utilise a specific <code>network-node-factory</code> compatible with the underlying communications architecture.
+Each process network running on a processor has to initialise itself as a node within the communications system.</p>
+</div>
+<div class="paragraph">
+<p><code>JCSPNet</code> utilises the underlying <strong>Java</strong> socket mechanism and thus inherently there are some limitations on the nature of networks that can be constructed. In this chapter, we explore these limitations.
+Initially, the means by which nodes identify themselves to the network and then define network communication channels is described.</p>
+</div>
+<hr>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Want to read more of this chapter? <a href="pdf/C15.pdf">Download this chapter&#8217;s PDF here.</a>
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 1.2.1<br>
+Last updated 2015-12-31 00:22:14 +01:00
+</div>
+</div>
+</body>
+</html>

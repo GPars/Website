@@ -1,13 +1,13 @@
-// Gretty uses jetty7 as it only needs jdk1.6
+// Gretty uses jetty7 as it only needs jdk1.6 but JDK8/9 may need jetty8 or jetty9 in line 41
 // This gradle script allows us to test the website b4 we bother to upload to PaaS; browser address will be:   localhost:8080
 
-// cd /Users/jim/Dropbox/GParsDocs/build/libs 
+// cd /Users/jim/Dropbox/Project/Website/build/libs 
 // gradlew -b gretty.gradle appRun
 
 apply plugin: 'war'
 apply plugin: 'org.akhikhl.gretty'
 
-defaultTasks 'appRunWar'
+defaultTasks 'appRunWar'  // or 'appRun'
 
 buildscript {
   repositories {
@@ -45,5 +45,6 @@ gretty {
 }
 
 war {
-  archiveName 'GParsDocs.war'
+  archiveName 'Website.war'
+  from 'src/main/resources' // adds a file-set to the root of the archive
 }

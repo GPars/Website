@@ -1,16 +1,11 @@
 /*
-	NOTE: this script is under development and may not work yet.
-
-	pdf.gradle script to construct all PDF documents from the asciidoctor text files within the GParsDocs website
+	pdfstructure.gradle script to construct a PDF document about the project folder structure of this GPars Website
 
 	from a terminal command line, 'cd' into this folder then:	
-	gradlew -b pdf.gradle
+	gradlew -b pdfstructure.gradle
 	
 	this runs the defaultTasks below using the gradle wrapper tool gradlew <or> bash ./gradlew <or> gradle tool if installed
 */
-apply plugin: 'groovy'
-apply plugin: 'war'
-
 apply plugin: 'org.asciidoctor.gradle.asciidoctor'
 apply plugin: 'org.asciidoctor.convert' 
 
@@ -35,15 +30,6 @@ repositories {
 	mavenCentral()
 }
 
-dependencies {
-    compile "org.codehaus.groovy:groovy-all:2.4.5"
-    runtime "org.codehaus.groovy:groovy-all:2.4.5"
-}
-
-war {
-  archiveName 'GParsDocs.war'
-}
-
 
 // closure for asciidoctor plugin; chg these values to influence asciidoctor task
 asciidoctor { 
@@ -51,7 +37,7 @@ asciidoctor {
 	sourceDir = file('src/docs/asciidoc/WebsiteStructure')    
     outputDir = file('src/main/webapp/WebsiteStructure')  
     separateOutputDirs=false	// true creates two folders within the outDir path one for html, one for pdf
-    backends = ['pdf' ]	// to create both html and pdf output:  backends = ['html5' ,'pdf']
+    backends = ['pdf' ]	        // to create both html and pdf output:  backends = ['html5' ,'pdf']
     options = [
         doctype: 'book',
         attributes: [
