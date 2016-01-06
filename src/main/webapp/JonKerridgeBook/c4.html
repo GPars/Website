@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.3">
+<meta name="description" content="GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.">
+<meta name="author" content="Jon Kerridge">
+<title>GPars - Groovy Parallel Systems</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./coderay-asciidoctor.css">
+</head>
+<body class="book toc2 toc-right">
+<div id="header">
+<h1>GPars - Groovy Parallel Systems</h1>
+<div class="details">
+<span id="author" class="author">Jon Kerridge</span><br>
+<span id="email" class="email"><a href="mailto:j.kerridge@napier.ac.uk">j.kerridge@napier.ac.uk</a></span><br>
+<span id="revnumber">version 1.2.1,</span>
+<span id="revdate">2015-12-02</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_parallel_processes_non_deterministic_input">Parallel Processes: Non Deterministic Input</a>
+<ul class="sectlevel2">
+<li><a href="#__strong_alternative_strong"><strong>Alternative</strong></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_parallel_processes_non_deterministic_input">Parallel Processes: Non Deterministic Input</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In many systems, there is a requirement to provide feedback from a down stream stage of the process to an upstream one.</p>
+</div>
+<div class="paragraph">
+<p>The upstream process has no idea when such a piece of feedback information is going to arrive and thus has to be able to accept it at any time. The behaviour of such a process is said to be <code>non-deterministic</code> because the arrival of the information cannot be determined when the process is defined. We know that such feedback can arrive but not when.</p>
+</div>
+<div class="paragraph">
+<p>Similarly, a <code>process network</code> may be subject to external interventions that change the parameters of the system. It is known that these interventions will occur but not when.
+This happens, for example, in medical laboratory equipment where a running check is kept of the range of values for each test that has been produced.
+Over a given period, it is known that the mean value will lie within known bounds.</p>
+</div>
+<div class="paragraph">
+<p>If the machine is outside those bounds then it enters an automatic recalibration process.</p>
+</div>
+<hr>
+<div class="sect2">
+<h3 id="__strong_alternative_strong"><strong>Alternative</strong></h3>
+<div class="paragraph">
+<p>For this purpose, <strong>Alternative</strong> provides the program structuring mechanism. In its simplest form, the <strong>Alternative</strong> manages a number of input channels.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>On executing an <strong>Alternative</strong>, the state of all the input channels is determined.</p>
+</li>
+<li>
+<p>If none of the channels are ready, the <strong>Alternative</strong> waits until one is ready, reads the input and then obeys the code associated with that input.</p>
+</li>
+<li>
+<p>If one input is ready, then that channel is read and its associated code is obeyed.</p>
+</li>
+<li>
+<p>If more than one channel is ready then one is chosen according to some selection criterion and the channel is read and its associated code obeyed.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Typically, an <strong>Alternative</strong> is incorporated into a looping structure so that the input channels can be repeatedly accessed.</p>
+</div>
+<div class="paragraph">
+<p>As a first example we shall take the process that generates a sequence of integers, <strong>GNumbers</strong>, previously described in <em>Section 3.4.</em>
+We shall modify it so that it accepts an input which resets the sequence to a number input by the user at any time chosen by the user.</p>
+</div>
+<hr>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Want to read more of this chapter? <a href="pdf/C4.pdf">Download this chapter&#8217;s PDF here.</a>
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 1.2.1<br>
+Last updated 2015-12-31 00:22:14 CET
+</div>
+</div>
+</body>
+</html>

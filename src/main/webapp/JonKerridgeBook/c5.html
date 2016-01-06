@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.3">
+<meta name="description" content="GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.">
+<meta name="author" content="Jon Kerridge">
+<title>GPars - Groovy Parallel Systems</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./coderay-asciidoctor.css">
+</head>
+<body class="book toc2 toc-right">
+<div id="header">
+<h1>GPars - Groovy Parallel Systems</h1>
+<div class="details">
+<span id="author" class="author">Jon Kerridge</span><br>
+<span id="email" class="email"><a href="mailto:j.kerridge@napier.ac.uk">j.kerridge@napier.ac.uk</a></span><br>
+<span id="revnumber">version 1.2.1,</span>
+<span id="revdate">2015-12-02</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_extending_the_strong_alternative_strong_a_scaling_device_and_queues">Extending the <strong>Alternative</strong>: A Scaling Device and Queues</a>
+<ul class="sectlevel2">
+<li><a href="#_the_scaling_device_definition">The Scaling Device Definition</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_extending_the_strong_alternative_strong_a_scaling_device_and_queues">Extending the <strong>Alternative</strong>: A Scaling Device and Queues</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Many machines used in automated processes have some means of monitoring their operation, for example, by calculating running averages of specific values and ensuring they stay within a specified range.
+If they go out of range then the machine recalibrates itself.</p>
+</div>
+<div class="paragraph">
+<p>In this chapter, we shall build a model of such a device, but without having to interface to a real machine!</p>
+</div>
+<hr>
+<div class="sect2">
+<h3 id="_the_scaling_device_definition">The Scaling Device Definition</h3>
+<div class="paragraph">
+<p>The scaling device reads incoming integers that arrive every second. The device then multiplies the incoming value by its current scaling factor, which it then outputs, together with the original value.
+The scaling factor is doubled at a regular interval, of say, 5 seconds.</p>
+</div>
+<div class="paragraph">
+<p>In addition, there is a controlling function that suspends the operation of the scaling device again at regular intervals, of say, 7 seconds to simulate the testing of its operation.
+When it is suspended, the scaling device outputs its current scaling factor to the controller.</p>
+</div>
+<div class="paragraph">
+<p>At some time later, the controller, having computed another scaling factor, will inject the new scaling factor into the controller, which resumes its normal mode of operation.
+While the scaling device is suspended by the controller it outputs all input values unscaled.</p>
+</div>
+<hr>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Want to read more of this chapter? <a href="pdf/C5.pdf">Download this chapter&#8217;s PDF here.</a>
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 1.2.1<br>
+Last updated 2015-12-31 00:22:14 CET
+</div>
+</div>
+</body>
+</html>

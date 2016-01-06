@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.3">
+<meta name="description" content="GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.">
+<meta name="author" content="The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;">
+<title>News</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./coderay-asciidoctor.css">
+</head>
+<body class="book toc2 toc-right">
+<div id="header">
+<h1>News</h1>
+<div class="details">
+<span id="author" class="author">The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;</span><br>
+<span id="revnumber">version 1.2.1,</span>
+<span id="revdate">2015-12-09</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_topics">TOPICS :</a>
+<ul class="sectlevel2">
+<li><a href="#_remoting_for_strong_gpars_strong">Remoting for <strong>GPars</strong></a></li>
+</ul>
+</li>
+<li><a href="#_posts">Posts</a>
+<ul class="sectlevel2">
+<li><a href="#_dataflow">Dataflow</a></li>
+<li><a href="#_agent">Agent</a></li>
+<li><a href="#_software_transactional_memory">Software Transactional Memory</a></li>
+<li><a href="#_other">Other</a></li>
+<li><a href="#__strong_gpars_1_0_strong_arrived_em_vaclav_pech_em_posted_on_dec_19_2012"><strong>GPars 1.0</strong> Arrived, <em>Vaclav Pech</em> posted on Dec 19, 2012</a></li>
+<li><a href="#_the_first_release_candidate_of_1_0_is_available_em_vaclav_pech_em_posted_on_dec_11_2012">The First Release Candidate of 1.0 Is Available, <em>Vaclav Pech</em> posted on Dec 11, 2012</a></li>
+<li><a href="#_beta_3_is_out_em_vaclav_pech_em_posted_on_sep_10_2012">Beta 3 is out, <em>Vaclav Pech</em>  posted on Sep 10, 2012</a></li>
+<li><a href="#__strong_gpars_1_0_beta_1_strong_ready_for_a_test_ride_em_vaclav_pech_em_posted_on_dec_30_2011"><strong>GPars 1.0 beta-1</strong> ready for a test ride, <em>Vaclav Pech</em> posted on Dec 30, 2011</a></li>
+<li><a href="#_parallel_game_of_life_em_vaclav_pech_em_posted_on_sep_01_2011">Parallel Game of Life, <em>Vaclav Pech</em> posted on Sep 01, 2011</a></li>
+<li><a href="#__strong_gpars_strong_turns_0_12_today_em_vaclav_pech_em_posted_on_jun_02_2011"><strong>GPars</strong> turns 0.12 today, <em>Vaclav Pech</em> posted on Jun 02, 2011</a></li>
+<li><a href="#_jvm_concurrency_and_em_actors_em_with_strong_gpars_strong_em_vaclav_pech_em_posted_on_apr_26_2011">JVM Concurrency and <em>Actors</em> with <strong>GPars</strong>, <em>Vaclav Pech</em> posted on Apr 26, 2011.</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_topics">TOPICS :</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_remoting_for_strong_gpars_strong">Remoting for <strong>GPars</strong></h3>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+This is a quick overview of <strong>Remoting for GPars</strong> realized during <strong>Google Summer of Code,2014</strong> by <em>Rafal Slawik</em>
+</td>
+</tr>
+</table>
+</div>
+<hr>
+<div class="paragraph">
+<p>The implementation has already become part of the <strong>GPars</strong> 1.3-SNAPSHOT and is <a href="Integration.html">available for immediate use</a>.</p>
+</div>
+<div class="paragraph">
+<p>Behind the scenes, the <strong>Netty</strong> library and the standard serialization mechanism were used as the transportation layer.</p>
+</div>
+<div class="paragraph">
+<p>Basically, you can use <em>Dataflows</em> with any data type, send custom messages to <em>Actors</em> to store custom states in <em>Agents</em> as long as these objects are seralizable.</p>
+</div>
+<div class="paragraph">
+<p>The <em>Dataflow</em> structures that support remoting: <em>DataflowVariable</em>, <em>DataflowBroadcast</em>, <em>DataflowQueue</em>.</p>
+</div>
+<div class="sect3">
+<h4 id="_remote_implementation_requirements">Remote Implementation Requirements</h4>
+<div class="paragraph">
+<p>General use of our remoting implementation requires:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>at host A:</strong> creating a context and publishing a structure (variable, queue, actor, etc.) under some name</p>
+</li>
+<li>
+<p><strong>at host B:</strong> creating a context and retrieval of a structure with that name</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The <strong>context</strong> concept is useful for testing. One can have an original instance and a remote proxy within that same VM or other purposes eg. each thread has its own remote proxy.
+What&#8217;s important is that a remote proxy has the same interface and therefore can be used as though it was a regular intstance. Let&#8217;s see an example on how to use remoting for <em>DataflowVariables</em>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>At host A</strong>:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="title">Create context, start server, create instance &amp; register it</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> remoteDataflows = RemoteDataflows.create() <span class="comment">// creates context</span>
+remoteDataflows.startServer HOST PORT <span class="comment">// starts server that waits for requests at HOST:PORT</span>
+<span class="keyword">def</span> variable = <span class="keyword">new</span> DataflowVariable() <span class="comment">// creates variable instance</span>
+remoteDataflows.publish variable <span class="string"><span class="delimiter">&quot;</span><span class="content">my-first-variable</span><span class="delimiter">&quot;</span></span> <span class="comment">// registers it within the context under given name</span></pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>At host B:</strong></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="title">Retrieves a promise of variable with given name</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> remoteDataflows = RemoteDataflows.create() <span class="comment">// creates context</span>
+<span class="keyword">def</span> remoteVariablePromise = remoteDataflows.getVariable HOST, PORT, <span class="string"><span class="delimiter">&quot;</span><span class="content">my-first-variable</span><span class="delimiter">&quot;</span></span> <span class="comment">// retrieves promise of variable with given name</span>
+<span class="keyword">def</span> remoteVariable = remoteVariablePromise.get() <span class="comment">// extracts remote proxy from promise</span></pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">You can find more examples in our samples package:</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+</pre></td>
+  <td class="code"><pre>groovyx.gpars.samples.remote.dataflow.*</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="_a_strong_ping_pong_strong_example">A <strong>Ping-Pong</strong> Example</h4>
+<div class="paragraph">
+<p>Now, let&#8217;s take a look at remoting for <em>Actors</em> and consider a <strong>Ping-Pong</strong> example like <em>groovyx.gpars.samples.remote.actor.pingpong</em>.  Let&#8217;s start with creating an <em>actor</em> that responds to every message with <strong>PONG</strong>.  Such actor can look like this :</p>
+</div>
+<div class="listingblock">
+<div class="title">Actor Setup</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> pongActor = Actors.actor { loop { react { println <span class="local-variable">it</span> reply <span class="string"><span class="delimiter">&quot;</span><span class="content">PONG</span><span class="delimiter">&quot;</span></span> } } }</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>It waits in a loop for messages and when one arrives, it prints it and replies with <strong>PONG</strong>. To be able to access this <em>actor</em> from a remote host, it has to be published:</p>
+</div>
+<div class="listingblock">
+<div class="title">Creates context,starts server for requests at HOST:PORT,registers pongActor within context under name <strong>pong</strong></div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> remoteActors = RemoteActors.create() <span class="comment">// creates context</span>
+remoteActors.startServer HOST, PORT <span class="comment">// starts server that waits for requests at HOST:PORT</span>
+remoteActors.publish pongActor, <span class="string"><span class="delimiter">&quot;</span><span class="content">pong</span><span class="delimiter">&quot;</span></span> <span class="comment">// registers pongActor within context under name &quot;pong&quot;</span></pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>What&#8217;s left is to retrieve the proxy object to that <em>actor</em> at the remote host. It can be done as follows:</p>
+</div>
+<div class="listingblock">
+<div class="title">Actor Setup</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> remoteActors = RemoteActors.create() <span class="comment">// creates context</span>
+<span class="keyword">def</span> pingActor = Actors.actor {
+        <span class="keyword">def</span> remotePongActor = remoteActors.get HOST, PORT, <span class="string"><span class="delimiter">&quot;</span><span class="content">pong</span><span class="delimiter">&quot;</span></span> get() <span class="comment">// gets remote proxy to actor name &quot;pong&quot; at HOST:PORT</span>
+        remotePongActor &lt;&lt; <span class="string"><span class="delimiter">&quot;</span><span class="content">PING</span><span class="delimiter">&quot;</span></span> <span class="comment">// sends message to it</span>
+        react {
+            println <span class="local-variable">it</span> <span class="comment">// prints reply from remote actor</span>
+        }
+}</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>An extended example can be found in <em>groovyx.gpars.samples.remote.actor.pingpong</em>.</p>
+</div>
+<div class="paragraph">
+<p>More examples of remoting for <em>Actors</em> are available in <em>groovyx.gpars.samples.remote.actor.*</em>. An example of remotes for <em>Agents</em> is available in <em>groovyx.gpars.samples.remote.agent.</em></p>
+</div>
+<div class="paragraph">
+<p>In the future, we can introduce the multiplexing of connections between hosts (currently each <strong>get</strong> will open a new connection) and some form of discovery mechanism (to avoid using explicit HOST:PORT).</p>
+</div>
+<hr>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_posts">Posts</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The GA release of <strong>GPars 1.1.0</strong> has just been published and is ready for you to grab. It brings gradual improvements in <em>dataflow</em> logic as well as a few other domains. Some highlights:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><em>LazyDataflowVariable</em> added to allow for lazy asynchronous values</p>
+</li>
+<li>
+<p><em>Timeout for Selects</em></p>
+</li>
+<li>
+<p>Added a <em>Promise</em>-based <strong>API</strong> for value selection through the <em>Select</em> class</p>
+</li>
+<li>
+<p>Enabled listening for bind errors on <em>DataflowVariables</em></p>
+</li>
+<li>
+<p>Minor <strong>API</strong> improvement affecting <em>Promise</em> and <em>DataflowReadChannel</em></p>
+</li>
+<li>
+<p>Protecting an <em>agent</em>'s blocking methods from being called from within commands</p>
+</li>
+<li>
+<p>Updated to the latest 0.7.0 GA version of <strong>Multiverse</strong></p>
+</li>
+<li>
+<p>Migrated to <strong>Groovy 2.0</strong></p>
+</li>
+<li>
+<p>Used <strong>@CompileStatic</strong> where appropriate</p>
+</li>
+<li>
+<p>A few bug fixes</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can <a href="Download.html">download <strong>GPars 1.1.0</strong></a> directly or <a href="Integration.html">grab it from the maven repo</a>.</p>
+</div>
+<div class="paragraph">
+<p>Have a lot of fun trying out <strong>GPars 1.1.0</strong> !</p>
+</div>
+<hr>
+<div class="paragraph">
+<p>A first release candidate for <strong>GPars 1.1.0</strong> has been made available. The final <code>1.1.0 GA</code> should be expected in a few days.
+The 1.1.0 release is a gradual improvement of 1.0.0 with additions mostly in the <em>Dataflow</em> domain.  Starting with 1.1, <strong>GPars</strong> requires <strong>Groovy 2.0</strong> or higher. Check out the most noteworthy new capabilities:</p>
+</div>
+<div class="sect2">
+<h3 id="_dataflow">Dataflow</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><em>LazyDataflowVariable</em> added to allow for lazy asynchronous values</p>
+</li>
+<li>
+<p><em>Timeout for Selects</em></p>
+</li>
+<li>
+<p>Added a <em>Promise</em>-based <strong>API</strong> for value selection through the <em>Select</em> class</p>
+</li>
+<li>
+<p>Enabled listening for bind errors on <em>DataflowVariables</em></p>
+</li>
+<li>
+<p>Minor <strong>API</strong> improvement affecting <em>Promise</em> and <em>DataflowReadChannel</em></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_agent">Agent</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Protecting an <em>agent</em> blocking methods from being called from within commands</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_software_transactional_memory">Software Transactional Memory</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Updated to the latest <code>0.7.0 GA</code> version of <strong>Multiverse</strong></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_other">Other</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Migrated to <strong>Groovy 2.0</strong></p>
+</li>
+<li>
+<p>Used <strong>@CompileStatic</strong> where appropriate</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="http://gpars.org/download/1.1.0-rc1/">Get <strong>GPars</strong> 1.1.0-rc1</a>, take it for a spin and please report all issues so we can fix them before GA.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="__strong_gpars_1_0_strong_arrived_em_vaclav_pech_em_posted_on_dec_19_2012"><strong>GPars 1.0</strong> Arrived, <em>Vaclav Pech</em> posted on Dec 19, 2012</h3>
+<div class="paragraph">
+<p>I&#8217;m happy to announce that after four years of development <a href="index.html"><strong>GPars</strong></a>, the <em>Groovy Concurrency Library</em>, has just reached its 1.0 mark.
+A fresh and crispy <strong>GPars 1.0.0</strong> is now ready for you to <a href="Integration.html">grab</a> or <a href="Downloadhtml">download</a> and use on your projects. Also, the up-coming <strong>Groovy</strong> releases will bundle <strong>GPars 1.0</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Compared to the previous release, 1.0 brings several performance enhancements, considerable <strong>API</strong> updates, polished documentation and numerous functionality
+improvements, mostly in the <em>dataflow</em> area. Please, check out the <code>What&#8217;s new</code> section of the <a href="http://www.gpars.org/1.0.0/guide">user guide</a> for the details.</p>
+</div>
+<div class="paragraph">
+<p>I would like to use this opportunity to thank all the <strong>Groovy</strong> people, who have over time contributed in one way or another to the success of <strong>GPars</strong>. It is my
+honour to be part of such a helpful and encouraging community. In particular, I would like to thank my colleague <a href="Team.html"><strong>GPars</strong> commiters</a>, namely <em>Paul King</em>,
+<em>Dierk Koenig</em>, <em>Alex Tkatchman</em> and <em>Russel Winder</em>, who we&#8217;ve been consistently pushing the project forward and without whom it would hardly ever get this far.
+I also greatly appreciate the support we received from <em>Guillaume Laforge</em>, the <strong>Groovy</strong> supreme commander. Thank you all gentlemen!</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<strong>Groovy</strong> concurrency times ahead!
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><em>Vaclav</em></p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_the_first_release_candidate_of_1_0_is_available_em_vaclav_pech_em_posted_on_dec_11_2012">The First Release Candidate of 1.0 Is Available, <em>Vaclav Pech</em> posted on Dec 11, 2012</h3>
+<div class="paragraph">
+<p>We are almost there. The 1.0 release is just round the corner. To ensure that 1.0 meets your quality expectations we first prepared a release candidate to test the waters.</p>
+</div>
+<div class="paragraph">
+<p>To take <strong>GPars</strong> for a test ride, please <a href="Download.html">download</a> or <a href="Integration.html">grab</a> it at the usual places, check out the release notes and let us know if something is missing.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><em>Vaclav</em></p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_beta_3_is_out_em_vaclav_pech_em_posted_on_sep_10_2012">Beta 3 is out, <em>Vaclav Pech</em>  posted on Sep 10, 2012</h3>
+<div class="paragraph">
+<p><strong>GPars-1.0-beta-3</strong> has been made available for you to try out.</p>
+</div>
+<div class="paragraph">
+<p>Apart from the usual doze of features and fixes, including speed-up for some operations on parallel collections or lifecycle events for <em>dataflow</em> operators, there is one major change compared to beta-2 worth pointing out explicitly:</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<strong>GPars</strong> no longer depends on the <strong>extra166y</strong> artifact
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The parallel array library by <em>Doug Lea</em> has been integrated into <strong>GPars</strong>. The <strong>jsr166y</strong> (<em>Fork/Join</em>) jar still remains in the dependency list until we migrate <strong>GPars</strong> to jdk7 BUT <strong>GPars</strong> no longer depends on the <strong>extra166y</strong> artifact.</p>
+</div>
+<div class="paragraph">
+<p>Grab <a href="http://gpars.org/download/1.0-beta-3/"><strong>GPars-1.0-beta-3</strong></a> and have a lot of fun with the new release.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="__strong_gpars_1_0_beta_1_strong_ready_for_a_test_ride_em_vaclav_pech_em_posted_on_dec_30_2011"><strong>GPars 1.0 beta-1</strong> ready for a test ride, <em>Vaclav Pech</em> posted on Dec 30, 2011</h3>
+<div class="paragraph">
+<p>Our first step towards the 1.0 release has been achieved. The <em>beta-1</em> release is now available for you to <a href="Integration.html">grab</a> or <a href="Downloadhtml">download</a>. Have fun and if you feel something needs our attention,
+please let us know.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><em>The <strong>GPars</strong> team</em></p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_parallel_game_of_life_em_vaclav_pech_em_posted_on_sep_01_2011">Parallel Game of Life, <em>Vaclav Pech</em> posted on Sep 01, 2011</h3>
+<div class="paragraph">
+<p>I&#8217;d like to direct you to my recent blog post detailing the use of <em>Dataflow</em> operators. It uses the popular Game of Life coding excercise to illustrate the principles of the <em>dataflow</em> concept.
+Check it out at my personal blog.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="__strong_gpars_strong_turns_0_12_today_em_vaclav_pech_em_posted_on_jun_02_2011"><strong>GPars</strong> turns 0.12 today, <em>Vaclav Pech</em> posted on Jun 02, 2011</h3>
+<div class="paragraph">
+<p>We have some great news to all the parallel souls out there - <strong>GPars 0.12</strong> has just hit <a href="Download.html">the shelves</a>. The new version comes with lots of big and small improvements, out of which these are the most notable ones:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Composable asynchronous functions</p>
+</li>
+<li>
+<p>The newest version of <em>Doug Lea&#8217;s</em> super cool <em>Fork/Join</em> framework (aka <strong>jsr-166y</strong>)</p>
+</li>
+<li>
+<p><em>Active Objects</em></p>
+</li>
+<li>
+<p>Initial stub at <em>Software Transactional Memory</em> support using <strong>Multiverse</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Check out the full release notes for more details.</p>
+</div>
+<div class="paragraph">
+<p>To quickly get up-to-speed with <strong>GPars</strong>, check out our updated <a href="http://gpars.org/0.12/guide/index.html">User Guide</a>, which is now also available in <a href="http://gpars.org/0.12/guide/gpars-guide-0.12.pdf">pdf format</a>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><em>Your <strong>GPars</strong> team</em></p>
+</li>
+</ul>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="_jvm_concurrency_and_em_actors_em_with_strong_gpars_strong_em_vaclav_pech_em_posted_on_apr_26_2011">JVM Concurrency and <em>Actors</em> with <strong>GPars</strong>, <em>Vaclav Pech</em> posted on Apr 26, 2011.</h3>
+<div class="paragraph">
+<p>Dr.Dobb&#8217;s has just published my overview article on <em>actors</em> in <strong>GPars</strong>. You may check it out at <a href="http://drdobbs.com/high-performance-computing/229402193">Drdobbs.com/High-performance Computing</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><em>Vaclav</em></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 1.2.1<br>
+Last updated 2015-12-31 00:22:14 CET
+</div>
+</div>
+</body>
+</html>
