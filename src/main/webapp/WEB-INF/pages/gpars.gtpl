@@ -7,12 +7,10 @@
 
 <link rel="stylesheet" href="./css/screen.css" type="text/css" media="screen, projection" /> 
 <link rel="stylesheet" href="./css/core.css" type="text/css" media="screen, projection, print" />
- 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/redmond/jquery-ui.css">
-  
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>  
 
 <script>
   \$(function() {
@@ -43,14 +41,14 @@
 <body> 
 <div class="red">  &nbsp; </div>
 
-		<div><a href="http://gpars.org" target="_blank"><img src="/images/gpars-rgb-big.png"  class='divider2' style='width:33%'></a>
+		<div><a href="http://gpars.website" target="_blank"><img src="/images/gpars-rgb-big.png"  class='divider2' style='width:33%'></a>
         	</div>
 
 <div id="page"> 
   
   <div id="header" class="container"> 
   
-      <div class="span-4 prepend-4"><a href="http://gpars.org/"  target="_blank" title="To Homepage"><img src="/images/gparsinstaller.jpg" style="width:195px;margin-top:22px;margin-left:30px;"></a></div>     	
+      <div class="span-4 prepend-4"><a href="http://gpars.website/"  target="_blank" title="To Homepage"><img src="/images/gparsinstaller.jpg" style="width:195px;margin-top:22px;margin-left:30px;"></a></div>     	
   </div>
 
 
@@ -61,7 +59,7 @@
 		<p>This is a <strong>self-contained toolkit</strong> that includes <strong>Jars</strong>, samples, documents and more.</p>
  
 	  <div> 
-    	<div id="download_btn"> <a href="http://gpars.org/download/1.2.1/" target="_blank"><span>Download</span></a> </div> 
+    	<div id="download_btn"> <a href="Download.html" target="_blank"><span>Download</span></a> </div> 
     	<div id="addon_btn"> <a href="http://www.groovy-lang.org/download.html" target="_blank"><span>Get Groovy</span></a> </div> 
   	  </div> 
 	</div>
@@ -167,4 +165,5 @@
 </div> 
 
 </body> 
+
 </html> 

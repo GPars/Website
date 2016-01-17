@@ -58,7 +58,7 @@ war {
 
 cloudfoundry {
 	// your credentials go here
-    username = ''                     // credentials used to join your CloudFoundry provider
+    username = 'james.northrop@orange.fr'                     // credentials used to join your CloudFoundry provider
     password = ''
     target = 'https://api.de.a9s.eu'  // cloud foundry target address for your choice of providers; this address is for anynines.com
     space = 'development'

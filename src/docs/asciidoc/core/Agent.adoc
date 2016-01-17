@@ -7,7 +7,7 @@ v1.2.1, 2015-12-01
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
-:docslink: http://www.gpars.org/guide/[GPars Docs]
+:docslink: http://gpars.website/[GPars Documentation]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: Agent
 
@@ -82,5 +82,4 @@ final Thread t3 = Thread.start {
 assert 12L == conference.val
 ----
 
-For latest update, see http://gpars.org/guide/guide/agents.html[the Agent section of the User
-Guide] and the respective link:Demos.html[Demos].
+For latest update, see the Agent section of the User Guide and the respective link:Demos.html[Demos].

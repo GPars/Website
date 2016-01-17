@@ -7,7 +7,7 @@ v1.2.1, 2015-12-01
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
-:docslink: http://www.gpars.org/guide/[GPars Docs]
+:docslink: http://gpars.website/[GPars Documentation]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: Sponsors
 :imagesdir: ./images
@@ -28,4 +28,4 @@ Atlassian provided _JIRA/Confluence/Clover/Bamboo_, which we also happily use.
 
 == Sponsorship and Donations
 
-We will accept donations or sponsorship. Please contact us at _consult@gpars.org_ with your offers.
+We will accept donations or sponsorship. Please contact us on our community page with your offers.

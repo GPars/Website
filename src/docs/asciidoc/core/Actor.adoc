@@ -1,13 +1,13 @@
 = GPars - Groovy Parallel Systems
 The Whole GPars Team <gpars-developers@googlegroups.com>
-v1.2.1, 2015-12-01
+v1.2.1, 2016-01-11
 :linkattrs:
 :linkcss:
 :toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
-:docslink: http://www.gpars.org/guide/[GPars Docs]
+:docslink: http://gpars.website/[GPars Documentation]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: Actor
 
@@ -96,7 +96,6 @@ Analisi, MAiA Facultat de Matematiques, Universitat de Barcelona_
 
 == Usage of Actors
 
-For more details on Actors visit http://gpars.org/guide/guide/actors.html[the Actors section of the User
-Guide].
+For more details on Actors visit link:./qs[the Actors section of our Reference Book].
 
 Please also see the numerous Actor link:Demos.html[Demos].

@@ -7,7 +7,7 @@ v1.2.1, 2015-12-01
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
-:docslink: http://www.gpars.org/guide/[GPars Docs]
+:docslink: http://gpars.website/[GPars Documentation]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: Groovy Fast Track
 
@@ -57,7 +57,7 @@ Run the script and you should get the following output:
 
 Now feel free to experiment by changing the regular expressions, using different collections or different methods, like _eachParallel()_, _collectParallel()_, _maxParallel()_, _sumParallel()_ and others. You get the idea, right?
 
-To find out more about parallel collection processing, visit the link:http://www.gpars.org/guide/guide/dataParallelism.html#dataParallelism_parallelCollections[Parallel Collections section] of the link:./guide/[User Guide].
+To find out more about parallel collection processing, visit the Parallel Collections section of the link:./guide/[User Guide].
 
 == Step 4 -- Actors
 

@@ -8,6 +8,7 @@ v1.2.1, 2015-12-04
 :data-uri:
 :linkattrs:
 :leveloffset: 0
+:docslink: http://gpars.website/[GPars Documentation]
 :numbered!:
 
 image::../../images/gpars-rgb.svg[GPars Logo,320,align="center",link="./"]

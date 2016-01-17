@@ -6,7 +6,7 @@ v1.2.1, 2015-12-04
 :toc-title: To-Do List of Stuff To Be Done
 :icons: font
 :source-highlighter: coderay
-:docslink: http://www.gpars.org/guide/[GPars Docs]
+:docslink: http://gpars.website/[GPars Documentation]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :imagesdir: ./images
 
@@ -45,7 +45,7 @@ TIP: There is stuff remaining to be done, so will update this list as time permi
  . finish `header.gtpl` and `footer.gtpl` layouts for skeleton usage in future pages
  . complete `GPars Installer` image on _/gpars_ page image:../images/checkmarkgreen.png[ok,36]
  . identify correct href target address for _/gpars_ links to *About, Download, Help, Contribute* plus ALL the links at the bottom of that page image:../images/checkmarkgreen.png[ok,36]
- . identify URL for all missing resources we now offer on *gpars.org* download page, like samples, APIs, etc.
+ . identify new URLs for all missing resources we now offer on *gpars . org* download page, like samples, APIs, etc.
  . fix CSS colors for anchor links within _/gpars_ `All Our Downloads` <a> links
  . _/gpars_ download page needs *GPARS* icon clickable to go back to landing page image:../images/checkmarkgreen.png[ok,36]
  . update /gpars download pg: make GPARS header icon go back to landing page image:../images/checkmarkgreen.png[ok,36]

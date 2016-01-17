@@ -7,7 +7,7 @@ v1.2.1, 2015-12-09
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
-:docslink: http://www.gpars.org/guide/[GPars Docs]
+:docslink: http://gpars.website/[GPars Documentation]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: News
 :imagesdir: ./images
@@ -159,7 +159,7 @@ The 1.1.0 release is a gradual improvement of 1.0.0 with additions mostly in the
 * Migrated to *Groovy 2.0*
 * Used *@CompileStatic* where appropriate
 
-http://gpars.org/download/1.1.0-rc1/[Get *GPars* 1.1.0-rc1], take it for a spin and please report all issues so we can fix them before GA.
+Get *GPars* 1.1.0 , take it for a spin and please report all issues so we can fix them before GA.
 
 ''''
 
@@ -169,7 +169,7 @@ I'm happy to announce that after four years of development link:index.html[*GPar
 A fresh and crispy *GPars 1.0.0* is now ready for you to link:Integration.html[grab] or link:Downloadhtml[download] and use on your projects. Also, the up-coming *Groovy* releases will bundle *GPars 1.0*.
 
 Compared to the previous release, 1.0 brings several performance enhancements, considerable *API* updates, polished documentation and numerous functionality
-improvements, mostly in the _dataflow_ area. Please, check out the `What's new` section of the http://www.gpars.org/1.0.0/guide[user guide] for the details.
+improvements, mostly in the _dataflow_ area. Please, check out the `What's new` section of our user guide for the details.
 
 
 I would like to use this opportunity to thank all the *Groovy* people, who have over time contributed in one way or another to the success of *GPars*. It is my
@@ -203,7 +203,7 @@ IMPORTANT: *GPars* no longer depends on the *extra166y* artifact
 
 The parallel array library by _Doug Lea_ has been integrated into *GPars*. The *jsr166y* (_Fork/Join_) jar still remains in the dependency list until we migrate *GPars* to jdk7 BUT *GPars* no longer depends on the *extra166y* artifact.
 
-Grab http://gpars.org/download/1.0-beta-3/[*GPars-1.0-beta-3*] and have a lot of fun with the new release.
+Grab *GPars-1.0-beta-3* and have a lot of fun with the new release.
 
 ''''
 
@@ -234,7 +234,7 @@ We have some great news to all the parallel souls out there - *GPars 0.12* has j
 
 Check out the full release notes for more details.
 
-To quickly get up-to-speed with *GPars*, check out our updated http://gpars.org/0.12/guide/index.html[User Guide], which is now also available in http://gpars.org/0.12/guide/gpars-guide-0.12.pdf[pdf format].
+To quickly get up-to-speed with *GPars*, check out our updated *User Guide*, which is now also available in pdf format.
 
  - _Your *GPars* team_
 

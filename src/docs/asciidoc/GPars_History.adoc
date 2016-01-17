@@ -7,7 +7,7 @@ v1.2.1, 2015-12-01
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
-:docslink: http://www.gpars.org/guide/[GPars Docs]
+:docslink: http://gpars.website/[GPars Documentation]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: GPars History
 
@@ -28,7 +28,7 @@ In October 2009, the _dataflow abstraction_ had been enhanced with _dataflow ope
 
 Since December 2009, *GPars* has had a link:GPars_Logo.html[logo].
 
-The team made their first release under the new project name in December 2009 when *GPars* 0.9 came out with a fancy http://www.gpars.org/guide/index.html[User Guide].
+The team made their first release under the new project name in December 2009 when *GPars* 0.9 came out with a fancy *User Guide*.
 
 From the increasing amount of feedback and comments, it become evident that *GPars* had gained some attention. 
 
