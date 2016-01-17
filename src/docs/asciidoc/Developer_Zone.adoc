@@ -7,7 +7,7 @@ v1.2.1, 2015-12-01
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
-:docslink: http://www.gpars.org/guide/[GPars Docs]
+:docslink: http://gpars.website/[GPars Documentation]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: Developer Zone
 
@@ -170,9 +170,9 @@ After a *proper* release, the older snapshot artifacts should be removed manuall
 
 === 8. Upload The User Guide and Docs
 
-The generated `User Guide` at _/build/docs/manual_ should be uploaded to http://www.gpars.org/guide/[*GPars*] .
+The generated `User Guide` at _/build/docs/manual_ should be uploaded to http://www.gpars.website/guide/[*GPars Document Website*] .
 
-The javadoc and groovydoc folders should be copied to http://gpars.org/1.2.1/javadoc/[*GPars*] and http://gpars.org/1.2.1/groovydoc/[http://gpars.org/1.2.1/groovydoc/].
+The javadoc and groovydoc folders should be copied too
 
 === 9. Update The Version
 

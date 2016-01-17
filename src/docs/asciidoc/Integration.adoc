@@ -7,7 +7,7 @@ v1.2.1, 2015-12-01
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
-:docslink: http://www.gpars.org/guide/[GPars Docs]
+:docslink: http://gpars.website/[GPars Documentation]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: Integration
 :imagesdir: ./images
@@ -26,7 +26,7 @@ Integration using _Grape_ is very straightforward:
 
 === Snapshots
 
-.Getting Snapshots
+.Getting Snapshots (Suspended pending new provider)
 [source,grape,linenums]
 ----
 @GrabResolver(name='gpars', root='http://snapshots.repository.codehaus.org/', m2Compatible=true)
@@ -138,7 +138,8 @@ To include *GPars* in your project, add the following (optional) repositories an
 
 === Sample _Maven_-based *Java* API demo project
 
-You may also like http://gpars.org/download/1.2.0/gpars-mvn-java-demo-1.2.0.zip[a stand-alone maven-based *Java* API sample project] showing how to use *GPars* from *Java* and how to integrate *GPars* with _Maven_.
+You may also like a stand-alone maven-based *Java* API sample project showing how to use *GPars* from *Java* and how to integrate *GPars* with _Maven_.
+See our download page for that.
 
 And the same sample project is available for the SNAPSHOT release.
 

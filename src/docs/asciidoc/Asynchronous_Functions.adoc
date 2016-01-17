@@ -1,13 +1,13 @@
 = GPars - Groovy Parallel Systems
 The Whole GPars Team <gpars-developers@googlegroups.com>
-v1.0, 2015-10-01
+v1.2.0, 2016-01-11
 :linkattrs:
 :linkcss:
 :toc: left
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
-:docslink: http://www.gpars.org/guide/[GPars Docs]
+:docslink: http://gpars.website/[GPars Documentation]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: Asynchronous Functions
 
@@ -61,5 +61,4 @@ GParsPool.withPool {
 }
 ----
 
-For more details on the Asynchronous computations please visit http://gpars.org/guide/guide/dataParallelism.html#dataParallelism_asynchronousInvocation[the
-Asynchronous Invocation section of the User Guide].
+For more details on the Asynchronous computations please visit http://gparsdocs.de.a9sapp.eu/guide/#_asynchronous_invocations[the Asynchronous Invocation section of the User Guide].

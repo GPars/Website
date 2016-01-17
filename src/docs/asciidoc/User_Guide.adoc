@@ -7,13 +7,13 @@ v1.2.1, 2015-12-01
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
-:docslink: http://www.gpars.org/guide/[GPars Docs]
+:docslink: http://gpars.website/[GPars Documentation]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
-:doctitle: User Guide
+:doctitle: User Guides
 :imagesdir: ./images
 
 
-== User Guide
+== User Guides
 
 This latest link:./guide[User Guide] introduces all the essential concepts and gives you details and samples on how to use *GPars* in your code.
 
@@ -23,26 +23,27 @@ Previous versions of our guide follow :
 |===
 | Version 
 | HTML 
-| One-page 
 | PDF 
+| Zip 
 
 |1.2.1 GA 
-| http://gpars.org/1.2.1/guide/index.html[User Guide] 
-| http://gpars.org/1.2.1/guide/guide/single.html[One Page User Guide] 
-| http://gpars.org/1.2.1/guide/gpars-guide-1.2.1.pdf[PDF]
+| link:downloads/gpars-1.2.1/The-GPars-Framework-1.2.1.html[User Guide] 
+| link:downloads/gpars-1.2.1/gpars-guide-1.2.1.pdf[PDF]
+| link:downloads/gpars-1.2.1/gpars-guide-1.2.1.zip[User Guide - zipped]
 
 |1.2.0 GA 
-| http://gpars.org/1.2.0/guide/index.html[User Guide] 
-| http://gpars.org/1.2.0/guide/guide/single.html[One Page User Guide] 
-| http://gpars.org/1.2.0/guide/gpars-guide-1.2.0.pdf[PDF] 
+| link:downloads/gpars-1.2.0/The-GPars-Framework-1.2.0.html[User Guide] 
+| link:downloads/gpars-1.2.0/gpars-guide-1.2.0.pdf[PDF] 
+| link:downloads/gpars-1.2.0/gpars-guide-1.2.0.zip[User Guide - zipped]    
 
 |1.1.0 GA 
-| http://gpars.org/1.1.0/guide/index.html[User Guide] 
-| http://gpars.org/1.1.0/guide/guide/single.html[One Page User Guide] 
-| http://gpars.org/1.1.0/guide/gpars-guide-1.1.0.pdf[PDF] 
+| link:downloads/gpars-1.1.0/The-GPars-Framework-1.1.0.html[User Guide] 
+| link:downloads/gpars-1.1.0/gpars-guide-1.1.0.pdf[PDF] 
+| link:downloads/gpars-1.1.0/gpars-guide-1.1.0.zip[User Guide - zipped]    
 
 |1.0.0 GA 
-| http://gpars.org/1.0.0/guide/index.html[User Guide] 
-| http://gpars.org/1.0.0/guide/guide/single.html[One Page User Guide] 
-| http://gpars.org/1.0.0/guide/gpars-guide-1.0.0.pdf[PDF] 
+| link:downloads/gpars-1.0.0/The-GPars-Framework-1.0.0.html[User Guide] 
+| link:downloads/gpars-1.0.0/gpars-guide-1.0.0.pdf[PDF] 
+| link:downloads/gpars-1.0.0/gpars-guide-1.0.0.zip[User Guide - zipped]    
 |===
+

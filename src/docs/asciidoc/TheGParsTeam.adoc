@@ -7,7 +7,7 @@ v1.2.1, 2015-12-04
 :toc-title: Team Members
 :icons: font
 :source-highlighter: coderay
-:docslink: http://www.gpars.org/guide/[GPars Docs]
+:docslink: http://gpars.website/[GPars Documentation]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: The GPars Team
 :imagesdir: ./images
@@ -48,7 +48,7 @@ image:Confess2015.png[MPS,200,title="Meta Programming Solutions",role="related t
 
 === Dierk König
 
-image:dierk.png[Dierk König,role="related thumb left"] Fellow at http://www.canoo.com[Canoo Engineering AG]. image:gina2.jpg[GINA/2,150,title="Groovy In Action/2",role="related thumb right",link="https://www.manning.com/books/groovy-in-action-second-edition?a_bid=8ade3b0e&a_aid=regina"]
+Fellow at http://www.canoo.com[Canoo Engineering AG]. image:gina2.jpg[GINA/2,150,title="Groovy In Action/2",role="related thumb right",link="https://www.manning.com/books/groovy-in-action-second-edition?a_bid=8ade3b0e&a_aid=regina"] image:dierk.png[Dierk König,role="related thumb left"] 
 
 Lead author of http://groovy.canoo.com/gina[Groovy in Action], which in the http://www.manning.com/koenig2[second edition] also features a chapter on *GPars*.
 
@@ -76,11 +76,9 @@ Lead author of http://groovy.canoo.com/gina[Groovy in Action], which in the http
 
 === Russel Winder
 
-image:devjava.png[Developing Java,200,title="Developing Java Software",role="related thumb right", link="http://www.amazon.co.uk/Developing-Java-Software-Russel-Winder/dp/0470090251/"] image:russel.png[Russel Winder,role="related thumb left"] Independent consultant, analyst, author, expert witness, and trainer 
+image:devjava.png[Developing Java,200,title="Developing Java Software",role="related thumb right", link="http://www.amazon.co.uk/Developing-Java-Software-Russel-Winder/dp/0470090251/"] image:russel2.png[Russel Winder,role="related thumb left"] Independent consultant, analyst, author, expert witness, and trainer 
 
 Director of http://www.itzinteractive.com[It'z Interactive Ltd]
-
-Partner of http://www.concertant.com[Concertant LLP] and http://www.concertant.com/blog[The Concertant Blog].
 
 ++++
 <a target="_blank" href="https://www.openhub.net/accounts/russel?ref=sample"><img alt='Open Hub profile for Russel Winder' border='0' height='35' src='https://www.openhub.net/accounts/russel/widgets/account_detailed?format=gif&amp;ref=sample' width='230'></a>

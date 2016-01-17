@@ -7,7 +7,7 @@ v1.2.1, 2015-12-13
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
-:docslink: http://www.gpars.org/guide/[GPars Docs]
+:docslink: http://gpars.website/[GPars Documentation]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 
 include::_includes/navbar2.txt[]
@@ -40,7 +40,7 @@ image::../images/divider.png[divider,436,align="center"]
 
 === Meet *GPars*
 
-Meet http://gpars.org[*GPars*], an open-source concurrency and parallelism library for *Java* and *Groovy* that gives you a number of high-level abstractions to write concurrent and parallel code in *Groovy* 
+Meet http://gpars.website[*GPars*], an open-source concurrency and parallelism library for *Java* and *Groovy* that gives you a number of high-level abstractions to write concurrent and parallel code in *Groovy* 
 (_map/reduce, fork/join, asynchronous closures, actors, agents, dataflow concurrency_ and other concepts), which can make your *Java* and *Groovy* code concurrent and/or parallel with little effort.  
 
 With *GPars*, your *Java* and/or *Groovy* code can easily utilize all the available processors on the target system. You can run multiple calculations at the same time, request network resources in parallel, safely solve hierarchical
