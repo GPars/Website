@@ -16,25 +16,30 @@ import org.apache.http.client.methods.HttpUriRequest;
 int count = 0;
 int href = 0;
 int gpars=0;
-hdrDone=false;
-path1 = "/Users/jim/Dropbox/Projects/GParsDocs/src/main/webapp";
-path = "/Users/jimnorthrop/Dropbox/Projects/GParsDocs/src/main/webapp";
+
+hdrDone=false; // output adoc headers once
+
+path1 = "/Users/jimnorthrop/Dropbox/Projects/GPars/Website/src/docs/asciidoc";
+path =  "/Users/jimnorthrop/Dropbox/Projects/GPars/Website/src/main/webapp";
 String name = "";
 outputfile = new File("$path1/StaleURLs.adoc")
 
 String hdr = """= GPars - Groovy Parallel Systems
-The Whole GPars Team <russel@winder.org.uk>
-v1.0, 2015-12-18
+The Whole GPars Team <gpars-developers@googlegroups.com> 
+version 1.2.1, 2016-01-17 
 :linkattrs:
 :linkcss:
-:toc: left
+:toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
-:docslink: http://www.gpars.org/guide/[GPars Docs]
+:docslink: http://www.gpars.web/[GPars Documentation]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: GPars Documentation Pages with Stale URLs
 
+TIP: Pages with Stale URLs in ${path1}
+
+''''
 
 """.toString();
 
@@ -56,6 +61,10 @@ def getRef(String ref)
     String shorty = ref.substring(i+1);
     i = shorty.indexOf('\"');
     if (i>-1) {shorty = shorty.substring(0,i);}
+
+    i = shorty.indexOf('>');
+    if (i > -1) {shorty = shorty.substring(0,i-1);}
+
     return shorty;
 }
 
@@ -88,7 +97,7 @@ boolean urlExists(String url)
         def s = x.message.toLowerCase()
         if (s.indexOf('forbidden') > -1)
         {
-            writeThis("\nIMPORTANT: exception :"+x.message);
+            writeThis("\nIMPORTANT: exception :"+x.message+"\n\n");
             return false
         }
         else
@@ -101,9 +110,11 @@ boolean urlExists(String url)
 }
 
 boolean http(String shorty) {
+    if (shorty.startsWith("https://fonts.")) return false;
     boolean flag = (shorty.startsWith("http")) ? true : false;
 }
 
+// avoid known trouble makers
 boolean checker(String fn) {
     if (fn.endsWith("navigation.html")) {return false;}
     if (fn.endsWith("master.html")) {return false;}
@@ -113,7 +124,7 @@ boolean checker(String fn) {
 //println badurl;
 //def b = urlExists(badurl);
 
-new File("$path1/.").eachFileRecurse(FILES) {
+new File("$path/.").eachFileRecurse(FILES) {
     if (!hdrDone) 
     {
         hdrDone=true;
@@ -123,19 +134,21 @@ new File("$path1/.").eachFileRecurse(FILES) {
 
     String filename = it.name.toString().toLowerCase();
     name = getName(filename);
+        
+    if (name.endsWith('.html')) {count+=1; println "file:"+name+" from "+it; }
     
-    if (name.endsWith('.html')) {count+=1;}
-    
-    if( (checker(filename)) && (name.endsWith('.html')) && (count < 94 ) ) 
+    if( (checker(filename)) && (name.endsWith('.html')) && (count < 5000 ) ) 
     {
         count+=1;
-        outputfile.append("\n== link:./$name[$name Page]\n\n");
+        //outputfile.append("\n== link:./$name[$name Page]\n\n");
         //writeThis("\n link:$name[$name] ")
         def fn = it.absolutePath
         def tx = new File(fn).text;
         
         // find every occurence of <a href and harvest and printout the href link plus the filename it's in
-        def i = tx.indexOf("<a href");
+        def i = tx.indexOf(" href");
+        boolean showLink = true;
+        
         while (i>-1)
         {
             def tx2 = tx.substring(i);
@@ -145,9 +158,16 @@ new File("$path1/.").eachFileRecurse(FILES) {
             tx2 = tx.substring(i,i+k+1);
             def tx3 = getRef(tx2);
             boolean flag = http(tx3);
+            println "flag="+flag+"  from "+tx3;
 
             if (flag)
             {
+                if(showLink)
+                {
+                    showLink=false;
+                    outputfile.append("\n== link:./$name[${it.name.toString()} Page]\n\n");
+                }
+                             
                 //writeThis('\n');    
                 if (tx3.startsWith("http://gpars.org")) {gpars+=1;}
                 href+=1;       
@@ -175,5 +195,5 @@ new File("$path1/.").eachFileRecurse(FILES) {
 } // end of each
 
         outputfile.append("\n\n''''\n\nIMPORTANT: $count files have $href HREF links including $gpars GPars\n\n''''\n\n");
-        writeThis("\nNumber of files =[$count] anf hrefs=$href  GPars=$gpars\n")
+        writeThis("\nNumber of files =[$count] and hrefs=$href  GPars=$gpars\n")
         
