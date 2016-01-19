@@ -1,6 +1,6 @@
 = GPars - Groovy Parallel Systems
 The Whole GPars Team <gpars-developers@googlegroups.com> 
-version 1.2.1, 2016-01-17 
+version 1.2.1, 2016-01-19 
 :linkattrs:
 :linkcss:
 :toc: right
@@ -25,19 +25,19 @@ http://ruben.savanne.be/articles/concurrency-in-erlang-scala[http://ruben.savann
 
 
  
-http://people.canoo.com/mittie/kanbanflow.htm[http://people.canoo.com/mittie/kanbanflow.htm] - image:./images/checkmarkgreen.png[ok,30,30]
+http://people.canoo.com/mittie/kanbanflow.html[http://people.canoo.com/mittie/kanbanflow.html] - image:./images/checkmarkgreen.png[ok,30,30]
 
 == link:./package-summary.html[package-summary.html Page]
 
 
  
-http://people.canoo.com/mittie/kanbanflow.htm[http://people.canoo.com/mittie/kanbanflow.htm] - image:./images/checkmarkgreen.png[ok,30,30]
+http://people.canoo.com/mittie/kanbanflow.html[http://people.canoo.com/mittie/kanbanflow.html] - image:./images/checkmarkgreen.png[ok,30,30]
 
 == link:./index-all.html[index-all.html Page]
 
 
  
-http://people.canoo.com/mittie/kanbanflow.htm[http://people.canoo.com/mittie/kanbanflow.htm] - image:./images/checkmarkgreen.png[ok,30,30]
+http://people.canoo.com/mittie/kanbanflow.html[http://people.canoo.com/mittie/kanbanflow.html] - image:./images/checkmarkgreen.png[ok,30,30]
 
 == link:./articles.html[Articles.html Page]
 
@@ -110,19 +110,19 @@ http://gparsdocs.de.a9sapp.eu/guide/#_asynchronous_invocations[http://gparsdocs.
 == link:./code_style.html[Code_Style.html Page]
 
 
-http://teamcity.jetbrains.com/viewType.html?buildTypeId=bt183&amp;tab=buildTypeStatusDiv[http://teamcity.jetbrains.com/viewType.html?buildTypeId=bt183&amp;tab=buildTypeStatusDiv] - image:./images/checkmarkgreen.png[ok,30,30]
+http://teamcity.jetbrains.com/viewType.html?buildTypeId=bt183&amp;tab=buildTypeStatusDiv[http://teamcity.jetbrains.com/viewType.html?buildTypeId=bt183&amp;tab=buildTypeStatusDiv] - image:./images/redcross.png[bad,30,30]
 
 == link:./community.html[Community.html Page]
 
 
  
-https://groups.google.com/forum/#!forum/gpars-users[https://groups.google.com/forum/#!forum/gpars-users] - image:./images/checkmarkgreen.png[ok,30,30]
+https://groups.google.com/forum/\#!forum/gpars-users[https://groups.google.com/forum/#!forum/gpars-users] - image:./images/checkmarkgreen.png[ok,30,30]
 
  
 http://gpars-user-mailing-list.19372.n3.nabble.com/[http://gpars-user-mailing-list.19372.n3.nabble.com/] - image:./images/checkmarkgreen.png[ok,30,30]
 
  
-https://groups.google.com/forum/#!forum/gpars-developers[https://groups.google.com/forum/#!forum/gpars-developers] - image:./images/checkmarkgreen.png[ok,30,30]
+https://groups.google.com/forum/\#!forum/gpars-developers[https://groups.google.com/forum/#!forum/gpars-developers] - image:./images/checkmarkgreen.png[ok,30,30]
 
  
 http://gpars-developer-list.729030.n3.nabble.com/[http://gpars-developer-list.729030.n3.nabble.com/] - image:./images/checkmarkgreen.png[ok,30,30]
@@ -134,12 +134,12 @@ https://github.com/GPars/GPars[https://github.com/GPars/GPars] - image:./images/
 https://www.facebook.com/GParsSolutions/[https://www.facebook.com/GParsSolutions/] - image:./images/checkmarkgreen.png[ok,30,30]
 
  
-https://groups.google.com/forum/#!forum/gpars-users[https://groups.google.com/forum/#!forum/gpars-users] - image:./images/checkmarkgreen.png[ok,30,30]
+https://groups.google.com/forum/\#!forum/gpars-users[https://groups.google.com/forum/#!forum/gpars-users] - image:./images/checkmarkgreen.png[ok,30,30]
 
  
-http://n3.nabble.com/GPars-user-mailing-list-f19372.html[http://n3.nabble.com/GPars-user-mailing-list-f19372.html] - image:./images/checkmarkgreen.png[ok,30,30]
+http://n3.nabble.com/GPars-user-mailing-list-f19372.html[http://n3.nabble.com/GPars-user-mailing-list-f19372.html] - image:./images/redcross.png[bad,30,30]
 
-http://jira.codehaus.org/browse/GPARS[http://jira.codehaus.org/browse/GPARS] - image:./images/checkmarkgreen.png[ok,30,30]
+http://jira.codehaus.org/browse/GPARS[http://jira.codehaus.org/browse/GPARS] - image:./images/redcross.png[bad,30,30]
 
  
 https://github.com/GPars/GPars[https://github.com/GPars/GPars] - image:./images/checkmarkgreen.png[ok,30,30]
@@ -165,7 +165,7 @@ http://www.jonasboner.com[http://www.jonasboner.com] - image:./images/checkmarkg
 https://github.com/jboner/scala-dataflow/[https://github.com/jboner/scala-dataflow/] - image:./images/checkmarkgreen.png[ok,30,30]
 
  
-http://jonasboner.com/talks.html[http://jonasboner.com/talks.html] - image:./images/checkmarkgreen.png[ok,30,30]
+http://jonasboner.com/talks.html[http://jonasboner.com/talks.html] - image:./images/redcross.png[bad,30,30]
 
 http://github.com/larrytheliquid/dataflow/tree/master[http://github.com/larrytheliquid/dataflow/tree/master] - image:./images/checkmarkgreen.png[ok,30,30]
 
@@ -198,6 +198,7 @@ http://gparsdocs.de.a9sapp.eu/Download.html[http://gparsdocs.de.a9sapp.eu/Downlo
  
 http://gparsdocs.de.a9sapp.eu/Download.html[http://gparsdocs.de.a9sapp.eu/Download.html] - image:./images/checkmarkgreen.png[ok,30,30]
 
+
 == link:./developer_zone.html[Developer_Zone.html Page]
 
 
@@ -213,9 +214,9 @@ https://snap-ci.com/GPars/GPars/branch/master[https://snap-ci.com/GPars/GPars/br
  
 https://snap-ci.com/GPars/GPars/branch/master/build_image[https://snap-ci.com/GPars/GPars/branch/master/build_image] - image:./images/checkmarkgreen.png[ok,30,30]
 
-http://teamcity.jetbrains.com/project.html?projectId=GPars[http://teamcity.jetbrains.com/project.html?projectId=GPars] - image:./images/checkmarkgreen.png[ok,30,30]
+http://teamcity.jetbrains.com/project.html?projectId=GPars[http://teamcity.jetbrains.com/project.html?projectId=GPars] - image:./images/redcross.png[bad,30,30] - needs logon
 
-http://jira.codehaus.org/browse/GPARS[http://jira.codehaus.org/browse/GPARS] - image:./images/checkmarkgreen.png[ok,30,30]
+http://jira.codehaus.org/browse/GPARS[http://jira.codehaus.org/browse/GPARS] - image:./images/redcross.png[bad,30,30]
 
  
 https://github.com/GPars/GPars[https://github.com/GPars/GPars] - image:./images/checkmarkgreen.png[ok,30,30]
@@ -226,25 +227,23 @@ https://github.com/GPars/GPars.git[https://github.com/GPars/GPars.git] - image:.
 IMPORTANT: exception :Forbidden
 
 
-http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/[http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/] - image:./images/redcross.png[bad,30,30]
+http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/[http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/] - image:./images/checkmarkgreen.png[ok,30,30] - overview page
 
  
 http://www.anyclient.com/download.html[http://www.anyclient.com/download.html] - image:./images/checkmarkgreen.png[ok,30,30]
 
-http://www.gpars.website/guide/[http://www.gpars.website/guide/] - image:./images/checkmarkgreen.png[ok,30,30]
+http://www.gpars.website/guide/[http://www.gpars.website/guide/] - image:./images/redcross.png[bad,30,30] - /guide URL not setup yet
 
  
-https://groups.google.com/forum/#!forum/gpars-users[https://groups.google.com/forum/#!forum/gpars-users] - image:./images/checkmarkgreen.png[ok,30,30]
+https://groups.google.com/forum/\#!forum/gpars-users[https://groups.google.com/forum/#!forum/gpars-users] - image:./images/checkmarkgreen.png[ok,30,30]
 
  
-https://groups.google.com/forum/#!forum/gpars-developers[https://groups.google.com/forum/#!forum/gpars-developers] - image:./images/checkmarkgreen.png[ok,30,30]
+https://groups.google.com/forum/\#!forum/gpars-developers[https://groups.google.com/forum/#!forum/gpars-developers] - image:./images/checkmarkgreen.png[ok,30,30]
+
 
 == link:./events.html[Events.html Page]
-
-
  
 http://greach.es/[http://greach.es/] - image:./images/checkmarkgreen.png[ok,30,30]
-
  
 http://greach.es/[http://greach.es/] - image:./images/checkmarkgreen.png[ok,30,30]
 
@@ -262,7 +261,7 @@ http://gotocon.com/prague-2011/presentation/Groovy%20actors%20and%20concurrent%2
  
 http://2011.geecon.org/main/home[http://2011.geecon.org/main/home] - image:./images/checkmarkgreen.png[ok,30,30]
 
-http://eu.gr8conf.org/eu2010/agenda/index[http://eu.gr8conf.org/eu2010/agenda/index] - image:./images/checkmarkgreen.png[ok,30,30]
+http://eu.gr8conf.org/eu2010/agenda/index[http://eu.gr8conf.org/eu2010/agenda/index] - image:./images/redcross.png[bad,30,30]
 
  
 http://2010.geecon.org/main/home[http://2010.geecon.org/main/home] - image:./images/checkmarkgreen.png[ok,30,30]
@@ -274,9 +273,9 @@ http://www.jfokus.se/jfokus/speakers.jsp#V%C3%A1clav%20Pech[http://www.jfokus.se
 http://www.jfokus.se/jfokus/speakers.jsp#Vaclav%20Pech[http://www.jfokus.se/jfokus/speakers.jsp#Vaclav%20Pech] - image:./images/checkmarkgreen.png[ok,30,30]
 
  
-http://www.jax.de[http://www.jax.de] - image:./images/checkmarkgreen.png[ok,30,30]
+http://www.jax.de[http://www.jax.de] - image:./images/checkmarkgreen.png[ok,30,30] - in German
 
-http://www.devoxx.com/display/DV09/Quickie+Day+1[http://www.devoxx.com/display/DV09/Quickie+Day+1] - image:./images/checkmarkgreen.png[ok,30,30]
+http://www.devoxx.com/display/DV09/Quickie+Day+1[http://www.devoxx.com/display/DV09/Quickie+Day+1] - image:./images/redcross.png[bad,30,30]
 
 == link:./gpars_history.html[GPars_History.html Page]
 
@@ -341,7 +340,7 @@ http://blog.krecan.net/2011/03/27/visualizing-forkjoin/[http://blog.krecan.net/2
 http://www.cs.kent.ac.uk/projects/ofa/jcsp/[http://www.cs.kent.ac.uk/projects/ofa/jcsp/] - image:./images/checkmarkgreen.png[ok,30,30]
 
  
-http://www.soc.napier.ac.uk/~cs10/#_Toc271192596[http://www.soc.napier.ac.uk/~cs10/#_Toc271192596] - image:./images/checkmarkgreen.png[ok,30,30]
+http://www.soc.napier.ac.uk/\~cs10/#_Toc271192596[http://www.soc.napier.ac.uk/~cs10/#_Toc271192596] - image:./images/checkmarkgreen.png[ok,30,30]
 
 http://ruben.savanne.be/articles/concurrency-in-erlang-scala[http://ruben.savanne.be/articles/concurrency-in-erlang-scala] - image:./images/checkmarkgreen.png[ok,30,30]
 
@@ -365,7 +364,7 @@ http://blog.jcoglan.com/2013/03/30/callbacks-are-imperative-promises-are-functio
  
 http://github.com/jboner/scala-dataflow/tree/f9a38992f5abed4df0b12f6a5293f703aa04dc33/src[http://github.com/jboner/scala-dataflow/tree/f9a38992f5abed4df0b12f6a5293f703aa04dc33/src] - image:./images/checkmarkgreen.png[ok,30,30]
 
-http://jonasboner.com/talks/state_youre_doing_it_wrong/html/all.html[http://jonasboner.com/talks/state_youre_doing_it_wrong/html/all.html] - image:./images/checkmarkgreen.png[ok,30,30]
+http://jonasboner.com/talks/state_youre_doing_it_wrong/html/all.html[http://jonasboner.com/talks/state_youre_doing_it_wrong/html/all.html] - image:./images/redcross.png[bad,30,30]
 
 http://github.com/larrytheliquid/dataflow/tree/master[http://github.com/larrytheliquid/dataflow/tree/master] - image:./images/checkmarkgreen.png[ok,30,30]
 
@@ -469,7 +468,7 @@ http://bookboon.com/en/using-concurrency-and-parallelism-effectively-i-ebook[htt
 http://bookboon.com/en/using-concurrency-and-parallelism-effectively-ii-ebook[http://bookboon.com/en/using-concurrency-and-parallelism-effectively-ii-ebook] - image:./images/checkmarkgreen.png[ok,30,30]
 
  
-http://www.soc.napier.ac.uk/~cs10/[http://www.soc.napier.ac.uk/~cs10/] - image:./images/checkmarkgreen.png[ok,30,30]
+http://www.soc.napier.ac.uk/\~cs10/[http://www.soc.napier.ac.uk/~cs10/] - image:./images/checkmarkgreen.png[ok,30,30]
 
  
 http://www.napier.ac.uk[http://www.napier.ac.uk] - image:./images/checkmarkgreen.png[ok,30,30]
@@ -516,7 +515,7 @@ https://www.youtube.com/watch?v=unUJwAAtLcM&amp;feature=youtu.be[https://www.you
  
 http://www.slideshare.net/VaclavPech/g-pars-howto[http://www.slideshare.net/VaclavPech/g-pars-howto] - image:./images/checkmarkgreen.png[ok,30,30]
 
-http://gr8conf.eu/Presentations/GPars-how-to-guide[http://gr8conf.eu/Presentations/GPars-how-to-guide] - image:./images/checkmarkgreen.png[ok,30,30]
+http://gr8conf.eu/Presentations/GPars-how-to-guide[http://gr8conf.eu/Presentations/GPars-how-to-guide] - image:./images/redcross.png[bad,30,30]
 
  
 http://www.slideshare.net/VaclavPech/gpars-workshop-21832702[http://www.slideshare.net/VaclavPech/gpars-workshop-21832702] - image:./images/checkmarkgreen.png[ok,30,30]
@@ -530,17 +529,11 @@ http://skillsmatter.com/podcast/home/gpars-vs-wild/te-6299[http://skillsmatter.c
  
 http://www.java-tv.com/2012/10/01/groovy-and-concurrency-with-gpars/[http://www.java-tv.com/2012/10/01/groovy-and-concurrency-with-gpars/] - image:./images/checkmarkgreen.png[ok,30,30]
 
-IMPORTANT: exception :Forbidden
-
-
 http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_UnleashYourProcessors.pdf[http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_UnleashYourProcessors.pdf] - image:./images/redcross.png[bad,30,30]
-
-IMPORTANT: exception :Forbidden
-
 
 http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_GroovyActorsAndConcurrentDataflowWithGPars.pdf[http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_GroovyActorsAndConcurrentDataflowWithGPars.pdf] - image:./images/redcross.png[bad,30,30]
 
-http://www.russel.org.uk/Presentations/JAXLondond2011_2011-11-01_justKeepPassingTheMessages.pdf[http://www.russel.org.uk/Presentations/JAXLondond2011_2011-11-01_justKeepPassingTheMessages.pdf] - image:./images/checkmarkgreen.png[ok,30,30]
+http://www.russel.org.uk/Presentations/JAXLondond2011_2011-11-01_justKeepPassingTheMessages.pdf[http://www.russel.org.uk/Presentations/JAXLondond2011_2011-11-01_justKeepPassingTheMessages.pdf] - image:./images/redcross.png[bad,30,30]
 
  
 http://www.slideshare.net/gr8conf/g-pars-vaclavpech2011[http://www.slideshare.net/gr8conf/g-pars-vaclavpech2011] - image:./images/checkmarkgreen.png[ok,30,30]
@@ -560,13 +553,10 @@ http://accu.org[http://accu.org] - image:./images/checkmarkgreen.png[ok,30,30]
  
 http://www.slideshare.net/VaclavPech/gpars-concepts-explained[http://www.slideshare.net/VaclavPech/gpars-concepts-explained] - image:./images/checkmarkgreen.png[ok,30,30]
 
-IMPORTANT: exception :Forbidden
-
-
 http://cdn.oreillystatic.com/en/assets/1/event/45/GPars%20-%20Groovy%20Concurrency%20Presentation.pdf[http://cdn.oreillystatic.com/en/assets/1/event/45/GPars%20-%20Groovy%20Concurrency%20Presentation.pdf] - image:./images/redcross.png[bad,30,30]
 
  
-http://people.canoo.com/mittie/gpars.mov[http://people.canoo.com/mittie/gpars.mov] - image:./images/checkmarkgreen.png[ok,30,30]
+http://people.canoo.com/mittie/gpars.mov[http://people.canoo.com/mittie/gpars.mov] - image:./images/redcross.png[bad,30,30]
 
 http://skillsmatter.com/podcast/groovy-grails/concurrent-programming-for-you-and-me[http://skillsmatter.com/podcast/groovy-grails/concurrent-programming-for-you-and-me] - image:./images/checkmarkgreen.png[ok,30,30]
 
@@ -592,8 +582,6 @@ http://cloudnines.de.a9sapp.eu/[http://cloudnines.de.a9sapp.eu/] - image:./image
 
 == link:./sponsors.html[Sponsors.html Page]
 
-
- 
 http://www.jetbrains.com/idea/index.html[http://www.jetbrains.com/idea/index.html] - image:./images/checkmarkgreen.png[ok,30,30]
 
  
@@ -602,1631 +590,8 @@ http://www.jetbrains.com/[http://www.jetbrains.com/] - image:./images/checkmarkg
  
 http://www.jetbrains.com/teamcity/index.html[http://www.jetbrains.com/teamcity/index.html] - image:./images/checkmarkgreen.png[ok,30,30]
 
-http://teamcity.jetbrains.com[http://teamcity.jetbrains.com] - image:./images/checkmarkgreen.png[ok,30,30]
+http://teamcity.jetbrains.com[http://teamcity.jetbrains.com] - image:./images/redcross.png[bad,30,30] - needs login
 
-== link:./staleurls.html[StaleURLs.html Page]
-
-
-http://ruben.savanne.be/articles/concurrency-in-erlang-scala[http://ruben.savanne.be/articles/concurrency-in-erlang-scala] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://people.canoo.com/mittie/kanbanflow.htm[http://people.canoo.com/mittie/kanbanflow.htm] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://people.canoo.com/mittie/kanbanflow.htm[http://people.canoo.com/mittie/kanbanflow.htm] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://people.canoo.com/mittie/kanbanflow.htm[http://people.canoo.com/mittie/kanbanflow.htm] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-104729.html[https://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-104729.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.manning.com/koenig2[http://www.manning.com/koenig2] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-43529.html[http://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-43529.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://drdobbs.com/high-performance-computing/229402193[http://drdobbs.com/high-performance-computing/229402193] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.dzone.com/links/r/concurrency_and_background_tasks_in_grails.html[http://www.dzone.com/links/r/concurrency_and_background_tasks_in_grails.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://www.jroller.com/vaclav/entry/dataflow_speculations[http://www.jroller.com/vaclav/entry/dataflow_speculations] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.ibm.com/developerworks/java/library/j-gpars/index.html[http://www.ibm.com/developerworks/java/library/j-gpars/index.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://tech.puredanger.com/[http://tech.puredanger.com/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://fbflex.wordpress.com/2010/06/11/writing-batch-import-scripts-with-grails-gsql-and-gpars/[http://fbflex.wordpress.com/2010/06/11/writing-batch-import-scripts-with-grails-gsql-and-gpars/] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://java.dzone.com/articles/flowing-data[http://java.dzone.com/articles/flowing-data] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://wordpress.transentia.com.au/wordpress/2010/03/05/playing-with-gpars/[http://wordpress.transentia.com.au/wordpress/2010/03/05/playing-with-gpars/] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://java.dzone.com/articles/dont-be-afraid-try-gpars[http://java.dzone.com/articles/dont-be-afraid-try-gpars] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://hamletdarcy.blogspot.com/2010/02/testing-asynchronous-code-with-gpars.html[http://hamletdarcy.blogspot.com/2010/02/testing-asynchronous-code-with-gpars.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-IMPORTANT: exception :Forbidden
-
-
-http://www.concertant.com/blog/2009-10-08-07-15[http://www.concertant.com/blog/2009-10-08-07-15] - image:./images/redcross.png[bad,30,30]
-
-http://groovy.dzone.com/announcements/gparalelizer-08-released[http://groovy.dzone.com/announcements/gparalelizer-08-released] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.ddj.com/go-parallel/blog/archives/2009/06/a_domainspecifi.html[http://www.ddj.com/go-parallel/blog/archives/2009/06/a_domainspecifi.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://www.jroller.com/vaclav/entry/another_milestone_for_gparallelizer_the[http://www.jroller.com/vaclav/entry/another_milestone_for_gparallelizer_the] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.javaworld.com/javaworld/jw-03-2009/jw-03-actor-concurrency2.html[http://www.javaworld.com/javaworld/jw-03-2009/jw-03-actor-concurrency2.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://groovy.dzone.com/news/event-based-actors-groovy[http://groovy.dzone.com/news/event-based-actors-groovy] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://www.jroller.com/vaclav/entry/event_based_actors_in_groovy[http://www.jroller.com/vaclav/entry/event_based_actors_in_groovy] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://www.jroller.com/vaclav/entry/groovy_actors_in_gparallelizer_concurrency[http://www.jroller.com/vaclav/entry/groovy_actors_in_gparallelizer_concurrency] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://www.jroller.com/vaclav/entry/gparallelizer_made_available[http://www.jroller.com/vaclav/entry/gparallelizer_made_available] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gparsdocs.de.a9sapp.eu/guide/#_asynchronous_invocations[http://gparsdocs.de.a9sapp.eu/guide/#_asynchronous_invocations] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://teamcity.jetbrains.com/viewType.html?buildTypeId=bt183&amp;tab=buildTypeStatusDiv[http://teamcity.jetbrains.com/viewType.html?buildTypeId=bt183&amp;tab=buildTypeStatusDiv] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars-user-mailing-list.19372.n3.nabble.com/[http://gpars-user-mailing-list.19372.n3.nabble.com/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars-developer-list.729030.n3.nabble.com/[http://gpars-developer-list.729030.n3.nabble.com/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars[https://github.com/GPars/GPars] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://www.facebook.com/GParsSolutions/[https://www.facebook.com/GParsSolutions/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://n3.nabble.com/GPars-user-mailing-list-f19372.html[http://n3.nabble.com/GPars-user-mailing-list-f19372.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://jira.codehaus.org/browse/GPARS[http://jira.codehaus.org/browse/GPARS] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars[https://github.com/GPars/GPars] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://ruben.savanne.be/articles/concurrency-in-erlang-scala[http://ruben.savanne.be/articles/concurrency-in-erlang-scala] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://en.wikipedia.org/wiki/Communicating_sequential_processes[http://en.wikipedia.org/wiki/Communicating_sequential_processes] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jonasboner.com[http://www.jonasboner.com] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/jboner/scala-dataflow/[https://github.com/jboner/scala-dataflow/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://jonasboner.com/talks.html[http://jonasboner.com/talks.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://github.com/larrytheliquid/dataflow/tree/master[http://github.com/larrytheliquid/dataflow/tree/master] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://en.wikipedia.org/wiki/Communicating_sequential_processes[http://en.wikipedia.org/wiki/Communicating_sequential_processes] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jonasboner.com[http://www.jonasboner.com] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/jboner/scala-dataflow/[https://github.com/jboner/scala-dataflow/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://jonasboner.com/talks.html[http://jonasboner.com/talks.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://github.com/larrytheliquid/dataflow/tree/master[http://github.com/larrytheliquid/dataflow/tree/master] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gparsdocs.de.a9sapp.eu/Download.html[http://gparsdocs.de.a9sapp.eu/Download.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gparsdocs.de.a9sapp.eu/Download.html[http://gparsdocs.de.a9sapp.eu/Download.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://travis-ci.org/GPars/GPars[https://travis-ci.org/GPars/GPars] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://travis-ci.org/GPars/GPars.svg?branch=master[https://travis-ci.org/GPars/GPars.svg?branch=master] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://snap-ci.com/GPars/GPars/branch/master[https://snap-ci.com/GPars/GPars/branch/master] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://snap-ci.com/GPars/GPars/branch/master/build_image[https://snap-ci.com/GPars/GPars/branch/master/build_image] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://teamcity.jetbrains.com/project.html?projectId=GPars[http://teamcity.jetbrains.com/project.html?projectId=GPars] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://jira.codehaus.org/browse/GPARS[http://jira.codehaus.org/browse/GPARS] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars[https://github.com/GPars/GPars] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars.git[https://github.com/GPars/GPars.git] - image:./images/checkmarkgreen.png[ok,30,30]
-
-IMPORTANT: exception :Forbidden
-
-
-http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/[http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/] - image:./images/redcross.png[bad,30,30]
-
- 
-http://www.anyclient.com/download.html[http://www.anyclient.com/download.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://www.gpars.website/guide/[http://www.gpars.website/guide/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://greach.es/[http://greach.es/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://greach.es/[http://greach.es/] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://skillsmatter.com/podcast/groovy-grails/gpars-vs-wild[http://skillsmatter.com/podcast/groovy-grails/gpars-vs-wild] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gotocon.com/prague-2011/[http://gotocon.com/prague-2011/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gotocon.com/prague-2011/presentation/Unleash%20your%20processor%28s%29[http://gotocon.com/prague-2011/presentation/Unleash%20your%20processor%28s%29] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gotocon.com/prague-2011/presentation/Groovy%20actors%20and%20concurrent%20dataflow%20with%20GPars[http://gotocon.com/prague-2011/presentation/Groovy%20actors%20and%20concurrent%20dataflow%20with%20GPars] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://2011.geecon.org/main/home[http://2011.geecon.org/main/home] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://eu.gr8conf.org/eu2010/agenda/index[http://eu.gr8conf.org/eu2010/agenda/index] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://2010.geecon.org/main/home[http://2010.geecon.org/main/home] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jfokus.se/jfokus/speakers.jsp#V%C3%A1clav%20Pech[http://www.jfokus.se/jfokus/speakers.jsp#V%C3%A1clav%20Pech] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jfokus.se/jfokus/speakers.jsp#Vaclav%20Pech[http://www.jfokus.se/jfokus/speakers.jsp#Vaclav%20Pech] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jax.de[http://www.jax.de] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://www.devoxx.com/display/DV09/Quickie+Day+1[http://www.devoxx.com/display/DV09/Quickie+Day+1] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.vaclavpech.eu/index.html[http://www.vaclavpech.eu/index.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://code.google.com/p/gparallelizer/[http://code.google.com/p/gparallelizer/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://jonasboner.com/[http://jonasboner.com/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.cs.kent.ac.uk/projects/ofa/jcsp/[http://www.cs.kent.ac.uk/projects/ofa/jcsp/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars/blob/master/artwork/gpars-logo.PNG[https://github.com/GPars/GPars/blob/master/artwork/gpars-logo.PNG] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars/blob/master/artwork/gpars-rgb.svg[https://github.com/GPars/GPars/blob/master/artwork/gpars-rgb.svg] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars/blob/master/artwork/GPars_logo.zip[https://github.com/GPars/GPars/blob/master/artwork/GPars_logo.zip] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org[http://gpars.org] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.apache.org/licenses/LICENSE-2.0.html[http://www.apache.org/licenses/LICENSE-2.0.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://groovy-lang.org/download.html[http://groovy-lang.org/download.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jetbrains.net/confluence/display/GRVY/Scripting+IDE+for+DSL+awareness[http://www.jetbrains.net/confluence/display/GRVY/Scripting+IDE+for+DSL+awareness] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://groovy.dzone.com/articles/parallelize-your-arrays-with-j[http://groovy.dzone.com/articles/parallelize-your-arrays-with-j] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://github.com/thevery[http://github.com/thevery] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://en.wikipedia.org/wiki/Java_concurrency[https://en.wikipedia.org/wiki/Java_concurrency] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://en.wikipedia.org/wiki/Java_concurrency[https://en.wikipedia.org/wiki/Java_concurrency] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://en.wikipedia.org/wiki/Java_concurrency[https://en.wikipedia.org/wiki/Java_concurrency] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://blog.krecan.net/2011/03/27/visualizing-forkjoin/[http://blog.krecan.net/2011/03/27/visualizing-forkjoin/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.cs.kent.ac.uk/projects/ofa/jcsp/[http://www.cs.kent.ac.uk/projects/ofa/jcsp/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.soc.napier.ac.uk/[http://www.soc.napier.ac.uk/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.soc.napier.ac.uk/[http://www.soc.napier.ac.uk/] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://ruben.savanne.be/articles/concurrency-in-erlang-scala[http://ruben.savanne.be/articles/concurrency-in-erlang-scala] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes[http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://en.wikipedia.org/wiki/Sleeping_barber_problem[http://en.wikipedia.org/wiki/Sleeping_barber_problem] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://en.wikipedia.org/wiki/Dining_philosophers_problem[http://en.wikipedia.org/wiki/Dining_philosophers_problem] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://fupeg.blogspot.com/2009/06/scala-concurrency.html[http://fupeg.blogspot.com/2009/06/scala-concurrency.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jonasboner.com[http://www.jonasboner.com] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://blog.jcoglan.com/2013/03/30/callbacks-are-imperative-promises-are-functional-nodes-biggest-missed-opportunity/[http://blog.jcoglan.com/2013/03/30/callbacks-are-imperative-promises-are-functional-nodes-biggest-missed-opportunity/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://github.com/jboner/scala-dataflow/tree/f9a38992f5abed4df0b12f6a5293f703aa04dc33/src[http://github.com/jboner/scala-dataflow/tree/f9a38992f5abed4df0b12f6a5293f703aa04dc33/src] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://jonasboner.com/talks/state_youre_doing_it_wrong/html/all.html[http://jonasboner.com/talks/state_youre_doing_it_wrong/html/all.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://github.com/larrytheliquid/dataflow/tree/master[http://github.com/larrytheliquid/dataflow/tree/master] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://people.canoo.com/mittie/kanbanflow.html[http://people.canoo.com/mittie/kanbanflow.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/dataflow/KanbanFlowTest.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/dataflow/KanbanFlowTest.groovy] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlow.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlow.groovy] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowBroadcast.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowBroadcast.groovy] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowCycle.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowCycle.groovy] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanLazyPrimeSequenceLoops.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanLazyPrimeSequenceLoops.groovy] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/pveentjer/Multiverse[https://github.com/pveentjer/Multiverse] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/pveentjer/Multiverse[https://github.com/pveentjer/Multiverse] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://developers.google.com/appengine/[https://developers.google.com/appengine/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://developers.google.com/appengine/[https://developers.google.com/appengine/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/musketyr/gpars-appengine[https://github.com/musketyr/gpars-appengine] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/musketyr/gpars-appengine[https://github.com/musketyr/gpars-appengine] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://netty.io[http://netty.io] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.website[http://gpars.website] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.apache.org/licenses/LICENSE-2.0.html[http://www.apache.org/licenses/LICENSE-2.0.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.groovy-lang.org/[http://www.groovy-lang.org/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.apache.org/licenses/LICENSE-2.0.html[http://www.apache.org/licenses/LICENSE-2.0.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.apache.org/licenses/LICENSE-2.0.html[http://www.apache.org/licenses/LICENSE-2.0.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars[https://github.com/GPars/GPars] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://en.wikipedia.org/wiki/Concurrent_computing[https://en.wikipedia.org/wiki/Concurrent_computing] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://en.wikipedia.org/wiki/Parallel_computing[https://en.wikipedia.org/wiki/Parallel_computing] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.website[http://gpars.website] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://www.facebook.com/GParsSolutions/[https://www.facebook.com/GParsSolutions/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://twitter.com/search?q=gpars[https://twitter.com/search?q=gpars] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://plus.google.com/communities/116353116054442324591[https://plus.google.com/communities/116353116054442324591] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gparsdocs.de.a9sapp.eu/guide/[http://gparsdocs.de.a9sapp.eu/guide/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://bookboon.com/[http://bookboon.com/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://bookboon.com/en/using-concurrency-and-parallelism-effectively-i-ebook[http://bookboon.com/en/using-concurrency-and-parallelism-effectively-i-ebook] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://bookboon.com/en/using-concurrency-and-parallelism-effectively-ii-ebook[http://bookboon.com/en/using-concurrency-and-parallelism-effectively-ii-ebook] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.soc.napier.ac.uk/[http://www.soc.napier.ac.uk/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.soc.napier.ac.uk/[http://www.soc.napier.ac.uk/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.napier.ac.uk[http://www.napier.ac.uk] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/codehaus/jcsp[https://github.com/codehaus/jcsp] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.apache.org/licenses/LICENSE-2.0.html[http://www.apache.org/licenses/LICENSE-2.0.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.apache.org/licenses/LICENSE-2.0.html[http://www.apache.org/licenses/LICENSE-2.0.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.vaclavpech.eu/[http://www.vaclavpech.eu/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.apache.org/licenses/LICENSE-2.0[http://www.apache.org/licenses/LICENSE-2.0] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.python.org/psf/trademarks/#uses-that-never-require-approval[http://www.python.org/psf/trademarks/#uses-that-never-require-approval] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://creativecommons.org/publicdomain/zero/1.0/[http://creativecommons.org/publicdomain/zero/1.0/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://drdobbs.com/high-performance-computing/229402193[http://drdobbs.com/high-performance-computing/229402193] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://www.youtube.com/watch?v=unUJwAAtLcM&amp;feature=youtu.be[https://www.youtube.com/watch?v=unUJwAAtLcM&amp;feature=youtu.be] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.slideshare.net/VaclavPech/g-pars-howto[http://www.slideshare.net/VaclavPech/g-pars-howto] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://gr8conf.eu/Presentations/GPars-how-to-guide[http://gr8conf.eu/Presentations/GPars-how-to-guide] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.slideshare.net/VaclavPech/gpars-workshop-21832702[http://www.slideshare.net/VaclavPech/gpars-workshop-21832702] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.youtube.com/watch?v=0St2X1DJhpA[http://www.youtube.com/watch?v=0St2X1DJhpA] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://skillsmatter.com/podcast/home/gpars-vs-wild/te-6299[http://skillsmatter.com/podcast/home/gpars-vs-wild/te-6299] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.java-tv.com/2012/10/01/groovy-and-concurrency-with-gpars/[http://www.java-tv.com/2012/10/01/groovy-and-concurrency-with-gpars/] - image:./images/checkmarkgreen.png[ok,30,30]
-
-IMPORTANT: exception :Forbidden
-
-
-http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_UnleashYourProcessors.pdf[http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_UnleashYourProcessors.pdf] - image:./images/redcross.png[bad,30,30]
-
-IMPORTANT: exception :Forbidden
-
-
-http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_GroovyActorsAndConcurrentDataflowWithGPars.pdf[http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_GroovyActorsAndConcurrentDataflowWithGPars.pdf] - image:./images/redcross.png[bad,30,30]
-
-http://www.russel.org.uk/Presentations/JAXLondond2011_2011-11-01_justKeepPassingTheMessages.pdf[http://www.russel.org.uk/Presentations/JAXLondond2011_2011-11-01_justKeepPassingTheMessages.pdf] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.slideshare.net/gr8conf/g-pars-vaclavpech2011[http://www.slideshare.net/gr8conf/g-pars-vaclavpech2011] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.slideshare.net/mpassell/gpars-for-beginners[http://www.slideshare.net/mpassell/gpars-for-beginners] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.slideshare.net/VaclavPech/pick-up-the-lowhanging-concurrency-fruit[http://www.slideshare.net/VaclavPech/pick-up-the-lowhanging-concurrency-fruit] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.slideshare.net/paulk_asert/groovy-and-concurrency[http://www.slideshare.net/paulk_asert/groovy-and-concurrency] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://accu.org[http://accu.org] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.slideshare.net/VaclavPech/gpars-concepts-explained[http://www.slideshare.net/VaclavPech/gpars-concepts-explained] - image:./images/checkmarkgreen.png[ok,30,30]
-
-IMPORTANT: exception :Forbidden
-
-
-http://cdn.oreillystatic.com/en/assets/1/event/45/GPars%20-%20Groovy%20Concurrency%20Presentation.pdf[http://cdn.oreillystatic.com/en/assets/1/event/45/GPars%20-%20Groovy%20Concurrency%20Presentation.pdf] - image:./images/redcross.png[bad,30,30]
-
- 
-http://people.canoo.com/mittie/gpars.mov[http://people.canoo.com/mittie/gpars.mov] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://skillsmatter.com/podcast/groovy-grails/concurrent-programming-for-you-and-me[http://skillsmatter.com/podcast/groovy-grails/concurrent-programming-for-you-and-me] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.cs.kent.ac.uk/projects/ofa/jcsp/[http://www.cs.kent.ac.uk/projects/ofa/jcsp/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://en.wikipedia.org/wiki/Communicating_sequential_processes[http://en.wikipedia.org/wiki/Communicating_sequential_processes] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://golang.org/[http://golang.org/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/pveentjer/Multiverse[https://github.com/pveentjer/Multiverse] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://cloudnines.de.a9sapp.eu/[http://cloudnines.de.a9sapp.eu/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jetbrains.com/idea/index.html[http://www.jetbrains.com/idea/index.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jetbrains.com/[http://www.jetbrains.com/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jetbrains.com/teamcity/index.html[http://www.jetbrains.com/teamcity/index.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://teamcity.jetbrains.com[http://teamcity.jetbrains.com] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://ruben.savanne.be/articles/concurrency-in-erlang-scala[http://ruben.savanne.be/articles/concurrency-in-erlang-scala] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://people.canoo.com/mittie/kanbanflow.html&gt;[http://people.canoo.com/mittie/kanbanflow.html&gt;] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://people.canoo.com/mittie/kanbanflow.html&gt;[http://people.canoo.com/mittie/kanbanflow.html&gt;] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://people.canoo.com/mittie/kanbanflow.html&gt;[http://people.canoo.com/mittie/kanbanflow.html&gt;] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-104729.html[https://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-104729.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.manning.com/koenig2[http://www.manning.com/koenig2] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-43529.html[http://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-43529.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://drdobbs.com/high-performance-computing/229402193[http://drdobbs.com/high-performance-computing/229402193] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.dzone.com/links/r/concurrency_and_background_tasks_in_grails.html[http://www.dzone.com/links/r/concurrency_and_background_tasks_in_grails.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://www.jroller.com/vaclav/entry/dataflow_speculations[http://www.jroller.com/vaclav/entry/dataflow_speculations] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.ibm.com/developerworks/java/library/j-gpars/index.html[http://www.ibm.com/developerworks/java/library/j-gpars/index.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://tech.puredanger.com/[http://tech.puredanger.com/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://fbflex.wordpress.com/2010/06/11/writing-batch-import-scripts-with-grails-gsql-and-gpars/[http://fbflex.wordpress.com/2010/06/11/writing-batch-import-scripts-with-grails-gsql-and-gpars/] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://java.dzone.com/articles/flowing-data[http://java.dzone.com/articles/flowing-data] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://wordpress.transentia.com.au/wordpress/2010/03/05/playing-with-gpars/[http://wordpress.transentia.com.au/wordpress/2010/03/05/playing-with-gpars/] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://java.dzone.com/articles/dont-be-afraid-try-gpars[http://java.dzone.com/articles/dont-be-afraid-try-gpars] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://hamletdarcy.blogspot.com/2010/02/testing-asynchronous-code-with-gpars.html[http://hamletdarcy.blogspot.com/2010/02/testing-asynchronous-code-with-gpars.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-IMPORTANT: exception :Forbidden
-
-
-http://www.concertant.com/blog/2009-10-08-07-15[http://www.concertant.com/blog/2009-10-08-07-15] - image:./images/redcross.png[bad,30,30]
-
-http://groovy.dzone.com/announcements/gparalelizer-08-released[http://groovy.dzone.com/announcements/gparalelizer-08-released] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.ddj.com/go-parallel/blog/archives/2009/06/a_domainspecifi.html[http://www.ddj.com/go-parallel/blog/archives/2009/06/a_domainspecifi.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://www.jroller.com/vaclav/entry/another_milestone_for_gparallelizer_the[http://www.jroller.com/vaclav/entry/another_milestone_for_gparallelizer_the] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.javaworld.com/javaworld/jw-03-2009/jw-03-actor-concurrency2.html[http://www.javaworld.com/javaworld/jw-03-2009/jw-03-actor-concurrency2.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://groovy.dzone.com/news/event-based-actors-groovy[http://groovy.dzone.com/news/event-based-actors-groovy] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://www.jroller.com/vaclav/entry/event_based_actors_in_groovy[http://www.jroller.com/vaclav/entry/event_based_actors_in_groovy] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://www.jroller.com/vaclav/entry/groovy_actors_in_gparallelizer_concurrency[http://www.jroller.com/vaclav/entry/groovy_actors_in_gparallelizer_concurrency] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://www.jroller.com/vaclav/entry/gparallelizer_made_available[http://www.jroller.com/vaclav/entry/gparallelizer_made_available] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gparsdocs.de.a9sapp.eu/guide/#_asynchronous_invocations[http://gparsdocs.de.a9sapp.eu/guide/#_asynchronous_invocations] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://teamcity.jetbrains.com/viewType.html?buildTypeId=bt183&amp;tab=buildTypeStatusDiv[http://teamcity.jetbrains.com/viewType.html?buildTypeId=bt183&amp;tab=buildTypeStatusDiv] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars-user-mailing-list.19372.n3.nabble.com/[http://gpars-user-mailing-list.19372.n3.nabble.com/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars-developer-list.729030.n3.nabble.com/[http://gpars-developer-list.729030.n3.nabble.com/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars[https://github.com/GPars/GPars] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://www.facebook.com/GParsSolutions/[https://www.facebook.com/GParsSolutions/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://n3.nabble.com/GPars-user-mailing-list-f19372.html[http://n3.nabble.com/GPars-user-mailing-list-f19372.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://jira.codehaus.org/browse/GPARS[http://jira.codehaus.org/browse/GPARS] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars[https://github.com/GPars/GPars] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://ruben.savanne.be/articles/concurrency-in-erlang-scala[http://ruben.savanne.be/articles/concurrency-in-erlang-scala] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://en.wikipedia.org/wiki/Communicating_sequential_processes[http://en.wikipedia.org/wiki/Communicating_sequential_processes] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jonasboner.com[http://www.jonasboner.com] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/jboner/scala-dataflow/[https://github.com/jboner/scala-dataflow/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://jonasboner.com/talks.html[http://jonasboner.com/talks.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://github.com/larrytheliquid/dataflow/tree/master[http://github.com/larrytheliquid/dataflow/tree/master] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://en.wikipedia.org/wiki/Communicating_sequential_processes[http://en.wikipedia.org/wiki/Communicating_sequential_processes] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jonasboner.com[http://www.jonasboner.com] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/jboner/scala-dataflow/[https://github.com/jboner/scala-dataflow/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://jonasboner.com/talks.html[http://jonasboner.com/talks.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://github.com/larrytheliquid/dataflow/tree/master[http://github.com/larrytheliquid/dataflow/tree/master] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gparsdocs.de.a9sapp.eu/Download.html[http://gparsdocs.de.a9sapp.eu/Download.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gparsdocs.de.a9sapp.eu/Download.html[http://gparsdocs.de.a9sapp.eu/Download.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://travis-ci.org/GPars/GPars[https://travis-ci.org/GPars/GPars] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://travis-ci.org/GPars/GPars.svg?branch=master[https://travis-ci.org/GPars/GPars.svg?branch=master] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://snap-ci.com/GPars/GPars/branch/master[https://snap-ci.com/GPars/GPars/branch/master] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://snap-ci.com/GPars/GPars/branch/master/build_image[https://snap-ci.com/GPars/GPars/branch/master/build_image] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://teamcity.jetbrains.com/project.html?projectId=GPars[http://teamcity.jetbrains.com/project.html?projectId=GPars] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://jira.codehaus.org/browse/GPARS[http://jira.codehaus.org/browse/GPARS] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars[https://github.com/GPars/GPars] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars.git[https://github.com/GPars/GPars.git] - image:./images/checkmarkgreen.png[ok,30,30]
-
-IMPORTANT: exception :Forbidden
-
-
-http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/[http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/] - image:./images/redcross.png[bad,30,30]
-
- 
-http://www.anyclient.com/download.html[http://www.anyclient.com/download.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://www.gpars.website/guide/[http://www.gpars.website/guide/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://greach.es/[http://greach.es/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://greach.es/[http://greach.es/] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://skillsmatter.com/podcast/groovy-grails/gpars-vs-wild[http://skillsmatter.com/podcast/groovy-grails/gpars-vs-wild] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gotocon.com/prague-2011/[http://gotocon.com/prague-2011/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gotocon.com/prague-2011/presentation/Unleash%20your%20processor%28s%29[http://gotocon.com/prague-2011/presentation/Unleash%20your%20processor%28s%29] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gotocon.com/prague-2011/presentation/Groovy%20actors%20and%20concurrent%20dataflow%20with%20GPars[http://gotocon.com/prague-2011/presentation/Groovy%20actors%20and%20concurrent%20dataflow%20with%20GPars] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://2011.geecon.org/main/home[http://2011.geecon.org/main/home] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://eu.gr8conf.org/eu2010/agenda/index[http://eu.gr8conf.org/eu2010/agenda/index] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://2010.geecon.org/main/home[http://2010.geecon.org/main/home] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jfokus.se/jfokus/speakers.jsp#V%C3%A1clav%20Pech[http://www.jfokus.se/jfokus/speakers.jsp#V%C3%A1clav%20Pech] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jfokus.se/jfokus/speakers.jsp#Vaclav%20Pech[http://www.jfokus.se/jfokus/speakers.jsp#Vaclav%20Pech] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jax.de[http://www.jax.de] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://www.devoxx.com/display/DV09/Quickie+Day+1[http://www.devoxx.com/display/DV09/Quickie+Day+1] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.vaclavpech.eu/index.html[http://www.vaclavpech.eu/index.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://code.google.com/p/gparallelizer/[http://code.google.com/p/gparallelizer/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://jonasboner.com/[http://jonasboner.com/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.cs.kent.ac.uk/projects/ofa/jcsp/[http://www.cs.kent.ac.uk/projects/ofa/jcsp/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars/blob/master/artwork/gpars-logo.PNG[https://github.com/GPars/GPars/blob/master/artwork/gpars-logo.PNG] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars/blob/master/artwork/gpars-rgb.svg[https://github.com/GPars/GPars/blob/master/artwork/gpars-rgb.svg] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars/blob/master/artwork/GPars_logo.zip[https://github.com/GPars/GPars/blob/master/artwork/GPars_logo.zip] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org[http://gpars.org] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.apache.org/licenses/LICENSE-2.0.html[http://www.apache.org/licenses/LICENSE-2.0.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://groovy-lang.org/download.html[http://groovy-lang.org/download.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jetbrains.net/confluence/display/GRVY/Scripting+IDE+for+DSL+awareness[http://www.jetbrains.net/confluence/display/GRVY/Scripting+IDE+for+DSL+awareness] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://groovy.dzone.com/articles/parallelize-your-arrays-with-j[http://groovy.dzone.com/articles/parallelize-your-arrays-with-j] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://github.com/thevery[http://github.com/thevery] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://en.wikipedia.org/wiki/Java_concurrency[https://en.wikipedia.org/wiki/Java_concurrency] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://en.wikipedia.org/wiki/Java_concurrency[https://en.wikipedia.org/wiki/Java_concurrency] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://en.wikipedia.org/wiki/Java_concurrency[https://en.wikipedia.org/wiki/Java_concurrency] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://blog.krecan.net/2011/03/27/visualizing-forkjoin/[http://blog.krecan.net/2011/03/27/visualizing-forkjoin/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.cs.kent.ac.uk/projects/ofa/jcsp/[http://www.cs.kent.ac.uk/projects/ofa/jcsp/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.soc.napier.ac.uk/[http://www.soc.napier.ac.uk/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.soc.napier.ac.uk/[http://www.soc.napier.ac.uk/] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://ruben.savanne.be/articles/concurrency-in-erlang-scala[http://ruben.savanne.be/articles/concurrency-in-erlang-scala] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes[http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://en.wikipedia.org/wiki/Sleeping_barber_problem[http://en.wikipedia.org/wiki/Sleeping_barber_problem] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://en.wikipedia.org/wiki/Dining_philosophers_problem[http://en.wikipedia.org/wiki/Dining_philosophers_problem] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://fupeg.blogspot.com/2009/06/scala-concurrency.html[http://fupeg.blogspot.com/2009/06/scala-concurrency.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jonasboner.com[http://www.jonasboner.com] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://blog.jcoglan.com/2013/03/30/callbacks-are-imperative-promises-are-functional-nodes-biggest-missed-opportunity/[http://blog.jcoglan.com/2013/03/30/callbacks-are-imperative-promises-are-functional-nodes-biggest-missed-opportunity/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://github.com/jboner/scala-dataflow/tree/f9a38992f5abed4df0b12f6a5293f703aa04dc33/src[http://github.com/jboner/scala-dataflow/tree/f9a38992f5abed4df0b12f6a5293f703aa04dc33/src] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://jonasboner.com/talks/state_youre_doing_it_wrong/html/all.html[http://jonasboner.com/talks/state_youre_doing_it_wrong/html/all.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://github.com/larrytheliquid/dataflow/tree/master[http://github.com/larrytheliquid/dataflow/tree/master] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://people.canoo.com/mittie/kanbanflow.html[http://people.canoo.com/mittie/kanbanflow.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/dataflow/KanbanFlowTest.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/dataflow/KanbanFlowTest.groovy] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlow.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlow.groovy] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowBroadcast.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowBroadcast.groovy] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowCycle.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowCycle.groovy] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanLazyPrimeSequenceLoops.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanLazyPrimeSequenceLoops.groovy] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/pveentjer/Multiverse[https://github.com/pveentjer/Multiverse] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/pveentjer/Multiverse[https://github.com/pveentjer/Multiverse] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://developers.google.com/appengine/[https://developers.google.com/appengine/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://developers.google.com/appengine/[https://developers.google.com/appengine/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/musketyr/gpars-appengine[https://github.com/musketyr/gpars-appengine] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/musketyr/gpars-appengine[https://github.com/musketyr/gpars-appengine] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://netty.io[http://netty.io] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.website[http://gpars.website] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.apache.org/licenses/LICENSE-2.0.html[http://www.apache.org/licenses/LICENSE-2.0.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.groovy-lang.org/[http://www.groovy-lang.org/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.apache.org/licenses/LICENSE-2.0.html[http://www.apache.org/licenses/LICENSE-2.0.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.apache.org/licenses/LICENSE-2.0.html[http://www.apache.org/licenses/LICENSE-2.0.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars[https://github.com/GPars/GPars] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://en.wikipedia.org/wiki/Concurrent_computing[https://en.wikipedia.org/wiki/Concurrent_computing] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://en.wikipedia.org/wiki/Parallel_computing[https://en.wikipedia.org/wiki/Parallel_computing] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.website[http://gpars.website] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://www.facebook.com/GParsSolutions/[https://www.facebook.com/GParsSolutions/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://twitter.com/search?q=gpars[https://twitter.com/search?q=gpars] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://plus.google.com/communities/116353116054442324591[https://plus.google.com/communities/116353116054442324591] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gparsdocs.de.a9sapp.eu/guide/[http://gparsdocs.de.a9sapp.eu/guide/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://bookboon.com/[http://bookboon.com/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://bookboon.com/en/using-concurrency-and-parallelism-effectively-i-ebook[http://bookboon.com/en/using-concurrency-and-parallelism-effectively-i-ebook] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://bookboon.com/en/using-concurrency-and-parallelism-effectively-ii-ebook[http://bookboon.com/en/using-concurrency-and-parallelism-effectively-ii-ebook] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.soc.napier.ac.uk/[http://www.soc.napier.ac.uk/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.soc.napier.ac.uk/[http://www.soc.napier.ac.uk/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.napier.ac.uk[http://www.napier.ac.uk] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/codehaus/jcsp[https://github.com/codehaus/jcsp] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.apache.org/licenses/LICENSE-2.0.html[http://www.apache.org/licenses/LICENSE-2.0.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.apache.org/licenses/LICENSE-2.0.html[http://www.apache.org/licenses/LICENSE-2.0.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.vaclavpech.eu/[http://www.vaclavpech.eu/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.apache.org/licenses/LICENSE-2.0[http://www.apache.org/licenses/LICENSE-2.0] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.python.org/psf/trademarks/#uses-that-never-require-approval[http://www.python.org/psf/trademarks/#uses-that-never-require-approval] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://creativecommons.org/publicdomain/zero/1.0/[http://creativecommons.org/publicdomain/zero/1.0/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://drdobbs.com/high-performance-computing/229402193[http://drdobbs.com/high-performance-computing/229402193] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://www.youtube.com/watch?v=unUJwAAtLcM&amp;feature=youtu.be[https://www.youtube.com/watch?v=unUJwAAtLcM&amp;feature=youtu.be] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.slideshare.net/VaclavPech/g-pars-howto[http://www.slideshare.net/VaclavPech/g-pars-howto] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://gr8conf.eu/Presentations/GPars-how-to-guide[http://gr8conf.eu/Presentations/GPars-how-to-guide] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.slideshare.net/VaclavPech/gpars-workshop-21832702[http://www.slideshare.net/VaclavPech/gpars-workshop-21832702] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.youtube.com/watch?v=0St2X1DJhpA[http://www.youtube.com/watch?v=0St2X1DJhpA] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://skillsmatter.com/podcast/home/gpars-vs-wild/te-6299[http://skillsmatter.com/podcast/home/gpars-vs-wild/te-6299] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.java-tv.com/2012/10/01/groovy-and-concurrency-with-gpars/[http://www.java-tv.com/2012/10/01/groovy-and-concurrency-with-gpars/] - image:./images/checkmarkgreen.png[ok,30,30]
-
-IMPORTANT: exception :Forbidden
-
-
-http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_UnleashYourProcessors.pdf[http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_UnleashYourProcessors.pdf] - image:./images/redcross.png[bad,30,30]
-
-IMPORTANT: exception :Forbidden
-
-
-http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_GroovyActorsAndConcurrentDataflowWithGPars.pdf[http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_GroovyActorsAndConcurrentDataflowWithGPars.pdf] - image:./images/redcross.png[bad,30,30]
-
-http://www.russel.org.uk/Presentations/JAXLondond2011_2011-11-01_justKeepPassingTheMessages.pdf[http://www.russel.org.uk/Presentations/JAXLondond2011_2011-11-01_justKeepPassingTheMessages.pdf] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.slideshare.net/gr8conf/g-pars-vaclavpech2011[http://www.slideshare.net/gr8conf/g-pars-vaclavpech2011] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.slideshare.net/mpassell/gpars-for-beginners[http://www.slideshare.net/mpassell/gpars-for-beginners] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.slideshare.net/VaclavPech/pick-up-the-lowhanging-concurrency-fruit[http://www.slideshare.net/VaclavPech/pick-up-the-lowhanging-concurrency-fruit] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.slideshare.net/paulk_asert/groovy-and-concurrency[http://www.slideshare.net/paulk_asert/groovy-and-concurrency] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://accu.org[http://accu.org] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.slideshare.net/VaclavPech/gpars-concepts-explained[http://www.slideshare.net/VaclavPech/gpars-concepts-explained] - image:./images/checkmarkgreen.png[ok,30,30]
-
-IMPORTANT: exception :Forbidden
-
-
-http://cdn.oreillystatic.com/en/assets/1/event/45/GPars%20-%20Groovy%20Concurrency%20Presentation.pdf[http://cdn.oreillystatic.com/en/assets/1/event/45/GPars%20-%20Groovy%20Concurrency%20Presentation.pdf] - image:./images/redcross.png[bad,30,30]
-
- 
-http://people.canoo.com/mittie/gpars.mov[http://people.canoo.com/mittie/gpars.mov] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://skillsmatter.com/podcast/groovy-grails/concurrent-programming-for-you-and-me[http://skillsmatter.com/podcast/groovy-grails/concurrent-programming-for-you-and-me] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.cs.kent.ac.uk/projects/ofa/jcsp/[http://www.cs.kent.ac.uk/projects/ofa/jcsp/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://en.wikipedia.org/wiki/Communicating_sequential_processes[http://en.wikipedia.org/wiki/Communicating_sequential_processes] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://golang.org/[http://golang.org/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/pveentjer/Multiverse[https://github.com/pveentjer/Multiverse] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://cloudnines.de.a9sapp.eu/[http://cloudnines.de.a9sapp.eu/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jetbrains.com/idea/index.html[http://www.jetbrains.com/idea/index.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jetbrains.com/[http://www.jetbrains.com/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jetbrains.com/teamcity/index.html[http://www.jetbrains.com/teamcity/index.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://teamcity.jetbrains.com[http://teamcity.jetbrains.com] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/SNAPSHOT/javadoc/index.html[http://gpars.org/SNAPSHOT/javadoc/index.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/SNAPSHOT/groovydoc/index.html[http://gpars.org/SNAPSHOT/groovydoc/index.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/1.2.1/javadoc/index.html[http://gpars.org/1.2.1/javadoc/index.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/1.2.1/groovydoc/index.html[http://gpars.org/1.2.1/groovydoc/index.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/1.2.0/javadoc/index.html[http://gpars.org/1.2.0/javadoc/index.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/1.2.0/groovydoc/index.html[http://gpars.org/1.2.0/groovydoc/index.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/1.1.0/javadoc/index.html[http://gpars.org/1.1.0/javadoc/index.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/1.1.0/groovydoc/index.html[http://gpars.org/1.1.0/groovydoc/index.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/1.0.0/javadoc/index.html[http://gpars.org/1.0.0/javadoc/index.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/1.0.0/groovydoc/index.html[http://gpars.org/1.0.0/groovydoc/index.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-104729.html[https://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-104729.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.manning.com/koenig2[http://www.manning.com/koenig2] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-43529.html[http://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-43529.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://drdobbs.com/high-performance-computing/229402193[http://drdobbs.com/high-performance-computing/229402193] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.dzone.com/links/r/concurrency_and_background_tasks_in_grails.html[http://www.dzone.com/links/r/concurrency_and_background_tasks_in_grails.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://www.jroller.com/vaclav/entry/dataflow_speculations[http://www.jroller.com/vaclav/entry/dataflow_speculations] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.ibm.com/developerworks/java/library/j-gpars/index.html[http://www.ibm.com/developerworks/java/library/j-gpars/index.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://tech.puredanger.com/[http://tech.puredanger.com/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://fbflex.wordpress.com/2010/06/11/writing-batch-import-scripts-with-grails-gsql-and-gpars/[http://fbflex.wordpress.com/2010/06/11/writing-batch-import-scripts-with-grails-gsql-and-gpars/] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://java.dzone.com/articles/flowing-data[http://java.dzone.com/articles/flowing-data] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://wordpress.transentia.com.au/wordpress/2010/03/05/playing-with-gpars/[http://wordpress.transentia.com.au/wordpress/2010/03/05/playing-with-gpars/] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://java.dzone.com/articles/dont-be-afraid-try-gpars[http://java.dzone.com/articles/dont-be-afraid-try-gpars] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://hamletdarcy.blogspot.com/2010/02/testing-asynchronous-code-with-gpars.html[http://hamletdarcy.blogspot.com/2010/02/testing-asynchronous-code-with-gpars.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-IMPORTANT: exception :Forbidden
-
-
-http://www.concertant.com/blog/2009-10-08-07-15[http://www.concertant.com/blog/2009-10-08-07-15] - image:./images/redcross.png[bad,30,30]
-
-http://groovy.dzone.com/announcements/gparalelizer-08-released[http://groovy.dzone.com/announcements/gparalelizer-08-released] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.ddj.com/go-parallel/blog/archives/2009/06/a_domainspecifi.html[http://www.ddj.com/go-parallel/blog/archives/2009/06/a_domainspecifi.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://www.jroller.com/vaclav/entry/another_milestone_for_gparallelizer_the[http://www.jroller.com/vaclav/entry/another_milestone_for_gparallelizer_the] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.javaworld.com/javaworld/jw-03-2009/jw-03-actor-concurrency2.html[http://www.javaworld.com/javaworld/jw-03-2009/jw-03-actor-concurrency2.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://groovy.dzone.com/news/event-based-actors-groovy[http://groovy.dzone.com/news/event-based-actors-groovy] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://www.jroller.com/vaclav/entry/event_based_actors_in_groovy[http://www.jroller.com/vaclav/entry/event_based_actors_in_groovy] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://www.jroller.com/vaclav/entry/groovy_actors_in_gparallelizer_concurrency[http://www.jroller.com/vaclav/entry/groovy_actors_in_gparallelizer_concurrency] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://www.jroller.com/vaclav/entry/gparallelizer_made_available[http://www.jroller.com/vaclav/entry/gparallelizer_made_available] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://teamcity.jetbrains.com/viewType.html?buildTypeId=bt183&amp;tab=buildTypeStatusDiv[http://teamcity.jetbrains.com/viewType.html?buildTypeId=bt183&amp;tab=buildTypeStatusDiv] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars-user-mailing-list.19372.n3.nabble.com/[http://gpars-user-mailing-list.19372.n3.nabble.com/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars-developer-list.729030.n3.nabble.com/[http://gpars-developer-list.729030.n3.nabble.com/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars[https://github.com/GPars/GPars] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://n3.nabble.com/GPars-user-mailing-list-f19372.html[http://n3.nabble.com/GPars-user-mailing-list-f19372.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://jira.codehaus.org/browse/GPARS[http://jira.codehaus.org/browse/GPARS] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars[https://github.com/GPars/GPars] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://ruben.savanne.be/articles/concurrency-in-erlang-scala[http://ruben.savanne.be/articles/concurrency-in-erlang-scala] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/guide/guide/actors.html[http://gpars.org/guide/guide/actors.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/guide/guide/agents.html[http://gpars.org/guide/guide/agents.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/guide/guide/dataParallelism.html#dataParallelism_asynchronousInvocation[http://gpars.org/guide/guide/dataParallelism.html#dataParallelism_asynchronousInvocation] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://en.wikipedia.org/wiki/Communicating_sequential_processes[http://en.wikipedia.org/wiki/Communicating_sequential_processes] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jonasboner.com[http://www.jonasboner.com] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/guide/guide/dataflow.html[http://gpars.org/guide/guide/dataflow.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/jboner/scala-dataflow/[https://github.com/jboner/scala-dataflow/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://jonasboner.com/talks.html[http://jonasboner.com/talks.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://github.com/larrytheliquid/dataflow/tree/master[http://github.com/larrytheliquid/dataflow/tree/master] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/download/1.2.1/gpars-samples-1.2.1.zip[http://gpars.org/download/1.2.1/gpars-samples-1.2.1.zip] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/download/1.2.1/gpars-mvn-java-demo-1.2.1.zip[http://gpars.org/download/1.2.1/gpars-mvn-java-demo-1.2.1.zip] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://travis-ci.org/GPars/GPars[https://travis-ci.org/GPars/GPars] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://travis-ci.org/GPars/GPars.svg?branch=master[https://travis-ci.org/GPars/GPars.svg?branch=master] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://snap-ci.com/GPars/GPars/branch/master[https://snap-ci.com/GPars/GPars/branch/master] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://snap-ci.com/GPars/GPars/branch/master/build_image[https://snap-ci.com/GPars/GPars/branch/master/build_image] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://teamcity.jetbrains.com/project.html?projectId=GPars[http://teamcity.jetbrains.com/project.html?projectId=GPars] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://jira.codehaus.org/browse/GPARS[http://jira.codehaus.org/browse/GPARS] - image:./images/checkmarkgreen.png[ok,30,30]
-
-IMPORTANT: exception :Forbidden
-
-
-http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/[http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/] - image:./images/redcross.png[bad,30,30]
-
- 
-http://www.anyclient.com/download.html[http://www.anyclient.com/download.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.gpars.org/guide/[http://www.gpars.org/guide/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/1.2.1/javadoc/[http://gpars.org/1.2.1/javadoc/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/1.2.1/groovydoc/[http://gpars.org/1.2.1/groovydoc/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://groups.google.com/forum/[https://groups.google.com/forum/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/download/1.2.1/[http://gpars.org/download/1.2.1/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/download/1.2.0/[http://gpars.org/download/1.2.0/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/download/1.1.0/[http://gpars.org/download/1.1.0/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/download/1.0.0/[http://gpars.org/download/1.0.0/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://greach.es/[http://greach.es/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://greach.es/[http://greach.es/] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://skillsmatter.com/podcast/groovy-grails/gpars-vs-wild[http://skillsmatter.com/podcast/groovy-grails/gpars-vs-wild] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gotocon.com/prague-2011/[http://gotocon.com/prague-2011/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gotocon.com/prague-2011/presentation/Unleash%20your%20processor%28s%29[http://gotocon.com/prague-2011/presentation/Unleash%20your%20processor%28s%29] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gotocon.com/prague-2011/presentation/Groovy%20actors%20and%20concurrent%20dataflow%20with%20GPars[http://gotocon.com/prague-2011/presentation/Groovy%20actors%20and%20concurrent%20dataflow%20with%20GPars] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://2011.geecon.org/main/home[http://2011.geecon.org/main/home] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://eu.gr8conf.org/eu2010/agenda/index[http://eu.gr8conf.org/eu2010/agenda/index] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://2010.geecon.org/main/home[http://2010.geecon.org/main/home] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jfokus.se/jfokus/speakers.jsp#V%C3%A1clav%20Pech[http://www.jfokus.se/jfokus/speakers.jsp#V%C3%A1clav%20Pech] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jfokus.se/jfokus/speakers.jsp#Vaclav%20Pech[http://www.jfokus.se/jfokus/speakers.jsp#Vaclav%20Pech] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jax.de[http://www.jax.de] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://www.devoxx.com/display/DV09/Quickie+Day+1[http://www.devoxx.com/display/DV09/Quickie+Day+1] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.vaclavpech.eu/index.html[http://www.vaclavpech.eu/index.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://code.google.com/p/gparallelizer/[http://code.google.com/p/gparallelizer/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://jonasboner.com/[http://jonasboner.com/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.gpars.org/guide/index.html[http://www.gpars.org/guide/index.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.cs.kent.ac.uk/projects/ofa/jcsp/[http://www.cs.kent.ac.uk/projects/ofa/jcsp/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars/blob/master/artwork/gpars-logo.PNG[https://github.com/GPars/GPars/blob/master/artwork/gpars-logo.PNG] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars/blob/master/artwork/gpars-rgb.svg[https://github.com/GPars/GPars/blob/master/artwork/gpars-rgb.svg] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars/blob/master/artwork/GPars_logo.zip[https://github.com/GPars/GPars/blob/master/artwork/GPars_logo.zip] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.gpars.org/guide/guide/dataParallelism.html#dataParallelism_parallelCollections[http://www.gpars.org/guide/guide/dataParallelism.html#dataParallelism_parallelCollections] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org[http://gpars.org] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.apache.org/licenses/LICENSE-2.0.html[http://www.apache.org/licenses/LICENSE-2.0.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://groovy-lang.org/download.html[http://groovy-lang.org/download.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jetbrains.net/confluence/display/GRVY/Scripting+IDE+for+DSL+awareness[http://www.jetbrains.net/confluence/display/GRVY/Scripting+IDE+for+DSL+awareness] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://groovy.dzone.com/articles/parallelize-your-arrays-with-j[http://groovy.dzone.com/articles/parallelize-your-arrays-with-j] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://github.com/thevery[http://github.com/thevery] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://en.wikipedia.org/wiki/Java_concurrency[https://en.wikipedia.org/wiki/Java_concurrency] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://en.wikipedia.org/wiki/Java_concurrency[https://en.wikipedia.org/wiki/Java_concurrency] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://en.wikipedia.org/wiki/Java_concurrency[https://en.wikipedia.org/wiki/Java_concurrency] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://blog.krecan.net/2011/03/27/visualizing-forkjoin/[http://blog.krecan.net/2011/03/27/visualizing-forkjoin/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.cs.kent.ac.uk/projects/ofa/jcsp/[http://www.cs.kent.ac.uk/projects/ofa/jcsp/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.soc.napier.ac.uk/[http://www.soc.napier.ac.uk/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.soc.napier.ac.uk/[http://www.soc.napier.ac.uk/] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://ruben.savanne.be/articles/concurrency-in-erlang-scala[http://ruben.savanne.be/articles/concurrency-in-erlang-scala] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes[http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://en.wikipedia.org/wiki/Sleeping_barber_problem[http://en.wikipedia.org/wiki/Sleeping_barber_problem] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://en.wikipedia.org/wiki/Dining_philosophers_problem[http://en.wikipedia.org/wiki/Dining_philosophers_problem] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://fupeg.blogspot.com/2009/06/scala-concurrency.html[http://fupeg.blogspot.com/2009/06/scala-concurrency.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jonasboner.com[http://www.jonasboner.com] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://blog.jcoglan.com/2013/03/30/callbacks-are-imperative-promises-are-functional-nodes-biggest-missed-opportunity/[http://blog.jcoglan.com/2013/03/30/callbacks-are-imperative-promises-are-functional-nodes-biggest-missed-opportunity/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://github.com/jboner/scala-dataflow/tree/f9a38992f5abed4df0b12f6a5293f703aa04dc33/src[http://github.com/jboner/scala-dataflow/tree/f9a38992f5abed4df0b12f6a5293f703aa04dc33/src] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://jonasboner.com/talks/state_youre_doing_it_wrong/html/all.html[http://jonasboner.com/talks/state_youre_doing_it_wrong/html/all.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://github.com/larrytheliquid/dataflow/tree/master[http://github.com/larrytheliquid/dataflow/tree/master] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://people.canoo.com/mittie/kanbanflow.html[http://people.canoo.com/mittie/kanbanflow.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/dataflow/KanbanFlowTest.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/dataflow/KanbanFlowTest.groovy] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlow.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlow.groovy] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowBroadcast.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowBroadcast.groovy] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowCycle.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowCycle.groovy] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanLazyPrimeSequenceLoops.groovy[https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanLazyPrimeSequenceLoops.groovy] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/pveentjer/Multiverse[https://github.com/pveentjer/Multiverse] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/pveentjer/Multiverse[https://github.com/pveentjer/Multiverse] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://developers.google.com/appengine/[https://developers.google.com/appengine/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://developers.google.com/appengine/[https://developers.google.com/appengine/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/musketyr/gpars-appengine[https://github.com/musketyr/gpars-appengine] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/musketyr/gpars-appengine[https://github.com/musketyr/gpars-appengine] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://netty.io[http://netty.io] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org[http://gpars.org] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.apache.org/licenses/LICENSE-2.0.html[http://www.apache.org/licenses/LICENSE-2.0.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.groovy-lang.org/[http://www.groovy-lang.org/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.apache.org/licenses/LICENSE-2.0.html[http://www.apache.org/licenses/LICENSE-2.0.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.apache.org/licenses/LICENSE-2.0.html[http://www.apache.org/licenses/LICENSE-2.0.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars[https://github.com/GPars/GPars] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/GPars[https://github.com/GPars/GPars] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.github.io[http://gpars.github.io] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/download/1.2.0/gpars-mvn-java-demo-1.2.0.zip[http://gpars.org/download/1.2.0/gpars-mvn-java-demo-1.2.0.zip] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/download/1.1.0/gpars-mvn-java-demo-1.1.0.zip[http://gpars.org/download/1.1.0/gpars-mvn-java-demo-1.1.0.zip] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gpars.org/download/1.1.0/gpars-mvn-java-demo-1.1.0.zip[http://gpars.org/download/1.1.0/gpars-mvn-java-demo-1.1.0.zip] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.gpars.org/guide/guide/gettingStarted.html#gettingStarted_JavaAPI-usingGParsFromJava[http://www.gpars.org/guide/guide/gettingStarted.html#gettingStarted_JavaAPI-usingGParsFromJava] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://lanyrd.com/speakers/gpars/[http://lanyrd.com/speakers/gpars/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jetbrains.com/[http://www.jetbrains.com/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.canoo.com[http://www.canoo.com] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://groovy.canoo.com/gina[http://groovy.canoo.com/gina] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.manning.com/koenig2[http://www.manning.com/koenig2] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://www.itzinteractive.com[http://www.itzinteractive.com] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://pl.linkedin.com/pub/rafa%C5%82-s%C5%82awik/5b/9b1/a/[http://pl.linkedin.com/pub/rafa%C5%82-s%C5%82awik/5b/9b1/a/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://leanjavaengineering.wordpress.com/2010/10/06/groovy-salesforce-api[http://leanjavaengineering.wordpress.com/2010/10/06/groovy-salesforce-api] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jcraft.com/jsch/[http://www.jcraft.com/jsch/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://twitter.com/gblack[http://twitter.com/gblack] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://spreadsheets.google.com/viewform?hl=en&amp;formkey=dFdYb2U1dFo2am9OZ1NTQUFuY0lSdXc6MQ#gid=0[https://spreadsheets.google.com/viewform?hl=en&amp;formkey=dFdYb2U1dFo2am9OZ1NTQUFuY0lSdXc6MQ#gid=0] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://asciidoctor.org/docs/user-manual/[http://asciidoctor.org/docs/user-manual/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/gpars.github.io[https://github.com/GPars/gpars.github.io] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://asciidoctor.org/docs/user-manual/[http://asciidoctor.org/docs/user-manual/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gradle.org/[http://gradle.org/] - image:./images/checkmarkgreen.png[ok,30,30]
-
-https://www.cloudfoundry.org/[https://www.cloudfoundry.org/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.ibm.com/cloud-computing/bluemix/[http://www.ibm.com/cloud-computing/bluemix/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://run.pivotal.io/[https://run.pivotal.io/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.anynines.com/[http://www.anynines.com/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gradle.org/[http://gradle.org/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gradle.org/[http://gradle.org/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gradle.org/[http://gradle.org/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gradle.org/[http://gradle.org/] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://localhost:8080[http://localhost:8080] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://asciidoctor.org/docs/user-manual/[http://asciidoctor.org/docs/user-manual/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://asciidoctor.org/docs/user-manual/[http://asciidoctor.org/docs/user-manual/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://asciidoctor.org/docs/user-manual/[http://asciidoctor.org/docs/user-manual/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://asciidoctor.org/docs/user-manual/[http://asciidoctor.org/docs/user-manual/] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://localhost:8080/datetime[http://localhost:8080/datetime] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://lanyrd.com/speakers/gpars/[http://lanyrd.com/speakers/gpars/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jetbrains.com/[http://www.jetbrains.com/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.canoo.com[http://www.canoo.com] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://groovy.canoo.com/gina[http://groovy.canoo.com/gina] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.manning.com/koenig2[http://www.manning.com/koenig2] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://www.itzinteractive.com[http://www.itzinteractive.com] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://pl.linkedin.com/pub/rafa%C5%82-s%C5%82awik/5b/9b1/a/[http://pl.linkedin.com/pub/rafa%C5%82-s%C5%82awik/5b/9b1/a/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://leanjavaengineering.wordpress.com/2010/10/06/groovy-salesforce-api[http://leanjavaengineering.wordpress.com/2010/10/06/groovy-salesforce-api] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.jcraft.com/jsch/[http://www.jcraft.com/jsch/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://twitter.com/gblack[http://twitter.com/gblack] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://spreadsheets.google.com/viewform?hl=en&amp;formkey=dFdYb2U1dFo2am9OZ1NTQUFuY0lSdXc6MQ#gid=0[https://spreadsheets.google.com/viewform?hl=en&amp;formkey=dFdYb2U1dFo2am9OZ1NTQUFuY0lSdXc6MQ#gid=0] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://asciidoctor.org/docs/user-manual/[http://asciidoctor.org/docs/user-manual/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://github.com/GPars/gpars.github.io[https://github.com/GPars/gpars.github.io] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://asciidoctor.org/docs/user-manual/[http://asciidoctor.org/docs/user-manual/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gradle.org/[http://gradle.org/] - image:./images/checkmarkgreen.png[ok,30,30]
-
-https://www.cloudfoundry.org/[https://www.cloudfoundry.org/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.ibm.com/cloud-computing/bluemix/[http://www.ibm.com/cloud-computing/bluemix/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-https://run.pivotal.io/[https://run.pivotal.io/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://www.anynines.com/[http://www.anynines.com/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gradle.org/[http://gradle.org/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gradle.org/[http://gradle.org/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gradle.org/[http://gradle.org/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gradle.org/[http://gradle.org/] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://localhost:8080[http://localhost:8080] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://asciidoctor.org/docs/user-manual/[http://asciidoctor.org/docs/user-manual/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://asciidoctor.org/docs/user-manual/[http://asciidoctor.org/docs/user-manual/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://asciidoctor.org/docs/user-manual/[http://asciidoctor.org/docs/user-manual/] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://asciidoctor.org/docs/user-manual/[http://asciidoctor.org/docs/user-manual/] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://localhost:8080/datetime[http://localhost:8080/datetime] - image:./images/checkmarkgreen.png[ok,30,30]
 
 == link:./thegparsteam.html[TheGParsTeam.html Page]
 
@@ -2241,7 +606,7 @@ http://www.jetbrains.com/[http://www.jetbrains.com/] - image:./images/checkmarkg
 http://www.canoo.com[http://www.canoo.com] - image:./images/checkmarkgreen.png[ok,30,30]
 
  
-http://groovy.canoo.com/gina[http://groovy.canoo.com/gina] - image:./images/checkmarkgreen.png[ok,30,30]
+http://groovy.canoo.com/gina[http://groovy.canoo.com/gina] - image:./images/redcross.png[bad,30,30]
 
  
 http://www.manning.com/koenig2[http://www.manning.com/koenig2] - image:./images/checkmarkgreen.png[ok,30,30]
@@ -2325,6 +690,3 @@ http://localhost:8080/datetime[http://localhost:8080/datetime] - image:./images/
 IMPORTANT: 4778 files have 766 HREF links including 30 GPars
 
 ''''
-
-
-Number of files =[4778] and hrefs=766  GPars=30
