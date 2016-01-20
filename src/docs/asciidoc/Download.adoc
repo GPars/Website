@@ -21,6 +21,7 @@ v1.2.1, 2016-01-05
 |GPars 1.2.0
 |GPars 1.2.1
 
+m| JDK 1.5 | JDK 1.5-1.6 | JDK 1.7-1.8 | JDK 1.7-1.8 
 m|link:downloads/gpars-1.0.0/gpars-1.0.0.jar[GPars Jar File]      m|link:downloads/gpars-1.1.0/gpars-1.1.0.jar[GPars Jar File]      m|link:downloads/gpars-1.2.0/gpars-1.2.0.jar[GPars Jar File]      m|link:downloads/gpars-1.2.1/gpars-1.2.1.jar[GPars Jar File]
 m|link:downloads/gpars-1.0.0/gpars-all-1.0.0.zip[GPars All Jar]   m|link:downloads/gpars-1.1.0/gpars-all-1.1.0.zip[GPars All Jar]   m|link:downloads/gpars-1.2.0/gpars-all-1.2.0.zip[GPars All Jar]   m|link:downloads/gpars-1.2.1/gpars-all-1.2.1.zip[GPars All Jar]
 m|link:downloads/gpars-1.0.0/gpars-1.0.0-sources.jar[Source Code] m|link:downloads/gpars-1.1.0/gpars-1.1.0-sources.jar[Source Code] m|link:downloads/gpars-1.2.0/gpars-1.2.0-sources.jar[Source Code] m|link:downloads/gpars-1.2.1/gpars-1.2.1-sources.jar[Source Code]
