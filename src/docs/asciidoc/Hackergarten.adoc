@@ -28,6 +28,12 @@ If you're organizing such an event and think about giving it a concurrency focus
  . Tweak CodeNarc rules - +++http://jira.codehaus.org/browse/GPARS-152+++
  . Revisit the codebase and fix CodeNarc-reported issues - +++http://jira.codehaus.org/browse/GPARS-153+++
 
+''''
+
+IMPORTANT: Please note that jira.codehaus.org/ has closed, so prior links will not work
+
+''''
+
 == Get Ready
 
 You are only a few easy steps away from being able to start:

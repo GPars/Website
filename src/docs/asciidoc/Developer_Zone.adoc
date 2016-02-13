@@ -63,6 +63,8 @@ Project committers and contributors typically keep their personal clones of the 
 
 The *Gradle* build tool wrapper is included, so running the _gradlew_ build script will download and setup gradle for the project and execute the build.
 
+''''
+
 == IDE integration
 
 Create an IDEA or Eclipse project files through _gradlew idea_ or _gradlew eclipse_ commands and you are ready to go.
@@ -170,7 +172,7 @@ After a *proper* release, the older snapshot artifacts should be removed manuall
 
 === 8. Upload The User Guide and Docs
 
-The generated `User Guide` at _/build/docs/manual_ should be uploaded to http://www.gpars.website/guide/[*GPars Document Website*] .
+The generated `User Guide` at _/build/docs/manual_ should be uploaded to http://gpars.website/guide/[*GPars Document Website*] .
 
 The javadoc and groovydoc folders should be copied too
 
@@ -186,6 +188,9 @@ After a *proper* release the version in the build file has to be changed to the 
 
 People are impatiently waiting for the new *GPars* features so now is the time to tell them. New *proper* releases should be announced in the following mailing lists and sites:
 
-* https://groups.google.com/forum/#!forum/gpars-users
-* https://groups.google.com/forum/#!forum/gpars-developers
+* https://groups.google.com/forum/#!forum/gpars-users[GPars Users]
+* https://groups.google.com/forum/#!forum/gpars-developers[GPars Developers]
+* https://www.facebook.com/GParsSolutions/[FaceBook]
+* https://twitter.com/search?q=gpars[Twitter]
+* https://plus.google.com/communities/116353116054442324591[Google+]
 * Any other relevant channel

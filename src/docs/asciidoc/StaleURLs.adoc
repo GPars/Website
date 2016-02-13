@@ -21,11 +21,15 @@ TIP: Pages with Stale URLs in /Users/jimnorthrop/Dropbox/Projects/GPars/Website/
 
 http://ruben.savanne.be/articles/concurrency-in-erlang-scala[http://ruben.savanne.be/articles/concurrency-in-erlang-scala] - image:./images/checkmarkgreen.png[ok,30,30]
 
+''''
+
 == link:./kanbanlink.html[KanbanLink.html Page]
 
 
  
 http://people.canoo.com/mittie/kanbanflow.html[http://people.canoo.com/mittie/kanbanflow.html] - image:./images/checkmarkgreen.png[ok,30,30]
+
+''''
 
 == link:./package-summary.html[package-summary.html Page]
 
@@ -33,15 +37,17 @@ http://people.canoo.com/mittie/kanbanflow.html[http://people.canoo.com/mittie/ka
  
 http://people.canoo.com/mittie/kanbanflow.html[http://people.canoo.com/mittie/kanbanflow.html] - image:./images/checkmarkgreen.png[ok,30,30]
 
+''''
+
 == link:./index-all.html[index-all.html Page]
 
 
  
 http://people.canoo.com/mittie/kanbanflow.html[http://people.canoo.com/mittie/kanbanflow.html] - image:./images/checkmarkgreen.png[ok,30,30]
 
+''''
+
 == link:./articles.html[Articles.html Page]
-
-
  
 https://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-104729.html[https://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-104729.html] - image:./images/checkmarkgreen.png[ok,30,30]
 
@@ -101,16 +107,22 @@ http://www.jroller.com/vaclav/entry/groovy_actors_in_gparallelizer_concurrency[h
 
 http://www.jroller.com/vaclav/entry/gparallelizer_made_available[http://www.jroller.com/vaclav/entry/gparallelizer_made_available] - image:./images/checkmarkgreen.png[ok,30,30]
 
+''''
+
 == link:./asynchronous_functions.html[Asynchronous_Functions.html Page]
 
 
  
 http://gparsdocs.de.a9sapp.eu/guide/#_asynchronous_invocations[http://gparsdocs.de.a9sapp.eu/guide/#_asynchronous_invocations] - image:./images/checkmarkgreen.png[ok,30,30]
 
+''''
+
 == link:./code_style.html[Code_Style.html Page]
 
 
 http://teamcity.jetbrains.com/viewType.html?buildTypeId=bt183&amp;tab=buildTypeStatusDiv[http://teamcity.jetbrains.com/viewType.html?buildTypeId=bt183&amp;tab=buildTypeStatusDiv] - image:./images/redcross.png[bad,30,30]
+
+''''
 
 == link:./community.html[Community.html Page]
 
@@ -144,10 +156,14 @@ http://jira.codehaus.org/browse/GPARS[http://jira.codehaus.org/browse/GPARS] - i
  
 https://github.com/GPars/GPars[https://github.com/GPars/GPars] - image:./images/checkmarkgreen.png[ok,30,30]
 
+''''
+
 == link:./actor.html[Actor.html Page]
 
 
 http://ruben.savanne.be/articles/concurrency-in-erlang-scala[http://ruben.savanne.be/articles/concurrency-in-erlang-scala] - image:./images/checkmarkgreen.png[ok,30,30]
+
+''''
 
 == link:./csp.html[CSP.html Page]
 
@@ -155,9 +171,9 @@ http://ruben.savanne.be/articles/concurrency-in-erlang-scala[http://ruben.savann
  
 http://en.wikipedia.org/wiki/Communicating_sequential_processes[http://en.wikipedia.org/wiki/Communicating_sequential_processes] - image:./images/checkmarkgreen.png[ok,30,30]
 
+''''
+
 == link:./dataflow.html[Dataflow.html Page]
-
-
  
 http://www.jonasboner.com[http://www.jonasboner.com] - image:./images/checkmarkgreen.png[ok,30,30]
 
@@ -169,18 +185,15 @@ http://jonasboner.com/talks.html[http://jonasboner.com/talks.html] - image:./ima
 
 http://github.com/larrytheliquid/dataflow/tree/master[http://github.com/larrytheliquid/dataflow/tree/master] - image:./images/checkmarkgreen.png[ok,30,30]
 
-== link:./csp.html[CSP.html Page]
-
-
+== link:./csp.html[CSP.html Page]''''
  
 http://en.wikipedia.org/wiki/Communicating_sequential_processes[http://en.wikipedia.org/wiki/Communicating_sequential_processes] - image:./images/checkmarkgreen.png[ok,30,30]
 
+''''
+
 == link:./dataflow.html[Dataflow.html Page]
-
-
  
 http://www.jonasboner.com[http://www.jonasboner.com] - image:./images/checkmarkgreen.png[ok,30,30]
-
  
 https://github.com/jboner/scala-dataflow/[https://github.com/jboner/scala-dataflow/] - image:./images/checkmarkgreen.png[ok,30,30]
 
@@ -188,6 +201,8 @@ https://github.com/jboner/scala-dataflow/[https://github.com/jboner/scala-datafl
 http://jonasboner.com/talks.html[http://jonasboner.com/talks.html] - image:./images/checkmarkgreen.png[ok,30,30]
 
 http://github.com/larrytheliquid/dataflow/tree/master[http://github.com/larrytheliquid/dataflow/tree/master] - image:./images/checkmarkgreen.png[ok,30,30]
+
+''''
 
 == link:./demos.html[Demos.html Page]
 
@@ -198,6 +213,8 @@ http://gparsdocs.de.a9sapp.eu/Download.html[http://gparsdocs.de.a9sapp.eu/Downlo
  
 http://gparsdocs.de.a9sapp.eu/Download.html[http://gparsdocs.de.a9sapp.eu/Download.html] - image:./images/checkmarkgreen.png[ok,30,30]
 
+
+''''
 
 == link:./developer_zone.html[Developer_Zone.html Page]
 
@@ -241,6 +258,8 @@ https://groups.google.com/forum/\#!forum/gpars-users[https://groups.google.com/f
 https://groups.google.com/forum/\#!forum/gpars-developers[https://groups.google.com/forum/#!forum/gpars-developers] - image:./images/checkmarkgreen.png[ok,30,30]
 
 
+''''
+
 == link:./events.html[Events.html Page]
  
 http://greach.es/[http://greach.es/] - image:./images/checkmarkgreen.png[ok,30,30]
@@ -277,6 +296,8 @@ http://www.jax.de[http://www.jax.de] - image:./images/checkmarkgreen.png[ok,30,3
 
 http://www.devoxx.com/display/DV09/Quickie+Day+1[http://www.devoxx.com/display/DV09/Quickie+Day+1] - image:./images/redcross.png[bad,30,30]
 
+''''
+
 == link:./gpars_history.html[GPars_History.html Page]
 
 
@@ -292,6 +313,8 @@ http://jonasboner.com/[http://jonasboner.com/] - image:./images/checkmarkgreen.p
  
 http://www.cs.kent.ac.uk/projects/ofa/jcsp/[http://www.cs.kent.ac.uk/projects/ofa/jcsp/] - image:./images/checkmarkgreen.png[ok,30,30]
 
+''''
+
 == link:./gpars_logo.html[GPars_Logo.html Page]
 
 
@@ -303,6 +326,8 @@ https://github.com/GPars/GPars/blob/master/artwork/gpars-rgb.svg[https://github.
 
  
 https://github.com/GPars/GPars/blob/master/artwork/GPars_logo.zip[https://github.com/GPars/GPars/blob/master/artwork/GPars_logo.zip] - image:./images/checkmarkgreen.png[ok,30,30]
+
+''''
 
 == link:./index.html[index.html Page]
 
@@ -407,6 +432,8 @@ https://github.com/musketyr/gpars-appengine[https://github.com/musketyr/gpars-ap
  
 http://netty.io[http://netty.io] - image:./images/checkmarkgreen.png[ok,30,30]
 
+''''
+
 == link:./home.html[home.html Page]
 
 
@@ -424,6 +451,8 @@ http://www.apache.org/licenses/LICENSE-2.0.html[http://www.apache.org/licenses/L
 
  
 http://www.apache.org/licenses/LICENSE-2.0.html[http://www.apache.org/licenses/LICENSE-2.0.html] - image:./images/checkmarkgreen.png[ok,30,30]
+
+''''
 
 == link:./index.html[index.html Page]
 
@@ -449,11 +478,15 @@ https://twitter.com/search?q=gpars[https://twitter.com/search?q=gpars] - image:.
  
 https://plus.google.com/communities/116353116054442324591[https://plus.google.com/communities/116353116054442324591] - image:./images/checkmarkgreen.png[ok,30,30]
 
+''''
+
 == link:./java_fast_track.html[Java_Fast_Track.html Page]
 
 
  
 http://gparsdocs.de.a9sapp.eu/guide/[http://gparsdocs.de.a9sapp.eu/guide/] - image:./images/checkmarkgreen.png[ok,30,30]
+
+''''
 
 == link:./index.html[index.html Page]
 
@@ -482,6 +515,8 @@ http://www.apache.org/licenses/LICENSE-2.0.html[http://www.apache.org/licenses/L
  
 http://www.apache.org/licenses/LICENSE-2.0.html[http://www.apache.org/licenses/LICENSE-2.0.html] - image:./images/checkmarkgreen.png[ok,30,30]
 
+''''
+
 == link:./license.html[License.html Page]
 
 
@@ -491,6 +526,8 @@ http://www.vaclavpech.eu/[http://www.vaclavpech.eu/] - image:./images/checkmarkg
  
 http://www.apache.org/licenses/LICENSE-2.0[http://www.apache.org/licenses/LICENSE-2.0] - image:./images/checkmarkgreen.png[ok,30,30]
 
+''''
+
 == link:./logo_usage_policy.html[Logo_Usage_Policy.html Page]
 
 
@@ -499,6 +536,8 @@ http://www.python.org/psf/trademarks/#uses-that-never-require-approval[http://ww
 
  
 http://creativecommons.org/publicdomain/zero/1.0/[http://creativecommons.org/publicdomain/zero/1.0/] - image:./images/checkmarkgreen.png[ok,30,30]
+
+''''
 
 == link:./news.html[News.html Page]
 
@@ -560,6 +599,8 @@ http://people.canoo.com/mittie/gpars.mov[http://people.canoo.com/mittie/gpars.mo
 
 http://skillsmatter.com/podcast/groovy-grails/concurrent-programming-for-you-and-me[http://skillsmatter.com/podcast/groovy-grails/concurrent-programming-for-you-and-me] - image:./images/checkmarkgreen.png[ok,30,30]
 
+''''
+
 == link:./index.html[index.html Page]
 
 
@@ -574,11 +615,13 @@ http://golang.org/[http://golang.org/] - image:./images/checkmarkgreen.png[ok,30
  
 https://github.com/pveentjer/Multiverse[https://github.com/pveentjer/Multiverse] - image:./images/checkmarkgreen.png[ok,30,30]
 
+''''
+
 == link:./readme.html[README.html Page]
-
-
  
 http://cloudnines.de.a9sapp.eu/[http://cloudnines.de.a9sapp.eu/] - image:./images/checkmarkgreen.png[ok,30,30]
+
+''''
 
 == link:./sponsors.html[Sponsors.html Page]
 
@@ -592,10 +635,9 @@ http://www.jetbrains.com/teamcity/index.html[http://www.jetbrains.com/teamcity/i
 
 http://teamcity.jetbrains.com[http://teamcity.jetbrains.com] - image:./images/redcross.png[bad,30,30] - needs login
 
+''''
 
 == link:./thegparsteam.html[TheGParsTeam.html Page]
-
-
  
 http://lanyrd.com/speakers/gpars/[http://lanyrd.com/speakers/gpars/] - image:./images/checkmarkgreen.png[ok,30,30]
 
@@ -615,8 +657,9 @@ http://www.itzinteractive.com[http://www.itzinteractive.com] - image:./images/ch
 
 http://pl.linkedin.com/pub/rafa%C5%82-s%C5%82awik/5b/9b1/a/[http://pl.linkedin.com/pub/rafa%C5%82-s%C5%82awik/5b/9b1/a/] - image:./images/checkmarkgreen.png[ok,30,30]
 
-== link:./user_voices.html[User_Voices.html Page]
+''''
 
+== link:./user_voices.html[User_Voices.html Page]
 
  
 http://leanjavaengineering.wordpress.com/2010/10/06/groovy-salesforce-api[http://leanjavaengineering.wordpress.com/2010/10/06/groovy-salesforce-api] - image:./images/checkmarkgreen.png[ok,30,30]
@@ -629,6 +672,8 @@ http://twitter.com/gblack[http://twitter.com/gblack] - image:./images/checkmarkg
 
  
 https://spreadsheets.google.com/viewform?hl=en&amp;formkey=dFdYb2U1dFo2am9OZ1NTQUFuY0lSdXc6MQ#gid=0[https://spreadsheets.google.com/viewform?hl=en&amp;formkey=dFdYb2U1dFo2am9OZ1NTQUFuY0lSdXc6MQ#gid=0] - image:./images/checkmarkgreen.png[ok,30,30]
+
+''''
 
 == link:./index.html[index.html Page]
 
@@ -667,9 +712,6 @@ http://gradle.org/[http://gradle.org/] - image:./images/checkmarkgreen.png[ok,30
 
  
 http://gradle.org/[http://gradle.org/] - image:./images/checkmarkgreen.png[ok,30,30]
-
-http://localhost:8080[http://localhost:8080] - image:./images/checkmarkgreen.png[ok,30,30]
-
  
 http://asciidoctor.org/docs/user-manual/[http://asciidoctor.org/docs/user-manual/] - image:./images/checkmarkgreen.png[ok,30,30]
 
@@ -682,7 +724,7 @@ http://asciidoctor.org/docs/user-manual/[http://asciidoctor.org/docs/user-manual
  
 http://asciidoctor.org/docs/user-manual/[http://asciidoctor.org/docs/user-manual/] - image:./images/checkmarkgreen.png[ok,30,30]
 
-http://localhost:8080/datetime[http://localhost:8080/datetime] - image:./images/checkmarkgreen.png[ok,30,30]
+link:./datetime[./datetime] - image:./images/checkmarkgreen.png[ok,30,30]
 
 
 ''''

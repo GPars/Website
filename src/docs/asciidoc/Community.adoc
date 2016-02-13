@@ -38,10 +38,20 @@ v1.2.1, 2016-01-11
 | https://www.facebook.com/GParsSolutions/ 
 | 
 
+|Twitter
+| https://twitter.com/search?q=gpars 
+| 
+
+|Google+
+| https://plus.google.com/communities/116353116054442324591 
+| 
+
 |announcements 
 | https://groups.google.com/forum/#!forum/gpars-users[GPars Users]
 |  
 |===
+
+''''
 
 ''''
 
@@ -52,6 +62,8 @@ The user mailing list was also available though http://n3.nabble.com/GPars-user-
 == Issue Tracker
 
 The http://jira.codehaus.org/browse/GPARS service for Jira has been terminated.
+
+''''
 
 == Source Code Repository
 

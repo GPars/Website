@@ -58,14 +58,14 @@ war {
 
 cloudfoundry {
 	// your credentials go here
-    username = 'james.northrop@orange.fr'                     // credentials used to join your CloudFoundry provider
+    username = ''                     // credentials used to join your CloudFoundry provider
     password = ''
     target = 'https://api.de.a9s.eu'  // cloud foundry target address for your choice of providers; this address is for anynines.com
     space = 'development'
 	file = new File('build/libs/Website.war')   // if you rename the root folder from Website then your .war filename must reflect that
     uri = 'http://gparsdocs.de.a9sapp.eu/'      // if you choose another name than gparsdocs for this site when deployed, put that new name here and in the application value below
 	application = 'GParsDocs'					// make this same as uri bit
-    memory = 340	// MB - varys depending on vendor
+    memory = 350	// MB - varys depending on vendor
     instances = 1
     // redis is the tool to provide caching in Caelyf tool but is optional and still works without it
     services {"rediscloud" { label = 'redis' 

@@ -21,16 +21,32 @@ NOTE: To download this document as a PDF - link:../quickstart/index.pdf[click he
 
 include::Actors.txt[]
 
+''''
+
 include::Agents.txt[]
+
+''''
 
 include::Csp.txt[]
 
+''''
+
 include::Dataflow.txt[]
+
+''''
 
 include::Forkjoin.txt[]
 
+''''
+
 include::Forkjoinpool.txt[]
+
+''''
 
 include::Stm.txt[]
 
+''''
+
 include::Threadpool.txt[]
+
+''''

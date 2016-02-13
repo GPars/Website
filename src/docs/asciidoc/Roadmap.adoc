@@ -20,7 +20,7 @@ v1.2.1, 2015-12-01
 
 _Date: May 9th 2014_
 
-  * Leveraging *Groovy 2.1* functionality, such as @DelegatesTo and @CompileStatic
+  * Leveraging *Groovy 2.1* functionality, such as *@DelegatesTo* and *@CompileStatic*
   * Promise API enhancements
   * Further documentation improvements
 

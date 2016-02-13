@@ -94,7 +94,7 @@
 	General Terms and Conditions applicable to Use of a Web Site.
 </p>
 
-
+<hr />
 
 <h2>
 	Privacy Policy

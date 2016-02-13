@@ -17,8 +17,11 @@ Packaged demos in Groovy:
 
 http://gparsdocs.de.a9sapp.eu/Download.html[Samples for GA releases]
 
+''''
 
-== Using *GPars* from Java - Maven-based Java API demo project
+== Using *GPars* from Java ?
+
+=== Maven-based Java API demo Project
 
 If you need to use *GPars* from Java, you may like to check out http://gparsdocs.de.a9sapp.eu/Download.html[a stand-alone maven-based Java API sample project] showing how to use *GPars* from Java and how to integrate *GPars* with Maven.
 

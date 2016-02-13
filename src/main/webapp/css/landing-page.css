@@ -21,6 +21,10 @@ h6 {
     font-weight: 700;
 }
 
+h1{
+	line-height: 44px;
+}
+
 .topnav {
     font-size: 14px; 
 }
@@ -28,6 +32,15 @@ h6 {
 .lead {
     font-size: 18px;
     font-weight: 400;
+}
+
+.GParsBlue{
+    color: #67b3fe;
+    font-weight: 900;
+}
+
+.ts{
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
 .intro-header {

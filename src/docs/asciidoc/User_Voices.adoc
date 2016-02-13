@@ -94,10 +94,6 @@ Plus it is more expressive!
 
 ''''
 
-TIP: *Feel free to add your own comments*
-
-https://spreadsheets.google.com/viewform?hl=en&formkey=dFdYb2U1dFo2am9OZ1NTQUFuY0lSdXc6MQ#gid=0[add your user voice through our form]
-
-IMPORTANT: We will be happy to add you and your project to the list of happy *GPars* users.
+TIP: *Feel free to add your own comments* https://spreadsheets.google.com/viewform?hl=en&formkey=dFdYb2U1dFo2am9OZ1NTQUFuY0lSdXc6MQ#gid=0[ through this form.]
 
 ''''

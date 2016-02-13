@@ -18,13 +18,19 @@ We're using http://www.jetbrains.com/idea/index.html[IntelliJ IDEA] by http://ww
 
 For _Continuous Integration_, which builds our software day-and-night, tests it and monitors its quality, we use http://www.jetbrains.com/teamcity/index.html[TeamCity]  hosted at the http://teamcity.jetbrains.com[public TeamCity hosting] site.
 
+''''
+
 == Codehaus
 
 Before they closed, +++http://www.codehaus.org/+++ gave us a home and provided the development ecosystem, including a git repository, a wiki, mailing-lists, etc.
 
+''''
+
 == Atlassian
 
 Atlassian provided _JIRA/Confluence/Clover/Bamboo_, which we also happily use.
+
+''''
 
 == Sponsorship and Donations
 

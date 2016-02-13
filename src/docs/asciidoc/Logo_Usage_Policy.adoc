@@ -17,6 +17,8 @@ v1.2.1, 2015-12-09
 
 _Version 1.0_
 
+''''
+
 == Introduction
 
 This document outlines the policy of the *GPars* project regarding the use of its trademarks. Any use of any *GPars* trademark must be in accordance with this policy.
@@ -45,6 +47,8 @@ trademarks of *GPars*, or expose *GPars* to liability, *GPars* may require you t
 cease all use of any *GPars* trademark, regardless of the uses allowed in this
 policy.
 
+''''
+
 == General Goals
 
 In general, we want the word mark "*GPars*" and the *GPars* logos to be used with
@@ -56,6 +60,8 @@ We do *not* want these trademarks to be used:
 * in a way that is misleading or may imply association of unrelated modules, tools, documentation, or other
   resources with the *GPars* project
 * in ways that confuse the community as to whether the *GPars* programming language is open source and free to use
+
+''''
 
 == Uses that Never Require Approval
 
@@ -71,6 +77,8 @@ true both for non-commercial and commercial uses.
 This clause overrides other clauses of this policy. However, if you have any
 doubts about your intended use of the trademarks, please link:index.html[contact the *GPars*
 team].
+
+''''
 
 == How to Use the Trademarks
 
@@ -96,6 +104,8 @@ must always be included with the logo.
 * _Derived_ logos must always be sufficiently different from the *GPars* logos to allow the community to tell
   the difference. Logos that simply change the colors or fonts are not allowed.
 * Use of _derived_ logos for user groups and conferences -- Allowed if used to refer to the *GPars* library.
+
+''''
 
 == License for this Policy
 
