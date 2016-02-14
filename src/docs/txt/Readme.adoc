@@ -1,0 +1,11 @@
+= Development Byproducts
+Jim 14Feb2016 <james.northrop@orange.fr>
+
+== *.txt* Files
+
+This is a set of textfiles used during construction of this website. They are internal and for development purposes only. Eventually they should be backed up then removed.
+
+== *.adoc* and *.html* Files
+
+These files are often mockups to findout how things will look and will be removed later.
+
