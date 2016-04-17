@@ -1,7 +1,9 @@
         </div>
 
         <div>
-	<img src="/images/divider.png"  class='divider'>
+        	<br />
+			<img src="/images/divider.png"  class='divider'>
+			<br />
         </div>
 
   <div id="bottom">
@@ -38,7 +40,7 @@
     </ul> 
   </div> 
   <div id="copyright" class="span-3">
-    GPars Installer<br />Copyright &#169; 2015<br /><a href="TheGParsTeam.html" target="_blank">The Whole GPars Team</a>
+    GPars Installer<br />Copyright &#169; 2016<br /><a href="TheGParsTeam.html" target="_blank">The Whole GPars Team</a>
   </div> 
   <div class="span-3 last"> 	
     		<p> &nbsp; </p> 

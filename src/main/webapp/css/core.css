@@ -91,6 +91,9 @@ div#right_content_sub h2 {
 	border-bottom: 1px solid #cccccc;
 }
 /* Layout ------------------------------------------------------------------ */
+#fred {
+	background: #c00080;
+}
 
 #page {
 	background: #ffffff url(../images/bg.png) repeat-x top left;
@@ -201,6 +204,13 @@ div#graphic a {
 img#gembox {
 	margin-left: 35px;
 }
+img.ipad {
+	height: 200px;
+}
+img.anynines {
+	height: 60px;
+}
+
 div#download_btn span {
 	font-size: 30px;
 	font-weight:bold;
