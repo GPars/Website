@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.3">
+<meta name="description" content="GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.">
+<meta name="author" content="The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;">
+<title>Communicating Sequential Processes</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./coderay-asciidoctor.css">
+</head>
+<body class="book toc2 toc-right">
+<div id="header">
+<h1>Communicating Sequential Processes</h1>
+<div class="details">
+<span id="author" class="author">The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;</span><br>
+<span id="revnumber">version 1.0,</span>
+<span id="revdate">2016-01-01</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_csp">CSP</a>
+<ul class="sectlevel2">
+<li><a href="#_here_s_a_concurrent_implementation_of_the_sieve_of_eratosthenes">Here&#8217;s a concurrent implementation of the Sieve of Eratosthenes</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_csp">CSP</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://en.wikipedia.org/wiki/Communicating_sequential_processes">Communicating Sequential Processes</a> (CSP) provides a formal concurrency model consisting of synchronously communicating independent processes.
+The model offers deterministic behavior plus it allows developers to combine the processes into composable and reusable components.</p>
+</div>
+<div class="paragraph">
+<p>Processes, in <strong>GPars</strong> called <em>Tasks</em>, are concurrently run independent activities, which communicate by sending data through (typically synchronous) channels.</p>
+</div>
+<div class="sect2">
+<h3 id="_here_s_a_concurrent_implementation_of_the_sieve_of_eratosthenes">Here&#8217;s a concurrent implementation of the Sieve of Eratosthenes</h3>
+<div class="listingblock">
+<div class="title">CSP Sample - Sieve of Eratosthenes</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+</pre></td>
+  <td class="code"><pre>inal <span class="type">int</span> requestedPrimeNumberCount = <span class="integer">1000</span>
+<span class="directive">final</span> DataflowQueue initialChannel = <span class="keyword">new</span> DataflowQueue()
+<span class="comment">/**
+ * Generating candidate numbers
+ */</span>
+group.task {
+    (<span class="integer">2</span>..<span class="integer">10000</span>).each {
+        initialChannel &lt;&lt; <span class="local-variable">it</span>
+    }
+    initialChannel &lt;&lt; -<span class="integer">1</span>  <span class="comment">//poisson</span>
+}
+
+<span class="comment">/**
+ * Chain a new filter for a particular prime number to the end of the Sieve
+ * @param inChannel The current end channel to consume
+ * @param prime The prime number to divide future prime candidates with
+ * @return A new channel ending the whole chain
+ */</span>
+<span class="keyword">def</span> <span class="function">filter</span>(inChannel, <span class="type">int</span> prime) {
+    <span class="keyword">def</span> outChannel = <span class="keyword">new</span> DataflowQueue()
+
+    group.task {
+        <span class="keyword">while</span> (<span class="predefined-constant">true</span>) {
+            <span class="keyword">def</span> number = inChannel.val
+            <span class="keyword">if</span> (number % prime != <span class="integer">0</span>) {
+                outChannel &lt;&lt; number
+            }
+            <span class="keyword">if</span> (number == -<span class="integer">1</span>) <span class="keyword">break</span>  <span class="comment">//handle poisson and stop</span>
+        }
+    }
+    <span class="keyword">return</span> outChannel
+}
+
+<span class="comment">/**
+ * Consume Sieve output and add additional filters for all found primes
+ */</span>
+<span class="keyword">def</span> currentOutput = initialChannel
+requestedPrimeNumberCount.times {
+    <span class="type">int</span> prime = currentOutput.val
+    println <span class="string"><span class="delimiter">&quot;</span><span class="content">Found: </span><span class="inline"><span class="inline-delimiter">$</span>prime</span><span class="delimiter">&quot;</span></span>
+    currentOutput = filter(currentOutput, prime)
+}</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>GPars</strong> tasks represent active computations. Indirect addressing through channels gives you enormous flexibility in how and when you wire tasks together. The concept of <em>Promises</em> allows tasks to easily signal events or values to other parts of your program in a thread-safe manner. CSP programms are highly deterministic, which is a very useful quality of concurrent
+programs.</p>
+</div>
+<div class="paragraph">
+<p>Tasks can be easily combined with other <strong>GPars</strong> concepts - with <em>Agents</em> to ease shared-state management or with <em>Dataflow Operators</em> to process streamed data.</p>
+</div>
+<div class="paragraph">
+<p>For further details, please refer to the <a href="./CSP.html">Groovy CSP section of this User Guide</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 1.0<br>
+Last updated 2016-01-17 22:18:22 CET
+</div>
+</div>
+</body>
+</html>

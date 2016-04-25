@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.3">
+<meta name="description" content="GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.">
+<meta name="author" content="The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;">
+<title>GPars Documentation Pages with Stale URLs</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./coderay-asciidoctor.css">
+</head>
+<body class="book toc2 toc-right">
+<div id="header">
+<h1>GPars Documentation Pages with Stale URLs</h1>
+<div class="details">
+<span id="author" class="author">The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;</span><br>
+<span id="revnumber">version 1.2.1,</span>
+<span id="revdate">2016-01-19</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#__a_href_actor_html_actor_html_page_a"><a href="./actor.html">Actor.html Page</a></a></li>
+<li><a href="#__a_href_kanbanlink_html_kanbanlink_html_page_a"><a href="./kanbanlink.html">KanbanLink.html Page</a></a></li>
+<li><a href="#__a_href_package_summary_html_package_summary_html_page_a"><a href="./package-summary.html">package-summary.html Page</a></a></li>
+<li><a href="#__a_href_index_all_html_index_all_html_page_a"><a href="./index-all.html">index-all.html Page</a></a></li>
+<li><a href="#__a_href_articles_html_articles_html_page_a"><a href="./articles.html">Articles.html Page</a></a></li>
+<li><a href="#__a_href_asynchronous_functions_html_asynchronous_functions_html_page_a"><a href="./asynchronous_functions.html">Asynchronous_Functions.html Page</a></a></li>
+<li><a href="#__a_href_code_style_html_code_style_html_page_a"><a href="./code_style.html">Code_Style.html Page</a></a></li>
+<li><a href="#__a_href_community_html_community_html_page_a"><a href="./community.html">Community.html Page</a></a></li>
+<li><a href="#__a_href_actor_html_actor_html_page_a_2"><a href="./actor.html">Actor.html Page</a></a></li>
+<li><a href="#__a_href_csp_html_csp_html_page_a"><a href="./csp.html">CSP.html Page</a></a></li>
+<li><a href="#__a_href_dataflow_html_dataflow_html_page_a"><a href="./dataflow.html">Dataflow.html Page</a></a></li>
+<li><a href="#__a_href_csp_html_csp_html_page_a_2"><a href="./csp.html">CSP.html Page</a>''''</a></li>
+<li><a href="#__a_href_dataflow_html_dataflow_html_page_a_2"><a href="./dataflow.html">Dataflow.html Page</a></a></li>
+<li><a href="#__a_href_demos_html_demos_html_page_a"><a href="./demos.html">Demos.html Page</a></a></li>
+<li><a href="#__a_href_developer_zone_html_developer_zone_html_page_a"><a href="./developer_zone.html">Developer_Zone.html Page</a></a></li>
+<li><a href="#__a_href_events_html_events_html_page_a"><a href="./events.html">Events.html Page</a></a></li>
+<li><a href="#__a_href_gpars_history_html_gpars_history_html_page_a"><a href="./gpars_history.html">GPars_History.html Page</a></a></li>
+<li><a href="#__a_href_gpars_logo_html_gpars_logo_html_page_a"><a href="./gpars_logo.html">GPars_Logo.html Page</a></a></li>
+<li><a href="#__a_href_index_html_index_html_page_a"><a href="./index.html">index.html Page</a></a></li>
+<li><a href="#__a_href_home_html_home_html_page_a"><a href="./home.html">home.html Page</a></a></li>
+<li><a href="#__a_href_index_html_index_html_page_a_2"><a href="./index.html">index.html Page</a></a></li>
+<li><a href="#__a_href_java_fast_track_html_java_fast_track_html_page_a"><a href="./java_fast_track.html">Java_Fast_Track.html Page</a></a></li>
+<li><a href="#__a_href_index_html_index_html_page_a_3"><a href="./index.html">index.html Page</a></a></li>
+<li><a href="#__a_href_license_html_license_html_page_a"><a href="./license.html">License.html Page</a></a></li>
+<li><a href="#__a_href_logo_usage_policy_html_logo_usage_policy_html_page_a"><a href="./logo_usage_policy.html">Logo_Usage_Policy.html Page</a></a></li>
+<li><a href="#__a_href_news_html_news_html_page_a"><a href="./news.html">News.html Page</a></a></li>
+<li><a href="#__a_href_presentations_html_presentations_html_page_a"><a href="./presentations.html">Presentations.html Page</a></a></li>
+<li><a href="#__a_href_index_html_index_html_page_a_4"><a href="./index.html">index.html Page</a></a></li>
+<li><a href="#__a_href_readme_html_readme_html_page_a"><a href="./readme.html">README.html Page</a></a></li>
+<li><a href="#__a_href_sponsors_html_sponsors_html_page_a"><a href="./sponsors.html">Sponsors.html Page</a></a></li>
+<li><a href="#__a_href_thegparsteam_html_thegparsteam_html_page_a"><a href="./thegparsteam.html">TheGParsTeam.html Page</a></a></li>
+<li><a href="#__a_href_user_voices_html_user_voices_html_page_a"><a href="./user_voices.html">User_Voices.html Page</a></a></li>
+<li><a href="#__a_href_index_html_index_html_page_a_5"><a href="./index.html">index.html Page</a></a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Pages with Stale URLs in /Users/jimnorthrop/Dropbox/Projects/GPars/Website/src/docs/asciidoc
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_actor_html_actor_html_page_a"><a href="./actor.html">Actor.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://ruben.savanne.be/articles/concurrency-in-erlang-scala">http://ruben.savanne.be/articles/concurrency-in-erlang-scala</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_kanbanlink_html_kanbanlink_html_page_a"><a href="./kanbanlink.html">KanbanLink.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://people.canoo.com/mittie/kanbanflow.html">http://people.canoo.com/mittie/kanbanflow.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_package_summary_html_package_summary_html_page_a"><a href="./package-summary.html">package-summary.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://people.canoo.com/mittie/kanbanflow.html">http://people.canoo.com/mittie/kanbanflow.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_index_all_html_index_all_html_page_a"><a href="./index-all.html">index-all.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://people.canoo.com/mittie/kanbanflow.html">http://people.canoo.com/mittie/kanbanflow.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_articles_html_articles_html_page_a"><a href="./articles.html">Articles.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-104729.html">https://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-104729.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.manning.com/koenig2">http://www.manning.com/koenig2</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-43529.html">http://jaxenter.com/tutorial-gpars-making-parallel-systems-groovy-and-java-friendly-43529.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://drdobbs.com/high-performance-computing/229402193">http://drdobbs.com/high-performance-computing/229402193</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.dzone.com/links/r/concurrency_and_background_tasks_in_grails.html">http://www.dzone.com/links/r/concurrency_and_background_tasks_in_grails.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.jroller.com/vaclav/entry/dataflow_speculations">http://www.jroller.com/vaclav/entry/dataflow_speculations</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.ibm.com/developerworks/java/library/j-gpars/index.html">http://www.ibm.com/developerworks/java/library/j-gpars/index.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://tech.puredanger.com/">http://tech.puredanger.com/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://fbflex.wordpress.com/2010/06/11/writing-batch-import-scripts-with-grails-gsql-and-gpars/">http://fbflex.wordpress.com/2010/06/11/writing-batch-import-scripts-with-grails-gsql-and-gpars/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://java.dzone.com/articles/flowing-data">http://java.dzone.com/articles/flowing-data</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://wordpress.transentia.com.au/wordpress/2010/03/05/playing-with-gpars/">http://wordpress.transentia.com.au/wordpress/2010/03/05/playing-with-gpars/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://java.dzone.com/articles/dont-be-afraid-try-gpars">http://java.dzone.com/articles/dont-be-afraid-try-gpars</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://hamletdarcy.blogspot.com/2010/02/testing-asynchronous-code-with-gpars.html">http://hamletdarcy.blogspot.com/2010/02/testing-asynchronous-code-with-gpars.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+exception :Forbidden
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><a href="http://www.concertant.com/blog/2009-10-08-07-15">http://www.concertant.com/blog/2009-10-08-07-15</a> - <span class="image"><img src="./images/redcross.png" alt="bad" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://groovy.dzone.com/announcements/gparalelizer-08-released">http://groovy.dzone.com/announcements/gparalelizer-08-released</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.ddj.com/go-parallel/blog/archives/2009/06/a_domainspecifi.html">http://www.ddj.com/go-parallel/blog/archives/2009/06/a_domainspecifi.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.jroller.com/vaclav/entry/another_milestone_for_gparallelizer_the">http://www.jroller.com/vaclav/entry/another_milestone_for_gparallelizer_the</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.javaworld.com/javaworld/jw-03-2009/jw-03-actor-concurrency2.html">http://www.javaworld.com/javaworld/jw-03-2009/jw-03-actor-concurrency2.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://groovy.dzone.com/news/event-based-actors-groovy">http://groovy.dzone.com/news/event-based-actors-groovy</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.jroller.com/vaclav/entry/event_based_actors_in_groovy">http://www.jroller.com/vaclav/entry/event_based_actors_in_groovy</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.jroller.com/vaclav/entry/groovy_actors_in_gparallelizer_concurrency">http://www.jroller.com/vaclav/entry/groovy_actors_in_gparallelizer_concurrency</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.jroller.com/vaclav/entry/gparallelizer_made_available">http://www.jroller.com/vaclav/entry/gparallelizer_made_available</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_asynchronous_functions_html_asynchronous_functions_html_page_a"><a href="./asynchronous_functions.html">Asynchronous_Functions.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://gparsdocs.de.a9sapp.eu/guide/#_asynchronous_invocations">http://gparsdocs.de.a9sapp.eu/guide/#_asynchronous_invocations</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_code_style_html_code_style_html_page_a"><a href="./code_style.html">Code_Style.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://teamcity.jetbrains.com/viewType.html?buildTypeId=bt183&amp;tab=buildTypeStatusDiv">http://teamcity.jetbrains.com/viewType.html?buildTypeId=bt183&amp;tab=buildTypeStatusDiv</a> - <span class="image"><img src="./images/redcross.png" alt="bad" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_community_html_community_html_page_a"><a href="./community.html">Community.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://groups.google.com/forum/#!forum/gpars-users">https://groups.google.com/forum/#!forum/gpars-users</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://gpars-user-mailing-list.19372.n3.nabble.com/">http://gpars-user-mailing-list.19372.n3.nabble.com/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://groups.google.com/forum/#!forum/gpars-developers">https://groups.google.com/forum/#!forum/gpars-developers</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://gpars-developer-list.729030.n3.nabble.com/">http://gpars-developer-list.729030.n3.nabble.com/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/GPars/GPars">https://github.com/GPars/GPars</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.facebook.com/GParsSolutions/">https://www.facebook.com/GParsSolutions/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://groups.google.com/forum/#!forum/gpars-users">https://groups.google.com/forum/#!forum/gpars-users</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://n3.nabble.com/GPars-user-mailing-list-f19372.html">http://n3.nabble.com/GPars-user-mailing-list-f19372.html</a> - <span class="image"><img src="./images/redcross.png" alt="bad" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://jira.codehaus.org/browse/GPARS">http://jira.codehaus.org/browse/GPARS</a> - <span class="image"><img src="./images/redcross.png" alt="bad" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/GPars/GPars">https://github.com/GPars/GPars</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_actor_html_actor_html_page_a_2"><a href="./actor.html">Actor.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://ruben.savanne.be/articles/concurrency-in-erlang-scala">http://ruben.savanne.be/articles/concurrency-in-erlang-scala</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_csp_html_csp_html_page_a"><a href="./csp.html">CSP.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://en.wikipedia.org/wiki/Communicating_sequential_processes">http://en.wikipedia.org/wiki/Communicating_sequential_processes</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_dataflow_html_dataflow_html_page_a"><a href="./dataflow.html">Dataflow.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://www.jonasboner.com">http://www.jonasboner.com</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/jboner/scala-dataflow/">https://github.com/jboner/scala-dataflow/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://jonasboner.com/talks.html">http://jonasboner.com/talks.html</a> - <span class="image"><img src="./images/redcross.png" alt="bad" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://github.com/larrytheliquid/dataflow/tree/master">http://github.com/larrytheliquid/dataflow/tree/master</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_csp_html_csp_html_page_a_2"><a href="./csp.html">CSP.html Page</a>''''</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://en.wikipedia.org/wiki/Communicating_sequential_processes">http://en.wikipedia.org/wiki/Communicating_sequential_processes</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_dataflow_html_dataflow_html_page_a_2"><a href="./dataflow.html">Dataflow.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://www.jonasboner.com">http://www.jonasboner.com</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/jboner/scala-dataflow/">https://github.com/jboner/scala-dataflow/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://jonasboner.com/talks.html">http://jonasboner.com/talks.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://github.com/larrytheliquid/dataflow/tree/master">http://github.com/larrytheliquid/dataflow/tree/master</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_demos_html_demos_html_page_a"><a href="./demos.html">Demos.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://gparsdocs.de.a9sapp.eu/Download.html">http://gparsdocs.de.a9sapp.eu/Download.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://gparsdocs.de.a9sapp.eu/Download.html">http://gparsdocs.de.a9sapp.eu/Download.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_developer_zone_html_developer_zone_html_page_a"><a href="./developer_zone.html">Developer_Zone.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://travis-ci.org/GPars/GPars">https://travis-ci.org/GPars/GPars</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://travis-ci.org/GPars/GPars.svg?branch=master">https://travis-ci.org/GPars/GPars.svg?branch=master</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://snap-ci.com/GPars/GPars/branch/master">https://snap-ci.com/GPars/GPars/branch/master</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://snap-ci.com/GPars/GPars/branch/master/build_image">https://snap-ci.com/GPars/GPars/branch/master/build_image</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://teamcity.jetbrains.com/project.html?projectId=GPars">http://teamcity.jetbrains.com/project.html?projectId=GPars</a> - <span class="image"><img src="./images/redcross.png" alt="bad" width="30" height="30"></span> - needs logon</p>
+</div>
+<div class="paragraph">
+<p><a href="http://jira.codehaus.org/browse/GPARS">http://jira.codehaus.org/browse/GPARS</a> - <span class="image"><img src="./images/redcross.png" alt="bad" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/GPars/GPars">https://github.com/GPars/GPars</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/GPars/GPars.git">https://github.com/GPars/GPars.git</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+exception :Forbidden
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><a href="http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/">http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span> - overview page</p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.anyclient.com/download.html">http://www.anyclient.com/download.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.gpars.website/guide/">http://www.gpars.website/guide/</a> - <span class="image"><img src="./images/redcross.png" alt="bad" width="30" height="30"></span> - /guide URL not setup yet</p>
+</div>
+<div class="paragraph">
+<p><a href="https://groups.google.com/forum/#!forum/gpars-users">https://groups.google.com/forum/#!forum/gpars-users</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://groups.google.com/forum/#!forum/gpars-developers">https://groups.google.com/forum/#!forum/gpars-developers</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_events_html_events_html_page_a"><a href="./events.html">Events.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://greach.es/">http://greach.es/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://greach.es/">http://greach.es/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://skillsmatter.com/podcast/groovy-grails/gpars-vs-wild">http://skillsmatter.com/podcast/groovy-grails/gpars-vs-wild</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://gotocon.com/prague-2011/">http://gotocon.com/prague-2011/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://gotocon.com/prague-2011/presentation/Unleash%20your%20processor%28s%29">http://gotocon.com/prague-2011/presentation/Unleash%20your%20processor%28s%29</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://gotocon.com/prague-2011/presentation/Groovy%20actors%20and%20concurrent%20dataflow%20with%20GPars">http://gotocon.com/prague-2011/presentation/Groovy%20actors%20and%20concurrent%20dataflow%20with%20GPars</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://2011.geecon.org/main/home">http://2011.geecon.org/main/home</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://eu.gr8conf.org/eu2010/agenda/index">http://eu.gr8conf.org/eu2010/agenda/index</a> - <span class="image"><img src="./images/redcross.png" alt="bad" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://2010.geecon.org/main/home">http://2010.geecon.org/main/home</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.jfokus.se/jfokus/speakers.jsp#V%C3%A1clav%20Pech">http://www.jfokus.se/jfokus/speakers.jsp#V%C3%A1clav%20Pech</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.jfokus.se/jfokus/speakers.jsp#Vaclav%20Pech">http://www.jfokus.se/jfokus/speakers.jsp#Vaclav%20Pech</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.jax.de">http://www.jax.de</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span> - in German</p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.devoxx.com/display/DV09/Quickie+Day+1">http://www.devoxx.com/display/DV09/Quickie+Day+1</a> - <span class="image"><img src="./images/redcross.png" alt="bad" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_gpars_history_html_gpars_history_html_page_a"><a href="./gpars_history.html">GPars_History.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://www.vaclavpech.eu/index.html">http://www.vaclavpech.eu/index.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://code.google.com/p/gparallelizer/">http://code.google.com/p/gparallelizer/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://jonasboner.com/">http://jonasboner.com/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.cs.kent.ac.uk/projects/ofa/jcsp/">http://www.cs.kent.ac.uk/projects/ofa/jcsp/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_gpars_logo_html_gpars_logo_html_page_a"><a href="./gpars_logo.html">GPars_Logo.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://github.com/GPars/GPars/blob/master/artwork/gpars-logo.PNG">https://github.com/GPars/GPars/blob/master/artwork/gpars-logo.PNG</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/GPars/GPars/blob/master/artwork/gpars-rgb.svg">https://github.com/GPars/GPars/blob/master/artwork/gpars-rgb.svg</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/GPars/GPars/blob/master/artwork/GPars_logo.zip">https://github.com/GPars/GPars/blob/master/artwork/GPars_logo.zip</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_index_html_index_html_page_a"><a href="./index.html">index.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://gpars.org">http://gpars.org</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.apache.org/licenses/LICENSE-2.0.html">http://www.apache.org/licenses/LICENSE-2.0.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://groovy-lang.org/download.html">http://groovy-lang.org/download.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.jetbrains.net/confluence/display/GRVY/Scripting+IDE+for+DSL+awareness">http://www.jetbrains.net/confluence/display/GRVY/Scripting+IDE+for+DSL+awareness</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://groovy.dzone.com/articles/parallelize-your-arrays-with-j">http://groovy.dzone.com/articles/parallelize-your-arrays-with-j</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://github.com/thevery">http://github.com/thevery</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://en.wikipedia.org/wiki/Java_concurrency">https://en.wikipedia.org/wiki/Java_concurrency</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://en.wikipedia.org/wiki/Java_concurrency">https://en.wikipedia.org/wiki/Java_concurrency</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://en.wikipedia.org/wiki/Java_concurrency">https://en.wikipedia.org/wiki/Java_concurrency</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://blog.krecan.net/2011/03/27/visualizing-forkjoin/">http://blog.krecan.net/2011/03/27/visualizing-forkjoin/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.cs.kent.ac.uk/projects/ofa/jcsp/">http://www.cs.kent.ac.uk/projects/ofa/jcsp/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.soc.napier.ac.uk/~cs10/#_Toc271192596">http://www.soc.napier.ac.uk/~cs10/#_Toc271192596</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://ruben.savanne.be/articles/concurrency-in-erlang-scala">http://ruben.savanne.be/articles/concurrency-in-erlang-scala</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes">http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://en.wikipedia.org/wiki/Sleeping_barber_problem">http://en.wikipedia.org/wiki/Sleeping_barber_problem</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://en.wikipedia.org/wiki/Dining_philosophers_problem">http://en.wikipedia.org/wiki/Dining_philosophers_problem</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://fupeg.blogspot.com/2009/06/scala-concurrency.html">http://fupeg.blogspot.com/2009/06/scala-concurrency.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.jonasboner.com">http://www.jonasboner.com</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://blog.jcoglan.com/2013/03/30/callbacks-are-imperative-promises-are-functional-nodes-biggest-missed-opportunity/">http://blog.jcoglan.com/2013/03/30/callbacks-are-imperative-promises-are-functional-nodes-biggest-missed-opportunity/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://github.com/jboner/scala-dataflow/tree/f9a38992f5abed4df0b12f6a5293f703aa04dc33/src">http://github.com/jboner/scala-dataflow/tree/f9a38992f5abed4df0b12f6a5293f703aa04dc33/src</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://jonasboner.com/talks/state_youre_doing_it_wrong/html/all.html">http://jonasboner.com/talks/state_youre_doing_it_wrong/html/all.html</a> - <span class="image"><img src="./images/redcross.png" alt="bad" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://github.com/larrytheliquid/dataflow/tree/master">http://github.com/larrytheliquid/dataflow/tree/master</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://people.canoo.com/mittie/kanbanflow.html">http://people.canoo.com/mittie/kanbanflow.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/dataflow/KanbanFlowTest.groovy">https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/dataflow/KanbanFlowTest.groovy</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlow.groovy">https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlow.groovy</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowBroadcast.groovy">https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowBroadcast.groovy</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowCycle.groovy">https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanFlowCycle.groovy</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanLazyPrimeSequenceLoops.groovy">https://github.com/GPars/GPars/blob/master/src/test/groovy/groovyx/gpars/samples/dataflow/kanban/DemoKanbanLazyPrimeSequenceLoops.groovy</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/pveentjer/Multiverse">https://github.com/pveentjer/Multiverse</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/pveentjer/Multiverse">https://github.com/pveentjer/Multiverse</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://developers.google.com/appengine/">https://developers.google.com/appengine/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://developers.google.com/appengine/">https://developers.google.com/appengine/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/musketyr/gpars-appengine">https://github.com/musketyr/gpars-appengine</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/musketyr/gpars-appengine">https://github.com/musketyr/gpars-appengine</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://netty.io">http://netty.io</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_home_html_home_html_page_a"><a href="./home.html">home.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://gpars.website">http://gpars.website</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.apache.org/licenses/LICENSE-2.0.html">http://www.apache.org/licenses/LICENSE-2.0.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.groovy-lang.org/">http://www.groovy-lang.org/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.apache.org/licenses/LICENSE-2.0.html">http://www.apache.org/licenses/LICENSE-2.0.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.apache.org/licenses/LICENSE-2.0.html">http://www.apache.org/licenses/LICENSE-2.0.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_index_html_index_html_page_a_2"><a href="./index.html">index.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://github.com/GPars/GPars">https://github.com/GPars/GPars</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://en.wikipedia.org/wiki/Concurrent_computing">https://en.wikipedia.org/wiki/Concurrent_computing</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://en.wikipedia.org/wiki/Parallel_computing">https://en.wikipedia.org/wiki/Parallel_computing</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://gpars.website">http://gpars.website</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.facebook.com/GParsSolutions/">https://www.facebook.com/GParsSolutions/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://twitter.com/search?q=gpars">https://twitter.com/search?q=gpars</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://plus.google.com/communities/116353116054442324591">https://plus.google.com/communities/116353116054442324591</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_java_fast_track_html_java_fast_track_html_page_a"><a href="./java_fast_track.html">Java_Fast_Track.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://gparsdocs.de.a9sapp.eu/guide/">http://gparsdocs.de.a9sapp.eu/guide/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_index_html_index_html_page_a_3"><a href="./index.html">index.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://bookboon.com/">http://bookboon.com/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://bookboon.com/en/using-concurrency-and-parallelism-effectively-i-ebook">http://bookboon.com/en/using-concurrency-and-parallelism-effectively-i-ebook</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://bookboon.com/en/using-concurrency-and-parallelism-effectively-ii-ebook">http://bookboon.com/en/using-concurrency-and-parallelism-effectively-ii-ebook</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.soc.napier.ac.uk/~cs10/">http://www.soc.napier.ac.uk/~cs10/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.napier.ac.uk">http://www.napier.ac.uk</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/codehaus/jcsp">https://github.com/codehaus/jcsp</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.apache.org/licenses/LICENSE-2.0.html">http://www.apache.org/licenses/LICENSE-2.0.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.apache.org/licenses/LICENSE-2.0.html">http://www.apache.org/licenses/LICENSE-2.0.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_license_html_license_html_page_a"><a href="./license.html">License.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://www.vaclavpech.eu/">http://www.vaclavpech.eu/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_logo_usage_policy_html_logo_usage_policy_html_page_a"><a href="./logo_usage_policy.html">Logo_Usage_Policy.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://www.python.org/psf/trademarks/#uses-that-never-require-approval">http://www.python.org/psf/trademarks/#uses-that-never-require-approval</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_news_html_news_html_page_a"><a href="./news.html">News.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://drdobbs.com/high-performance-computing/229402193">http://drdobbs.com/high-performance-computing/229402193</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_presentations_html_presentations_html_page_a"><a href="./presentations.html">Presentations.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://www.youtube.com/watch?v=unUJwAAtLcM&amp;feature=youtu.be">https://www.youtube.com/watch?v=unUJwAAtLcM&amp;feature=youtu.be</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.slideshare.net/VaclavPech/g-pars-howto">http://www.slideshare.net/VaclavPech/g-pars-howto</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://gr8conf.eu/Presentations/GPars-how-to-guide">http://gr8conf.eu/Presentations/GPars-how-to-guide</a> - <span class="image"><img src="./images/redcross.png" alt="bad" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.slideshare.net/VaclavPech/gpars-workshop-21832702">http://www.slideshare.net/VaclavPech/gpars-workshop-21832702</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.youtube.com/watch?v=0St2X1DJhpA">http://www.youtube.com/watch?v=0St2X1DJhpA</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://skillsmatter.com/podcast/home/gpars-vs-wild/te-6299">http://skillsmatter.com/podcast/home/gpars-vs-wild/te-6299</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.java-tv.com/2012/10/01/groovy-and-concurrency-with-gpars/">http://www.java-tv.com/2012/10/01/groovy-and-concurrency-with-gpars/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_UnleashYourProcessors.pdf">http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_UnleashYourProcessors.pdf</a> - <span class="image"><img src="./images/redcross.png" alt="bad" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_GroovyActorsAndConcurrentDataflowWithGPars.pdf">http://gotocon.com/dl/goto-prague-2011/slides/VclavPech_GroovyActorsAndConcurrentDataflowWithGPars.pdf</a> - <span class="image"><img src="./images/redcross.png" alt="bad" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.russel.org.uk/Presentations/JAXLondond2011_2011-11-01_justKeepPassingTheMessages.pdf">http://www.russel.org.uk/Presentations/JAXLondond2011_2011-11-01_justKeepPassingTheMessages.pdf</a> - <span class="image"><img src="./images/redcross.png" alt="bad" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.slideshare.net/gr8conf/g-pars-vaclavpech2011">http://www.slideshare.net/gr8conf/g-pars-vaclavpech2011</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.slideshare.net/mpassell/gpars-for-beginners">http://www.slideshare.net/mpassell/gpars-for-beginners</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.slideshare.net/VaclavPech/pick-up-the-lowhanging-concurrency-fruit">http://www.slideshare.net/VaclavPech/pick-up-the-lowhanging-concurrency-fruit</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.slideshare.net/paulk_asert/groovy-and-concurrency">http://www.slideshare.net/paulk_asert/groovy-and-concurrency</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://accu.org">http://accu.org</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.slideshare.net/VaclavPech/gpars-concepts-explained">http://www.slideshare.net/VaclavPech/gpars-concepts-explained</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://cdn.oreillystatic.com/en/assets/1/event/45/GPars%20-%20Groovy%20Concurrency%20Presentation.pdf">http://cdn.oreillystatic.com/en/assets/1/event/45/GPars%20-%20Groovy%20Concurrency%20Presentation.pdf</a> - <span class="image"><img src="./images/redcross.png" alt="bad" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://people.canoo.com/mittie/gpars.mov">http://people.canoo.com/mittie/gpars.mov</a> - <span class="image"><img src="./images/redcross.png" alt="bad" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://skillsmatter.com/podcast/groovy-grails/concurrent-programming-for-you-and-me">http://skillsmatter.com/podcast/groovy-grails/concurrent-programming-for-you-and-me</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_index_html_index_html_page_a_4"><a href="./index.html">index.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://www.cs.kent.ac.uk/projects/ofa/jcsp/">http://www.cs.kent.ac.uk/projects/ofa/jcsp/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://en.wikipedia.org/wiki/Communicating_sequential_processes">http://en.wikipedia.org/wiki/Communicating_sequential_processes</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://golang.org/">http://golang.org/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/pveentjer/Multiverse">https://github.com/pveentjer/Multiverse</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_readme_html_readme_html_page_a"><a href="./readme.html">README.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://cloudnines.de.a9sapp.eu/">http://cloudnines.de.a9sapp.eu/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_sponsors_html_sponsors_html_page_a"><a href="./sponsors.html">Sponsors.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://www.jetbrains.com/idea/index.html">http://www.jetbrains.com/idea/index.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.jetbrains.com/">http://www.jetbrains.com/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.jetbrains.com/teamcity/index.html">http://www.jetbrains.com/teamcity/index.html</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://teamcity.jetbrains.com">http://teamcity.jetbrains.com</a> - <span class="image"><img src="./images/redcross.png" alt="bad" width="30" height="30"></span> - needs login</p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_thegparsteam_html_thegparsteam_html_page_a"><a href="./thegparsteam.html">TheGParsTeam.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://lanyrd.com/speakers/gpars/">http://lanyrd.com/speakers/gpars/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.jetbrains.com/">http://www.jetbrains.com/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.canoo.com">http://www.canoo.com</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://groovy.canoo.com/gina">http://groovy.canoo.com/gina</a> - <span class="image"><img src="./images/redcross.png" alt="bad" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.manning.com/koenig2">http://www.manning.com/koenig2</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.itzinteractive.com">http://www.itzinteractive.com</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://pl.linkedin.com/pub/rafa%C5%82-s%C5%82awik/5b/9b1/a/">http://pl.linkedin.com/pub/rafa%C5%82-s%C5%82awik/5b/9b1/a/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_user_voices_html_user_voices_html_page_a"><a href="./user_voices.html">User_Voices.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://leanjavaengineering.wordpress.com/2010/10/06/groovy-salesforce-api">http://leanjavaengineering.wordpress.com/2010/10/06/groovy-salesforce-api</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.jcraft.com/jsch/">http://www.jcraft.com/jsch/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://twitter.com/gblack">http://twitter.com/gblack</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://spreadsheets.google.com/viewform?hl=en&amp;formkey=dFdYb2U1dFo2am9OZ1NTQUFuY0lSdXc6MQ#gid=0">https://spreadsheets.google.com/viewform?hl=en&amp;formkey=dFdYb2U1dFo2am9OZ1NTQUFuY0lSdXc6MQ#gid=0</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__a_href_index_html_index_html_page_a_5"><a href="./index.html">index.html Page</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://asciidoctor.org/docs/user-manual/">http://asciidoctor.org/docs/user-manual/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/GPars/gpars.github.io">https://github.com/GPars/gpars.github.io</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://asciidoctor.org/docs/user-manual/">http://asciidoctor.org/docs/user-manual/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://gradle.org/">http://gradle.org/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.cloudfoundry.org/">https://www.cloudfoundry.org/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.ibm.com/cloud-computing/bluemix/">http://www.ibm.com/cloud-computing/bluemix/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="https://run.pivotal.io/">https://run.pivotal.io/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.anynines.com/">http://www.anynines.com/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://gradle.org/">http://gradle.org/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://gradle.org/">http://gradle.org/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://gradle.org/">http://gradle.org/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://gradle.org/">http://gradle.org/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://asciidoctor.org/docs/user-manual/">http://asciidoctor.org/docs/user-manual/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://asciidoctor.org/docs/user-manual/">http://asciidoctor.org/docs/user-manual/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://asciidoctor.org/docs/user-manual/">http://asciidoctor.org/docs/user-manual/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="http://asciidoctor.org/docs/user-manual/">http://asciidoctor.org/docs/user-manual/</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<div class="paragraph">
+<p><a href="./datetime">./datetime</a> - <span class="image"><img src="./images/checkmarkgreen.png" alt="ok" width="30" height="30"></span></p>
+</div>
+<hr>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+4778 files have 766 HREF links including 30 GPars
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 1.2.1<br>
+Last updated 2016-02-09 15:49:11 CET
+</div>
+</div>
+</body>
+</html>

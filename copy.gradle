@@ -1,0 +1,40 @@
+/*
+ To manually create this website using this script :
+
+ cd /Users/jim/Dropbox/Project/Website
+ gradlew copy.gradle
+ 
+ This code is not quite complete - may need to add a few missing 'include's below ! 
+*/
+
+defaultTasks  'copier'
+
+repositories {
+  mavenCentral()
+}
+
+
+dependencies {
+    //compile "org.codehaus.groovy:groovy-all:2.4.5"
+}
+
+task website(type: Copy) {
+    into "${buildDir}/website"
+	from ("$projectDir/src/main/webapp/")
+	{ exclude "WEB-INF/**.**" }
+}
+
+task copier(type:Copy) {
+	from ("$projectDir/src/main/webapp/")
+	{
+		include '**/*.html'
+		include '**/*.pdf'
+		include '**/*.css'
+		include '**/*.txt'
+		include '**/*.gif'
+		include '**/*.png'
+		include '**/*.jpg'
+	}
+	into("$buildDir/website")
+}
+

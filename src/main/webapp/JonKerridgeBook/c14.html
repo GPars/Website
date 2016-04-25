@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.3">
+<meta name="description" content="GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.">
+<meta name="author" content="Jon Kerridge">
+<title>GPars - Groovy Parallel Systems</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./coderay-asciidoctor.css">
+</head>
+<body class="book toc2 toc-right">
+<div id="header">
+<h1>GPars - Groovy Parallel Systems</h1>
+<div class="details">
+<span id="author" class="author">Jon Kerridge</span><br>
+<span id="email" class="email"><a href="mailto:j.kerridge@napier.ac.uk">j.kerridge@napier.ac.uk</a></span><br>
+<span id="revnumber">version 1.2.1,</span>
+<span id="revdate">2015-12-02</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_barriers_and_buckets_hand_eye_co_ordination_test">Barriers and Buckets: Hand-Eye Co-ordination Test</a>
+<ul class="sectlevel2">
+<li><a href="#_three_choices">Three Choices</a></li>
+<li><a href="#_the_aim">The Aim</a></li>
+<li><a href="#_the_solution">The Solution</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_barriers_and_buckets_hand_eye_co_ordination_test">Barriers and Buckets: Hand-Eye Co-ordination Test</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In this chapter, three shared memory synchronisation techniques are combined to provide control of a highly dynamic environment.</p>
+</div>
+<div class="sect2">
+<h3 id="_three_choices">Three Choices</h3>
+<div class="paragraph">
+<p>A <strong>Barrier</strong> provides a means whereby a known number of processes collectively control their operation so they all wait at the barrier until all of them have synchronised with the barrier, at which time they are all released to run in parallel.</p>
+</div>
+<div class="paragraph">
+<p>An <strong>AltingBarrier</strong> is a specialisation of the <strong>Barrier</strong> that allows it to act also as a guard in an <strong>Alternative</strong>. Finally, a <strong>Bucket</strong> provides a flexible refinement of a barrier.</p>
+</div>
+<div class="paragraph">
+<p>Typically, there will be a collection of <strong>Buckets</strong> into which processes are placed depending upon some criterion. Another process then, subsequently, causes a <strong>Bucket</strong> to flush all its processes so they are executed in parallel.</p>
+</div>
+<div class="paragraph">
+<p>These processes will, in due course, become idle, whereupon they place themselves in other buckets. The next <strong>Bucket</strong> in sequence is then flushed and so the cycle is repeated.
+<strong>Buckets</strong> can be used to control discrete event simulations in a very simple manner.
+The process that undertakes the flushing of the buckets must not be one of the processes that can reside in a <strong>Bucket</strong>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_aim">The Aim</h3>
+<div class="paragraph">
+<p>The aim of this example is to present a user with a randomly chosen set of targets that each appear for a different random time.
+During the time the targets are available, the user clicks the mouse over each of the targets in an attempt to hit as many of the targets as possible.
+The display includes information of how many targets have been hit and the total number of targets that have been displayed.
+The targets are represented by different coloured squares on a black background and a hit target is coloured white.
+A target, that is not ‘hit’ before its self-determined random time has elapsed, is coloured grey. There is a gap between the end of one set of targets and the display of the next set during which time the screen is made all black.
+The minimum time for which a target is displayed is set by the user; obviously the longer this time the easier it is to hit the targets.
+Targets will be available for a period between the shortest time and twice that time. <code>Figure 14-1</code> shows the screen, at the point when six targets have been displayed, and none have yet been hit.
+The system has displayed a total of 88 targets of which 15 targets have been hit. The minimum target delay was 900 milliseconds. It can be deduced there are 16 targets in a 4 x 4 matrix.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_solution">The Solution</h3>
+<div class="paragraph">
+<p>The solution presumes that each target is managed by its own process and that it is these processes that are held in a <strong>Bucket</strong> until it is the turn of that <strong>Bucket</strong> to be flushed.
+When a target is enabled, it displays itself until either it is ‘hit’ by a mouse-click, in which case it turns white, or the time for which it appears elapses and it is coloured grey.
+It is obvious that each of these target processes will finish at a different time and because the number of targets is not predetermined, a barrier is used to establish when all the enabled target processes have finished.</p>
+</div>
+<div class="paragraph">
+<p>After this, the target process determines into which bucket it is going fall and thereby remains inactive until that bucket is flushed. The other processes used in the solution are shown in <code>Figure 14-2</code>.</p>
+</div>
+<hr>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Want to read more of this chapter? <a href="pdf/C14.pdf">Download this chapter&#8217;s PDF here.</a>
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 1.2.1<br>
+Last updated 2016-01-17 22:18:22 CET
+</div>
+</div>
+</body>
+</html>
