@@ -1,8 +1,10 @@
-# Website V1.0.2
+# Website V1.0.3
 Source for the GPars Website
 
-17 Apr. 2016 - JNorthr
+26 Apr. 2016 - JNorthr
 Project GPars Documentation - rework using asciidoctor markup.
+
+This is a rebuild of full set of *.pdf and *.html pieces. These can be found in src/main/webapp and it's sub-folders. There may be a few missing pieces as the copy.gradle script is not quite there yet. Still in progress.
 
 Several sets of changes and improvments are pending. None are critical and relate to performance or size of distributed website. There are also numerous absolete pieces  to be removed. Eventually, all code samples should be made visible in our documents.
 
