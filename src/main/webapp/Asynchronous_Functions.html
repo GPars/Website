@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.3">
+<meta name="description" content="GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.">
+<meta name="author" content="The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;">
+<title>Asynchronous Functions</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./coderay-asciidoctor.css">
+</head>
+<body class="book toc2 toc-right">
+<div id="header">
+<h1>Asynchronous Functions</h1>
+<div class="details">
+<span id="author" class="author">The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;</span><br>
+<span id="revnumber">version 1.2.0,</span>
+<span id="revdate">2016-01-11</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_usage_of_asynchronous_functions">Usage of Asynchronous functions</a>
+<ul class="sectlevel2">
+<li><a href="#_closures_enhancements">Closures enhancements</a></li>
+<li><a href="#_examples">Examples:</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>GPars provides several ways to run tasks in the background asynchronously.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_usage_of_asynchronous_functions">Usage of Asynchronous functions</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_closures_enhancements">Closures enhancements</h3>
+<div class="paragraph">
+<p>Groovy provides a lot of the infrastructure enabling efficient functional
+style of programming. Closures can be stored in variables, passed around as
+parameters and return values, composed, memoized, trampolined or applied
+partially.</p>
+</div>
+<div class="paragraph">
+<p>GPars adds asynchronicity to the mix. Closures can now be either synchronous or asynchronous, or, may you wish so, even both at the same time. You can mix synchronous and asynchronous closures in a single calculation
+without restrictions.</p>
+</div>
+<div class="listingblock">
+<div class="title">GParsExecutorsPool.withPool Sample</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td>
+  <td class="code"><pre>GParsExecutorsPool.withPool {
+    <span class="comment">/**
+     * The callAsync() method is an asynchronous variant
+     * of the default call() method to invoke a closure.
+     * It will return a Future for the result value.
+     */</span>
+    <span class="keyword">assert</span> <span class="integer">6</span> == {<span class="local-variable">it</span> * <span class="integer">2</span>}.call(<span class="integer">3</span>)
+    <span class="keyword">assert</span> <span class="integer">6</span> == {<span class="local-variable">it</span> * <span class="integer">2</span>}.callAsync(<span class="integer">3</span>).get()
+}</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_examples">Examples:</h3>
+<div class="listingblock">
+<div class="title">GParsPool.withPool Sample</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td>
+  <td class="code"><pre>GParsPool.withPool {
+    Closure longLastingCalculation = {calculate()}
+
+    <span class="comment">//create a new closure, which starts the original closure on a thread pool</span>
+    Closure fastCalculation = longLastingCalculation.asyncFun()
+
+    <span class="comment">//returns almost immediately</span>
+    Promise result=fastCalculation()
+
+    <span class="comment">//do stuff while calculation performs ???</span>
+    ...
+
+    <span class="comment">//finally ask for the result, blocking, if not yet available</span>
+    println result.get()
+}</pre></td>
+</tr></table></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For more details on the Asynchronous computations please visit <a href="http://gparsdocs.de.a9sapp.eu/guide/#_asynchronous_invocations">the Asynchronous Invocation section of the User Guide</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 1.2.0<br>
+Last updated 2016-01-17 22:18:22 CET
+</div>
+</div>
+</body>
+</html>

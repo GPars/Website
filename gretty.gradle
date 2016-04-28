@@ -7,7 +7,7 @@
 apply plugin: 'war'
 apply plugin: 'org.akhikhl.gretty'
 
-defaultTasks 'appRun'  // or 'appRunWar'
+defaultTasks 'appRunWar'  // or 'appRun'
 
 buildscript {
   repositories {

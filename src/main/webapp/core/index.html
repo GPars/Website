@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.3">
+<meta name="description" content="GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.">
+<meta name="author" content="The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;">
+<title>The GPars Guide to Core Features</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./coderay-asciidoctor.css">
+</head>
+<body class="book toc2 toc-right">
+<div id="header">
+<h1>The GPars Guide to Core Features</h1>
+<div class="details">
+<span id="author" class="author">The Whole GPars Team &lt;gpars-developers@googlegroups.com&gt;</span><br>
+<span id="revnumber">version 1.2.1,</span>
+<span id="revdate">2016-01-04</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_overview">Overview</a>
+<ul class="sectlevel2">
+<li><a href="#__a_href_actor_html_the_strong_actor_strong_mechanism_a"><a href="Actor.html">The <strong>Actor</strong> Mechanism</a></a></li>
+<li><a href="#__a_href_agent_html_the_strong_agent_strong_mechanism_a"><a href="Agent.html">The <strong>Agent</strong> Mechanism</a></a></li>
+<li><a href="#__a_href_asynchronous_functions_html_the_strong_asynchronous_functions_strong_mechanism_a"><a href="Asynchronous_Functions.html">The <strong>Asynchronous_Functions</strong> Mechanism</a></a></li>
+<li><a href="#__a_href_csp_html_the_strong_csp_strong_mechanism_a"><a href="CSP.html">The <strong>CSP</strong> Mechanism</a></a></li>
+<li><a href="#__a_href_dataflow_html_the_strong_dataflow_strong_mechanism_a"><a href="Dataflow.html">The <strong>Dataflow</strong> Mechanism</a></a></li>
+<li><a href="#__a_href_forkjoin_html_the_strong_forkjoin_strong_mechanism_a"><a href="ForkJoin.html">The <strong>ForkJoin</strong> Mechanism</a></a></li>
+<li><a href="#__a_href_gparspool_html_the_strong_gparspool_strong_mechanism_a"><a href="GParsPool.html">The <strong>GParsPool</strong> Mechanism</a></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<a class="image" href="http://gpars.website/"><img src="../../images/gpars-rgb.svg" alt="GPars Logo" width="320"></a>
+</div>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_overview">Overview</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="__a_href_actor_html_the_strong_actor_strong_mechanism_a"><a href="Actor.html">The <strong>Actor</strong> Mechanism</a></h3>
+<div class="paragraph">
+<p><strong>Actors</strong> are independent isolated active objects, which mutually share no data and communicate solely by messages passing.
+The code body of each actor is executed by a random thread from a thread pool and so actors can proceed concurrently and independently.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="__a_href_agent_html_the_strong_agent_strong_mechanism_a"><a href="Agent.html">The <strong>Agent</strong> Mechanism</a></h3>
+<div class="paragraph">
+<p>In several programing languages, we find a concept of <strong>Agents</strong>, who behave like actors, taking coded functions as messages.
+After reception, the received function is run against the internal state of the <strong>Agent</strong> and the return value of the function is considered to be the new internal state of the <strong>Agent</strong>.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="__a_href_asynchronous_functions_html_the_strong_asynchronous_functions_strong_mechanism_a"><a href="Asynchronous_Functions.html">The <strong>Asynchronous_Functions</strong> Mechanism</a></h3>
+<div class="paragraph">
+<p><strong>GPars</strong> provides several ways to run tasks in the background asynchronously.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="__a_href_csp_html_the_strong_csp_strong_mechanism_a"><a href="CSP.html">The <strong>CSP</strong> Mechanism</a></h3>
+<div class="paragraph">
+<p>The <strong>CSP</strong> ( <code>Communicating Sequential Processes</code> ) concurrency concept is a message-passing model with synchronous rendezvous-type communication.
+It&#8217;s valued for its high level of determinism and the ability to compose parallel processes.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="__a_href_dataflow_html_the_strong_dataflow_strong_mechanism_a"><a href="Dataflow.html">The <strong>Dataflow</strong> Mechanism</a></h3>
+<div class="paragraph">
+<p><em>Dataflow Concurrency</em> offers an alternative concurrency model, which is inherently safe and robust.
+It puts an emphasis on the data and their flow though your processes</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="__a_href_forkjoin_html_the_strong_forkjoin_strong_mechanism_a"><a href="ForkJoin.html">The <strong>ForkJoin</strong> Mechanism</a></h3>
+<div class="paragraph">
+<p>Our code frequently needs to manipulate collections. Lists, arrays, sets, maps, iterators, strings and lot of other data types can be viewed as collections of items.
+The common pattern to process collections is to take elements sequentially, one-by-one, and make an action for each of the items in row.</p>
+</div>
+<div class="paragraph">
+<p>Thanks to <strong>Groovy</strong>, a number of methods are currently supported for <code>Parallel Collection Processing</code>.</p>
+</div>
+<hr>
+</div>
+<div class="sect2">
+<h3 id="__a_href_gparspool_html_the_strong_gparspool_strong_mechanism_a"><a href="GParsPool.html">The <strong>GParsPool</strong> Mechanism</a></h3>
+<div class="paragraph">
+<p>On multi-core systems, we can benefit from having some tasks run asynchronously in the background, and so off-load our main thread of execution.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 1.2.1<br>
+Last updated 2016-02-09 16:17:54 CET
+</div>
+</div>
+</body>
+</html>
