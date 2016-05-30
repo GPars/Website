@@ -18,4 +18,4 @@ Most of the concurrent functionality *GPars* provides to Groovy code is also ava
 To give Java developers a head start, we prepared a gpars-mvn-java-demo-1.2.1.zip, sample pure Java project that you can grab, extract and experiment with. The maven pom file will show you how to setup necessary dependencies and the included Java classes will give you an immediate insight into the *GPars* Java API.
 See our download page  for a link to that.
 
-You may also check out the Java API section in the link:http://gparsdocs.de.a9sapp.eu/guide/[User Guide] as well as the many code examples of *GPars* use.
+You may also check out the Java API section in the link:./guide/[User Guide] as well as the many code examples of *GPars* use.
