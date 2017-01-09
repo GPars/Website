@@ -1,6 +1,6 @@
 = The GPars Quick Reference 
 The Whole GPars Team <gpars-developers@googlegroups.com>
-v1.2.1, 2015-12-04
+v2.0, 2017-02-01
 :toc: right
 :toc-title: Document Index
 :icons: font
@@ -8,7 +8,7 @@ v1.2.1, 2015-12-04
 :data-uri:
 :linkattrs:
 :leveloffset: 0
-:docslink: http://gpars.website/[GPars Documentation]
+:docslink: http://gpars.org/[GPars Documentation]
 :numbered!:
 
 image::../../images/gpars-rgb.svg[GPars Logo,320,align="center",link="./"]

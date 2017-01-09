@@ -1,13 +1,13 @@
 = GPars - Groovy Parallel Systems
 Jon Kerridge <j.kerridge@napier.ac.uk>
-v1.2.1, 2015-12-02
+v2.0, 2017-02-01
 :linkattrs:
 :linkcss:
 :toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
-:docslink: http://gpars.website/[GPars Documentation]
+:docslink: http://gpars.org/[GPars Documentation]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 
 == More Testing: Non-terminating Process Networks

@@ -1,13 +1,13 @@
 = GPars - Groovy Parallel Systems
 The Whole GPars Team <gpars-developers@googlegroups.com>
-v1.2.1, 2015-12-01
+v2.0, 2017-02-01
 :linkattrs:
 :linkcss:
 :toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
-:docslink: http://gpars.website/[GPars Documentation]
+:docslink: http://gpars.org/[GPars Documentation]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: GPars History
 
@@ -41,6 +41,6 @@ _Jon Kerridge_ from the *University of Kent* joined *GPars* and contributed his 
 
 *GPars* reached another milestones in May 2010 with the 0.10 release, 0.11 in October 2011, 0.12 in May 2011 and 1.0 in December 2012.
 
-== 2014
+== 2017
 
-The most recent release, 1.2.0 arrived in July 2014.
+The most recent release, 2.0 arrived in Feb., 2017.

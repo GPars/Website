@@ -1,13 +1,13 @@
 = GPars - Groovy Parallel Systems
 The Whole GPars Team <gpars-developers@googlegroups.com>
-v1.2.1, 2015-12-01
+v2.0, 2017-02-01
 :linkattrs:
 :linkcss:
 :toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
-:docslink: http://gpars.website/[GPars Documentation]
+:docslink: http://gpars.org/[GPars Documentation]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: Groovy Fast Track
 
@@ -30,7 +30,7 @@ Add the following line to the groovy script:
 .Use the Grape Grab Feature
 [source,groovy,linenums]
 ----
-    @Grab(group='org.codehaus.gpars', module='gpars', version='1.2.1')
+    @Grab(group='org.codehaus.gpars', module='gpars', version='2.0')
 ----
 
 == Step 3 -- Experiment with parallel collection processing
@@ -40,7 +40,7 @@ Believe it or not, now, we're ready to experiment. Try the following script, whi
 .Groovy Concurrent Sample
 [source,groovy,linenums]
 ----
-@Grab(group='org.codehaus.gpars', module='gpars', version='1.2.1')
+@Grab(group='org.codehaus.gpars', module='gpars', version='2.0')
 import groovyx.gpars.GParsPool
 
 GParsPool.withPool {

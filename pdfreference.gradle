@@ -22,7 +22,7 @@ buildscript {
 
     dependencies {
         classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.3'
-        classpath("org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.9") // for PDF's
+        classpath("org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.11") // for PDF's
     }
 }
 

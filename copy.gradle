@@ -15,7 +15,7 @@ repositories {
 
 
 dependencies {
-    //compile "org.codehaus.groovy:groovy-all:2.4.5"
+    //compile "org.codehaus.groovy:groovy-all:2.4.7"
 }
 
 task website(type: Copy) {
@@ -34,6 +34,8 @@ task copier(type:Copy) {
 		include '**/*.gif'
 		include '**/*.png'
 		include '**/*.jpg'
+		include '**/*.jpeg'
+		include '**/*.svg'
 	}
 	into("$buildDir/website")
 }

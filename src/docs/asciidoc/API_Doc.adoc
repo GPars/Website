@@ -1,13 +1,13 @@
 = GPars - Groovy Parallel Systems
 The Whole GPars Team <gpars-developers@googlegroups.com>
-v1.2.1, 2016-01-01
+v2.0, 2017-02-01
 :linkattrs:
 :linkcss:
 :toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
-:docslink: http://gpars.website/[GPars Documentation]
+:docslink: http://gpars.org/[GPars Documentation]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: API Doc
 
@@ -18,6 +18,7 @@ v1.2.1, 2016-01-01
 [cols="^20%,^40%,^40%", options="header"]
 |===
 |Version | Javadoc | Groovydoc
+| 2.0 GA   | link:downloads/gpars-2.0/gpars-2.0-javadoc.jar[2.0 Javadoc] | link:api/groovydoc/groovy-overview-summary.html[2.2 Groovydoc] 
 | 1.2.1 GA | link:downloads/gpars-1.2.1/gpars-1.2.1-javadoc.jar[1.2.1 Javadoc] | link:api/groovydoc/groovy-overview-summary.html[1.2.1 Groovydoc] 
 | 1.2.0 GA | link:downloads/gpars-1.2.0/gpars-1.2.0-javadoc.jar[1.2.0 Javadoc] | 1.2.0 Groovydoc - missing 
 | 1.1.0 GA | link:downloads/gpars-1.1.0/gpars-1.1.0-javadoc.jar[1.1.0 Javadoc] | 1.1.0 Groovydoc - missing 

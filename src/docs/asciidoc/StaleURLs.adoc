@@ -1,6 +1,6 @@
 = GPars - Groovy Parallel Systems
 The Whole GPars Team <gpars-developers@googlegroups.com> 
-version 1.2.1, 2016-01-19 
+v2.0, 2017-02-01
 :linkattrs:
 :linkcss:
 :toc: right
@@ -249,7 +249,7 @@ http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/[http://repo1.maven.org/m
  
 http://www.anyclient.com/download.html[http://www.anyclient.com/download.html] - image:./images/checkmarkgreen.png[ok,30,30]
 
-http://www.gpars.website/guide/[http://www.gpars.website/guide/] - image:./images/redcross.png[bad,30,30] - /guide URL not setup yet
+http://www.gpars.org/guide/[http://www.gpars.org/guide/] - image:./images/redcross.png[bad,30,30] - /guide URL not setup yet
 
  
 https://groups.google.com/forum/\#!forum/gpars-users[https://groups.google.com/forum/#!forum/gpars-users] - image:./images/checkmarkgreen.png[ok,30,30]
@@ -438,7 +438,7 @@ http://netty.io[http://netty.io] - image:./images/checkmarkgreen.png[ok,30,30]
 
 
  
-http://gpars.website[http://gpars.website] - image:./images/checkmarkgreen.png[ok,30,30]
+http://gpars.org[http://gpars.org] - image:./images/checkmarkgreen.png[ok,30,30]
 
  
 http://www.apache.org/licenses/LICENSE-2.0.html[http://www.apache.org/licenses/LICENSE-2.0.html] - image:./images/checkmarkgreen.png[ok,30,30]
@@ -467,7 +467,7 @@ https://en.wikipedia.org/wiki/Concurrent_computing[https://en.wikipedia.org/wiki
 https://en.wikipedia.org/wiki/Parallel_computing[https://en.wikipedia.org/wiki/Parallel_computing] - image:./images/checkmarkgreen.png[ok,30,30]
 
  
-http://gpars.website[http://gpars.website] - image:./images/checkmarkgreen.png[ok,30,30]
+http://gpars.org[http://gpars.org] - image:./images/checkmarkgreen.png[ok,30,30]
 
  
 https://www.facebook.com/GParsSolutions/[https://www.facebook.com/GParsSolutions/] - image:./images/checkmarkgreen.png[ok,30,30]

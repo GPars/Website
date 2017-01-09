@@ -41,14 +41,14 @@
 <body> 
 <div class="red">  &nbsp; </div>
 
-		<div><a href="http://gpars.website" target="_blank"><img src="/images/gpars-rgb-big.png"  class='divider2' style='width:33%'></a>
+		<div><a href="http://gpars.org" target="_blank"><img src="/images/gpars-rgb-big.png"  class='divider2' style='width:33%'></a>
         	</div>
 
 <div id="page"> 
   
   <div id="header" class="container"> 
   
-      <div class="span-4 prepend-4"><a href="http://gpars.website/"  target="_blank" title="To Homepage"><img src="/images/gparsinstaller.jpg" style="width:195px;margin-top:22px;margin-left:30px;"></a></div>     	
+      <div class="span-4 prepend-4"><a href="http://gpars.org/"  target="_blank" title="To Homepage"><img src="/images/gparsinstaller.jpg" style="width:195px;margin-top:22px;margin-left:30px;"></a></div>     	
   </div>
 
 

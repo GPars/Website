@@ -1,13 +1,13 @@
 = GPars - Groovy Parallel Systems
 The Whole GPars Team <gpars-developers@googlegroups.com>
-v1.2.1, 2015-12-01
+v2.0, 2017-02-01
 :linkattrs:
 :linkcss:
 :toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
-:docslink: http://gpars.website/[GPars Documentation]
+:docslink: http://gpars.org/[GPars Documentation]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: Grails and Griffon Fast Track
 
@@ -29,7 +29,7 @@ repositories {
     mavenRepo 'http://repository.jboss.org/maven2/'
 }
 dependencies {
-    build 'org.codehaus.gpars:gpars:1.1.0'
+    build 'org.codehaus.gpars:gpars:2.0'
 }
 ----
 
@@ -47,7 +47,7 @@ griffon.project.dependency.resolution = {
             mavenCentral()
         }
         dependencies {
-            runtime org.codehaus.gpars:gpars:1.1.0
+            runtime org.codehaus.gpars:gpars:2.0
         }
     }
 }

@@ -1,13 +1,13 @@
 = GPars - Groovy Parallel Systems
 The Whole GPars Team <gpars-developers@googlegroups.com>
-v1.2.1, 2015-12-01
+v2.0, 2017-02-01
 :linkattrs:
 :linkcss:
 :toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
-:docslink: http://gpars.website/[GPars Documentation]
+:docslink: http://gpars.org/[GPars Documentation]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: Sample Demos
 
@@ -15,7 +15,7 @@ v1.2.1, 2015-12-01
 
 Packaged demos in Groovy:
 
-http://gparsdocs.de.a9sapp.eu/Download.html[Samples for GA releases]
+link:Download.html[Samples for GA releases]
 
 ''''
 
@@ -23,7 +23,7 @@ http://gparsdocs.de.a9sapp.eu/Download.html[Samples for GA releases]
 
 === Maven-based Java API demo Project
 
-If you need to use *GPars* from Java, you may like to check out http://gparsdocs.de.a9sapp.eu/Download.html[a stand-alone maven-based Java API sample project] showing how to use *GPars* from Java and how to integrate *GPars* with Maven.
+If you need to use *GPars* from Java, you may like to check out link:Download.html[a stand-alone maven-based Java API sample project] showing how to use *GPars* from Java and how to integrate *GPars* with Maven.
 
 
 == Codebase Search

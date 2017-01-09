@@ -88,7 +88,7 @@ To use *GPars* from *Gradle* or Grapes, use the specification:
 .A *Gradle* Example
 [source,gradle,linenums]
 ----
-"org.codehaus.gpars:gpars:1.2.0"
+"org.codehaus.gpars:gpars:2.0"
 ----
 
 You may need to add our snapshot repository manually to the search list in this latter case.  Using *Maven* the dependency is:
@@ -99,7 +99,7 @@ You may need to add our snapshot repository manually to the search list in this 
 <dependency>
     <groupId>org.codehaus.gpars</groupId>
     <artifactId>gpars</artifactId>
-    <version>1.2.0</version>
+    <version>2.0</version>
 </dependency>
 ----
 
@@ -110,7 +110,7 @@ You may need to add our snapshot repository manually to the search list in this 
 *GPars* as a library depends on *Groovy* versions later than 2.2.1. Also, the *Fork/Join* concurrency library must be available. 
 This comes as standard with *Java 7*.
 
-*GPars 2.0* will depend on *Java 8* and will only be usable with *Groovy 3.0* and later.
+*GPars 2.0* will depend on *Java 8* and will only be usable with *Groovy 2.4.7* and later.
 
 Please visit the link:../Integration.html[Integration] page on our *GPars* website for more details.
 

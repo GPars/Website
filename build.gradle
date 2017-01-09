@@ -25,7 +25,7 @@ buildscript {
 
     dependencies {
         classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.3'
-        classpath("org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.10.1") // for PDF's
+        classpath("org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.11") // for PDF's
     }
 }
 
@@ -35,12 +35,12 @@ repositories {
 }
 
 dependencies {
-    compile "org.codehaus.groovy:groovy-all:2.4.5"
+    compile "org.codehaus.groovy:groovy-all:2.4.7"
 	runtime "org.jruby:jruby-complete:1.7.21"
 	runtime "com.beust:jcommander:1.48"
-    runtime "org.asciidoctor:asciidoctorj:1.5.3.2"
+    runtime "org.asciidoctor:asciidoctorj:1.5.4.1"
 
-    runtime "org.codehaus.groovy:groovy-all:2.4.5"
+    runtime "org.codehaus.groovy:groovy-all:2.4.7"
     runtime "redis.clients:jedis:2.7.2"	// potential page caching service if Redis service available on PaaS target
 }
 
@@ -67,5 +67,5 @@ asciidoctor {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '2.13'
+    gradleVersion = '3.3'
 }

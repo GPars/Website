@@ -29,10 +29,10 @@ repositories {
 
 
 dependencies {
-    compile "org.codehaus.groovy:groovy-all:2.4.5"
+    compile "org.codehaus.groovy:groovy-all:2.4.7"
 	runtime "org.jruby:jruby-complete:1.7.21"
 	runtime "com.beust:jcommander:1.48"
-    runtime "org.asciidoctor:asciidoctorj:1.5.3.2"
+    runtime "org.asciidoctor:asciidoctorj:1.5.4.1"
     runtime "redis.clients:jedis:2.7.2" // runtime failure if not included
 }
 

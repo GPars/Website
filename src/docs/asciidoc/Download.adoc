@@ -1,34 +1,35 @@
 = GPars - Groovy Parallel Systems
 The Whole GPars Team <gpars-developers@googlegroups.com>
-v1.2.1, 2016-01-05
+v2.0, 2017-02-01
 :linkattrs:
 :linkcss:
 :toc: right
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
-:docslink: http://gpars.website/[GPars Documentation]
+:docslink: http://gpars.org/[GPars Documentation]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: Download
 
 == Stable Releases
 
 .Download Individual Components
-[cols="4*", options="header", width="70", frame="topbot"]
+[cols="5*", options="header", width="70", frame="topbot"]
 |===
 |GPars 1.0.0
 |GPars 1.1.0
 |GPars 1.2.0
 |GPars 1.2.1
+|GPars 2.0
 
-m| JDK 1.5 | JDK 1.5-1.6 | JDK 1.7-1.8 | JDK 1.7-1.8 
-m|link:downloads/gpars-1.0.0/gpars-1.0.0.jar[GPars Jar File]      m|link:downloads/gpars-1.1.0/gpars-1.1.0.jar[GPars Jar File]      m|link:downloads/gpars-1.2.0/gpars-1.2.0.jar[GPars Jar File]      m|link:downloads/gpars-1.2.1/gpars-1.2.1.jar[GPars Jar File]
-m|link:downloads/gpars-1.0.0/gpars-all-1.0.0.zip[GPars All Jar]   m|link:downloads/gpars-1.1.0/gpars-all-1.1.0.zip[GPars All Jar]   m|link:downloads/gpars-1.2.0/gpars-all-1.2.0.zip[GPars All Jar]   m|link:downloads/gpars-1.2.1/gpars-all-1.2.1.zip[GPars All Jar]
-m|link:downloads/gpars-1.0.0/gpars-1.0.0-sources.jar[Source Code] m|link:downloads/gpars-1.1.0/gpars-1.1.0-sources.jar[Source Code] m|link:downloads/gpars-1.2.0/gpars-1.2.0-sources.jar[Source Code] m|link:downloads/gpars-1.2.1/gpars-1.2.1-sources.jar[Source Code]
-m|link:downloads/gpars-1.0.0/gpars-1.0.0-javadoc.jar[Java Docs]   m|link:downloads/gpars-1.1.0/gpars-1.1.0-javadoc.jar[Java Docs]   m|link:downloads/gpars-1.2.0/gpars-1.2.0-javadoc.jar[Java Docs]   m|link:downloads/gpars-1.2.1/gpars-1.2.1-javadoc.jar[Java Docs]
-m|link:downloads/gpars-1.0.0/gpars-mvn-java-demo-1.0.0.zip[Java/Maven Demo] m|link:downloads/gpars-1.1.0/gpars-mvn-java-demo-1.1.0.zip[Java/Maven Demo] m|link:downloads/gpars-1.2.0/gpars-mvn-java-demo-1.2.0.zip[Java/Maven Demo] m|link:downloads/gpars-1.2.1/gpars-mvn-java-demo-1.2.1.zip[Java/Maven Demo]
-m|link:downloads/gpars-1.0.0/gpars-samples-1.0.0.zip[Samples]     m|link:downloads/gpars-1.1.0/gpars-samples-1.1.0.zip[Samples]     m|link:downloads/gpars-1.2.0/gpars-samples-1.2.0.zip[Samples]     m|link:downloads/gpars-1.2.1/gpars-samples-1.2.1.zip[Samples]
-m|link:downloads/gpars-1.0.0/gpars-guide-1.0.0.zip[User Guide]    m|link:downloads/gpars-1.1.0/gpars-guide-1.1.0.zip[User Guide]    m|link:downloads/gpars-1.2.0/gpars-guide-1.2.0.zip[User Guide]    m|link:downloads/gpars-1.2.1/gpars-guide-1.2.1.zip[User Guide]
+m| JDK 1.5 | JDK 1.5-1.6 | JDK 1.7-1.8 | JDK 1.7-1.8 | JDK 1.8
+m|link:downloads/gpars-1.0.0/gpars-1.0.0.jar[GPars Jar File]      m|link:downloads/gpars-1.1.0/gpars-1.1.0.jar[GPars Jar File]      m|link:downloads/gpars-1.2.0/gpars-1.2.0.jar[GPars Jar File]      m|link:downloads/gpars-1.2.1/gpars-1.2.1.jar[GPars Jar File] m|link:downloads/gpars-2.0/gpars-2.0.jar[GPars Jar File]
+m|link:downloads/gpars-1.0.0/gpars-all-1.0.0.zip[GPars All Jar]   m|link:downloads/gpars-1.1.0/gpars-all-1.1.0.zip[GPars All Jar]   m|link:downloads/gpars-1.2.0/gpars-all-1.2.0.zip[GPars All Jar]   m|link:downloads/gpars-1.2.1/gpars-all-1.2.1.zip[GPars All Jar]  m|link:downloads/gpars-2.0/gpars-all-2.0.zip[GPars All Jar]
+m|link:downloads/gpars-1.0.0/gpars-1.0.0-sources.jar[Source Code] m|link:downloads/gpars-1.1.0/gpars-1.1.0-sources.jar[Source Code] m|link:downloads/gpars-1.2.0/gpars-1.2.0-sources.jar[Source Code] m|link:downloads/gpars-1.2.1/gpars-1.2.1-sources.jar[Source Code]  m|link:downloads/gpars-2.0/gpars-2.0-sources.jar[Source Code]
+m|link:downloads/gpars-1.0.0/gpars-1.0.0-javadoc.jar[Java Docs]   m|link:downloads/gpars-1.1.0/gpars-1.1.0-javadoc.jar[Java Docs]   m|link:downloads/gpars-1.2.0/gpars-1.2.0-javadoc.jar[Java Docs]   m|link:downloads/gpars-1.2.1/gpars-1.2.1-javadoc.jar[Java Docs]  m|link:downloads/gpars-2.0/gpars-2.0-javadoc.jar[Java Docs]
+m|link:downloads/gpars-1.0.0/gpars-mvn-java-demo-1.0.0.zip[Java/Maven Demo] m|link:downloads/gpars-1.1.0/gpars-mvn-java-demo-1.1.0.zip[Java/Maven Demo] m|link:downloads/gpars-1.2.0/gpars-mvn-java-demo-1.2.0.zip[Java/Maven Demo] m|link:downloads/gpars-1.2.1/gpars-mvn-java-demo-1.2.1.zip[Java/Maven Demo]  m|link:downloads/gpars-2.0/gpars-mvn-java-demo-2.0.zip[Java/Maven Demo]
+m|link:downloads/gpars-1.0.0/gpars-samples-1.0.0.zip[Samples]     m|link:downloads/gpars-1.1.0/gpars-samples-1.1.0.zip[Samples]     m|link:downloads/gpars-1.2.0/gpars-samples-1.2.0.zip[Samples]     m|link:downloads/gpars-1.2.1/gpars-samples-1.2.1.zip[Samples]  m|link:downloads/gpars-2.0/gpars-samples-2.0.zip[Samples]
+m|link:downloads/gpars-1.0.0/gpars-guide-1.0.0.zip[User Guide]    m|link:downloads/gpars-1.1.0/gpars-guide-1.1.0.zip[User Guide]    m|link:downloads/gpars-1.2.0/gpars-guide-1.2.0.zip[User Guide]    m|link:downloads/gpars-1.2.1/gpars-guide-1.2.1.zip[User Guide]    m|link:downloads/gpars-2.0/gpars-guide-2.0.zip[User Guide]
 |===
 
 ''''

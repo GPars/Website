@@ -1,13 +1,13 @@
 = GPars - Groovy Parallel Systems
 The Whole GPars Team <gpars-developers@googlegroups.com>
-v1.2.1, 2015-12-04
+v2.0, 2017-02-01
 :linkattrs:
 :linkcss:
 :toc: right
 :toc-title: Team Members
 :icons: font
 :source-highlighter: coderay
-:docslink: http://gpars.website/[GPars Documentation]
+:docslink: http://gpars.org/[GPars Documentation]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: The GPars Team
 :imagesdir: ./images
@@ -163,6 +163,33 @@ image:concurrency.png[Concurrency,150,title="Using Concurrency and Parallelism E
 ^| 
 ^| 
 ^| image:email.png[title="Jon Kerridge email", link="mailto:j.kerridge@napier.ac.uk"]
+|=== 
+
+
+''''
+
+=== Jim Northrop
+
+image:jnorthr.png[Jim Northrop,role="related thumb left"] Contract I.T. pro hacking systems for more than fifty years.
+
+Director of FairChild Computing Ltd
+
+++++
+<a target="_blank" href="https://www.openhub.net/accounts/jnorthr?ref=sample"><img alt='Open Hub profile for Jim Northrop' border='0' height='35' src='https://www.openhub.net/accounts/jnorthr/widgets/account_detailed?format=gif&amp;ref=sample' width='230'></a>
+++++
+
+.Social Media
+[cols="7*"]
+|===
+| Facebook | Twitter | Linked In | Google+ | Blog | Website | Email 
+ 
+^| image:facebook.png[title="Jim Northrop", link="https://www.facebook.com/jnorthr"]
+^| image:twitter.png[title="Jim Northrop", link="https://twitter.com/jnorthr"]
+^| 
+^| image:google.png[title="Jim Northrop", link="https://plus.google.com/u/0/+jimnorthrop"]
+^| image:blog.png[title="Jim Northrop's website", link="https://jnorthr.wordpress.com/2013/02/02/my-first-computer/"]
+^| image:website.png[title="Jim's home for sale", link="http://fabulousbrittanyhome.fr"]
+^| image:email.png[title="email for Jim Northrop", link="mailto:james.northrop@orange.fr"]
 |=== 
 
 ''''
