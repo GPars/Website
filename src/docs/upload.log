@@ -1,0 +1,81 @@
+macbook-pro:Website jimnorthrop$ cf push gpars -p build/libs/Website.war -m 320M
+Creating app gpars in org james_b_northrop_googlemail_com / space test as james.b.northrop@googlemail.com...
+OK
+
+Using route gpars.aws.ie.a9sapp.eu
+Binding gpars.aws.ie.a9sapp.eu to gpars...
+OK
+
+Uploading gpars...
+Uploading app files from: /var/folders/7v/dwvp1nbx58941gb4jwwd5glc0000gn/T/unzipped-app520998181
+Uploading 111.2M, 3337 files
+Done uploading               
+OK
+
+Starting app gpars in org james_b_northrop_googlemail_com / space test as james.b.northrop@googlemail.com...
+Downloading binary_buildpack...
+Downloading staticfile_buildpack...
+Downloading java_buildpack...
+Downloading ruby_buildpack...
+Downloading php_buildpack...
+Downloaded staticfile_buildpack
+Downloading nodejs_buildpack...
+Downloaded php_buildpack
+Downloading go_buildpack...
+Downloaded ruby_buildpack
+Downloading python_buildpack...
+Downloaded go_buildpack
+Downloaded nodejs_buildpack
+Downloaded binary_buildpack
+Downloaded java_buildpack
+Downloaded python_buildpack
+Creating container
+Successfully created container
+Downloading app package...
+Downloaded app package (150.9M)
+Staging...
+-----> Java Buildpack Version: v3.9 | https://github.com/cloudfoundry/java-buildpack.git#b050954
+-----> Downloading Open Jdk JRE 1.8.0_101 from https://java-buildpack.cloudfoundry.org/openjdk/trusty/x86_64/openjdk-1.8.0_101.tar.gz (1.5s)
+       Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.1s)
+-----> Downloading Open JDK Like Memory Calculator 2.0.2_RELEASE from https://java-buildpack.cloudfoundry.org/memory-calculator/trusty/x86_64/memory-calculator-2.0.2_RELEASE.tar.gz (0.0s)
+       Memory Settings: -Xms681574K -XX:MaxMetaspaceSize=104857K -Xss349K -Xmx681574K -XX:MetaspaceSize=104857K
+-----> Downloading Tomcat Instance 8.0.39 from https://java-buildpack.cloudfoundry.org/tomcat/tomcat-8.0.39.tar.gz (0.2s)
+       Expanding Tomcat Instance to .java-buildpack/tomcat (0.1s)
+-----> Downloading Tomcat Lifecycle Support 2.5.0_RELEASE from https://java-buildpack.cloudfoundry.org/tomcat-lifecycle-support/tomcat-lifecycle-support-2.5.0_RELEASE.jar (0.0s)
+-----> Downloading Tomcat Logging Support 2.5.0_RELEASE from https://java-buildpack.cloudfoundry.org/tomcat-logging-support/tomcat-logging-support-2.5.0_RELEASE.jar (0.7s)
+-----> Downloading Tomcat Access Logging Support 2.5.0_RELEASE from https://java-buildpack.cloudfoundry.org/tomcat-access-logging-support/tomcat-access-logging-support-2.5.0_RELEASE.jar (0.0s)
+Exit status 0
+Staging complete
+Uploading droplet, build artifacts cache...
+Uploading droplet...
+Uploading build artifacts cache...
+Uploaded build artifacts cache (52.6M)
+Uploaded droplet (197.4M)
+Uploading complete
+Destroying container
+Successfully destroyed container
+
+0 of 1 instances running, 1 starting
+1 of 1 instances running
+
+App started
+
+
+OK
+
+App gpars was started using this command `CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-2.0.2_RELEASE -memorySizes=metaspace:64m..,stack:228k.. -memoryWeights=heap:65,metaspace:10,native:15,stack:10 -memoryInitials=heap:100%,metaspace:100% -stackThreads=300 -totMemory=$MEMORY_LIMIT) &&  JAVA_HOME=$PWD/.java-buildpack/open_jdk_jre JAVA_OPTS="-Djava.io.tmpdir=$TMPDIR -XX:OnOutOfMemoryError=$PWD/.java-buildpack/open_jdk_jre/bin/killjava.sh $CALCULATED_MEMORY -Djava.endorsed.dirs=$PWD/.java-buildpack/tomcat/endorsed -Daccess.logging.enabled=false -Dhttp.port=$PORT" exec $PWD/.java-buildpack/tomcat/bin/catalina.sh run`
+
+Showing health and status for app gpars in org james_b_northrop_googlemail_com / space test as james.b.northrop@googlemail.com...
+OK
+
+requested state: started
+instances: 1/1
+usage: 320M x 1 instances
+urls: gpars.aws.ie.a9sapp.eu
+last uploaded: Thu Jan 5 20:38:01 UTC 2017
+stack: cflinuxfs2
+buildpack: java-buildpack=v3.9-https://github.com/cloudfoundry/java-buildpack.git#b050954 open-jdk-like-jre=1.8.0_101 open-jdk-like-memory-calculator=2.0.2_RELEASE tomcat-access-logging-support=2.5.0_RELEASE tomcat-instance=8.0.39 tomcat-lifecycle-support=2.5.0_R...
+
+     state     since                    cpu    memory         disk           details
+#0   running   2017-01-05 09:40:19 PM   0.0%   892K of 320M   448K of 512M
+macbook-pro:Website jimnorthrop$
