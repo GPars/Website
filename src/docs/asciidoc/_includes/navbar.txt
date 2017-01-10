@@ -40,13 +40,13 @@ image::./images/gpars-rgb.svg[GPars Logo,240,align="center",link="http://gpars.o
 	<li class="topmenu"><a href="#" title="The Nitty-Gritty of GPars">Docs</a>
 		<ul>
 		<li class="subfirst"><a href="API_Doc.html" title="API Document">API Documents</a></li>
-		<li><a href="./api/groovydoc/groovy-overview-summary.html" title="Groovy API Overview">Groovy API 2.0</a></li>
-		<li><a href="./api/javadoc/java-overview-summary.html" title="Java API Overview">Java API 2.0</a></li>
+		<li><a href="api/groovydoc/groovy-overview-summary.html" title="Groovy API Overview">Groovy API 2.0</a></li>
+		<li><a href="api/javadoc/java-overview-summary.html" title="Java API Overview">Java API 2.0</a></li>
 		<li><a href="User_Guide.html" title="User Guides from The Past">Older User Guides</a></li>
-		<li><a href="./qs" title="Briefly Covers Individual Concepts">Quick Reference V2.0</a></li>
-		<li><a href="./stale" title="old or stale links within this documentation">Stale URLs</a></li>
-		<li><a href="./jk" title="Professor Jon Kerridge Gives Us The Skinny">Tutorials</a></li>
-		<li class="sublast"><a href="./guide" title="Latest User Guide in Detail">User Guide V2.0</a></li>
+		<li><a href="quickstart/index.html" title="Briefly Covers Individual Concepts">Quick Reference V2.0</a></li>
+		<li><a href="StaleURLs.html" title="old or stale links within this documentation">Stale URLs</a></li>
+		<li><a href="JonKerridgeBook/index.html" title="Professor Jon Kerridge Gives Us The Skinny">Tutorials</a></li>
+		<li class="sublast"><a href="guide/index.html" title="Latest User Guide in Detail">User Guide V2.0</a></li>
 		</ul>
 	</li>
 	

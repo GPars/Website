@@ -96,6 +96,6 @@ Analisi, MAiA Facultat de Matematiques, Universitat de Barcelona_
 
 == Usage of Actors
 
-For more details on Actors visit link:./qs[the Actors section of our Reference Book].
+For more details on Actors visit link:./quickstart/index.html[the Actors section of our Reference Book].
 
 Please also see the numerous Actor link:Demos.html[Demos].

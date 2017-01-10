@@ -2,7 +2,7 @@
 
 image::../images/divider.png[divider,436,align="center"]
 
-== User Guide To Data Parallelism
+== User Guide To *Data Parallelism*
 
 Focusing on data instead of processes helps us create robust concurrent programs. As a programmer, you define
 your data together with functions that should be applied to it and then let the underlying machinery process

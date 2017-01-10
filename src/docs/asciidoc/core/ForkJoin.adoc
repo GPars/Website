@@ -72,4 +72,4 @@ _Fork/Join_ operations can be safely run with small number of threads thanks to 
 While a thread is blocked inside an algorithm waiting for its sub-problems to be calculated, the thread is silently returned to the pool to take on any of the available sub-problems from the task queue and process them. 
 Although the algorithm creates as many tasks as there are sub-directories and tasks wait for the sub-directory tasks to complete, as few as one thread is enough to keep the computation going and eventually calculate a valid result.
 
-If you'd like to know more, check out link:./guide/#_fork_join_2[the _Fork/Join_ section of the User Guide].
+To learn more, check out link:./guide/index.html/#_fork_join_2[the _Fork/Join_ section of the User Guide].

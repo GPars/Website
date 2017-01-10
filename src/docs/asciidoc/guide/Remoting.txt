@@ -2,7 +2,7 @@
 
 image::../images/divider.png[divider,436,align="center"]
 
-== User Guide To Remoting
+== User Guide To *Remoting*
 
 Concepts like _Actors_, _Dataflows_ and _Agents_ are not restricted just to a single VM. They provide an abstraction layer for concurrent programming that allows us to separate logic from low level synchronization code.
 These concepts can be easly extend to multiple nodes in a network.

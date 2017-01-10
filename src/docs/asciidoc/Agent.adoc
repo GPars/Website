@@ -80,4 +80,4 @@ final Thread t3 = Thread.start {
 assert 12L == conference.val
 ----
 
-For latest update, see link:./core/Agent.html[the Agent section] or the link:./qs[Agent Quick Reference] plus the respective link:Demos.html[Demos].
+For latest update, see link:./core/Agent.html[the Agent section] or the link:./quickstart/index.html[Agent Quick Reference] plus the respective link:Demos.html[Demos].

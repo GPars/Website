@@ -15,7 +15,7 @@ v2.0, 2017-02-01
 
 == User Guides
 
-This latest link:./guide[User Guide] introduces all the essential concepts and gives you details and samples on how to use *GPars* in your code.
+This latest link:./guide/index.html[User Guide] introduces all the essential concepts and gives you details and samples on how to use *GPars* in your code.
 
 Previous versions of our guide follow :
 

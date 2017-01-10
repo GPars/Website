@@ -88,7 +88,7 @@ The current challenge for *GPars* is to bring these abstractions up to the mains
 
 == A User Guide
 
-Please refer to our link:./guide[most recent User Guide] or any of our older link:User_Guide.html[User Guides] for an extensive coverage of *GPars* abstractions. You may also like a few link:Demos.html[Demos] to get a taste of what's in here for you.
+Please refer to our link:./guide/index.html[most recent User Guide] or any of our older link:User_Guide.html[User Guides] for an extensive coverage of *GPars* abstractions. You may also like a few link:Demos.html[Demos] to get a taste of what's in here for you.
 
 The framework provides straightforward *Java* or *Groovy*-based APIs to declare which parts of the code should be performed in parallel. 
 Collections can have their elements processed concurrently, closures can be turned into composable asynchronous functions and run in the background on your behalf, mutable data can be protected by agents or software transactional memory.

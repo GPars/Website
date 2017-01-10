@@ -34,13 +34,13 @@ image::./images/gpars-rgb.svg[GPars Logo,240,align="center",link="http://gpars.o
 	<li class="topmenu"><a href="#" style="height:16px;line-height:16px;"><span><img src="./css/css3menu1/blue-arrow1 right2.png" alt=""/>Docs</span></a>
 	<ul>
 		<li><a href="API_Doc.html" title="API Doc.s For All Releases">API Doc.s</a></li>
-		<li><a href="./api/groovydoc/groovy-overview-summary.html" title="Groovy API Overview">Groovy API 2.0</a></li>
-		<li><a href="./api/javadoc/java-overview-summary.html" title="Java API Overview">Java API 2.0</a></li>
+		<li><a href="api/groovydoc/groovy-overview-summary.html" title="Groovy API Overview">Groovy API 2.0</a></li>
+		<li><a href="api/javadoc/java-overview-summary.html" title="Java API Overview">Java API 2.0</a></li>
 		<li><a href="User_Guide.html" title="User Guides For Prior Releases">Prev.User Guides</a></li>
-		<li><a href="./qs" title="Briefly Covers Individual Concepts">Quick Reference V2.0</a></li>
-		<li><a href="./stale" title="Old,Stale,Missing,Obsolete Links In This Site">Stale URL List</a></li>
-		<li><a href="./jk" title="Prof.Jon Kerridge Gives Us The Skinny">Tutorials</a></li>
-		<li><a href="./guide" title="Latest User Guide In Detail">User Guide V2.0</a></li>
+		<li><a href="quickstart/index.html" title="Briefly Covers Individual Concepts">Quick Reference V2.0</a></li>
+		<li><a href="StaleURLs.html" title="Old,Stale,Missing,Obsolete Links In This Site">Stale URL List</a></li>
+		<li><a href="JonKerridgeBook/index.html" title="Prof.Jon Kerridge Gives Us The Skinny">Tutorials</a></li>
+		<li><a href="guide/index.html" title="Latest User Guide In Detail">User Guide V2.0</a></li>
 	</ul></li>
 	<li class="topmenu"><a href="#" style="height:16px;line-height:16px;"><span><img src="./css/css3menu1/blue-arrow1 right1.png" alt=""/>Help</span></a>
 	<ul>

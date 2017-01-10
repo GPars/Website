@@ -75,4 +75,4 @@ GParsExecutorsPool.withPool {
 }
 ----
 
-See the link:./guide/#_parallel_collections_2[Parallel Collection section in the User Guide] for more information.
+See the link:./guide/index.html/#_parallel_collections_2[Parallel Collection section in the User Guide] for more information.

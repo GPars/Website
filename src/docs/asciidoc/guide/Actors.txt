@@ -2,7 +2,7 @@
 
 image::../images/divider.png[divider,436,align="center"]
 
-== User Guide To Actors
+== User Guide To *Actors*
 
 *Actors* offer a message passing-based concurrency model: programs are collections of independent active objects that exchange messages and have no mutable shared state.  
 

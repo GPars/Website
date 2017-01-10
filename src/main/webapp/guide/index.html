@@ -30,7 +30,7 @@
 <li><a href="#_credits">Credits</a></li>
 </ul>
 </li>
-<li><a href="#_user_guide_to_getting_started">User Guide To Getting Started</a>
+<li><a href="#_user_guide_to_strong_getting_started_strong">User Guide To <strong>Getting Started</strong></a>
 <ul class="sectlevel2">
 <li><a href="#_a_few_assumptions">A Few Assumptions</a></li>
 <li><a href="#_ready">Ready ?</a></li>
@@ -56,7 +56,7 @@
 <li><a href="#_prerequisites">Prerequisites</a></li>
 </ul>
 </li>
-<li><a href="#_user_guide_to_data_parallelism">User Guide To Data Parallelism</a>
+<li><a href="#_user_guide_to_strong_data_parallelism_strong">User Guide To <strong>Data Parallelism</strong></a>
 <ul class="sectlevel2">
 <li><a href="#_parallel_collections_2">Parallel Collections</a></li>
 <li><a href="#_meet_parallel_arrays">Meet Parallel Arrays</a></li>
@@ -94,7 +94,7 @@
 <li><a href="#_components">Components</a></li>
 </ul>
 </li>
-<li><a href="#_user_guide_to_actors">User Guide To Actors</a>
+<li><a href="#_user_guide_to_strong_actors_strong">User Guide To <strong>Actors</strong></a>
 <ul class="sectlevel2">
 <li><a href="#_types_of_actors">Types of Actors</a></li>
 <li><a href="#_actor_threading_model">Actor Threading Model</a></li>
@@ -106,7 +106,7 @@
 <li><a href="#_classic_examples">Classic Examples</a></li>
 </ul>
 </li>
-<li><a href="#_user_guide_to_agents">User Guide To Agents</a>
+<li><a href="#_user_guide_to_strong_agents_strong">User Guide To <strong>Agents</strong></a>
 <ul class="sectlevel2">
 <li><a href="#_introduction">Introduction</a></li>
 <li><a href="#_concepts">Concepts</a></li>
@@ -121,7 +121,7 @@
 <li><a href="#_fair_and_non_fair_strong_agents_strong">Fair and Non-fair <strong>Agents</strong></a></li>
 </ul>
 </li>
-<li><a href="#_user_guide_to_dataflow">User Guide to Dataflow</a>
+<li><a href="#_user_guide_to_strong_dataflow_strong">User Guide to <strong>Dataflow</strong></a>
 <ul class="sectlevel2">
 <li><a href="#_introduction_2">Introduction</a></li>
 <li><a href="#_implementation_detail">Implementation Detail</a></li>
@@ -193,7 +193,7 @@
 <li><a href="#_google_app_engine_integration">Google App Engine Integration</a></li>
 </ul>
 </li>
-<li><a href="#_user_guide_to_remoting">User Guide To Remoting</a>
+<li><a href="#_user_guide_to_strong_remoting_strong">User Guide To <strong>Remoting</strong></a>
 <ul class="sectlevel2">
 <li><a href="#_introduction_3">Introduction</a></li>
 <li><a href="#_remote_serialization">Remote Serialization</a></li>
@@ -209,7 +209,7 @@
 <li><a href="#_general_strong_gpars_strong_tips">General <strong>GPars</strong> Tips</a>
 <ul class="sectlevel2">
 <li><a href="#_grouping_2">Grouping</a></li>
-<li><a href="#__strong_java_strong_api"><strong>Java</strong> API</a></li>
+<li><a href="#_java_api">Java API</a></li>
 <li><a href="#_performance_2">Performance</a></li>
 <li><a href="#_parallel_collections_3">Parallel Collections</a></li>
 <li><a href="#_actors_4">Actors</a></li>
@@ -218,7 +218,7 @@
 <li><a href="#_compatibility">Compatibility</a></li>
 </ul>
 </li>
-<li><a href="#_user_guide_to_the_conclusion">User Guide To The Conclusion</a></li>
+<li><a href="#_user_guide_to_strong_the_conclusion_strong">User Guide To <strong>The Conclusion</strong></a></li>
 </ul>
 </div>
 </div>
@@ -227,7 +227,7 @@
 <div class="sectionbody">
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<a class="image" href="http://gpars.website/"><img src="../../images/gpars-rgb.svg" alt="GPars Logo" width="320"></a>
+<a class="image" href="http://gpars.org/"><img src="../../images/gpars-rgb.svg" alt="GPars Logo" width="320"></a>
 </div>
 </div>
 <hr>
@@ -404,7 +404,7 @@ Many thanks to everyone!
 </div>
 </div>
 <div class="sect1">
-<h2 id="_user_guide_to_getting_started">User Guide To Getting Started</h2>
+<h2 id="_user_guide_to_strong_getting_started_strong">User Guide To <strong>Getting Started</strong></h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_a_few_assumptions">A Few Assumptions</h3>
@@ -577,7 +577,7 @@ We&#8217;re moving it to another location.</p>
 <pre class="CodeRay highlight"><code data-lang="gradle"><table class="CodeRay"><tr>
   <td class="line-numbers"><pre>1
 </pre></td>
-  <td class="code"><pre>&quot;org.codehaus.gpars:gpars:1.2.0&quot;</pre></td>
+  <td class="code"><pre>&quot;org.codehaus.gpars:gpars:2.0&quot;</pre></td>
 </tr></table></code></pre>
 </div>
 </div>
@@ -597,7 +597,7 @@ We&#8217;re moving it to another location.</p>
   <td class="code"><pre>&lt;dependency&gt;
     &lt;groupId&gt;org.codehaus.gpars&lt;/groupId&gt;
     &lt;artifactId&gt;gpars&lt;/artifactId&gt;
-    &lt;version&gt;1.2.0&lt;/version&gt;
+    &lt;version&gt;2.0&lt;/version&gt;
 &lt;/dependency&gt;</pre></td>
 </tr></table></code></pre>
 </div>
@@ -611,7 +611,7 @@ We&#8217;re moving it to another location.</p>
 This comes as standard with <strong>Java 7</strong>.</p>
 </div>
 <div class="paragraph">
-<p><strong>GPars 2.0</strong> will depend on <strong>Java 8</strong> and will only be usable with <strong>Groovy 3.0</strong> and later.</p>
+<p><strong>GPars 2.0</strong> will depend on <strong>Java 8</strong> and will only be usable with <strong>Groovy 2.4.7</strong> and later.</p>
 </div>
 <div class="paragraph">
 <p>Please visit the <a href="../Integration.html">Integration</a> page on our <strong>GPars</strong> website for more details.</p>
@@ -987,7 +987,7 @@ using asynchronous channels.</p>
 <div class="sect2">
 <h3 id="_what_s_new">What&#8217;s New</h3>
 <div class="paragraph">
-<p>The next <strong>GPars 1.3.0</strong> release introduces several enhancements and improvements on top of the previous release, mainly in the dataflow area.</p>
+<p>The next <strong>GPars</strong> release introduces several enhancements and improvements on top of the previous release, mainly in the dataflow area.</p>
 </div>
 <div class="paragraph">
 <p>Check out the JIRA release notes.</p>
@@ -1102,10 +1102,10 @@ the world forces you to write code in <strong>Java</strong>, you&#8217;ll still 
 <div class="ulist">
 <ul>
 <li>
-<p>Parallel Collection – use <em>jsr-166y</em> library&#8217;s <strong>Parallel Array</strong> directly until <strong>GPars 1.3.0</strong> becomes available</p>
+<p>Parallel Collection – use <em>jsr-166y</em> library&#8217;s <strong>Parallel Array</strong> directly until <strong>GPars 2.0</strong> becomes available</p>
 </li>
 <li>
-<p>Fork/Join – use <em>jsr-166y</em> library&#8217;s <strong>Fork/Join</strong> support directly until <strong>GPars 1.3.0</strong> becomes available</p>
+<p>Fork/Join – use <em>jsr-166y</em> library&#8217;s <strong>Fork/Join</strong> support directly until <strong>GPars 2.0</strong> becomes available</p>
 </li>
 <li>
 <p>Asynchronous functions – use <strong>Java</strong> executor services directly</p>
@@ -1613,7 +1613,7 @@ pure <strong>Java</strong> application – <a href="../Demos.html"><strong>Java<
 </div>
 </div>
 <div class="sect1">
-<h2 id="_user_guide_to_data_parallelism">User Guide To Data Parallelism</h2>
+<h2 id="_user_guide_to_strong_data_parallelism_strong">User Guide To <strong>Data Parallelism</strong></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Focusing on data instead of processes helps us create robust concurrent programs. As a programmer, you define
@@ -4860,7 +4860,7 @@ exchange messages in a synchronous manner.  GPars leverages <a href="http://www.
 </div>
 <div class="paragraph">
 <p><em>Jon Kerridge</em>, the author of the <strong>CSP</strong> implementation in <strong>GPars</strong>, provides exhaustive examples on of <strong>GroovyCSP</strong> use at
-<a href="http://www.soc.napier.ac.uk/~cs10/#_Toc271192596">www.soc.napier.ac.uk</a> or <a href="../jk">here on our local mirror page.</a></p>
+<a href="http://www.soc.napier.ac.uk/~cs10/#_Toc271192596">www.soc.napier.ac.uk</a> or <a href="../JonKerridgeBook/index.html">here on our local mirror page.</a></p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -5542,7 +5542,7 @@ sleep <span class="integer">10000</span></pre></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_user_guide_to_actors">User Guide To Actors</h2>
+<h2 id="_user_guide_to_strong_actors_strong">User Guide To <strong>Actors</strong></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><strong>Actors</strong> offer a message passing-based concurrency model: programs are collections of independent active objects that exchange messages and have no mutable shared state.</p>
@@ -9966,7 +9966,7 @@ balancer.join()</pre></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_user_guide_to_agents">User Guide To Agents</h2>
+<h2 id="_user_guide_to_strong_agents_strong">User Guide To <strong>Agents</strong></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The <strong>Agent</strong> class is a thread-safe non-blocking shared mutable state wrapper implementation inspired by
@@ -10883,7 +10883,7 @@ clubMembers.makeFair()</pre></td>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_user_guide_to_dataflow">User Guide to Dataflow</h2>
+<h2 id="_user_guide_to_strong_dataflow_strong">User Guide to <strong>Dataflow</strong></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><strong>Dataflow</strong> concurrency offers an alternative concurrency model, which is inherently safe and robust.</p>
@@ -17714,7 +17714,7 @@ With a few restrictions you can still use <strong>GPars</strong> <em>actors, dat
 </div>
 </div>
 <div class="sect1">
-<h2 id="_user_guide_to_remoting">User Guide To Remoting</h2>
+<h2 id="_user_guide_to_strong_remoting_strong">User Guide To <strong>Remoting</strong></h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Concepts like <em>Actors</em>, <em>Dataflows</em> and <em>Agents</em> are not restricted just to a single VM. They provide an abstraction layer for concurrent programming that allows us to separate logic from low level synchronization code.
@@ -18251,7 +18251,7 @@ Or you may wish to create your own implementation of the <em>groovyx.gpars.sched
 </div>
 </div>
 <div class="sect2">
-<h3 id="__strong_java_strong_api"><strong>Java</strong> API</h3>
+<h3 id="_java_api">Java API</h3>
 <div class="paragraph">
 <p>Much of <strong>GPars</strong> functionality can be used from <strong>Java</strong> just as well as from <strong>Groovy</strong>. Checkout the <code>Java API - Using <strong>GPars</strong> from Java</code> section of this <code>User Guide</code>.
 Then experiment with the Maven-based stand-alone Java demo applications.</p>
@@ -18600,7 +18600,7 @@ However, <strong>GParsExecutorsPool, Dataflow, Actors, Agents</strong> and <stro
 </div>
 </div>
 <div class="sect1">
-<h2 id="_user_guide_to_the_conclusion">User Guide To The Conclusion</h2>
+<h2 id="_user_guide_to_strong_the_conclusion_strong">User Guide To <strong>The Conclusion</strong></h2>
 <div class="sectionbody">
 <hr>
 <div class="admonitionblock note">
@@ -18644,7 +18644,7 @@ Now, go ahead, use <strong>GPars</strong> and have fun!
 <div id="footer">
 <div id="footer-text">
 Version 2.0<br>
-Last updated 2017-01-08 12:41:36 +01:00
+Last updated 2017-01-09 15:48:17 +01:00
 </div>
 </div>
 </body>

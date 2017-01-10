@@ -2,7 +2,7 @@
 
 image::../images/divider.png[divider,436,align="center"]
 
-== User Guide To The Conclusion
+== User Guide To *The Conclusion*
 
 ''''
 

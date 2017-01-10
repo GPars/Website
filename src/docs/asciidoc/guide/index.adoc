@@ -13,7 +13,7 @@ v2.0, 2017-02-01
 :doctitle: The GPars User Guide 
 :pdf-page-size: A4
 
-image::../../images/gpars-rgb.svg[GPars Logo,320,align="center",link="http://gpars.website/"]
+image::../../images/gpars-rgb.svg[GPars Logo,320,align="center",link="http://gpars.org/"]
 
 ''''
 

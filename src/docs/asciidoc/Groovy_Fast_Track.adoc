@@ -57,7 +57,7 @@ Run the script and you should get the following output:
 
 Now feel free to experiment by changing the regular expressions, using different collections or different methods, like _eachParallel()_, _collectParallel()_, _maxParallel()_, _sumParallel()_ and others. You get the idea, right?
 
-To find out more about parallel collection processing, visit the Parallel Collections section of the link:./guide/[User Guide].
+To find out more about parallel collection processing, visit the Parallel Collections section of the link:./guide/index.html/[User Guide].
 
 == Step 4 -- Actors
 
@@ -107,10 +107,10 @@ Our actor maintains a private counter and accepts different types of messages, w
 Sending a null value will make the actor reply the current counter value back to us. 
 Notice the _send()_ method name is optional and can be replaced by the _<<_ operator or ommited altogether.
 
-The link:./guide/#_user_guide_to_actors[Actors review] of the link:./guide/[UserGuide] will help you dive deeper into *GPars* actors.
+The link:./guide/index.html/#_user_guide_to_actors[Actors review] of the link:./guide/index.html/[UserGuide] will help you dive deeper into *GPars* actors.
 
 == Further Steps
 
-Now when you have *GPars* runing on your system, now's the time to open up the link:./guide/[User Guide], browse the *GPars* code examples and continue experimenting. 
+Now when you have *GPars* runing on your system, now's the time to open up the link:./guide/index.html/[User Guide], browse the *GPars* code examples and continue experimenting. 
 
 You may also consider checking out the link:Java_Fast_Track.html[Java Fast Track], in case you need to use *GPars* high-level concurency abstractions from Java code. Good luck!

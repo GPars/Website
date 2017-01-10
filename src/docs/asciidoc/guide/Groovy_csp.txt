@@ -11,7 +11,7 @@ exchange messages in a synchronous manner.  GPars leverages http://www.cs.kent.a
 *JCSP* library] developed at the University of Kent, UK.
 
 _Jon Kerridge_, the author of the *CSP* implementation in *GPars*, provides exhaustive examples on of *GroovyCSP* use at
-http://www.soc.napier.ac.uk/~cs10/#_Toc271192596[www.soc.napier.ac.uk] or link:../jk[here on our local mirror page.]
+http://www.soc.napier.ac.uk/~cs10/#_Toc271192596[www.soc.napier.ac.uk] or link:../JonKerridgeBook/index.html[here on our local mirror page.]
 
 .Purpose
 ****

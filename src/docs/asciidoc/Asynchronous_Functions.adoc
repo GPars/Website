@@ -61,4 +61,4 @@ GParsPool.withPool {
 }
 ----
 
-For more details on the Asynchronous computations please visit http://gparsdocs.de.a9sapp.eu/guide/#_asynchronous_invocations[the Asynchronous Invocation section of the User Guide].
+For more details on the Asynchronous computations please visit http://gpars.org/guide/index.html/#_asynchronous_invocations[the Asynchronous Invocation section of the User Guide].

@@ -57,7 +57,7 @@ TIP: There is stuff remaining to be done, so will update this list as time permi
  . update /gpars download pg: make links to each UserPost and Dev.Post show 'Read more...' and if clicked, takes user back to original post 
  . update /gpars download pg: make link to an actual page for the *FAQ* - Frequently Asked Questions
  . update front page 'Fast Track' to include *Build Tool Integration* image:../images/checkmarkgreen.png[ok,36]
- . Add Javadoc and Groovydoc API 1.2.1 to this app; Note this will create a maintenance task when deploying next vers of GPars image:../images/checkmarkgreen.png[ok,36]
+ . Add Javadoc and Groovydoc API 2.0 to this app; Note this will create a maintenance task when deploying next vers of GPars image:../images/checkmarkgreen.png[ok,36]
  . Consider social media exposure for *GPars* - added *Google+* plus *Twitter* plus *FaceBook* links on landing pg; add to bottom of each page image:../images/checkmarkgreen.png[ok,36]
  . Update Download page to show Java JVM for each *GPars* release image:../images/checkmarkgreen.png[ok,36]
   
@@ -69,7 +69,7 @@ TIP: There is stuff remaining to be done, so will update this list as time permi
  . Delete ununsed image files 
  . Update README on how to change/edit document
  . Update *To-Do* page - [red]*In progress*
- . Change all version numbers to 1.2.1  image:../images/checkmarkgreen.png[ok,36]
+ . Change all version numbers to 2.0  image:../images/checkmarkgreen.png[ok,36]
  . Add click link to each post within `Latest User Posts` and `Latest Dev.Posts` to take user directly to that post. image:../images/checkmarkgreen.png[ok,36] see *Read more...* choice
  . Develop plan to offer API, sample code, zips from internal resources folder within this website with click links to download each. *In progress*
  . Add note to _/gpars_ download page that if existing groovy already installed, user might already have *GPars* and not need to download another version image:../images/checkmarkgreen.png[ok,36]

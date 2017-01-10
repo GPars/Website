@@ -53,4 +53,4 @@ griffon.project.dependency.resolution = {
 }
 ----
 
-Once the dependency has been specified, you can start using *GPars* in your project. You may now want to check out the link:Groovy_Fast_Track.html[Groovy Fast Track] to do your first *GPars* experiments. Alternatively visit the link:./guide[User Guide] and have fun!
+Once the dependency has been specified, you can start using *GPars* in your project. You may now want to check out the link:Groovy_Fast_Track.html[Groovy Fast Track] to do your first *GPars* experiments. Alternatively visit the link:./guide/index.html[User Guide] and have fun!

@@ -9,7 +9,7 @@ The *CSP* ( _Communicating Sequential Processes_ ) concurrency concept provides 
 It is valued mainly for its high level of determinism and the ability to compose parallel processes.  
 
 *GPars* _GroovyCSP_ wraps the http://www.cs.kent.ac.uk/projects/ofa/jcsp/[JCSP library from The University of Canterbury] and builds on the work of _Jon
-Kerridge_. link:../jk[Please review his works here.]
+Kerridge_. link:../JonKerridgeBook/index.html[Please review his works here.]
 
 For more information about the *CSP* concurrency model, checkout the *CSP* section of the User Guide or refer to the links below:
 

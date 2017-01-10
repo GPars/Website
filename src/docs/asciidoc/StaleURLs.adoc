@@ -7,7 +7,7 @@ v2.0, 2017-02-01
 :toc-title: Document Index
 :icons: font
 :source-highlighter: coderay
-:docslink: http://www.gpars.web/[GPars Documentation]
+:docslink: http://gpars.org/[GPars Documentation]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: GPars Documentation Pages with Stale URLs
 
@@ -109,13 +109,6 @@ http://www.jroller.com/vaclav/entry/gparallelizer_made_available[http://www.jrol
 
 ''''
 
-== link:./asynchronous_functions.html[Asynchronous_Functions.html Page]
-
-
- 
-http://gparsdocs.de.a9sapp.eu/guide/#_asynchronous_invocations[http://gparsdocs.de.a9sapp.eu/guide/#_asynchronous_invocations] - image:./images/checkmarkgreen.png[ok,30,30]
-
-''''
 
 == link:./code_style.html[Code_Style.html Page]
 
@@ -204,18 +197,6 @@ http://github.com/larrytheliquid/dataflow/tree/master[http://github.com/larrythe
 
 ''''
 
-== link:./demos.html[Demos.html Page]
-
-
- 
-http://gparsdocs.de.a9sapp.eu/Download.html[http://gparsdocs.de.a9sapp.eu/Download.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
- 
-http://gparsdocs.de.a9sapp.eu/Download.html[http://gparsdocs.de.a9sapp.eu/Download.html] - image:./images/checkmarkgreen.png[ok,30,30]
-
-
-''''
-
 == link:./developer_zone.html[Developer_Zone.html Page]
 
 
@@ -249,7 +230,7 @@ http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/[http://repo1.maven.org/m
  
 http://www.anyclient.com/download.html[http://www.anyclient.com/download.html] - image:./images/checkmarkgreen.png[ok,30,30]
 
-http://www.gpars.org/guide/[http://www.gpars.org/guide/] - image:./images/redcross.png[bad,30,30] - /guide URL not setup yet
+http://www.gpars.org/guide/index.html[http://www.gpars.org/guide/] - image:./images/redcross.png[bad,30,30] - /guide URL not setup yet
 
  
 https://groups.google.com/forum/\#!forum/gpars-users[https://groups.google.com/forum/#!forum/gpars-users] - image:./images/checkmarkgreen.png[ok,30,30]
@@ -477,14 +458,6 @@ https://twitter.com/search?q=gpars[https://twitter.com/search?q=gpars] - image:.
 
  
 https://plus.google.com/communities/116353116054442324591[https://plus.google.com/communities/116353116054442324591] - image:./images/checkmarkgreen.png[ok,30,30]
-
-''''
-
-== link:./java_fast_track.html[Java_Fast_Track.html Page]
-
-
- 
-http://gparsdocs.de.a9sapp.eu/guide/[http://gparsdocs.de.a9sapp.eu/guide/] - image:./images/checkmarkgreen.png[ok,30,30]
 
 ''''
 

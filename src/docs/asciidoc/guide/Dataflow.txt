@@ -2,7 +2,7 @@
 
 image::../images/divider.png[divider,436,align="center"]
 
-== User Guide to Dataflow
+== User Guide to *Dataflow*
 
 *Dataflow* concurrency offers an alternative concurrency model, which is inherently safe and robust.
 

@@ -172,7 +172,7 @@ After a *proper* release, the older snapshot artifacts should be removed manuall
 
 === 8. Upload The User Guide and Docs
 
-The generated `User Guide` at _/build/docs/manual_ should be uploaded to http://gpars.org/guide/[*GPars Document Website*] .
+The generated `User Guide` at _/build/docs/manual_ should be uploaded to http://gpars.org/guide/index.html/[*GPars Document Website*] .
 
 The javadoc and groovydoc folders should be copied too
 

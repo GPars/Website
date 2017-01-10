@@ -3,7 +3,7 @@
 
 image::../images/divider.png[divider,436,align="center"]
 
-== User Guide To Agents
+== User Guide To *Agents*
 
 The *Agent* class is a thread-safe non-blocking shared mutable state wrapper implementation inspired by
 *Agents* in *Clojure*.
