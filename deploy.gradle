@@ -1,11 +1,11 @@
 /*
  Website - deploy to CloudFoundry PaaS Service provider named anynines.com @ http://gparsdocs.de.a9sapp.eu
  
- See: http://cloudnines.de.a9sapp.eu/ for tutorial on how to use this Cloud
+ See: http://gpars.aws.ie.a9sapp.eu/ for tutorial on how to use this Cloud
 
  To manually deploy this site using the CF command-line tool - :
  cd /Users/jim/Dropbox/Project/Website
- cf push GParsDocs -b https://github.com/cloudfoundry/java-buildpack.git -p build/libs/Website.war
+ cf push gpars -b https://github.com/cloudfoundry/java-buildpack.git -p build/libs/Website.war
 
  This is a sample gradle script using the gradle plugin for cloud foundry to upload our war file to target PaaS service, anynines.com in Berlin.
  

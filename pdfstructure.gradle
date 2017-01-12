@@ -1,11 +1,17 @@
 /*
-	pdfstructure.gradle script to construct a PDF document about the project folder structure of this GPars Website
+	NOTE: this script uses local jar in src/main/webapp/WEB-INF/lib to build PDFs
+
+	pdfstructure.gradle script to construct a PDF document about the project folder structure of this GPars Website (not core GPars)
 
 	from a terminal command line, 'cd' into this folder then:	
 	gradlew -b pdfstructure.gradle
 	
 	this runs the defaultTasks below using the gradle wrapper tool gradlew <or> bash ./gradlew <or> gradle tool if installed
+
+	see: http://stackoverflow.com/questions/20700053/how-to-add-local-jar-file-dependency-to-build-gradle-file
+	for more  info on using local jar in buildscript
 */
+
 apply plugin: 'org.asciidoctor.gradle.asciidoctor'
 apply plugin: 'org.asciidoctor.convert' 
 
@@ -21,7 +27,8 @@ buildscript {
 
     dependencies {
         classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.3'
-        classpath("org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.11") // for PDF's
+        classpath fileTree(dir: "$projectDir/src/main/webapp/WEB-INF/lib", include: ['*.jar'])
+        //classpath("org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.11") // for PDF's
     }
 }
 

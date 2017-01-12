@@ -53,7 +53,7 @@
 	  <div class="span-12 last"> 
     	<ul id="navbar">
 	  	<li><a href="http://gpars.org" target="_blank">About</a></li>
-  		<li><a href="http://gpars.org/download/1.2.1/" target="_blank">Download</a> </li>
+  		<li><a href="http://gpars.org/Download.html" target="_blank">Download</a> </li>
 	  	<li><a href="http://gpars.org" target="_blank">Help</a></li> 
   		<li><a href="http://gpars.org" target="_blank">Contribute</a></li> 
 		</ul>
@@ -69,7 +69,7 @@
 		<p>This is a <strong>self-contained toolkit</strong> that includes <strong>Jars</strong>, samples, documents and more.</p>
  
 	  <div> 
-    	<div id="download_btn"> <a href="http://gpars.org/download/1.2.1/" target="_blank"><span>Download</span></a> </div> 
+    	<div id="download_btn"> <a href="http://gpars.org/Download.html" target="_blank"><span>Download</span></a> </div> 
     	<div id="addon_btn"> <a href="http://www.groovy-lang.org/download.html" target="_blank"><span>Get Groovy</span></a> </div> 
   	  </div> 
 	</div>

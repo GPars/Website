@@ -1,5 +1,5 @@
 /*
-	NOTE: this script is under development and may not work yet.
+	NOTE: this script uses local jar in src/main/webapp/WEB-INF/lib to build PDFs
 
 	pdfreference.gradle script to construct a PDF document from the asciidoctor text files within the GPars website for the QuickStart Reference book
 
@@ -22,7 +22,8 @@ buildscript {
 
     dependencies {
         classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.3'
-        classpath("org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.11") // for PDF's
+        classpath fileTree(dir: "$projectDir/src/main/webapp/WEB-INF/lib", include: ['*.jar'])        
+	//classpath("org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.11") // for PDF's
     }
 }
 
