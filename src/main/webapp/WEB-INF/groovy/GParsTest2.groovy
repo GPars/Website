@@ -1,27 +1,56 @@
-import groovyx.gpars.GParsPool
+import java.io.*
+files = []
+allowed =["jar", "properties", "groovy", "pdf", "java", "zip", "txt", "adoc", "css", "png", "ico", "jpg", "svg", "html", "gif", "js", "jpeg", "psd", "less", "gtpl", "xml", "gradle", "md" ]
+fn = '/Users/jimnorthrop/Dropbox/Projects/Website';
+/*
+new File(fn).eachFileMatch(~/^.*\.adoc$/) { files << it.name };
 
-String tx="Hi Kids";
-
-int count=0;
-def result=[:];
-def starttask = System.currentTimeMillis();
-
-['k1':'v1','k2':'v2','k3':'v3','k4':'v4'].each{k,v->
-    result[k]=v;
+count = 0
+files.each{
+    count++;
+    println it;
 }
 
-GParsPool.withPool() {
+println "\n===================================\nFound $count files\n"
+*/
 
-    println "tx size()="+tx.size()+" tx="+tx
-    println "result size()="+result.size()
-    result.eachParallel(){e,v->
-        println e+"="+e.value;
-    } // end of each
+def result
+folders=0;
+count = 0;
+map=[:]
 
-    def finitask = ( System.currentTimeMillis() - starttask ) / 1000;
-    println "elapsed in "+finitask+" sec.s";
-    
-} // withPool
+findTxtFileClos = {
+
+        it.eachDir(findTxtFileClos);
+        it.eachFile() {file ->            //Match(~/.*.adoc/) {file ->
+                yn = (file.name.startsWith('.')) ? true :  false;
+                if (!yn && !file.absolutePath.contains('/.git'))
+                {
+                    count++;
+                    //println file.absolutePath;
+                    int i = file.name.lastIndexOf('.');                                                                
+                    if (i>-1) 
+                    {
+                        ss = file.name.substring(i+1).toLowerCase()
+                        println "i=$i "+ss+" ="+file.name;
+                        if(map.containsKey(ss)) {
+                          map[ss]+=1;
+                        }
+                        else
+                        {
+                            map[ss]=1;
+                        }
+                    }
+                    //result += "${file.absolutePath}\n"
+                }
+        }
+    }
+
+// Apply closure
+findTxtFileClos(new File(fn))
+println "\n===================================\nFound $count files\n"
+map.each{ k, v -> println "${k}:${v}" }
 
 
-println "--- the end ---"
+println "---  the end ---"
+//assert ['groovy1.txt', 'groovy2.txt', groovy3.txt'] == files
