@@ -12,13 +12,13 @@ v2.0, 2017-02-01
 
 == List of Future Tasks to Improve GPars Documentation
 
-=== 20 Feb.2016 - JNorthr
+=== 20 Feb.2017 - JNorthr
 
 This is an updated list of tasks to improve our `GPars Documentation` using asciidoctor markup.
 
 ''''
 
-TIP: There is stuff remaining to be done, so will update this list as time permits.
+TIP: There are items remaining to be done, so will update this list as time permits.
 
 ''''
 

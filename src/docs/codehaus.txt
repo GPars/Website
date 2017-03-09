@@ -1,0 +1,60 @@
+= Documents using the codehaus keyword
+
+./archive/asciidoc/guide/actors.adoc:Actors allow time DSL defined by org.codehaus.groovy.runtime.TimeCategory class to be used for timeout
+./archive/asciidoc/guide/getting_started.adoc:"org.codehaus.gpars:gpars:1.3.0"
+./archive/asciidoc/guide/getting_started.adoc:"org.codehaus.gpars:gpars:1.4-SNAPSHOT"
+./archive/asciidoc/guide/getting_started.adoc:    <groupId>org.codehaus.gpars</groupId>
+
+Binary file ./archive/gpars-mvn-java-demo-2.0.zip matches
+
+./asciidoc/Developer_Zone.adoc:Confirm the artifacts have been successfully uploaded for *proper* releases. Within a couple of hours the new *proper* release should be propagated into the maven central repository at http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/.
+
+./asciidoc/Grails_and_Griffon_Fast_Track.adoc:    build 'org.codehaus.gpars:gpars:2.0'
+./asciidoc/Grails_and_Griffon_Fast_Track.adoc:            runtime org.codehaus.gpars:gpars:2.0
+
+./asciidoc/Groovy_Fast_Track.adoc:    @Grab(group='org.codehaus.gpars', module='gpars', version='2.0')
+./asciidoc/Groovy_Fast_Track.adoc:@Grab(group='org.codehaus.gpars', module='gpars', version='2.0')
+./asciidoc/Groovy_Fast_Track.adoc:@Grab(group='org.codehaus.gpars', module='gpars', version='1.2.0')
+./asciidoc/Groovy_Fast_Track.adoc:import org.codehaus.groovy.runtime.NullObject
+
+./asciidoc/guide/Actors.txt:Actors allow time DSL, defined by org.codehaus.groovy.runtime.TimeCategory class, to be used for timeout specification to the _react()_ method, provided the user wraps the call within a _TimeCategory_ use block.
+
+./asciidoc/guide/Getting_started.txt:"org.codehaus.gpars:gpars:2.0"
+./asciidoc/guide/Getting_started.txt:    <groupId>org.codehaus.gpars</groupId>
+
+./asciidoc/Integration.adoc:@Grab(group='org.codehaus.gpars', module='gpars', version='2.0')
+./asciidoc/Integration.adoc:@Grab(group='org.codehaus.gpars', module='gpars', version='2.0')
+./asciidoc/Integration.adoc:*GPars* was stored in the _central maven repository_ at +++http://repo1.maven.org/maven2/org/codehaus/gpars/+++ and was also in the Codehaus _maven repository_ 
+./asciidoc/Integration.adoc:at +++http://repository.codehaus.org/org/codehaus/gpars/gpars/+++. 
+./asciidoc/Integration.adoc:        compile "org.codehaus.gpars:gpars:2.0"
+./asciidoc/Integration.adoc:        compile "org.codehaus.gpars:gpars:2.0"
+./asciidoc/Integration.adoc:            <groupId>org.codehaus.gpars</groupId>
+./asciidoc/Integration.adoc:            <groupId>org.codehaus.gpars</groupId>
+./asciidoc/Integration.adoc:        build 'org.codehaus.gpars:gpars:2.0'
+./asciidoc/Integration.adoc:                runtime org.codehaus.gpars:gpars:2.0
+./asciidoc/Integration.adoc:    <groupId>org.codehaus.gpars</groupId>
+./asciidoc/Integration.adoc:        <groupId>org.codehaus.jcsp</groupId>
+./asciidoc/Integration.adoc:        <groupId>org.codehaus.jsr166-mirror</groupId>
+./asciidoc/Integration.adoc:        <groupId>org.codehaus.groovy</groupId>
+
+./asciidoc/StaleURLs.adoc:http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/[http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/] - image:./images/checkmarkgreen.png[ok,30,30] - overview page
+
+
+./txt/AllMissingUrlsList.txt:http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/
+
+./txt/badUrlList.txt:    build 'org.codehaus.gpars:gpars:1.1.0'
+./txt/badUrlList.txt:    @Grab(group='org.codehaus.gpars', module='gpars', version='1.2.0')
+./txt/badUrlList.txt:@Grab(group='org.codehaus.gpars', module='gpars', version='1.2.1')
+./txt/badUrlList.txt:http://repo1.maven.org/maven2/org/codehaus/gpars/
+./txt/badUrlList.txt:http://repository.codehaus.org/org/codehaus/gpars/gpars/
+./txt/badUrlList.txt:runtime org.codehaus.gpars:gpars:1.2.1
+
+./txt/MissingUrlsFirst.txt:http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/
+./txt/MissingUrlsFirst.txt:URL:http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/
+./txt/MissingUrlsFirst.txt:could not get http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/ because Forbidden
+
+./txt/MissingUrlsList.txt:http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/
+./txt/MissingUrlsList.txt:http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/
+./txt/MissingUrlsList.txt:http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/
+
+./txt/Stale.txt: * http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/[http://repo1.maven.org/maven2/org/codehaus/gpars/gpars/] - [green]*ok*

@@ -29,7 +29,7 @@ repositories {
 
 
 dependencies {
-    compile "org.codehaus.groovy:groovy-all:2.4.7"
+    compile "org.codehaus.groovy:groovy-all:2.4.8"
 	runtime "org.jruby:jruby-complete:1.7.21"
 	runtime "com.beust:jcommander:1.48"
     runtime "org.asciidoctor:asciidoctorj:1.5.4.1"
@@ -40,7 +40,7 @@ gretty {
   // Possible servletContainer values are 'jetty7', 'jetty8', 'jetty9', 'tomcat7', 'tomcat8'. Default is 'jetty9'.
   servletContainer = 'jetty7'	// using jetty7 cos i only have JDK1.6+ and cannot upgrade to 1.7; if you have 1.7 you can try tomcat7
   scanInterval = 4	// gretty reviews all files within this project folder every xx sec.s e.g. 18 sec.s
-  contextPath = '/'			// root path  for the container
+  //contextPath = '/'			// root path  for the container
   // httpsEnabled = true	// not used yet
 }
 

@@ -36,11 +36,11 @@ repositories {
 }
 
 dependencies {
-    	compile "org.codehaus.groovy:groovy-all:2.4.7"
+    	compile "org.codehaus.groovy:groovy-all:2.4.8"
 	runtime "org.jruby:jruby-complete:1.7.21"
 	runtime "com.beust:jcommander:1.48"
     	runtime "org.asciidoctor:asciidoctorj:1.5.4.1"
-	runtime "org.codehaus.groovy:groovy-all:2.4.7"
+	runtime "org.codehaus.groovy:groovy-all:2.4.8"
 	runtime "redis.clients:jedis:2.7.2"	// potential page caching service if Redis service available on PaaS target
 }
 
@@ -67,5 +67,5 @@ asciidoctor {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '3.3'
+    gradleVersion = '3.4'
 }

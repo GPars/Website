@@ -1,6 +1,6 @@
 = GPars - Groovy Parallel Systems 
 Jon Kerridge <j.kerridge@napier.ac.uk>
-v2.0, 2017-02-01
+v2.0, 2017-02-17
 :linkattrs:
 :linkcss:
 :imagesdir: ../images
@@ -52,7 +52,7 @@ image:../images/concurrency.png[Concurrency,180,title="Using Concurrency and Par
 
 there is a link on the pulisher's web site to the code and underlying libraries
 
-So the easiest thing would be to provide a link to these two books so that people can follow then!
+So the easiest thing would be to provide a link to these two books so that people can follow them!
 
 I am in the process of writing a follow on book looking at JCSP based parallel patterns but it very much in the development stage at the moment!!
 
@@ -123,133 +123,133 @@ TIP: Please see https://github.com/codehaus/jcsp[org.jcsp.lang in GitHub] to tes
 
 === Why Java ?
 		
-link:JonKerridgeBook/c1.html[Chapter 1]
+link:c1.html[Chapter 1]
 		
 ''''
 
 === Basic Concepts
 
-link:JonKerridgeBook/c2.html[Chapter 2]
+link:c2.html[Chapter 2]
 
 ''''
 
 === Process Networks: Build It Like Lego
 
-link:JonKerridgeBook/c3.html[Chapter 3]
+link:c3.html[Chapter 3]
 
 ''''
 
 === Parallel Processes: Non Deterministic Input
 
-link:JonKerridgeBook/c4.html[Chapter 4]
+link:c4.html[Chapter 4]
  
 ''''
 
 === Extending the Alternative: A Scaling Device and Queues
 
-link:JonKerridgeBook/c5.html[Chapter 5]
+link:c5.html[Chapter 5]
  
 ''''
 
 === Testing Parallel Systems: First Steps 
 
-link:JonKerridgeBook/c6.html[Chapter 6]
+link:c6.html[Chapter 6]
  
 ''''
 
 === Deadlock: An Introduction
  
-link:JonKerridgeBook/c7.html[Chapter 7]
+link:c7.html[Chapter 7]
  
 ''''
 
 === Client-Server: Deadlock Avoidance by Design
 
-link:JonKerridgeBook/c8.html[Chapter 8]
+link:c8.html[Chapter 8]
 
 ''''
 
 === External Events: Handling Data Multiple Sources
 
-link:JonKerridgeBook/c9.html[Chapter 9] 
+link:c9.html[Chapter 9] 
  
 ''''
 
 === Deadlock Revisited: Circular Structures
  
-link:JonKerridgeBook/c10.html[Chapter 10] 
+link:c10.html[Chapter 10] 
  
 ''''
 
 === Graphical User Interfaces: Brownian Motion 
  
-link:JonKerridgeBook/c11.html[Chapter 11] 
+link:c11.html[Chapter 11] 
  
 ''''
 
 === Dining Philosophers: A Classic Problem 
 
-link:JonKerridgeBook/c12.html[Chapter 12]
+link:c12.html[Chapter 12]
  
 ''''
 
 === Accessing Shared Resources: CREW 
 
-link:JonKerridgeBook/c13.html[Chapter 13]
+link:c13.html[Chapter 13]
  
 ''''
 
 === Barriers and Buckets: Hand-Eye Co-ordination Test 
 
-link:JonKerridgeBook/c14.html[Chapter 14]
+link:c14.html[Chapter 14]
  
 ''''
 
 === Communication over Networks: Process Parallelism 
 
-link:JonKerridgeBook/c15.html[Chapter 15]
+link:c15.html[Chapter 15]
  
 ''''
 
 === Anonymous Network Channels: A Print Server 
 
-link:JonKerridgeBook/c16.html[Chapter 16]
+link:c16.html[Chapter 16]
  
 ''''
 
 === More Testing: Non-terminating Process Networks
 
-link:JonKerridgeBook/c17.html[Chapter 17]
+link:c17.html[Chapter 17]
  
 ''''
 
 === Mobile Agents: Going for a Trip 
 
-link:JonKerridgeBook/c18.html[Chapter 18]
+link:c18.html[Chapter 18]
  
 ''''
 
 === Mobile Processes: Ubiquitous Wireless Access 
 
-link:JonKerridgeBook/c19.html[Chapter 19]
+link:c19.html[Chapter 19]
  
 ''''
 
 === Redirecting Channels: A Self Monitoring Process Ring 
 
-link:JonKerridgeBook/c20.html[Chapter 20]
+link:c20.html[Chapter 20]
  
 ''''
 
 === Mobile Agents and Processes: Process Discovery   
 
-link:JonKerridgeBook/c21.html[Chapter 21] 
+link:c21.html[Chapter 21] 
  
 ''''
 
 === Concluding Remarks: Why Use GroovyParallel and JCSP 
 
-link:JonKerridgeBook/c22.html[Chapter 22]
+link:c22.html[Chapter 22]
  
 ''''
 
