@@ -39,18 +39,12 @@
 </head> 
 
 <body> 
-<div class="red">  &nbsp; </div>
-
-		<div><a href="http://gpars.org" target="_blank"><img src="/images/gpars-rgb-big.png"  class='divider2' style='width:33%'></a>
-        	</div>
 
 <div id="page"> 
-  
-  <div id="header" class="container"> 
-  
-      <div class="span-4 prepend-4"><a href="http://gpars.org/"  target="_blank" title="To Homepage"><img src="/images/gparsinstaller.jpg" style="width:195px;margin-top:22px;margin-left:30px;"></a></div>     	
-  </div>
 
+		<div>
+			<img src="./images/gpars-rgb-small.png"  class='divider1'>
+        	</div>
 
   <div id="graphic" class="container clear"> 
 	<div class="span-9"> <img id="gembox" src="./images/ipad.png" width="99%"  style="margin-top:5px;" alt="Box of gems pic" /> </div> 
@@ -62,9 +56,9 @@
     	<div id="download_btn"> <a href="Download.html" target="_blank"><span>Download</span></a> </div> 
     	<div id="addon_btn"> <a href="http://www.groovy-lang.org/download.html" target="_blank"><span>Get Groovy</span></a> </div> 
   	  </div> 
-	</div>
-	 
+	</div>	 
   </div>
+</div> 
 
   <div id="main" class="container clear">  
 
@@ -94,7 +88,7 @@
 
 	<div id="fastbar" class="container clear"> 
 		<div>
-			<img src="/images/star.svg"  class='divider'>
+			<img src="./images/star.png"  class='divider'>
         	</div>
 
 		<div class="fastlink span-5"> 	
@@ -162,7 +156,6 @@
   </div>
    
  </div> 
-</div> 
 
 </body> 
 

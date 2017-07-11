@@ -4,14 +4,17 @@ v2.0, 2017-02-01
 :toc: right
 :toc-title: Document Index
 :icons: font
+:linkattrs:
+
 :source-highlighter: coderay
 :data-uri:
+
 :linkattrs:
 :leveloffset: 0
 :docslink: http://gpars.org/[GPars Documentation]
 :numbered!:
 
-image::../../images/gpars-rgb.svg[GPars Logo,320,align="center",link="./"]
+image::../../images/gpars-rgb.svg[GPars Logo,320,align="center",link="http://gpars.org/"]
 
 ''''
 

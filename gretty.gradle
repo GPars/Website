@@ -17,7 +17,7 @@ buildscript {
   }
 
   dependencies {
-    classpath "org.akhikhl.gretty:gretty:1.2.4"
+    classpath "org.akhikhl.gretty:gretty:${grettyVersion}"
   }
 }
 
@@ -29,11 +29,11 @@ repositories {
 
 
 dependencies {
-    compile "org.codehaus.groovy:groovy-all:2.4.8"
-	runtime "org.jruby:jruby-complete:1.7.21"
-	runtime "com.beust:jcommander:1.48"
-    runtime "org.asciidoctor:asciidoctorj:1.5.4.1"
-    runtime "redis.clients:jedis:2.7.2" // runtime failure if not included
+    compile "org.codehaus.groovy:groovy-all:${groovyVersion}"
+	runtime "org.jruby:jruby-complete:${jrubyVersion}"
+	runtime "com.beust:jcommander:${jcommanderVersion}"
+    runtime "org.asciidoctor:asciidoctorj:${asciidoctorjVersion}"
+    runtime "redis.clients:jedis:${jedisVersion}" // runtime failure if not included
 }
 
 gretty {

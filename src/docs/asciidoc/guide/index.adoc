@@ -1,17 +1,18 @@
 = The GPars User Guide
 The Whole GPars Team <gpars-developers@googlegroups.com>
 v2.0, 2017-02-01
-:doctype: book
-:linkattrs:
-:linkcss:
 :toc: right
 :toc-title: Document Index
 :icons: font
+:linkattrs:
 :source-highlighter: coderay
+:data-uri:
 :docslink: http://gpars.org/[GPars Documentation]
 :description: GPars is a multi-paradigm concurrency framework offering several mutually cooperating high-level concurrency abstractions.
 :doctitle: The GPars User Guide 
 :pdf-page-size: A4
+:leveloffset: 0
+:numbered!:
 
 image::../../images/gpars-rgb.svg[GPars Logo,320,align="center",link="http://gpars.org/"]
 

@@ -4,7 +4,7 @@ get "/home", 		forward: "home.html", cache: 2.hours
 get "/guide", 		forward: "/guide/index.html", cache: 2.hours
 get "/qs",		    forward: "/quickstart/index.html", cache: 2.hours
 
-get "/download", 	 forward: "/gpars.groovy", cache: 2.hours
+get "/installer", 	 forward: "/gpars.groovy", cache: 2.minutes
 
 get "/readme", 		forward: "/README.html", cache: 2.hours
 get "/todo", 		forward: "/Todo.html", cache: 2.hours  
